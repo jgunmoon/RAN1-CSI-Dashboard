@@ -1,0 +1,6 @@
+# FTP에서 내려받은 원본 문서 (용량이 크고, 언제든 FTP에서 다시 받을 수 있음)
+downloads/
+
+__pycache__/
+*.pyc
+.venv/

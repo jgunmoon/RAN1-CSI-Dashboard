@@ -1,0 +1,104 @@
+# RAN1 CSI 대시보드 설정
+#
+# 원본 DB(jgunmoon/RAN1-Decision-Tracker)의 결정 중 CSI 관련만 골라 보여줍니다.
+# 범위와 주제 분류는 모두 이 파일에서 정합니다. 코드를 고칠 필요가 없습니다.
+# 이 파일을 고친 뒤 `python -m scripts.build`를 실행하면 reports/가 다시 만들어집니다.
+
+# ── 데이터 소스 (읽기만 함) ────────────────────────────────────────────
+source:
+  repo: "jgunmoon/RAN1-Decision-Tracker"
+  branch: "ccr-0c6b397f-j6xur9"     # 원본 저장소의 기본 브랜치. 바뀌면 여기만 고칩니다.
+  db_path: "data/agreements_db.json"
+
+# 이 저장소의 주소. 저장소나 기본 브랜치 이름이 바뀌면 함께 고칩니다.
+report_base_url: "https://github.com/jgunmoon/RAN1-CSI-Dashboard/blob/main/reports/"   # HTML → 주제별 마크다운 리포트 링크
+dashboard_url: "https://jgunmoon.github.io/RAN1-CSI-Dashboard/"                                         # README → HTML 대시보드 링크
+
+# ── 1. 포함 Agenda (확정) ────────────────────────────────────────────
+# Agenda 번호는 회의마다 바뀌므로 '섹션(최상위 Agenda) 제목 + Agenda 제목'으로 찾습니다.
+#   section : 최상위 Agenda 제목 (대소문자·공백·따옴표 모양은 무시)
+#   path    : 섹션 아래 Agenda 제목. 여러 개면 위에서 아래로 이어진 경로입니다.
+#             경로 중간부터 적어도 됩니다 (예: [CSI acquisition and report, Other aspects]).
+#   children: true면 그 Agenda 아래 하위 Agenda 결정까지 모두 포함합니다.
+#   topic   : 이 Agenda 결정의 주제를 고정합니다. 비우면 아래 topics 규칙으로 결정마다 나눕니다.
+#   label   : 대시보드에 보일 이름 (비우면 path의 마지막 제목)
+agendas:
+  # Rel-20 6GR Study
+  - {section: "Rel-20 Study of 6GR", path: ["Aspects of downlink-based CSI acquisition"]}
+  - {section: "Rel-20 Study of 6GR", path: ["Aspects of uplink-based CSI acquisition"], topic: srs}
+  # #124~#125는 'MIMO operation' 아래, #126부터는 'CSI acquisition and report' 아래에 있었습니다. 제목으로 매칭하므로 둘 다 잡힙니다.
+  - {section: "Rel-20 Study of 6GR", path: ["Beam management for downlink and uplink"], topic: beam}
+  - {section: "Rel-20 Study of 6GR", path: ["Synchronization acquisition and beam measurement"], topic: beam}
+  - {section: "Rel-20 Study of 6GR", path: ["CSI acquisition and report", "Other aspects"], label: "CSI acquisition and report: Other aspects (TRS, DL+UL 결합 CSI 등)"}
+  # Rel-20 NR
+  - {section: "Release 20 NR", path: ["NR MIMO Phase 6"], label: "NR MIMO Phase 6 (상위 Agenda)"}
+  - {section: "Release 20 NR", path: ["Enhancing DL CSI acquisition"]}
+  - {section: "Release 20 NR", path: ["Improvement of SRS capacity and coverage"], topic: srs}
+  - {section: "Release 20 NR", path: ["CSI spatial/frequency compression without temporal aspects (\"Case 0\")"], children: true, topic: aiml,
+     label: "AI/ML CSI compression Case 0 (Inference related aspects 등 하위 포함)"}
+  - {section: "Release 20 NR", path: ["Inter-vendor training collaboration for two-sided AI/ML models"], topic: aiml}
+  # Rel-19
+  - {section: "Rel-19 UE Features", path: ["UE features for NR MIMO Phase 5"]}
+  - {section: "Maintenance on Rel-19 NR and E-UTRA", path: ["Maintenance on NR MIMO Phase 5"], children: true,
+     label: "Maintenance on NR MIMO Phase 5 (하위 포함)"}
+  - {section: "Maintenance on Rel-19 NR and E-UTRA", path: ["Specification support for beam management"], topic: aiml,
+     label: "AI/ML: Specification support for beam management"}
+  - {section: "Maintenance on Rel-19 NR and E-UTRA", path: ["Specification support for CSI prediction"], topic: aiml,
+     label: "AI/ML: Specification support for CSI prediction"}
+
+# ── 2. 보조 키워드 (후보) ────────────────────────────────────────────
+# 위 Agenda 밖에서 이 키워드가 결정 원문(또는 FFS 줄)에 있으면 '후보'로 따로 표시합니다.
+# 정규식이며 대소문자를 구분합니다 ((?i)를 앞에 붙이면 구분 안 함).
+candidate_keywords:
+  - '\bCSI-RS\b'
+  - '(?i)\bCSI[- ]report'
+  - '(?i)\bCSI feedback'
+  - '(?i)\bCSI acquisition'
+  - '(?i)\bCSI prediction'
+  - '(?i)\bCSI compression'
+  - '(?i)codebook'
+  - '\bPMI\b'
+  - '\bCQI\b'
+  - '\bTCI\b'
+  - '(?i)beam failure'
+  - '\bBF[DR]\b'
+  - '(?i)beam report'
+  - '(?i)beamforming'
+  - '(?i)beam management'
+  - '\bL1-RSRP\b'
+  - '\bSRS\b'
+
+# 키워드·주제 판정 전에 원문에서 지우는 표현 (CSI와 무관한 같은 단어)
+ignore_phrases:
+  - '(?i)HARQ-ACK codebook'
+  - '(?i)HARQ codebook'
+  - '(?i)Type-[123] HARQ(-ACK)? codebook'
+
+# ── 3. 수동 목록 (결정 id 기준, 예: "RAN1#126:9.1.1:001") ──────────────
+include_ids: []   # 후보나 범위 밖 결정을 확정 범위로 올림
+exclude_ids: []   # 확정·후보 어디에서도 뺌
+
+# ── 4. 주제 분류 ─────────────────────────────────────────────────────
+# 결정마다 주제 하나. Agenda에 topic이 있으면 그것을 쓰고,
+# 없으면 위에서부터 차례로 보고 patterns 중 하나라도 맞는 첫 주제를 씁니다. 아무것도 맞지 않으면 fallback_topic.
+# 순서를 바꾸면 분류가 바뀝니다. 색은 대시보드 차트에서 이 순서대로 정해집니다.
+topics:
+  - id: aiml
+    label: "AI/ML CSI"
+    patterns: ['AI/ML', '(?i)two-sided', '(?i)\bCSI prediction', '(?i)\bmodel (ID|identification|training|inference)', '(?i)\bdataset']
+  - id: srs
+    label: "SRS"
+    patterns: ['\bSRS\b']
+  - id: beam
+    label: "Beam management"
+    patterns: ['\bTCI\b', '(?i)beam failure', '\bBF[DR]\b', '(?i)beam (report|management|measurement|indication)', '\bL1-RSRP\b', '\bL1-SINR\b', '\bUEIBM\b', '(?i)beamforming']
+  - id: report
+    label: "CSI 보고/codebook"
+    patterns: ['(?i)\bCSI[- ]report', 'reportQuantity', '(?i)\bCSI feedback', '(?i)codebook', '\bPMI\b', '\bCQI\b', '\bRI\b', '\bType[- ]?I{1,2}\b', '\bCPU\b', '\bCSI\b(?!-RS|-IM)']
+  - id: csirs
+    label: "CSI-RS"
+    patterns: ['\bCSI-RS\b', '\bNZP\b', '\bCSI-IM\b', '\bTRS\b', '(?i)tracking RS', '\bCMR\b', '\bIMR\b']
+fallback_topic: {id: other, label: "기타 CSI"}
+
+# HTML 대시보드 검색창의 추천 검색어 ('|' 또는 대문자 OR로 여러 표기를 함께 찾음)
+search_presets: ["CSI-RS", "codebook | PMI", "CQI", "TCI", "beam failure | BFR", "SRS", "two-sided", "CSI prediction"]
