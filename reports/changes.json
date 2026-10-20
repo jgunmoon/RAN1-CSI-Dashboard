@@ -1,1 +1,1292 @@
-[]
+[
+ {
+  "at": "2026-10-20T08:01+00:00",
+  "source_updated_at": "2026-10-19T11:12:42+00:00",
+  "reason": "설정 변경 (범위·키워드·주제 규칙)",
+  "new_meetings": [],
+  "counts": {
+   "added": 25,
+   "changed": 68,
+   "removed": 2
+  },
+  "renumbered": 0,
+  "items": [
+   {
+    "id": "RAN1#122:8.1:001",
+    "what": "added",
+    "fields": [],
+    "meeting": "RAN1#122",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface",
+    "line": "TP included in R1-250xxxx for TR 38.843 is endorsed in principle.",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip"
+   },
+   {
+    "id": "RAN1#122:8.1:002",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#122",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface",
+    "line": "Adopt the following TP in section 5.2.1.6, TS 38.214.",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip"
+   },
+   {
+    "id": "RAN1#122:8.1:003",
+    "what": "added",
+    "fields": [],
+    "meeting": "RAN1#122",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface",
+    "line": "The Draft CR in R1-2506171 for TR 38.843 is endorsed.",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip"
+   },
+   {
+    "id": "RAN1#122:8.5.2:002",
+    "what": "removed",
+    "fields": [],
+    "meeting": "RAN1#122",
+    "type": "Agreement",
+    "scope": "candidate",
+    "topic": "beam",
+    "agenda": "8.5.2 On-demand SIB1 for idle/inactive mode Ues",
+    "line": "Adopt the following TP for Clause 5.3.2 and 6.3.3.1 in TS38.211 to clarify the PRACH transmission for SIB1 request.",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip"
+   },
+   {
+    "id": "RAN1#122:9.1:001",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#122",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "9.1 UE features for AI/ML for NR Air Interface",
+    "line": "Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip"
+   },
+   {
+    "id": "RAN1#122:9.1:002",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#122",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "9.1 UE features for AI/ML for NR Air Interface",
+    "line": "Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip"
+   },
+   {
+    "id": "RAN1#122:9.1:003",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#122",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "9.1 UE features for AI/ML for NR Air Interface",
+    "line": "Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip"
+   },
+   {
+    "id": "RAN1#122:9.1:004",
+    "what": "added",
+    "fields": [],
+    "meeting": "RAN1#122",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "9.1 UE features for AI/ML for NR Air Interface",
+    "line": "Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip"
+   },
+   {
+    "id": "RAN1#122:9.1:005",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#122",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "9.1 UE features for AI/ML for NR Air Interface",
+    "line": "Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip"
+   },
+   {
+    "id": "RAN1#122:9.1:006",
+    "what": "added",
+    "fields": [],
+    "meeting": "RAN1#122",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "9.1 UE features for AI/ML for NR Air Interface",
+    "line": "Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip"
+   },
+   {
+    "id": "RAN1#122:9.1:007",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#122",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "9.1 UE features for AI/ML for NR Air Interface",
+    "line": "Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip"
+   },
+   {
+    "id": "RAN1#122:9.1:008",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#122",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "9.1 UE features for AI/ML for NR Air Interface",
+    "line": "Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip"
+   },
+   {
+    "id": "RAN1#122:9.1:009",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#122",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "9.1 UE features for AI/ML for NR Air Interface",
+    "line": "Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip"
+   },
+   {
+    "id": "RAN1#122:9.1:010",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#122",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "9.1 UE features for AI/ML for NR Air Interface",
+    "line": "Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip"
+   },
+   {
+    "id": "RAN1#122:9.1:011",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#122",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "9.1 UE features for AI/ML for NR Air Interface",
+    "line": "Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip"
+   },
+   {
+    "id": "RAN1#122:9.1:012",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#122",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "9.1 UE features for AI/ML for NR Air Interface",
+    "line": "Introduce the following Rel. 19 UE FGs (yellow highlighting, if any, shows text that’s not yet agreed)",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip"
+   },
+   {
+    "id": "RAN1#122:9.1:024",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#122",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "9.1 UE features for AI/ML for NR Air Interface",
+    "line": "Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip"
+   },
+   {
+    "id": "RAN1#122:9.1:025",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#122",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "9.1 UE features for AI/ML for NR Air Interface",
+    "line": "Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip"
+   },
+   {
+    "id": "RAN1#122:9.1:026",
+    "what": "added",
+    "fields": [],
+    "meeting": "RAN1#122",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "9.1 UE features for AI/ML for NR Air Interface",
+    "line": "Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip"
+   },
+   {
+    "id": "RAN1#122:9.1:027",
+    "what": "added",
+    "fields": [],
+    "meeting": "RAN1#122",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "9.1 UE features for AI/ML for NR Air Interface",
+    "line": "Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip"
+   },
+   {
+    "id": "RAN1#122:9.1:028",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#122",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "9.1 UE features for AI/ML for NR Air Interface",
+    "line": "Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip"
+   },
+   {
+    "id": "RAN1#122:9.1:029",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#122",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "9.1 UE features for AI/ML for NR Air Interface",
+    "line": "Introduce the following Rel. 19 UE FGs (yellow highlighting, if any, shows text that’s not yet agreed)",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip"
+   },
+   {
+    "id": "RAN1#122:9.1:030",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#122",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "9.1 UE features for AI/ML for NR Air Interface",
+    "line": "Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip"
+   },
+   {
+    "id": "RAN1#122bis:8.1:001",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#122bis",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface",
+    "line": "The following TP for TS 38.214 Clause 5.2.1.4.3b is endorsed.",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx"
+   },
+   {
+    "id": "RAN1#122bis:8.1:002",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#122bis",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface",
+    "line": "The following TP for 38.214 Clause 6.2.1.3 is endorsed.",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx"
+   },
+   {
+    "id": "RAN1#122bis:8.1:003",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#122bis",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface",
+    "line": "The following TP for 38.214 Clause 6.2.1 is endorsed.",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx"
+   },
+   {
+    "id": "RAN1#122bis:8.1:004",
+    "what": "added",
+    "fields": [],
+    "meeting": "RAN1#122bis",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface",
+    "line": "Regarding the RAN2 LS from R1-2506715, for the UE-side candidate data collection configuration for BM-Case2, include the following IEs alon…",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx"
+   },
+   {
+    "id": "RAN1#122bis:8.1:005",
+    "what": "added",
+    "fields": [],
+    "meeting": "RAN1#122bis",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface",
+    "line": "Regarding the RAN2 LS R1-2506720, the answer to the question in the LS is as below:",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx"
+   },
+   {
+    "id": "RAN1#122bis:8.1:006",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#122bis",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface",
+    "line": "The following TP for TS 38.214 Clause 5.2.1.4.2 is endorsed.",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx"
+   },
+   {
+    "id": "RAN1#122bis:8.1:007",
+    "what": "added",
+    "fields": [],
+    "meeting": "RAN1#122bis",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface",
+    "line": "The draft response LS in R1-2508121 is endorsed. Final LS in R1-2508122",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx"
+   },
+   {
+    "id": "RAN1#122bis:8.1:010",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#122bis",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface",
+    "line": "The following TP for TS 38.214 is endorsed.",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx"
+   },
+   {
+    "id": "RAN1#122bis:8.1:011",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#122bis",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface",
+    "line": "Regarding the RAN2 LS from R1-2506715, for the UE-side candidate data collection configuration for CSI prediction, include the following IE…",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx"
+   },
+   {
+    "id": "RAN1#122bis:8.1:012",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#122bis",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface",
+    "line": "Adopt the following TP for TS 38.214.",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx"
+   },
+   {
+    "id": "RAN1#122bis:8.1:013",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#122bis",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface",
+    "line": "Following TP is endorsed as editorial corrections for TS 38.214 for Clauses 5.2.1.4.2, 5.2.1.4.6, 5.2.1.6 and 5.4.",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx"
+   },
+   {
+    "id": "RAN1#122bis:8.1:014",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#122bis",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface",
+    "line": "Regarding the RAN2 LS from R1-2506715:",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx"
+   },
+   {
+    "id": "RAN1#122bis:8.1:015",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#122bis",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface",
+    "line": "Support the configuration of following parameter in a CSI-ReportConfig with the higher layer parameter reportQuantity set to 'none-CSI-r19'",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx"
+   },
+   {
+    "id": "RAN1#122bis:8.8:005",
+    "what": "added",
+    "fields": [],
+    "meeting": "RAN1#122bis",
+    "type": "Agreement",
+    "scope": "candidate",
+    "topic": "report",
+    "agenda": "8.8 Maintenance on others",
+    "line": "- In case PUSCH repetition Type-B or Type-A is applied for first CG-PUSCH or DG-PUSCH, reuse the legacy rule for CSI multiplexing and CSI f…",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx"
+   },
+   {
+    "id": "RAN1#122bis:9.1:006",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#122bis",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "9.1 UE features for AI/ML for NR Air Interface",
+    "line": "Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx"
+   },
+   {
+    "id": "RAN1#122bis:9.1:007",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#122bis",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "9.1 UE features for AI/ML for NR Air Interface",
+    "line": "Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx"
+   },
+   {
+    "id": "RAN1#122bis:9.1:008",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#122bis",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "9.1 UE features for AI/ML for NR Air Interface",
+    "line": "Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx"
+   },
+   {
+    "id": "RAN1#122bis:9.1:009",
+    "what": "added",
+    "fields": [],
+    "meeting": "RAN1#122bis",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "9.1 UE features for AI/ML for NR Air Interface",
+    "line": "Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx"
+   },
+   {
+    "id": "RAN1#122bis:9.1:010",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#122bis",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "9.1 UE features for AI/ML for NR Air Interface",
+    "line": "Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx"
+   },
+   {
+    "id": "RAN1#122bis:9.1:011",
+    "what": "added",
+    "fields": [],
+    "meeting": "RAN1#122bis",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "9.1 UE features for AI/ML for NR Air Interface",
+    "line": "Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx"
+   },
+   {
+    "id": "RAN1#122bis:9.1:012",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#122bis",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "9.1 UE features for AI/ML for NR Air Interface",
+    "line": "Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx"
+   },
+   {
+    "id": "RAN1#122bis:9.1:013",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#122bis",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "9.1 UE features for AI/ML for NR Air Interface",
+    "line": "Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx"
+   },
+   {
+    "id": "RAN1#122bis:9.1:014",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#122bis",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "9.1 UE features for AI/ML for NR Air Interface",
+    "line": "Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx"
+   },
+   {
+    "id": "RAN1#122bis:9.1:015",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#122bis",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "9.1 UE features for AI/ML for NR Air Interface",
+    "line": "Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx"
+   },
+   {
+    "id": "RAN1#122bis:9.1:016",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#122bis",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "9.1 UE features for AI/ML for NR Air Interface",
+    "line": "Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx"
+   },
+   {
+    "id": "RAN1#122bis:9.1:017",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#122bis",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "9.1 UE features for AI/ML for NR Air Interface",
+    "line": "Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx"
+   },
+   {
+    "id": "RAN1#122bis:9.1:018",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#122bis",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "9.1 UE features for AI/ML for NR Air Interface",
+    "line": "Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx"
+   },
+   {
+    "id": "RAN1#122bis:9.1:019",
+    "what": "added",
+    "fields": [],
+    "meeting": "RAN1#122bis",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "9.1 UE features for AI/ML for NR Air Interface",
+    "line": "In FG 58-1-2, 58-1-4, 58-3-1, 58-3-2, in the Notes column, delete the following note: “CPU” corresponds to “CPU,1” in TS 38.214, and “APU” …",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx"
+   },
+   {
+    "id": "RAN1#122bis:9.1:020",
+    "what": "added",
+    "fields": [],
+    "meeting": "RAN1#122bis",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "9.1 UE features for AI/ML for NR Air Interface",
+    "line": "In FG 58-1-2, 58-1-4, in the notes column, for component 17 candidate values, replace “APU pool” with “CPU pool”",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx"
+   },
+   {
+    "id": "RAN1#122bis:9.1:021",
+    "what": "added",
+    "fields": [],
+    "meeting": "RAN1#122bis",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "9.1 UE features for AI/ML for NR Air Interface",
+    "line": "In FGs 58-1-2, 58-1-4, 58-3-1, 58-3-2, in the notes column, replace “APU pool” with “CPU pool”",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx"
+   },
+   {
+    "id": "RAN1#122bis:9.1:022",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#122bis",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "9.1 UE features for AI/ML for NR Air Interface",
+    "line": "Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx"
+   },
+   {
+    "id": "RAN1#122bis:9.1:023",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#122bis",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "9.1 UE features for AI/ML for NR Air Interface",
+    "line": "Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx"
+   },
+   {
+    "id": "RAN1#123:8.1:001",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#123",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface",
+    "line": "Adopt the following TPs for TS 38.214 Clause 5.2.1.6.",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Inbox/Chair_notes/Chair%20notes%20RAN1%23123%20-%20eom3.docx"
+   },
+   {
+    "id": "RAN1#123:8.1:002",
+    "what": "added",
+    "fields": [],
+    "meeting": "RAN1#123",
+    "type": "Conclusion",
+    "scope": "candidate",
+    "topic": "aiml",
+    "agenda": "8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface",
+    "line": "- No further discussion in RAN1 on APU framework for Rel-19 AI/ML positioning.",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Inbox/Chair_notes/Chair%20notes%20RAN1%23123%20-%20eom3.docx"
+   },
+   {
+    "id": "RAN1#123:8.1:004",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#123",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface",
+    "line": "The following TP is endorsed for TS 38.214.",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Inbox/Chair_notes/Chair%20notes%20RAN1%23123%20-%20eom3.docx"
+   },
+   {
+    "id": "RAN1#123:8.1:005",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#123",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface",
+    "line": "The following TP is endorsed for TS 38.214.",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Inbox/Chair_notes/Chair%20notes%20RAN1%23123%20-%20eom3.docx"
+   },
+   {
+    "id": "RAN1#123:8.1:006",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#123",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface",
+    "line": "The following TP for TS 38.214 is endorsed.",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Inbox/Chair_notes/Chair%20notes%20RAN1%23123%20-%20eom3.docx"
+   },
+   {
+    "id": "RAN1#123:8.1:007",
+    "what": "added",
+    "fields": [],
+    "meeting": "RAN1#123",
+    "type": "Conclusion",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface",
+    "line": "There is no consensus in RAN1 to further discuss active resource/port counting value for inference report if associated performance monitor…",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Inbox/Chair_notes/Chair%20notes%20RAN1%23123%20-%20eom3.docx"
+   },
+   {
+    "id": "RAN1#123:8.1:008",
+    "what": "added",
+    "fields": [],
+    "meeting": "RAN1#123",
+    "type": "Conclusion",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface",
+    "line": "There is no consensus in RAN1 to further discuss on enhancement of timeline for AP CSI-PAI report (Z, Z’) and SP CSI-PAI report.",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Inbox/Chair_notes/Chair%20notes%20RAN1%23123%20-%20eom3.docx"
+   },
+   {
+    "id": "RAN1#123:8.3:006",
+    "what": "added",
+    "fields": [],
+    "meeting": "RAN1#123",
+    "type": "Agreement",
+    "scope": "candidate",
+    "topic": "report",
+    "agenda": "8.3 Maintenance on Evolution of NR duplex operation: Sub-band full duplex (SBFD)",
+    "line": "Adopt the following TPs in principle to Clause 6.3.2.4.1.1, 6.3.2.4.1.2, 6.3.2.4.1.3, 6.3.2.4.1.4 and 6.3.2.4.1.5, TS 38.213.",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Inbox/Chair_notes/Chair%20notes%20RAN1%23123%20-%20eom3.docx"
+   },
+   {
+    "id": "RAN1#124:8.1:001",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#124",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface",
+    "line": "The following TP for TS 38.214 Clause 5.2.1.4.2 for Rel-19 is endorsed.",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124/Inbox/Chair_notes/Chair%20notes%20RAN1%23124%20-%20eom_03.docx"
+   },
+   {
+    "id": "RAN1#124:8.1:002",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#124",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface",
+    "line": "Adopt the following TP for TS 38.214 Clause 5.2.1.6.",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124/Inbox/Chair_notes/Chair%20notes%20RAN1%23124%20-%20eom_03.docx"
+   },
+   {
+    "id": "RAN1#124:8.1:003",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#124",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface",
+    "line": "Adopt the following TP for TS 38.214 Clause 5.2.1.4.6.",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124/Inbox/Chair_notes/Chair%20notes%20RAN1%23124%20-%20eom_03.docx"
+   },
+   {
+    "id": "RAN1#124:8.1:004",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#124",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface",
+    "line": "Adopt the following TP for TS 38.214 Clause 5.2.1.4.6.",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124/Inbox/Chair_notes/Chair%20notes%20RAN1%23124%20-%20eom_03.docx"
+   },
+   {
+    "id": "RAN1#124:8.1:005",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#124",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface",
+    "line": "Adopt the following TP for TS 38.214 Clause 5.2.1.6.",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124/Inbox/Chair_notes/Chair%20notes%20RAN1%23124%20-%20eom_03.docx"
+   },
+   {
+    "id": "RAN1#124:8.1:006",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#124",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface",
+    "line": "For CSI prediction using UE-side model, for data collection for training,",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124/Inbox/Chair_notes/Chair%20notes%20RAN1%23124%20-%20eom_03.docx"
+   },
+   {
+    "id": "RAN1#124:8.1:007",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#124",
+    "type": "Conclusion",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface",
+    "line": "There is no consensus in RAN1 to further discuss on CMR configuration alignment between CSI-pai report and inference report for CSI predict…",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124/Inbox/Chair_notes/Chair%20notes%20RAN1%23124%20-%20eom_03.docx"
+   },
+   {
+    "id": "RAN1#124:8.8:002",
+    "what": "added",
+    "fields": [],
+    "meeting": "RAN1#124",
+    "type": "Conclusion",
+    "scope": "candidate",
+    "topic": "report",
+    "agenda": "8.8 Maintenance on others",
+    "line": "There is no consensus on the spec change on the definition of CSI reference resource and valid slot for R19 LBCA.",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124/Inbox/Chair_notes/Chair%20notes%20RAN1%23124%20-%20eom_03.docx"
+   },
+   {
+    "id": "RAN1#124bis:8.1:001",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#124bis",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface",
+    "line": "The following TP for TS 38.212 Clause 6.3.1.1.2 is endorsed.",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Inbox/Chair_notes/Chair%20notes%20RAN1%23124bis_eom5.docx"
+   },
+   {
+    "id": "RAN1#124bis:8.1:002",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#124bis",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface",
+    "line": "The following TP for TS 38.214 Clause 5.2.1.6 is endorsed.",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Inbox/Chair_notes/Chair%20notes%20RAN1%23124bis_eom5.docx"
+   },
+   {
+    "id": "RAN1#124bis:8.1:003",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#124bis",
+    "type": "Conclusion",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface",
+    "line": "There is no RAN1 consensus on the following:",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Inbox/Chair_notes/Chair%20notes%20RAN1%23124bis_eom5.docx"
+   },
+   {
+    "id": "RAN1#124bis:9.4.1:010",
+    "what": "added",
+    "fields": [],
+    "meeting": "RAN1#124bis",
+    "type": "Agreement",
+    "scope": "candidate",
+    "topic": "report",
+    "agenda": "9.4.1 Coverage enhancement",
+    "line": "For the repurposing fields for indication of UL beam information in UL Grant in RAR, down-select the following option:",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Inbox/Chair_notes/Chair%20notes%20RAN1%23124bis_eom5.docx"
+   },
+   {
+    "id": "RAN1#125:8.1:001",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#125",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "report",
+    "agenda": "8.1 Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT",
+    "line": "The following TP is endorsed as Alignment CR for TS.38.212 and Clause 6.3.2.1.2.",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Inbox/Chair_notes/Chair%20notes%20RAN1%23125_eom.docx"
+   },
+   {
+    "id": "RAN1#125:8.1:002",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#125",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "report",
+    "agenda": "8.1 Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT",
+    "line": "The following TP is endorsed as Alignment CR for TS.38.214 for Clause 5.2.1.4.6.",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Inbox/Chair_notes/Chair%20notes%20RAN1%23125_eom.docx"
+   },
+   {
+    "id": "RAN1#125:8.1:003",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#125",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "srs",
+    "agenda": "8.1 Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT",
+    "line": "The following TP for TS 38.214 Clause 5.4 is endorsed.",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Inbox/Chair_notes/Chair%20notes%20RAN1%23125_eom.docx"
+   },
+   {
+    "id": "RAN1#125:8.1:005",
+    "what": "added",
+    "fields": [],
+    "meeting": "RAN1#125",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "report",
+    "agenda": "8.1 Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT",
+    "line": "The following is endorsed as Alignment CR for Clause 9 in Rel-19 TS38.213.",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Inbox/Chair_notes/Chair%20notes%20RAN1%23125_eom.docx"
+   },
+   {
+    "id": "RAN1#125:8.1:008",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#125",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "report",
+    "agenda": "8.1 Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT",
+    "line": "The following TP for Clause 9 of TS 38.213 is endorsed.",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Inbox/Chair_notes/Chair%20notes%20RAN1%23125_eom.docx"
+   },
+   {
+    "id": "RAN1#125:9.4.1:011",
+    "what": "added",
+    "fields": [],
+    "meeting": "RAN1#125",
+    "type": "Agreement",
+    "scope": "candidate",
+    "topic": "report",
+    "agenda": "9.4.1 Coverage enhancement",
+    "line": "Repurposing the following fields in UL Grant in RAR to indicate the UL beam information for multiple PRACH transmissions with different Tx …",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Inbox/Chair_notes/Chair%20notes%20RAN1%23125_eom.docx"
+   },
+   {
+    "id": "RAN1#126:10.5.2.2:008",
+    "what": "added",
+    "fields": [],
+    "meeting": "RAN1#126",
+    "type": "Agreement",
+    "scope": "candidate",
+    "topic": "report",
+    "agenda": "10.5.2.2 Downlink transmission scheme(s) for downlink shared channels",
+    "line": "- Study (semi-)open-loop transmission and whether/how to support specification-non-transparent schemes for PDSCH",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx"
+   },
+   {
+    "id": "RAN1#126:10.5.2.3:004",
+    "what": "added",
+    "fields": [],
+    "meeting": "RAN1#126",
+    "type": "Agreement",
+    "scope": "candidate",
+    "topic": "report",
+    "agenda": "10.5.2.3 Uplink transmission scheme(s) for uplink channels",
+    "line": "Support both of the following methods to convey the UCI over physical channel:",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx"
+   },
+   {
+    "id": "RAN1#126:8.1:001",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#126",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "report",
+    "agenda": "8.1 Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT",
+    "line": "The following TP for TS 38.214 Clause 5.2.1.6 is endorsed.",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx"
+   },
+   {
+    "id": "RAN1#126:8.1:002",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#126",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "aiml",
+    "agenda": "8.1 Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT",
+    "line": "The following TP for TS 38.214 Clause 5.2.3 is endorsed.",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx"
+   },
+   {
+    "id": "RAN1#126:8.1:003",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#126",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "srs",
+    "agenda": "8.1 Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT",
+    "line": "The following TP for TS 38.214 Clause 6.2.1.3 is endorsed.",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx"
+   },
+   {
+    "id": "RAN1#126:8.1:004",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#126",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "beam",
+    "agenda": "8.1 Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT",
+    "line": "The following TP for TS 38.214 Clause 5.1.6.1.2.",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx"
+   },
+   {
+    "id": "RAN1#126:8.1:005",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#126",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "beam",
+    "agenda": "8.1 Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT",
+    "line": "The following changes for Clause 9.2 in TS 38.213 is endorsed.",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx"
+   },
+   {
+    "id": "RAN1#126:8.1:006",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#126",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "report",
+    "agenda": "8.1 Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT",
+    "line": "The following changes for Clause 9 in TS 38.213 is endorsed.",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx"
+   },
+   {
+    "id": "RAN1#126:8.1:009",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#126",
+    "type": "Conclusion",
+    "scope": "agenda",
+    "topic": "beam",
+    "agenda": "8.1 Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT",
+    "line": "There is no consensus in RAN1 to support the following change from R1-2605805 of Clause 5.2.1.5.4.1 in TS 38.214:",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx"
+   },
+   {
+    "id": "RAN1#126:8.1:010",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#126",
+    "type": "Conclusion",
+    "scope": "agenda",
+    "topic": "report",
+    "agenda": "8.1 Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT",
+    "line": "There is no consensus in RAN1 to support the TP from R1-2605669 of Clause 6.3.2.1.2 in TS 38.212 and Clause 5.2.1.5.4.1 in TS 38.214.",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx"
+   },
+   {
+    "id": "RAN1#126:8.1:012",
+    "what": "removed",
+    "fields": [],
+    "meeting": "RAN1#126",
+    "type": "Agreement",
+    "scope": "candidate",
+    "topic": "beam",
+    "agenda": "8.1 Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT",
+    "line": "The following TP for TS 38.211 Clause 6.3.3.1 is endorsed.",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx"
+   },
+   {
+    "id": "RAN1#126:8.1:013",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#126",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "srs",
+    "agenda": "8.1 Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT",
+    "line": "The following TP for TS 38.213 Clause 11.1 is endorsed.",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx"
+   },
+   {
+    "id": "RAN1#126bis:8.1:004",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#126bis",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "report",
+    "agenda": "8.1 Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT",
+    "line": "The draft CR in R1-2607797 for Rel-19 TS38.214, Clause 5.2.2.5 is endorsed.",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx"
+   },
+   {
+    "id": "RAN1#126bis:8.1:009",
+    "what": "changed",
+    "fields": [
+     "scope"
+    ],
+    "meeting": "RAN1#126bis",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "report",
+    "agenda": "8.1 Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT",
+    "line": "Proposal 1 in Section 4 of R1-2608695 for Rel-19, TS38.214, Clause 5.2.5 is endorsed.",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx"
+   }
+  ]
+ }
+]

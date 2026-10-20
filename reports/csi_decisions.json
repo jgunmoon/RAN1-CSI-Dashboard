@@ -55,8 +55,40 @@
    ],
    "keywords": [
     "CSI-RS",
-    "BFR"
+    "BFR",
+    "CSI"
    ]
+  },
+  {
+   "id": "RAN1#122:8.1:001",
+   "meeting": "RAN1#122",
+   "agenda_item": "8.1",
+   "agenda_title": "Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface",
+   "agenda_path": [
+    {
+     "number": "8",
+     "title": "Maintenance on Rel-19 NR and E-UTRA"
+    },
+    {
+     "number": "8.1",
+     "title": "Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface"
+    }
+   ],
+   "type": "Agreement",
+   "text": "TP included in R1-250xxxx for TR 38.843 is endorsed in principle.\nCorresponding CR in R1-2506677 for TR 38.843 is endorsed.",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#122 eom",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip",
+    "discussion": "122-R19-AI/ML"
+   },
+   "scope": "agenda",
+   "topic": "aiml",
+   "tags": [
+    "aiml"
+   ],
+   "keywords": []
   },
   {
    "id": "RAN1#122:8.1:002",
@@ -84,14 +116,46 @@
     "tdoc": "R1-2506557",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506557.zip"
    },
-   "scope": "candidate",
-   "topic": "report",
+   "scope": "agenda",
+   "topic": "aiml",
    "tags": [
+    "aiml",
     "report"
    ],
-   "keywords": [
-    "TS 38.214 5.2.1.6"
-   ]
+   "keywords": []
+  },
+  {
+   "id": "RAN1#122:8.1:003",
+   "meeting": "RAN1#122",
+   "agenda_item": "8.1",
+   "agenda_title": "Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface",
+   "agenda_path": [
+    {
+     "number": "8",
+     "title": "Maintenance on Rel-19 NR and E-UTRA"
+    },
+    {
+     "number": "8.1",
+     "title": "Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface"
+    }
+   ],
+   "type": "Agreement",
+   "text": "The Draft CR in R1-2506171 for TR 38.843 is endorsed.",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#122 eom",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip",
+    "discussion": "122-R19-AI/ML",
+    "tdoc": "R1-2506171",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506171.zip"
+   },
+   "scope": "agenda",
+   "topic": "aiml",
+   "tags": [
+    "aiml"
+   ],
+   "keywords": []
   },
   {
    "id": "RAN1#122:8.1.1:001",
@@ -1903,6 +1967,7 @@
    "keywords": [
     "CSI-RS",
     "CSI-Report",
+    "CSI",
     "TS 38.214 5.2.1.4"
    ]
   },
@@ -1941,7 +2006,8 @@
    ],
    "keywords": [
     "CSI report",
-    "SRS"
+    "SRS",
+    "CSI"
    ]
   },
   {
@@ -1982,6 +2048,7 @@
     "CSI-RS",
     "CSI report",
     "SRS",
+    "CSI",
     "TS 38.214 5.2.1.4.1"
    ]
   },
@@ -2024,6 +2091,7 @@
     "CSI-RS",
     "TCI",
     "SRS",
+    "CSI",
     "TS 38.214 5.2.1.5.2"
    ]
   },
@@ -2067,6 +2135,7 @@
     "CSI-Report",
     "L1-RSRP",
     "SRS",
+    "CSI",
     "TS 38.214 5.2.1.4.1"
    ]
   },
@@ -2111,7 +2180,8 @@
     "Codebook",
     "CQI",
     "L1-RSRP",
-    "SRS"
+    "SRS",
+    "CSI"
    ]
   },
   {
@@ -2150,6 +2220,7 @@
    "keywords": [
     "CSI Report",
     "SRS",
+    "CSI",
     "TS 38.214 5.2.1.4"
    ]
   },
@@ -2189,6 +2260,7 @@
    ],
    "keywords": [
     "CSI report",
+    "CSI",
     "TS 38.214 5.2.1.4"
    ]
   },
@@ -2228,7 +2300,8 @@
     "csirs"
    ],
    "keywords": [
-    "CSI-RS"
+    "CSI-RS",
+    "CSI"
    ]
   },
   {
@@ -2305,44 +2378,6 @@
    ],
    "keywords": [
     "TCI"
-   ]
-  },
-  {
-   "id": "RAN1#122:8.5.2:002",
-   "meeting": "RAN1#122",
-   "agenda_item": "8.5.2",
-   "agenda_title": "On-demand SIB1 for idle/inactive mode Ues",
-   "agenda_path": [
-    {
-     "number": "8",
-     "title": "Maintenance on Rel-19 NR and E-UTRA"
-    },
-    {
-     "number": "8.5",
-     "title": "Maintenance on Enhancements of network energy savings for NR"
-    },
-    {
-     "number": "8.5.2",
-     "title": "On-demand SIB1 for idle/inactive mode Ues"
-    }
-   ],
-   "type": "Agreement",
-   "text": "Adopt the following TP for Clause 5.3.2 and 6.3.3.1 in TS38.211 to clarify the PRACH transmission for SIB1 request.\n--------------------------------- start of TP for 38.211-------------------------------------\n5.3.2\tOFDM baseband signal generation for PRACH\n<omitted text>\n-\t is the subcarrier spacing of the initial uplink bandwidth part during initial access. If the PRACH transmission is for a candidate cell  is provided by ltm-PRACH-SubcarrierSpacing in EarlyUL-SyncConfig. Otherwise,  is the subcarrier spacing of the active uplink bandwidth part;\n-\t is the largest  value among the subcarrier spacing configurations by the higher-layer parameter scs-SpecificCarrierList;\n-\t is the lowest numbered resource block of the initial uplink bandwidth part and is derived by the higher-layer parameter initialUplinkBWP or initialUplinkBWP-RedCap during initial access and from the higher-layer parameters bwp-GenericParameters in EarlyUL-SyncConfig if the PRACH transmission is for a candidate cell. Otherwise,  is the lowest numbered resource block of the active uplink bandwidth part and is derived by the higher-layer parameter BWP-Uplink;\n<omitted text>\n6.3.3.1\tSequence generation\n<omitted text>\nThere are 64 preambles defined in each time-frequency PRACH occasion, enumerated in increasing order of first increasing cyclic shift  of a logical root sequence, and then in increasing order of the logical root sequence index, starting with the index obtained from the higher-layer parameter prach-RootSequenceIndex or rootSequenceIndex-BFR or by msgA-PRACH-RootSequenceIndex if configured and a type-2 random-access procedure is initiated as described in clause 8.1 of [5, TS 38.213] or by prach-RootSequenceIndex in EarlyUL-SyncConfig if the PRACH transmission is for a candidate cell or. Additional preamble sequences, in case 64 preambles cannot be generated from a single root Zadoff-Chu sequence, are obtained from the root sequences with the consecutive logical indexes until all the 64 sequences are found. The logical root sequence order is cyclic; the logical index 0 is consecutive to . The sequence number  is obtained from the logical root sequence index according to Tables 6.3.3.1-3 to 6.3.3.1-4B.\n--------------------------------- end of TP for 38.211-------------------------------------",
-   "ffs": [],
-   "source": {
-    "doc": "Chair notes RAN1#122 eom",
-    "kind": "chairman_note",
-    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip",
-    "tdoc": "R1-2506400",
-    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506400.zip"
-   },
-   "scope": "candidate",
-   "topic": "beam",
-   "tags": [
-    "beam"
-   ],
-   "keywords": [
-    "BFR"
    ]
   },
   {
@@ -2453,6 +2488,7 @@
     "CSI-RS",
     "CSI report",
     "CQI",
+    "CSI",
     "TS 38.214 5.2.4"
    ]
   },
@@ -2491,7 +2527,8 @@
    ],
    "keywords": [
     "CSI-RS",
-    "TCI"
+    "TCI",
+    "CSI"
    ]
   },
   {
@@ -2530,6 +2567,7 @@
    "keywords": [
     "CSI-RS",
     "CSI report",
+    "CSI",
     "TS 38.214 5.2.4"
    ]
   },
@@ -2573,6 +2611,7 @@
     "codebook",
     "PMI",
     "CQI",
+    "CSI",
     "TS 38.214 5.2.4"
    ]
   },
@@ -2647,7 +2686,8 @@
    ],
    "keywords": [
     "CSI-RS",
-    "CSI acquisition"
+    "CSI acquisition",
+    "CSI"
    ]
   },
   {
@@ -2687,7 +2727,8 @@
     "CSI-RS",
     "CSI-Report",
     "CSI acquisition",
-    "CQI"
+    "CQI",
+    "CSI"
    ]
   },
   {
@@ -2724,7 +2765,8 @@
     "csirs"
    ],
    "keywords": [
-    "CSI acquisition"
+    "CSI acquisition",
+    "CSI"
    ]
   },
   {
@@ -2762,7 +2804,8 @@
    ],
    "keywords": [
     "CSI-RS",
-    "CSI acquisition"
+    "CSI acquisition",
+    "CSI"
    ]
   },
   {
@@ -2800,7 +2843,8 @@
    ],
    "keywords": [
     "CSI-RS",
-    "CSI acquisition"
+    "CSI acquisition",
+    "CSI"
    ]
   },
   {
@@ -2840,7 +2884,8 @@
    ],
    "keywords": [
     "CSI-RS",
-    "SRS"
+    "SRS",
+    "CSI"
    ]
   },
   {
@@ -2903,14 +2948,13 @@
     "tdoc": "R1-2506605",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506605.zip"
    },
-   "scope": "candidate",
-   "topic": "report",
+   "scope": "agenda",
+   "topic": "aiml",
    "tags": [
+    "aiml",
     "report"
    ],
-   "keywords": [
-    "CSI report"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#122:9.1:002",
@@ -2937,15 +2981,13 @@
     "tdoc": "R1-2506605",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506605.zip"
    },
-   "scope": "candidate",
-   "topic": "beam",
+   "scope": "agenda",
+   "topic": "aiml",
    "tags": [
+    "aiml",
     "beam"
    ],
-   "keywords": [
-    "beam management",
-    "L1-RSRP"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#122:9.1:003",
@@ -2972,16 +3014,47 @@
     "tdoc": "R1-2506605",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506605.zip"
    },
-   "scope": "candidate",
-   "topic": "report",
+   "scope": "agenda",
+   "topic": "aiml",
    "tags": [
+    "aiml",
     "report",
     "csirs"
    ],
-   "keywords": [
-    "CSI-RS",
-    "CSI report"
-   ]
+   "keywords": []
+  },
+  {
+   "id": "RAN1#122:9.1:004",
+   "meeting": "RAN1#122",
+   "agenda_item": "9.1",
+   "agenda_title": "UE features for AI/ML for NR Air Interface",
+   "agenda_path": [
+    {
+     "number": "9",
+     "title": "Rel-19 UE Features"
+    },
+    {
+     "number": "9.1",
+     "title": "UE features for AI/ML for NR Air Interface"
+    }
+   ],
+   "type": "Agreement",
+   "text": "Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown\n| 58. NR_AIML_air | 58-1-3 | UE-side beam prediction for BM Case1 with predicted RSRP [for inference] | 1. Support of beam prediction, reporting of predicted beam index and predicted RSRP, for BM-Case1 [for inference] 2. Supported maximum number of predicted beams with RSRP in each reporting instance | 58-1-2 | yes | n/a | UE-side beam prediction for BM Case 1 with predicted RSRP [for inference] is not supported | FFS | FFS | FFS | FFS | Component 2 candidate values: {1, 2, 3, 4} FFS: CPU/AIMLPU related information | Optional with capability signalling |",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#122 eom",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip",
+    "tdoc": "R1-2506605",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506605.zip"
+   },
+   "scope": "agenda",
+   "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
+   "keywords": []
   },
   {
    "id": "RAN1#122:9.1:005",
@@ -3008,16 +3081,47 @@
     "tdoc": "R1-2506605",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506605.zip"
    },
-   "scope": "candidate",
-   "topic": "report",
+   "scope": "agenda",
+   "topic": "aiml",
    "tags": [
+    "aiml",
     "report",
     "csirs"
    ],
-   "keywords": [
-    "CSI-RS",
-    "CSI report"
-   ]
+   "keywords": []
+  },
+  {
+   "id": "RAN1#122:9.1:006",
+   "meeting": "RAN1#122",
+   "agenda_item": "9.1",
+   "agenda_title": "UE features for AI/ML for NR Air Interface",
+   "agenda_path": [
+    {
+     "number": "9",
+     "title": "Rel-19 UE Features"
+    },
+    {
+     "number": "9.1",
+     "title": "UE features for AI/ML for NR Air Interface"
+    }
+   ],
+   "type": "Agreement",
+   "text": "Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown\n| 58. NR_AIML_air | 58-1-5 | UE-side beam prediction for BM-Case2 with predicted RSRP [for inference] | 1. Support of beam prediction, reporting of predicted beams and predicted RSRP, for BM-Case2 (spatial and time domain beam prediction) [for inference] | 58-1-4 | yes | n/a | UE-side beam prediction for BM-Case2 [for inference] is not supported | FFS | FFS | FFS | FFS | FFS: CPU/AIMLPU related information | Optional with capability signalling |",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#122 eom",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip",
+    "tdoc": "R1-2506605",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506605.zip"
+   },
+   "scope": "agenda",
+   "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
+   "keywords": []
   },
   {
    "id": "RAN1#122:9.1:007",
@@ -3044,14 +3148,13 @@
     "tdoc": "R1-2506605",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506605.zip"
    },
-   "scope": "candidate",
-   "topic": "csirs",
+   "scope": "agenda",
+   "topic": "aiml",
    "tags": [
+    "aiml",
     "csirs"
    ],
-   "keywords": [
-    "CSI-RS"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#122:9.1:008",
@@ -3078,21 +3181,14 @@
     "tdoc": "R1-2506605",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506605.zip"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "aiml",
    "tags": [
     "aiml",
     "report",
     "csirs"
    ],
-   "keywords": [
-    "CSI-RS",
-    "CSI report",
-    "CSI prediction",
-    "codebook",
-    "PMI",
-    "CQI"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#122:9.1:009",
@@ -3119,18 +3215,14 @@
     "tdoc": "R1-2506605",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506605.zip"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "aiml",
    "tags": [
     "aiml",
     "report",
     "csirs"
    ],
-   "keywords": [
-    "CSI-RS",
-    "CSI prediction",
-    "codebook"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#122:9.1:010",
@@ -3157,19 +3249,14 @@
     "tdoc": "R1-2506605",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506605.zip"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "aiml",
    "tags": [
     "aiml",
     "report",
     "csirs"
    ],
-   "keywords": [
-    "CSI-RS",
-    "CSI report",
-    "CSI prediction",
-    "PMI"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#122:9.1:011",
@@ -3196,15 +3283,13 @@
     "tdoc": "R1-2506605",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506605.zip"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "aiml",
    "tags": [
     "aiml",
     "report"
    ],
-   "keywords": [
-    "CSI prediction"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#122:9.1:012",
@@ -3231,15 +3316,13 @@
     "tdoc": "R1-2506605",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506605.zip"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "aiml",
    "tags": [
     "aiml",
     "report"
    ],
-   "keywords": [
-    "CSI prediction"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#122:9.1:024",
@@ -3266,16 +3349,14 @@
     "tdoc": "R1-2506605",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506605.zip"
    },
-   "scope": "candidate",
-   "topic": "report",
+   "scope": "agenda",
+   "topic": "aiml",
    "tags": [
+    "aiml",
     "report",
     "csirs"
    ],
-   "keywords": [
-    "CSI-RS",
-    "CSI report"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#122:9.1:025",
@@ -3302,16 +3383,78 @@
     "tdoc": "R1-2506605",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506605.zip"
    },
-   "scope": "candidate",
-   "topic": "report",
+   "scope": "agenda",
+   "topic": "aiml",
    "tags": [
+    "aiml",
     "report",
     "csirs"
    ],
-   "keywords": [
-    "CSI-RS",
-    "CSI report"
-   ]
+   "keywords": []
+  },
+  {
+   "id": "RAN1#122:9.1:026",
+   "meeting": "RAN1#122",
+   "agenda_item": "9.1",
+   "agenda_title": "UE features for AI/ML for NR Air Interface",
+   "agenda_path": [
+    {
+     "number": "9",
+     "title": "Rel-19 UE Features"
+    },
+    {
+     "number": "9.1",
+     "title": "UE features for AI/ML for NR Air Interface"
+    }
+   ],
+   "type": "Agreement",
+   "text": "Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown\n| 58. NR_AIML_air | 58-1-3 | UE-side beam prediction for BM Case1 with predicted RSRP [for inference] | 1. Support of beam prediction, reporting of predicted beam index and predicted RSRP, for BM-Case1 [for inference] 2. Supported maximum number of predicted beams with RSRP in each reporting instance | 58-1-2 | yes | n/a | UE-side beam prediction for BM Case 1 with predicted RSRP [for inference] is not supported | FFS Per UE | FFS No | FFS No | FFS No | Component 2 candidate values: {1, 2, 3, 4} | Optional with capability signalling |",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#122 eom",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip",
+    "tdoc": "R1-2506605",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506605.zip"
+   },
+   "scope": "agenda",
+   "topic": "aiml",
+   "tags": [
+    "aiml"
+   ],
+   "keywords": []
+  },
+  {
+   "id": "RAN1#122:9.1:027",
+   "meeting": "RAN1#122",
+   "agenda_item": "9.1",
+   "agenda_title": "UE features for AI/ML for NR Air Interface",
+   "agenda_path": [
+    {
+     "number": "9",
+     "title": "Rel-19 UE Features"
+    },
+    {
+     "number": "9.1",
+     "title": "UE features for AI/ML for NR Air Interface"
+    }
+   ],
+   "type": "Agreement",
+   "text": "Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown\n| 58. NR_AIML_air | 58-1-5 | UE-side beam prediction for BM-Case2 with predicted RSRP [for inference] | 1. Support of beam prediction, reporting of predicted beams and predicted RSRP, for BM-Case2 (spatial and time domain beam prediction) [for inference] | 58-1-4 | yes | n/a | UE-side beam prediction for BM-Case2 [for inference] is not supported | FFS Per UE | FFS No | FFS No | FFS No |  | Optional with capability signalling |",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#122 eom",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip",
+    "tdoc": "R1-2506605",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506605.zip"
+   },
+   "scope": "agenda",
+   "topic": "aiml",
+   "tags": [
+    "aiml"
+   ],
+   "keywords": []
   },
   {
    "id": "RAN1#122:9.1:028",
@@ -3338,14 +3481,13 @@
     "tdoc": "R1-2506605",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506605.zip"
    },
-   "scope": "candidate",
-   "topic": "csirs",
+   "scope": "agenda",
+   "topic": "aiml",
    "tags": [
+    "aiml",
     "csirs"
    ],
-   "keywords": [
-    "CSI-RS"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#122:9.1:029",
@@ -3372,15 +3514,13 @@
     "tdoc": "R1-2506605",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506605.zip"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "aiml",
    "tags": [
     "aiml",
     "csirs"
    ],
-   "keywords": [
-    "CSI-RS"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#122:9.1:030",
@@ -3407,15 +3547,13 @@
     "tdoc": "R1-2506605",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506605.zip"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "aiml",
    "tags": [
     "aiml",
     "report"
    ],
-   "keywords": [
-    "CSI prediction"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#122:9.2:001",
@@ -5031,7 +5169,8 @@
     "csirs"
    ],
    "keywords": [
-    "CSI-RS"
+    "CSI-RS",
+    "CSI"
    ]
   },
   {
@@ -5067,7 +5206,8 @@
    ],
    "keywords": [
     "CSI-RS",
-    "CSI report"
+    "CSI report",
+    "CSI"
    ]
   },
   {
@@ -5103,7 +5243,8 @@
    ],
    "keywords": [
     "CSI-RS",
-    "CSI report"
+    "CSI report",
+    "CSI"
    ]
   },
   {
@@ -5139,7 +5280,8 @@
    ],
    "keywords": [
     "CSI-RS",
-    "CSI report"
+    "CSI report",
+    "CSI"
    ]
   },
   {
@@ -5175,7 +5317,8 @@
    ],
    "keywords": [
     "CSI-RS",
-    "CSI report"
+    "CSI report",
+    "CSI"
    ]
   },
   {
@@ -5211,7 +5354,8 @@
    ],
    "keywords": [
     "CSI-RS",
-    "CSI report"
+    "CSI report",
+    "CSI"
    ]
   },
   {
@@ -5247,7 +5391,8 @@
    ],
    "keywords": [
     "CSI-RS",
-    "TCI"
+    "TCI",
+    "CSI"
    ]
   },
   {
@@ -5283,7 +5428,8 @@
    ],
    "keywords": [
     "CSI-RS",
-    "TCI"
+    "TCI",
+    "CSI"
    ]
   },
   {
@@ -5319,7 +5465,8 @@
    ],
    "keywords": [
     "CSI-RS",
-    "TCI"
+    "TCI",
+    "CSI"
    ]
   },
   {
@@ -5355,7 +5502,8 @@
    ],
    "keywords": [
     "CSI-RS",
-    "TCI"
+    "TCI",
+    "CSI"
    ]
   },
   {
@@ -5393,7 +5541,8 @@
    "keywords": [
     "CSI-RS",
     "CSI report",
-    "L1-RSRP"
+    "L1-RSRP",
+    "CSI"
    ]
   },
   {
@@ -5429,7 +5578,8 @@
    ],
    "keywords": [
     "CSI-RS",
-    "CSI Report"
+    "CSI Report",
+    "CSI"
    ]
   },
   {
@@ -6609,15 +6759,13 @@
     "tdoc": "R1-2507998",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2507998.zip"
    },
-   "scope": "candidate",
-   "topic": "report",
+   "scope": "agenda",
+   "topic": "aiml",
    "tags": [
+    "aiml",
     "report"
    ],
-   "keywords": [
-    "CSI report",
-    "TS 38.214 5.2.1.4.3"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#122bis:8.1:002",
@@ -6645,20 +6793,15 @@
     "tdoc": "R1-2507998",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2507998.zip"
    },
-   "scope": "candidate",
-   "topic": "srs",
+   "scope": "agenda",
+   "topic": "aiml",
    "tags": [
+    "aiml",
     "srs",
     "beam",
     "report"
    ],
-   "keywords": [
-    "PMI",
-    "CQI",
-    "L1-RSRP",
-    "SRS",
-    "TS 38.214 6.2.1.3"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#122bis:8.1:003",
@@ -6686,19 +6829,81 @@
     "tdoc": "R1-2507998",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2507998.zip"
    },
-   "scope": "candidate",
-   "topic": "srs",
+   "scope": "agenda",
+   "topic": "aiml",
    "tags": [
+    "aiml",
     "srs",
     "beam",
     "report"
    ],
-   "keywords": [
-    "CSI report",
-    "L1-RSRP",
-    "SRS",
-    "TS 38.214 6.2.1"
-   ]
+   "keywords": []
+  },
+  {
+   "id": "RAN1#122bis:8.1:004",
+   "meeting": "RAN1#122bis",
+   "agenda_item": "8.1",
+   "agenda_title": "Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface",
+   "agenda_path": [
+    {
+     "number": "8",
+     "title": "Maintenance on Rel-19 NR and E-UTRA"
+    },
+    {
+     "number": "8.1",
+     "title": "Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface"
+    }
+   ],
+   "type": "Agreement",
+   "text": "Regarding the RAN2 LS from R1-2506715, for the UE-side candidate data collection configuration for BM-Case2, include the following IEs along with the already agreed IEs in RAN2:\n- TimeGap-r19, i.e., the expected time gap between two consecutive predicted time instances and between the reference time and the earliest predicted time instance.\n- nroftimeinstance-r19, i.e., number of expected predicted time instances.",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#122b eom4",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx",
+    "discussion": "122bis-R19-AI/ML",
+    "tdoc": "R1-2507998",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2507998.zip"
+   },
+   "scope": "agenda",
+   "topic": "aiml",
+   "tags": [
+    "aiml"
+   ],
+   "keywords": []
+  },
+  {
+   "id": "RAN1#122bis:8.1:005",
+   "meeting": "RAN1#122bis",
+   "agenda_item": "8.1",
+   "agenda_title": "Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface",
+   "agenda_path": [
+    {
+     "number": "8",
+     "title": "Maintenance on Rel-19 NR and E-UTRA"
+    },
+    {
+     "number": "8.1",
+     "title": "Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface"
+    }
+   ],
+   "type": "Agreement",
+   "text": "Regarding the RAN2 LS R1-2506720, the answer to the question in the LS is as below:\n| From RAN1 perspective, Option 2 is best option and can resolve the issue. No additional RAN 1 impact was identified for Option 2. |",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#122b eom4",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx",
+    "discussion": "122bis-R19-AI/ML",
+    "tdoc": "R1-2507999",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2507999.zip"
+   },
+   "scope": "agenda",
+   "topic": "aiml",
+   "tags": [
+    "aiml"
+   ],
+   "keywords": []
   },
   {
    "id": "RAN1#122bis:8.1:006",
@@ -6726,20 +6931,47 @@
     "tdoc": "R1-2507999",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2507999.zip"
    },
-   "scope": "candidate",
-   "topic": "report",
+   "scope": "agenda",
+   "topic": "aiml",
    "tags": [
+    "aiml",
     "report",
     "csirs"
    ],
-   "keywords": [
-    "CSI-RS",
-    "CSI-Report",
-    "codebook",
-    "PMI",
-    "CQI",
-    "TS 38.214 5.2.1.4.2"
-   ]
+   "keywords": []
+  },
+  {
+   "id": "RAN1#122bis:8.1:007",
+   "meeting": "RAN1#122bis",
+   "agenda_item": "8.1",
+   "agenda_title": "Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface",
+   "agenda_path": [
+    {
+     "number": "8",
+     "title": "Maintenance on Rel-19 NR and E-UTRA"
+    },
+    {
+     "number": "8.1",
+     "title": "Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface"
+    }
+   ],
+   "type": "Agreement",
+   "text": "The draft response LS in R1-2508121 is endorsed. Final LS in R1-2508122",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#122b eom4",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx",
+    "discussion": "122bis-R19-AI/ML",
+    "tdoc": "R1-2507999",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2507999.zip"
+   },
+   "scope": "agenda",
+   "topic": "aiml",
+   "tags": [
+    "aiml"
+   ],
+   "keywords": []
   },
   {
    "id": "RAN1#122bis:8.1:010",
@@ -6767,17 +6999,14 @@
     "tdoc": "R1-2508061",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508061.zip"
    },
-   "scope": "candidate",
-   "topic": "report",
+   "scope": "agenda",
+   "topic": "aiml",
    "tags": [
+    "aiml",
     "report",
     "csirs"
    ],
-   "keywords": [
-    "CSI-RS",
-    "CSI report",
-    "TS 38.214 5.1.6.1"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#122bis:8.1:011",
@@ -6807,15 +7036,13 @@
     "tdoc": "R1-2508061",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508061.zip"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "aiml",
    "tags": [
     "aiml",
     "report"
    ],
-   "keywords": [
-    "CSI prediction"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#122bis:8.1:012",
@@ -6843,19 +7070,14 @@
     "tdoc": "R1-2508062",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508062.zip"
    },
-   "scope": "candidate",
-   "topic": "report",
+   "scope": "agenda",
+   "topic": "aiml",
    "tags": [
+    "aiml",
     "report",
     "csirs"
    ],
-   "keywords": [
-    "CSI-RS",
-    "CSI report",
-    "codebook",
-    "PMI",
-    "TS 38.214 5.2.1.4.6"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#122bis:8.1:013",
@@ -6883,23 +7105,14 @@
     "tdoc": "R1-2508062",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508062.zip"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "aiml",
    "tags": [
     "aiml",
     "report",
     "csirs"
    ],
-   "keywords": [
-    "CSI-RS",
-    "CSI-Report",
-    "CSI prediction",
-    "codebook",
-    "TS 38.214 5.2.1.4.2",
-    "TS 38.214 5.2.1.4.6",
-    "TS 38.214 5.2.1.6",
-    "TS 38.214 5.2.5"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#122bis:8.1:014",
@@ -6927,16 +7140,13 @@
     "tdoc": "R1-2508062",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508062.zip"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "aiml",
    "tags": [
     "aiml",
     "report"
    ],
-   "keywords": [
-    "CSI prediction",
-    "Codebook"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#122bis:8.1:015",
@@ -6964,15 +7174,13 @@
     "tdoc": "R1-2508142",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508142.zip"
    },
-   "scope": "candidate",
-   "topic": "report",
+   "scope": "agenda",
+   "topic": "aiml",
    "tags": [
+    "aiml",
     "report"
    ],
-   "keywords": [
-    "CSI-Report",
-    "Codebook"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#122bis:8.2:001",
@@ -7667,7 +7875,8 @@
     "csirs"
    ],
    "keywords": [
-    "CSI-RS"
+    "CSI-RS",
+    "CSI"
    ]
   },
   {
@@ -7733,7 +7942,8 @@
     "csirs"
    ],
    "keywords": [
-    "CSI-RS"
+    "CSI-RS",
+    "CSI"
    ]
   },
   {
@@ -7773,6 +7983,7 @@
     "CSI Report",
     "TCI",
     "SRS",
+    "CSI",
     "TS 38.214 5.2.1.5.1"
    ]
   },
@@ -7807,6 +8018,7 @@
    ],
    "keywords": [
     "CSI-Report",
+    "CSI",
     "TS 38.214 5.2.1.4.8"
    ]
   },
@@ -7843,6 +8055,7 @@
    "keywords": [
     "CSI-Report",
     "SRS",
+    "CSI",
     "TS 38.214 5.2.2.6"
    ]
   },
@@ -7916,6 +8129,7 @@
     "CSI Report",
     "TCI",
     "SRS",
+    "CSI",
     "TS 38.214 5.2.1.5.1"
    ]
   },
@@ -7951,7 +8165,8 @@
     "report"
    ],
    "keywords": [
-    "CSI report"
+    "CSI report",
+    "CSI"
    ]
   },
   {
@@ -8020,7 +8235,8 @@
    ],
    "keywords": [
     "CSI-RS",
-    "TCI"
+    "TCI",
+    "CSI"
    ]
   },
   {
@@ -8090,6 +8306,7 @@
    "keywords": [
     "CSI-RS",
     "CSI-Report",
+    "CSI",
     "TS 38.214 5.2.1.2"
    ]
   },
@@ -8127,6 +8344,7 @@
    "keywords": [
     "CSI-RS",
     "CSI report",
+    "CSI",
     "TS 38.214 5.2.1.5.2"
    ]
   },
@@ -8165,6 +8383,40 @@
    ]
   },
   {
+   "id": "RAN1#122bis:8.8:005",
+   "meeting": "RAN1#122bis",
+   "agenda_item": "8.8",
+   "agenda_title": "Maintenance on others",
+   "agenda_path": [
+    {
+     "number": "8",
+     "title": "Maintenance on Rel-19 NR and E-UTRA"
+    },
+    {
+     "number": "8.8",
+     "title": "Maintenance on others"
+    }
+   ],
+   "type": "Agreement",
+   "text": "- In case PUSCH repetition Type-B or Type-A is applied for first CG-PUSCH or DG-PUSCH, reuse the legacy rule for CSI multiplexing and CSI for target candidate cell is transmitted on the first actual repetition for Type-B or the first repetition for Type-A.",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#122b eom4",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx",
+    "tdoc": "R1-2508156",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508156.zip"
+   },
+   "scope": "candidate",
+   "topic": "report",
+   "tags": [
+    "report"
+   ],
+   "keywords": [
+    "CSI"
+   ]
+  },
+  {
    "id": "RAN1#122bis:8.8:006",
    "meeting": "RAN1#122bis",
    "agenda_item": "8.8",
@@ -8195,7 +8447,8 @@
     "csirs"
    ],
    "keywords": [
-    "CSI-RS"
+    "CSI-RS",
+    "CSI"
    ]
   },
   {
@@ -8230,6 +8483,7 @@
    ],
    "keywords": [
     "CSI Report",
+    "CSI",
     "TS 38.214 5.2.4"
    ]
   },
@@ -8341,6 +8595,7 @@
     "PMI",
     "CQI",
     "SRS",
+    "CSI",
     "TS 38.214 5.2.4"
    ]
   },
@@ -8437,14 +8692,13 @@
     "tdoc": "R1-2508080",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508080.zip"
    },
-   "scope": "candidate",
-   "topic": "report",
+   "scope": "agenda",
+   "topic": "aiml",
    "tags": [
+    "aiml",
     "report"
    ],
-   "keywords": [
-    "CSI report"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#122bis:9.1:007",
@@ -8471,15 +8725,13 @@
     "tdoc": "R1-2508080",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508080.zip"
    },
-   "scope": "candidate",
-   "topic": "beam",
+   "scope": "agenda",
+   "topic": "aiml",
    "tags": [
+    "aiml",
     "beam"
    ],
-   "keywords": [
-    "beam management",
-    "L1-RSRP"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#122bis:9.1:008",
@@ -8506,16 +8758,46 @@
     "tdoc": "R1-2508080",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508080.zip"
    },
-   "scope": "candidate",
-   "topic": "report",
+   "scope": "agenda",
+   "topic": "aiml",
    "tags": [
+    "aiml",
     "report",
     "csirs"
    ],
-   "keywords": [
-    "CSI-RS",
-    "CSI report"
-   ]
+   "keywords": []
+  },
+  {
+   "id": "RAN1#122bis:9.1:009",
+   "meeting": "RAN1#122bis",
+   "agenda_item": "9.1",
+   "agenda_title": "UE features for AI/ML for NR Air Interface",
+   "agenda_path": [
+    {
+     "number": "9",
+     "title": "Rel-19 UE Features"
+    },
+    {
+     "number": "9.1",
+     "title": "UE features for AI/ML for NR Air Interface"
+    }
+   ],
+   "type": "Agreement",
+   "text": "Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown\n| 58. NR_AIML_air | 58-1-3 | UE-side beam prediction for BM Case1 with predicted RSRP for inference | 1. Support of beam prediction, reporting of predicted beam index and predicted RSRP, for BM-Case1 for inference 2. Supported maximum number of predicted beams with RSRP in each reporting instance | 58-1-2 | yes | n/a | UE-side beam prediction for BM Case 1 with predicted RSRP for inference is not supported | Per UE Per band | No n/a | No n/a | No n/a | Component 2 candidate values: {1, 2, 3, 4} | Optional with capability signalling |",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#122b eom4",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx",
+    "tdoc": "R1-2508080",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508080.zip"
+   },
+   "scope": "agenda",
+   "topic": "aiml",
+   "tags": [
+    "aiml"
+   ],
+   "keywords": []
   },
   {
    "id": "RAN1#122bis:9.1:010",
@@ -8542,16 +8824,46 @@
     "tdoc": "R1-2508080",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508080.zip"
    },
-   "scope": "candidate",
-   "topic": "report",
+   "scope": "agenda",
+   "topic": "aiml",
    "tags": [
+    "aiml",
     "report",
     "csirs"
    ],
-   "keywords": [
-    "CSI-RS",
-    "CSI report"
-   ]
+   "keywords": []
+  },
+  {
+   "id": "RAN1#122bis:9.1:011",
+   "meeting": "RAN1#122bis",
+   "agenda_item": "9.1",
+   "agenda_title": "UE features for AI/ML for NR Air Interface",
+   "agenda_path": [
+    {
+     "number": "9",
+     "title": "Rel-19 UE Features"
+    },
+    {
+     "number": "9.1",
+     "title": "UE features for AI/ML for NR Air Interface"
+    }
+   ],
+   "type": "Agreement",
+   "text": "Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown\n| 58. NR_AIML_air | 58-1-5 | UE-side beam prediction for BM-Case2 with predicted RSRP for inference | 1. Support of beam prediction, reporting of predicted beams and predicted RSRP, for BM-Case2 (spatial and time domain beam prediction) for inference 2. Supported maximum number of predicted beams in each predicted time instance 3. Supported maximum number of predicted time instances 4. Supported maximum total number of reported predicted beams for predicted time instances in one report | 58-1-4 | yes | n/a | UE-side beam prediction for BM-Case2 for inference is not supported | Per UE Per band | No n/a | No n/a | No n/a | Component 2 candidate values: {1, 2, 3, 4} Component 3 candidate values: {1, 2, 4, 8} Component 4 candidate values: {1, 2, 3, 4, 8, 12, 16, 32} | Optional with capability signalling |",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#122b eom4",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx",
+    "tdoc": "R1-2508080",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508080.zip"
+   },
+   "scope": "agenda",
+   "topic": "aiml",
+   "tags": [
+    "aiml"
+   ],
+   "keywords": []
   },
   {
    "id": "RAN1#122bis:9.1:012",
@@ -8578,17 +8890,14 @@
     "tdoc": "R1-2508080",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508080.zip"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "aiml",
    "tags": [
     "aiml",
     "report",
     "csirs"
    ],
-   "keywords": [
-    "CSI-RS",
-    "CSI report"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#122bis:9.1:013",
@@ -8615,14 +8924,13 @@
     "tdoc": "R1-2508080",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508080.zip"
    },
-   "scope": "candidate",
-   "topic": "csirs",
+   "scope": "agenda",
+   "topic": "aiml",
    "tags": [
+    "aiml",
     "csirs"
    ],
-   "keywords": [
-    "CSI-RS"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#122bis:9.1:014",
@@ -8649,19 +8957,13 @@
     "tdoc": "R1-2508080",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508080.zip"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "aiml",
    "tags": [
     "aiml",
     "report"
    ],
-   "keywords": [
-    "CSI report",
-    "CSI prediction",
-    "codebook",
-    "PMI",
-    "CQI"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#122bis:9.1:015",
@@ -8688,19 +8990,14 @@
     "tdoc": "R1-2508080",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508080.zip"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "aiml",
    "tags": [
     "aiml",
     "report",
     "csirs"
    ],
-   "keywords": [
-    "CSI-RS",
-    "CSI report",
-    "CSI prediction",
-    "PMI"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#122bis:9.1:016",
@@ -8727,15 +9024,13 @@
     "tdoc": "R1-2508080",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508080.zip"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "aiml",
    "tags": [
     "aiml",
     "report"
    ],
-   "keywords": [
-    "CSI prediction"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#122bis:9.1:017",
@@ -8762,15 +9057,13 @@
     "tdoc": "R1-2508080",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508080.zip"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "aiml",
    "tags": [
     "aiml",
     "report"
    ],
-   "keywords": [
-    "CSI prediction"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#122bis:9.1:018",
@@ -8797,14 +9090,112 @@
     "tdoc": "R1-2508080",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508080.zip"
    },
-   "scope": "candidate",
-   "topic": "report",
+   "scope": "agenda",
+   "topic": "aiml",
    "tags": [
+    "aiml",
     "report"
    ],
-   "keywords": [
-    "CSI report"
-   ]
+   "keywords": []
+  },
+  {
+   "id": "RAN1#122bis:9.1:019",
+   "meeting": "RAN1#122bis",
+   "agenda_item": "9.1",
+   "agenda_title": "UE features for AI/ML for NR Air Interface",
+   "agenda_path": [
+    {
+     "number": "9",
+     "title": "Rel-19 UE Features"
+    },
+    {
+     "number": "9.1",
+     "title": "UE features for AI/ML for NR Air Interface"
+    }
+   ],
+   "type": "Agreement",
+   "text": "In FG 58-1-2, 58-1-4, 58-3-1, 58-3-2, in the Notes column, delete the following note: “CPU” corresponds to “CPU,1” in TS 38.214, and “APU” corresponds to “CPU,x” in TS 38.214, x = 2, 3",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#122b eom4",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx",
+    "tdoc": "R1-2508080",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508080.zip"
+   },
+   "scope": "agenda",
+   "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
+   "keywords": []
+  },
+  {
+   "id": "RAN1#122bis:9.1:020",
+   "meeting": "RAN1#122bis",
+   "agenda_item": "9.1",
+   "agenda_title": "UE features for AI/ML for NR Air Interface",
+   "agenda_path": [
+    {
+     "number": "9",
+     "title": "Rel-19 UE Features"
+    },
+    {
+     "number": "9.1",
+     "title": "UE features for AI/ML for NR Air Interface"
+    }
+   ],
+   "type": "Agreement",
+   "text": "In FG 58-1-2, 58-1-4, in the notes column, for component 17 candidate values, replace “APU pool” with “CPU pool”",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#122b eom4",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx",
+    "tdoc": "R1-2508080",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508080.zip"
+   },
+   "scope": "agenda",
+   "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
+   "keywords": []
+  },
+  {
+   "id": "RAN1#122bis:9.1:021",
+   "meeting": "RAN1#122bis",
+   "agenda_item": "9.1",
+   "agenda_title": "UE features for AI/ML for NR Air Interface",
+   "agenda_path": [
+    {
+     "number": "9",
+     "title": "Rel-19 UE Features"
+    },
+    {
+     "number": "9.1",
+     "title": "UE features for AI/ML for NR Air Interface"
+    }
+   ],
+   "type": "Agreement",
+   "text": "In FGs 58-1-2, 58-1-4, 58-3-1, 58-3-2, in the notes column, replace “APU pool” with “CPU pool”",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#122b eom4",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx",
+    "tdoc": "R1-2508080",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508080.zip"
+   },
+   "scope": "agenda",
+   "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
+   "keywords": []
   },
   {
    "id": "RAN1#122bis:9.1:022",
@@ -8831,16 +9222,14 @@
     "tdoc": "R1-2508080",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508080.zip"
    },
-   "scope": "candidate",
-   "topic": "report",
+   "scope": "agenda",
+   "topic": "aiml",
    "tags": [
+    "aiml",
     "report",
     "csirs"
    ],
-   "keywords": [
-    "CSI-RS",
-    "CSI report"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#122bis:9.1:023",
@@ -8867,16 +9256,14 @@
     "tdoc": "R1-2508080",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508080.zip"
    },
-   "scope": "candidate",
-   "topic": "report",
+   "scope": "agenda",
+   "topic": "aiml",
    "tags": [
+    "aiml",
     "report",
     "csirs"
    ],
-   "keywords": [
-    "CSI-RS",
-    "CSI report"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#122bis:9.2:001",
@@ -10086,7 +10473,8 @@
     "csirs"
    ],
    "keywords": [
-    "CSI-RS"
+    "CSI-RS",
+    "CSI"
    ]
   },
   {
@@ -10125,7 +10513,8 @@
     "CSI-RS",
     "CSI report",
     "beam report",
-    "L1-RSRP"
+    "L1-RSRP",
+    "CSI"
    ]
   },
   {
@@ -10161,7 +10550,8 @@
    ],
    "keywords": [
     "CSI-RS",
-    "CSI report"
+    "CSI report",
+    "CSI"
    ]
   },
   {
@@ -10197,7 +10587,8 @@
    ],
    "keywords": [
     "CSI-RS",
-    "CSI report"
+    "CSI report",
+    "CSI"
    ]
   },
   {
@@ -10233,7 +10624,8 @@
    ],
    "keywords": [
     "CSI-RS",
-    "CSI report"
+    "CSI report",
+    "CSI"
    ]
   },
   {
@@ -10269,7 +10661,8 @@
    ],
    "keywords": [
     "CSI-RS",
-    "CSI report"
+    "CSI report",
+    "CSI"
    ]
   },
   {
@@ -10310,7 +10703,8 @@
     "Codebook",
     "TCI",
     "beam management",
-    "SRS"
+    "SRS",
+    "CSI"
    ]
   },
   {
@@ -11771,7 +12165,8 @@
    "keywords": [
     "codebook",
     "beamforming",
-    "SRS"
+    "SRS",
+    "CSI"
    ]
   },
   {
@@ -11895,15 +12290,47 @@
     "tdoc": "R1-2508772",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Docs/R1-2508772.zip"
    },
-   "scope": "candidate",
-   "topic": "report",
+   "scope": "agenda",
+   "topic": "aiml",
    "tags": [
+    "aiml",
     "report"
    ],
+   "keywords": []
+  },
+  {
+   "id": "RAN1#123:8.1:002",
+   "meeting": "RAN1#123",
+   "agenda_item": "8.1",
+   "agenda_title": "Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface",
+   "agenda_path": [
+    {
+     "number": "8",
+     "title": "Maintenance on Rel-19 NR and E-UTRA"
+    },
+    {
+     "number": "8.1",
+     "title": "Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface"
+    }
+   ],
+   "type": "Conclusion",
+   "text": "- No further discussion in RAN1 on APU framework for Rel-19 AI/ML positioning.",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#123 - eom3",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Inbox/Chair_notes/Chair%20notes%20RAN1%23123%20-%20eom3.docx",
+    "discussion": "123-R19-AI/ML",
+    "tdoc": "R1-2509515",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Docs/R1-2509515.zip"
+   },
+   "scope": "candidate",
+   "topic": "aiml",
+   "tags": [
+    "aiml"
+   ],
    "keywords": [
-    "CSI report",
-    "TS 38.214 5.2.1.6",
-    "TS 38.214 5.2.5"
+    "APU"
    ]
   },
   {
@@ -11932,7 +12359,7 @@
     "tdoc": "R1-2509188",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Docs/R1-2509188.zip"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "aiml",
    "tags": [
     "aiml",
@@ -11940,13 +12367,7 @@
     "report",
     "csirs"
    ],
-   "keywords": [
-    "CSI-RS",
-    "CSI report",
-    "CSI prediction",
-    "L1-RSRP",
-    "TS 38.214 5.2.1.6"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#123:8.1:005",
@@ -11974,15 +12395,13 @@
     "tdoc": "R1-2509188",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Docs/R1-2509188.zip"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "aiml",
    "tags": [
     "aiml",
     "report"
    ],
-   "keywords": [
-    "CSI-Report"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#123:8.1:006",
@@ -12010,19 +12429,81 @@
     "tdoc": "R1-2509188",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Docs/R1-2509188.zip"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "aiml",
    "tags": [
     "aiml",
     "report",
     "csirs"
    ],
-   "keywords": [
-    "CSI-RS",
-    "csi-Report",
-    "CSI prediction",
-    "PMI"
-   ]
+   "keywords": []
+  },
+  {
+   "id": "RAN1#123:8.1:007",
+   "meeting": "RAN1#123",
+   "agenda_item": "8.1",
+   "agenda_title": "Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface",
+   "agenda_path": [
+    {
+     "number": "8",
+     "title": "Maintenance on Rel-19 NR and E-UTRA"
+    },
+    {
+     "number": "8.1",
+     "title": "Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface"
+    }
+   ],
+   "type": "Conclusion",
+   "text": "There is no consensus in RAN1 to further discuss active resource/port counting value for inference report if associated performance monitoring is configured.",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#123 - eom3",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Inbox/Chair_notes/Chair%20notes%20RAN1%23123%20-%20eom3.docx",
+    "discussion": "123-R19-AI/ML",
+    "tdoc": "R1-2509188",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Docs/R1-2509188.zip"
+   },
+   "scope": "agenda",
+   "topic": "aiml",
+   "tags": [
+    "aiml"
+   ],
+   "keywords": []
+  },
+  {
+   "id": "RAN1#123:8.1:008",
+   "meeting": "RAN1#123",
+   "agenda_item": "8.1",
+   "agenda_title": "Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface",
+   "agenda_path": [
+    {
+     "number": "8",
+     "title": "Maintenance on Rel-19 NR and E-UTRA"
+    },
+    {
+     "number": "8.1",
+     "title": "Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface"
+    }
+   ],
+   "type": "Conclusion",
+   "text": "There is no consensus in RAN1 to further discuss on enhancement of timeline for AP CSI-PAI report (Z, Z’) and SP CSI-PAI report.",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#123 - eom3",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Inbox/Chair_notes/Chair%20notes%20RAN1%23123%20-%20eom3.docx",
+    "discussion": "123-R19-AI/ML",
+    "tdoc": "R1-2509188",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Docs/R1-2509188.zip"
+   },
+   "scope": "agenda",
+   "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
+   "keywords": []
   },
   {
    "id": "RAN1#123:8.2:001",
@@ -12521,7 +13002,41 @@
    ],
    "keywords": [
     "CSI report",
+    "CSI",
     "TS 38.214 5.2.1.4"
+   ]
+  },
+  {
+   "id": "RAN1#123:8.3:006",
+   "meeting": "RAN1#123",
+   "agenda_item": "8.3",
+   "agenda_title": "Maintenance on Evolution of NR duplex operation: Sub-band full duplex (SBFD)",
+   "agenda_path": [
+    {
+     "number": "8",
+     "title": "Maintenance on Rel-19 NR and E-UTRA"
+    },
+    {
+     "number": "8.3",
+     "title": "Maintenance on Evolution of NR duplex operation: Sub-band full duplex (SBFD)"
+    }
+   ],
+   "type": "Agreement",
+   "text": "Adopt the following TPs in principle to Clause 6.3.2.4.1.1, 6.3.2.4.1.2, 6.3.2.4.1.3, 6.3.2.4.1.4 and 6.3.2.4.1.5, TS 38.213.\n| 6.3.2.4.1 UCI encoded by Polar code If the higher layer parameter nrofBitsInUTO-UCI is configured, the procedures in this clause and the clauses it refers to apply by replacing CG-UCI with UTO-UCI in all the notations and texts, when applicable. 6.3.2.4.1.1 HARQ-ACK For HARQ-ACK transmission on PUSCH not using repetition type B with UL-SCH and if numberOfSlotsTBoMS is not present in the resource allocation table, or if numberOfSlotsTBoMS is present in the resource allocation table and the value of numberOfSlotsTBoMS in the row indicated by the Time domain resource assignment field in DCI is equal to 1, the number of coded modulation symbols per layer for HARQ-ACK transmission, denoted as , is determined as follows: where … - is the scheduled bandwidth of the PUSCH transmission, expressed as a number of subcarriers; - If the PUSCH transmission is in SBFD symbols, only includes subcarriers of the scheduled bandwidth that are both in the active UL BWP and in the UL sub-band, as described in Clause 6.1.2.2.1 in [6, TS 38.214]; <omitted text> For HARQ-ACK transmission on PUSCH without UL-SCH, the number of coded modulation symbols per layer for HARQ-ACK transmission, denoted as , is determined as follows: where <omitted text> - is the scheduled bandwidth of the PUSCH transmission, expressed as a number of subcarriers; - If the PUSCH transmission is in SBFD symbols, only includes subcarriers of the scheduled bandwidth that are both in the active UL BWP and in the UL sub-band, as described in Clause 6.1.2.2.1 in [6, TS 38.214]; <omitted text> 6.3.2.4.1.2 CSI part 1 For CSI part 1 transmission on PUSCH not using repetition type B with UL-SCH and if numberOfSlotsTBoMS is not present in the resource allocation table, or if numberOfSlotsTBoMS is present in the resource allocation table and the value of numberOfSlotsTBoMS in the row indicated by the Time domain resource assignment field in DCI is equal to 1, the number of coded modulation symbols per layer for CSI part 1 transmission, denoted as , is determined as follows: where … - is the scheduled bandwidth of the PUSCH transmission, expressed as a number of subcarriers; - If the PUSCH transmission is in SBFD symbols, only includes subcarriers of the scheduled bandwidth that are both in the active UL BWP and in the UL sub-band, as described in Clause 6.1.2.2.1 in [6, TS 38.214]; <omitted text> For CSI part 1 transmission on PUSCH without UL-SCH, the number of coded modulation symbols per layer for CSI part 1 transmission, denoted as , is determined as follows: if there is CSI part 2 to be transmitted on the PUSCH, else end if where <omitted text> - is the scheduled bandwidth of the PUSCH transmission, expressed as a number of subcarriers; - If the PUSCH transmission is in SBFD symbols, only includes subcarriers of the scheduled bandwidth that are both in the active UL BWP and in the UL sub-band, as described in Clause 6.1.2.2.1 in [6, TS 38.214]; <omitted text> 6.3.2.4.1.3 CSI part 2 For CSI part 2 transmission on PUSCH not using repetition type B with UL-SCH and if numberOfSlotsTBoMS is not present in the resource allocation table, or if numberOfSlotsTBoMS is present in the resource allocation table and the value of numberOfSlotsTBoMS in the row indicated by the Time domain resource assignment field in DCI is equal to 1, the number of coded modulation symbols per layer for CSI part 2 transmission, denoted as , is determined as follows: where <omitted text> - is the scheduled bandwidth of the PUSCH transmission, expressed as a number of subcarriers; - If the PUSCH transmission is in SBFD symbols, only includes subcarriers of the scheduled bandwidth that are both in the active UL BWP and in the UL sub-band, as described in Clause 6.1.2.2.1 in [6, TS 38.214]; <omitted text> For CSI part 2 transmission on PUSCH without UL-SCH, the number of coded modulation symbols per layer for CSI part 2 transmission, denoted as , is determined as follows: where - is the scheduled bandwidth of the PUSCH transmission, expressed as a number of subcarriers; - If the PUSCH transmission is in SBFD symbols, only includes subcarriers of the scheduled bandwidth that are both in the active UL BWP and in the UL sub-band, as described in Clause 6.1.2.2.1 in [6, TS 38.214]; <omitted text> 6.3.2.4.1.4 CG-UCI For CG-UCI transmission on PUSCH with UL-SCH and if numberOfSlotsTBoMS is not present in the resource allocation table, or if numberOfSlotsTBoMS is present in the resource allocation table and the value of numberOfSlotsTBoMS in the row indicated by the Time domain resource assignment field in DCI is equal to 1, the number of coded modulation symbols per layer for CG-UCI transmission, denoted as , is determined as follows: where <omitted text> - is the scheduled bandwidth of the PUSCH transmission, expressed as a number of subcarriers; - If the PUSCH transmission is in SBFD symbols, only includes subcarriers of the scheduled bandwidth that are both in the active UL BWP and in the UL sub-band, as described in Clause 6.1.2.2.1 in [6, TS 38.214]; <omitted text> 6.3.2.4.1.5 HARQ-ACK and CG-UCI For HARQ-ACK and CG-UCI transmission on PUSCH with UL-SCH and if numberOfSlotsTBoMS is not present in the resource allocation table, or if numberOfSlotsTBoMS is present in the resource allocation table and the value of numberOfSlotsTBoMS in the row indicated by the Time domain resource assignment field in DCI is equal to 1, the number of coded modulation symbols per layer for HARQ-ACK and CG-UCI transmission, denoted as , is determined as follows: where <omitted text> - is the scheduled bandwidth of the PUSCH transmission, expressed as a number of subcarriers; - If the PUSCH transmission is in SBFD symbols, only includes subcarriers of the scheduled bandwidth that are both in the active UL BWP and in the UL sub-band, as described in Clause 6.1.2.2.1 in [6, TS 38.214]; <omitted text> |",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#123 - eom3",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Inbox/Chair_notes/Chair%20notes%20RAN1%23123%20-%20eom3.docx",
+    "discussion": "123-R19-SBFD"
+   },
+   "scope": "candidate",
+   "topic": "report",
+   "tags": [
+    "report"
+   ],
+   "keywords": [
+    "CSI"
    ]
   },
   {
@@ -12693,6 +13208,7 @@
     "report"
    ],
    "keywords": [
+    "CPU",
     "TS 38.214 5.2.1.6"
    ]
   },
@@ -12731,6 +13247,7 @@
     "CSI-RS",
     "CSI report",
     "L1-RSRP",
+    "CSI",
     "TS 38.214 5.1.6.1",
     "TS 38.214 5.2.2.5",
     "TS 38.214 5.2.1.4"
@@ -12766,7 +13283,8 @@
     "csirs"
    ],
    "keywords": [
-    "CSI-RS"
+    "CSI-RS",
+    "CSI"
    ]
   },
   {
@@ -12805,6 +13323,7 @@
    ],
    "keywords": [
     "CSI report",
+    "CSI",
     "TS 38.214 5.2.2.5"
    ]
   },
@@ -12875,7 +13394,8 @@
    ],
    "keywords": [
     "CSI-RS",
-    "SRS"
+    "SRS",
+    "CSI"
    ]
   },
   {
@@ -12947,7 +13467,8 @@
    ],
    "keywords": [
     "CSI-RS",
-    "TCI"
+    "TCI",
+    "CSI"
    ]
   },
   {
@@ -12987,6 +13508,7 @@
     "CSI acquisition",
     "PMI",
     "CQI",
+    "CSI",
     "TS 38.214 5.2.1.6"
    ]
   },
@@ -13023,7 +13545,8 @@
    ],
    "keywords": [
     "CSI-RS",
-    "TCI"
+    "TCI",
+    "CSI"
    ]
   },
   {
@@ -13059,7 +13582,8 @@
    ],
    "keywords": [
     "CSI-RS",
-    "TCI"
+    "TCI",
+    "CSI"
    ]
   },
   {
@@ -13101,6 +13625,7 @@
     "PMI",
     "CQI",
     "SRS",
+    "CSI",
     "TS 38.214 5.2.2.5.1"
    ]
   },
@@ -13133,7 +13658,8 @@
     "report"
    ],
    "keywords": [
-    "CSI report"
+    "CSI report",
+    "CSI"
    ]
   },
   {
@@ -13172,7 +13698,8 @@
     "CSI report",
     "codebook",
     "TCI",
-    "SRS"
+    "SRS",
+    "CSI"
    ]
   },
   {
@@ -13206,7 +13733,8 @@
    ],
    "keywords": [
     "CSI report",
-    "SRS"
+    "SRS",
+    "CSI"
    ]
   },
   {
@@ -13271,7 +13799,8 @@
    ],
    "keywords": [
     "CSI report",
-    "Codebook"
+    "Codebook",
+    "CSI"
    ]
   },
   {
@@ -13303,7 +13832,8 @@
     "csirs"
    ],
    "keywords": [
-    "CSI-RS"
+    "CSI-RS",
+    "CSI"
    ]
   },
   {
@@ -13370,7 +13900,9 @@
    ],
    "keywords": [
     "CSI-RS",
-    "CSI report"
+    "CSI report",
+    "CSI",
+    "CPU"
    ]
   },
   {
@@ -13407,7 +13939,9 @@
     "CSI prediction",
     "codebook",
     "PMI",
-    "CQI"
+    "CQI",
+    "CSI",
+    "CPU"
    ]
   },
   {
@@ -13439,7 +13973,9 @@
     "report"
    ],
    "keywords": [
-    "CSI report"
+    "CSI report",
+    "CSI",
+    "CPU"
    ]
   },
   {
@@ -13506,7 +14042,8 @@
    ],
    "keywords": [
     "CSI-RS",
-    "CSI report"
+    "CSI report",
+    "CSI"
    ]
   },
   {
@@ -13543,7 +14080,9 @@
     "CSI report",
     "codebook",
     "PMI",
-    "CQI"
+    "CQI",
+    "CSI",
+    "CPU"
    ]
   },
   {
@@ -13644,7 +14183,8 @@
    "keywords": [
     "CSI-RS",
     "CSI report",
-    "codebook"
+    "codebook",
+    "CSI"
    ]
   },
   {
@@ -13678,7 +14218,9 @@
    ],
    "keywords": [
     "CSI-RS",
-    "CSI report"
+    "CSI report",
+    "CSI",
+    "CPU"
    ]
   },
   {
@@ -14975,7 +15517,8 @@
     "csirs"
    ],
    "keywords": [
-    "CSI-RS"
+    "CSI-RS",
+    "CSI"
    ]
   },
   {
@@ -15017,7 +15560,8 @@
     "CSI prediction",
     "CSI compression",
     "beam management",
-    "SRS"
+    "SRS",
+    "CSI"
    ]
   },
   {
@@ -15046,19 +15590,15 @@
     "tdoc": "R1-2600736",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124/Docs/R1-2600736.zip"
    },
-   "scope": "candidate",
-   "topic": "beam",
+   "scope": "agenda",
+   "topic": "aiml",
    "tags": [
+    "aiml",
     "beam",
     "report",
     "csirs"
    ],
-   "keywords": [
-    "CSI-RS",
-    "CSI-Report",
-    "L1-RSRP",
-    "TS 38.214 5.2.1.4.2"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#124:8.1:002",
@@ -15086,18 +15626,14 @@
     "tdoc": "R1-2600736",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124/Docs/R1-2600736.zip"
    },
-   "scope": "candidate",
-   "topic": "report",
+   "scope": "agenda",
+   "topic": "aiml",
    "tags": [
+    "aiml",
     "report",
     "csirs"
    ],
-   "keywords": [
-    "CSI-RS",
-    "CSI report",
-    "codebook",
-    "TS 38.214 5.2.1.6"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#124:8.1:003",
@@ -15125,21 +15661,14 @@
     "tdoc": "R1-2601565",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124/Docs/R1-2601565.zip"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "aiml",
    "tags": [
     "aiml",
     "report",
     "csirs"
    ],
-   "keywords": [
-    "CSI-RS",
-    "csi-Report",
-    "CSI prediction",
-    "codebook",
-    "PMI",
-    "TS 38.214 5.2.1.4.6"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#124:8.1:004",
@@ -15167,21 +15696,14 @@
     "tdoc": "R1-2601565",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124/Docs/R1-2601565.zip"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "aiml",
    "tags": [
     "aiml",
     "report",
     "csirs"
    ],
-   "keywords": [
-    "CSI-RS",
-    "csi-Report",
-    "CSI prediction",
-    "codebook",
-    "PMI",
-    "TS 38.214 5.2.1.4.6"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#124:8.1:005",
@@ -15209,16 +15731,13 @@
     "tdoc": "R1-2601565",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124/Docs/R1-2601565.zip"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "aiml",
    "tags": [
     "aiml",
     "report"
    ],
-   "keywords": [
-    "CSI prediction",
-    "TS 38.214 5.2.1.6"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#124:8.1:006",
@@ -15246,7 +15765,7 @@
     "tdoc": "R1-2601565",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124/Docs/R1-2601565.zip"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "aiml",
    "tags": [
     "aiml",
@@ -15254,12 +15773,7 @@
     "report",
     "csirs"
    ],
-   "keywords": [
-    "CSI-RS",
-    "CSI report",
-    "CSI prediction",
-    "L1-RSRP"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#124:8.1:007",
@@ -15287,16 +15801,14 @@
     "tdoc": "R1-2601565",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124/Docs/R1-2601565.zip"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "aiml",
    "tags": [
     "aiml",
     "report",
     "csirs"
    ],
-   "keywords": [
-    "CSI prediction"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#124:8.2:001",
@@ -15605,7 +16117,8 @@
    "keywords": [
     "CSI-RS",
     "TCI",
-    "SRS"
+    "SRS",
+    "CSI"
    ]
   },
   {
@@ -15640,7 +16153,8 @@
     "csirs"
    ],
    "keywords": [
-    "CSI-RS"
+    "CSI-RS",
+    "CSI"
    ]
   },
   {
@@ -15678,6 +16192,7 @@
    "keywords": [
     "CSI-RS",
     "TCI",
+    "CSI",
     "TS 38.214 5.1.5"
    ]
   },
@@ -15716,7 +16231,8 @@
    ],
    "keywords": [
     "CSI-RS",
-    "SRS"
+    "SRS",
+    "CSI"
    ]
   },
   {
@@ -15753,6 +16269,41 @@
    ],
    "keywords": [
     "CQI"
+   ]
+  },
+  {
+   "id": "RAN1#124:8.8:002",
+   "meeting": "RAN1#124",
+   "agenda_item": "8.8",
+   "agenda_title": "Maintenance on others",
+   "agenda_path": [
+    {
+     "number": "8",
+     "title": "Maintenance on Rel-19 NR and E-UTRA"
+    },
+    {
+     "number": "8.8",
+     "title": "Maintenance on others"
+    }
+   ],
+   "type": "Conclusion",
+   "text": "There is no consensus on the spec change on the definition of CSI reference resource and valid slot for R19 LBCA.",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#124 - eom_03",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124/Inbox/Chair_notes/Chair%20notes%20RAN1%23124%20-%20eom_03.docx",
+    "discussion": "124-R19-others",
+    "tdoc": "R1-2600811",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124/Docs/R1-2600811.zip"
+   },
+   "scope": "candidate",
+   "topic": "report",
+   "tags": [
+    "report"
+   ],
+   "keywords": [
+    "CSI"
    ]
   },
   {
@@ -15793,6 +16344,7 @@
     "CSI-RS",
     "TCI",
     "SRS",
+    "CSI",
     "TS 38.214 5.2.1.5.2"
    ]
   },
@@ -15869,7 +16421,8 @@
     "CSI-RS",
     "CSI-Report",
     "TCI",
-    "L1-RSRP"
+    "L1-RSRP",
+    "CSI"
    ]
   },
   {
@@ -15909,6 +16462,7 @@
     "CSI-RS",
     "TCI",
     "SRS",
+    "CSI",
     "TS 38.214 5.1.5"
    ]
   },
@@ -15948,6 +16502,7 @@
     "CSI-RS",
     "CSI Report",
     "CSI acquisition",
+    "CSI",
     "TS 38.214 5.2.4"
    ]
   },
@@ -15986,7 +16541,8 @@
    "keywords": [
     "CSI-RS",
     "CSI report",
-    "codebook"
+    "codebook",
+    "CSI"
    ]
   },
   {
@@ -16024,7 +16580,9 @@
    ],
    "keywords": [
     "CSI-RS",
-    "TCI"
+    "TCI",
+    "CSI",
+    "CPU"
    ]
   },
   {
@@ -17447,7 +18005,8 @@
     "csirs"
    ],
    "keywords": [
-    "CSI-RS"
+    "CSI-RS",
+    "CSI"
    ]
   },
   {
@@ -18270,15 +18829,13 @@
     "tdoc": "R1-2603260",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Docs/R1-2603260.zip"
    },
-   "scope": "candidate",
-   "topic": "report",
+   "scope": "agenda",
+   "topic": "aiml",
    "tags": [
+    "aiml",
     "report"
    ],
-   "keywords": [
-    "CSI report",
-    "TS 38.212 6.3.1.1.2"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#124bis:8.1:002",
@@ -18306,20 +18863,15 @@
     "tdoc": "R1-2603260",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Docs/R1-2603260.zip"
    },
-   "scope": "candidate",
-   "topic": "beam",
+   "scope": "agenda",
+   "topic": "aiml",
    "tags": [
+    "aiml",
     "beam",
     "report",
     "csirs"
    ],
-   "keywords": [
-    "CSI-RS",
-    "CSI report",
-    "beam management",
-    "L1-RSRP",
-    "TS 38.214 5.2.1.6"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#124bis:8.1:003",
@@ -18347,16 +18899,14 @@
     "tdoc": "R1-2603260",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Docs/R1-2603260.zip"
    },
-   "scope": "candidate",
-   "topic": "report",
+   "scope": "agenda",
+   "topic": "aiml",
    "tags": [
+    "aiml",
     "report",
     "csirs"
    ],
-   "keywords": [
-    "CSI-RS",
-    "CSI report"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#124bis:8.2:001",
@@ -18696,7 +19246,8 @@
    "keywords": [
     "CSI-RS",
     "CSI report",
-    "SRS"
+    "SRS",
+    "CSI"
    ]
   },
   {
@@ -18733,7 +19284,8 @@
    "keywords": [
     "CSI-Report",
     "PMI",
-    "CQI"
+    "CQI",
+    "CSI"
    ]
   },
   {
@@ -18771,6 +19323,7 @@
    "keywords": [
     "CSI-RS",
     "TCI",
+    "CSI",
     "TS 38.214 5.1.5"
    ]
   },
@@ -18811,6 +19364,7 @@
     "CSI Report",
     "CSI acquisition",
     "CQI",
+    "CSI",
     "TS 38.214 5.2.4"
    ]
   },
@@ -18955,6 +19509,7 @@
    "keywords": [
     "CSI Report",
     "CSI acquisition",
+    "CSI",
     "TS 38.214 5.2.4"
    ]
   },
@@ -18991,6 +19546,7 @@
    ],
    "keywords": [
     "CSI report",
+    "CSI",
     "TS 38.214 5.2.4"
    ]
   },
@@ -19658,6 +20214,46 @@
    "keywords": []
   },
   {
+   "id": "RAN1#124bis:9.4.1:010",
+   "meeting": "RAN1#124bis",
+   "agenda_item": "9.4.1",
+   "agenda_title": "Coverage enhancement",
+   "agenda_path": [
+    {
+     "number": "9",
+     "title": "Release 20 NR"
+    },
+    {
+     "number": "9.4",
+     "title": "Coverage Enhancement Phase 3"
+    },
+    {
+     "number": "9.4.1",
+     "title": "Coverage enhancement"
+    }
+   ],
+   "type": "Agreement",
+   "text": "For the repurposing fields for indication of UL beam information in UL Grant in RAR, down-select the following option:\n- For 1bit indication, 1 bit of CSI request\n- For 2-bit indication: 1 bit of CSI request + 1 bit from FDRA\n- For 3-bit indication: 1 bit of CSI request + 2 bits from FDRA\n- FFS: interaction with bits borrowed from FDRA for frequency hopping",
+   "ffs": [
+    "FFS: interaction with bits borrowed from FDRA for frequency hopping"
+   ],
+   "source": {
+    "doc": "Chair notes RAN1#124bis_eom5",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Inbox/Chair_notes/Chair%20notes%20RAN1%23124bis_eom5.docx",
+    "tdoc": "R1-2602217",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Docs/R1-2602217.zip"
+   },
+   "scope": "candidate",
+   "topic": "report",
+   "tags": [
+    "report"
+   ],
+   "keywords": [
+    "CSI"
+   ]
+  },
+  {
    "id": "RAN1#124bis:10.5.0:002",
    "meeting": "RAN1#124bis",
    "agenda_item": "10.5.0",
@@ -19811,7 +20407,8 @@
     "csirs"
    ],
    "keywords": [
-    "CSI-RS"
+    "CSI-RS",
+    "CSI"
    ]
   },
   {
@@ -19854,7 +20451,8 @@
     "csirs"
    ],
    "keywords": [
-    "CSI-RS"
+    "CSI-RS",
+    "CSI"
    ]
   },
   {
@@ -19943,7 +20541,8 @@
    "keywords": [
     "CSI acquisition",
     "codebook",
-    "SRS"
+    "SRS",
+    "CSI"
    ]
   },
   {
@@ -21951,14 +22550,12 @@
     "tdoc": "R1-2605022",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Docs/R1-2605022.zip"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "report",
    "tags": [
     "report"
    ],
-   "keywords": [
-    "CSI report"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#125:8.1:002",
@@ -21985,14 +22582,12 @@
     "tdoc": "R1-2605022",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Docs/R1-2605022.zip"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "report",
    "tags": [
     "report"
    ],
-   "keywords": [
-    "TS 38.214 5.2.1.4.6"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#125:8.1:003",
@@ -22019,7 +22614,7 @@
     "tdoc": "R1-2604995",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Docs/R1-2604995.zip"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "srs",
    "tags": [
     "srs",
@@ -22027,15 +22622,39 @@
     "report",
     "csirs"
    ],
-   "keywords": [
-    "CSI-RS",
-    "CSI report",
-    "Codebook",
-    "CQI",
-    "beam management",
-    "L1-RSRP",
-    "SRS"
-   ]
+   "keywords": []
+  },
+  {
+   "id": "RAN1#125:8.1:005",
+   "meeting": "RAN1#125",
+   "agenda_item": "8.1",
+   "agenda_title": "Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT",
+   "agenda_path": [
+    {
+     "number": "8",
+     "title": "Maintenance on Rel-19 NR and E-UTRA"
+    },
+    {
+     "number": "8.1",
+     "title": "Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT"
+    }
+   ],
+   "type": "Agreement",
+   "text": "The following is endorsed as Alignment CR for Clause 9 in Rel-19 TS38.213.\nAdopt the following changes in Clause 9 in TS 38.213:\n| 9 UE procedure for reporting control information **unchanged omitted** If a UE multiplexes aperiodic CSI in a PUSCH and the UE would multiplex UCI that includes HARQ-ACK information and/or UEIRI in a PUCCH that overlaps with the PUSCH and the timing conditions for overlapping PUCCHs and PUSCHs in clause 9.2.5 are fulfilled, the UE multiplexes only the HARQ-ACK information and/or UEIRI in the PUSCH and does not transmit the PUCCH. **unchanged omitted** |",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#125_eom",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Inbox/Chair_notes/Chair%20notes%20RAN1%23125_eom.docx",
+    "tdoc": "R1-2604993",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Docs/R1-2604993.zip"
+   },
+   "scope": "agenda",
+   "topic": "report",
+   "tags": [
+    "report"
+   ],
+   "keywords": []
   },
   {
    "id": "RAN1#125:8.1:008",
@@ -22062,14 +22681,12 @@
     "tdoc": "R1-2604991",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Docs/R1-2604991.zip"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "report",
    "tags": [
     "report"
    ],
-   "keywords": [
-    "CSI report"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#125:8.2:001",
@@ -22173,6 +22790,7 @@
    ],
    "keywords": [
     "CSI report",
+    "CSI",
     "TS 38.214 5.2.4"
    ]
   },
@@ -22210,7 +22828,8 @@
    ],
    "keywords": [
     "CSI-RS",
-    "L1-RSRP"
+    "L1-RSRP",
+    "CSI"
    ]
   },
   {
@@ -23128,6 +23747,44 @@
    "keywords": []
   },
   {
+   "id": "RAN1#125:9.4.1:011",
+   "meeting": "RAN1#125",
+   "agenda_item": "9.4.1",
+   "agenda_title": "Coverage enhancement",
+   "agenda_path": [
+    {
+     "number": "9",
+     "title": "Release 20 NR"
+    },
+    {
+     "number": "9.4",
+     "title": "Coverage Enhancement Phase 3"
+    },
+    {
+     "number": "9.4.1",
+     "title": "Coverage enhancement"
+    }
+   ],
+   "type": "Agreement",
+   "text": "Repurposing the following fields in UL Grant in RAR to indicate the UL beam information for multiple PRACH transmissions with different Tx beams.\n- For 1bit indication, 1 bit of CSI request\n- For 2-bit indication: 1 bit of CSI request as MSB and 1 bit NUL,beam in FDRA as LSB\n- For 3-bit indication: 1 bit of CSI request as MSB and 2 bits NUL,beam in FDRA as LSB\n  - For the position of the NUL,beam bit(s) in FDRA, the NUL,beam bit(s) is/are MSB of FDRA after NUL,hop; the remaining bits after NUL,beam are decoded as RIV configuration as legacy",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#125_eom",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Inbox/Chair_notes/Chair%20notes%20RAN1%23125_eom.docx",
+    "tdoc": "R1-2604288",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Docs/R1-2604288.zip"
+   },
+   "scope": "candidate",
+   "topic": "report",
+   "tags": [
+    "report"
+   ],
+   "keywords": [
+    "CSI"
+   ]
+  },
+  {
    "id": "RAN1#125:10.2.1:003",
    "meeting": "RAN1#125",
    "agenda_item": "10.2.1",
@@ -23558,7 +24215,8 @@
     "report"
    ],
    "keywords": [
-    "CSI acquisition"
+    "CSI acquisition",
+    "CSI"
    ]
   },
   {
@@ -23611,7 +24269,8 @@
    "keywords": [
     "CSI-RS",
     "codebook",
-    "SRS"
+    "SRS",
+    "CSI"
    ]
   },
   {
@@ -25525,7 +26184,8 @@
     "csirs"
    ],
    "keywords": [
-    "CSI-RS"
+    "CSI-RS",
+    "CSI"
    ]
   },
   {
@@ -25623,18 +26283,13 @@
     "tdoc": "R1-2606794",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Docs/R1-2606794.zip"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "report",
    "tags": [
     "report",
     "csirs"
    ],
-   "keywords": [
-    "CSI-RS",
-    "CSI report",
-    "codebook",
-    "TS 38.214 5.2.1.6"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#126:8.1:002",
@@ -25662,19 +26317,14 @@
     "tdoc": "R1-2606794",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Docs/R1-2606794.zip"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "aiml",
    "tags": [
     "aiml",
     "srs",
     "report"
    ],
-   "keywords": [
-    "CSI report",
-    "CSI feedback",
-    "SRS",
-    "TS 38.214 5.2.3"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#126:8.1:003",
@@ -25702,21 +26352,14 @@
     "tdoc": "R1-2606795",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Docs/R1-2606795.zip"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "srs",
    "tags": [
     "srs",
     "beam",
     "report"
    ],
-   "keywords": [
-    "CSI report",
-    "PMI",
-    "CQI",
-    "L1-RSRP",
-    "SRS",
-    "TS 38.214 6.2.1.3"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#126:8.1:004",
@@ -25744,19 +26387,14 @@
     "tdoc": "R1-2606835",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Docs/R1-2606835.zip"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "beam",
    "tags": [
     "beam",
     "report",
     "csirs"
    ],
-   "keywords": [
-    "CSI-RS",
-    "CSI-Report",
-    "L1-RSRP",
-    "TS 38.214 5.1.6.1.2"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#126:8.1:005",
@@ -25784,15 +26422,13 @@
     "tdoc": "R1-2606809",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Docs/R1-2606809.zip"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "beam",
    "tags": [
     "beam",
     "report"
    ],
-   "keywords": [
-    "beam report"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#126:8.1:006",
@@ -25820,15 +26456,12 @@
     "tdoc": "R1-2606809",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Docs/R1-2606809.zip"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "report",
    "tags": [
     "report"
    ],
-   "keywords": [
-    "CSI report",
-    "Codebook"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#126:8.1:009",
@@ -25856,20 +26489,14 @@
     "tdoc": "R1-2606867",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Docs/R1-2606867.zip"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "beam",
    "tags": [
     "beam",
     "report",
     "csirs"
    ],
-   "keywords": [
-    "CSI-RS",
-    "CSI report",
-    "TCI",
-    "L1-RSRP",
-    "TS 38.214 5.2.1.5.4.1"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#126:8.1:010",
@@ -25897,50 +26524,12 @@
     "tdoc": "R1-2606867",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Docs/R1-2606867.zip"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "report",
    "tags": [
     "report"
    ],
-   "keywords": [
-    "TS 38.212 6.3.2.1.2",
-    "TS 38.214 5.2.1.5.4.1"
-   ]
-  },
-  {
-   "id": "RAN1#126:8.1:012",
-   "meeting": "RAN1#126",
-   "agenda_item": "8.1",
-   "agenda_title": "Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT",
-   "agenda_path": [
-    {
-     "number": "8",
-     "title": "Maintenance on Rel-19 NR and E-UTRA"
-    },
-    {
-     "number": "8.1",
-     "title": "Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT"
-    }
-   ],
-   "type": "Agreement",
-   "text": "The following TP for TS 38.211 Clause 6.3.3.1 is endorsed.\nThe corresponding CR for Rel-19, TS 38.211 in R1-2606849 is endorsed.\n| Reason for change: The parameter sib1-RestrictedSetConfig of UL-WUS configuration for SIB1 request in TS 38.331 is not captured in TS 38.211. Summary of change: Add description for parameter sib1-RestrictedSetConfig of TS 38.211 according to the IE sib1-RestrictedSetConfig defined in the TS 38.331. Consequence if not approved: Ambiguity occurs for the sib1-RestrictedSetConfig for on demand SIB1. 6.3.3 Physical random-access channel 6.3.3.1 Sequence generation The set of random-access preambles shall be generated according to from which the frequency-domain representation shall be generated according to where , , , or depending on the PRACH preamble format as given by Tables 6.3.3.1-1 and 6.3.3.1-2. There are 64 preambles defined in each time-frequency PRACH occasion, enumerated in increasing order of first increasing cyclic shift of a logical root sequence, and then in increasing order of the logical root sequence index, starting with the index obtained from the higher-layer parameter - prach-RootSequenceIndex or rootSequenceIndex-BFR or by msgA-PRACH-RootSequenceIndex if configured and a type-2 random-access procedure is initiated as described in clause 8.1 of [5, TS 38.213], or by - prach-RootSequenceIndex in EarlyUL-SyncConfig if the PRACH transmission is for a candidate cell, or by - prach-RootSequenceIndex in RACH-ConfigTwoTA if the PRACH transmission is associated with an additional PCI different from serving cell PCI, or by - prach-RootSequenceIndex in SIB1-RequestConfig if the PRACH transmission is for SIB1 request. Additional preamble sequences, in case 64 preambles cannot be generated from a single root Zadoff-Chu sequence, are obtained from the root sequences with the consecutive logical indexes until all the 64 sequences are found. The logical root sequence order is cyclic; the logical index 0 is consecutive to . The sequence number is obtained from the logical root sequence index according to Tables 6.3.3.1-3 to 6.3.3.1-4B. The cyclic shift is given by where is given by Tables 6.3.3.1-5 to 6.3.3.1-7. The type of restricted sets (unrestricted, restricted type A, restricted type B) is given by - the higher-layer parameter msgA-RestrictedSetConfig, if provided; - or the higher-layer parameter ltm-restrictedSetConfig associated with a candidate cell indicated in Cell indicator field of a PDCCH order, if provided; - or the higher-layer parameter twoTA-restrictedSetConfig associated with an additional PCI indicated in PRACH association indicator field of a PDCCH order, if provided; - otherwise, the higher-layer parameter restrictedSetConfig. < Unchanged Text Omitted > |",
-   "ffs": [],
-   "source": {
-    "doc": "Chair notes RAN1#126_eom1",
-    "kind": "chairman_note",
-    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx",
-    "discussion": "126-R19-AI 8.1",
-    "tdoc": "R1-2606825",
-    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Docs/R1-2606825.zip"
-   },
-   "scope": "candidate",
-   "topic": "beam",
-   "tags": [
-    "beam"
-   ],
-   "keywords": [
-    "BFR"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#126:8.1:013",
@@ -25968,7 +26557,7 @@
     "tdoc": "R1-2606825",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Docs/R1-2606825.zip"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "srs",
    "tags": [
     "srs",
@@ -25976,12 +26565,7 @@
     "report",
     "csirs"
    ],
-   "keywords": [
-    "CSI-RS",
-    "CSI report",
-    "TCI",
-    "SRS"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#126:8.2:005",
@@ -26019,6 +26603,7 @@
     "CSI-RS",
     "CSI report",
     "CQI",
+    "CSI",
     "TS 38.214 5.2.1.4"
    ]
   },
@@ -26089,7 +26674,8 @@
     "report"
    ],
    "keywords": [
-    "CSI report"
+    "CSI report",
+    "CSI"
    ]
   },
   {
@@ -26124,7 +26710,8 @@
     "csirs"
    ],
    "keywords": [
-    "CSI-RS"
+    "CSI-RS",
+    "CSI"
    ]
   },
   {
@@ -26163,6 +26750,7 @@
    "keywords": [
     "CSI-RS",
     "L1-RSRP",
+    "CSI",
     "TS 38.214 5.2.2.5"
    ]
   },
@@ -26201,6 +26789,7 @@
    "keywords": [
     "CSI-RS",
     "CSI-Report",
+    "CSI",
     "TS 38.214 5.2.1.2",
     "TS 38.214 5.2.1.4.2"
    ]
@@ -27110,7 +27699,8 @@
     "report"
    ],
    "keywords": [
-    "SRS"
+    "SRS",
+    "CSI"
    ]
   },
   {
@@ -27783,7 +28373,53 @@
     "report"
    ],
    "keywords": [
-    "CSI acquisition"
+    "CSI acquisition",
+    "CSI"
+   ]
+  },
+  {
+   "id": "RAN1#126:10.5.2.2:008",
+   "meeting": "RAN1#126",
+   "agenda_item": "10.5.2.2",
+   "agenda_title": "Downlink transmission scheme(s) for downlink shared channels",
+   "agenda_path": [
+    {
+     "number": "10",
+     "title": "Rel-20 Study of 6GR"
+    },
+    {
+     "number": "10.5",
+     "title": "Multi-antenna system"
+    },
+    {
+     "number": "10.5.2",
+     "title": "MIMO operation"
+    },
+    {
+     "number": "10.5.2.2",
+     "title": "Downlink transmission scheme(s) for downlink shared channels"
+    }
+   ],
+   "type": "Agreement",
+   "text": "- Study (semi-)open-loop transmission and whether/how to support specification-non-transparent schemes for PDSCH\n  - Consider, at least, high-mobility scenario, scenarios with outdated CSI, and UE specific/common PDSCH\n  - Consider specification-transparent and closed-loop schemes as performance baselines\n  - FFS: Impact on DMRS",
+   "ffs": [
+    "FFS: Impact on DMRS"
+   ],
+   "source": {
+    "doc": "Chair notes RAN1#126_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx",
+    "discussion": "126-R20-6GR-Transmission scheme for DL shared channel",
+    "tdoc": "R1-2606678",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Docs/R1-2606678.zip"
+   },
+   "scope": "candidate",
+   "topic": "report",
+   "tags": [
+    "report"
+   ],
+   "keywords": [
+    "CSI"
    ]
   },
   {
@@ -27922,6 +28558,49 @@
    ]
   },
   {
+   "id": "RAN1#126:10.5.2.3:004",
+   "meeting": "RAN1#126",
+   "agenda_item": "10.5.2.3",
+   "agenda_title": "Uplink transmission scheme(s) for uplink channels",
+   "agenda_path": [
+    {
+     "number": "10",
+     "title": "Rel-20 Study of 6GR"
+    },
+    {
+     "number": "10.5",
+     "title": "Multi-antenna system"
+    },
+    {
+     "number": "10.5.2",
+     "title": "MIMO operation"
+    },
+    {
+     "number": "10.5.2.3",
+     "title": "Uplink transmission scheme(s) for uplink channels"
+    }
+   ],
+   "type": "Agreement",
+   "text": "Support both of the following methods to convey the UCI over physical channel:\n- Method 1: Define a UCI dedicated physical channel, i.e., Physical Uplink Control Channel (PUCCH)\n- Method 2: UCI carried on PUSCH\n  - Note: Whether/how to support each UCI type (e.g., HARQ-ACK, CSI) on PUSCH with/without data is up to other agendas\nFurther study on Option 3 per agreement in RAN1#124",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#126_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx",
+    "discussion": "126-R20-6GR-Transmission scheme for UL channels",
+    "tdoc": "R1-2605830",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Docs/R1-2605830.zip"
+   },
+   "scope": "candidate",
+   "topic": "report",
+   "tags": [
+    "report"
+   ],
+   "keywords": [
+    "CSI"
+   ]
+  },
+  {
    "id": "RAN1#126:10.5.2.3:012",
    "meeting": "RAN1#126",
    "agenda_item": "10.5.2.3",
@@ -28047,7 +28726,8 @@
     "report"
    ],
    "keywords": [
-    "codebook"
+    "codebook",
+    "CSI"
    ]
   },
   {
@@ -30147,7 +30827,8 @@
     "csirs"
    ],
    "keywords": [
-    "CSI-RS"
+    "CSI-RS",
+    "CSI"
    ]
   },
   {
@@ -30184,7 +30865,8 @@
     "csirs"
    ],
    "keywords": [
-    "CSI-RS"
+    "CSI-RS",
+    "CSI"
    ]
   },
   {
@@ -30342,7 +31024,8 @@
    ],
    "keywords": [
     "CSI acquisition",
-    "beam management"
+    "beam management",
+    "CSI"
    ]
   },
   {
@@ -30369,14 +31052,12 @@
     "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx",
     "discussion": "126bis-R19-AI 8.1"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "report",
    "tags": [
     "report"
    ],
-   "keywords": [
-    "TS 38.214 5.2.2.5"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#126bis:8.1:009",
@@ -30402,14 +31083,12 @@
     "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx",
     "discussion": "126bis-R19-AI 8.1"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "report",
    "tags": [
     "report"
    ],
-   "keywords": [
-    "TS 38.214 5.2.5"
-   ]
+   "keywords": []
   },
   {
    "id": "RAN1#126bis:8.2:005",
@@ -30446,7 +31125,8 @@
    "keywords": [
     "CSI-RS",
     "CSI report",
-    "codebook"
+    "codebook",
+    "CSI"
    ]
   },
   {
@@ -30487,6 +31167,7 @@
     "CSI-RS",
     "TCI",
     "SRS",
+    "CSI",
     "TS 38.214 5.1.5"
    ]
   },
@@ -30529,6 +31210,7 @@
     "codebook",
     "PMI",
     "CQI",
+    "CSI",
     "TS 38.214 5.2.4"
    ]
   },
@@ -30567,6 +31249,7 @@
    "keywords": [
     "CSI-RS",
     "CSI-Report",
+    "CSI",
     "TS 38.214 5.2.1.4.2"
    ]
   },
@@ -31798,7 +32481,8 @@
    "keywords": [
     "CSI-RS",
     "codebook",
-    "SRS"
+    "SRS",
+    "CSI"
    ]
   },
   {
@@ -34186,7 +34870,8 @@
    ],
    "keywords": [
     "CSI report",
-    "TCI"
+    "TCI",
+    "CSI"
    ]
   },
   {
@@ -34343,7 +35028,8 @@
    ],
    "keywords": [
     "CSI-RS",
-    "SRS"
+    "SRS",
+    "CSI"
    ]
   }
  ]

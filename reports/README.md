@@ -11,8 +11,8 @@
 
 | 구분 | 건수 |
 |---|---:|
-| 확정 (포함 Agenda + 수동 포함) | **648** (Agreement 604 · WA 4 · Conclusion 40) |
-| 후보 (다른 Agenda의 키워드 일치, 확인 필요) | 272 |
+| 확정 (포함 Agenda + 수동 포함) | **733** (Agreement 683 · WA 4 · Conclusion 46) |
+| 후보 (다른 Agenda의 키워드 일치, 확인 필요) | 210 |
 
 ## 직전 회의 대비 (RAN1#126 → RAN1#126bis)
 
@@ -20,13 +20,13 @@
 
 | 주제 | #126 | **#126bis** | 증감 |
 |---|---:|---:|---:|
-| [AI/ML CSI](by_topic/aiml.md) | 9 | **7** | -2 |
-| [SRS](by_topic/srs.md) | 24 | **24** | +0 |
-| [Beam management](by_topic/beam.md) | 29 | **18** | -11 |
-| [CSI 보고/codebook](by_topic/report.md) | 11 | **15** | +4 |
+| [AI/ML CSI](by_topic/aiml.md) | 10 | **7** | -3 |
+| [SRS](by_topic/srs.md) | 26 | **24** | -2 |
+| [Beam management](by_topic/beam.md) | 31 | **18** | -13 |
+| [CSI 보고/codebook](by_topic/report.md) | 13 | **17** | +4 |
 | [CSI-RS](by_topic/csirs.md) | 9 | **5** | -4 |
 | [기타 CSI](by_topic/other.md) | 3 | **11** | +8 |
-| **합계** | 85 | **80** | -5 |
+| **합계** | 92 | **82** | -10 |
 
 ## 주제별 · 회의별 Agreement
 
@@ -36,20 +36,20 @@
 
 | 주된 주제 | #122 | #122bis | #123 | #124 | #124bis | #125 | #126 | #126bis | 합계 | 관련 포함 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| [AI/ML CSI](by_topic/aiml.md) | 36 | 12 | 11 | 11 | 13 | 13 | 9 | 7 | **112** | 126 |
-| [SRS](by_topic/srs.md) | 28 | 16 | 9 | 17 | 25 | 20 | 24 | 24 | **163** | 172 |
-| [Beam management](by_topic/beam.md) | 15 | 3 | 3 | 15 | 11 | 22 | 29 | 18 | **116** | 126 |
-| [CSI 보고/codebook](by_topic/report.md) | 21 | 33 | 5 | 8 | 14 | 10 | 11 | 15 | **117** | 309 |
-| [CSI-RS](by_topic/csirs.md) | 4 | 1 | 1 | 4 | 8 | 9 | 9 | 5 | **41** | 156 |
+| [AI/ML CSI](by_topic/aiml.md) | 58 | 43 | 15 | 17 | 15 | 13 | 10 | 7 | **178** | 192 |
+| [SRS](by_topic/srs.md) | 28 | 16 | 9 | 17 | 25 | 21 | 26 | 24 | **166** | 178 |
+| [Beam management](by_topic/beam.md) | 15 | 3 | 3 | 15 | 11 | 22 | 31 | 18 | **118** | 139 |
+| [CSI 보고/codebook](by_topic/report.md) | 21 | 33 | 5 | 8 | 14 | 14 | 13 | 17 | **125** | 373 |
+| [CSI-RS](by_topic/csirs.md) | 4 | 1 | 1 | 4 | 8 | 9 | 9 | 5 | **41** | 189 |
 | [기타 CSI](by_topic/other.md) | 16 | 15 | 6 | 1 | 1 | 2 | 3 | 11 | **55** | 55 |
-| **합계** | **120** | **80** | **35** | **56** | **72** | **76** | **85** | **80** | **604** | — |
+| **합계** | **142** | **111** | **39** | **62** | **74** | **81** | **92** | **82** | **683** | — |
 
 ```mermaid
 xychart-beta
     title "회의별 CSI Agreement (확정 범위)"
     x-axis ["#122", "#122bis", "#123", "#124", "#124bis", "#125", "#126", "#126bis"]
-    y-axis "건수" 0 --> 125
-    bar [120, 80, 35, 56, 72, 76, 85, 80]
+    y-axis "건수" 0 --> 147
+    bar [142, 111, 39, 62, 74, 81, 92, 82]
 ```
 
 ## 포함 Agenda별 · 회의별 Agreement
@@ -70,16 +70,21 @@ Agenda 번호는 회의마다 바뀌므로 '섹션 + Agenda 제목'으로 이어
 | Inter-vendor training collaboration for two-sided AI/ML models (Release 20 NR, 최근 9.1.2) | 5 | 2 | 2 | 4 | 3 | 5 | 4 | 2 | **27** |
 | UE features for NR MIMO Phase N (Rel-19 UE Features, 최근 9.2) | 49 | 31 | · | · | · | · | · | · | **80** |
 | Maintenance on NR MIMO Phase N (하위 포함) (Maintenance on Rel-19 NR and E-UTRA, 최근 8.2) | 20 | 18 | 11 | 8 | 7 | · | · | · | **64** |
+| UE features for AI/ML (positioning 제외) (Rel-19 UE Features, 최근 9.1) | 19 | 18 | · | · | · | · | · | · | **37** |
+| Maintenance on AI/ML (positioning 제외) (Maintenance on Rel-19 NR and E-UTRA, 최근 8.1) | 3 | 13 | 4 | 6 | 2 | · | · | · | **28** |
+| Maintenance on AI/ML·MIMO Ph5·NES·NTN (CSI 키워드·조항 있는 결정만) (Maintenance on Rel-19 NR and E-UTRA, 최근 8.1) | · | · | · | · | · | 5 | 7 | 2 | **14** |
 | AI/ML: Specification support for beam management (Maintenance on Rel-19 NR and E-UTRA, 최근 8.1.1) | 12 | · | · | · | · | · | · | · | **12** |
 | AI/ML: Specification support for CSI prediction (Maintenance on Rel-19 NR and E-UTRA, 최근 8.1.3) | 9 | · | · | · | · | · | · | · | **9** |
-| **합계** | **120** | **80** | **35** | **56** | **72** | **76** | **85** | **80** | **604** |
+| **합계** | **142** | **111** | **39** | **62** | **74** | **81** | **92** | **82** | **683** |
 
-## RAN1#126bis 신규 CSI Agreement (80건)
+## RAN1#126bis 신규 CSI Agreement (82건)
 
 아래 문장은 요약이 아니라 **원문 첫 줄**입니다(길면 자름). 전체 원문은 주제별 리포트와 HTML 대시보드에 있습니다.
 
 | 주제 | Agenda | 원문 첫 줄 | 출처 |
 |---|---|---|---|
+| CSI 보고/codebook | 8.1 Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT | The draft CR in R1-2607797 for Rel-19 TS38.214, Clause 5.2.2.5 is endorsed. | [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R19-AI 8.1]` |
+| CSI 보고/codebook | 8.1 Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT | Proposal 1 in Section 4 of R1-2608695 for Rel-19, TS38.214, Clause 5.2.5 is endorsed. | [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R19-AI 8.1]` |
 | AI/ML CSI | 9.1.1 CSI spatial/frequency compression without temporal aspects (“Case 0”) | Support following configuration for NW data collection | [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) |
 | AI/ML CSI | 9.1.1 CSI spatial/frequency compression without temporal aspects (“Case 0”) | With respect to RAN2 LS in R1-2606980 (R2-2606052), the draft LS response in R1-2608768 is endorsed. | [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · [R1-2608402](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2608402.zip) |
 | AI/ML CSI | 9.1.1 CSI spatial/frequency compression without temporal aspects (“Case 0”) | For CSI feedback via two-sided model, for inference only, reuse the legacy R19 APU and CPU framework consider… | [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · [R1-2608403](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2608403.zip) |
@@ -166,7 +171,64 @@ Agenda 번호는 회의마다 바뀌므로 '섹션 + Agenda 제목'으로 이어
 실행마다 직전 결과와 비교한 기록입니다. 새 회의 결정은 '신규'로 보이지만, 원본이 **과거 회의**를 다시 처리해 생긴
 추가·변경·삭제(파서 개선, 잠정 → 종료본 교체 등)는 여기서만 알 수 있습니다. 전체 기록은 `changes.json`에 있습니다.
 
-아직 기록된 변경이 없습니다 (이 기능을 켠 뒤 처음 달라진 실행부터 남습니다).
+| 시각 (UTC) | 이유 | 새 회의 | 기존 회의 추가 | 변경 | 삭제 |
+|---|---|---|---:|---:|---:|
+| 2026-10-20 08:01 | 설정 변경 (범위·키워드·주제 규칙) | — | 25 | 68 | 2 |
+
+가장 최근(2026-10-20) 기존 회의 변경 95건:
+
+| 변경 | 회의 | 구분 | 범위 | Agenda | 원문 첫 줄 | id |
+|---|---|---|---|---|---|---|
+| 추가 | RAN1#122 | Agreement | 확정 | 8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface | TP included in R1-250xxxx for TR 38.843 is endorsed in principle. | [`RAN1#122:8.1:001`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) |
+| 변경 (범위) | RAN1#122 | Agreement | 확정 | 8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface | Adopt the following TP in section 5.2.1.6, TS 38.214. | [`RAN1#122:8.1:002`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) |
+| 추가 | RAN1#122 | Agreement | 확정 | 8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface | The Draft CR in R1-2506171 for TR 38.843 is endorsed. | [`RAN1#122:8.1:003`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) |
+| 삭제 | RAN1#122 | Agreement | 후보 | 8.5.2 On-demand SIB1 for idle/inactive mode Ues | Adopt the following TP for Clause 5.3.2 and 6.3.3.1 in TS38.211 to clarify the PRACH transmission for SIB1 request. | [`RAN1#122:8.5.2:002`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) |
+| 변경 (범위) | RAN1#122 | Agreement | 확정 | 9.1 UE features for AI/ML for NR Air Interface | Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown | [`RAN1#122:9.1:001`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) |
+| 변경 (범위) | RAN1#122 | Agreement | 확정 | 9.1 UE features for AI/ML for NR Air Interface | Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown | [`RAN1#122:9.1:002`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) |
+| 변경 (범위) | RAN1#122 | Agreement | 확정 | 9.1 UE features for AI/ML for NR Air Interface | Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown | [`RAN1#122:9.1:003`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) |
+| 추가 | RAN1#122 | Agreement | 확정 | 9.1 UE features for AI/ML for NR Air Interface | Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown | [`RAN1#122:9.1:004`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) |
+| 변경 (범위) | RAN1#122 | Agreement | 확정 | 9.1 UE features for AI/ML for NR Air Interface | Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown | [`RAN1#122:9.1:005`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) |
+| 추가 | RAN1#122 | Agreement | 확정 | 9.1 UE features for AI/ML for NR Air Interface | Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown | [`RAN1#122:9.1:006`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) |
+| 변경 (범위) | RAN1#122 | Agreement | 확정 | 9.1 UE features for AI/ML for NR Air Interface | Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown | [`RAN1#122:9.1:007`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) |
+| 변경 (범위) | RAN1#122 | Agreement | 확정 | 9.1 UE features for AI/ML for NR Air Interface | Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown | [`RAN1#122:9.1:008`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) |
+| 변경 (범위) | RAN1#122 | Agreement | 확정 | 9.1 UE features for AI/ML for NR Air Interface | Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown | [`RAN1#122:9.1:009`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) |
+| 변경 (범위) | RAN1#122 | Agreement | 확정 | 9.1 UE features for AI/ML for NR Air Interface | Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown | [`RAN1#122:9.1:010`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) |
+| 변경 (범위) | RAN1#122 | Agreement | 확정 | 9.1 UE features for AI/ML for NR Air Interface | Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown | [`RAN1#122:9.1:011`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) |
+| 변경 (범위) | RAN1#122 | Agreement | 확정 | 9.1 UE features for AI/ML for NR Air Interface | Introduce the following Rel. 19 UE FGs (yellow highlighting, if any, shows text that’s not yet agreed) | [`RAN1#122:9.1:012`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) |
+| 변경 (범위) | RAN1#122 | Agreement | 확정 | 9.1 UE features for AI/ML for NR Air Interface | Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown | [`RAN1#122:9.1:024`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) |
+| 변경 (범위) | RAN1#122 | Agreement | 확정 | 9.1 UE features for AI/ML for NR Air Interface | Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown | [`RAN1#122:9.1:025`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) |
+| 추가 | RAN1#122 | Agreement | 확정 | 9.1 UE features for AI/ML for NR Air Interface | Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown | [`RAN1#122:9.1:026`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) |
+| 추가 | RAN1#122 | Agreement | 확정 | 9.1 UE features for AI/ML for NR Air Interface | Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown | [`RAN1#122:9.1:027`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) |
+| 변경 (범위) | RAN1#122 | Agreement | 확정 | 9.1 UE features for AI/ML for NR Air Interface | Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown | [`RAN1#122:9.1:028`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) |
+| 변경 (범위) | RAN1#122 | Agreement | 확정 | 9.1 UE features for AI/ML for NR Air Interface | Introduce the following Rel. 19 UE FGs (yellow highlighting, if any, shows text that’s not yet agreed) | [`RAN1#122:9.1:029`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) |
+| 변경 (범위) | RAN1#122 | Agreement | 확정 | 9.1 UE features for AI/ML for NR Air Interface | Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown | [`RAN1#122:9.1:030`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) |
+| 변경 (범위) | RAN1#122bis | Agreement | 확정 | 8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface | The following TP for TS 38.214 Clause 5.2.1.4.3b is endorsed. | [`RAN1#122bis:8.1:001`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) |
+| 변경 (범위) | RAN1#122bis | Agreement | 확정 | 8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface | The following TP for 38.214 Clause 6.2.1.3 is endorsed. | [`RAN1#122bis:8.1:002`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) |
+| 변경 (범위) | RAN1#122bis | Agreement | 확정 | 8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface | The following TP for 38.214 Clause 6.2.1 is endorsed. | [`RAN1#122bis:8.1:003`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) |
+| 추가 | RAN1#122bis | Agreement | 확정 | 8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface | Regarding the RAN2 LS from R1-2506715, for the UE-side candidate data collection configuration for BM-Case2, include the following IEs alon… | [`RAN1#122bis:8.1:004`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) |
+| 추가 | RAN1#122bis | Agreement | 확정 | 8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface | Regarding the RAN2 LS R1-2506720, the answer to the question in the LS is as below: | [`RAN1#122bis:8.1:005`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) |
+| 변경 (범위) | RAN1#122bis | Agreement | 확정 | 8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface | The following TP for TS 38.214 Clause 5.2.1.4.2 is endorsed. | [`RAN1#122bis:8.1:006`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) |
+| 추가 | RAN1#122bis | Agreement | 확정 | 8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface | The draft response LS in R1-2508121 is endorsed. Final LS in R1-2508122 | [`RAN1#122bis:8.1:007`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) |
+| 변경 (범위) | RAN1#122bis | Agreement | 확정 | 8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface | The following TP for TS 38.214 is endorsed. | [`RAN1#122bis:8.1:010`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) |
+| 변경 (범위) | RAN1#122bis | Agreement | 확정 | 8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface | Regarding the RAN2 LS from R1-2506715, for the UE-side candidate data collection configuration for CSI prediction, include the following IE… | [`RAN1#122bis:8.1:011`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) |
+| 변경 (범위) | RAN1#122bis | Agreement | 확정 | 8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface | Adopt the following TP for TS 38.214. | [`RAN1#122bis:8.1:012`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) |
+| 변경 (범위) | RAN1#122bis | Agreement | 확정 | 8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface | Following TP is endorsed as editorial corrections for TS 38.214 for Clauses 5.2.1.4.2, 5.2.1.4.6, 5.2.1.6 and 5.4. | [`RAN1#122bis:8.1:013`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) |
+| 변경 (범위) | RAN1#122bis | Agreement | 확정 | 8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface | Regarding the RAN2 LS from R1-2506715: | [`RAN1#122bis:8.1:014`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) |
+| 변경 (범위) | RAN1#122bis | Agreement | 확정 | 8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface | Support the configuration of following parameter in a CSI-ReportConfig with the higher layer parameter reportQuantity set to 'none-CSI-r19' | [`RAN1#122bis:8.1:015`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) |
+| 추가 | RAN1#122bis | Agreement | 후보 | 8.8 Maintenance on others | - In case PUSCH repetition Type-B or Type-A is applied for first CG-PUSCH or DG-PUSCH, reuse the legacy rule for CSI multiplexing and CSI f… | [`RAN1#122bis:8.8:005`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) |
+| 변경 (범위) | RAN1#122bis | Agreement | 확정 | 9.1 UE features for AI/ML for NR Air Interface | Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown | [`RAN1#122bis:9.1:006`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) |
+| 변경 (범위) | RAN1#122bis | Agreement | 확정 | 9.1 UE features for AI/ML for NR Air Interface | Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown | [`RAN1#122bis:9.1:007`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) |
+| 변경 (범위) | RAN1#122bis | Agreement | 확정 | 9.1 UE features for AI/ML for NR Air Interface | Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown | [`RAN1#122bis:9.1:008`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) |
+| 추가 | RAN1#122bis | Agreement | 확정 | 9.1 UE features for AI/ML for NR Air Interface | Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown | [`RAN1#122bis:9.1:009`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) |
+| 변경 (범위) | RAN1#122bis | Agreement | 확정 | 9.1 UE features for AI/ML for NR Air Interface | Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown | [`RAN1#122bis:9.1:010`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) |
+| 추가 | RAN1#122bis | Agreement | 확정 | 9.1 UE features for AI/ML for NR Air Interface | Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown | [`RAN1#122bis:9.1:011`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) |
+| 변경 (범위) | RAN1#122bis | Agreement | 확정 | 9.1 UE features for AI/ML for NR Air Interface | Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown | [`RAN1#122bis:9.1:012`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) |
+| 변경 (범위) | RAN1#122bis | Agreement | 확정 | 9.1 UE features for AI/ML for NR Air Interface | Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown | [`RAN1#122bis:9.1:013`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) |
+| 변경 (범위) | RAN1#122bis | Agreement | 확정 | 9.1 UE features for AI/ML for NR Air Interface | Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown | [`RAN1#122bis:9.1:014`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) |
+| 변경 (범위) | RAN1#122bis | Agreement | 확정 | 9.1 UE features for AI/ML for NR Air Interface | Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown | [`RAN1#122bis:9.1:015`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) |
+| 변경 (범위) | RAN1#122bis | Agreement | 확정 | 9.1 UE features for AI/ML for NR Air Interface | Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown | [`RAN1#122bis:9.1:016`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) |
+| 변경 (범위) | RAN1#122bis | Agreement | 확정 | 9.1 UE features for AI/ML for NR Air Interface | Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown | [`RAN1#122bis:9.1:017`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) |
+| 변경 (범위) | RAN1#122bis | Agreement | 확정 | 9.1 UE features for AI/ML for NR Air Interface | Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown | [`RAN1#122bis:9.1:018`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) |
 
 ## 후보가 많은 Agenda
 
@@ -174,21 +236,21 @@ Agenda 번호는 회의마다 바뀌므로 '섹션 + Agenda 제목'으로 이어
 
 | 섹션 | Agenda | 번호 | 후보 수 |
 |---|---|---|---:|
-| Maintenance on Rel-19 NR and E-UTRA | Maintenance on others | 8.2, 8.7, 8.8 | 43 |
-| Rel-19 UE Features | UE features for AI/ML for NR Air Interface | 9.1 | 28 |
-| Maintenance on Rel-19 NR and E-UTRA | Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface | 8.1 | 25 |
-| Maintenance on Rel-19 NR and E-UTRA | Maintenance on Evolution of NR duplex operation: Sub-band full duplex (SBFD) | 8.3 | 17 |
-| Maintenance on Rel-19 NR and E-UTRA | Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT | 8.1 | 16 |
+| Maintenance on Rel-19 NR and E-UTRA | Maintenance on others | 8.2, 8.7, 8.8 | 45 |
+| Maintenance on Rel-19 NR and E-UTRA | Maintenance on Evolution of NR duplex operation: Sub-band full duplex (SBFD) | 8.3 | 18 |
 | Rel-19 UE Features | UE features for NR mobility enhancements Phase 4 | 9.6 | 15 |
-| Rel-20 Study of 6GR | Uplink transmission scheme(s) for uplink channels | 10.5.2.3 | 14 |
+| Rel-20 Study of 6GR | Uplink transmission scheme(s) for uplink channels | 10.5.2.3 | 15 |
 | Maintenance on Rel-19 NR and E-UTRA | Measurements related enhancements for LTM | 8.9.1 | 10 |
 | Rel-19 UE Features | UE features Batch C | 9.3 | 10 |
 | Rel-20 Study of 6GR | Other physical layer signals, channels and procedure | 10.5.5 | 8 |
 | Maintenance on Rel-19 NR and E-UTRA | Maintenance on Low-power wake-up signal and receiver for NR (LP-WUS/WUR) | 8.5, 8.6 | 7 |
 | Rel-19 UE Features | UE features Batch B | 9.2 | 7 |
-| Rel-20 Study of 6GR | Downlink transmission scheme(s) for downlink shared channels | 10.5.2.2 | 6 |
+| Rel-20 Study of 6GR | Downlink transmission scheme(s) for downlink shared channels | 10.5.2.2 | 7 |
 | Maintenance on Rel-19 NR and E-UTRA | CLI handling | 8.3.3 | 5 |
 | Pre-Rel-19 NR Maintenance | Pre-Rel-19 NR Maintenance | 7 | 5 |
+| Rel-20 Study of 6GR | Aspects of integration with communication | 10.8.2 | 5 |
+| Maintenance on Rel-19 NR and E-UTRA | On-demand SSB SCell operation | 8.5.1 | 4 |
+| Maintenance on Rel-19 NR and E-UTRA | Maintenance on Enhancements of network energy savings for NR | 8.5 | 3 |
 
 ---
 모든 결정은 3GPP FTP의 Chair notes 원문 그대로이며, 각 결정 끝에 Chair notes와 근거 TDoc 링크를 붙였습니다.

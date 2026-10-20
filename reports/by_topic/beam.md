@@ -2,7 +2,7 @@
 
 > 원본 DB 마지막 업데이트 **2026-10-19 20:12 KST** · [요약으로 돌아가기](../README.md)
 
-주된 주제가 Beam management인 확정 118건 (Agreement 116 · WA 1 · Conclusion 1), 후보 64건. 결정 본문은 Chair notes 원문 그대로입니다(요약 없음). 최신 회의부터 보여줍니다.
+주된 주제가 Beam management인 확정 121건 (Agreement 118 · WA 1 · Conclusion 2), 후보 55건. 결정 본문은 Chair notes 원문 그대로입니다(요약 없음). 최신 회의부터 보여줍니다.
 주된 주제가 다른 결정 중 이 주제가 관련 주제로 붙은 것은 맨 아래 '관련 결정'에 모았습니다.
 
 ## RAN1#126bis — 18건
@@ -296,7 +296,37 @@
 
 출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Beam management]`
 
-## RAN1#126 — 30건
+## RAN1#126 — 33건
+
+**Agreement** · `8.1` Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT · `RAN1#126:8.1:004` · 관련 주제: CSI 보고/codebook, CSI-RS
+
+> The following TP for TS 38.214 Clause 5.1.6.1.2.
+> The corresponding CR for Rel-19, TS 38.214 Clause 5.1.6.1.2 in R1-2606879 is endorsed.
+> Reason for change: A new RRC IE CSI-LoggedMeasurementConfig is defined in 38.331 for network-side data collection, which is used to configure UE to perform the logging of measurements on CSI-RS resources. For CSI-RS measurement configured by the IE CSI-ReportConfig for L1 CSI report, there are some descriptions and constraints in spec 38.214, which are also needed for CSI-RS measurement configured by the IE CSI-LoggedMeasurementConfig for L3 CSI report.
+> Summary of change: Add descriptions and constraints for CSI-RS measurement configured by the IE CSI-LoggedMeasurementConfig (L3 CSI report) in 38.214.
+> Consequences if not approved: The descriptions and constraints for CSI-RS measurement configured by the IE CSI-LoggedMeasurementConfig (L3 CSI report) are missing in 38.214.
+> | 5.1.6.1.2 CSI-RS for L1-RSRP and L1-SINR computation If a UE is configured with a NZP-CSI-RS-ResourceSet configured with the higher layer parameter repetition set to 'on', the UE may assume that the CSI-RS resources, described in Clause 5.2.2.3.1, within the NZP-CSI-RS-ResourceSet are transmitted with the same downlink spatial domain transmission filter, where the CSI-RS resources in the NZP-CSI-RS-ResourceSet are transmitted in different OFDM symbols. If repetition is set to 'off', the UE shall not assume that the CSI-RS resources within the NZP-CSI-RS-ResourceSet are transmitted with the same downlink spatial domain transmission filter. If the UE is configured with a CSI-ReportConfig with reportQuantity set to 'cri-RSRP', 'cri-SINR', 'cri-RSRP-Index', 'cri-SINR-Index', 'none', 'p-cri-r19', 'p-cri-RSRP-r19', 'p-ssb-index-r19', 'p-ssb-index-RSRP-r19', 'none-bm-r19', or 'rs-pai-r19', and if the CSI-ResourceConfig for channel measurement (higher layer parameters resourcesForChannelMeasurement and resourcesForSetA-r19 when reportQuantity set to 'none-bm-r19') contains a NZP-CSI-RS-ResourceSet that is configured with the higher layer parameter repetition and without the higher layer parameter trs-Info, the UE can only be configured with the same number (1 or 2) of ports with the higher layer parameter nrofPorts for all CSI-RS resources within the set. If the UE is configured with the CSI-RS resource in the same OFDM symbol(s) as an SS/PBCH block, the UE may assume that the CSI-RS and the SS/PBCH block are quasi co-located with 'typeD' if 'typeD' is applicable. Furthermore, the UE shall not expect to be configured with the CSI-RS in PRBs that overlap with those of the SS/PBCH block, and the UE shall expect that the same subcarrier spacing is used for both the CSI-RS and the SS/PBCH block. If the UE is configured with a CSI-LoggedMeasurementConfig, and if the CSI-ResourceConfig for channel measurement (higher layer parameters csi-LoggedResourceConfig) contains a NZP-CSI-RS-ResourceSet that is configured with the higher layer parameter repetition and without the higher layer parameter trs-Info, the UE can only be configured with the same number (1 or 2) of ports with the higher layer parameter nrofPorts for all CSI-RS resources within the set. Each Reporting Setting CSI-LoggedMeasurementConfig is associated with a single downlink BWP (indicated by higher layer parameter BWP-Id) given in the associated CSI-ResourceConfig for channel measurement. <omitted texts> |
+> MIMO
+
+출처: [Chair notes RAN1#126_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx) · [R1-2606835](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Docs/R1-2606835.zip) · `[126-R19-AI 8.1]`
+
+**Agreement** · `8.1` Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT · `RAN1#126:8.1:005` · 관련 주제: CSI 보고/codebook
+
+> The following changes for Clause 9.2 in TS 38.213 is endorsed.
+> The corresponding CR for Rel-19, TS 38.213 in R1-2606868 is endorsed.
+> - Reason for change: In Rel-19, UEIRI is introduced as a new type of UCI for notifying (ModeA) or requesting a PUSCH resource (ModeB) for UE-initiated/event-driven beam reporting. Whether UE transmits UEIRI on a PUCCH format 0 or format 1 in the PUCCH resource depends on whether the triggering condition of the event(s) for UE-initiated/event-driven beam reporting is met or not. In this case, the information bit of UEIRI is not always included in the PUCCH resource. However, in the current spec, UEIRI is described as a compulsory UCI in the PUCCH resource, which is not correct.
+> - Summary of change: Add the condition “if any” to the information bit for UEIRI where the contents of UCI bit(s) are described in the first paragraph of Section 9.2, TS38.213.
+> - Consequences if not approved: The availability of information bit for UEIRI in PUCCH is not correctly stated.
+> | 9.2 UCI reporting in physical uplink control channel UCI types reported in a PUCCH include HARQ-ACK information, SR, LRR, UEIRI, and CSI. UCI bits include HARQ-ACK information bits, if any, SR information bits, if any, LRR information bit, if any, UEIRI information bit, if any, and CSI bits, if any. The HARQ-ACK information bits correspond to a HARQ-ACK codebook as described in clause 9.1. For the remaining of this clause, unless stated otherwise in clauses 9.2.4A and 9.2.5.1, any reference to SR is applicable for SR and/or for LRR and/or for UEIRI. <Unchanged parts are omitted> |
+
+출처: [Chair notes RAN1#126_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx) · [R1-2606809](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Docs/R1-2606809.zip) · `[126-R19-AI 8.1]`
+
+**Conclusion** · `8.1` Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT · `RAN1#126:8.1:009` · 관련 주제: CSI 보고/codebook, CSI-RS
+
+> There is no consensus in RAN1 to support the following change from R1-2605805 of Clause 5.2.1.5.4.1 in TS 38.214:
+> | 5.2.1.5.4.1 UE Initiated CSI reporting <Unchanged parts are omitted> The counter of the event instances for such reference signal is reset: - if the reference signal in the indicated TCI state is updated and newBeamResourceSet is a NZP-CSI-RS-ResourceSet configured with repetition, or the SS/PBCH block which is QCLed with the reference signal in the indicated TCI state is updated and newBeamResourceSet is a CSI-SSB-ResourceSet when the UE is configured with a CSI-ReportConfig with the higher layer parameter eventType set to ‘event2’ or ‘event1’, or - if the reference signal with the valueOfQ-th highest L1-RSRP out of the reference signals among the activated TCI states is updated and newBeamResourceSet is a NZP-CSI-RS-ResourceSet configured with repetition, or the SS/PBCH block with the valueOfQ-th highest L1-RSRP out of the SS/PBCH blocks QCLed with the reference signals among the activated TCI states, which determines event instance(s), is updated and newBeamResourceSet is a CSI-SSB-ResourceSet when the UE is configured with a CSI-ReportConfig with the higher layer parameter eventType set to ‘event7’, or - if eventThreshold or valueOfQ or eventInstanceCount or eventDetectionTimeWindow in the CSI-ReportConfig are reconfigured. <Unchanged parts are omitted> |
+
+출처: [Chair notes RAN1#126_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx) · [R1-2606867](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Docs/R1-2606867.zip) · `[126-R19-AI 8.1]`
 
 **Agreement** · `10.5.1.1` Synchronization acquisition and beam measurement · `RAN1#126:10.5.1.1:001`
 
@@ -1766,26 +1796,37 @@
 
 ---
 
-## 관련 결정 10건 (주된 주제는 다른 주제)
+## 관련 결정 21건 (주된 주제는 다른 주제)
 
 원문에 Beam management 관련 표현이 있지만 주된 주제가 다른 확정 결정입니다. 전문은 각 주된 주제 리포트에 있습니다.
 
 | 회의 | 구분 | 주된 주제 | Agenda | 원문 첫 줄 | 출처 |
 |---|---|---|---|---|---|
+| RAN1#126 | Agreement | [SRS](srs.md) | 8.1 Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT | The following TP for TS 38.213 Clause 11.1 is endorsed. | [Chair notes RAN1#126_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx) · [R1-2606825](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Docs/R1-2606825.zip) · `[126-R19-AI 8.1]` |
+| RAN1#126 | Agreement | [SRS](srs.md) | 8.1 Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT | The following TP for TS 38.214 Clause 6.2.1.3 is endorsed. | [Chair notes RAN1#126_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx) · [R1-2606795](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Docs/R1-2606795.zip) · `[126-R19-AI 8.1]` |
 | RAN1#125 | Agreement | [AI/ML CSI](aiml.md) | 10.5.3.1 Aspects of downlink-based CSI acquisition | For the study on channel property information (CPI), the evaluation at least considering the following: | [Chair notes RAN1#125_eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Inbox/Chair_notes/Chair%20notes%20RAN1%23125_eom.docx) · `[125-R20-6GR-Aspects of DL based CSI acquisition]` |
+| RAN1#125 | Agreement | [SRS](srs.md) | 8.1 Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT | The following TP for TS 38.214 Clause 5.4 is endorsed. | [Chair notes RAN1#125_eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Inbox/Chair_notes/Chair%20notes%20RAN1%23125_eom.docx) · [R1-2604995](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Docs/R1-2604995.zip) |
+| RAN1#124bis | Agreement | [AI/ML CSI](aiml.md) | 8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface | The following TP for TS 38.214 Clause 5.2.1.6 is endorsed. | [Chair notes RAN1#124bis_eom5](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Inbox/Chair_notes/Chair%20notes%20RAN1%23124bis_eom5.docx) · [R1-2603260](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Docs/R1-2603260.zip) · `[124b-R19-AI/ML]` |
 | RAN1#124 | Agreement | [SRS](srs.md) | 10.5.3.2 Aspects of uplink-based CSI acquisition | For UL-based CSI acquisition, study at least the following SRS usages: | [Chair notes RAN1#124 - eom_03](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124/Inbox/Chair_notes/Chair%20notes%20RAN1%23124%20-%20eom_03.docx) · `[124-R20-6GR-Aspects of UL based CSI acquisition]` |
 | RAN1#124 | Agreement | [SRS](srs.md) | 8.2 Maintenance on NR MIMO Phase 5 | Adopt the following TPs for clause 7 and clause 7.4 for TS 38.213 | [Chair notes RAN1#124 - eom_03](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124/Inbox/Chair_notes/Chair%20notes%20RAN1%23124%20-%20eom_03.docx) · [R1-2601519](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124/Docs/R1-2601519.zip) · `[124-R19-MIMO]` |
+| RAN1#124 | Agreement | [AI/ML CSI](aiml.md) | 8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface | For CSI prediction using UE-side model, for data collection for training, | [Chair notes RAN1#124 - eom_03](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124/Inbox/Chair_notes/Chair%20notes%20RAN1%23124%20-%20eom_03.docx) · [R1-2601565](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124/Docs/R1-2601565.zip) · `[124-R19-AI/ML]` |
+| RAN1#124 | Agreement | [AI/ML CSI](aiml.md) | 8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface | The following TP for TS 38.214 Clause 5.2.1.4.2 for Rel-19 is endorsed. | [Chair notes RAN1#124 - eom_03](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124/Inbox/Chair_notes/Chair%20notes%20RAN1%23124%20-%20eom_03.docx) · [R1-2600736](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124/Docs/R1-2600736.zip) · `[124-R19-AI/ML]` |
+| RAN1#123 | Agreement | [AI/ML CSI](aiml.md) | 8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface | The following TP is endorsed for TS 38.214. | [Chair notes RAN1#123 - eom3](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Inbox/Chair_notes/Chair%20notes%20RAN1%23123%20-%20eom3.docx) · [R1-2509188](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Docs/R1-2509188.zip) · `[123-R19-AI/ML]` |
 | RAN1#122bis | Agreement | [SRS](srs.md) | 10.2.1 Improvement of SRS capacity and coverage | - Support cross-slot SRS for all SRS resource types, i.e., for periodic, semi-persistent, and aperiodic SRS. | [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · [R1-2508045](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508045.zip) |
 | RAN1#122bis | Agreement | [SRS](srs.md) | 9.2 UE features for NR MIMO Phase 5 | Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as… | [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · [R1-2508081](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508081.zip) |
+| RAN1#122bis | Agreement | [AI/ML CSI](aiml.md) | 9.1 UE features for AI/ML for NR Air Interface | Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as… | [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · [R1-2508080](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508080.zip) |
+| RAN1#122bis | Agreement | [AI/ML CSI](aiml.md) | 8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface | The following TP for 38.214 Clause 6.2.1 is endorsed. | [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · [R1-2507998](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2507998.zip) · `[122bis-R19-AI/ML]` |
+| RAN1#122bis | Agreement | [AI/ML CSI](aiml.md) | 8.1 Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface | The following TP for 38.214 Clause 6.2.1.3 is endorsed. | [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · [R1-2507998](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2507998.zip) · `[122bis-R19-AI/ML]` |
 | RAN1#122 | Agreement | [AI/ML CSI](aiml.md) | 10.1.1 CSI spatial/frequency compression without temporal aspects (“Case 0”) | For model pairing procedure for inference, consider the applicability report procedure of Rel-19 AI/ML beam m… | [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) · [R1-2506482](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506482.zip) |
 | RAN1#122 | Agreement | [SRS](srs.md) | 9.2 UE features for NR MIMO Phase 5 | Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as… | [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) · [R1-2506606](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506606.zip) |
 | RAN1#122 | Agreement | [SRS](srs.md) | 9.2 UE features for NR MIMO Phase 5 | Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as… | [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) · [R1-2506606](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506606.zip) |
+| RAN1#122 | Agreement | [AI/ML CSI](aiml.md) | 9.1 UE features for AI/ML for NR Air Interface | Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as… | [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) · [R1-2506605](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506605.zip) |
 | RAN1#122 | Agreement | [SRS](srs.md) | 8.2.2 CSI enhancements | Adopt the following changes to TS38.214 V19.0.0 Clause 6.2.1.3 on priority rules for UE sounding procedure as… | [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) · [R1-2505535](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2505535.zip) |
 | RAN1#122 | Agreement | [AI/ML CSI](aiml.md) | 8.1.1 Specification support for beam management | Adopt the following TP for the clarification of ranking information. | [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) · [R1-2506451](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506451.zip) |
 
 ---
 
-## 후보 64건 (키워드 일치 · 확인 필요)
+## 후보 55건 (키워드 일치 · 확인 필요)
 
 포함 Agenda 밖에서 키워드로 잡힌 결정입니다. CSI 범위가 아닐 수 있습니다.
 
@@ -1856,45 +1897,7 @@
 
 출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · [R1-2607233](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2607233.zip) · `[126bis-R20-6GR-ISAC-Integration]`
 
-### RAN1#126 — 9건
-
-**Agreement** · `8.1` Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT · `RAN1#126:8.1:004` · 후보 · 관련 주제: CSI 보고/codebook, CSI-RS
-
-> The following TP for TS 38.214 Clause 5.1.6.1.2.
-> The corresponding CR for Rel-19, TS 38.214 Clause 5.1.6.1.2 in R1-2606879 is endorsed.
-> Reason for change: A new RRC IE CSI-LoggedMeasurementConfig is defined in 38.331 for network-side data collection, which is used to configure UE to perform the logging of measurements on CSI-RS resources. For CSI-RS measurement configured by the IE CSI-ReportConfig for L1 CSI report, there are some descriptions and constraints in spec 38.214, which are also needed for CSI-RS measurement configured by the IE CSI-LoggedMeasurementConfig for L3 CSI report.
-> Summary of change: Add descriptions and constraints for CSI-RS measurement configured by the IE CSI-LoggedMeasurementConfig (L3 CSI report) in 38.214.
-> Consequences if not approved: The descriptions and constraints for CSI-RS measurement configured by the IE CSI-LoggedMeasurementConfig (L3 CSI report) are missing in 38.214.
-> | 5.1.6.1.2 CSI-RS for L1-RSRP and L1-SINR computation If a UE is configured with a NZP-CSI-RS-ResourceSet configured with the higher layer parameter repetition set to 'on', the UE may assume that the CSI-RS resources, described in Clause 5.2.2.3.1, within the NZP-CSI-RS-ResourceSet are transmitted with the same downlink spatial domain transmission filter, where the CSI-RS resources in the NZP-CSI-RS-ResourceSet are transmitted in different OFDM symbols. If repetition is set to 'off', the UE shall not assume that the CSI-RS resources within the NZP-CSI-RS-ResourceSet are transmitted with the same downlink spatial domain transmission filter. If the UE is configured with a CSI-ReportConfig with reportQuantity set to 'cri-RSRP', 'cri-SINR', 'cri-RSRP-Index', 'cri-SINR-Index', 'none', 'p-cri-r19', 'p-cri-RSRP-r19', 'p-ssb-index-r19', 'p-ssb-index-RSRP-r19', 'none-bm-r19', or 'rs-pai-r19', and if the CSI-ResourceConfig for channel measurement (higher layer parameters resourcesForChannelMeasurement and resourcesForSetA-r19 when reportQuantity set to 'none-bm-r19') contains a NZP-CSI-RS-ResourceSet that is configured with the higher layer parameter repetition and without the higher layer parameter trs-Info, the UE can only be configured with the same number (1 or 2) of ports with the higher layer parameter nrofPorts for all CSI-RS resources within the set. If the UE is configured with the CSI-RS resource in the same OFDM symbol(s) as an SS/PBCH block, the UE may assume that the CSI-RS and the SS/PBCH block are quasi co-located with 'typeD' if 'typeD' is applicable. Furthermore, the UE shall not expect to be configured with the CSI-RS in PRBs that overlap with those of the SS/PBCH block, and the UE shall expect that the same subcarrier spacing is used for both the CSI-RS and the SS/PBCH block. If the UE is configured with a CSI-LoggedMeasurementConfig, and if the CSI-ResourceConfig for channel measurement (higher layer parameters csi-LoggedResourceConfig) contains a NZP-CSI-RS-ResourceSet that is configured with the higher layer parameter repetition and without the higher layer parameter trs-Info, the UE can only be configured with the same number (1 or 2) of ports with the higher layer parameter nrofPorts for all CSI-RS resources within the set. Each Reporting Setting CSI-LoggedMeasurementConfig is associated with a single downlink BWP (indicated by higher layer parameter BWP-Id) given in the associated CSI-ResourceConfig for channel measurement. <omitted texts> |
-> MIMO
-
-출처: [Chair notes RAN1#126_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx) · [R1-2606835](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Docs/R1-2606835.zip) · `[126-R19-AI 8.1]`
-
-**Agreement** · `8.1` Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT · `RAN1#126:8.1:005` · 후보 · 관련 주제: CSI 보고/codebook
-
-> The following changes for Clause 9.2 in TS 38.213 is endorsed.
-> The corresponding CR for Rel-19, TS 38.213 in R1-2606868 is endorsed.
-> - Reason for change: In Rel-19, UEIRI is introduced as a new type of UCI for notifying (ModeA) or requesting a PUSCH resource (ModeB) for UE-initiated/event-driven beam reporting. Whether UE transmits UEIRI on a PUCCH format 0 or format 1 in the PUCCH resource depends on whether the triggering condition of the event(s) for UE-initiated/event-driven beam reporting is met or not. In this case, the information bit of UEIRI is not always included in the PUCCH resource. However, in the current spec, UEIRI is described as a compulsory UCI in the PUCCH resource, which is not correct.
-> - Summary of change: Add the condition “if any” to the information bit for UEIRI where the contents of UCI bit(s) are described in the first paragraph of Section 9.2, TS38.213.
-> - Consequences if not approved: The availability of information bit for UEIRI in PUCCH is not correctly stated.
-> | 9.2 UCI reporting in physical uplink control channel UCI types reported in a PUCCH include HARQ-ACK information, SR, LRR, UEIRI, and CSI. UCI bits include HARQ-ACK information bits, if any, SR information bits, if any, LRR information bit, if any, UEIRI information bit, if any, and CSI bits, if any. The HARQ-ACK information bits correspond to a HARQ-ACK codebook as described in clause 9.1. For the remaining of this clause, unless stated otherwise in clauses 9.2.4A and 9.2.5.1, any reference to SR is applicable for SR and/or for LRR and/or for UEIRI. <Unchanged parts are omitted> |
-
-출처: [Chair notes RAN1#126_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx) · [R1-2606809](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Docs/R1-2606809.zip) · `[126-R19-AI 8.1]`
-
-**Conclusion** · `8.1` Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT · `RAN1#126:8.1:009` · 후보 · 관련 주제: CSI 보고/codebook, CSI-RS
-
-> There is no consensus in RAN1 to support the following change from R1-2605805 of Clause 5.2.1.5.4.1 in TS 38.214:
-> | 5.2.1.5.4.1 UE Initiated CSI reporting <Unchanged parts are omitted> The counter of the event instances for such reference signal is reset: - if the reference signal in the indicated TCI state is updated and newBeamResourceSet is a NZP-CSI-RS-ResourceSet configured with repetition, or the SS/PBCH block which is QCLed with the reference signal in the indicated TCI state is updated and newBeamResourceSet is a CSI-SSB-ResourceSet when the UE is configured with a CSI-ReportConfig with the higher layer parameter eventType set to ‘event2’ or ‘event1’, or - if the reference signal with the valueOfQ-th highest L1-RSRP out of the reference signals among the activated TCI states is updated and newBeamResourceSet is a NZP-CSI-RS-ResourceSet configured with repetition, or the SS/PBCH block with the valueOfQ-th highest L1-RSRP out of the SS/PBCH blocks QCLed with the reference signals among the activated TCI states, which determines event instance(s), is updated and newBeamResourceSet is a CSI-SSB-ResourceSet when the UE is configured with a CSI-ReportConfig with the higher layer parameter eventType set to ‘event7’, or - if eventThreshold or valueOfQ or eventInstanceCount or eventDetectionTimeWindow in the CSI-ReportConfig are reconfigured. <Unchanged parts are omitted> |
-
-출처: [Chair notes RAN1#126_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx) · [R1-2606867](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Docs/R1-2606867.zip) · `[126-R19-AI 8.1]`
-
-**Agreement** · `8.1` Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT · `RAN1#126:8.1:012` · 후보
-
-> The following TP for TS 38.211 Clause 6.3.3.1 is endorsed.
-> The corresponding CR for Rel-19, TS 38.211 in R1-2606849 is endorsed.
-> | Reason for change: The parameter sib1-RestrictedSetConfig of UL-WUS configuration for SIB1 request in TS 38.331 is not captured in TS 38.211. Summary of change: Add description for parameter sib1-RestrictedSetConfig of TS 38.211 according to the IE sib1-RestrictedSetConfig defined in the TS 38.331. Consequence if not approved: Ambiguity occurs for the sib1-RestrictedSetConfig for on demand SIB1. 6.3.3 Physical random-access channel 6.3.3.1 Sequence generation The set of random-access preambles shall be generated according to from which the frequency-domain representation shall be generated according to where , , , or depending on the PRACH preamble format as given by Tables 6.3.3.1-1 and 6.3.3.1-2. There are 64 preambles defined in each time-frequency PRACH occasion, enumerated in increasing order of first increasing cyclic shift of a logical root sequence, and then in increasing order of the logical root sequence index, starting with the index obtained from the higher-layer parameter - prach-RootSequenceIndex or rootSequenceIndex-BFR or by msgA-PRACH-RootSequenceIndex if configured and a type-2 random-access procedure is initiated as described in clause 8.1 of [5, TS 38.213], or by - prach-RootSequenceIndex in EarlyUL-SyncConfig if the PRACH transmission is for a candidate cell, or by - prach-RootSequenceIndex in RACH-ConfigTwoTA if the PRACH transmission is associated with an additional PCI different from serving cell PCI, or by - prach-RootSequenceIndex in SIB1-RequestConfig if the PRACH transmission is for SIB1 request. Additional preamble sequences, in case 64 preambles cannot be generated from a single root Zadoff-Chu sequence, are obtained from the root sequences with the consecutive logical indexes until all the 64 sequences are found. The logical root sequence order is cyclic; the logical index 0 is consecutive to . The sequence number is obtained from the logical root sequence index according to Tables 6.3.3.1-3 to 6.3.3.1-4B. The cyclic shift is given by where is given by Tables 6.3.3.1-5 to 6.3.3.1-7. The type of restricted sets (unrestricted, restricted type A, restricted type B) is given by - the higher-layer parameter msgA-RestrictedSetConfig, if provided; - or the higher-layer parameter ltm-restrictedSetConfig associated with a candidate cell indicated in Cell indicator field of a PDCCH order, if provided; - or the higher-layer parameter twoTA-restrictedSetConfig associated with an additional PCI indicated in PRACH association indicator field of a PDCCH order, if provided; - otherwise, the higher-layer parameter restrictedSetConfig. < Unchanged Text Omitted > |
-
-출처: [Chair notes RAN1#126_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx) · [R1-2606825](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Docs/R1-2606825.zip) · `[126-R19-AI 8.1]`
+### RAN1#126 — 5건
 
 **Agreement** · `8.2` Maintenance on others · `RAN1#126:8.2:011` · 후보 · 관련 주제: CSI 보고/codebook, CSI-RS
 
@@ -2029,25 +2032,13 @@
 
 출처: [Chair notes RAN1#125_eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Inbox/Chair_notes/Chair%20notes%20RAN1%23125_eom.docx) · [R1-2603996](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Docs/R1-2603996.zip) · `[125-R20-6GR-ISAC-Integration]`
 
-### RAN1#124bis — 8건
+### RAN1#124bis — 7건
 
 **Conclusion** · `7` Pre-Rel-19 NR Maintenance · `RAN1#124bis:7:004` · 후보
 
 > If unified TCI is configured, PUSCH can be scheduled with DCI format 0_0.
 
 출처: [Chair notes RAN1#124bis_eom5](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Inbox/Chair_notes/Chair%20notes%20RAN1%23124bis_eom5.docx) · [R1-2603383](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Docs/R1-2603383.zip)
-
-**Agreement** · `8.1` Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface · `RAN1#124bis:8.1:002` · 후보 · 관련 주제: CSI 보고/codebook, CSI-RS
-
-> The following TP for TS 38.214 Clause 5.2.1.6 is endorsed.
-> The corresponding final CR for Rel-19 TS 38.214 in R1-2603379 is endorsed
-> Reason for change: CPU duration for beam management related UE-side data collection is not captured correctly. In current specification, periodic CSI report for UE-side data collection for beam management is not supported.
-> | Agreement For UE-sided model, regarding the resource type for data collection purpose, only always-on SSB and P/SP CSI-RS are supported. Agreement For UE-sided model, regarding a CSI-ReportConfig for data collection, Reuse the existing CPU occupation time for a CSI report with CSI-ReportConfig with reportQuantity set to 'none' and TRS-info not configured |
-> Summary of change: Reflect the RAN1 agreements accurately in Section 5.2.1.6 of TS 38.214. Include periodic CSI report for UE-side data collection for beam management.
-> Consequence if not approved: Incorrect UE behaviour for CPU duration for UE-side data collection for training.
-> | 5.2.1.6 CSI processing criteria < Unchanged parts are omitted > For a CSI report with CSI-ReportConfig with higher layer parameter reportQuantity set to 'none' and CSI-RS-ResourceSet with higher layer parameter trs-Info not configured, or reportQuantity set to 'none-bm-r19', the CPU(s) are occupied for a number of OFDM symbols as follows: - A semi-persistent CSI report (excluding an initial semi-persistent CSI report on PUSCH after the PDCCH triggering the report) occupies CPU(s) from the first symbol of the earliest one of each transmission occasion of periodic or semi-persistent CSI-RS/SSB resource for channel measurement for L1-RSRP computation, until symbols after the last symbol of the latest one of the CSI-RS/SSB resource for channel measurement for L1-RSRP computation in each transmission occasion. - An aperiodic CSI report occupies CPU(s) from the first symbol after the PDCCH triggering the CSI report until the last symbol between symbols after the first symbol after the PDCCH triggering the CSI report and symbols after the last symbol of the latest one of each CSI-RS/SSB resource for channel measurement for L1-RSRP computation. For a CSI report with CSI-ReportConfig with higher layer parameter reportQuantity set to 'none-csi-r19', the CPU(s) are occupied for a number of OFDM symbols as follows: - CSI report occupies CPU(s) from the first symbol of each transmission occasion of periodic or semi-persistent CSI-RS resource for channel measurement, until symbols after the transmission occasion of periodic or semi-persistent CSI-RS resource for channel measurement. where are defined in the table 5.4-2. For a CSI report with CSI-ReportConfig with higher layer parameter reportQuantity set to 'none-bm-r19', the CPU(s) are occupied for a number of OFDM symbols as follows: - CSI report occupies CPU(s) from the first symbol of the earliest one of each transmission occasion of periodic or semi-persistent CSI-RS/SSB resource for channel measurement for L1-RSRP computation, until symbols after the last symbol of the latest one of the CSI-RS/SSB resource for channel measurement for L1-RSRP computation in each transmission occasion. where are defined in the table 5.4-2. < Unchanged parts are omitted > |
-
-출처: [Chair notes RAN1#124bis_eom5](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Inbox/Chair_notes/Chair%20notes%20RAN1%23124bis_eom5.docx) · [R1-2603260](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Docs/R1-2603260.zip) · `[124b-R19-AI/ML]`
 
 **Agreement** · `8.5` Maintenance on Low-power wake-up signal and receiver for NR (LP-WUS/WUR) · `RAN1#124bis:8.5:004` · 후보 · 관련 주제: CSI-RS
 
@@ -2111,18 +2102,7 @@
 
 출처: [Chair notes RAN1#124bis_eom5](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Inbox/Chair_notes/Chair%20notes%20RAN1%23124bis_eom5.docx) · `[124b-R20-6GR-Transmission scheme for DL shared channel]`
 
-### RAN1#124 — 5건
-
-**Agreement** · `8.1` Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface · `RAN1#124:8.1:001` · 후보 · 관련 주제: CSI 보고/codebook, CSI-RS
-
-> The following TP for TS 38.214 Clause 5.2.1.4.2 for Rel-19 is endorsed.
-> The corresponding final CR for Rel-19, TS 38.214 in R1-2601645 is endorsed.
-> Reason for change: There is a bracket related to Set A description. Report quantity name and RRC parameters name are not aligned with the latest TS38.331.
-> Summary of change: Remove the bracket related to Set A description and align the report quantity name and RRC parameters name.
-> Consequences if not approved: The description related to Set A is unclear.
-> | 5.2.1.4.2 Report quantity configurations <omitted texts> If the UE is configured with a CSI-ReportConfig with reportQuantity-r19 set to 'p-cri-r19p-CRI-r19', 'p-cri-RSRP-r19p-CRI-RSRP-r19', 'p-ssb-index-r19p-SSB-Index-r19' or 'p-ssb-index-RSRP-r19p-SSB-Index-RSRP-r19', and with nrofreportedpredictedrs-r19nrofReportedPredictedRS-r19 and/or nroftimeinstance-r19nrofTimeInstance-r19, the following applies: the UE is not required to update measurements for more than 64 CSI-RS or SSB resources given by resourcesForChannelMeasurement,[ and is not expected to predict for more than 64 CSI-RS or SSB resources given by resourcesForSetA-r19]resourcesForChannelPrediction-r19, the UE shall report one of the following in a single report: - nrofreportedpredictedrs-r19nrofReportedPredictedRS-r19 different P-CRIs or P-SSBRIs of the second Resource Setting, if nroftimeinstance-r19nrofTimeInstance-r19 is not configured and reportQuantity-r19 is set to ' p-cri-r19p-CRI-r19' or ' p-ssb-index-r19p-SSB-Index-r19', - nrofreportedpredictedrs-r19nrofReportedPredictedRS-r19 different P-CRIs or P-SSBRIs of the second Resource Setting, with corresponding predicted L1-RSRP(s), if nroftimeinstance-r19nrofTimeInstance-r19 is not configured and reportQuantity-r19 set to ' p-cri-RSRP-r19p-CRI-RSRP-r19' or ' p-ssb-index-RSRP-r19p-SSB-Index-RSRP-r19', - nrofreportedpredictedrs-r19nrofReportedPredictedRS-r19 different P-CRIs or P-SSBRIs of the second Resource Setting for each of nroftimeinstance-r19nrofTimeInstance-r19 time instance(s), if nroftimeinstance-r19nrofTimeInstance-r19 is configured and reportQuantity-r19 set to 'p-cri-r19' or ' p-ssb-index-RSRP-r19p-SSB-Index-RSRP-r19', - nrofreportedpredictedrs-r19nrofReportedPredictedRS-r19 different P-CRIs or P-SSBRIs of the second Resource Setting for each of nroftimeinstance-r19nrofTimeInstance-r19 time instance(s), with corresponding predicted L1-RSRP(s), if nroftimeinstance-r19nrofTimeInstance-r19 is configured and reportQuantity-r19 set to ' p-cri-RSRP-r19p-CRI-RSRP-r19' or ' p-ssb-index-RSRP-r19p-SSB-Index-RSRP-r19'. <omitted texts> |
-
-출처: [Chair notes RAN1#124 - eom_03](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124/Inbox/Chair_notes/Chair%20notes%20RAN1%23124%20-%20eom_03.docx) · [R1-2600736](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124/Docs/R1-2600736.zip) · `[124-R19-AI/ML]`
+### RAN1#124 — 4건
 
 **Agreement** · `8.6` Maintenance on Low-power wake-up signal and receiver for NR (LP-WUS/WUR) · `RAN1#124:8.6:006` · 후보 · 관련 주제: CSI-RS
 
@@ -2259,7 +2239,7 @@
 
 출처: [Chair notes RAN1#123 - eom3](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Inbox/Chair_notes/Chair%20notes%20RAN1%23123%20-%20eom3.docx)
 
-### RAN1#122bis — 11건
+### RAN1#122bis — 10건
 
 **Agreement** · `8.3` Maintenance on Evolution of NR duplex operation: Sub-band full duplex (SBFD) · `RAN1#122bis:8.3:001` · 후보
 
@@ -2318,13 +2298,6 @@
 
 출처: [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · [R1-2508156](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508156.zip)
 
-**Agreement** · `9.1` UE features for AI/ML for NR Air Interface · `RAN1#122bis:9.1:007` · 후보
-
-> Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
-> | 58. NR_AIML_air | 58-1-1 | Increased number of reported RSs for beam management | 1. Support of reporting format for L1-RSRP measurements not including CRI/SSBRI other than one for the largest measured L1-RSRP in a reporting instance, if the number of reported L1-RSRPs is equal to the size of the measurement resource set. 2. Support of reporting format for L1-RSRPs and corresponding beam information of Top M beam(s) with largest M measured value(s) of L1-RSRP(s) of a measurement resource set, where M is configured by gNB, if the number of reported L1-RSRPs is smaller than the size of the measurement resource set 3. Maximum number of M reported RSs, M>4 | FFS {2-21, 2-22} or {2-23, 2-23a} or 2-29 or 2-24 | yes | n/a | Increased number of reported beams for beam management is not supported | Per UE Per band | No n/a | No n/a | No n/a | Component 3 candidate values: {6,8} | Optional with capability signalling |
-
-출처: [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · [R1-2508080](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508080.zip)
-
 **Agreement** · `9.6` UE features for NR mobility enhancements Phase 4 · `RAN1#122bis:9.6:001` · 후보 · 관련 주제: CSI 보고/codebook, CSI-RS
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
@@ -2379,7 +2352,7 @@
 
 출처: [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · `[122bis-R20-6GR-Energy efficiency]`
 
-### RAN1#122 — 14건
+### RAN1#122 — 12건
 
 **Agreement** · `5` Incoming Liaison Statements · `RAN1#122:5:002` · 후보 · 관련 주제: CSI-RS
 
@@ -2418,23 +2391,6 @@
 > ------------------------------------------------------- End of Text Proposal --------------------------------------------------------
 
 출처: [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) · [R1-2506494](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506494.zip)
-
-**Agreement** · `8.5.2` On-demand SIB1 for idle/inactive mode Ues · `RAN1#122:8.5.2:002` · 후보
-
-> Adopt the following TP for Clause 5.3.2 and 6.3.3.1 in TS38.211 to clarify the PRACH transmission for SIB1 request.
-> --------------------------------- start of TP for 38.211-------------------------------------
-> 5.3.2	OFDM baseband signal generation for PRACH
-> <omitted text>
-> -	 is the subcarrier spacing of the initial uplink bandwidth part during initial access. If the PRACH transmission is for a candidate cell  is provided by ltm-PRACH-SubcarrierSpacing in EarlyUL-SyncConfig. Otherwise,  is the subcarrier spacing of the active uplink bandwidth part;
-> -	 is the largest  value among the subcarrier spacing configurations by the higher-layer parameter scs-SpecificCarrierList;
-> -	 is the lowest numbered resource block of the initial uplink bandwidth part and is derived by the higher-layer parameter initialUplinkBWP or initialUplinkBWP-RedCap during initial access and from the higher-layer parameters bwp-GenericParameters in EarlyUL-SyncConfig if the PRACH transmission is for a candidate cell. Otherwise,  is the lowest numbered resource block of the active uplink bandwidth part and is derived by the higher-layer parameter BWP-Uplink;
-> <omitted text>
-> 6.3.3.1	Sequence generation
-> <omitted text>
-> There are 64 preambles defined in each time-frequency PRACH occasion, enumerated in increasing order of first increasing cyclic shift  of a logical root sequence, and then in increasing order of the logical root sequence index, starting with the index obtained from the higher-layer parameter prach-RootSequenceIndex or rootSequenceIndex-BFR or by msgA-PRACH-RootSequenceIndex if configured and a type-2 random-access procedure is initiated as described in clause 8.1 of [5, TS 38.213] or by prach-RootSequenceIndex in EarlyUL-SyncConfig if the PRACH transmission is for a candidate cell or. Additional preamble sequences, in case 64 preambles cannot be generated from a single root Zadoff-Chu sequence, are obtained from the root sequences with the consecutive logical indexes until all the 64 sequences are found. The logical root sequence order is cyclic; the logical index 0 is consecutive to . The sequence number  is obtained from the logical root sequence index according to Tables 6.3.3.1-3 to 6.3.3.1-4B.
-> --------------------------------- end of TP for 38.211-------------------------------------
-
-출처: [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) · [R1-2506400](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506400.zip)
 
 **Conclusion** · `8.6.3` LP-WUS operation in CONNECTED modes · `RAN1#122:8.6.3:011` · 후보
 
@@ -2484,13 +2440,6 @@
 > | Text Proposal 2 for TS 38.213 Clause 21 < Unchanged parts are omitted > A UE can be provided by an LTM Cell Switch Command MAC CE in a PDSCH reception on the serving cell [11, TS 38.321] a TCI state ID and/or an UL TCI state ID indicating a CandidateTCI-State and/or CandidateTCI-UL-State from ltm-DL-OrJointTCI-StateToAddModList and/or ltm-UL-TCI-StateToAddModList [6, TS 38.214] for applicable receptions or transmissions on a candidate cell from the number of candidate cells. The UE may assume that DM-RS antenna ports for PDCCH receptions and for PDSCH receptions are quasi co-located either with the SS/PBCH block or the TRS in the TCI state with respect to quasi co-location 'typeA' and 'typeD' properties, when applicable, or with the TRS and the CSI-RS resources in the CSI-RS resource set configured with repetition in the TCI state with respect to quasi co-location 'typeA' and 'typeD' properties, respectively, when applicable. < Unchanged parts are omitted > |
 
 출처: [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip)
-
-**Agreement** · `9.1` UE features for AI/ML for NR Air Interface · `RAN1#122:9.1:002` · 후보
-
-> Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
-> | 58. NR_AIML_air | 58-1-1 | Increased number of reported RSs for beam management | 1. Support of reporting format for L1-RSRP measurements not including CRI/SSBRI other than one for the largest measured L1-RSRP in a reporting instance, if the number of reported L1-RSRPs is equal to the size of the measurement resource set. 2. Support of reporting format for L1-RSRPs and corresponding beam information of Top M beam(s) with largest M measured value(s) of L1-RSRP(s) of a measurement resource set, where M is configured by gNB, if the number of reported L1-RSRPs is smaller than the size of the measurement resource set 3. Maximum number of M reported RSs, M>4 | FFS | yes | n/a | Increased number of reported beams for beam management is not supported | FFS Per UE | FFS N/A | FFS N/A | FFS N/A | Component 3 candidate values: {6,8} | Optional with capability signalling |
-
-출처: [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) · [R1-2506605](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506605.zip)
 
 **Agreement** · `9.6` UE features for NR mobility enhancements Phase 4 · `RAN1#122:9.6:006` · 후보 · 관련 주제: CSI-RS
 
