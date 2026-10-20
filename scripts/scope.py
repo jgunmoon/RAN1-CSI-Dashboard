@@ -40,6 +40,19 @@ def meeting_sort_key(meeting_id):
     return int(m.group(1)), m.group(2)
 
 
+def title_matcher(spec):
+    """설정의 제목 하나 → 정규화한 제목을 받아 일치 여부를 돌려주는 함수.
+
+    're:'로 시작하면 정규식(대소문자 무시, 제목 전체 일치), 아니면 정규화한 제목이 같아야 합니다.
+    예: 're:UE features for NR MIMO Phase \\d+' → Phase 5, 앞으로 나올 Phase 6 모두 일치.
+    """
+    if spec.startswith("re:"):
+        r = re.compile(spec[3:], re.I)
+        return lambda title: r.fullmatch(title) is not None
+    want = norm(spec)
+    return lambda title: title == want
+
+
 def clause_mentions(text):
     """원문에서 (사양, 조항) 쌍을 찾습니다. 같은 줄 안에서만 짝짓습니다.
 
@@ -75,6 +88,8 @@ class Scope:
             if not path:
                 raise ValueError(f"agendas[{i}]: path가 비어 있습니다")
             self.agendas.append({"index": i, "section": norm(a["section"]), "path": path,
+                                 "section_match": title_matcher(a["section"]),
+                                 "path_match": [title_matcher(t) for t in a["path"]],
                                  "children": bool(a.get("children")), "topic": a.get("topic"),
                                  "label": a.get("label") or a["path"][-1], "section_title": a["section"]})
         self.ignore = [re.compile(p) for p in config.get("ignore_phrases") or []]
@@ -107,11 +122,11 @@ class Scope:
         path = [norm(n["title"]) for n in nodes]
         section, below = path[0], path[1:]
         for a in self.agendas:
-            if a["section"] != section:
+            if not a["section_match"](section):
                 continue
-            p, n = a["path"], len(a["path"])
+            p, n = a["path_match"], len(a["path_match"])
             for start in range(len(below) - n + 1):
-                if below[start:start + n] == p and (a["children"] or start + n == len(below)):
+                if all(f(t) for f, t in zip(p, below[start:start + n])) and (a["children"] or start + n == len(below)):
                     return a, nodes[start + n]["number"]
         return None, None
 

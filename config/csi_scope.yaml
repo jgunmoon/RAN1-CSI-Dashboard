@@ -17,6 +17,7 @@ dashboard_url: "https://jgunmoon.github.io/RAN1-CSI-Dashboard/"                 
 # ── 1. 포함 Agenda (확정) ────────────────────────────────────────────
 # Agenda 번호는 회의마다 바뀌므로 '섹션(최상위 Agenda) 제목 + Agenda 제목'으로 찾습니다.
 #   section : 최상위 Agenda 제목 (대소문자·공백·따옴표 모양은 무시)
+#   (section·path의 제목이 're:'로 시작하면 정규식입니다. 대소문자 무시, 제목 전체 일치. 다음 Phase·Release Agenda를 미리 잡을 때 씁니다.)
 #   path    : 섹션 아래 Agenda 제목. 여러 개면 위에서 아래로 이어진 경로입니다.
 #             경로 중간부터 적어도 됩니다 (예: [CSI acquisition and report, Other aspects]).
 #   children: true면 그 Agenda 아래 하위 Agenda 결정까지 모두 포함합니다.
@@ -38,9 +39,10 @@ agendas:
      label: "AI/ML CSI compression Case 0 (Inference related aspects 등 하위 포함)"}
   - {section: "Release 20 NR", path: ["Inter-vendor training collaboration for two-sided AI/ML models"], topic: aiml}
   # Rel-19
-  - {section: "Rel-19 UE Features", path: ["UE features for NR MIMO Phase 5"]}
-  - {section: "Maintenance on Rel-19 NR and E-UTRA", path: ["Maintenance on NR MIMO Phase 5"], children: true,
-     label: "Maintenance on NR MIMO Phase 5 (하위 포함)"}
+  # 정규식: 지금은 Rel-19 Phase 5만 있고, 앞으로 생길 'Rel-20 UE Features > UE features for NR MIMO Phase 6' 등도 자동으로 잡습니다.
+  - {section: "re:Rel-\\d+ UE Features", path: ["re:UE features for NR MIMO Phase \\d+"], label: "UE features for NR MIMO Phase N"}
+  - {section: "re:Maintenance on Rel-\\d+ NR and E-UTRA", path: ["re:Maintenance on NR MIMO Phase \\d+"], children: true,
+     label: "Maintenance on NR MIMO Phase N (하위 포함)"}
   - {section: "Maintenance on Rel-19 NR and E-UTRA", path: ["Specification support for beam management"], topic: aiml,
      label: "AI/ML: Specification support for beam management"}
   - {section: "Maintenance on Rel-19 NR and E-UTRA", path: ["Specification support for CSI prediction"], topic: aiml,
@@ -119,6 +121,14 @@ topics:
     label: "CSI-RS"
     patterns: ['\bCSI-RS\b', '\bNZP\b', '\bCSI-IM\b', '\bTRS\b', '(?i)tracking RS', '(?i)\bRS for (finer )?time/frequency tracking', '\bCMR\b', '\bIMR\b']
 fallback_topic: {id: other, label: "기타 CSI"}
+
+# ── 5. 알림 ─────────────────────────────────────────────────────────
+# 결과가 달라진 실행(새 회의, 과거 회의 추가·변경·삭제, 범위 설정 변경)마다 GitHub Issue를 하나 만듭니다.
+# 저장소를 Watch(All Activity 또는 Custom → Issues)한 사람에게 메일이 갑니다.
+# mentions에 GitHub 아이디를 적으면 Watch하지 않아도 Issue에서 @멘션으로 알림을 받습니다. 예: ["jgunmoon"]
+notify:
+  issue: true
+  mentions: []
 
 # HTML 대시보드 검색창의 추천 검색어 ('|' 또는 대문자 OR로 여러 표기를 함께 찾음)
 search_presets: ["CSI-RS", "codebook | PMI", "CQI", "TCI", "beam failure | BFR", "SRS", "two-sided", "CSI prediction"]

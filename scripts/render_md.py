@@ -53,6 +53,7 @@ def readme(m):
            ""]
     for p in m["provisional"]:
         out += [f"> ⚠️ **{p}는 '잠정'** 결과입니다 (`{provisional(db, p)['doc']}` 기준, 회의 종료본 전). 결정이 바뀌거나 빠질 수 있습니다.", ""]
+    out += alert_lines(m)
     out += ["3GPP RAN1 Chair notes의 결정 중 CSI 관련(CSI 획득·보고, CSI-RS, codebook, beam management, SRS, AI/ML CSI)만 모았습니다.",
             "범위·주제 규칙은 [`config/csi_scope.yaml`](../config/csi_scope.yaml)에 있습니다. 이 파일은 자동 생성물이므로 직접 고치지 않습니다.", "",
             "| 구분 | 건수 |", "|---|---:|",
@@ -111,6 +112,7 @@ def readme(m):
                    f"{_cell(_first_line(e['text']))} | {_source(e['source'])} |")
     out.append("")
 
+    out += change_lines(m)
     out += ["## 후보가 많은 Agenda", "",
             "포함 Agenda 밖에서 보조 키워드로 잡힌 결정입니다. CSI 관련이 맞으면 결정 id를 `include_ids`에, 아니면 `exclude_ids`에 적습니다.", "",
             "| 섹션 | Agenda | 번호 | 후보 수 |", "|---|---|---|---:|"]
@@ -177,3 +179,91 @@ def topic_page(m, topic):
                 for e in here:
                     out += _entry_md(e, m)
     return "\n".join(out)
+
+
+WHAT = {"added": "추가", "changed": "변경", "removed": "삭제"}
+
+
+def alert_lines(m):
+    """Agenda 구성 변화 경고 (없으면 빈 목록)."""
+    a, out = m["alerts"], []
+    if not (a["dropped"] or a["new"]):
+        return out
+    out += [f"> ⚠️ **Agenda 확인 필요 ({m['prev']} → {m['latest']})** — 결정이 범위에서 조용히 빠지지 않도록 확인하세요.", ">"]
+    for d in a["dropped"]:
+        out.append(f"> - 포함 Agenda **{d['label']}** ({d['section']}): {m['prev']}에 {d['prev_count']}건 → {m['latest']}에 없음."
+                   " 제목·섹션이 바뀌었으면 `config/csi_scope.yaml`의 agendas를 고칩니다.")
+    for r in a["new"]:
+        sec = " (새 섹션)" if r["new_section"] else ""
+        out.append(f"> - 새 Agenda **{r['number']} {_cell(r['title'])}** ({r['section']}{sec}): 확정 {r['confirmed']} · 후보 {r['candidate']}"
+                   f" / 전체 {r['total']}건. CSI Agenda면 agendas에 넣습니다.")
+    return out + [""]
+
+
+def change_lines(m, limit=5):
+    """최근 변경 이력 표와, 가장 최근 묶음의 기존 회의 변경 목록."""
+    hist = m.get("changes") or []
+    out = ["## 최근 변경 이력", "",
+           "실행마다 직전 결과와 비교한 기록입니다. 새 회의 결정은 '신규'로 보이지만, 원본이 **과거 회의**를 다시 처리해 생긴",
+           "추가·변경·삭제(파서 개선, 잠정 → 종료본 교체 등)는 여기서만 알 수 있습니다. 전체 기록은 `changes.json`에 있습니다.", ""]
+    if not hist:
+        return out + ["아직 기록된 변경이 없습니다 (이 기능을 켠 뒤 처음 달라진 실행부터 남습니다).", ""]
+    out += ["| 시각 (UTC) | 이유 | 새 회의 | 기존 회의 추가 | 변경 | 삭제 |", "|---|---|---|---:|---:|---:|"]
+    for c in hist[:limit]:
+        nm = ", ".join(f"{x['meeting']} {x['count']}건" for x in c["new_meetings"]) or "—"
+        out.append(f"| {c['at'].replace('T', ' ')[:16]} | {c['reason']} | {nm} | {c['counts']['added']} | {c['counts']['changed']} | {c['counts']['removed']} |")
+    items = hist[0]["items"]
+    if items:
+        out += ["", f"가장 최근({hist[0]['at'][:10]}) 기존 회의 변경 {len(items)}건:", "",
+                "| 변경 | 회의 | 구분 | 범위 | Agenda | 원문 첫 줄 | id |", "|---|---|---|---|---|---|---|"]
+        for x in items[:50]:
+            what = WHAT[x["what"]] + (f" ({', '.join(FIELD_KO.get(f, f) for f in x['fields'])})" if x["fields"] else "")
+            out.append(f"| {what} | {x['meeting']} | {TYPE_SHORT[x['type']]} | {SCOPE_LABEL[x['scope']]} | {_cell(x['agenda'])} | "
+                       f"{_cell(x['line'])} | [`{x['id']}`]({x['url']}) |")
+    return out + [""]
+
+
+FIELD_KO = {"meeting": "회의", "type": "구분", "text": "원문", "scope": "범위"}
+
+
+def notification(m, change):
+    """변경 알림(GitHub Issue) 본문. 첫 줄은 제목입니다."""
+    cfg = m["config"]
+    parts = [f"{x['meeting']} 신규 {x['count']}건" for x in change["new_meetings"]]
+    c = change["counts"]
+    if c["added"] or c["changed"] or c["removed"]:
+        parts.append(f"기존 회의 추가 {c['added']} · 변경 {c['changed']} · 삭제 {c['removed']}")
+    if m["alerts"]["dropped"] or m["alerts"]["new"]:
+        parts.append("Agenda 확인 필요")
+    title = "CSI 결정 업데이트: " + " / ".join(parts)
+    out = [title, "",
+           f"[HTML 대시보드]({cfg.get('dashboard_url', '')}) · 원본 DB 업데이트 {m['updated_kst']} · 이유: {change['reason']}", ""]
+    mentions = (cfg.get("notify") or {}).get("mentions") or []
+    if mentions:
+        out += [" ".join(f"@{u}" for u in mentions), ""]
+    out += alert_lines(m)
+    for x in change["new_meetings"]:
+        mine = [e for e in m["entries"] if e["meeting"] == x["meeting"]]
+        conf = [e for e in mine if confirmed(e)]
+        out += [f"## {x['meeting']} 신규 CSI 결정", "",
+                f"확정 {len(conf)}건 (" + " · ".join(f"{TYPE_SHORT[t]} {sum(1 for e in conf if e['type'] == t)}" for t in TYPES)
+                + f"), 후보 {len(mine) - len(conf)}건. 아래 문장은 요약이 아니라 원문 첫 줄입니다.", ""]
+        for t in m["topics"]:
+            rows = [e for e in conf if e["topic"] == t["id"]]
+            if rows:
+                out.append(f"**{t['label']}** ({len(rows)}건)")
+                out += [f"- [{TYPE_SHORT[e['type']]}] {e['agenda_item']} — {_first_line(e['text'], 120)} ([원문]({e['source']['url']}))"
+                        for e in rows[:15]]
+                if len(rows) > 15:
+                    out.append(f"- … 외 {len(rows) - 15}건은 대시보드에서 확인")
+                out.append("")
+    if change["items"]:
+        out += [f"## 기존 회의 변경 {len(change['items'])}건", ""]
+        for x in change["items"][:40]:
+            what = WHAT[x["what"]] + (f"({', '.join(FIELD_KO.get(f, f) for f in x['fields'])})" if x["fields"] else "")
+            out.append(f"- {what} · {x['meeting']} · {TYPE_SHORT[x['type']]} · {SCOPE_LABEL[x['scope']]} · {x['agenda']} — {x['line']} (`{x['id']}`)")
+        if len(change["items"]) > 40:
+            out.append(f"- … 외 {len(change['items']) - 40}건은 대시보드 '최근 변경'에서 확인")
+        out.append("")
+    out += ["---", "이 Issue는 RAN1 CSI dashboard 워크플로가 결과가 달라진 실행에서 자동으로 만들었습니다. 확인한 뒤 닫아 주세요."]
+    return "\n".join(out) + "\n"

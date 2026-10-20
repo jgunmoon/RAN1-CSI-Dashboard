@@ -2,6 +2,10 @@
 
 > 원본 DB 마지막 업데이트 **2026-10-19 20:12 KST** · 범위 RAN1#122 – #126bis (8회) · [HTML 대시보드](https://jgunmoon.github.io/RAN1-CSI-Dashboard/) · 원본 [jgunmoon/RAN1-Decision-Tracker](https://github.com/jgunmoon/RAN1-Decision-Tracker)
 
+> ⚠️ **Agenda 확인 필요 (RAN1#126 → RAN1#126bis)** — 결정이 범위에서 조용히 빠지지 않도록 확인하세요.
+>
+> - 새 Agenda **10.3.2 Modulation** (Rel-20 Study of 6GR): 확정 0 · 후보 1 / 전체 5건. CSI Agenda면 agendas에 넣습니다.
+
 3GPP RAN1 Chair notes의 결정 중 CSI 관련(CSI 획득·보고, CSI-RS, codebook, beam management, SRS, AI/ML CSI)만 모았습니다.
 범위·주제 규칙은 [`config/csi_scope.yaml`](../config/csi_scope.yaml)에 있습니다. 이 파일은 자동 생성물이므로 직접 고치지 않습니다.
 
@@ -64,8 +68,8 @@ Agenda 번호는 회의마다 바뀌므로 '섹션 + Agenda 제목'으로 이어
 | Improvement of SRS capacity and coverage (Release 20 NR, 최근 9.2.1) | 7 | 7 | 8 | 5 | · | · | · | · | **27** |
 | AI/ML CSI compression Case 0 (Inference related aspects 등 하위 포함) (Release 20 NR, 최근 9.1.1) | 10 | 10 | 9 | 5 | 5 | 4 | 4 | 4 | **51** |
 | Inter-vendor training collaboration for two-sided AI/ML models (Release 20 NR, 최근 9.1.2) | 5 | 2 | 2 | 4 | 3 | 5 | 4 | 2 | **27** |
-| UE features for NR MIMO Phase 5 (Rel-19 UE Features, 최근 9.2) | 49 | 31 | · | · | · | · | · | · | **80** |
-| Maintenance on NR MIMO Phase 5 (하위 포함) (Maintenance on Rel-19 NR and E-UTRA, 최근 8.2) | 20 | 18 | 11 | 8 | 7 | · | · | · | **64** |
+| UE features for NR MIMO Phase N (Rel-19 UE Features, 최근 9.2) | 49 | 31 | · | · | · | · | · | · | **80** |
+| Maintenance on NR MIMO Phase N (하위 포함) (Maintenance on Rel-19 NR and E-UTRA, 최근 8.2) | 20 | 18 | 11 | 8 | 7 | · | · | · | **64** |
 | AI/ML: Specification support for beam management (Maintenance on Rel-19 NR and E-UTRA, 최근 8.1.1) | 12 | · | · | · | · | · | · | · | **12** |
 | AI/ML: Specification support for CSI prediction (Maintenance on Rel-19 NR and E-UTRA, 최근 8.1.3) | 9 | · | · | · | · | · | · | · | **9** |
 | **합계** | **120** | **80** | **35** | **56** | **72** | **76** | **85** | **80** | **604** |
@@ -156,6 +160,13 @@ Agenda 번호는 회의마다 바뀌므로 '섹션 + Agenda 제목'으로 이어
 | Beam management | 10.5.3.4 Beam management for downlink and uplink | Regarding requirement/functionality of DL RS for beam measurement, for inter-symbol NW/UE-side beam sweeping,… | [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Beam management]` |
 | Beam management | 10.5.3.4 Beam management for downlink and uplink | On NW-initiated beam management, regarding intra-symbol beam sweeping, for evaluation purpose, companies to r… | [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Beam management]` |
 | Beam management | 10.5.3.4 Beam management for downlink and uplink | For the study on spatial/frequency domain beam prediction, for evaluation purpose, study the following aspect… | [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Beam management]` |
+
+## 최근 변경 이력
+
+실행마다 직전 결과와 비교한 기록입니다. 새 회의 결정은 '신규'로 보이지만, 원본이 **과거 회의**를 다시 처리해 생긴
+추가·변경·삭제(파서 개선, 잠정 → 종료본 교체 등)는 여기서만 알 수 있습니다. 전체 기록은 `changes.json`에 있습니다.
+
+아직 기록된 변경이 없습니다 (이 기능을 켠 뒤 처음 달라진 실행부터 남습니다).
 
 ## 후보가 많은 Agenda
 

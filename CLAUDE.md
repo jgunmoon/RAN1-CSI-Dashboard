@@ -14,6 +14,8 @@ CSI 범위는 넓게 봅니다: CSI 획득·보고, CSI-RS, codebook(PMI/CQI/RI)
 3. **범위와 주제는 코드가 아니라 `config/csi_scope.yaml`.** Agenda 이름만으로는 섞이므로(예: 6GR Multi-antenna 아래 HARQ, PRACH) 세 층으로 정합니다.
    - `agendas`: 포함 Agenda (확정). 번호는 회의마다 바뀌므로 **'섹션 제목 + Agenda 제목'**으로 매칭합니다 (원본 `scripts/agenda.py`와 같은 정규화).
      `path`는 섹션 아래 이어진 제목 경로(중간부터 가능), `children: true`면 하위 Agenda 포함, `topic`이 있으면 주제 고정.
+     제목이 `re:`로 시작하면 정규식(대소문자 무시, 전체 일치)입니다. 다음 Phase·Release Agenda를 미리 잡을 때 씁니다
+     (예: `re:UE features for NR MIMO Phase \d+`).
    - `candidate_keywords`: 포함 Agenda 밖에서 키워드가 원문/FFS에 있으면 **'후보'**. 확정과 섞지 않고 따로 표시합니다.
      `ignore_phrases`(예: HARQ-ACK codebook)는 판정 전에 지웁니다. 대시보드의 '일치'에는 정규식이 아니라 실제로 일치한 단어를 보여줍니다.
    - `spec_clauses`: 사양 조항 번호(예: TS 38.214 5.2 = CSI 보고)도 후보 키워드로 씁니다. 유지보수 결정은 "TS 38.214 Clause 5.2.5의 TP endorsed"처럼
@@ -27,7 +29,16 @@ CSI 범위는 넓게 봅니다: CSI 획득·보고, CSI-RS, codebook(PMI/CQI/RI)
      표의 '관련 포함' 열과 목록의 '관련 주제 포함' 필터는 태그로 셉니다. 'CSI 보고' 규칙의 `\bCSI\b` 패턴은 넓어서 이 태그가 많이 붙습니다.
    범위를 바꿀 때는 먼저 원본 DB로 건수를 확인하고(아래 명령의 출력) 사용자 확인을 받습니다.
 4. **기본 표시는 확정 범위의 Agreement.** Working Assumption·Conclusion, 'FFS 남은 결정만', 후보는 체크박스로 켭니다.
+   대신 놓치지 않도록 상태 줄에 '숨김: WA n · Conclusion n · 후보 n'(누르면 켜짐)과, 최신 회의의 기본 화면 밖 건수를 항상 보여줍니다.
 5. **'잠정' 회의.** 원본 DB의 `meetings.*.provisional`이 있는 회의는 종료본 전 결과이므로 README·대시보드에 '잠정'으로 표시합니다.
+6. **조용히 빠지는 것을 막는 장치.** 이 프로젝트의 목적은 CSI 담당 엔지니어가 결정을 놓치지 않는 것입니다.
+   - Agenda 경고(`model.agenda_alerts`): 직전 회의에 결정이 있던 포함 Agenda가 최신 회의에 없거나, CSI 결정(확정·후보)이 있는 새 Agenda가
+     생기면 대시보드·README 맨 위, 실행 요약(`::warning::`), 알림 Issue에 나옵니다. 6GR Study → WI처럼 섹션 제목이 바뀌면 여기서 잡힙니다.
+     경고가 나오면 원문을 보고 `agendas`를 고칩니다(범위 변경이므로 사용자 확인).
+   - 변경 이력(`scripts/changes.py` → `reports/changes.json`): 매 실행 직전 `reports/csi_decisions.json`과 비교해 새 회의, 과거 회의의
+     추가·변경·삭제(원본 재처리, 잠정 → 종료본, 범위 설정 변경)를 남깁니다. id만 바뀐 결정은 변경으로 보지 않습니다. 최근 30묶음 보관.
+     '신규'는 최신 회의만 뜻하므로 과거 회의 변화는 이 이력과 결정 목록의 '과거 회의에 추가'/'원문·범위 변경' 표시로만 보입니다.
+   - 알림: 결과가 달라진 실행마다 워크플로가 GitHub Issue를 만듭니다(`build --notify-file`, 첫 줄이 제목). 설정은 config `notify`.
 
 ## 2. 구조
 
@@ -38,10 +49,11 @@ scripts/scope.py             # 범위 판정(agenda/manual/candidate)과 주제 
 scripts/model.py             # 리포트용 집계 (HTML·마크다운 공용)
 scripts/render_html.py       # reports/index.html (HTML 대시보드)
 scripts/render_md.py         # reports/README.md(요약), reports/by_topic/<주제>.md(주제별 전체 결정)
+scripts/changes.py           # 직전 결과 대비 변경 이력 (reports/changes.json)
 scripts/build.py             # 진입점: 원본 DB → reports/ 전체 생성
-reports/                     # 생성물 (직접 수정 금지). csi_decisions.json은 고른 결정 + 주제·범위
+reports/                     # 생성물 (직접 수정 금지). csi_decisions.json은 고른 결정 + 주제·범위 (다음 실행의 비교 기준이므로 지우지 않음)
 tests/                       # 합성 DB로 범위 판정·리포트 생성 테스트 + test_browser.py(Chromium으로 클릭 동작 확인)
-.github/workflows/csi_dashboard.yml   # 매일 01:17 UTC 실행 → reports/ 커밋 → GitHub Pages 게시
+.github/workflows/csi_dashboard.yml   # 매일 01:17 UTC 실행 → reports/ 커밋 → 변화가 있으면 알림 Issue → GitHub Pages 게시
 ```
 
 ## 3. 명령

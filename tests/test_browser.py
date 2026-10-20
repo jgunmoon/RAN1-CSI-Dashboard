@@ -77,7 +77,7 @@ def test_candidate_keywords_are_readable(dash):
 
 
 def test_children_agenda_number_not_shown_as_renumbered(dash):
-    row = dash.locator("#agenda-body tr", has_text="Maintenance on NR MIMO Phase 5")
+    row = dash.locator("#agenda-body tr", has_text="Maintenance on NR MIMO Phase N")
     assert row.locator(".sub").text_content() == "Agenda 8.2"
 
 
@@ -86,3 +86,15 @@ def test_theme_toggle(dash):
     assert dash.get_attribute("html", "data-theme") == "light"
     dash.click("#theme")
     assert dash.get_attribute("html", "data-theme") == "dark"
+
+
+def test_hidden_counts_are_shown_and_clickable(dash):
+    state = dash.text_content("#state")
+    assert "숨김:" in state and "후보" in state
+    dash.locator("#state .hidden-btn", has_text="Conclusion").click()
+    assert dash.is_checked('input[value="Conclusion"]')
+    hidden = dash.text_content("#latest-hidden")
+    assert hidden.startswith("RAN1#126에서 기본 화면(확정 Agreement) 밖에 있는 결정") and "후보" in hidden
+    dash.locator("#latest-hidden .hidden-btn", has_text="후보").click()
+    assert dash.is_checked("#g-cand") and dash.input_value("#f-agenda") == "cand"
+    assert count(dash) == int(re.search(r"후보 (\d+)건", hidden).group(1))

@@ -128,6 +128,12 @@ button.cell:disabled { color: var(--ink-3); text-decoration: none; cursor: defau
 .src { font-size: 12px; color: var(--ink-3); overflow-wrap: anywhere; }
 .kw { font-size: 12px; color: var(--cand); }
 .related-tags { font-size: 12px; color: var(--ink-3); }
+.chip.changed { color: var(--cand); background: var(--cand-bg); border-color: var(--cand); }
+.hidden-btn { font: inherit; font-size: 12px; padding: 0 8px; border: 1px solid var(--cand); border-radius: 999px;
+  background: var(--cand-bg); color: var(--cand); cursor: pointer; }
+.notice.alert { border-left-color: #d23c3c; }
+.notice ul { margin: 6px 0 0; padding-left: 18px; }
+.changes td.line { min-width: 30ch; }
 td.related, th.related { border-left: 1px solid var(--rule); }
 mark { background: var(--mark); color: inherit; border-radius: 2px; padding: 0 1px; }
 .empty { color: var(--ink-3); font-size: 13px; padding: 20px 0; text-align: center; border: 1px dashed var(--rule); border-radius: 6px; }
@@ -173,6 +179,36 @@ SCRIPT = r"""
     return `${scopes.join('+') || '범위 없음'} · ${types.join('·') || '구분 없음'}${$('g-ffs').checked ? ' · FFS 남은 것만' : ''}`;
   }
   const countBy = (list, key) => { const o = {}; list.forEach(e => { const k = key(e); o[k] = (o[k] || 0) + 1; }); return o; };
+  // 지금 체크 때문에 보이지 않는 결정 수 (구분별, 후보). 놓치지 않도록 상태 줄에 항상 보여주고, 누르면 그 체크를 켭니다.
+  function hiddenCounts() {
+    const types = [...bar.querySelectorAll('input[data-type]:checked')].map(i => i.value);
+    const confOn = bar.querySelector('input[value="confirmed"]').checked, candBox = $('g-cand');
+    const ffsOk = e => !$('g-ffs').checked || e.ffs > 0;
+    const scopeOk = e => e.scope === 'candidate' ? candBox.checked : confOn;
+    const out = [];
+    bar.querySelectorAll('input[data-type]:not(:checked)').forEach(box => {
+      const n = D.entries.filter(e => e.type === box.value && scopeOk(e) && ffsOk(e)).length;
+      if (n) out.push([SHORT[box.value], n, box]);
+    });
+    if (!candBox.checked) {
+      const n = D.entries.filter(e => e.scope === 'candidate' && types.includes(e.type) && ffsOk(e)).length;
+      if (n) out.push(['후보', n, candBox]);
+    }
+    return out;
+  }
+  function renderState(base) {
+    const st = $('state');
+    st.replaceChildren(`표시 중: ${stateText()} · ${base.length.toLocaleString()}건`);
+    const hidden = hiddenCounts();
+    if (!hidden.length) return;
+    st.append(' · 숨김: ');
+    hidden.forEach(([label, n, box], i) => {
+      const b = el('button', 'hidden-btn', `${label} ${n}`); b.type = 'button'; b.title = '체크를 켜서 함께 보기';
+      b.addEventListener('click', () => { box.checked = true; update(); });
+      if (i) st.append(' · ');
+      st.append(b);
+    });
+  }
 
   // ── 직전 회의 대비 카드
   function cards(list) {
@@ -305,6 +341,7 @@ SCRIPT = r"""
   [...D.meetings].reverse().forEach(m => opt(fMeeting, m, m + (m === latest ? ' (최신)' : '')));
   D.agendas.forEach(a => opt(fAgenda, 'r' + a.index, a.label));
   opt(fAgenda, 'manual', '수동 포함 (include_ids)');
+  opt(fAgenda, 'cand', '[후보 전체]');
   D.cand_agendas.forEach(c => opt(fAgenda, 'c' + c.key, `[후보] ${c.title}`));
   const esc = t => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   const pattern = (t, word) => word ? `(?<![A-Za-z0-9])${esc(t)}(?![A-Za-z0-9])` : esc(t);
@@ -320,6 +357,7 @@ SCRIPT = r"""
     head.append(el('span', 'mono', e.meeting));
     if (e.meeting === latest) head.append(el('span', 'chip new', '신규'));
     if (D.provisional.includes(e.meeting)) head.append(el('span', 'chip cand', '잠정'));
+    if (RECENT[e.id]) { const c = el('span', 'chip changed', RECENT[e.id]); c.title = `${D.recent.at.slice(0, 10)} 실행에서 과거 회의 결정이 바뀜`; head.append(c); }
     const tc = el('span', 'chip'); tc.append(swatch(e.topic), TOPIC[e.topic].label); tc.title = '주된 주제'; head.append(tc);
     const rel = e.tags.filter(t => t !== e.topic);
     if (rel.length) head.append(el('span', 'related-tags', '관련: ' + rel.map(t => TOPIC[t].label).join(' · ')));
@@ -340,7 +378,11 @@ SCRIPT = r"""
     box.append(src);
     return box;
   }
-  let hits = [], shown = 0, curRe = null, timer;
+  let hits = [], shown = 0, curRe = null, timer, idFilter = null, idLabel = '';
+  // 최근 변경 이력: 변경 묶음이 30일 안이면 해당 결정에 '과거 회의 추가/변경' 표시
+  const RECENT = {};
+  if (D.recent && Date.now() - Date.parse(D.recent.at) < 30 * 864e5)
+    Object.entries(D.recent.items).forEach(([id, w]) => { RECENT[id] = w === 'added' ? '과거 회의에 추가' : '원문·범위 변경'; });
   function showMore() {
     out.querySelector('.more')?.remove();
     hits.slice(shown, shown + PAGE).forEach(e => out.append(render(e, curRe)));
@@ -355,10 +397,16 @@ SCRIPT = r"""
   function agendaOk(e) {
     const v = fAgenda.value; if (!v) return true;
     if (v === 'manual') return e.scope === 'manual';
+    if (v === 'cand') return e.scope === 'candidate';
     if (v[0] === 'r') return e.rule === +v.slice(1);
     return e.scope === 'candidate' && e.cand_key === v.slice(1);
   }
   function list(base) {
+    if (idFilter) {  // '최근 변경' 버튼: 구분·범위 체크와 다른 조건을 무시하고 그 결정만 보여줌
+      hits = D.entries.filter(e => idFilter.has(e.id)).reverse(); curRe = null; out.replaceChildren(); shown = 0;
+      summary.replaceChildren(el('span', 'num', `${hits.length}건`), ` · ${idLabel} (구분·범위 체크와 관계없이 모두 표시 · '조건 지우기'로 해제)`);
+      showMore(); return;
+    }
     const groups = q.value.trim().split(/\s+OR\s+|\s*\|\s*/).map(g => g.split(/\s+/).filter(Boolean)).filter(g => g.length);
     const terms = groups.flat();
     const groupRes = groups.map(g => g.map(t => new RegExp(pattern(t, fWord.checked), 'i')));
@@ -375,12 +423,13 @@ SCRIPT = r"""
   // 카드·차트·표의 숫자를 누르면 이전 검색어와 조건을 모두 지우고 누른 조건만 적용합니다 (남아 있으면 0건처럼 보임).
   function focusList(f) {
     q.value = ''; fTopic.value = f.topic || ''; fMeeting.value = f.meeting || ''; fAgenda.value = f.agenda || '';
+    idFilter = f.ids ? new Set(f.ids) : null; idLabel = f.label || '';
     if (fAgenda.value[0] === 'c' && !$('g-cand').checked) { $('g-cand').checked = true; }
     update(); $('list').scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
   function update() {
     const ok = pred(), base = D.entries.filter(ok);
-    $('state').textContent = `표시 중: ${stateText()} · ${base.length.toLocaleString()}건`;
+    renderState(base);
     cards(base); chart(base);
     matrix($('topic-body'), topicRows, base, true);
     matrix($('agenda-body'), agendaRows(), base, false);
@@ -388,9 +437,31 @@ SCRIPT = r"""
   }
   bar.addEventListener('change', update);
   let rw; addEventListener('resize', () => { clearTimeout(rw); rw = setTimeout(() => chart(D.entries.filter(pred())), 200); });
-  q.addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(() => list(D.entries.filter(pred())), 150); });
-  [fTopic, fMeeting, fAgenda, fWord].forEach(n => n.addEventListener('change', () => list(D.entries.filter(pred()))));
-  $('reset').addEventListener('click', () => { q.value = ''; fTopic.value = fMeeting.value = fAgenda.value = ''; list(D.entries.filter(pred())); });
+  q.addEventListener('input', () => { idFilter = null; clearTimeout(timer); timer = setTimeout(() => list(D.entries.filter(pred())), 150); });
+  [fTopic, fMeeting, fAgenda, fWord].forEach(n => n.addEventListener('change', () => { idFilter = null; list(D.entries.filter(pred())); }));
+  $('reset').addEventListener('click', () => { idFilter = null; q.value = ''; fTopic.value = fMeeting.value = fAgenda.value = ''; list(D.entries.filter(pred())); });
+  document.querySelectorAll('[data-ids]').forEach(b => b.addEventListener('click', () =>
+    focusList({ ids: JSON.parse(b.dataset.ids), label: b.dataset.label })));
+  // 최신 회의에서 기본 화면(확정 Agreement) 밖에 있는 결정 수. 체크 상태와 관계없이 고정 표시합니다.
+  (() => {
+    const box = $('latest-hidden'), now = D.entries.filter(e => e.meeting === latest);
+    const parts = [
+      ['Working Assumption', now.filter(e => e.scope !== 'candidate' && e.type === 'Working Assumption').length,
+        () => { bar.querySelector('input[value="Working Assumption"]').checked = true; focusList({ meeting: latest }); }],
+      ['Conclusion', now.filter(e => e.scope !== 'candidate' && e.type === 'Conclusion').length,
+        () => { bar.querySelector('input[value="Conclusion"]').checked = true; focusList({ meeting: latest }); }],
+      ['후보', now.filter(e => e.scope === 'candidate').length,
+        () => { bar.querySelectorAll('input[data-type]').forEach(i => { i.checked = true; }); focusList({ meeting: latest, agenda: 'cand' }); }],
+    ].filter(([, n]) => n);
+    if (!parts.length) { box.hidden = true; return; }
+    box.append(`${latest}에서 기본 화면(확정 Agreement) 밖에 있는 결정: `);
+    parts.forEach(([label, n, fn], i) => {
+      const b = el('button', 'hidden-btn', `${label} ${n}건`); b.type = 'button'; b.addEventListener('click', fn);
+      if (i) box.append(' · ');
+      box.append(b);
+    });
+    box.append(' — 지원하지 않기로 한 결론(Conclusion)이나 다른 Agenda의 CSI 결정(후보)도 구현 범위에 영향을 줄 수 있습니다.');
+  })();
   document.querySelectorAll('[data-preset]').forEach(b => b.addEventListener('click', () => { q.value = b.dataset.preset; list(D.entries.filter(pred())); q.focus(); }));
   update();
 })();
@@ -458,7 +529,73 @@ def data(m):
     return {"meetings": m["meetings"], "topics": m["topics"], "provisional": m["provisional"],
             "agendas": [{"index": a["index"], "label": a["label"], "section": a["section"],
                          "number_note": _numbers_note(a, m["meetings"])} for a in m["agendas"]],
-            "cand_agendas": cands, "entries": entries}
+            "cand_agendas": cands, "entries": entries,
+            "recent": _recent(m)}
+
+
+def _recent(m):
+    """가장 최근 변경 묶음에서 아직 남아 있는 결정(추가·변경)의 id → 종류."""
+    hist = m.get("changes") or []
+    if not hist:
+        return None
+    return {"at": hist[0]["at"], "items": {x["id"]: x["what"] for x in hist[0]["items"] if x["what"] != "removed"}}
+
+
+WHAT = {"added": "추가", "changed": "변경", "removed": "삭제"}
+FIELD_KO = {"meeting": "회의", "type": "구분", "text": "원문", "scope": "범위"}
+
+
+def _alerts_html(m):
+    a = m["alerts"]
+    if not (a["dropped"] or a["new"]):
+        return ""
+    rows = [f'<li>포함 Agenda <b>{_e(d["label"])}</b> ({_e(d["section"])}): {_e(m["prev"])}에 {d["prev_count"]}건 → '
+            f'{_e(m["latest"])}에 없음. 제목·섹션이 바뀌었으면 config/csi_scope.yaml의 agendas를 고칩니다.</li>' for d in a["dropped"]]
+    rows += [f'<li>새 Agenda <b>{_e(r["number"])} {_e(r["title"])}</b> ({_e(r["section"])}{" · 새 섹션" if r["new_section"] else ""}): '
+             f'확정 {r["confirmed"]} · 후보 {r["candidate"]} / 전체 {r["total"]}건. CSI Agenda면 agendas에 넣습니다.</li>' for r in a["new"]]
+    return (f'<div class="notice alert"><b>Agenda 확인 필요 ({_e(m["prev"])} → {_e(m["latest"])})</b> — '
+            f'결정이 범위에서 조용히 빠지지 않도록 확인하세요.<ul>{"".join(rows)}</ul></div>')
+
+
+def _changes_html(m):
+    hist = m.get("changes") or []
+    lede = ("실행마다 직전 결과와 비교한 기록입니다. 새 회의 결정은 위에서 <span class=\"chip new\">신규</span>로 보이지만, "
+            "원본이 <b>과거 회의</b>를 다시 처리해 생긴 추가·변경·삭제(파서 개선, 잠정 → 종료본 교체, 범위 설정 변경)는 여기서만 알 수 있습니다. "
+            "최근 30일 안의 변경은 결정 목록에도 표시됩니다.")
+    if not hist:
+        return (f'<section id="changes"><h2>최근 변경 이력</h2><p class="lede">{lede}</p>'
+                '<p class="empty">아직 기록된 변경이 없습니다. 이 기능을 켠 뒤 결과가 처음 달라진 실행부터 남습니다.</p></section>')
+    rows = []
+    for c in hist[:5]:
+        nm = ", ".join(f'{x["meeting"]} {x["count"]}건' for x in c["new_meetings"]) or "—"
+        k = c["counts"]
+        rows.append(f'<tr><td class="mono">{_e(c["at"].replace("T", " ")[:16])} UTC</td><td>{_e(c["reason"])}</td><td>{_e(nm)}</td>'
+                    f'<td class="num">{k["added"]}</td><td class="num">{k["changed"]}</td><td class="num">{k["removed"]}</td></tr>')
+    items = hist[0]["items"]
+    detail = ""
+    if items:
+        live = {e["id"] for e in m["entries"]}
+        ids = [x["id"] for x in items if x["what"] != "removed" and x["id"] in live]
+        trs = "".join(
+            f'<tr><td>{WHAT[x["what"]]}{(" (" + ", ".join(FIELD_KO.get(f, f) for f in x["fields"]) + ")") if x["fields"] else ""}</td>'
+            f'<td class="mono">{_e(x["meeting"])}</td><td>{_e(x["type"])}</td><td>{_e({"agenda": "확정", "manual": "확정(수동)", "candidate": "후보"}[x["scope"]])}</td>'
+            f'<td>{_e(x["agenda"])}</td><td class="line">{_e(x["line"])}</td>'
+            f'<td class="mono small"><a href="{_e(x["url"])}" target="_blank" rel="noopener">{_e(x["id"])}</a></td></tr>'
+            for x in items[:100])
+        button = (f'<button type="button" class="reset" data-ids="{_e(json.dumps(ids))}" data-label="{_e(hist[0]["at"][:10])} 과거 회의 추가·변경 결정">'
+                  f'결정 목록에서 원문 보기 ({len(ids)}건)</button>') if ids else ""
+        detail = (f'<h3>가장 최근 묶음({_e(hist[0]["at"][:10])})의 과거 회의 변경 {len(items)}건</h3>{button}'
+                  f'<div class="table-scroll"><table class="changes"><thead><tr><th>변경</th><th>회의</th><th>구분</th><th>범위</th>'
+                  f'<th>Agenda</th><th>원문 첫 줄</th><th>id</th></tr></thead><tbody>{trs}</tbody></table></div>')
+    return f"""<section id="changes">
+  <h2>최근 변경 이력</h2>
+  <p class="lede">{lede}</p>
+  <div class="table-scroll"><table>
+    <thead><tr><th>실행 시각</th><th>이유</th><th>새 회의</th><th class="num">과거 회의 추가</th><th class="num">변경</th><th class="num">삭제</th></tr></thead>
+    <tbody>{"".join(rows)}</tbody>
+  </table></div>
+  {detail}
+</section>"""
 
 
 def _check(attr, value, label, checked):
@@ -499,6 +636,7 @@ def render_body(m):
     <div><dt>확정 결정</dt><dd>{conf:,}</dd></div>
     <div><dt>후보 결정</dt><dd>{cand:,}</dd></div>
   </dl>
+  {_alerts_html(m)}
   {notices}
 </header>
 
@@ -512,7 +650,10 @@ def render_body(m):
   <h2>직전 회의 대비 <span class="mono muted">{_e(short(prev) if prev else "-")} → {_e(short(latest))}</span></h2>
   <p class="lede">{_e(latest)}의 결정 수와 직전 회의 대비 증감입니다. {_e(latest)} 결정은 모두 이번 회의의 신규 결정이며, 목록에서 <span class="chip new">신규</span>로 표시합니다. 카드를 누르면 해당 신규 결정을 보여줍니다.</p>
   <div class="cards" id="delta"></div>
+  <p class="small muted" id="latest-hidden"></p>
 </section>
+
+{_changes_html(m)}
 
 <section>
   <h2>회의별 · 주제별 결정 수</h2>

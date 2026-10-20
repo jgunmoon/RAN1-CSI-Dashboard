@@ -13,6 +13,7 @@ on:
 
 permissions:
   contents: write   # 갱신된 reports/를 커밋하기 위해 필요
+  issues: write     # 결과가 달라지면 알림 Issue를 만들기 위해 필요
 
 concurrency:
   group: csi-dashboard
@@ -41,7 +42,8 @@ jobs:
         run: python -m pytest -q
 
       - name: Build reports from the source DB
-        run: python -m scripts.build | tee -a "$GITHUB_STEP_SUMMARY"
+        shell: bash   # -eo pipefail: tee 뒤에 가려져도 스크립트 오류면 실패로 표시
+        run: python -m scripts.build --notify-file "$RUNNER_TEMP/notify.md" | tee -a "$GITHUB_STEP_SUMMARY"
 
       - name: Commit updated reports
         run: |
@@ -54,6 +56,21 @@ jobs:
           git add -A reports
           git commit -m "Update CSI dashboard reports"
           git push
+
+      # 결과가 달라졌으면(새 회의, 과거 회의 추가·변경·삭제, Agenda 경고) Issue로 알립니다. 첫 줄이 제목입니다.
+      # 리포트 커밋 뒤에 만들고 continue-on-error라, Issue 생성이 실패해도(예: Issues 꺼짐) 리포트·Pages는 갱신됩니다.
+      # 실패하면 실행 화면에 경고(주황색)로 남습니다.
+      - name: Open notification issue
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          f="$RUNNER_TEMP/notify.md"
+          if [ ! -s "$f" ]; then echo "알림 없음 (결과 변화 없음)"; exit 0; fi
+          title=$(head -n 1 "$f")
+          tail -n +3 "$f" > "$RUNNER_TEMP/notify_body.md"
+          gh issue create --repo "$GITHUB_REPOSITORY" --title "$title" --body-file "$RUNNER_TEMP/notify_body.md"
+          echo "알림 Issue 생성: $title" | tee -a "$GITHUB_STEP_SUMMARY"
 
   # reports/ 폴더를 GitHub Pages로 게시합니다 (Settings → Pages → Source: GitHub Actions 필요).
   pages:
