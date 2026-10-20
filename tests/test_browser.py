@@ -70,10 +70,10 @@ def test_related_topic_filter_includes_primary(dash):
 
 def test_candidate_keywords_are_readable(dash):
     dash.check("#g-cand")
-    dash.locator("#agenda-body tr", has_text="Maintenance on AI/ML for NR Air interface").locator("button.cell").last.click()
+    dash.locator("#agenda-body tr", has_text="Uplink transmission scheme").locator("button.cell").last.click()
     kws = dash.locator(".kw").all_text_contents()
     assert kws and all("\\" not in k and "(?" not in k for k in kws)
-    assert any("TS 38.214 5.2.2.5" in k for k in kws)
+    assert kws == ["일치: codebook, SRS"]
 
 
 def test_children_agenda_number_not_shown_as_renumbered(dash):

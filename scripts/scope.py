@@ -91,6 +91,8 @@ class Scope:
                                  "section_match": title_matcher(a["section"]),
                                  "path_match": [title_matcher(t) for t in a["path"]],
                                  "children": bool(a.get("children")), "topic": a.get("topic"),
+                                 "exclude": [re.compile(x) for x in a.get("exclude") or []],
+                                 "require_keywords": bool(a.get("require_keywords")),
                                  "label": a.get("label") or a["path"][-1], "section_title": a["section"]})
         self.ignore = [re.compile(p) for p in config.get("ignore_phrases") or []]
         self.keywords = [re.compile(p) for p in config.get("candidate_keywords") or []]
@@ -117,8 +119,11 @@ class Scope:
         """(포함 목록 항목, 그 항목에 해당하는 Agenda 번호) 또는 (None, None). 먼저 적힌 항목이 우선합니다.
 
         children 항목에 하위 Agenda 결정이 걸리면 번호는 하위가 아니라 그 항목(상위 Agenda)의 번호입니다.
+        CSI와 다른 주제가 섞인 Agenda는 항목의 exclude(원문 정규식)에 걸리거나, require_keywords인데 보조 키워드·조항이
+        없으면 그 항목에 넣지 않습니다(다음 항목을 보고, 아무 데도 안 걸리면 키워드로 후보 판정).
         """
         nodes = entry["agenda_path"]
+        text = None
         path = [norm(n["title"]) for n in nodes]
         section, below = path[0], path[1:]
         for a in self.agendas:
@@ -127,6 +132,12 @@ class Scope:
             p, n = a["path_match"], len(a["path_match"])
             for start in range(len(below) - n + 1):
                 if all(f(t) for f, t in zip(p, below[start:start + n])) and (a["children"] or start + n == len(below)):
+                    if a["exclude"] or a["require_keywords"]:
+                        text = self._text(entry) if text is None else text
+                        if any(r.search(text) for r in a["exclude"]):
+                            break
+                        if a["require_keywords"] and not self.keyword_hits(entry):
+                            break
                     return a, nodes[start + n]["number"]
         return None, None
 

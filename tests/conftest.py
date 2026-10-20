@@ -87,6 +87,21 @@ def db():
                   "The draft CR in R1-2607797 for Rel-19 TS38.214, Clause 5.2.2.5 is endorsed."),
             entry("RAN1#126:8.1:002", "RAN1#126", [MAINT, ("8.1", "Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5, NES and NTN for NR and IoT")],
                   "Adopt the following TP in section 6.2.1.4, TS 38.214.\n| 6.2.1.4 ... TS38.214 5.1.6.1.2 is unchanged."),
+            # 통합 유지보수 Agenda(require_keywords): CSI 키워드가 없는 RACH 결정은 확정에서 빠짐 (rootSequenceIndex-BFR은 BFR 아님)
+            entry("RAN1#126:8.1:004", "RAN1#126", [MAINT, ("8.1", "Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT")],
+                  "The following TP for TS 38.211 Clause 6.3.3.1 is endorsed: rootSequenceIndex-BFR is used."),
+            entry("RAN1#126:8.1:005", "RAN1#126", [MAINT, ("8.1", "Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT")],
+                  "If a UE multiplexes aperiodic CSI in a PUSCH, the UE follows clause 9."),
+            # Rel-19 AI/ML UE features: positioning FG(58-2)는 exclude, CSI 예측 FG는 확정
+            entry("RAN1#125:9.1:001", "RAN1#125", [("9", "Rel-19 UE Features"), ("9.1", "UE features for AI/ML for NR Air Interface")],
+                  "Adopt the following changes\n| 58. NR_AIML_Air | 58-3-1 | CSI prediction | FFS: CPU/AIMLPU related information |"),
+            entry("RAN1#125:9.1:002", "RAN1#125", [("9", "Rel-19 UE Features"), ("9.1", "UE features for AI/ML for NR Air Interface")],
+                  "Introduce the following FGs\n| 58. NR_AIML_Air | 58-2-9 | DL PRS measurement for AI/ML positioning |"),
+            # 단독 CSI 표현은 후보, SP-CSI-RNTI는 아님
+            entry("RAN1#126:8.8:001", "RAN1#126", [MAINT, ("8.8", "Maintenance on others")],
+                  "There is no consensus on the definition of CSI reference resource for LBCA."),
+            entry("RAN1#126:8.8:002", "RAN1#126", [MAINT, ("8.8", "Maintenance on others")],
+                  "For PUSCH scheduled by DCI scrambled with SP-CSI-RNTI, the valid symbol type is the first symbol."),
             # TDoc 안의 절, CSI와 무관한 조항, 38.213 6.x 오인용은 후보가 아님
             entry("RAN1#126:8.1:003", "RAN1#126", [MAINT, ("8.1", "Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5, NES and NTN for NR and IoT")],
                   "Proposal 1 in Section 5.2 of R1-2608699 for Rel-19 TS38.213 Clause 4.1 is endorsed.\n"

@@ -16,6 +16,8 @@ CSI 범위는 넓게 봅니다: CSI 획득·보고, CSI-RS, codebook(PMI/CQI/RI)
      `path`는 섹션 아래 이어진 제목 경로(중간부터 가능), `children: true`면 하위 Agenda 포함, `topic`이 있으면 주제 고정.
      제목이 `re:`로 시작하면 정규식(대소문자 무시, 전체 일치)입니다. 다음 Phase·Release Agenda를 미리 잡을 때 씁니다
      (예: `re:UE features for NR MIMO Phase \d+`).
+     CSI와 다른 주제가 섞인 Agenda는 `exclude`(원문 정규식, 예: AI/ML의 positioning)로 빼거나, `require_keywords: true`로
+     보조 키워드·조항이 있는 결정만 확정합니다(#125 이후 AI/ML·MIMO Ph5·NES·NTN 통합 유지보수). 빠진 결정도 키워드가 있으면 후보가 됩니다.
    - `candidate_keywords`: 포함 Agenda 밖에서 키워드가 원문/FFS에 있으면 **'후보'**. 확정과 섞지 않고 따로 표시합니다.
      `ignore_phrases`(예: HARQ-ACK codebook)는 판정 전에 지웁니다. 대시보드의 '일치'에는 정규식이 아니라 실제로 일치한 단어를 보여줍니다.
    - `spec_clauses`: 사양 조항 번호(예: TS 38.214 5.2 = CSI 보고)도 후보 키워드로 씁니다. 유지보수 결정은 "TS 38.214 Clause 5.2.5의 TP endorsed"처럼

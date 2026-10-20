@@ -23,6 +23,8 @@ dashboard_url: "https://jgunmoon.github.io/RAN1-CSI-Dashboard/"                 
 #   children: true면 그 Agenda 아래 하위 Agenda 결정까지 모두 포함합니다.
 #   topic   : 이 Agenda 결정의 주제를 고정합니다. 비우면 아래 topics 규칙으로 결정마다 나눕니다.
 #   label   : 대시보드에 보일 이름 (비우면 path의 마지막 제목)
+#   exclude : CSI와 다른 주제가 섞인 Agenda에서 뺄 결정의 원문 정규식 (예: AI/ML의 positioning). 빠진 결정도 키워드가 있으면 후보가 됩니다.
+#   require_keywords: true면 아래 보조 키워드나 사양 조항이 원문에 있는 결정만 확정으로 넣습니다 (CSI 외 주제가 절반 이상인 통합 Agenda용).
 agendas:
   # Rel-20 6GR Study
   - {section: "Rel-20 Study of 6GR", path: ["Aspects of downlink-based CSI acquisition"]}
@@ -43,6 +45,14 @@ agendas:
   - {section: "re:Rel-\\d+ UE Features", path: ["re:UE features for NR MIMO Phase \\d+"], label: "UE features for NR MIMO Phase N"}
   - {section: "re:Maintenance on Rel-\\d+ NR and E-UTRA", path: ["re:Maintenance on NR MIMO Phase \\d+"], children: true,
      label: "Maintenance on NR MIMO Phase N (하위 포함)"}
+  # Rel-19 AI/ML: BM·CSI 예측 FG/유지보수는 단말 HW·알고리즘에 직접 영향. positioning(FG 58-2, PRS, Associated ID)은 뺍니다.
+  - {section: "re:Rel-\\d+ UE Features", path: ["re:UE features for AI/ML for NR Air Interface"], topic: aiml,
+     exclude: ['(?i)positioning', '\bPRS\b', '\|\s*58-2-'], label: "UE features for AI/ML (positioning 제외)"}
+  - {section: "Maintenance on Rel-19 NR and E-UTRA", path: ["Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface"],
+     topic: aiml, exclude: ['(?i)positioning', '(?i)associated ID'], label: "Maintenance on AI/ML (positioning 제외)"}
+  # #125부터 Rel-19 AI/ML·MIMO Phase 5 유지보수가 NES·NTN과 한 Agenda로 합쳐졌습니다. CSI 키워드·조항이 있는 결정만 확정으로 넣습니다.
+  - {section: "Maintenance on Rel-19 NR and E-UTRA", path: ["Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT"],
+     require_keywords: true, label: "Maintenance on AI/ML·MIMO Ph5·NES·NTN (CSI 키워드·조항 있는 결정만)"}
   - {section: "Maintenance on Rel-19 NR and E-UTRA", path: ["Specification support for beam management"], topic: aiml,
      label: "AI/ML: Specification support for beam management"}
   - {section: "Maintenance on Rel-19 NR and E-UTRA", path: ["Specification support for CSI prediction"], topic: aiml,
@@ -63,18 +73,25 @@ candidate_keywords:
   - '\bCQI\b'
   - '\bTCI\b'
   - '(?i)beam failure'
-  - '\bBF[DR]\b'
+  - '(?<![-\w])BF[DR]\b'
   - '(?i)beam report'
   - '(?i)beamforming'
   - '(?i)beam management'
   - '\bL1-RSRP\b'
   - '\bSRS\b'
+  # 'aperiodic CSI', 'CSI request', 'CSI part 1', 'CSI reference resource', 'CSI-PAI' 등. SP-CSI-RNTI(스케줄링용 RNTI)는 제외
+  - '\bCSI\b(?!-RNTI)'
+  # CSI 처리 유닛(CPU)과 AI/ML 처리 유닛 (단말 HW 처리 능력·타임라인)
+  - '\bCPU\b'
+  - '\bAIMLPU\b'
+  - '\bAPU\b'
 
 # 키워드·주제 판정 전에 원문에서 지우는 표현 (CSI와 무관한 같은 단어)
 ignore_phrases:
   - '(?i)HARQ-ACK codebook'
   - '(?i)HARQ codebook'
   - '(?i)Type-[123] HARQ(-ACK)? codebook'
+  - '(?i)harq-CodebookID'
 
 # ── 2-1. 사양 조항 번호 (후보) ─────────────────────────────────────────
 # 유지보수 결정은 "The following TP for TS 38.214 Clause 5.2.5 is endorsed"처럼 본문이 TDoc에 있어
@@ -113,7 +130,7 @@ topics:
     patterns: ['\bSRS\b']
   - id: beam
     label: "Beam management"
-    patterns: ['\bTCI\b', '(?i)beam failure', '\bBF[DR]\b', '(?i)beam (report|management|measurement|indication)', '\bL1-RSRP\b', '\bL1-SINR\b', '\bUEIBM\b', '(?i)beamforming']
+    patterns: ['\bTCI\b', '(?i)beam failure', '(?<![-\w])BF[DR]\b', '(?i)beam (report|management|measurement|indication)', '\bL1-RSRP\b', '\bL1-SINR\b', '\bUEIBM\b', '(?i)beamforming']
   - id: report
     label: "CSI 보고/codebook"
     patterns: ['(?i)\bCSI[- ]report', 'reportQuantity', '(?i)\bCSI feedback', '(?i)codebook', '\bPMI\b', '\bCQI\b', '\bRI\b', '\bType[- ]?I{1,2}\b', '\bCPU\b', '\bCSI\b(?!-RS|-IM)']

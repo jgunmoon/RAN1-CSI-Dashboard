@@ -30,9 +30,9 @@ def test_build_writes_reports(tmp_path, db, config):
     beam = (tmp_path / "by_topic" / "beam.md").read_text(encoding="utf-8")
     assert "Study unified TCI framework" in beam and "R1-2600001" in beam
     srs = (tmp_path / "by_topic" / "srs.md").read_text(encoding="utf-8")
-    assert "후보 2건" in srs and "TS 38.214 6.2.1.4" not in srs.split("후보 2건")[0]
+    assert "후보 1건" in srs  # 조항 번호만 있는 통합 유지보수 결정(6.2.1.4)은 이제 확정
     csirs = (tmp_path / "by_topic" / "csirs.md").read_text(encoding="utf-8")
-    assert "관련 결정 1건" in csirs and "Support aperiodic CSI reporting associated" in csirs
+    assert "관련 결정 2건" in csirs and "Support aperiodic CSI reporting associated" in csirs
     assert "| 주된 주제 |" in readme and "관련 포함 |" in readme
     assert all("tags" in e for e in data["entries"])
 
@@ -94,9 +94,10 @@ def test_agenda_alerts_dropped_and_new(tmp_path, db, config):
     # #126의 Beam management 결정을 빼면, #125에 있던 포함 Agenda가 최신 회의에서 사라진 것으로 경고
     db = {**db, "entries": [x for x in db["entries"] if x["id"] != "RAN1#126:10.5.3.4:001"]}
     m = build.build(config, db, tmp_path)
-    # 합성 DB의 AI/ML Case 0도 #125에만 결정이 있어 함께 잡힘
+    # 합성 DB의 AI/ML Case 0, AI/ML UE features도 #125에만 결정이 있어 함께 잡힘
     assert [d["label"] for d in m["alerts"]["dropped"]] == [
-        "Beam management for downlink and uplink", "AI/ML CSI compression Case 0 (Inference related aspects 등 하위 포함)"]
+        "Beam management for downlink and uplink", "AI/ML CSI compression Case 0 (Inference related aspects 등 하위 포함)",
+        "UE features for AI/ML (positioning 제외)"]
     new = {r["title"]: r for r in m["alerts"]["new"]}
     assert new["Uplink transmission scheme(s) for uplink channels"]["candidate"] == 1
     assert all(r["confirmed"] or r["candidate"] for r in m["alerts"]["new"])  # CSI 결정 없는 새 Agenda(ISAC 등)는 경고 안 함
