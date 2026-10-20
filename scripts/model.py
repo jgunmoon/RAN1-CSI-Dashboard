@@ -43,7 +43,7 @@ def build(db, config):
         mine = [e for e in entries if e["agenda_rule"] == a["index"]]
         numbers = {}
         for e in mine:
-            numbers[e["meeting"]] = e["agenda_item"]
+            numbers[e["meeting"]] = e["agenda_number"]  # children 항목이면 하위가 아니라 그 Agenda 자체의 번호
         agendas.append({"index": a["index"], "label": a["label"], "section": a["section_title"], "topic": a["topic"],
                         "numbers": numbers, "last_number": numbers[max(numbers, key=scope_mod.meeting_sort_key)] if numbers else "",
                         "entries": mine})

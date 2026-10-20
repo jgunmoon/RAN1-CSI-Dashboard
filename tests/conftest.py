@@ -16,6 +16,7 @@ def entry(id_, meeting, path, text, type_="Agreement", ffs=()):
 
 SIXG = ("10", "Rel-20 Study of 6GR")
 MAS = ("10.5", "Multi-antenna system")
+MAINT = ("8", "Maintenance on Rel-19 NR and E-UTRA")
 
 
 @pytest.fixture
@@ -71,5 +72,24 @@ def db():
                   "Support aperiodic SRS trigger in MSG4."),
             entry("RAN1#126:9.2.9:001", "RAN1#126", [("9", "Release 20 NR"), ("9.2", "NR MIMO Phase 6"), ("9.2.9", "Something new")],
                   "Study a new feature </script> <!-- x."),
+            # 여러 주제에 걸친 결정: 주된 주제는 규칙 순서상 CSI 보고, CSI-RS는 관련 주제
+            entry("RAN1#126:10.5.3.1:004", "RAN1#126",
+                  [SIXG, MAS, ("10.5.3", "CSI acquisition and report"), ("10.5.3.1", "Aspects of downlink-based CSI acquisition")],
+                  "Support aperiodic CSI reporting associated with aperiodic NZP CSI-RS."),
+            # 하위 포함 Agenda: #125는 하위 8.2.2, #126은 상위 8.2에 기록 → 번호 변경이 아님
+            entry("RAN1#125:8.2.2:001", "RAN1#125",
+                  [MAINT, ("8.2", "Maintenance on NR MIMO Phase 5"), ("8.2.2", "CSI enhancements")],
+                  "The TP in R1-2505555 for TS 38.214 is endorsed."),
+            entry("RAN1#126:8.2:001", "RAN1#126", [MAINT, ("8.2", "Maintenance on NR MIMO Phase 5")],
+                  "The TP in R1-2606666 for TS 38.213 is endorsed."),
+            # 통합 유지보수 Agenda: 기술 키워드 없이 조항 번호만 → 후보
+            entry("RAN1#126:8.1:001", "RAN1#126", [MAINT, ("8.1", "Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5, NES and NTN for NR and IoT")],
+                  "The draft CR in R1-2607797 for Rel-19 TS38.214, Clause 5.2.2.5 is endorsed."),
+            entry("RAN1#126:8.1:002", "RAN1#126", [MAINT, ("8.1", "Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5, NES and NTN for NR and IoT")],
+                  "Adopt the following TP in section 6.2.1.4, TS 38.214.\n| 6.2.1.4 ... TS38.214 5.1.6.1.2 is unchanged."),
+            # TDoc 안의 절, CSI와 무관한 조항, 38.213 6.x 오인용은 후보가 아님
+            entry("RAN1#126:8.1:003", "RAN1#126", [MAINT, ("8.1", "Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5, NES and NTN for NR and IoT")],
+                  "Proposal 1 in Section 5.2 of R1-2608699 for Rel-19 TS38.213 Clause 4.1 is endorsed.\n"
+                  "Adopt the following TPs in principle to Clause 6.3.2.4.1.1, TS 38.213."),
         ],
     }

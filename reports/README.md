@@ -8,7 +8,7 @@
 | 구분 | 건수 |
 |---|---:|
 | 확정 (포함 Agenda + 수동 포함) | **648** (Agreement 604 · WA 4 · Conclusion 40) |
-| 후보 (다른 Agenda의 키워드 일치, 확인 필요) | 265 |
+| 후보 (다른 Agenda의 키워드 일치, 확인 필요) | 272 |
 
 ## 직전 회의 대비 (RAN1#126 → RAN1#126bis)
 
@@ -27,16 +27,18 @@
 ## 주제별 · 회의별 Agreement
 
 확정 범위의 Agreement만 셉니다. Working Assumption·Conclusion과 후보는 HTML 대시보드에서 체크박스로 켤 수 있습니다.
+회의별 숫자는 결정마다 하나인 **주된 주제**로 셉니다. 한 결정이 여러 주제에 걸치면 나머지는 **관련 주제**로 붙고,
+맨 끝 '관련 포함' 열은 관련 주제까지 센 전체 회의 합계라 합계가 전체 건수보다 큽니다.
 
-| 주제 | #122 | #122bis | #123 | #124 | #124bis | #125 | #126 | #126bis | 합계 |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| [AI/ML CSI](by_topic/aiml.md) | 36 | 12 | 11 | 11 | 13 | 13 | 9 | 7 | **112** |
-| [SRS](by_topic/srs.md) | 28 | 16 | 9 | 17 | 25 | 20 | 24 | 24 | **163** |
-| [Beam management](by_topic/beam.md) | 15 | 3 | 3 | 15 | 11 | 22 | 29 | 18 | **116** |
-| [CSI 보고/codebook](by_topic/report.md) | 21 | 32 | 4 | 8 | 14 | 10 | 11 | 15 | **115** |
-| [CSI-RS](by_topic/csirs.md) | 4 | 1 | 1 | 3 | 4 | 9 | 9 | 5 | **36** |
-| [기타 CSI](by_topic/other.md) | 16 | 16 | 7 | 2 | 5 | 2 | 3 | 11 | **62** |
-| **합계** | **120** | **80** | **35** | **56** | **72** | **76** | **85** | **80** | **604** |
+| 주된 주제 | #122 | #122bis | #123 | #124 | #124bis | #125 | #126 | #126bis | 합계 | 관련 포함 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| [AI/ML CSI](by_topic/aiml.md) | 36 | 12 | 11 | 11 | 13 | 13 | 9 | 7 | **112** | 126 |
+| [SRS](by_topic/srs.md) | 28 | 16 | 9 | 17 | 25 | 20 | 24 | 24 | **163** | 172 |
+| [Beam management](by_topic/beam.md) | 15 | 3 | 3 | 15 | 11 | 22 | 29 | 18 | **116** | 126 |
+| [CSI 보고/codebook](by_topic/report.md) | 21 | 33 | 5 | 8 | 14 | 10 | 11 | 15 | **117** | 309 |
+| [CSI-RS](by_topic/csirs.md) | 4 | 1 | 1 | 4 | 8 | 9 | 9 | 5 | **41** | 156 |
+| [기타 CSI](by_topic/other.md) | 16 | 15 | 6 | 1 | 1 | 2 | 3 | 11 | **55** | 55 |
+| **합계** | **120** | **80** | **35** | **56** | **72** | **76** | **85** | **80** | **604** | — |
 
 ```mermaid
 xychart-beta
@@ -163,11 +165,11 @@ Agenda 번호는 회의마다 바뀌므로 '섹션 + Agenda 제목'으로 이어
 |---|---|---|---:|
 | Maintenance on Rel-19 NR and E-UTRA | Maintenance on others | 8.2, 8.7, 8.8 | 43 |
 | Rel-19 UE Features | UE features for AI/ML for NR Air Interface | 9.1 | 28 |
-| Maintenance on Rel-19 NR and E-UTRA | Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface | 8.1 | 24 |
-| Maintenance on Rel-19 NR and E-UTRA | Maintenance on Evolution of NR duplex operation: Sub-band full duplex (SBFD) | 8.3 | 16 |
+| Maintenance on Rel-19 NR and E-UTRA | Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface | 8.1 | 25 |
+| Maintenance on Rel-19 NR and E-UTRA | Maintenance on Evolution of NR duplex operation: Sub-band full duplex (SBFD) | 8.3 | 17 |
+| Maintenance on Rel-19 NR and E-UTRA | Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT | 8.1 | 16 |
 | Rel-19 UE Features | UE features for NR mobility enhancements Phase 4 | 9.6 | 15 |
 | Rel-20 Study of 6GR | Uplink transmission scheme(s) for uplink channels | 10.5.2.3 | 14 |
-| Maintenance on Rel-19 NR and E-UTRA | Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT | 8.1 | 12 |
 | Maintenance on Rel-19 NR and E-UTRA | Measurements related enhancements for LTM | 8.9.1 | 10 |
 | Rel-19 UE Features | UE features Batch C | 9.3 | 10 |
 | Rel-20 Study of 6GR | Other physical layer signals, channels and procedure | 10.5.5 | 8 |

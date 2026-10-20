@@ -127,6 +127,8 @@ button.cell:disabled { color: var(--ink-3); text-decoration: none; cursor: defau
   font-size: 13px; white-space: pre-line; overflow-wrap: anywhere; max-height: 16em; overflow-y: auto; }
 .src { font-size: 12px; color: var(--ink-3); overflow-wrap: anywhere; }
 .kw { font-size: 12px; color: var(--cand); }
+.related-tags { font-size: 12px; color: var(--ink-3); }
+td.related, th.related { border-left: 1px solid var(--rule); }
 mark { background: var(--mark); color: inherit; border-radius: 2px; padding: 0 1px; }
 .empty { color: var(--ink-3); font-size: 13px; padding: 20px 0; text-align: center; border: 1px dashed var(--rule); border-radius: 6px; }
 footer { font-size: 13px; color: var(--ink-3); border-top: 1px solid var(--rule); padding-top: 16px; }
@@ -188,7 +190,7 @@ SCRIPT = r"""
       d.append(prev ? `${short(prev)} ${p} → ` : '', el('b', null, `${diff >= 0 ? '+' : ''}${diff}`));
       c.append(name, el('span', 'big', String(n)), d);
       c.title = `${latest} 신규 결정 보기`;
-      c.addEventListener('click', () => focusList({ topic: t.id === '__all' ? '' : t.id, meeting: latest }));
+      c.addEventListener('click', () => focusList({ topic: t.id === '__all' ? '' : 'p:' + t.id, meeting: latest }));
       box.append(c);
     });
   }
@@ -228,8 +230,8 @@ SCRIPT = r"""
         p.addEventListener('pointerleave', () => { tip.hidden = true; });
         p.addEventListener('focus', () => { const b = p.getBoundingClientRect(); showTip(text, b.left, b.top); });
         p.addEventListener('blur', () => { tip.hidden = true; });
-        p.addEventListener('click', () => focusList({ topic: t.id, meeting: m }));
-        p.addEventListener('keydown', ev => { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); focusList({ topic: t.id, meeting: m }); } });
+        p.addEventListener('click', () => focusList({ topic: 'p:' + t.id, meeting: m }));
+        p.addEventListener('keydown', ev => { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); focusList({ topic: 'p:' + t.id, meeting: m }); } });
         y = y0;
       });
       if (totals[i]) mk('text', { class: 'val', x: x + bw / 2, y: y - 5, 'text-anchor': 'middle' }, totals[i]);
@@ -239,11 +241,13 @@ SCRIPT = r"""
   }
 
   // ── 표 (주제 × 회의, Agenda × 회의). 숫자를 누르면 아래 목록이 그 조건으로 바뀝니다.
+  // r.related가 있으면 맨 끝에 '관련 포함' 열(관련 주제 태그로 센 전체 회의 합계)을 붙입니다.
   function matrix(tbody, rows, list, colTotals) {
     tbody.replaceChildren();
     const sums = Object.fromEntries(D.meetings.map(m => [m, 0]));
+    const extra = rows.some(r => r.related) ? 1 : 0;
     rows.forEach(r => {
-      if (r.group) { const tr = el('tr', 'group'); const td = el('td', null, r.group); td.colSpan = D.meetings.length + 2; tr.append(td); tbody.append(tr); return; }
+      if (r.group) { const tr = el('tr', 'group'); const td = el('td', null, r.group); td.colSpan = D.meetings.length + 2 + extra; tr.append(td); tbody.append(tr); return; }
       const mine = list.filter(r.match), per = countBy(mine, e => e.meeting);
       if (r.hideEmpty && !mine.length) return;
       const tr = el('tr'); const lab = el('td', 'label');
@@ -257,27 +261,35 @@ SCRIPT = r"""
       });
       const tot = el('td', 'num'); const b = el('button', 'cell', String(mine.length)); b.type = 'button'; b.disabled = !mine.length;
       b.addEventListener('click', () => focusList({ ...r.focus, meeting: '' })); tot.append(b); tr.append(tot);
+      if (r.related) {
+        const n = list.filter(r.related.match).length, td = el('td', 'num related'), rb = el('button', 'cell', String(n));
+        rb.type = 'button'; rb.disabled = !n; rb.title = `${r.label}이(가) 관련 주제로 붙은 결정 (주된 주제가 다른 결정 포함)`;
+        rb.addEventListener('click', () => focusList(r.related.focus)); td.append(rb); tr.append(td);
+      }
       tbody.append(tr);
     });
     if (colTotals) {
       const tr = el('tr', 'total'); tr.append(el('td', null, '합계'));
       D.meetings.forEach(m => tr.append(el('td', 'num' + (m === latest ? ' latest-col' : ''), String(sums[m]))));
-      tr.append(el('td', 'num', String(Object.values(sums).reduce((a, b) => a + b, 0)))); tbody.append(tr);
+      tr.append(el('td', 'num', String(Object.values(sums).reduce((a, b) => a + b, 0))));
+      if (extra) tr.append(el('td', 'num related', '—'));
+      tbody.append(tr);
     }
   }
-  const topicRows = D.topics.map(t => ({ label: t.label, topic: t.id, match: e => e.topic === t.id, focus: { topic: t.id, agenda: '' } }));
+  const topicRows = D.topics.map(t => ({ label: t.label, topic: t.id, match: e => e.topic === t.id, focus: { topic: 'p:' + t.id },
+    related: { match: e => e.tags.includes(t.id), focus: { topic: 't:' + t.id } } }));
   function agendaRows() {
     const rows = []; let sec = null;
     D.agendas.forEach(a => {
       if (a.section !== sec) { sec = a.section; rows.push({ group: sec }); }
-      rows.push({ label: a.label, sub: a.number_note, match: e => e.rule === a.index, focus: { agenda: 'r' + a.index, topic: '' } });
+      rows.push({ label: a.label, sub: a.number_note, match: e => e.rule === a.index, focus: { agenda: 'r' + a.index } });
     });
     if (D.entries.some(e => e.scope === 'manual'))
-      rows.push({ group: '수동 포함' }, { label: 'include_ids', match: e => e.scope === 'manual', focus: { agenda: 'manual', topic: '' } });
+      rows.push({ group: '수동 포함' }, { label: 'include_ids', match: e => e.scope === 'manual', focus: { agenda: 'manual' } });
     if ($('g-cand').checked) {
       rows.push({ group: '후보 (포함 Agenda 밖 · 키워드 일치 · 확인 필요)' });
       D.cand_agendas.forEach(c => rows.push({ label: c.title, sub: `${c.section} · ${c.numbers}`, hideEmpty: true,
-        match: e => e.scope === 'candidate' && e.cand_key === c.key, focus: { agenda: 'c' + c.key, topic: '' } }));
+        match: e => e.scope === 'candidate' && e.cand_key === c.key, focus: { agenda: 'c' + c.key } }));
     }
     return rows;
   }
@@ -286,7 +298,10 @@ SCRIPT = r"""
   const q = $('q'), fTopic = $('f-topic'), fMeeting = $('f-meeting'), fAgenda = $('f-agenda'), fWord = $('f-word');
   const out = $('results'), summary = $('summary'), PAGE = 40;
   const opt = (sel, value, label) => { const o = el('option', null, label); o.value = value; sel.append(o); };
-  D.topics.forEach(t => opt(fTopic, t.id, t.label));
+  const gPrimary = el('optgroup'), gTag = el('optgroup');
+  gPrimary.label = '주된 주제'; gTag.label = '관련 주제 포함';
+  D.topics.forEach(t => { opt(gPrimary, 'p:' + t.id, t.label); opt(gTag, 't:' + t.id, `${t.label} (관련 포함)`); });
+  fTopic.append(gPrimary, gTag);
   [...D.meetings].reverse().forEach(m => opt(fMeeting, m, m + (m === latest ? ' (최신)' : '')));
   D.agendas.forEach(a => opt(fAgenda, 'r' + a.index, a.label));
   opt(fAgenda, 'manual', '수동 포함 (include_ids)');
@@ -305,13 +320,15 @@ SCRIPT = r"""
     head.append(el('span', 'mono', e.meeting));
     if (e.meeting === latest) head.append(el('span', 'chip new', '신규'));
     if (D.provisional.includes(e.meeting)) head.append(el('span', 'chip cand', '잠정'));
-    const tc = el('span', 'chip'); tc.append(swatch(e.topic), TOPIC[e.topic].label); head.append(tc);
+    const tc = el('span', 'chip'); tc.append(swatch(e.topic), TOPIC[e.topic].label); tc.title = '주된 주제'; head.append(tc);
+    const rel = e.tags.filter(t => t !== e.topic);
+    if (rel.length) head.append(el('span', 'related-tags', '관련: ' + rel.map(t => TOPIC[t].label).join(' · ')));
     head.append(el('span', 'chip', SHORT[e.type]));
     if (e.scope === 'candidate') head.append(el('span', 'chip cand', '후보'));
     if (e.scope === 'manual') head.append(el('span', 'chip', '수동 포함'));
     head.append(el('span', 'mono', e.item), el('span', 'muted', e.title));
     box.append(head);
-    if (e.scope === 'candidate') box.append(el('div', 'kw', '일치 키워드: ' + e.kw.join(', ')));
+    if (e.scope === 'candidate') box.append(el('div', 'kw', '일치: ' + e.kw.join(', ')));
     box.append(el('span', 'label-orig', 'Chair notes 원문'));
     const text = el('p', 'orig'); highlight(text, e.text, re); box.append(text);
     const src = el('div', 'src'); const s = e.source;
@@ -330,6 +347,11 @@ SCRIPT = r"""
     shown = Math.min(shown + PAGE, hits.length);
     if (shown < hits.length) { const b = el('button', 'more', `더 보기 (남은 ${hits.length - shown}건)`); b.type = 'button'; b.addEventListener('click', showMore); out.append(b); }
   }
+  // 'p:srs'는 주된 주제가 SRS인 결정, 't:srs'는 SRS가 관련 주제로 붙은 결정(주된 주제가 다른 결정 포함)
+  function topicOk(e) {
+    const v = fTopic.value; if (!v) return true;
+    return v[0] === 'p' ? e.topic === v.slice(2) : e.tags.includes(v.slice(2));
+  }
   function agendaOk(e) {
     const v = fAgenda.value; if (!v) return true;
     if (v === 'manual') return e.scope === 'manual';
@@ -341,7 +363,7 @@ SCRIPT = r"""
     const terms = groups.flat();
     const groupRes = groups.map(g => g.map(t => new RegExp(pattern(t, fWord.checked), 'i')));
     curRe = terms.length ? new RegExp(terms.map(t => pattern(t, fWord.checked)).join('|'), 'gi') : null;
-    hits = base.filter(e => (!fTopic.value || e.topic === fTopic.value) && (!fMeeting.value || e.meeting === fMeeting.value) && agendaOk(e) &&
+    hits = base.filter(e => topicOk(e) && (!fMeeting.value || e.meeting === fMeeting.value) && agendaOk(e) &&
       (!groupRes.length || groupRes.some(g => g.every(r => r.test(e.text) || r.test(e.title))))).reverse();
     out.replaceChildren(); shown = 0;
     const per = countBy(hits, e => e.meeting);
@@ -350,11 +372,10 @@ SCRIPT = r"""
                   : ` · 조건에 맞는 결정이 없습니다 (${stateText()}). 위 체크박스나 검색어를 확인하세요.`);
     showMore();
   }
+  // 카드·차트·표의 숫자를 누르면 이전 검색어와 조건을 모두 지우고 누른 조건만 적용합니다 (남아 있으면 0건처럼 보임).
   function focusList(f) {
-    if ('topic' in f) fTopic.value = f.topic;
-    if ('meeting' in f) fMeeting.value = f.meeting;
-    if ('agenda' in f) fAgenda.value = f.agenda;
-    if (f.agenda && f.agenda[0] === 'c' && !$('g-cand').checked) { $('g-cand').checked = true; }
+    q.value = ''; fTopic.value = f.topic || ''; fMeeting.value = f.meeting || ''; fAgenda.value = f.agenda || '';
+    if (fAgenda.value[0] === 'c' && !$('g-cand').checked) { $('g-cand').checked = true; }
     update(); $('list').scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
   function update() {
@@ -419,7 +440,7 @@ def data(m):
             k = (p[0]["title"], p[-1]["title"])
             ck = cand_keys.setdefault(k, str(len(cand_keys)))
         entries.append({"id": e["id"], "meeting": e["meeting"], "item": e["agenda_item"], "title": e["agenda_title"],
-                        "type": e["type"], "text": e["text"], "ffs": len(e.get("ffs") or []), "topic": e["topic"],
+                        "type": e["type"], "text": e["text"], "ffs": len(e.get("ffs") or []), "topic": e["topic"], "tags": e["tags"],
                         "scope": e["scope"], "rule": e["agenda_rule"], "kw": e["keywords"], "cand_key": ck,
                         "source": {k: e["source"].get(k) for k in ("doc", "url", "tdoc", "tdoc_url", "discussion") if e["source"].get(k)}})
     counts = {}
@@ -498,10 +519,11 @@ def render_body(m):
   <div class="panel">
     <div class="legend">{"".join(f'<span><i class="swatch" style="background: var(--t-{_e(t["id"])})"></i>{_e(t["label"])}</span>' for t in m["topics"])}</div>
     <svg class="chart" id="chart" role="img"></svg>
-    <span class="small muted">막대 조각에 올리면 건수, 누르면 그 회의·주제의 결정 목록을 보여줍니다. 주제는 결정마다 하나입니다(설정 파일의 규칙 순서대로 판정).</span>
+    <span class="small muted">막대 조각에 올리면 건수, 누르면 그 회의·주제의 결정 목록을 보여줍니다. 차트와 표의 회의별 숫자는 결정마다 하나인 <b>주된 주제</b>로 셉니다.
+      한 결정이 여러 주제에 걸치면(예: CSI-RS와 CSI 보고) 나머지는 <b>관련 주제</b>로 붙습니다. 표 맨 끝 '관련 포함' 열은 관련 주제까지 센 수라 합계가 전체보다 큽니다.</span>
   </div>
   <div class="table-scroll"><table>
-    <thead><tr><th>주제</th>{heads}<th class="num">합계</th></tr></thead><tbody id="topic-body"></tbody>
+    <thead><tr><th>주된 주제</th>{heads}<th class="num">합계</th><th class="num related" title="그 주제가 관련 주제로 붙은 결정 수 (전체 회의)">관련 포함</th></tr></thead><tbody id="topic-body"></tbody>
   </table></div>
 </section>
 

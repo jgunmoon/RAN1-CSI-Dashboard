@@ -69,3 +69,41 @@ def test_config_agendas_all_match_something(config):
     keys = [(a["section"], tuple(a["path"])) for a in sc.agendas]
     assert len(keys) == len(set(keys)) and all(a["path"] for a in sc.agendas)
     assert [t["id"] for t in sc.topic_list()][-1] == "other"
+
+
+def test_primary_topic_and_related_tags(db, config):
+    got = by_id(scope.select(db, config))
+    e = got["RAN1#126:10.5.3.1:004"]
+    assert e["topic"] == "report" and e["tags"] == ["report", "csirs"]
+    fixed = got["RAN1#126:10.5.3.4:001"]  # Agenda 고정 주제(beam)이고 원문에 SRS가 있음
+    assert fixed["topic"] == "beam" and fixed["tags"] == ["srs", "beam"]  # 태그는 config topics 순서
+    assert got["RAN1#126:10.5.3.1:003"]["tags"] == ["other"]
+
+
+def test_children_rule_reports_parent_agenda_number(db, config):
+    got = by_id(scope.select(db, config))
+    assert got["RAN1#125:8.2.2:001"]["agenda_number"] == "8.2"
+    assert got["RAN1#126:8.2:001"]["agenda_number"] == "8.2"
+    assert got["RAN1#125:9.1.1.1:001"]["agenda_number"] == "9.1.1"
+
+
+def test_spec_clause_candidates(db, config):
+    got = by_id(scope.select(db, config))
+    a = got["RAN1#126:8.1:001"]
+    assert a["scope"] == "candidate" and a["keywords"] == ["TS 38.214 5.2.2.5"] and a["topic"] == "report"
+    b = got["RAN1#126:8.1:002"]
+    assert b["keywords"] == ["TS 38.214 6.2.1.4", "TS 38.214 5.1.6.1.2"]
+    assert b["topic"] == "srs" and b["tags"] == ["srs", "csirs"]
+    assert "RAN1#126:8.1:003" not in got  # TDoc 절 + 무관한 조항 + 38.213 6.x(exact) 오인용
+
+
+def test_clause_mentions_pairs_nearest_spec():
+    text = "There is no consensus to support the TP of Clause 6.3.2.1.2 in TS 38.212 and Clauses 5.2.1.4.6 and 5.2.1.4.2 in TS 38.214."
+    assert scope.clause_mentions(text) == [("38.212", "6.3.2.1.2"), ("38.214", "5.2.1.4.6"), ("38.214", "5.2.1.4.2")]
+
+
+def test_keywords_show_matched_text_not_regex(db, config):
+    got = by_id(scope.select(db, config))
+    kw = got["RAN1#126:10.5.2.3:001"]["keywords"]
+    assert kw == ["codebook", "SRS"]
+    assert not any("\\" in k or "(?" in k for e in got.values() for k in e["keywords"])

@@ -37,7 +37,7 @@ def build(config, db, out_dir):
     for t in m["topics"]:
         (topic_dir / f"{t['id']}.md").write_text(render_md.topic_page(m, t), encoding="utf-8")
     keep = ("id", "meeting", "agenda_item", "agenda_title", "agenda_path", "type", "text", "ffs", "source",
-            "scope", "topic", "keywords")
+            "scope", "topic", "tags", "keywords")
     export = {"source_db": source.db_url(config), "source_updated_at": db.get("updated_at"), "topics": m["topics"],
               "entries": [{k: e.get(k) for k in keep} for e in m["entries"]]}
     (out / "csi_decisions.json").write_text(json.dumps(export, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
@@ -49,7 +49,8 @@ def summary(m):
     lines = [f"원본 DB 업데이트: {m['updated_kst']} · 회의 {m['meetings'][0]} – {m['latest']} ({len(m['meetings'])}회)",
              f"확정 {len(conf)}건 (Agreement {sum(1 for e in conf if model.agreement(e))}) · 후보 {len(m['entries']) - len(conf)}건"]
     for t in m["topics"]:
-        lines.append(f"  - {t['label']}: 확정 {sum(1 for e in conf if e['topic'] == t['id'])}")
+        lines.append(f"  - {t['label']}: 확정 {sum(1 for e in conf if e['topic'] == t['id'])}"
+                     f" (관련 포함 {sum(1 for e in conf if t['id'] in e['tags'])})")
     for a in m["agendas"]:
         if not a["entries"]:
             lines.append(f"::warning::포함 Agenda '{a['label']}'에 맞는 결정이 없습니다. 제목이 바뀌었는지 확인하세요.")

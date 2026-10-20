@@ -49,9 +49,48 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "\\bBF[DR]\\b"
+    "CSI-RS",
+    "BFR"
+   ]
+  },
+  {
+   "id": "RAN1#122:8.1:002",
+   "meeting": "RAN1#122",
+   "agenda_item": "8.1",
+   "agenda_title": "Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface",
+   "agenda_path": [
+    {
+     "number": "8",
+     "title": "Maintenance on Rel-19 NR and E-UTRA"
+    },
+    {
+     "number": "8.1",
+     "title": "Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface"
+    }
+   ],
+   "type": "Agreement",
+   "text": "Adopt the following TP in section 5.2.1.6, TS 38.214.",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#122 eom",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip",
+    "discussion": "122-R19-AI/ML",
+    "tdoc": "R1-2506557",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506557.zip"
+   },
+   "scope": "candidate",
+   "topic": "report",
+   "tags": [
+    "report"
+   ],
+   "keywords": [
+    "TS 38.214 5.2.1.6"
    ]
   },
   {
@@ -85,6 +124,12 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "beam",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -118,6 +163,11 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -151,6 +201,11 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -184,6 +239,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -217,6 +276,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -250,6 +313,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -283,6 +350,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -316,6 +387,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -349,6 +424,11 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -382,6 +462,11 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -415,6 +500,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -448,6 +537,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -481,8 +574,11 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": [
-    "\\bSRS\\b"
+    "SRS"
    ]
   },
   {
@@ -516,6 +612,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -549,6 +649,11 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -582,6 +687,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -615,6 +724,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -648,6 +761,11 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -681,6 +799,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -714,6 +836,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -747,6 +873,11 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -780,6 +911,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -813,6 +948,10 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -846,6 +985,10 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -879,6 +1022,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -912,6 +1058,10 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -945,6 +1095,10 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -978,6 +1132,10 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -1011,6 +1169,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -1044,6 +1205,10 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -1077,6 +1242,11 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "beam",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -1110,6 +1280,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -1143,6 +1316,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -1176,6 +1353,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -1209,6 +1390,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -1242,6 +1427,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -1275,6 +1464,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -1308,6 +1501,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -1341,6 +1537,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -1374,6 +1573,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -1407,6 +1609,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -1440,6 +1645,10 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -1473,6 +1682,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -1506,6 +1718,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -1539,6 +1754,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -1572,6 +1790,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -1605,6 +1826,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -1636,8 +1860,11 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": [
-    "\\bTCI\\b"
+    "TCI"
    ]
   },
   {
@@ -1669,9 +1896,14 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report"
+    "CSI-RS",
+    "CSI-Report",
+    "TS 38.214 5.2.1.4"
    ]
   },
   {
@@ -1703,9 +1935,13 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report"
+   ],
    "keywords": [
-    "(?i)\\bCSI[- ]report",
-    "\\bSRS\\b"
+    "CSI report",
+    "SRS"
    ]
   },
   {
@@ -1737,10 +1973,16 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report",
-    "\\bSRS\\b"
+    "CSI-RS",
+    "CSI report",
+    "SRS",
+    "TS 38.214 5.2.1.4.1"
    ]
   },
   {
@@ -1772,10 +2014,17 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "beam",
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "\\bTCI\\b",
-    "\\bSRS\\b"
+    "CSI-RS",
+    "TCI",
+    "SRS",
+    "TS 38.214 5.2.1.5.2"
    ]
   },
   {
@@ -1807,11 +2056,18 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "beam",
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report",
-    "\\bL1-RSRP\\b",
-    "\\bSRS\\b"
+    "CSI-RS",
+    "CSI-Report",
+    "L1-RSRP",
+    "SRS",
+    "TS 38.214 5.2.1.4.1"
    ]
   },
   {
@@ -1843,13 +2099,19 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "beam",
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report",
-    "(?i)codebook",
-    "\\bCQI\\b",
-    "\\bL1-RSRP\\b",
-    "\\bSRS\\b"
+    "CSI-RS",
+    "CSI report",
+    "Codebook",
+    "CQI",
+    "L1-RSRP",
+    "SRS"
    ]
   },
   {
@@ -1881,9 +2143,14 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report"
+   ],
    "keywords": [
-    "(?i)\\bCSI[- ]report",
-    "\\bSRS\\b"
+    "CSI Report",
+    "SRS",
+    "TS 38.214 5.2.1.4"
    ]
   },
   {
@@ -1917,8 +2184,12 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": [
-    "(?i)\\bCSI[- ]report"
+    "CSI report",
+    "TS 38.214 5.2.1.4"
    ]
   },
   {
@@ -1952,8 +2223,12 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b"
+    "CSI-RS"
    ]
   },
   {
@@ -1987,8 +2262,11 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": [
-    "\\bTCI\\b"
+    "TCI"
    ]
   },
   {
@@ -2022,8 +2300,11 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": [
-    "\\bTCI\\b"
+    "TCI"
    ]
   },
   {
@@ -2057,8 +2338,11 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": [
-    "\\bBF[DR]\\b"
+    "BFR"
    ]
   },
   {
@@ -2090,8 +2374,11 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": [
-    "\\bTCI\\b"
+    "TCI"
    ]
   },
   {
@@ -2120,9 +2407,13 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam",
+    "report"
+   ],
    "keywords": [
-    "\\bPMI\\b",
-    "(?i)beamforming"
+    "PMI",
+    "beamforming"
    ]
   },
   {
@@ -2154,10 +2445,15 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report",
-    "\\bCQI\\b"
+    "CSI-RS",
+    "CSI report",
+    "CQI",
+    "TS 38.214 5.2.4"
    ]
   },
   {
@@ -2189,9 +2485,13 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "\\bTCI\\b"
+    "CSI-RS",
+    "TCI"
    ]
   },
   {
@@ -2223,9 +2523,14 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report"
+    "CSI-RS",
+    "CSI report",
+    "TS 38.214 5.2.4"
    ]
   },
   {
@@ -2257,13 +2562,18 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report",
-    "(?i)\\bCSI acquisition",
-    "(?i)codebook",
-    "\\bPMI\\b",
-    "\\bCQI\\b"
+    "CSI-RS",
+    "CSI Report",
+    "CSI acquisition",
+    "codebook",
+    "PMI",
+    "CQI",
+    "TS 38.214 5.2.4"
    ]
   },
   {
@@ -2295,8 +2605,11 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": [
-    "(?i)codebook"
+    "codebook"
    ]
   },
   {
@@ -2328,9 +2641,13 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI acquisition"
+    "CSI-RS",
+    "CSI acquisition"
    ]
   },
   {
@@ -2362,11 +2679,15 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report",
-    "(?i)\\bCSI acquisition",
-    "\\bCQI\\b"
+    "CSI-RS",
+    "CSI-Report",
+    "CSI acquisition",
+    "CQI"
    ]
   },
   {
@@ -2398,8 +2719,12 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "(?i)\\bCSI acquisition"
+    "CSI acquisition"
    ]
   },
   {
@@ -2431,9 +2756,13 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI acquisition"
+    "CSI-RS",
+    "CSI acquisition"
    ]
   },
   {
@@ -2465,9 +2794,13 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI acquisition"
+    "CSI-RS",
+    "CSI acquisition"
    ]
   },
   {
@@ -2501,9 +2834,13 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "\\bSRS\\b"
+    "CSI-RS",
+    "SRS"
    ]
   },
   {
@@ -2534,8 +2871,11 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": [
-    "\\bSRS\\b"
+    "SRS"
    ]
   },
   {
@@ -2565,8 +2905,11 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": [
-    "(?i)\\bCSI[- ]report"
+    "CSI report"
    ]
   },
   {
@@ -2596,9 +2939,12 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": [
-    "(?i)beam management",
-    "\\bL1-RSRP\\b"
+    "beam management",
+    "L1-RSRP"
    ]
   },
   {
@@ -2628,9 +2974,13 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report"
+    "CSI-RS",
+    "CSI report"
    ]
   },
   {
@@ -2660,9 +3010,13 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report"
+    "CSI-RS",
+    "CSI report"
    ]
   },
   {
@@ -2692,8 +3046,11 @@
    },
    "scope": "candidate",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b"
+    "CSI-RS"
    ]
   },
   {
@@ -2723,13 +3080,18 @@
    },
    "scope": "candidate",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report",
-    "(?i)\\bCSI prediction",
-    "(?i)codebook",
-    "\\bPMI\\b",
-    "\\bCQI\\b"
+    "CSI-RS",
+    "CSI report",
+    "CSI prediction",
+    "codebook",
+    "PMI",
+    "CQI"
    ]
   },
   {
@@ -2759,10 +3121,15 @@
    },
    "scope": "candidate",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI prediction",
-    "(?i)codebook"
+    "CSI-RS",
+    "CSI prediction",
+    "codebook"
    ]
   },
   {
@@ -2792,11 +3159,16 @@
    },
    "scope": "candidate",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report",
-    "(?i)\\bCSI prediction",
-    "\\bPMI\\b"
+    "CSI-RS",
+    "CSI report",
+    "CSI prediction",
+    "PMI"
    ]
   },
   {
@@ -2826,8 +3198,12 @@
    },
    "scope": "candidate",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": [
-    "(?i)\\bCSI prediction"
+    "CSI prediction"
    ]
   },
   {
@@ -2857,8 +3233,12 @@
    },
    "scope": "candidate",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": [
-    "(?i)\\bCSI prediction"
+    "CSI prediction"
    ]
   },
   {
@@ -2888,9 +3268,13 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report"
+    "CSI-RS",
+    "CSI report"
    ]
   },
   {
@@ -2920,9 +3304,13 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report"
+    "CSI-RS",
+    "CSI report"
    ]
   },
   {
@@ -2952,8 +3340,11 @@
    },
    "scope": "candidate",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b"
+    "CSI-RS"
    ]
   },
   {
@@ -2983,8 +3374,12 @@
    },
    "scope": "candidate",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b"
+    "CSI-RS"
    ]
   },
   {
@@ -3014,8 +3409,12 @@
    },
    "scope": "candidate",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": [
-    "(?i)\\bCSI prediction"
+    "CSI prediction"
    ]
   },
   {
@@ -3045,6 +3444,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -3074,6 +3476,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -3103,6 +3508,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -3132,6 +3540,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -3161,6 +3573,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -3190,6 +3605,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -3219,6 +3637,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -3248,6 +3670,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -3277,6 +3702,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -3306,6 +3734,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -3335,6 +3766,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -3364,6 +3798,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -3393,6 +3830,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -3422,6 +3862,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -3451,6 +3895,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -3480,6 +3927,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -3509,6 +3960,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -3538,6 +3992,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -3567,6 +4024,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -3596,6 +4056,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -3625,6 +4088,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -3654,6 +4120,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -3683,6 +4152,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -3712,6 +4184,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -3741,6 +4216,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -3770,6 +4248,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -3799,6 +4280,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -3828,6 +4312,10 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -3857,6 +4345,10 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -3886,6 +4378,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -3915,6 +4410,10 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -3944,6 +4443,10 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -3973,6 +4476,10 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -4002,6 +4509,10 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -4031,6 +4542,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -4060,6 +4574,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -4089,6 +4606,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -4118,6 +4638,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -4147,6 +4670,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -4176,6 +4702,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -4205,6 +4734,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -4234,6 +4766,10 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -4263,6 +4799,10 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -4292,6 +4832,9 @@
    },
    "scope": "agenda",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -4321,6 +4864,9 @@
    },
    "scope": "agenda",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -4350,6 +4896,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -4379,6 +4928,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -4408,6 +4960,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -4437,6 +4992,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -4468,8 +5026,12 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b"
+    "CSI-RS"
    ]
   },
   {
@@ -4499,9 +5061,13 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report"
+    "CSI-RS",
+    "CSI report"
    ]
   },
   {
@@ -4531,9 +5097,13 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report"
+    "CSI-RS",
+    "CSI report"
    ]
   },
   {
@@ -4563,9 +5133,13 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report"
+    "CSI-RS",
+    "CSI report"
    ]
   },
   {
@@ -4595,9 +5169,13 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report"
+    "CSI-RS",
+    "CSI report"
    ]
   },
   {
@@ -4627,9 +5205,13 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report"
+    "CSI-RS",
+    "CSI report"
    ]
   },
   {
@@ -4659,9 +5241,13 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "\\bTCI\\b"
+    "CSI-RS",
+    "TCI"
    ]
   },
   {
@@ -4691,9 +5277,13 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "\\bTCI\\b"
+    "CSI-RS",
+    "TCI"
    ]
   },
   {
@@ -4723,9 +5313,13 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "\\bTCI\\b"
+    "CSI-RS",
+    "TCI"
    ]
   },
   {
@@ -4755,9 +5349,13 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "\\bTCI\\b"
+    "CSI-RS",
+    "TCI"
    ]
   },
   {
@@ -4787,10 +5385,15 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam",
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report",
-    "\\bL1-RSRP\\b"
+    "CSI-RS",
+    "CSI report",
+    "L1-RSRP"
    ]
   },
   {
@@ -4820,9 +5423,13 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report"
+    "CSI-RS",
+    "CSI Report"
    ]
   },
   {
@@ -4858,6 +5465,11 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "srs",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -4893,6 +5505,9 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml"
+   ],
    "keywords": []
   },
   {
@@ -4926,6 +5541,9 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml"
+   ],
    "keywords": []
   },
   {
@@ -4961,6 +5579,9 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml"
+   ],
    "keywords": []
   },
   {
@@ -4994,6 +5615,9 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml"
+   ],
    "keywords": []
   },
   {
@@ -5027,6 +5651,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -5065,6 +5693,11 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "beam",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -5098,6 +5731,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -5131,6 +5768,11 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -5166,6 +5808,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -5203,6 +5849,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -5242,6 +5892,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -5275,6 +5929,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -5310,6 +5968,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -5346,6 +6008,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -5379,6 +6045,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -5412,6 +6081,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -5447,6 +6119,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -5482,6 +6157,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -5515,6 +6193,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -5548,6 +6229,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -5581,6 +6265,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -5614,6 +6301,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -5650,6 +6340,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -5687,6 +6381,11 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -5722,6 +6421,9 @@
    },
    "scope": "agenda",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -5757,6 +6459,9 @@
    },
    "scope": "agenda",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -5794,6 +6499,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -5831,6 +6539,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -5864,6 +6576,11 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -5894,8 +6611,12 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": [
-    "(?i)\\bCSI[- ]report"
+    "CSI report",
+    "TS 38.214 5.2.1.4.3"
    ]
   },
   {
@@ -5926,11 +6647,17 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "beam",
+    "report"
+   ],
    "keywords": [
-    "\\bPMI\\b",
-    "\\bCQI\\b",
-    "\\bL1-RSRP\\b",
-    "\\bSRS\\b"
+    "PMI",
+    "CQI",
+    "L1-RSRP",
+    "SRS",
+    "TS 38.214 6.2.1.3"
    ]
   },
   {
@@ -5961,10 +6688,16 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "beam",
+    "report"
+   ],
    "keywords": [
-    "(?i)\\bCSI[- ]report",
-    "\\bL1-RSRP\\b",
-    "\\bSRS\\b"
+    "CSI report",
+    "L1-RSRP",
+    "SRS",
+    "TS 38.214 6.2.1"
    ]
   },
   {
@@ -5995,12 +6728,17 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report",
-    "(?i)codebook",
-    "\\bPMI\\b",
-    "\\bCQI\\b"
+    "CSI-RS",
+    "CSI-Report",
+    "codebook",
+    "PMI",
+    "CQI",
+    "TS 38.214 5.2.1.4.2"
    ]
   },
   {
@@ -6031,9 +6769,14 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report"
+    "CSI-RS",
+    "CSI report",
+    "TS 38.214 5.1.6.1"
    ]
   },
   {
@@ -6066,8 +6809,12 @@
    },
    "scope": "candidate",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": [
-    "(?i)\\bCSI prediction"
+    "CSI prediction"
    ]
   },
   {
@@ -6098,11 +6845,16 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report",
-    "(?i)codebook",
-    "\\bPMI\\b"
+    "CSI-RS",
+    "CSI report",
+    "codebook",
+    "PMI",
+    "TS 38.214 5.2.1.4.6"
    ]
   },
   {
@@ -6133,11 +6885,20 @@
    },
    "scope": "candidate",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report",
-    "(?i)\\bCSI prediction",
-    "(?i)codebook"
+    "CSI-RS",
+    "CSI-Report",
+    "CSI prediction",
+    "codebook",
+    "TS 38.214 5.2.1.4.2",
+    "TS 38.214 5.2.1.4.6",
+    "TS 38.214 5.2.1.6",
+    "TS 38.214 5.2.5"
    ]
   },
   {
@@ -6168,9 +6929,13 @@
    },
    "scope": "candidate",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": [
-    "(?i)\\bCSI prediction",
-    "(?i)codebook"
+    "CSI prediction",
+    "Codebook"
    ]
   },
   {
@@ -6201,9 +6966,12 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": [
-    "(?i)\\bCSI[- ]report",
-    "(?i)codebook"
+    "CSI-Report",
+    "Codebook"
    ]
   },
   {
@@ -6234,6 +7002,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -6264,6 +7035,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -6294,6 +7068,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -6324,6 +7101,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -6354,6 +7134,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -6384,6 +7167,10 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -6414,6 +7201,10 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -6444,6 +7235,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -6474,6 +7268,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -6504,6 +7301,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -6533,7 +7333,10 @@
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2507269.zip"
    },
    "scope": "agenda",
-   "topic": "other",
+   "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -6564,6 +7367,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -6594,6 +7400,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -6624,6 +7433,10 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -6654,6 +7467,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -6684,6 +7500,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -6714,6 +7533,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -6744,6 +7566,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -6774,6 +7599,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -6802,8 +7630,11 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": [
-    "\\bTCI\\b"
+    "TCI"
    ]
   },
   {
@@ -6832,8 +7663,11 @@
    },
    "scope": "candidate",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b"
+    "CSI-RS"
    ]
   },
   {
@@ -6862,8 +7696,11 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": [
-    "\\bTCI\\b"
+    "TCI"
    ]
   },
   {
@@ -6892,8 +7729,11 @@
    },
    "scope": "candidate",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b"
+    "CSI-RS"
    ]
   },
   {
@@ -6922,11 +7762,18 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "beam",
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report",
-    "\\bTCI\\b",
-    "\\bSRS\\b"
+    "CSI-RS",
+    "CSI Report",
+    "TCI",
+    "SRS",
+    "TS 38.214 5.2.1.5.1"
    ]
   },
   {
@@ -6955,8 +7802,12 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": [
-    "(?i)\\bCSI[- ]report"
+    "CSI-Report",
+    "TS 38.214 5.2.1.4.8"
    ]
   },
   {
@@ -6985,9 +7836,47 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report"
+   ],
    "keywords": [
-    "(?i)\\bCSI[- ]report",
-    "\\bSRS\\b"
+    "CSI-Report",
+    "SRS",
+    "TS 38.214 5.2.2.6"
+   ]
+  },
+  {
+   "id": "RAN1#122bis:8.3:017",
+   "meeting": "RAN1#122bis",
+   "agenda_item": "8.3",
+   "agenda_title": "Maintenance on Evolution of NR duplex operation: Sub-band full duplex (SBFD)",
+   "agenda_path": [
+    {
+     "number": "8",
+     "title": "Maintenance on Rel-19 NR and E-UTRA"
+    },
+    {
+     "number": "8.3",
+     "title": "Maintenance on Evolution of NR duplex operation: Sub-band full duplex (SBFD)"
+    }
+   ],
+   "type": "Agreement",
+   "text": "Adopt the following TP in principle to section 5.2.2.7, TS 38.214\n| 5.2.2.7 CLI-RSSI measurement resource <Unchanged parts omitted> [The bandwidth and initial common resource block (CRB) index of a CLI-RSSI resource within a BWP, as defined in Clause 7.4.1.5 of [4, TS 38.211], are determined based on the higher layer parameters nrofRBs and startingRB, respectively. Both nrofRBs and startingRB are is configured as integer multiples of [4] RBs, and the reference point for startingRB is CRB 0 on the common resource block grid. If the UE shall assume that the initial CRB index of the CLI-RSSI resource is , otherwise . If , the UE shall assume that the bandwidth of the CLI-RSSI resource is , otherwise .] |",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#122b eom4",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx",
+    "discussion": "122bis-R19-SBFD"
+   },
+   "scope": "candidate",
+   "topic": "report",
+   "tags": [
+    "report"
+   ],
+   "keywords": [
+    "TS 38.214 5.2.2.7"
    ]
   },
   {
@@ -7016,11 +7905,18 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "beam",
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report",
-    "\\bTCI\\b",
-    "\\bSRS\\b"
+    "CSI-RS",
+    "CSI Report",
+    "TCI",
+    "SRS",
+    "TS 38.214 5.2.1.5.1"
    ]
   },
   {
@@ -7051,8 +7947,11 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": [
-    "(?i)\\bCSI[- ]report"
+    "CSI report"
    ]
   },
   {
@@ -7081,8 +7980,12 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": [
-    "\\bTCI\\b"
+    "TCI",
+    "TS 38.214 5.1.5"
    ]
   },
   {
@@ -7111,9 +8014,13 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "\\bTCI\\b"
+    "CSI-RS",
+    "TCI"
    ]
   },
   {
@@ -7142,8 +8049,11 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": [
-    "\\bTCI\\b"
+    "TCI"
    ]
   },
   {
@@ -7173,9 +8083,14 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report"
+    "CSI-RS",
+    "CSI-Report",
+    "TS 38.214 5.2.1.2"
    ]
   },
   {
@@ -7205,9 +8120,14 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report"
+    "CSI-RS",
+    "CSI report",
+    "TS 38.214 5.2.1.5.2"
    ]
   },
   {
@@ -7237,8 +8157,11 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": [
-    "\\bCQI\\b"
+    "CQI"
    ]
   },
   {
@@ -7268,8 +8191,11 @@
    },
    "scope": "candidate",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b"
+    "CSI-RS"
    ]
   },
   {
@@ -7299,8 +8225,12 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": [
-    "(?i)\\bCSI[- ]report"
+    "CSI Report",
+    "TS 38.214 5.2.4"
    ]
   },
   {
@@ -7330,8 +8260,11 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": [
-    "\\bTCI\\b"
+    "TCI"
    ]
   },
   {
@@ -7361,8 +8294,11 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": [
-    "\\bTCI\\b"
+    "TCI"
    ]
   },
   {
@@ -7392,14 +8328,20 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report",
-    "(?i)\\bCSI acquisition",
-    "(?i)codebook",
-    "\\bPMI\\b",
-    "\\bCQI\\b",
-    "\\bSRS\\b"
+    "CSI-RS",
+    "CSI Report",
+    "CSI acquisition",
+    "codebook",
+    "PMI",
+    "CQI",
+    "SRS",
+    "TS 38.214 5.2.4"
    ]
   },
   {
@@ -7429,8 +8371,11 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": [
-    "(?i)codebook"
+    "codebook"
    ]
   },
   {
@@ -7460,8 +8405,11 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": [
-    "\\bSRS\\b"
+    "SRS"
    ]
   },
   {
@@ -7491,8 +8439,11 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": [
-    "(?i)\\bCSI[- ]report"
+    "CSI report"
    ]
   },
   {
@@ -7522,9 +8473,12 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": [
-    "(?i)beam management",
-    "\\bL1-RSRP\\b"
+    "beam management",
+    "L1-RSRP"
    ]
   },
   {
@@ -7554,9 +8508,13 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report"
+    "CSI-RS",
+    "CSI report"
    ]
   },
   {
@@ -7586,9 +8544,13 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report"
+    "CSI-RS",
+    "CSI report"
    ]
   },
   {
@@ -7618,9 +8580,14 @@
    },
    "scope": "candidate",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report"
+    "CSI-RS",
+    "CSI report"
    ]
   },
   {
@@ -7650,8 +8617,11 @@
    },
    "scope": "candidate",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b"
+    "CSI-RS"
    ]
   },
   {
@@ -7681,12 +8651,16 @@
    },
    "scope": "candidate",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": [
-    "(?i)\\bCSI[- ]report",
-    "(?i)\\bCSI prediction",
-    "(?i)codebook",
-    "\\bPMI\\b",
-    "\\bCQI\\b"
+    "CSI report",
+    "CSI prediction",
+    "codebook",
+    "PMI",
+    "CQI"
    ]
   },
   {
@@ -7716,11 +8690,16 @@
    },
    "scope": "candidate",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report",
-    "(?i)\\bCSI prediction",
-    "\\bPMI\\b"
+    "CSI-RS",
+    "CSI report",
+    "CSI prediction",
+    "PMI"
    ]
   },
   {
@@ -7750,8 +8729,12 @@
    },
    "scope": "candidate",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": [
-    "(?i)\\bCSI prediction"
+    "CSI prediction"
    ]
   },
   {
@@ -7781,8 +8764,12 @@
    },
    "scope": "candidate",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": [
-    "(?i)\\bCSI prediction"
+    "CSI prediction"
    ]
   },
   {
@@ -7812,8 +8799,11 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": [
-    "(?i)\\bCSI[- ]report"
+    "CSI report"
    ]
   },
   {
@@ -7843,9 +8833,13 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report"
+    "CSI-RS",
+    "CSI report"
    ]
   },
   {
@@ -7875,9 +8869,13 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report"
+    "CSI-RS",
+    "CSI report"
    ]
   },
   {
@@ -7907,6 +8905,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -7936,6 +8938,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -7965,6 +8971,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -7994,6 +9004,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -8023,6 +9037,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -8052,6 +9070,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -8081,6 +9103,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -8110,6 +9136,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -8139,6 +9169,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -8168,6 +9202,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -8197,6 +9235,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -8226,6 +9268,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -8255,6 +9301,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -8284,6 +9333,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -8313,6 +9365,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -8342,6 +9398,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -8371,6 +9431,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -8400,6 +9464,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -8429,6 +9497,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -8458,6 +9530,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -8487,6 +9562,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -8516,6 +9594,11 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -8545,6 +9628,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -8574,6 +9660,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -8603,6 +9692,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -8632,6 +9725,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -8661,6 +9757,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -8690,6 +9790,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -8719,6 +9822,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -8748,6 +9854,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -8777,6 +9886,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -8806,6 +9918,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -8835,6 +9950,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -8864,6 +9982,10 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -8893,6 +10015,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -8922,8 +10047,11 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": [
-    "\\bSRS\\b"
+    "SRS"
    ]
   },
   {
@@ -8953,8 +10081,12 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b"
+    "CSI-RS"
    ]
   },
   {
@@ -8984,11 +10116,16 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam",
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report",
-    "(?i)beam report",
-    "\\bL1-RSRP\\b"
+    "CSI-RS",
+    "CSI report",
+    "beam report",
+    "L1-RSRP"
    ]
   },
   {
@@ -9018,9 +10155,13 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report"
+    "CSI-RS",
+    "CSI report"
    ]
   },
   {
@@ -9050,9 +10191,13 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report"
+    "CSI-RS",
+    "CSI report"
    ]
   },
   {
@@ -9082,9 +10227,13 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report"
+    "CSI-RS",
+    "CSI report"
    ]
   },
   {
@@ -9114,9 +10263,13 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report"
+    "CSI-RS",
+    "CSI report"
    ]
   },
   {
@@ -9146,12 +10299,18 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "beam",
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)codebook",
-    "\\bTCI\\b",
-    "(?i)beam management",
-    "\\bSRS\\b"
+    "CSI-RS",
+    "Codebook",
+    "TCI",
+    "beam management",
+    "SRS"
    ]
   },
   {
@@ -9181,8 +10340,11 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": [
-    "\\bSRS\\b"
+    "SRS"
    ]
   },
   {
@@ -9212,8 +10374,11 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": [
-    "\\bSRS\\b"
+    "SRS"
    ]
   },
   {
@@ -9243,8 +10408,11 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": [
-    "\\bSRS\\b"
+    "SRS"
    ]
   },
   {
@@ -9282,6 +10450,11 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -9319,6 +10492,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -9356,6 +10533,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -9393,6 +10574,9 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml"
+   ],
    "keywords": []
   },
   {
@@ -9430,6 +10614,9 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml"
+   ],
    "keywords": []
   },
   {
@@ -9467,6 +10654,11 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -9504,6 +10696,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -9541,6 +10737,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -9578,6 +10778,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -9617,6 +10821,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -9650,6 +10858,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -9683,6 +10895,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -9722,6 +10938,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -9755,6 +10975,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -9788,6 +11011,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -9821,6 +11047,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -9854,6 +11083,10 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -9887,6 +11120,11 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "beam",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -9920,6 +11158,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -9953,6 +11194,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -9986,6 +11230,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -10023,6 +11270,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -10060,6 +11310,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -10095,6 +11349,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -10128,6 +11385,9 @@
    },
    "scope": "agenda",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -10161,6 +11421,11 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -10196,6 +11461,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -10231,6 +11499,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -10264,6 +11535,11 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -10302,6 +11578,10 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -10339,6 +11619,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -10372,6 +11656,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -10405,6 +11693,10 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -10433,9 +11725,12 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": [
-    "(?i)beamforming",
-    "(?i)beam management"
+    "Beamforming",
+    "beam management"
    ]
   },
   {
@@ -10468,10 +11763,15 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "beam",
+    "report"
+   ],
    "keywords": [
-    "(?i)codebook",
-    "(?i)beamforming",
-    "\\bSRS\\b"
+    "codebook",
+    "beamforming",
+    "SRS"
    ]
   },
   {
@@ -10500,8 +11800,11 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": [
-    "(?i)beam management"
+    "Beam management"
    ]
   },
   {
@@ -10527,9 +11830,13 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report"
+   ],
    "keywords": [
-    "(?i)codebook",
-    "\\bSRS\\b"
+    "codebook",
+    "SRS"
    ]
   },
   {
@@ -10555,8 +11862,11 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": [
-    "\\bTCI\\b"
+    "TCI"
    ]
   },
   {
@@ -10587,8 +11897,13 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": [
-    "(?i)\\bCSI[- ]report"
+    "CSI report",
+    "TS 38.214 5.2.1.6",
+    "TS 38.214 5.2.5"
    ]
   },
   {
@@ -10619,11 +11934,18 @@
    },
    "scope": "candidate",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "beam",
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report",
-    "(?i)\\bCSI prediction",
-    "\\bL1-RSRP\\b"
+    "CSI-RS",
+    "CSI report",
+    "CSI prediction",
+    "L1-RSRP",
+    "TS 38.214 5.2.1.6"
    ]
   },
   {
@@ -10654,8 +11976,12 @@
    },
    "scope": "candidate",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": [
-    "(?i)\\bCSI[- ]report"
+    "CSI-Report"
    ]
   },
   {
@@ -10686,11 +12012,16 @@
    },
    "scope": "candidate",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report",
-    "(?i)\\bCSI prediction",
-    "\\bPMI\\b"
+    "CSI-RS",
+    "csi-Report",
+    "CSI prediction",
+    "PMI"
    ]
   },
   {
@@ -10721,6 +12052,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -10751,6 +12085,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -10781,6 +12118,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -10811,6 +12151,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -10843,6 +12186,10 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -10873,6 +12220,10 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -10903,6 +12254,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -10933,6 +12287,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -10963,6 +12320,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -10993,6 +12353,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -11023,6 +12386,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -11052,7 +12418,10 @@
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Docs/R1-2508775.zip"
    },
    "scope": "agenda",
-   "topic": "other",
+   "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -11083,6 +12452,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -11113,6 +12485,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -11141,8 +12516,12 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": [
-    "(?i)\\bCSI[- ]report"
+    "CSI report",
+    "TS 38.214 5.2.1.4"
    ]
   },
   {
@@ -11171,8 +12550,13 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report"
+   ],
    "keywords": [
-    "\\bSRS\\b"
+    "SRS",
+    "TS 38.214 5.2.2.6"
    ]
   },
   {
@@ -11201,8 +12585,11 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": [
-    "\\bSRS\\b"
+    "SRS"
    ]
   },
   {
@@ -11231,8 +12618,11 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": [
-    "\\bSRS\\b"
+    "SRS"
    ]
   },
   {
@@ -11263,8 +12653,47 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": [
-    "\\bTCI\\b"
+    "TCI",
+    "TS 38.214 5.1.5"
+   ]
+  },
+  {
+   "id": "RAN1#123:8.5:005",
+   "meeting": "RAN1#123",
+   "agenda_item": "8.5",
+   "agenda_title": "Maintenance on Enhancements of network energy savings for NR",
+   "agenda_path": [
+    {
+     "number": "8",
+     "title": "Maintenance on Rel-19 NR and E-UTRA"
+    },
+    {
+     "number": "8.5",
+     "title": "Maintenance on Enhancements of network energy savings for NR"
+    }
+   ],
+   "type": "Agreement",
+   "text": "The following is background information:\n| For a cell supporting on-demand SSB SCell operation, PUSCH available slot counting (as described in Clause 6.1.2.1 of TS 38.214) PUSCH transmissions, e.g., repetition types A and B, TBoMS, CG-PUSCH (as described in Clause 6.1.2.3 of TS 38.214) Multi-PUSCH scheduling by a single DCI (as described in Clauses 6.1 and 6.1.2.1 of TS 38.214) PUCCH repetition (as described in Clause 9.2.6 of TS 38.213) PUCCH deferral (as described in Clause 9.2.5.4 of TS 38.213) UTO-UCI (as described in Clause 9.3.1 of TS 38.213) CPU occupancy (as described in Clause 5.2.1.6 of TS 38.214) the SS/PBCH blocks at least for the above Clauses can be replaced by Union of all configured OD-SSB configuration(s) in RRC for Case #1, and Union of AO-SSB and all configured OD-SSB configuration(s) in RRC for Case #2. |\nThe following is an endorsed TP to be captured in TS 38.213 and TS 38.214.\nIt is up to the editors in which clause(s) to capture the following endorsed TP. It is preferred to minimize the affected number of clause(s), e.g. one clause.\n| In the following, if a UE is not provided SS/PBCH block indexes by ssb-PositionsInBurst in ServingCellConfigCommon and is provided od-ssb-Config, reference to SS/PBCH blocks is for the union of SS/PBCH blocks provided by each combination of od-ssb-SFN-Offset, od-ssb-halfFrameIndex, od-ssb-PositionsInBurst and od-ssb-Periodicity in od-ssb-Config. If the UE is provided SS/PBCH block indexes by ssb-PositionsInBurst in ServingCellConfigCommon and is provided od-ssb-Config, reference to SS/PBCH blocks is for the union of SS/PBCH blocks provided by ssb-Periodicity and ssb-PositionsInBurst in ServingCellConfigCommon and by each combination of od-ssb-SFN-Offset, od-ssb-halfFrameIndex, od-ssb-PositionsInBurst and od-ssb-Periodicity in od-ssb-Config. |",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#123 - eom3",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Inbox/Chair_notes/Chair%20notes%20RAN1%23123%20-%20eom3.docx",
+    "discussion": "123-R19-NES",
+    "tdoc": "R1-2508896",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Docs/R1-2508896.zip"
+   },
+   "scope": "candidate",
+   "topic": "report",
+   "tags": [
+    "report"
+   ],
+   "keywords": [
+    "TS 38.214 5.2.1.6"
    ]
   },
   {
@@ -11293,10 +12722,18 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam",
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report",
-    "\\bL1-RSRP\\b"
+    "CSI-RS",
+    "CSI report",
+    "L1-RSRP",
+    "TS 38.214 5.1.6.1",
+    "TS 38.214 5.2.2.5",
+    "TS 38.214 5.2.1.4"
    ]
   },
   {
@@ -11325,8 +12762,11 @@
    },
    "scope": "candidate",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b"
+    "CSI-RS"
    ]
   },
   {
@@ -11360,8 +12800,12 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": [
-    "(?i)\\bCSI[- ]report"
+    "CSI report",
+    "TS 38.214 5.2.2.5"
    ]
   },
   {
@@ -11391,8 +12835,11 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": [
-    "\\bSRS\\b"
+    "SRS"
    ]
   },
   {
@@ -11422,9 +12869,13 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "\\bSRS\\b"
+    "CSI-RS",
+    "SRS"
    ]
   },
   {
@@ -11454,9 +12905,13 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "beam"
+   ],
    "keywords": [
-    "\\bTCI\\b",
-    "\\bSRS\\b"
+    "TCI",
+    "SRS"
    ]
   },
   {
@@ -11486,9 +12941,13 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "\\bTCI\\b"
+    "CSI-RS",
+    "TCI"
    ]
   },
   {
@@ -11518,12 +12977,17 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report",
-    "(?i)\\bCSI acquisition",
-    "\\bPMI\\b",
-    "\\bCQI\\b"
+    "CSI-RS",
+    "CSI-Report",
+    "CSI acquisition",
+    "PMI",
+    "CQI",
+    "TS 38.214 5.2.1.6"
    ]
   },
   {
@@ -11553,9 +13017,13 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "\\bTCI\\b"
+    "CSI-RS",
+    "TCI"
    ]
   },
   {
@@ -11585,9 +13053,13 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "\\bTCI\\b"
+    "CSI-RS",
+    "TCI"
    ]
   },
   {
@@ -11617,13 +13089,19 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report",
-    "(?i)codebook",
-    "\\bPMI\\b",
-    "\\bCQI\\b",
-    "\\bSRS\\b"
+    "CSI-RS",
+    "CSI-Report",
+    "codebook",
+    "PMI",
+    "CQI",
+    "SRS",
+    "TS 38.214 5.2.2.5.1"
    ]
   },
   {
@@ -11651,8 +13129,11 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": [
-    "(?i)\\bCSI[- ]report"
+    "CSI report"
    ]
   },
   {
@@ -11680,12 +13161,18 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "beam",
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report",
-    "(?i)codebook",
-    "\\bTCI\\b",
-    "\\bSRS\\b"
+    "CSI-RS",
+    "CSI report",
+    "codebook",
+    "TCI",
+    "SRS"
    ]
   },
   {
@@ -11713,9 +13200,13 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report"
+   ],
    "keywords": [
-    "(?i)\\bCSI[- ]report",
-    "\\bSRS\\b"
+    "CSI report",
+    "SRS"
    ]
   },
   {
@@ -11743,8 +13234,11 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": [
-    "\\bSRS\\b"
+    "SRS"
    ]
   },
   {
@@ -11772,9 +13266,12 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": [
-    "(?i)\\bCSI[- ]report",
-    "(?i)codebook"
+    "CSI report",
+    "Codebook"
    ]
   },
   {
@@ -11802,8 +13299,11 @@
    },
    "scope": "candidate",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b"
+    "CSI-RS"
    ]
   },
   {
@@ -11831,9 +13331,12 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": [
-    "\\bTCI\\b",
-    "(?i)beam management"
+    "TCI",
+    "beam management"
    ]
   },
   {
@@ -11861,9 +13364,13 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report"
+    "CSI-RS",
+    "CSI report"
    ]
   },
   {
@@ -11891,12 +13398,16 @@
    },
    "scope": "candidate",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": [
-    "(?i)\\bCSI[- ]report",
-    "(?i)\\bCSI prediction",
-    "(?i)codebook",
-    "\\bPMI\\b",
-    "\\bCQI\\b"
+    "CSI report",
+    "CSI prediction",
+    "codebook",
+    "PMI",
+    "CQI"
    ]
   },
   {
@@ -11924,8 +13435,11 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": [
-    "(?i)\\bCSI[- ]report"
+    "CSI report"
    ]
   },
   {
@@ -11953,9 +13467,12 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": [
-    "(?i)beam management",
-    "\\bL1-RSRP\\b"
+    "beam management",
+    "L1-RSRP"
    ]
   },
   {
@@ -11983,9 +13500,13 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report"
+    "CSI-RS",
+    "CSI report"
    ]
   },
   {
@@ -12013,12 +13534,16 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report",
-    "(?i)codebook",
-    "\\bPMI\\b",
-    "\\bCQI\\b"
+    "CSI-RS",
+    "CSI report",
+    "codebook",
+    "PMI",
+    "CQI"
    ]
   },
   {
@@ -12046,10 +13571,13 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": [
-    "\\bTCI\\b",
-    "(?i)beam report",
-    "(?i)beam management"
+    "TCI",
+    "beam report",
+    "beam management"
    ]
   },
   {
@@ -12077,8 +13605,11 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": [
-    "(?i)codebook"
+    "codebook"
    ]
   },
   {
@@ -12106,10 +13637,14 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report",
-    "(?i)codebook"
+    "CSI-RS",
+    "CSI report",
+    "codebook"
    ]
   },
   {
@@ -12137,9 +13672,13 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report"
+    "CSI-RS",
+    "CSI report"
    ]
   },
   {
@@ -12180,6 +13719,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -12219,6 +13762,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -12256,6 +13803,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -12293,6 +13844,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -12330,6 +13885,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -12367,6 +13926,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -12404,6 +13967,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -12441,6 +14008,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -12482,6 +14053,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -12521,6 +14096,11 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -12554,6 +14134,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -12585,6 +14169,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -12616,6 +14203,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -12647,6 +14237,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -12678,6 +14271,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -12709,6 +14305,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -12740,6 +14339,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -12771,6 +14373,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -12802,6 +14407,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -12835,6 +14443,11 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -12868,6 +14481,11 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -12904,6 +14522,9 @@
    },
    "scope": "agenda",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -12940,6 +14561,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -12973,6 +14598,11 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -13009,6 +14639,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -13044,6 +14678,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -13077,6 +14715,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -13112,6 +14754,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -13145,6 +14791,9 @@
    },
    "scope": "agenda",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -13178,6 +14827,9 @@
    },
    "scope": "agenda",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -13206,8 +14858,11 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": [
-    "(?i)codebook"
+    "codebook"
    ]
   },
   {
@@ -13242,9 +14897,13 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report"
+   ],
    "keywords": [
-    "(?i)codebook",
-    "\\bSRS\\b"
+    "codebook",
+    "SRS"
    ]
   },
   {
@@ -13277,8 +14936,11 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": [
-    "\\bSRS\\b"
+    "SRS"
    ]
   },
   {
@@ -13309,8 +14971,11 @@
    },
    "scope": "candidate",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b"
+    "CSI-RS"
    ]
   },
   {
@@ -13339,13 +15004,20 @@
    },
    "scope": "candidate",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "srs",
+    "beam",
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI acquisition",
-    "(?i)\\bCSI prediction",
-    "(?i)\\bCSI compression",
-    "(?i)beam management",
-    "\\bSRS\\b"
+    "CSI-RS",
+    "CSI acquisition",
+    "CSI prediction",
+    "CSI compression",
+    "beam management",
+    "SRS"
    ]
   },
   {
@@ -13376,10 +15048,16 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam",
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report",
-    "\\bL1-RSRP\\b"
+    "CSI-RS",
+    "CSI-Report",
+    "L1-RSRP",
+    "TS 38.214 5.2.1.4.2"
    ]
   },
   {
@@ -13410,10 +15088,15 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report",
-    "(?i)codebook"
+    "CSI-RS",
+    "CSI report",
+    "codebook",
+    "TS 38.214 5.2.1.6"
    ]
   },
   {
@@ -13444,12 +15127,18 @@
    },
    "scope": "candidate",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report",
-    "(?i)\\bCSI prediction",
-    "(?i)codebook",
-    "\\bPMI\\b"
+    "CSI-RS",
+    "csi-Report",
+    "CSI prediction",
+    "codebook",
+    "PMI",
+    "TS 38.214 5.2.1.4.6"
    ]
   },
   {
@@ -13480,12 +15169,18 @@
    },
    "scope": "candidate",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report",
-    "(?i)\\bCSI prediction",
-    "(?i)codebook",
-    "\\bPMI\\b"
+    "CSI-RS",
+    "csi-Report",
+    "CSI prediction",
+    "codebook",
+    "PMI",
+    "TS 38.214 5.2.1.4.6"
    ]
   },
   {
@@ -13516,8 +15211,13 @@
    },
    "scope": "candidate",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": [
-    "(?i)\\bCSI prediction"
+    "CSI prediction",
+    "TS 38.214 5.2.1.6"
    ]
   },
   {
@@ -13548,11 +15248,17 @@
    },
    "scope": "candidate",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "beam",
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report",
-    "(?i)\\bCSI prediction",
-    "\\bL1-RSRP\\b"
+    "CSI-RS",
+    "CSI report",
+    "CSI prediction",
+    "L1-RSRP"
    ]
   },
   {
@@ -13583,8 +15289,13 @@
    },
    "scope": "candidate",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "(?i)\\bCSI prediction"
+    "CSI prediction"
    ]
   },
   {
@@ -13615,6 +15326,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -13645,6 +15359,11 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -13675,6 +15394,10 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -13705,6 +15428,10 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -13735,6 +15462,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -13765,6 +15495,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -13795,6 +15528,11 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -13825,6 +15563,10 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -13855,10 +15597,15 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "beam",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "\\bTCI\\b",
-    "\\bSRS\\b"
+    "CSI-RS",
+    "TCI",
+    "SRS"
    ]
   },
   {
@@ -13889,8 +15636,11 @@
    },
    "scope": "candidate",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b"
+    "CSI-RS"
    ]
   },
   {
@@ -13921,9 +15671,14 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "\\bTCI\\b"
+    "CSI-RS",
+    "TCI",
+    "TS 38.214 5.1.5"
    ]
   },
   {
@@ -13955,9 +15710,13 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "\\bSRS\\b"
+    "CSI-RS",
+    "SRS"
    ]
   },
   {
@@ -13989,8 +15748,11 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": [
-    "\\bCQI\\b"
+    "CQI"
    ]
   },
   {
@@ -14021,10 +15783,17 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "beam",
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "\\bTCI\\b",
-    "\\bSRS\\b"
+    "CSI-RS",
+    "TCI",
+    "SRS",
+    "TS 38.214 5.2.1.5.2"
    ]
   },
   {
@@ -14055,9 +15824,12 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": [
-    "\\bTCI\\b",
-    "\\bBF[DR]\\b"
+    "TCI",
+    "BFR"
    ]
   },
   {
@@ -14088,11 +15860,16 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam",
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report",
-    "\\bTCI\\b",
-    "\\bL1-RSRP\\b"
+    "CSI-RS",
+    "CSI-Report",
+    "TCI",
+    "L1-RSRP"
    ]
   },
   {
@@ -14123,10 +15900,16 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "beam",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "\\bTCI\\b",
-    "\\bSRS\\b"
+    "CSI-RS",
+    "TCI",
+    "SRS",
+    "TS 38.214 5.1.5"
    ]
   },
   {
@@ -14157,10 +15940,15 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report",
-    "(?i)\\bCSI acquisition"
+    "CSI-RS",
+    "CSI Report",
+    "CSI acquisition",
+    "TS 38.214 5.2.4"
    ]
   },
   {
@@ -14191,10 +15979,14 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report",
-    "(?i)codebook"
+    "CSI-RS",
+    "CSI report",
+    "codebook"
    ]
   },
   {
@@ -14225,9 +16017,14 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam",
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "\\bTCI\\b"
+    "CSI-RS",
+    "TCI"
    ]
   },
   {
@@ -14259,6 +16056,9 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml"
+   ],
    "keywords": []
   },
   {
@@ -14290,6 +16090,9 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml"
+   ],
    "keywords": []
   },
   {
@@ -14323,6 +16126,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -14358,6 +16165,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -14391,6 +16202,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -14424,6 +16239,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -14457,6 +16276,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -14492,6 +16315,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -14525,6 +16352,9 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml"
+   ],
    "keywords": []
   },
   {
@@ -14558,6 +16388,9 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml"
+   ],
    "keywords": []
   },
   {
@@ -14591,6 +16424,9 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml"
+   ],
    "keywords": []
   },
   {
@@ -14624,6 +16460,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -14657,6 +16497,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -14690,6 +16533,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -14723,6 +16569,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -14758,6 +16607,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -14791,6 +16643,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -14824,6 +16679,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -14857,6 +16715,9 @@
    },
    "scope": "agenda",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -14892,6 +16753,11 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -14927,6 +16793,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -14960,6 +16829,11 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -14993,6 +16867,11 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -15028,6 +16907,10 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -15061,6 +16944,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -15094,6 +16981,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -15127,6 +17018,9 @@
    },
    "scope": "agenda",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -15163,6 +17057,11 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -15196,6 +17095,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -15233,8 +17135,11 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": [
-    "\\bSRS\\b"
+    "SRS"
    ]
   },
   {
@@ -15265,8 +17170,11 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": [
-    "\\bSRS\\b"
+    "SRS"
    ]
   },
   {
@@ -15302,6 +17210,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -15337,6 +17248,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -15372,6 +17286,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -15407,6 +17324,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -15442,6 +17362,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -15479,6 +17402,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -15515,8 +17441,13 @@
    },
    "scope": "candidate",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b"
+    "CSI-RS"
    ]
   },
   {
@@ -15553,6 +17484,10 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "aiml",
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -15589,6 +17524,11 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "aiml",
+    "beam",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -15625,6 +17565,11 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "srs",
+    "beam",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -15661,6 +17606,10 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -15697,6 +17646,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -15733,6 +17686,11 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -15773,6 +17731,11 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -15809,6 +17772,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -15845,6 +17811,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -15881,6 +17850,10 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -15917,6 +17890,11 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "beam",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -15953,6 +17931,10 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -15989,6 +17971,10 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -16025,6 +18011,10 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -16061,6 +18051,9 @@
    },
    "scope": "agenda",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -16097,6 +18090,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -16133,6 +18129,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -16170,7 +18169,10 @@
     "discussion": "124-R20-6GR-Other Aspects related to CSI"
    },
    "scope": "agenda",
-   "topic": "other",
+   "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -16207,6 +18209,9 @@
    },
    "scope": "agenda",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -16232,8 +18237,11 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": [
-    "\\bTCI\\b"
+    "TCI"
    ]
   },
   {
@@ -16264,8 +18272,12 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": [
-    "(?i)\\bCSI[- ]report"
+    "CSI report",
+    "TS 38.212 6.3.1.1.2"
    ]
   },
   {
@@ -16296,11 +18308,17 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam",
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report",
-    "(?i)beam management",
-    "\\bL1-RSRP\\b"
+    "CSI-RS",
+    "CSI report",
+    "beam management",
+    "L1-RSRP",
+    "TS 38.214 5.2.1.6"
    ]
   },
   {
@@ -16331,9 +18349,13 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report"
+    "CSI-RS",
+    "CSI report"
    ]
   },
   {
@@ -16364,6 +18386,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -16394,6 +18419,10 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -16424,6 +18453,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -16454,6 +18486,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -16484,6 +18519,10 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -16514,6 +18553,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -16544,6 +18587,10 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -16574,6 +18621,10 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -16604,6 +18655,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -16634,10 +18688,15 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report",
-    "\\bSRS\\b"
+    "CSI-RS",
+    "CSI report",
+    "SRS"
    ]
   },
   {
@@ -16668,10 +18727,13 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": [
-    "(?i)\\bCSI[- ]report",
-    "\\bPMI\\b",
-    "\\bCQI\\b"
+    "CSI-Report",
+    "PMI",
+    "CQI"
    ]
   },
   {
@@ -16702,9 +18764,14 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "\\bTCI\\b"
+    "CSI-RS",
+    "TCI",
+    "TS 38.214 5.1.5"
    ]
   },
   {
@@ -16735,11 +18802,16 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report",
-    "(?i)\\bCSI acquisition",
-    "\\bCQI\\b"
+    "CSI-RS",
+    "CSI Report",
+    "CSI acquisition",
+    "CQI",
+    "TS 38.214 5.2.4"
    ]
   },
   {
@@ -16770,8 +18842,13 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam",
+    "report"
+   ],
    "keywords": [
-    "\\bTCI\\b"
+    "TCI",
+    "TS 38.214 5.2.1.5.4.2"
    ]
   },
   {
@@ -16802,8 +18879,11 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": [
-    "\\bTCI\\b"
+    "TCI"
    ]
   },
   {
@@ -16834,8 +18914,11 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": [
-    "\\bTCI\\b"
+    "TCI"
    ]
   },
   {
@@ -16866,9 +18949,13 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": [
-    "(?i)\\bCSI[- ]report",
-    "(?i)\\bCSI acquisition"
+    "CSI Report",
+    "CSI acquisition",
+    "TS 38.214 5.2.4"
    ]
   },
   {
@@ -16899,8 +18986,12 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": [
-    "(?i)\\bCSI[- ]report"
+    "CSI report",
+    "TS 38.214 5.2.4"
    ]
   },
   {
@@ -16932,6 +19023,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -16963,6 +19058,9 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml"
+   ],
    "keywords": []
   },
   {
@@ -16994,6 +19092,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -17025,6 +19127,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -17056,6 +19162,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -17089,6 +19199,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -17120,6 +19234,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -17153,6 +19271,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -17183,6 +19305,11 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -17213,6 +19340,11 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -17246,6 +19378,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -17280,6 +19416,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -17314,6 +19453,9 @@
    },
    "scope": "agenda",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -17344,6 +19486,9 @@
    },
    "scope": "agenda",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -17374,6 +19519,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -17404,6 +19552,10 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -17434,6 +19586,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -17464,6 +19619,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -17494,6 +19652,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -17526,8 +19687,11 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": [
-    "(?i)beamforming"
+    "beamforming"
    ]
   },
   {
@@ -17563,6 +19727,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -17599,8 +19766,11 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": [
-    "\\bTCI\\b"
+    "TCI"
    ]
   },
   {
@@ -17637,8 +19807,11 @@
    },
    "scope": "candidate",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b"
+    "CSI-RS"
    ]
   },
   {
@@ -17675,8 +19848,13 @@
    },
    "scope": "candidate",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b"
+    "CSI-RS"
    ]
   },
   {
@@ -17713,9 +19891,13 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report"
+   ],
    "keywords": [
-    "(?i)codebook",
-    "\\bSRS\\b"
+    "codebook",
+    "SRS"
    ]
   },
   {
@@ -17754,10 +19936,14 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report"
+   ],
    "keywords": [
-    "(?i)\\bCSI acquisition",
-    "(?i)codebook",
-    "\\bSRS\\b"
+    "CSI acquisition",
+    "codebook",
+    "SRS"
    ]
   },
   {
@@ -17794,6 +19980,11 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -17830,6 +20021,12 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "srs",
+    "beam",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -17866,6 +20063,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -17902,6 +20102,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -17938,6 +20141,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -17974,6 +20180,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -18010,6 +20219,10 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "aiml",
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -18048,6 +20261,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -18084,6 +20300,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -18120,6 +20339,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -18156,6 +20378,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -18192,6 +20417,11 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -18230,6 +20460,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -18269,6 +20503,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -18307,6 +20545,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -18343,6 +20585,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -18379,6 +20625,9 @@
    },
    "scope": "agenda",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -18417,6 +20666,11 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -18453,6 +20707,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -18489,6 +20747,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -18525,6 +20787,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -18561,6 +20826,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -18597,6 +20866,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -18633,6 +20905,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -18669,6 +20944,11 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "srs",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -18705,6 +20985,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -18741,6 +21024,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -18777,6 +21063,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -18813,6 +21102,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -18849,6 +21141,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -18887,6 +21182,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -18923,6 +21221,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -18959,6 +21260,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -18995,6 +21299,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -19031,6 +21338,10 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -19067,6 +21378,10 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -19103,6 +21418,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -19139,6 +21457,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -19175,6 +21496,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -19211,6 +21535,10 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -19246,7 +21574,10 @@
     "discussion": "124b-R20-6GR-Other Aspects related to CSI"
    },
    "scope": "agenda",
-   "topic": "other",
+   "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -19282,7 +21613,10 @@
     "discussion": "124b-R20-6GR-Other Aspects related to CSI"
    },
    "scope": "agenda",
-   "topic": "other",
+   "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -19318,7 +21652,10 @@
     "discussion": "124b-R20-6GR-Other Aspects related to CSI"
    },
    "scope": "agenda",
-   "topic": "other",
+   "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -19355,6 +21692,9 @@
    },
    "scope": "agenda",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -19390,7 +21730,10 @@
     "discussion": "124b-R20-6GR-Other Aspects related to CSI"
    },
    "scope": "agenda",
-   "topic": "other",
+   "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -19427,6 +21770,10 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -19463,6 +21810,10 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -19499,6 +21850,10 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -19535,6 +21890,10 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -19560,8 +21919,11 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": [
-    "\\bSRS\\b"
+    "SRS"
    ]
   },
   {
@@ -19591,8 +21953,45 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": [
-    "(?i)\\bCSI[- ]report"
+    "CSI report"
+   ]
+  },
+  {
+   "id": "RAN1#125:8.1:002",
+   "meeting": "RAN1#125",
+   "agenda_item": "8.1",
+   "agenda_title": "Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT",
+   "agenda_path": [
+    {
+     "number": "8",
+     "title": "Maintenance on Rel-19 NR and E-UTRA"
+    },
+    {
+     "number": "8.1",
+     "title": "Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT"
+    }
+   ],
+   "type": "Agreement",
+   "text": "The following TP is endorsed as Alignment CR for TS.38.214 for Clause 5.2.1.4.6.\nReason for change: Incorrect capture of previous agreement.\nSummary of change: Change the brackets to align with the agreement made in RAN1#122.\nConsequence if not approved: UE does not know which code point to report when a calculated SGCS falls at the endpoint of intervals.\n| TS38.214 5.2.1.4.6 CSI-PAI reporting << Unchanged parts are omitted >> Table 5.2.1.4.6-1: SGCS Quantization Mapping << Unchanged parts are omitted >> |",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#125_eom",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Inbox/Chair_notes/Chair%20notes%20RAN1%23125_eom.docx",
+    "tdoc": "R1-2605022",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Docs/R1-2605022.zip"
+   },
+   "scope": "candidate",
+   "topic": "report",
+   "tags": [
+    "report"
+   ],
+   "keywords": [
+    "TS 38.214 5.2.1.4.6"
    ]
   },
   {
@@ -19622,14 +22021,20 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "beam",
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report",
-    "(?i)codebook",
-    "\\bCQI\\b",
-    "(?i)beam management",
-    "\\bL1-RSRP\\b",
-    "\\bSRS\\b"
+    "CSI-RS",
+    "CSI report",
+    "Codebook",
+    "CQI",
+    "beam management",
+    "L1-RSRP",
+    "SRS"
    ]
   },
   {
@@ -19659,8 +22064,11 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": [
-    "(?i)\\bCSI[- ]report"
+    "CSI report"
    ]
   },
   {
@@ -19690,8 +22098,11 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": [
-    "\\bTCI\\b"
+    "TCI"
    ]
   },
   {
@@ -19721,9 +22132,13 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report"
+   ],
    "keywords": [
-    "(?i)codebook",
-    "\\bSRS\\b"
+    "codebook",
+    "SRS"
    ]
   },
   {
@@ -19753,8 +22168,12 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": [
-    "(?i)\\bCSI[- ]report"
+    "CSI report",
+    "TS 38.214 5.2.4"
    ]
   },
   {
@@ -19784,9 +22203,14 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam",
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "\\bL1-RSRP\\b"
+    "CSI-RS",
+    "L1-RSRP"
    ]
   },
   {
@@ -19820,6 +22244,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -19853,6 +22281,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -19890,6 +22322,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -19925,6 +22361,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -19958,6 +22398,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -19991,6 +22435,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -20024,6 +22472,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -20057,6 +22509,9 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml"
+   ],
    "keywords": []
   },
   {
@@ -20090,6 +22545,9 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml"
+   ],
    "keywords": []
   },
   {
@@ -20120,6 +22578,11 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -20150,6 +22613,10 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -20183,6 +22650,10 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -20213,6 +22684,9 @@
    },
    "scope": "agenda",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -20243,6 +22717,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -20273,6 +22751,9 @@
    },
    "scope": "agenda",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -20303,6 +22784,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -20335,6 +22819,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -20365,6 +22853,9 @@
    },
    "scope": "agenda",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -20395,6 +22886,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -20425,6 +22920,9 @@
    },
    "scope": "agenda",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -20455,6 +22953,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -20487,6 +22988,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -20517,6 +23021,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -20547,6 +23054,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -20579,6 +23089,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -20609,6 +23122,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -20645,8 +23161,11 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": [
-    "(?i)codebook"
+    "Codebook"
    ]
   },
   {
@@ -20682,6 +23201,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -20719,6 +23241,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -20754,6 +23279,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -20789,6 +23317,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -20824,6 +23355,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -20861,6 +23395,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -20899,6 +23436,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -20934,6 +23474,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -20970,8 +23513,11 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": [
-    "\\bSRS\\b"
+    "SRS"
    ]
   },
   {
@@ -21008,8 +23554,11 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": [
-    "(?i)\\bCSI acquisition"
+    "CSI acquisition"
    ]
   },
   {
@@ -21054,10 +23603,15 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)codebook",
-    "\\bSRS\\b"
+    "CSI-RS",
+    "codebook",
+    "SRS"
    ]
   },
   {
@@ -21094,6 +23648,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -21130,6 +23687,10 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -21166,6 +23727,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -21202,6 +23766,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -21238,6 +23805,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -21274,6 +23844,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -21310,6 +23883,11 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -21346,6 +23924,12 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "srs",
+    "beam",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -21382,6 +23966,10 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "srs",
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -21418,6 +24006,10 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "aiml",
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -21454,6 +24046,10 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "aiml",
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -21490,6 +24086,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -21526,6 +24125,10 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "aiml",
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -21562,6 +24165,11 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -21598,6 +24206,10 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -21634,6 +24246,11 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -21670,6 +24287,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -21706,6 +24326,10 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -21745,6 +24369,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -21781,6 +24409,11 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -21817,6 +24450,9 @@
    },
    "scope": "agenda",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -21853,6 +24489,9 @@
    },
    "scope": "agenda",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -21889,6 +24528,11 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -21927,6 +24571,9 @@
    },
    "scope": "agenda",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -21963,6 +24610,9 @@
    },
    "scope": "agenda",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -21999,6 +24649,9 @@
    },
    "scope": "agenda",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -22035,6 +24688,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -22071,6 +24727,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -22107,6 +24767,13 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "srs",
+    "beam",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -22143,6 +24810,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -22179,6 +24849,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -22215,6 +24889,11 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "aiml",
+    "srs",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -22251,6 +24930,11 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "aiml",
+    "srs",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -22287,6 +24971,11 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "aiml",
+    "srs",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -22323,6 +25012,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -22361,6 +25053,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -22397,6 +25092,10 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -22433,6 +25132,10 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -22469,6 +25172,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -22505,6 +25211,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -22541,6 +25250,9 @@
    },
    "scope": "agenda",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -22577,6 +25289,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -22613,6 +25328,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -22649,6 +25367,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -22685,6 +25406,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -22723,8 +25447,11 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": [
-    "(?i)codebook"
+    "Codebook"
    ]
   },
   {
@@ -22757,8 +25484,11 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": [
-    "\\bSRS\\b"
+    "SRS"
    ]
   },
   {
@@ -22791,8 +25521,11 @@
    },
    "scope": "candidate",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b"
+    "CSI-RS"
    ]
   },
   {
@@ -22827,8 +25560,11 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": [
-    "(?i)beam management"
+    "beam management"
    ]
   },
   {
@@ -22854,8 +25590,11 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": [
-    "(?i)codebook"
+    "codebook"
    ]
   },
   {
@@ -22886,10 +25625,15 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report",
-    "(?i)codebook"
+    "CSI-RS",
+    "CSI report",
+    "codebook",
+    "TS 38.214 5.2.1.6"
    ]
   },
   {
@@ -22920,10 +25664,16 @@
    },
    "scope": "candidate",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "srs",
+    "report"
+   ],
    "keywords": [
-    "(?i)\\bCSI[- ]report",
-    "(?i)\\bCSI feedback",
-    "\\bSRS\\b"
+    "CSI report",
+    "CSI feedback",
+    "SRS",
+    "TS 38.214 5.2.3"
    ]
   },
   {
@@ -22954,12 +25704,18 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "beam",
+    "report"
+   ],
    "keywords": [
-    "(?i)\\bCSI[- ]report",
-    "\\bPMI\\b",
-    "\\bCQI\\b",
-    "\\bL1-RSRP\\b",
-    "\\bSRS\\b"
+    "CSI report",
+    "PMI",
+    "CQI",
+    "L1-RSRP",
+    "SRS",
+    "TS 38.214 6.2.1.3"
    ]
   },
   {
@@ -22990,10 +25746,16 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam",
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report",
-    "\\bL1-RSRP\\b"
+    "CSI-RS",
+    "CSI-Report",
+    "L1-RSRP",
+    "TS 38.214 5.1.6.1.2"
    ]
   },
   {
@@ -23024,8 +25786,12 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam",
+    "report"
+   ],
    "keywords": [
-    "(?i)beam report"
+    "beam report"
    ]
   },
   {
@@ -23056,9 +25822,12 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": [
-    "(?i)\\bCSI[- ]report",
-    "(?i)codebook"
+    "CSI report",
+    "Codebook"
    ]
   },
   {
@@ -23089,11 +25858,53 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam",
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report",
-    "\\bTCI\\b",
-    "\\bL1-RSRP\\b"
+    "CSI-RS",
+    "CSI report",
+    "TCI",
+    "L1-RSRP",
+    "TS 38.214 5.2.1.5.4.1"
+   ]
+  },
+  {
+   "id": "RAN1#126:8.1:010",
+   "meeting": "RAN1#126",
+   "agenda_item": "8.1",
+   "agenda_title": "Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT",
+   "agenda_path": [
+    {
+     "number": "8",
+     "title": "Maintenance on Rel-19 NR and E-UTRA"
+    },
+    {
+     "number": "8.1",
+     "title": "Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT"
+    }
+   ],
+   "type": "Conclusion",
+   "text": "There is no consensus in RAN1 to support the TP from R1-2605669 of Clause 6.3.2.1.2 in TS 38.212 and Clause 5.2.1.5.4.1 in TS 38.214.\nNES",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#126_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx",
+    "discussion": "126-R19-AI 8.1",
+    "tdoc": "R1-2606867",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Docs/R1-2606867.zip"
+   },
+   "scope": "candidate",
+   "topic": "report",
+   "tags": [
+    "report"
+   ],
+   "keywords": [
+    "TS 38.212 6.3.2.1.2",
+    "TS 38.214 5.2.1.5.4.1"
    ]
   },
   {
@@ -23124,8 +25935,11 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": [
-    "\\bBF[DR]\\b"
+    "BFR"
    ]
   },
   {
@@ -23156,11 +25970,17 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "beam",
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report",
-    "\\bTCI\\b",
-    "\\bSRS\\b"
+    "CSI-RS",
+    "CSI report",
+    "TCI",
+    "SRS"
    ]
   },
   {
@@ -23191,10 +26011,15 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report",
-    "\\bCQI\\b"
+    "CSI-RS",
+    "CSI report",
+    "CQI",
+    "TS 38.214 5.2.1.4"
    ]
   },
   {
@@ -23225,8 +26050,11 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": [
-    "\\bSRS\\b"
+    "SRS"
    ]
   },
   {
@@ -23257,8 +26085,11 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": [
-    "(?i)\\bCSI[- ]report"
+    "CSI report"
    ]
   },
   {
@@ -23289,8 +26120,11 @@
    },
    "scope": "candidate",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b"
+    "CSI-RS"
    ]
   },
   {
@@ -23321,9 +26155,15 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam",
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "\\bL1-RSRP\\b"
+    "CSI-RS",
+    "L1-RSRP",
+    "TS 38.214 5.2.2.5"
    ]
   },
   {
@@ -23354,9 +26194,15 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report"
+    "CSI-RS",
+    "CSI-Report",
+    "TS 38.214 5.2.1.2",
+    "TS 38.214 5.2.1.4.2"
    ]
   },
   {
@@ -23390,6 +26236,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -23423,6 +26273,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -23456,6 +26310,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -23491,6 +26349,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -23524,6 +26386,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -23557,6 +26423,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -23590,6 +26460,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -23623,6 +26497,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -23653,6 +26531,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -23683,6 +26565,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -23713,6 +26598,11 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -23743,6 +26633,9 @@
    },
    "scope": "agenda",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -23773,6 +26666,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -23803,6 +26699,11 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -23833,6 +26734,11 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -23863,6 +26769,9 @@
    },
    "scope": "agenda",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -23893,6 +26802,9 @@
    },
    "scope": "agenda",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -23923,6 +26835,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -23953,6 +26869,10 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -23983,6 +26903,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -24015,6 +26938,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -24045,6 +26971,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -24075,6 +27004,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -24105,6 +27037,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -24135,6 +27070,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -24167,8 +27105,12 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report"
+   ],
    "keywords": [
-    "\\bSRS\\b"
+    "SRS"
    ]
   },
   {
@@ -24205,6 +27147,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -24241,6 +27186,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -24277,6 +27225,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -24313,6 +27264,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -24349,6 +27303,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -24385,6 +27342,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -24421,6 +27381,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -24457,6 +27420,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -24495,6 +27461,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -24531,6 +27500,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -24567,6 +27539,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -24603,6 +27578,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -24639,6 +27617,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -24677,6 +27658,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -24715,6 +27699,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -24751,6 +27738,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -24789,8 +27779,11 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": [
-    "(?i)\\bCSI acquisition"
+    "CSI acquisition"
    ]
   },
   {
@@ -24835,8 +27828,11 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": [
-    "\\bTCI\\b"
+    "TCI"
    ]
   },
   {
@@ -24875,8 +27871,11 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": [
-    "(?i)codebook"
+    "codebook"
    ]
   },
   {
@@ -24915,8 +27914,11 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": [
-    "(?i)codebook"
+    "codebook"
    ]
   },
   {
@@ -24955,8 +27957,11 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": [
-    "(?i)codebook"
+    "codebook"
    ]
   },
   {
@@ -24995,8 +28000,11 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": [
-    "(?i)codebook"
+    "codebook"
    ]
   },
   {
@@ -25035,8 +28043,11 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": [
-    "(?i)codebook"
+    "codebook"
    ]
   },
   {
@@ -25084,6 +28095,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -25120,6 +28134,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -25159,6 +28176,9 @@
    },
    "scope": "agenda",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -25195,6 +28215,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -25231,6 +28255,9 @@
    },
    "scope": "agenda",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -25267,6 +28294,9 @@
    },
    "scope": "agenda",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -25303,6 +28333,9 @@
    },
    "scope": "agenda",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -25339,6 +28372,10 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -25375,6 +28412,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -25411,6 +28452,9 @@
    },
    "scope": "agenda",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -25447,6 +28491,9 @@
    },
    "scope": "agenda",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -25483,6 +28530,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -25530,6 +28580,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -25566,6 +28619,9 @@
    },
    "scope": "agenda",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -25607,6 +28663,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -25648,6 +28707,10 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -25684,6 +28747,11 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -25720,6 +28788,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -25758,6 +28829,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -25794,6 +28869,10 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -25832,6 +28911,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -25868,6 +28951,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -25904,6 +28990,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -25942,6 +29031,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -25980,6 +29072,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -26018,6 +29113,10 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -26054,6 +29153,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -26090,6 +29192,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -26126,6 +29231,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -26162,6 +29270,11 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -26198,6 +29311,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -26234,6 +29350,11 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -26270,6 +29391,11 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -26306,6 +29432,11 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -26345,6 +29476,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -26381,6 +29515,10 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -26417,6 +29555,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -26458,6 +29599,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -26494,6 +29638,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -26530,6 +29677,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -26571,6 +29721,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -26613,6 +29766,10 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "aiml",
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -26649,6 +29806,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -26685,6 +29845,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -26721,6 +29884,10 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "srs",
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -26757,6 +29924,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -26793,6 +29963,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -26837,6 +30010,11 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "srs",
+    "beam",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -26877,8 +30055,11 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": [
-    "(?i)codebook"
+    "codebook"
    ]
   },
   {
@@ -26920,8 +30101,11 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": [
-    "(?i)codebook"
+    "codebook"
    ]
   },
   {
@@ -26959,8 +30143,11 @@
    },
    "scope": "candidate",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b"
+    "CSI-RS"
    ]
   },
   {
@@ -26993,8 +30180,11 @@
    },
    "scope": "candidate",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b"
+    "CSI-RS"
    ]
   },
   {
@@ -27029,8 +30219,11 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": [
-    "\\bL1-RSRP\\b"
+    "L1-RSRP"
    ]
   },
   {
@@ -27067,8 +30260,11 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": [
-    "\\bSRS\\b"
+    "SRS"
    ]
   },
   {
@@ -27101,8 +30297,11 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": [
-    "\\bBF[DR]\\b"
+    "BFR"
    ]
   },
   {
@@ -27137,9 +30336,79 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam",
+    "report"
+   ],
    "keywords": [
-    "(?i)\\bCSI acquisition",
-    "(?i)beam management"
+    "CSI acquisition",
+    "beam management"
+   ]
+  },
+  {
+   "id": "RAN1#126bis:8.1:004",
+   "meeting": "RAN1#126bis",
+   "agenda_item": "8.1",
+   "agenda_title": "Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT",
+   "agenda_path": [
+    {
+     "number": "8",
+     "title": "Maintenance on Rel-19 NR and E-UTRA"
+    },
+    {
+     "number": "8.1",
+     "title": "Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT"
+    }
+   ],
+   "type": "Agreement",
+   "text": "The draft CR in R1-2607797 for Rel-19 TS38.214, Clause 5.2.2.5 is endorsed.\nThe corresponding final CR for Rel-19 TS38.214, Clause 5.2.2.5 in R1-2608711 is endorsed.",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#126bis_eom",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx",
+    "discussion": "126bis-R19-AI 8.1"
+   },
+   "scope": "candidate",
+   "topic": "report",
+   "tags": [
+    "report"
+   ],
+   "keywords": [
+    "TS 38.214 5.2.2.5"
+   ]
+  },
+  {
+   "id": "RAN1#126bis:8.1:009",
+   "meeting": "RAN1#126bis",
+   "agenda_item": "8.1",
+   "agenda_title": "Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT",
+   "agenda_path": [
+    {
+     "number": "8",
+     "title": "Maintenance on Rel-19 NR and E-UTRA"
+    },
+    {
+     "number": "8.1",
+     "title": "Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT"
+    }
+   ],
+   "type": "Agreement",
+   "text": "Proposal 1 in Section 4 of R1-2608695 for Rel-19, TS38.214, Clause 5.2.5 is endorsed.\nThe corresponding final CR for Rel-19, TS38.214 in R1-2608703 is endorsed.",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#126bis_eom",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx",
+    "discussion": "126bis-R19-AI 8.1"
+   },
+   "scope": "candidate",
+   "topic": "report",
+   "tags": [
+    "report"
+   ],
+   "keywords": [
+    "TS 38.214 5.2.5"
    ]
   },
   {
@@ -27170,10 +30439,14 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report",
-    "(?i)codebook"
+    "CSI-RS",
+    "CSI report",
+    "codebook"
    ]
   },
   {
@@ -27204,10 +30477,17 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "beam",
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "\\bTCI\\b",
-    "\\bSRS\\b"
+    "CSI-RS",
+    "TCI",
+    "SRS",
+    "TS 38.214 5.1.5"
    ]
   },
   {
@@ -27238,13 +30518,18 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report",
-    "(?i)\\bCSI acquisition",
-    "(?i)codebook",
-    "\\bPMI\\b",
-    "\\bCQI\\b"
+    "CSI-RS",
+    "CSI report",
+    "CSI acquisition",
+    "codebook",
+    "PMI",
+    "CQI",
+    "TS 38.214 5.2.4"
    ]
   },
   {
@@ -27275,9 +30560,14 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)\\bCSI[- ]report"
+    "CSI-RS",
+    "CSI-Report",
+    "TS 38.214 5.2.1.4.2"
    ]
   },
   {
@@ -27309,6 +30599,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -27342,6 +30636,11 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -27375,6 +30674,9 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml"
+   ],
    "keywords": []
   },
   {
@@ -27408,6 +30710,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -27443,6 +30749,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -27474,6 +30784,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -27505,6 +30819,9 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml"
+   ],
    "keywords": []
   },
   {
@@ -27538,6 +30855,9 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml"
+   ],
    "keywords": []
   },
   {
@@ -27568,6 +30888,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -27598,6 +30921,11 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -27630,6 +30958,11 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -27663,6 +30996,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -27693,6 +31030,11 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -27723,6 +31065,11 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -27753,6 +31100,11 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -27783,6 +31135,11 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -27813,6 +31170,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -27843,6 +31203,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -27873,6 +31236,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -27903,6 +31269,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -27933,6 +31302,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -27969,8 +31341,11 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": [
-    "\\bCQI\\b"
+    "CQI"
    ]
   },
   {
@@ -28007,6 +31382,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -28043,6 +31421,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -28079,6 +31460,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -28117,6 +31501,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -28158,6 +31545,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -28194,6 +31584,10 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "aiml",
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -28230,6 +31624,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -28266,6 +31663,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -28306,8 +31706,11 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": [
-    "\\bTCI\\b"
+    "TCI"
    ]
   },
   {
@@ -28346,8 +31749,11 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": [
-    "\\bSRS\\b"
+    "SRS"
    ]
   },
   {
@@ -28384,10 +31790,15 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "(?i)codebook",
-    "\\bSRS\\b"
+    "CSI-RS",
+    "codebook",
+    "SRS"
    ]
   },
   {
@@ -28426,8 +31837,11 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": [
-    "(?i)codebook"
+    "codebook"
    ]
   },
   {
@@ -28466,8 +31880,11 @@
    },
    "scope": "candidate",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": [
-    "(?i)codebook"
+    "codebook"
    ]
   },
   {
@@ -28506,6 +31923,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -28542,6 +31962,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -28578,6 +32001,9 @@
    },
    "scope": "agenda",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -28614,6 +32040,9 @@
    },
    "scope": "agenda",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -28650,6 +32079,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -28686,6 +32119,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -28722,6 +32159,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -28761,6 +32202,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -28797,6 +32242,10 @@
    },
    "scope": "agenda",
    "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -28833,6 +32282,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -28869,6 +32322,10 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -28905,6 +32362,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -28941,6 +32401,11 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -28977,6 +32442,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -29013,6 +32481,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -29049,6 +32520,9 @@
    },
    "scope": "agenda",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -29085,6 +32559,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -29121,6 +32598,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -29157,6 +32637,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -29195,6 +32678,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -29231,6 +32717,9 @@
    },
    "scope": "agenda",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -29267,6 +32756,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -29305,6 +32797,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -29341,6 +32836,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -29377,6 +32875,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -29413,6 +32914,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -29449,6 +32953,10 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -29485,6 +32993,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -29521,6 +33032,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -29557,6 +33071,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -29593,6 +33110,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -29629,6 +33149,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -29665,6 +33188,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -29701,6 +33227,11 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "aiml",
+    "srs",
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -29740,6 +33271,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -29776,6 +33310,11 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam",
+    "report",
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -29812,6 +33351,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -29850,6 +33392,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -29886,6 +33431,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -29924,6 +33472,9 @@
    },
    "scope": "agenda",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": []
   },
   {
@@ -29960,6 +33511,9 @@
    },
    "scope": "agenda",
    "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
    "keywords": []
   },
   {
@@ -29996,6 +33550,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -30032,6 +33589,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -30068,6 +33628,9 @@
    },
    "scope": "agenda",
    "topic": "report",
+   "tags": [
+    "report"
+   ],
    "keywords": []
   },
   {
@@ -30104,6 +33667,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -30140,6 +33706,9 @@
    },
    "scope": "agenda",
    "topic": "other",
+   "tags": [
+    "other"
+   ],
    "keywords": []
   },
   {
@@ -30178,6 +33747,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -30216,6 +33788,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -30255,6 +33830,10 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "aiml",
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -30291,6 +33870,10 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "aiml",
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -30327,6 +33910,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -30363,6 +33949,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -30401,6 +33990,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -30437,6 +34029,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -30473,6 +34068,9 @@
    },
    "scope": "agenda",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": []
   },
   {
@@ -30508,8 +34106,11 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": [
-    "\\bSRS\\b"
+    "SRS"
    ]
   },
   {
@@ -30542,8 +34143,11 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": [
-    "\\bL1-RSRP\\b"
+    "L1-RSRP"
    ]
   },
   {
@@ -30576,9 +34180,13 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam",
+    "report"
+   ],
    "keywords": [
-    "(?i)\\bCSI[- ]report",
-    "\\bTCI\\b"
+    "CSI report",
+    "TCI"
    ]
   },
   {
@@ -30611,9 +34219,12 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": [
-    "\\bTCI\\b",
-    "(?i)beam management"
+    "TCI",
+    "beam management"
    ]
   },
   {
@@ -30648,8 +34259,11 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs"
+   ],
    "keywords": [
-    "\\bSRS\\b"
+    "SRS"
    ]
   },
   {
@@ -30684,8 +34298,11 @@
    },
    "scope": "candidate",
    "topic": "beam",
+   "tags": [
+    "beam"
+   ],
    "keywords": [
-    "(?i)beamforming"
+    "beamforming"
    ]
   },
   {
@@ -30720,9 +34337,13 @@
    },
    "scope": "candidate",
    "topic": "srs",
+   "tags": [
+    "srs",
+    "csirs"
+   ],
    "keywords": [
-    "\\bCSI-RS\\b",
-    "\\bSRS\\b"
+    "CSI-RS",
+    "SRS"
    ]
   }
  ]

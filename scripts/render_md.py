@@ -21,16 +21,18 @@ def _source(s):
     return " · ".join(parts)
 
 
-def _matrix(rows, meetings, header):
-    head = f"| {header} | " + " | ".join(short(m) for m in meetings) + " | 합계 |"
-    out = [head, "|" + "---|" * 1 + "---:|" * (len(meetings) + 1)]
+def _matrix(rows, meetings, header, extra=None):
+    """rows: [(label, {meeting: n})]. extra=(열 이름, [행별 값])이면 맨 끝에 열을 하나 더 붙입니다(합계 행은 '—')."""
+    head = f"| {header} | " + " | ".join(short(m) for m in meetings) + " | 합계 |" + (f" {extra[0]} |" if extra else "")
+    out = [head, "|" + "---|" * 1 + "---:|" * (len(meetings) + 1 + (1 if extra else 0))]
     totals = dict.fromkeys(meetings, 0)
-    for label, per in rows:
+    for i, (label, per) in enumerate(rows):
         for m in meetings:
             totals[m] += per.get(m, 0)
         out.append(f"| {_cell(label)} | " + " | ".join(str(per.get(m, 0) or "·") for m in meetings)
-                   + f" | **{sum(per.values())}** |")
-    out.append("| **합계** | " + " | ".join(f"**{totals[m]}**" for m in meetings) + f" | **{sum(totals.values())}** |")
+                   + f" | **{sum(per.values())}** |" + (f" {extra[1][i]} |" if extra else ""))
+    out.append("| **합계** | " + " | ".join(f"**{totals[m]}**" for m in meetings) + f" | **{sum(totals.values())}** |"
+               + (" — |" if extra else ""))
     return "\n".join(out)
 
 
@@ -69,9 +71,13 @@ def readme(m):
         a, b = sum(agr[t["id"]][prev] for t in topics), sum(agr[t["id"]][latest] for t in topics)
         out += [f"| **합계** | {a} | **{b}** | {b - a:+d} |", ""]
 
+    related = [sum(1 for e in conf if agreement(e) and t["id"] in e["tags"]) for t in topics]
     out += ["## 주제별 · 회의별 Agreement", "",
-            "확정 범위의 Agreement만 셉니다. Working Assumption·Conclusion과 후보는 HTML 대시보드에서 체크박스로 켤 수 있습니다.", "",
-            _matrix([(f"[{t['label']}]({topic_slug(t['id'])})", agr[t["id"]]) for t in topics], meetings, "주제"), ""]
+            "확정 범위의 Agreement만 셉니다. Working Assumption·Conclusion과 후보는 HTML 대시보드에서 체크박스로 켤 수 있습니다.",
+            "회의별 숫자는 결정마다 하나인 **주된 주제**로 셉니다. 한 결정이 여러 주제에 걸치면 나머지는 **관련 주제**로 붙고,",
+            "맨 끝 '관련 포함' 열은 관련 주제까지 센 전체 회의 합계라 합계가 전체 건수보다 큽니다.", "",
+            _matrix([(f"[{t['label']}]({topic_slug(t['id'])})", agr[t["id"]]) for t in topics], meetings, "주된 주제",
+                    extra=("관련 포함", related)), ""]
     per_meeting = [sum(agr[t["id"]][mt] for t in topics) for mt in meetings]
     out += ["```mermaid", "xychart-beta", '    title "회의별 CSI Agreement (확정 범위)"',
             "    x-axis [" + ", ".join(f'"{short(mt)}"' for mt in meetings) + "]",
@@ -123,6 +129,9 @@ def _entry_md(e, m):
         meta.append(SCOPE_LABEL[e["scope"]])
     if e["meeting"] == m["latest"]:
         meta.append("🆕 신규")
+    rel = [m["topic_label"][t] for t in e["tags"] if t != e["topic"]]
+    if rel:
+        meta.append("관련 주제: " + ", ".join(rel))
     lines = [" · ".join(meta), ""]
     lines += ["> " + ln if ln.strip() else ">" for ln in e["text"].split("\n")]
     if e.get("ffs"):
@@ -138,8 +147,9 @@ def topic_page(m, topic):
     cand = [e for e in mine if not confirmed(e)]
     out = [f"# {topic['label']} — RAN1 CSI 결정", "",
            f"> 원본 DB 마지막 업데이트 **{m['updated_kst'] or '기록 없음'}** · [요약으로 돌아가기](../README.md)", "",
-           f"확정 {len(conf)}건 (" + " · ".join(f"{TYPE_SHORT[t]} {sum(1 for e in conf if e['type'] == t)}" for t in TYPES)
-           + f"), 후보 {len(cand)}건. 결정 본문은 Chair notes 원문 그대로입니다(요약 없음). 최신 회의부터 보여줍니다.", ""]
+           f"주된 주제가 {topic['label']}인 확정 {len(conf)}건 (" + " · ".join(f"{TYPE_SHORT[t]} {sum(1 for e in conf if e['type'] == t)}" for t in TYPES)
+           + f"), 후보 {len(cand)}건. 결정 본문은 Chair notes 원문 그대로입니다(요약 없음). 최신 회의부터 보여줍니다.",
+           "주된 주제가 다른 결정 중 이 주제가 관련 주제로 붙은 것은 맨 아래 '관련 결정'에 모았습니다.", ""]
     for mt in reversed(m["meetings"]):
         here = [e for e in conf if e["meeting"] == mt]
         if not here:
@@ -148,6 +158,15 @@ def topic_page(m, topic):
         out += [f"## {mt}{flag} — {len(here)}건", ""]
         for e in here:
             out += _entry_md(e, m)
+    related = [e for e in m["entries"] if confirmed(e) and e["topic"] != tid and tid in e["tags"]]
+    if related:
+        out += ["---", "", f"## 관련 결정 {len(related)}건 (주된 주제는 다른 주제)", "",
+                f"원문에 {topic['label']} 관련 표현이 있지만 주된 주제가 다른 확정 결정입니다. 전문은 각 주된 주제 리포트에 있습니다.", "",
+                "| 회의 | 구분 | 주된 주제 | Agenda | 원문 첫 줄 | 출처 |", "|---|---|---|---|---|---|"]
+        for e in reversed(related):
+            out.append(f"| {e['meeting']} | {TYPE_SHORT[e['type']]} | [{m['topic_label'][e['topic']]}]({e['topic']}.md) | "
+                       f"{e['agenda_item']} {_cell(e['agenda_title'])} | {_cell(_first_line(e['text']))} | {_source(e['source'])} |")
+        out.append("")
     if cand:
         out += ["---", "", f"## 후보 {len(cand)}건 (키워드 일치 · 확인 필요)", "",
                 "포함 Agenda 밖에서 키워드로 잡힌 결정입니다. CSI 범위가 아닐 수 있습니다.", ""]

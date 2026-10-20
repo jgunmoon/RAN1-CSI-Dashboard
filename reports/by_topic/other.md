@@ -2,7 +2,8 @@
 
 > 원본 DB 마지막 업데이트 **2026-10-19 20:12 KST** · [요약으로 돌아가기](../README.md)
 
-확정 70건 (Agreement 62 · WA 0 · Conclusion 8), 후보 0건. 결정 본문은 Chair notes 원문 그대로입니다(요약 없음). 최신 회의부터 보여줍니다.
+주된 주제가 기타 CSI인 확정 63건 (Agreement 55 · WA 0 · Conclusion 8), 후보 0건. 결정 본문은 Chair notes 원문 그대로입니다(요약 없음). 최신 회의부터 보여줍니다.
+주된 주제가 다른 결정 중 이 주제가 관련 주제로 붙은 것은 맨 아래 '관련 결정'에 모았습니다.
 
 ## RAN1#126bis — 11건
 
@@ -176,7 +177,7 @@
 
 출처: [Chair notes RAN1#125_eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Inbox/Chair_notes/Chair%20notes%20RAN1%23125_eom.docx) · `[125-R20-6GR-Other Aspects related to CSI]`
 
-## RAN1#124bis — 6건
+## RAN1#124bis — 2건
 
 **Conclusion** · `8.2` Maintenance on NR MIMO Phase 5 · `RAN1#124bis:8.2:004`
 
@@ -191,36 +192,7 @@
 
 출처: [Chair notes RAN1#124bis_eom5](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Inbox/Chair_notes/Chair%20notes%20RAN1%23124bis_eom5.docx) · `[124b-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.3` Other aspects · `RAN1#124bis:10.5.3.3:001`
-
-> Study and evaluate the following parameters and candidate values to determine the frequency domain structure of RS for finer time/frequency tracking for both connected and idle modes
-> - Minimum Bandwidth: candidate values {partial BW (please clarify) of the BWP, full BW of the BWP}.
-> - Density: candidate values {x} REs/RB.
-
-출처: [Chair notes RAN1#124bis_eom5](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Inbox/Chair_notes/Chair%20notes%20RAN1%23124bis_eom5.docx) · `[124b-R20-6GR-Other Aspects related to CSI]`
-
-**Agreement** · `10.5.3.3` Other aspects · `RAN1#124bis:10.5.3.3:002`
-
-> Study single-port and multi-port RS for finer time/frequency tracking.
-
-출처: [Chair notes RAN1#124bis_eom5](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Inbox/Chair_notes/Chair%20notes%20RAN1%23124bis_eom5.docx) · `[124b-R20-6GR-Other Aspects related to CSI]`
-
-**Agreement** · `10.5.3.3` Other aspects · `RAN1#124bis:10.5.3.3:003`
-
-> - Study and evaluate the mismatch and impact on performance, if any, between QCL parameters of the RS for finer time/frequency tracking and the target RSs/Channels.
-
-출처: [Chair notes RAN1#124bis_eom5](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Inbox/Chair_notes/Chair%20notes%20RAN1%23124bis_eom5.docx) · `[124b-R20-6GR-Other Aspects related to CSI]`
-
-**Agreement** · `10.5.3.3` Other aspects · `RAN1#124bis:10.5.3.3:005`
-
-> Regarding the frequency domain density for RS for finer time/frequency tracking for both connected and idle modes, at least the following candidate values are considered for study and evaluation
-> - x∈{2,3,4,6,12}.
-> - x is defined as number of REs/RBs/symbol/port
-> Other values are not precluded.
-
-출처: [Chair notes RAN1#124bis_eom5](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Inbox/Chair_notes/Chair%20notes%20RAN1%23124bis_eom5.docx) · `[124b-R20-6GR-Other Aspects related to CSI]`
-
-## RAN1#124 — 2건
+## RAN1#124 — 1건
 
 **Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#124:10.5.3.1:004`
 
@@ -234,23 +206,7 @@
 
 출처: [Chair notes RAN1#124 - eom_03](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124/Inbox/Chair_notes/Chair%20notes%20RAN1%23124%20-%20eom_03.docx) · `[124-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.3` Other aspects · `RAN1#124:10.5.3.3:004`
-
-> Study and evaluate at least the following aspects on RS for finer time/frequency tracking for both connected and idle modes
-> - Frequency domain factors
->   - Bandwidth
->   - Frequency domain density
-> - Time domain factors
->   - Time domain behavior: e.g., periodic, semi-persistent, aperiodic, on-demand
->   - Time domain density: e.g., periodicity, number of slots, number of symbols and interval between symbols in a slot, etc.
-> - Spatial domain factors
->   - FFS: Details
-
-남은 FFS 1건
-
-출처: [Chair notes RAN1#124 - eom_03](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124/Inbox/Chair_notes/Chair%20notes%20RAN1%23124%20-%20eom_03.docx) · `[124-R20-6GR-Other Aspects related to CSI]`
-
-## RAN1#123 — 9건
+## RAN1#123 — 8건
 
 **Agreement** · `8.2` Maintenance on NR MIMO Phase 5 · `RAN1#123:8.2:001`
 
@@ -288,17 +244,6 @@
 
 출처: [Chair notes RAN1#123 - eom3](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Inbox/Chair_notes/Chair%20notes%20RAN1%23123%20-%20eom3.docx) · [R1-2508775](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Docs/R1-2508775.zip) · `[123-R19-MIMO]`
 
-**Agreement** · `8.2` Maintenance on NR MIMO Phase 5 · `RAN1#123:8.2:012`
-
-> - The following TP for TS38.215 is endorsed.
-> | Spec | TS38.215 |
-> | Reason for change | is specified in 38.214 (section 5.2.1.4.10), however it is not clear what is the reference frequency in relation to ppm. If not clarified, absolute frequency offset values may be unaligned, which may lead to performance loss. Since ‘Coherent joint transmission calibration frequency offset’ is specified in 38.215, it should be clarified that the reference frequency in relation to ppm is the frequency of Point A in 38.215 |
-> | Summary of change | A description is added to define the reference frequency in relation to ppm as the frequency of Point A. |
-> | Consequences if not approved | If not clarified, absolute frequency offset values may be unaligned, which can lead to performance loss. |
-> | 5.1.51 Coherent joint transmission calibration frequency offset | 5.1.51 Coherent joint transmission calibration frequency offset |
-
-출처: [Chair notes RAN1#123 - eom3](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Inbox/Chair_notes/Chair%20notes%20RAN1%23123%20-%20eom3.docx) · [R1-2508775](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Docs/R1-2508775.zip) · `[123-R19-MIMO]`
-
 **Conclusion** · `8.2` Maintenance on NR MIMO Phase 5 · `RAN1#123:8.2:013`
 
 > The issue described in Section 2.1 of R1-2508654 is handled by gNB implementation.
@@ -311,7 +256,7 @@
 
 출처: [Chair notes RAN1#123 - eom3](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Inbox/Chair_notes/Chair%20notes%20RAN1%23123%20-%20eom3.docx) · [R1-2508654](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Docs/R1-2508654.zip) · `[123-R19-MIMO]`
 
-## RAN1#122bis — 21건
+## RAN1#122bis — 20건
 
 **Agreement** · `8.2` Maintenance on NR MIMO Phase 5 · `RAN1#122bis:8.2:001`
 
@@ -352,12 +297,6 @@
 **Agreement** · `8.2` Maintenance on NR MIMO Phase 5 · `RAN1#122bis:8.2:010`
 
 > The TP1.A for TS38.214 in R1-2507269 is endorsed.
-
-출처: [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · [R1-2507269](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2507269.zip) · `[122bis-R19-MIMO]`
-
-**Agreement** · `8.2` Maintenance on NR MIMO Phase 5 · `RAN1#122bis:8.2:011`
-
-> The TP1.B for TS38.214 in R1-2507269 is endorsed. Note that the Clause number for this TP is Clause 5.2.2.5 and not 5.2.1.4.1.
 
 출처: [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · [R1-2507269](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2507269.zip) · `[122bis-R19-MIMO]`
 

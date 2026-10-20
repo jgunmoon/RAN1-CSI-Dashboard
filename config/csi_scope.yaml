@@ -74,14 +74,34 @@ ignore_phrases:
   - '(?i)HARQ codebook'
   - '(?i)Type-[123] HARQ(-ACK)? codebook'
 
+# ── 2-1. 사양 조항 번호 (후보) ─────────────────────────────────────────
+# 유지보수 결정은 "The following TP for TS 38.214 Clause 5.2.5 is endorsed"처럼 본문이 TDoc에 있어
+# 기술 키워드 없이 사양 조항 번호만 나오는 경우가 많습니다. 그래서 조항 번호도 키워드처럼 씁니다.
+#   - 같은 줄에 사양 번호(TS 38.214 등)와 조항 번호(Clause/Section 5.2.5, 또는 'TS38.214 5.2.5')가 함께 나오면 일치로 봅니다.
+#     한 줄에 사양이 여럿이면 조항 번호와 가장 가까운 사양에 붙입니다. 'Section 2 of R1-xxxx'처럼 TDoc의 절은 제외합니다.
+#   - clause는 그 조항과 모든 하위 조항을 포함합니다 (5.2 → 5.2, 5.2.1.4.6 …). exact: true면 그 조항 번호만 봅니다.
+#   - 포함 Agenda 밖에서 일치하면 '후보'가 되고, topic은 그 결정의 '관련 주제' 태그로 붙습니다.
+spec_clauses:
+  - {spec: "38.214", clause: "5.1.5",     topic: beam,   note: "Antenna ports quasi co-location (TCI)"}
+  - {spec: "38.214", clause: "5.1.6.1",   topic: csirs,  note: "CSI-RS reception (TRS, L1-RSRP용 CSI-RS)"}
+  - {spec: "38.214", clause: "5.2",       topic: report, note: "UE procedure for reporting CSI"}
+  - {spec: "38.214", clause: "6.2.1",     topic: srs,    note: "UE sounding procedure (SRS)"}
+  # Link recovery는 하위 조항 없이 '6'으로 인용됩니다. 원문의 '38.213 6.3.2.x'는 실제로는 38.212 UCI 조항이라 exact로 막습니다.
+  - {spec: "38.213", clause: "6",         topic: beam,   note: "Link recovery procedures (beam failure)", exact: true}
+  - {spec: "38.212", clause: "6.3.1.1.2", topic: report, note: "UCI on PUCCH: CSI"}
+  - {spec: "38.212", clause: "6.3.2.1.2", topic: report, note: "UCI on PUSCH: CSI"}
+
 # ── 3. 수동 목록 (결정 id 기준, 예: "RAN1#126:9.1.1:001") ──────────────
 include_ids: []   # 후보나 범위 밖 결정을 확정 범위로 올림
 exclude_ids: []   # 확정·후보 어디에서도 뺌
 
 # ── 4. 주제 분류 ─────────────────────────────────────────────────────
-# 결정마다 주제 하나. Agenda에 topic이 있으면 그것을 쓰고,
-# 없으면 위에서부터 차례로 보고 patterns 중 하나라도 맞는 첫 주제를 씁니다. 아무것도 맞지 않으면 fallback_topic.
-# 순서를 바꾸면 분류가 바뀝니다. 색은 대시보드 차트에서 이 순서대로 정해집니다.
+# 결정마다 '주된 주제' 하나와 '관련 주제' 태그(여러 개)가 붙습니다.
+#   주된 주제: Agenda에 topic이 있으면 그것, 없으면 위에서부터 patterns가 맞는 첫 주제, 그다음 조항 번호(spec_clauses)의 topic,
+#             아무것도 없으면 fallback_topic. 차트와 표의 기본 숫자는 주된 주제로 셉니다(합계 = 전체 건수).
+#   관련 주제: 주된 주제 + patterns가 맞는 모든 주제 + 일치한 조항 번호의 topic. 결정 목록의 '관련 포함' 주제 필터와
+#             표의 '관련 포함' 열이 이것을 씁니다(한 결정이 여러 주제에 들어가므로 합계가 전체보다 큼).
+# 순서를 바꾸면 주된 주제가 바뀝니다. 색은 대시보드 차트에서 이 순서대로 정해집니다.
 topics:
   - id: aiml
     label: "AI/ML CSI"
@@ -97,7 +117,7 @@ topics:
     patterns: ['(?i)\bCSI[- ]report', 'reportQuantity', '(?i)\bCSI feedback', '(?i)codebook', '\bPMI\b', '\bCQI\b', '\bRI\b', '\bType[- ]?I{1,2}\b', '\bCPU\b', '\bCSI\b(?!-RS|-IM)']
   - id: csirs
     label: "CSI-RS"
-    patterns: ['\bCSI-RS\b', '\bNZP\b', '\bCSI-IM\b', '\bTRS\b', '(?i)tracking RS', '\bCMR\b', '\bIMR\b']
+    patterns: ['\bCSI-RS\b', '\bNZP\b', '\bCSI-IM\b', '\bTRS\b', '(?i)tracking RS', '(?i)\bRS for (finer )?time/frequency tracking', '\bCMR\b', '\bIMR\b']
 fallback_topic: {id: other, label: "기타 CSI"}
 
 # HTML 대시보드 검색창의 추천 검색어 ('|' 또는 대문자 OR로 여러 표기를 함께 찾음)
