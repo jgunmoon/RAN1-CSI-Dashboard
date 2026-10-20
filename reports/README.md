@@ -175,7 +175,7 @@ Agenda 번호는 회의마다 바뀌므로 '섹션 + Agenda 제목'으로 이어
 |---|---|---|---:|---:|---:|
 | 2026-10-20 08:01 | 설정 변경 (범위·키워드·주제 규칙) | — | 25 | 68 | 2 |
 
-가장 최근(2026-10-20) 기존 회의 변경 95건:
+<details><summary>가장 최근(2026-10-20) 기존 회의 변경 95건 펼치기</summary>
 
 | 변경 | 회의 | 구분 | 범위 | Agenda | 원문 첫 줄 | id |
 |---|---|---|---|---|---|---|
@@ -229,6 +229,8 @@ Agenda 번호는 회의마다 바뀌므로 '섹션 + Agenda 제목'으로 이어
 | 변경 (범위) | RAN1#122bis | Agreement | 확정 | 9.1 UE features for AI/ML for NR Air Interface | Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown | [`RAN1#122bis:9.1:016`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) |
 | 변경 (범위) | RAN1#122bis | Agreement | 확정 | 9.1 UE features for AI/ML for NR Air Interface | Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown | [`RAN1#122bis:9.1:017`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) |
 | 변경 (범위) | RAN1#122bis | Agreement | 확정 | 9.1 UE features for AI/ML for NR Air Interface | Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown | [`RAN1#122bis:9.1:018`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) |
+
+</details>
 
 ## 후보가 많은 Agenda
 

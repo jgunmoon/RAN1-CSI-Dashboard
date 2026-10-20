@@ -234,12 +234,14 @@ def change_lines(m, limit=5):
         out.append(f"| {c['at'].replace('T', ' ')[:16]} | {c['reason']} | {nm} | {c['counts']['added']} | {c['counts']['changed']} | {c['counts']['removed']} |")
     items = hist[0]["items"]
     if items:
-        out += ["", f"가장 최근({hist[0]['at'][:10]}) 기존 회의 변경 {len(items)}건:", "",
+        # 길어지지 않도록 접어 둡니다 (GitHub에서 눌러 펼침)
+        out += ["", f"<details><summary>가장 최근({hist[0]['at'][:10]}) 기존 회의 변경 {len(items)}건 펼치기</summary>", "",
                 "| 변경 | 회의 | 구분 | 범위 | Agenda | 원문 첫 줄 | id |", "|---|---|---|---|---|---|---|"]
         for x in items[:50]:
             what = WHAT[x["what"]] + (f" ({', '.join(FIELD_KO.get(f, f) for f in x['fields'])})" if x["fields"] else "")
             out.append(f"| {what} | {x['meeting']} | {TYPE_SHORT[x['type']]} | {SCOPE_LABEL[x['scope']]} | {_cell(x['agenda'])} | "
                        f"{_cell(x['line'])} | [`{x['id']}`]({x['url']}) |")
+        out += ["", "</details>"]
     return out + [""]
 
 

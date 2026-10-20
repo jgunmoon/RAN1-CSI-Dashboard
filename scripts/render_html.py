@@ -59,13 +59,42 @@ header { display: grid; gap: 10px; }
 .lede { margin: 0; max-width: 72ch; color: var(--ink-2); font-size: 14px; }
 .notice { border-left: 3px solid var(--cand); background: var(--cand-bg); padding: 10px 14px; border-radius: 6px; margin: 6px 0 0; font-size: 13px; }
 section { display: grid; gap: 14px; min-width: 0; }
-.filterbar { position: sticky; top: 0; z-index: 5; background: var(--panel); border: 1px solid var(--rule); border-radius: 8px;
+.sticky { position: sticky; top: 0; z-index: 5; display: grid; gap: 6px; background: var(--bg); padding: 6px 0 4px; margin: -6px 0 -4px; }
+.tabs { display: flex; gap: 4px; overflow-x: auto; border-bottom: 1px solid var(--rule); scrollbar-width: thin; }
+.tabs button { font: inherit; font-size: 14px; padding: 8px 14px; border: 0; border-bottom: 2px solid transparent; background: none;
+  color: var(--ink-2); cursor: pointer; white-space: nowrap; }
+.tabs button[aria-selected="true"] { color: var(--ink); font-weight: 600; border-bottom-color: var(--accent); }
+.tabs button:hover { color: var(--ink); }
+.tabs .count { font-family: var(--font-data); font-size: 12px; color: var(--ink-3); font-weight: 400; }
+.tab-panel { display: grid; gap: 28px; min-width: 0; }
+.tab-panel[hidden] { display: none; }
+.title-row { display: flex; flex-wrap: wrap; gap: 8px 32px; align-items: baseline; justify-content: space-between; }
+.lede-row { display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: baseline; }
+.section-head { display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: baseline; }
+details.help { font-size: 13px; color: var(--ink-2); max-width: 80ch; }
+details.help > summary { cursor: pointer; color: var(--accent); font-size: 12px; list-style: none; display: inline; }
+details.help > summary::before { content: "ⓘ "; }
+details.help[open] { flex-basis: 100%; }
+details.help > div { margin-top: 6px; padding: 8px 12px; border-left: 3px solid var(--accent-soft, var(--rule)); background: var(--panel); border-radius: 4px; }
+.brief { font-size: 13px; color: var(--ink-2); background: var(--panel); border: 1px solid var(--rule); border-radius: 8px; padding: 8px 12px;
+  display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.batches { display: grid; gap: 8px; }
+details.batch { background: var(--panel); border: 1px solid var(--rule); border-radius: 8px; }
+details.batch > summary { cursor: pointer; padding: 10px 14px; font-size: 13px; }
+details.batch[open] > summary { border-bottom: 1px solid var(--rule); }
+.batch-body { padding: 10px 14px; display: grid; gap: 8px; }
+details.more-filters > summary { cursor: pointer; font-size: 13px; color: var(--accent); }
+details.more-filters[open] { display: grid; gap: 10px; }
+.warns { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip.warn-chip { color: var(--cand); background: var(--cand-bg); border-color: transparent; cursor: help; }
+.filterbar { background: var(--panel); border: 1px solid var(--rule); border-radius: 8px;
   padding: 10px 14px; display: flex; flex-wrap: wrap; gap: 8px 22px; align-items: center; font-size: 13px; color: var(--ink-2); }
 .filterbar fieldset { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; border: 0; padding: 0; margin: 0; }
 .filterbar legend { float: left; padding: 0; margin-right: 2px; font-weight: 600; color: var(--ink); }
 .filterbar label { display: inline-flex; gap: 6px; align-items: center; }
 .filterbar .sep { padding-left: 12px; border-left: 1px solid var(--rule); }
 .filterbar .state { margin-left: auto; color: var(--ink-3); }
+.filterbar[hidden] { display: none; }
 .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 140px), 1fr)); gap: 10px; }
 .card { background: var(--panel); border: 1px solid var(--rule); border-radius: 8px; padding: 12px 14px; display: grid; gap: 4px; }
 .card .name { display: flex; gap: 8px; align-items: center; font-size: 13px; color: var(--ink-2); }
@@ -108,7 +137,7 @@ button.cell:disabled { color: var(--ink-3); text-decoration: none; cursor: defau
 .filters label { display: inline-flex; gap: 6px; align-items: center; max-width: 100%; min-width: 0; }
 .filters select { font: inherit; font-size: 13px; padding: 4px 6px; border: 1px solid var(--rule); border-radius: 6px;
   background: var(--bg); color: var(--ink); max-width: 100%; min-width: 0; flex: 0 1 auto; }
-#list { scroll-margin-top: 64px; }
+#list { scroll-margin-top: 140px; }
 .presets { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-size: 13px; color: var(--ink-3); }
 .presets button, .more, .reset { font: inherit; font-size: 13px; padding: 3px 10px; border: 1px solid var(--rule); border-radius: 999px;
   background: var(--bg); color: var(--accent); cursor: pointer; }
@@ -124,7 +153,7 @@ button.cell:disabled { color: var(--ink-3); text-decoration: none; cursor: defau
 .chip.cand { color: var(--cand); background: var(--cand-bg); border-color: transparent; }
 .label-orig { font-size: 11px; letter-spacing: .06em; color: var(--ink-3); font-family: var(--font-data); }
 .orig { margin: 0; padding: 10px 12px; border: 1px solid var(--rule); border-radius: 6px; background: var(--bg);
-  font-size: 13px; overflow-wrap: anywhere; max-height: 20em; overflow-y: auto; display: grid; gap: 6px; min-width: 0; }
+  font-size: 13px; overflow-wrap: anywhere; max-height: 15em; overflow-y: auto; display: grid; gap: 6px; min-width: 0; }
 .orig-text { white-space: pre-line; }
 .orig-table { overflow-x: auto; }
 .orig-table table { font-size: 12px; width: auto; min-width: 100%; background: var(--panel); }
@@ -155,7 +184,7 @@ mark { background: var(--mark); color: inherit; border-radius: 2px; padding: 0 1
 footer { font-size: 13px; color: var(--ink-3); border-top: 1px solid var(--rule); padding-top: 16px; }
 #tip { position: fixed; pointer-events: none; z-index: 20; background: var(--ink); color: var(--bg);
   font-family: var(--font-data); font-size: 12px; padding: 6px 8px; border-radius: 4px; white-space: pre; }
-@media (max-width: 640px) { h1 { font-size: 23px; } .filterbar { position: static; } .filterbar .state { margin-left: 0; } }
+@media (max-width: 640px) { h1 { font-size: 23px; } .sticky { position: static; } .filterbar .state { margin-left: 0; } #list { scroll-margin-top: 8px; } }
 """
 
 SCRIPT = r"""
@@ -347,7 +376,7 @@ SCRIPT = r"""
 
   // ── 결정 목록 (검색 + 주제 + 회의 + Agenda)
   const q = $('q'), fTopic = $('f-topic'), fMeeting = $('f-meeting'), fAgenda = $('f-agenda'), fWord = $('f-word');
-  const out = $('results'), summary = $('summary'), PAGE = 40;
+  const out = $('results'), summary = $('summary'), PAGE = 20;
   const opt = (sel, value, label) => { const o = el('option', null, label); o.value = value; sel.append(o); };
   const gPrimary = el('optgroup'), gTag = el('optgroup');
   gPrimary.label = '주된 주제'; gTag.label = '관련 주제 포함';
@@ -411,6 +440,7 @@ SCRIPT = r"""
   }
   const STAGE = Object.fromEntries(D.stages.map(s => [s.id, s.label]));
   const IMPACT = Object.fromEntries(D.impacts.map(t => [t.id, t.label]));
+  const WARN_SHORT = { math: '수식 누락 의심', color: '색 표시 손실 — TDoc 확인', tdoc: '변경은 TDoc에' };
   const WARN = {
     math: '수식 누락 의심 — 원본 추출에서 Word 수식(변수·기호)이 빠졌을 수 있습니다. 숫자·기호는 Chair notes 원문으로 확인하세요.',
     color: '색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없어 무엇이 바뀌었는지 알 수 없습니다. TDoc에서 확인하세요.',
@@ -442,7 +472,11 @@ SCRIPT = r"""
       }
       box.append(meta);
     }
-    e.warn.forEach(w => box.append(el('div', 'warn', '⚠ ' + WARN[w])));
+    if (e.warn.length) {  // 짧은 표시만, 설명은 마우스를 올리면 (탭·포커스로도)
+      const w = el('div', 'warns');
+      e.warn.forEach(k => { const c = el('span', 'chip warn-chip', '⚠ ' + WARN_SHORT[k]); c.title = WARN[k]; c.tabIndex = 0; w.append(c); });
+      box.append(w);
+    }
     box.append(el('span', 'label-orig', 'Chair notes 원문'));
     box.append(richText(e, re));
     const src = el('div', 'src'); const s = e.source;
@@ -478,6 +512,8 @@ SCRIPT = r"""
     return e.scope === 'candidate' && e.cand_key === v.slice(1);
   }
   function list(base) {
+    const nExtra = [fStage.value, fImpact.value, fClause.value, fWarn.checked].filter(Boolean).length;
+    $('more-state').textContent = nExtra ? `· ${nExtra}개 적용 중` : '';
     if (idFilter) {  // '최근 변경' 버튼: 구분·범위 체크와 다른 조건을 무시하고 그 결정만 보여줌
       hits = D.entries.filter(e => idFilter.has(e.id)).reverse(); curRe = null; out.replaceChildren(); shown = 0;
       summary.replaceChildren(el('span', 'num', `${hits.length}건`), ` · ${idLabel} (구분·범위 체크와 관계없이 모두 표시 · '조건 지우기'로 해제)`);
@@ -502,7 +538,7 @@ SCRIPT = r"""
     fStage.value = fImpact.value = fClause.value = ''; fWarn.checked = false;
     idFilter = f.ids ? new Set(f.ids) : null; idLabel = f.label || '';
     if (fAgenda.value[0] === 'c' && !$('g-cand').checked) { $('g-cand').checked = true; }
-    update(); $('list').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    update(); showTab('list'); $('list').scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
   function update() {
     const ok = pred(), base = D.entries.filter(ok);
@@ -512,6 +548,25 @@ SCRIPT = r"""
     matrix($('agenda-body'), agendaRows(), base, false);
     list(base);
   }
+  // ── 탭: 요약 · 결정 목록 · Agenda별 · FFS 추적 · FG 목록 · 변경 이력. 주소의 #탭이름으로 바로 열 수 있습니다(예: …/#ffs).
+  const TABS = [...document.querySelectorAll('[data-tab]')].map(b => b.dataset.tab);
+  const FILTERED = ['summary', 'list', 'agenda'];  // 위 필터 줄(구분·범위)이 적용되는 탭
+  function showTab(t, record = true) {
+    if (!TABS.includes(t)) t = 'summary';
+    document.querySelectorAll('[data-tab]').forEach(b => b.setAttribute('aria-selected', String(b.dataset.tab === t)));
+    document.querySelectorAll('.tab-panel').forEach(p => { p.hidden = p.dataset.panel !== t; });
+    bar.hidden = !FILTERED.includes(t);
+    if (t === 'summary') chart(D.entries.filter(pred()));  // 숨겨져 있던 동안 폭을 몰라 다시 그림
+    if (record && location.hash !== '#' + t) history.replaceState(null, '', '#' + t);
+  }
+  const header = document.querySelector('main > header');
+  document.querySelectorAll('[data-tab]').forEach(b => b.addEventListener('click', () => {
+    showTab(b.dataset.tab);
+    const top = header.offsetTop + header.offsetHeight;  // 아래로 내려가 있었으면 탭 바로 아래부터 보이게
+    if (scrollY > top) scrollTo({ top });
+  }));
+  document.querySelectorAll('[data-goto]').forEach(b => b.addEventListener('click', () => { showTab(b.dataset.goto); scrollTo({ top: header.offsetTop + header.offsetHeight }); }));
+  addEventListener('hashchange', () => showTab(location.hash.slice(1), false));
   bar.addEventListener('change', update);
   let rw; addEventListener('resize', () => { clearTimeout(rw); rw = setTimeout(() => chart(D.entries.filter(pred())), 200); });
   q.addEventListener('input', () => { idFilter = null; clearTimeout(timer); timer = setTimeout(() => list(D.entries.filter(pred())), 150); });
@@ -603,6 +658,7 @@ SCRIPT = r"""
   })();
   document.querySelectorAll('[data-preset]').forEach(b => b.addEventListener('click', () => { q.value = b.dataset.preset; list(D.entries.filter(pred())); q.focus(); }));
   update();
+  showTab(location.hash.slice(1) || 'summary', false);
 })();
 """
 
@@ -700,44 +756,64 @@ def _alerts_html(m):
             f'결정이 범위에서 조용히 빠지지 않도록 확인하세요.<ul>{"".join(rows)}</ul></div>')
 
 
+def _help(text):
+    """제목 옆 '설명' 펼침. 긴 설명은 기본으로 접어 화면을 짧게 둡니다."""
+    return f'<details class="help"><summary>설명</summary><div>{text}</div></details>'
+
+
+def _batch_ids(m, c):
+    live = {e["id"] for e in m["entries"]}
+    return [x["id"] for x in c["items"] if x["what"] != "removed" and x["id"] in live]
+
+
+def _change_brief(m):
+    """요약 탭의 최근 변경 한 줄."""
+    hist = m.get("changes") or []
+    if not hist:
+        return ""
+    c, k = hist[0], hist[0]["counts"]
+    nm = ", ".join(f'{x["meeting"]} {x["count"]}건' for x in c["new_meetings"])
+    parts = ([f"새 회의 {nm}"] if nm else []) + [f"과거 회의 추가 {k['added']} · 변경 {k['changed']} · 삭제 {k['removed']}"]
+    ids = _batch_ids(m, c)
+    view = (f'<button type="button" class="link-btn" data-ids="{_e(json.dumps(ids))}" data-label="{_e(c["at"][:10])} 과거 회의 추가·변경 결정">'
+            f'목록에서 보기 ({len(ids)})</button>') if ids else ""
+    return (f'<div class="brief"><b>최근 변경</b> <span class="mono">{_e(c["at"][:10])}</span> · {_e(c["reason"])} · {" · ".join(_e(x) for x in parts)} '
+            f'{view} <button type="button" class="link-btn" data-goto="changes">변경 이력 탭</button></div>')
+
+
 def _changes_html(m):
     hist = m.get("changes") or []
-    lede = ("실행마다 직전 결과와 비교한 기록입니다. 새 회의 결정은 위에서 <span class=\"chip new\">신규</span>로 보이지만, "
-            "원본이 <b>과거 회의</b>를 다시 처리해 생긴 추가·변경·삭제(파서 개선, 잠정 → 종료본 교체, 범위 설정 변경)는 여기서만 알 수 있습니다. "
-            "최근 30일 안의 변경은 결정 목록에도 표시됩니다.")
+    help_ = _help("실행마다 직전 결과와 비교한 기록입니다. 새 회의 결정은 <span class=\"chip new\">신규</span>로 보이지만, "
+                  "원본이 <b>과거 회의</b>를 다시 처리해 생긴 추가·변경·삭제(파서 개선, 잠정 → 종료본 교체, 범위 설정 변경)는 여기서만 알 수 있습니다. "
+                  "최근 30일 안의 변경은 결정 목록에도 '과거 회의에 추가'·'원문·범위 변경'으로 표시됩니다. 최근 10번까지 보여줍니다.")
+    head = f'<div class="section-head"><h2>변경 이력</h2>{help_}</div>'
     if not hist:
-        return (f'<section id="changes"><h2>최근 변경 이력</h2><p class="lede">{lede}</p>'
-                '<p class="empty">아직 기록된 변경이 없습니다. 이 기능을 켠 뒤 결과가 처음 달라진 실행부터 남습니다.</p></section>')
-    rows = []
-    for c in hist[:5]:
-        nm = ", ".join(f'{x["meeting"]} {x["count"]}건' for x in c["new_meetings"]) or "—"
+        return (f'<section id="changes" class="tab-panel" data-panel="changes" hidden>{head}'
+                '<p class="empty">아직 기록된 변경이 없습니다. 결과가 처음 달라진 실행부터 남습니다.</p></section>')
+    batches = []
+    for c in hist[:10]:
         k = c["counts"]
-        rows.append(f'<tr><td class="mono">{_e(c["at"].replace("T", " ")[:16])} UTC</td><td>{_e(c["reason"])}</td><td>{_e(nm)}</td>'
-                    f'<td class="num">{k["added"]}</td><td class="num">{k["changed"]}</td><td class="num">{k["removed"]}</td></tr>')
-    items = hist[0]["items"]
-    detail = ""
-    if items:
-        live = {e["id"] for e in m["entries"]}
-        ids = [x["id"] for x in items if x["what"] != "removed" and x["id"] in live]
-        trs = "".join(
-            f'<tr><td>{WHAT[x["what"]]}{(" (" + ", ".join(FIELD_KO.get(f, f) for f in x["fields"]) + ")") if x["fields"] else ""}</td>'
-            f'<td class="mono">{_e(x["meeting"])}</td><td>{_e(x["type"])}</td><td>{_e({"agenda": "확정", "manual": "확정(수동)", "candidate": "후보"}[x["scope"]])}</td>'
-            f'<td>{_e(x["agenda"])}</td><td class="line">{_e(x["line"])}</td>'
-            f'<td class="mono small"><a href="{_e(x["url"])}" target="_blank" rel="noopener">{_e(x["id"])}</a></td></tr>'
-            for x in items[:100])
-        button = (f'<button type="button" class="reset" data-ids="{_e(json.dumps(ids))}" data-label="{_e(hist[0]["at"][:10])} 과거 회의 추가·변경 결정">'
-                  f'결정 목록에서 원문 보기 ({len(ids)}건)</button>') if ids else ""
-        detail = (f'<h3>가장 최근 묶음({_e(hist[0]["at"][:10])})의 과거 회의 변경 {len(items)}건</h3>{button}'
-                  f'<div class="table-scroll"><table class="changes"><thead><tr><th>변경</th><th>회의</th><th>구분</th><th>범위</th>'
-                  f'<th>Agenda</th><th>원문 첫 줄</th><th>id</th></tr></thead><tbody>{trs}</tbody></table></div>')
-    return f"""<section id="changes">
-  <h2>최근 변경 이력</h2>
-  <p class="lede">{lede}</p>
-  <div class="table-scroll"><table>
-    <thead><tr><th>실행 시각</th><th>이유</th><th>새 회의</th><th class="num">과거 회의 추가</th><th class="num">변경</th><th class="num">삭제</th></tr></thead>
-    <tbody>{"".join(rows)}</tbody>
-  </table></div>
-  {detail}
+        nm = ", ".join(f'{x["meeting"]} {x["count"]}건' for x in c["new_meetings"]) or "새 회의 없음"
+        summary = (f'<span class="mono">{_e(c["at"].replace("T", " ")[:16])} UTC</span> · {_e(c["reason"])} · {_e(nm)} · '
+                   f'과거 회의 추가 {k["added"]} · 변경 {k["changed"]} · 삭제 {k["removed"]}')
+        body = '<p class="small muted">과거 회의 변경 없음</p>'
+        if c["items"]:
+            ids = _batch_ids(m, c)
+            trs = "".join(
+                f'<tr><td>{WHAT[x["what"]]}{(" (" + ", ".join(FIELD_KO.get(f, f) for f in x["fields"]) + ")") if x["fields"] else ""}</td>'
+                f'<td class="mono">{_e(x["meeting"])}</td><td>{_e(x["type"])}</td><td>{_e({"agenda": "확정", "manual": "확정(수동)", "candidate": "후보"}[x["scope"]])}</td>'
+                f'<td>{_e(x["agenda"])}</td><td class="line">{_e(x["line"])}</td>'
+                f'<td class="mono small"><a href="{_e(x["url"])}" target="_blank" rel="noopener">{_e(x["id"])}</a></td></tr>'
+                for x in c["items"][:100])
+            button = (f'<button type="button" class="link-btn" data-ids="{_e(json.dumps(ids))}" data-label="{_e(c["at"][:10])} 과거 회의 추가·변경 결정">'
+                      f'결정 목록에서 원문 보기 ({len(ids)}건)</button>') if ids else ""
+            body = (f'{button}<div class="table-scroll"><table class="changes"><thead><tr><th>변경</th><th>회의</th><th>구분</th><th>범위</th>'
+                    f'<th>Agenda</th><th>원문 첫 줄</th><th>id</th></tr></thead><tbody>{trs}</tbody></table></div>')
+        batches.append(f'<details class="batch"><summary>{summary}</summary><div class="batch-body">{body}</div></details>')
+    return f"""<section id="changes" class="tab-panel" data-panel="changes" hidden>
+  {head}
+  <p class="lede">묶음을 펼치면 바뀐 결정과 원문 첫 줄이 나옵니다.</p>
+  <div class="batches">{"".join(batches)}</div>
 </section>"""
 
 
@@ -763,68 +839,110 @@ def render_body(m):
     topic_links = " · ".join(f'<a href="{_e(base)}by_topic/{_e(t["id"])}.md">{_e(t["label"])}</a>' for t in m["topics"])
     presets = "".join(f'<button type="button" data-preset="{_e(p)}">{_e(p)}</button>' for p in cfg.get("search_presets") or [])
     src = cfg["source"]
+    counts = {"ffs": len(m["ffs"]), "fg": len(m["fgs"]), "changes": len(m.get("changes") or [])}
+    tabs = [("summary", "요약", None), ("list", "결정 목록", None), ("agenda", "Agenda별", None),
+            ("ffs", "FFS 추적", counts["ffs"]), ("fg", "FG 목록", counts["fg"]), ("changes", "변경 이력", counts["changes"])]
+    tab_buttons = "".join(
+        f'<button type="button" role="tab" id="tab-{t}" data-tab="{t}" aria-controls="panel-{t}" aria-selected="false">{_e(label)}'
+        + (f' <span class="count">{n}</span>' if n is not None else "") + "</button>" for t, label, n in tabs)
     return f"""<main class="wrap">
 <header>
   <div class="topline">
     <p class="updated">원본 DB 마지막 업데이트 <b>{_e(m["updated_kst"] or "기록 없음")}</b>{CHECKED_AT}</p>
     <button type="button" class="theme" id="theme">테마: 자동</button>
   </div>
-  <span class="eyebrow">3GPP TSG RAN WG1 · Chair notes 기준 · CSI 관련 결정</span>
-  <h1>{TITLE}</h1>
-  <p class="lede">CSI 획득·보고, CSI-RS, codebook(PMI/CQI/RI), beam management(TCI, beam failure 등), SRS, AI/ML CSI(압축·예측)에 관한 RAN1 결정을 모았습니다.
-    <b>확정</b>은 CSI Agenda(설정 파일의 포함 목록)에 기록된 결정, <b>후보</b>는 다른 Agenda에서 CSI 키워드가 나온 결정이라 CSI가 아닐 수 있습니다.</p>
-  <dl class="facts">
-    <div><dt>최신 회의</dt><dd>{_e(latest)}{' <span class="chip cand">잠정</span>' if latest in m["provisional"] else ""}</dd></div>
-    <div><dt>추적 범위</dt><dd>{_e(meetings[0])} – {_e(short(latest))} ({len(meetings)}회)</dd></div>
-    <div><dt>확정 결정</dt><dd>{conf:,}</dd></div>
-    <div><dt>후보 결정</dt><dd>{cand:,}</dd></div>
-  </dl>
+  <div class="title-row">
+    <h1>{TITLE}</h1>
+    <dl class="facts">
+      <div><dt>최신 회의</dt><dd>{_e(latest)}{' <span class="chip cand">잠정</span>' if latest in m["provisional"] else ""}</dd></div>
+      <div><dt>추적 범위</dt><dd>{_e(short(meetings[0]))} – {_e(short(latest))} ({len(meetings)}회)</dd></div>
+      <div><dt>확정</dt><dd>{conf:,}</dd></div>
+      <div><dt>후보</dt><dd>{cand:,}</dd></div>
+    </dl>
+  </div>
+  <div class="lede-row"><p class="lede">CSI 획득·보고, CSI-RS, codebook, beam management, SRS, AI/ML CSI에 관한 RAN1 결정을 Chair notes 원문 그대로 모았습니다.</p>
+    {_help("<b>확정</b>은 CSI Agenda(설정 파일의 포함 목록)에 기록된 결정, <b>후보</b>는 다른 Agenda에서 CSI 키워드가 나온 결정이라 CSI가 아닐 수 있습니다. "
+           "기본 화면은 확정 Agreement만 보여주며, 숨긴 결정 수는 필터 줄 오른쪽 '숨김'에 항상 나옵니다. "
+           "결정 본문은 요약하지 않은 원문이고, 주제·진행 단계·구현 영향·⚠ 표시는 이 대시보드가 원문 단어로 붙인 것입니다.")}</div>
   {_alerts_html(m)}
   {notices}
 </header>
 
-<form class="filterbar" id="filters" onsubmit="return false" aria-label="표시할 결정 고르기">
-  <fieldset><legend>구분</legend>{types}<label class="sep" title="FFS 줄이 들어 있는 결정. 이후 회의에서 해소됐는지는 'FFS 추적'에서 후보로 확인합니다."><input type="checkbox" id="g-ffs"> FFS 있는 결정만</label></fieldset>
-  <fieldset><legend>범위</legend>{_check("data-scope", "confirmed", "확정", True)}{_check('data-scope id="g-cand"', "candidate", "후보 (키워드 일치)", False)}</fieldset>
-  <span class="state small" id="state" aria-live="polite"></span>
-</form>
+<div class="sticky">
+  <nav class="tabs" role="tablist" aria-label="화면 고르기">{tab_buttons}</nav>
+  <form class="filterbar" id="filters" onsubmit="return false" aria-label="표시할 결정 고르기">
+    <fieldset><legend>구분</legend>{types}<label class="sep" title="FFS 줄이 들어 있는 결정. 이후 회의에서 해소됐는지는 'FFS 추적' 탭에서 후보로 확인합니다."><input type="checkbox" id="g-ffs"> FFS 있는 결정만</label></fieldset>
+    <fieldset><legend>범위</legend>{_check("data-scope", "confirmed", "확정", True)}{_check('data-scope id="g-cand"', "candidate", "후보 (키워드 일치)", False)}</fieldset>
+    <span class="state small" id="state" aria-live="polite"></span>
+  </form>
+</div>
 
+<div class="tab-panel" id="panel-summary" data-panel="summary" role="tabpanel" aria-labelledby="tab-summary">
 <section>
-  <h2>직전 회의 대비 <span class="mono muted">{_e(short(prev) if prev else "-")} → {_e(short(latest))}</span></h2>
-  <p class="lede">{_e(latest)}의 결정 수와 직전 회의 대비 증감입니다. {_e(latest)} 결정은 모두 이번 회의의 신규 결정이며, 목록에서 <span class="chip new">신규</span>로 표시합니다. 카드를 누르면 해당 신규 결정을 보여줍니다.</p>
+  <div class="section-head"><h2>직전 회의 대비 <span class="mono muted">{_e(short(prev) if prev else "-")} → {_e(short(latest))}</span></h2>
+    {_help(f"{_e(latest)}의 주제별 결정 수와 직전 회의 대비 증감입니다. {_e(latest)} 결정은 모두 이번 회의의 신규 결정이며 목록에서 <span class='chip new'>신규</span>로 표시합니다. 카드를 누르면 그 신규 결정을 결정 목록 탭에서 보여줍니다.")}</div>
   <div class="cards" id="delta"></div>
   <p class="small muted" id="latest-hidden"></p>
+  {_change_brief(m)}
 </section>
 
-{_changes_html(m)}
-
 <section>
-  <h2>회의별 · 주제별 결정 수</h2>
+  <div class="section-head"><h2>회의별 · 주제별 결정 수</h2>
+    {_help("막대 조각에 올리면 건수, 누르면 그 회의·주제의 결정을 결정 목록 탭에서 보여줍니다. 차트와 표의 회의별 숫자는 결정마다 하나인 <b>주된 주제</b>로 셉니다. "
+           "한 결정이 여러 주제에 걸치면(예: CSI-RS와 CSI 보고) 나머지는 <b>관련 주제</b>로 붙습니다. 표 맨 끝 '관련 포함' 열은 관련 주제까지 센 수라 합계가 전체보다 큽니다.")}</div>
   <div class="panel">
     <div class="legend">{"".join(f'<span><i class="swatch" style="background: var(--t-{_e(t["id"])})"></i>{_e(t["label"])}</span>' for t in m["topics"])}</div>
     <svg class="chart" id="chart" role="img"></svg>
-    <span class="small muted">막대 조각에 올리면 건수, 누르면 그 회의·주제의 결정 목록을 보여줍니다. 차트와 표의 회의별 숫자는 결정마다 하나인 <b>주된 주제</b>로 셉니다.
-      한 결정이 여러 주제에 걸치면(예: CSI-RS와 CSI 보고) 나머지는 <b>관련 주제</b>로 붙습니다. 표 맨 끝 '관련 포함' 열은 관련 주제까지 센 수라 합계가 전체보다 큽니다.</span>
   </div>
   <div class="table-scroll"><table>
     <thead><tr><th>주된 주제</th>{heads}<th class="num">합계</th><th class="num related" title="그 주제가 관련 주제로 붙은 결정 수 (전체 회의)">관련 포함</th></tr></thead><tbody id="topic-body"></tbody>
   </table></div>
 </section>
+</div>
 
-<section>
-  <h2>Agenda별 결정 수</h2>
-  <p class="lede">포함 Agenda는 번호가 아니라 '섹션 + Agenda 제목'으로 회의 간에 이어 붙였습니다. 번호가 바뀐 Agenda는 바뀐 과정을 함께 적었습니다.
-    위에서 '후보'를 켜면 키워드로 잡힌 결정이 많은 Agenda도 나옵니다.</p>
+<section id="list" class="tab-panel" data-panel="list" role="tabpanel" aria-labelledby="tab-list" hidden>
+  <div class="section-head"><h2>결정 목록</h2>
+    {_help("결정 본문은 Chair notes <b>원문 그대로</b>이며 요약하지 않았습니다(표는 표로, R1- 번호는 TDoc 링크로만 바꿔 보여줍니다). "
+           "띄어 쓰면 모두 포함(AND), <span class='mono'>|</span> 또는 대문자 <span class='mono'>OR</span>로 나누면 하나라도 포함(OR)된 결정을 찾습니다. "
+           "⚠ 표시: <b>수식 누락 의심</b>은 원본 추출에서 Word 수식(변수·기호)이 빠졌을 수 있다는 뜻, <b>색 표시 손실</b>은 색으로 표시된 추가·삭제를 알 수 없다는 뜻, "
+           "<b>변경은 TDoc에</b>는 실제 변경 내용이 TDoc에만 있다는 뜻입니다. 표시에 마우스를 올리면 설명이 나옵니다.")}</div>
+  <div class="panel search" role="search">
+    <input type="search" id="q" placeholder="예: CSI-RS | NZP, codebook OR PMI, beam failure" autocomplete="off" aria-label="결정 원문과 Agenda 제목에서 찾을 키워드">
+    <div class="filters">
+      <label>주제 <select id="f-topic"><option value="">전체</option></select></label>
+      <label>회의 <select id="f-meeting"><option value="">전체</option></select></label>
+      <label>Agenda <select id="f-agenda"><option value="">전체</option></select></label>
+      <button type="button" class="reset" id="reset">조건 지우기</button>
+    </div>
+    <details class="more-filters" id="more-filters"><summary>상세 필터 <span class="small muted" id="more-state"></span></summary>
+      <div class="filters">
+        <label>진행 단계 <select id="f-stage"><option value="">전체</option></select></label>
+        <label>구현 영향 <select id="f-impact"><option value="">전체</option></select></label>
+        <label>규격 조항 <select id="f-clause"><option value="">전체</option></select></label>
+        <label title="수식 누락 의심, 색 표시 변경 손실, 실제 변경이 TDoc에만 있는 결정"><input type="checkbox" id="f-warn"> 원문·TDoc 확인 필요만</label>
+        <label><input type="checkbox" id="f-word" checked> 단어 단위로만 찾기</label>
+      </div>
+      {f'<div class="presets">추천 검색어 {presets}</div>' if presets else ""}
+    </details>
+    <div class="summary-line" id="summary" aria-live="polite"></div>
+    <div class="results" id="results"></div>
+  </div>
+</section>
+
+<section class="tab-panel" data-panel="agenda" id="panel-agenda" role="tabpanel" aria-labelledby="tab-agenda" hidden>
+  <div class="section-head"><h2>Agenda별 결정 수</h2>
+    {_help("포함 Agenda는 번호가 아니라 '섹션 + Agenda 제목'으로 회의 간에 이어 붙였습니다. 번호가 바뀐 Agenda는 바뀐 과정을 함께 적었습니다. "
+           "필터 줄에서 '후보'를 켜면 키워드로 잡힌 결정이 많은 Agenda도 나옵니다. 숫자를 누르면 결정 목록 탭에서 그 결정을 보여줍니다.")}</div>
   <div class="table-scroll"><table>
     <thead><tr><th>Agenda</th>{heads}<th class="num">합계</th></tr></thead><tbody id="agenda-body"></tbody>
   </table></div>
 </section>
 
-<section id="ffs">
-  <h2>FFS 추적</h2>
-  <p class="lede">확정 결정에 남은 FFS(For Further Study) 줄입니다. 같은 포함 Agenda의 <b>이후 회의</b> 결정 중 단어가 많이 겹치는 것을
-    '후속 결정 후보'로 붙였습니다. 단어 겹침으로 고른 후보일 뿐 FFS가 해소됐다는 판정이 아니니 원문으로 확인하세요.
-    '후속 결정 후보가 없는 FFS만'을 켜면 아직 아무 후속 논의도 보이지 않는 미결 항목만 남습니다.</p>
+<section id="ffs" class="tab-panel" data-panel="ffs" role="tabpanel" aria-labelledby="tab-ffs" hidden>
+  <div class="section-head"><h2>FFS 추적</h2>
+    {_help("확정 결정에 남은 FFS(For Further Study) 줄입니다. 같은 포함 Agenda의 <b>이후 회의</b> 결정 중 단어가 많이 겹치는 것을 '후속 결정 후보'로 붙였습니다. "
+           "단어 겹침으로 고른 후보일 뿐 FFS가 해소됐다는 판정이 아니니 원문으로 확인하세요. "
+           "'후속 결정 후보가 없는 FFS만'을 켜면 아직 아무 후속 논의도 보이지 않는 미결 항목만 남습니다. 위 필터 줄(구분·범위)은 이 탭에 적용되지 않습니다.")}</div>
   <div class="panel">
     <div class="filters">
       <label>주된 주제 <select id="ffs-topic"><option value="">전체</option></select></label>
@@ -836,10 +954,10 @@ def render_body(m):
   </div>
 </section>
 
-<section id="fg">
-  <h2>UE feature (FG) 목록</h2>
-  <p class="lede">확정 범위의 UE feature 결정 표에서 FG 번호·이름과, 그 FG를 정의·수정한 결정을 모았습니다(HW 사양 체크리스트용).
-    원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없어 '표 내용'에는 지운 글자도 섞여 있을 수 있습니다. 최종 정의는 TDoc(FG 시트)으로 확인하세요.</p>
+<section id="fg" class="tab-panel" data-panel="fg" role="tabpanel" aria-labelledby="tab-fg" hidden>
+  <div class="section-head"><h2>UE feature (FG) 목록</h2>
+    {_help("확정 범위의 UE feature 결정 표에서 FG 번호·이름과, 그 FG를 정의·수정한 결정을 모았습니다(HW 사양 체크리스트용). "
+           "원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없어 '표 내용'에는 지운 글자도 섞여 있을 수 있습니다. 최종 정의는 TDoc(FG 시트)으로 확인하세요.")}</div>
   <div class="panel">
     <input type="search" id="fg-q" placeholder="FG 번호·이름으로 찾기 (예: 58-1, CSI prediction, 128 ports)" autocomplete="off" aria-label="FG 찾기">
     <div class="table-scroll"><table>
@@ -848,31 +966,7 @@ def render_body(m):
   </div>
 </section>
 
-<section id="list">
-  <h2>결정 목록</h2>
-  <div class="panel search" role="search">
-    <input type="search" id="q" placeholder="예: CSI-RS | NZP, codebook OR PMI, beam failure" autocomplete="off" aria-label="결정 원문과 Agenda 제목에서 찾을 키워드">
-    <div class="filters">
-      <label>주제 <select id="f-topic"><option value="">전체</option></select></label>
-      <label>회의 <select id="f-meeting"><option value="">전체</option></select></label>
-      <label>Agenda <select id="f-agenda"><option value="">전체</option></select></label>
-    </div>
-    <div class="filters">
-      <label>진행 단계 <select id="f-stage"><option value="">전체</option></select></label>
-      <label>구현 영향 <select id="f-impact"><option value="">전체</option></select></label>
-      <label>규격 조항 <select id="f-clause"><option value="">전체</option></select></label>
-      <label title="수식 누락 의심, 색 표시 변경 손실, 실제 변경이 TDoc에만 있는 결정"><input type="checkbox" id="f-warn"> 원문·TDoc 확인 필요만</label>
-      <label><input type="checkbox" id="f-word" checked> 단어 단위로만 찾기</label>
-      <button type="button" class="reset" id="reset">조건 지우기</button>
-    </div>
-    {f'<div class="presets">추천 검색어 {presets}</div>' if presets else ""}
-    <div class="summary-line" id="summary" aria-live="polite"></div>
-    <div class="results" id="results"></div>
-  </div>
-  <p class="lede">결정 본문은 Chair notes <b>원문 그대로</b>이며 요약하지 않았습니다(표는 표로, R1- 번호는 TDoc 링크로만 바꿔 보여줍니다).
-    주제·진행 단계·구현 영향·규격 조항·신규·후보·⚠ 표시는 이 대시보드가 원문 단어로 붙인 것입니다.
-    띄어 쓰면 모두 포함(AND), <span class="mono">|</span> 또는 대문자 <span class="mono">OR</span>로 나누면 하나라도 포함(OR)된 결정을 찾습니다.</p>
-</section>
+{_changes_html(m)}
 
 <footer>원본: <a href="https://github.com/{_e(src["repo"])}">{_e(src["repo"])}</a> (브랜치 <span class="mono">{_e(src["branch"])}</span>)의 DB를 읽기만 합니다.
   주제별 마크다운 리포트: {topic_links}. 범위·주제 규칙은 config/csi_scope.yaml에 있으며, 이 페이지는 scripts/build.py가 자동으로 생성합니다.</footer>
