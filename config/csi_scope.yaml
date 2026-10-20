@@ -139,6 +139,35 @@ topics:
     patterns: ['\bCSI-RS\b', '\bNZP\b', '\bCSI-IM\b', '\bTRS\b', '(?i)tracking RS', '(?i)\bRS for (finer )?time/frequency tracking', '\bCMR\b', '\bIMR\b']
 fallback_topic: {id: other, label: "기타 CSI"}
 
+# ── 4-1. 진행 단계 ──────────────────────────────────────────────────
+# 결정이 기록된 Agenda 경로(섹션 포함)의 제목으로 판정합니다. 위에서부터 처음 맞는 단계. 're:'는 정규식(대소문자 무시, 전체 일치).
+# 단말 구현에 바로 반영할 것(규격 작업·유지보수 CR·UE feature)과 방향만 정해진 것(Study)을 구분하는 용도입니다.
+stages:
+  - {id: fg,    label: "UE features (FG)", match: ["re:.*\\bUE features\\b.*"]}
+  - {id: maint, label: "유지보수 (CR)",     match: ["re:maintenance\\b.*", "re:pre-rel-\\d+ .*maintenance.*"]}
+  - {id: study, label: "Study",            match: ["re:.*\\bstudy\\b.*"]}
+  - {id: wi,    label: "규격 작업 (WI)",    match: ["re:release \\d+ nr", "re:rel-\\d+ nr"]}
+fallback_stage: {id: other, label: "기타"}
+
+# ── 4-2. 구현 영향 태그 ─────────────────────────────────────────────────
+# 원문(+FFS)에 패턴이 하나라도 있으면 태그가 붙습니다(여러 개 가능). 단말 알고리즘·HW 담당자가 거르는 용도입니다.
+impact_tags:
+  - id: timeline
+    label: "처리 시간·CPU"
+    patterns: ['(?i)\btimeline', '(?i)processing time', '\bCPU\b', '\bAPU\b', '\bAIMLPU\b', '(?i)occupation time', '(?i)occupancy', "\\bZ'", '\bZ\b']
+  - id: capability
+    label: "UE capability·FG"
+    patterns: ['(?i)UE capabilit', '\bFGs?\b', '(?i)feature group', '(?i)UE feature', '(?i)reported as UE capability']
+  - id: dimension
+    label: "포트·자원·레이어 수"
+    patterns: ['(?i)(max(imum)?|number of|up to|total)\s+(\S+\s+){0,3}(ports?|resources?|layers?|beams?|TRPs?|panels?)', '(?i)\b\d+\s*(CSI-RS\s+)?ports\b']
+  - id: complexity
+    label: "메모리·복잡도"
+    patterns: ['(?i)\bmemory\b', '(?i)\bbuffer', '(?i)complexity', '(?i)storage']
+  - id: measure
+    label: "측정·보고량"
+    patterns: ['\bL1-RSRP\b', '\bL1-SINR\b', '(?i)reportQuantity', '(?i)report quantit', '\bCQI\b', '\bPMI\b', '\bRI\b', '\bCRI\b', '\bSSBRI\b']
+
 # ── 5. 알림 ─────────────────────────────────────────────────────────
 # 결과가 달라진 실행(새 회의, 과거 회의 추가·변경·삭제, 범위 설정 변경)마다 GitHub Issue를 하나 만듭니다.
 # 저장소를 Watch(All Activity 또는 Custom → Issues)한 사람에게 메일이 갑니다.

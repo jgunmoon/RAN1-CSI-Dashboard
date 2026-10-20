@@ -7,7 +7,7 @@
 
 ## RAN1#126bis — 5건
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:003` · 🆕 신규
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:003` · 🆕 신규 · Study
 
 > For 6GR CSI-RS, for discussion purpose of CSI-RS frequency domain behavior,
 > - In frequency domain,
@@ -16,14 +16,14 @@
 
 출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:004` · 🆕 신규
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:004` · 🆕 신규 · Study
 
 > Support PN sequence with QPSK modulation as the 6GR CSI-RS sequence
 > - Note: whether other sequence type is supported for certain usages (e.g., PN with Pi/2-BPSK modulation for sensing) is to be discussed separately in corresponding agendas
 
 출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:016` · 🆕 신규
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:016` · 🆕 신규 · Study
 
 > - Send an LS to RAN4 requesting guidance on whether there is an update on the limit for CSI-RS power boosting compared with R1-103331.
 >   - The LS will include RAN1 agreements on simulation assumptions and candidate CDM types in the Appendix
@@ -31,7 +31,11 @@
 
 출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:021` · 🆕 신규
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:021` · 🆕 신규 · Study
+
+구현 영향: 포트·자원·레이어 수
+
+> ⚠️ 수식 누락 의심 — 원본 추출에서 Word 수식(변수·기호)이 빠졌을 수 있습니다. Chair notes 원문으로 확인하세요.
 
 > For the evaluation of precoded CSI-RS:
 > - For the benchmark:
@@ -44,7 +48,7 @@
 
 출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.3` Other aspects · `RAN1#126bis:10.5.3.3:007` · 🆕 신규
+**Agreement** · `10.5.3.3` Other aspects · `RAN1#126bis:10.5.3.3:007` · 🆕 신규 · Study
 
 > Study and evaluate the following assistance information for sub use case 1B
 > - Received power difference between UE Rx ports or port groups based on measurement on CSI-RS, and/or NW side spatial domain covariance matrix information
@@ -57,26 +61,30 @@
 
 ## RAN1#126 — 10건
 
-**Agreement** · `9.2` NR MIMO Phase 6 · `RAN1#126:9.2:004`
+**Agreement** · `9.2` NR MIMO Phase 6 · `RAN1#126:9.2:004` · 규격 작업 (WI)
 
 > The MAC-CE in MSG4, when UE transition from IDLE/INACTIVE to CONNECTED mode, indicates whether aperiodic TRS is triggered or not.
 > - Note: The corresponding MAC-CE indication design is up to RAN2.
 
 출처: [Chair notes RAN1#126_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx) · [R1-2606465](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Docs/R1-2606465.zip) · `[126-R20-MIMO]`
 
-**Agreement** · `9.2` NR MIMO Phase 6 · `RAN1#126:9.2:008`
+**Agreement** · `9.2` NR MIMO Phase 6 · `RAN1#126:9.2:008` · 규격 작업 (WI)
 
 > For CSI-RS frequency-domain density = 1/8, confirm the following working assumption made in RAN1#123:
 
 출처: [Chair notes RAN1#126_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx) · [R1-2606466](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Docs/R1-2606466.zip) · `[126-R20-MIMO]`
 
-**WA** · `9.2` NR MIMO Phase 6 · `RAN1#126:9.2:009`
+**WA** · `9.2` NR MIMO Phase 6 · `RAN1#126:9.2:009` · 규격 작업 (WI)
+
+구현 영향: 포트·자원·레이어 수
 
 >   - K=2 24-port NZP CSI-RS resources in a resource set aggregating 48 CSI-RS ports
 
 출처: [Chair notes RAN1#126_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx) · [R1-2606466](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Docs/R1-2606466.zip) · `[126-R20-MIMO]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126:10.5.3.1:003`
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126:10.5.3.1:003` · Study
+
+구현 영향: 포트·자원·레이어 수
 
 > - On defining the CSI-RS pattern in M1 slots and M2 RBs, support both M1 and M2 can be larger than or equal to 1
 >   - For M1,
@@ -85,11 +93,13 @@
 >     - FFS value of X
 >   - FFS for M2
 
-남은 FFS 2건
+FFS 2줄
 
 출처: [Chair notes RAN1#126_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx) · `[126-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126:10.5.3.1:005`
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126:10.5.3.1:005` · Study
+
+구현 영향: 포트·자원·레이어 수
 
 > On the design of CDM group size and type for 6G CSI-RS, study and evaluate the following detailed candidates in addition to the ones supported in NR
 > - For Option 2-2: Larger CDM size
@@ -109,7 +119,7 @@
 
 출처: [Chair notes RAN1#126_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx) · `[126-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126:10.5.3.1:006`
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126:10.5.3.1:006` · Study
 
 > For CSI-RS sequence in 6G, take the NR PN sequence and mapping as the baseline for evaluation, further study the following aspects
 > - How to achieve low-PAPR for pre-coded CSI-RS by sequence and/or mapping, compared to NR PN sequence and its mapping
@@ -119,7 +129,7 @@
 
 출처: [Chair notes RAN1#126_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx) · `[126-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126:10.5.3.1:007`
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126:10.5.3.1:007` · Study
 
 > For 6G CSI-RS, study the following options to address the potential PAPR issue caused by precoded CSI-RS
 > - Option 1: BS implementation-based approach, e.g., use UE-transparent CDM-specific small cyclic shifts, or use small CDM group size
@@ -130,7 +140,7 @@
 
 출처: [Chair notes RAN1#126_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx) · `[126-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126:10.5.3.1:010`
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126:10.5.3.1:010` · Study
 
 > For CSI-RS sharing Use case 2: Sharing a common set or subset of REs among CSI-RS with different frequency densities, study the following alternatives for discussing frequency density common sequence mapping
 > - Alt 1: Generate sequence for higher frequency density first, from which extract lower frequency density sequence
@@ -138,7 +148,9 @@
 
 출처: [Chair notes RAN1#126_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx) · `[126-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126:10.5.3.1:011`
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126:10.5.3.1:011` · Study
+
+구현 영향: 포트·자원·레이어 수
 
 > - For CSI-RS sharing Use case 1: Sharing a common set or subset of REs among CSI-RS with different number of ports, taking Level 1 (Sharing granularity is CDM group level) as baseline,
 > - Study Level 2 (Sharing granularity can be smaller than a CDM group), with the following sub-levels
@@ -147,7 +159,9 @@
 
 출처: [Chair notes RAN1#126_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx) · `[126-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126:10.5.3.1:014`
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126:10.5.3.1:014` · Study
+
+구현 영향: 메모리·복잡도
 
 > For 6GR CSI-RS, study CSI-RS design to achieve low CSI-RS overhead considering the following possible directions
 > - Direction 1: Sparse CSI-RS in frequency/spatial domain
@@ -165,39 +179,45 @@
 
 ## RAN1#125 — 10건
 
-**Conclusion** · `9.2` NR MIMO Phase 6 · `RAN1#125:9.2:004`
+**Conclusion** · `9.2` NR MIMO Phase 6 · `RAN1#125:9.2:004` · 규격 작업 (WI)
 
 > For early TRS when UE transition from IDLE/INACTIVE to CONNECTED mode, there is no RAN1 consensus to support that UE additionally reports via MSG3 the number of TRS bursts that the UE needs.
 > Note: Number of triggered TRS burst is up to network.
 
 출처: [Chair notes RAN1#125_eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Inbox/Chair_notes/Chair%20notes%20RAN1%23125_eom.docx) · [R1-2603720](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Docs/R1-2603720.zip) · `[125-R20-MIMO]`
 
-**Agreement** · `9.2` NR MIMO Phase 6 · `RAN1#125:9.2:006`
+**Agreement** · `9.2` NR MIMO Phase 6 · `RAN1#125:9.2:006` · 규격 작업 (WI)
+
+구현 영향: 포트·자원·레이어 수
 
 > For K NZP CSI-RS resources for 48/64/128 CSI-RS ports aggregation, configured with density = 1/3, 1/4, 1/6 or 1/8:
 > - The RB allocation of the NZP CSI-RS resources in frequency domain can only be either up to two consecutive RBs or uniform RB allocations.
 
 출처: [Chair notes RAN1#125_eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Inbox/Chair_notes/Chair%20notes%20RAN1%23125_eom.docx) · [R1-2603723](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Docs/R1-2603723.zip) · `[125-R20-MIMO]`
 
-**Agreement** · `9.2` NR MIMO Phase 6 · `RAN1#125:9.2:009`
+**Agreement** · `9.2` NR MIMO Phase 6 · `RAN1#125:9.2:009` · 규격 작업 (WI)
+
+구현 영향: 포트·자원·레이어 수
 
 > The K NZP CSI-RS resources for 48/64/128 CSI-RS ports aggregation, configured with density = 1/3, 1/4, 1/6 or 1/8, should follow Rel-19 time-domain restriction, i.e., the K NZP CSI-RS resources should be allocated in one or two consecutive slots.
 
 출처: [Chair notes RAN1#125_eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Inbox/Chair_notes/Chair%20notes%20RAN1%23125_eom.docx) · [R1-2605114](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Docs/R1-2605114.zip) · `[125-R20-MIMO]`
 
-**Agreement** · `9.2` NR MIMO Phase 6 · `RAN1#125:9.2:011`
+**Agreement** · `9.2` NR MIMO Phase 6 · `RAN1#125:9.2:011` · 규격 작업 (WI)
+
+> ⚠️ 수식 누락 의심 — 원본 추출에서 Word 수식(변수·기호)이 빠졌을 수 있습니다. Chair notes 원문으로 확인하세요.
 
 > The RRC-configured RB-level offset(s) for K NZP CSI-RS resources configured with density  = 1/3, 1/4, 1/6 or 1/8 is configured per NZP CSI-RS resource, and candidate values of the RRC-configured RB-level offset(s) are .
 
 출처: [Chair notes RAN1#125_eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Inbox/Chair_notes/Chair%20notes%20RAN1%23125_eom.docx) · [R1-2605114](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Docs/R1-2605114.zip) · `[125-R20-MIMO]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#125:10.5.3.1:008`
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#125:10.5.3.1:008` · Study
 
 > For RE locations of CDM groups in 6GR CSI-RS pattern design, support Option 1-1: Localized CDM group similar to 5G NR, where one CDM group contains adjacent REs.
 
 출처: [Chair notes RAN1#125_eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Inbox/Chair_notes/Chair%20notes%20RAN1%23125_eom.docx) · `[125-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#125:10.5.3.1:009`
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#125:10.5.3.1:009` · Study
 
 > For OCC sequence used in a 6GR CSI-RS CDM group, study the following options
 > - Option 1: Walsh sequence
@@ -205,7 +225,7 @@
 
 출처: [Chair notes RAN1#125_eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Inbox/Chair_notes/Chair%20notes%20RAN1%23125_eom.docx) · `[125-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#125:10.5.3.1:011`
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#125:10.5.3.1:011` · Study
 
 > For the study of 6GR CSI-RS pattern in single or multiple slots/RBs in time/frequency domain
 > - The number of slots for defining CSI-RS pattern is M1, and the number of RBs for defining CSI-RS pattern is M2. Study the following further aspects in this case
@@ -221,11 +241,13 @@
 >   - Study details for M1 and M2, including both the upper bound and detailed values
 > - Note: for RAN1 study purpose, whether the CSI-RS pattern mentioned above is from NW or UE perspective is a separate discussion
 
-남은 FFS 1건
+FFS 1줄
 
 출처: [Chair notes RAN1#125_eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Inbox/Chair_notes/Chair%20notes%20RAN1%23125_eom.docx) · `[125-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#125:10.5.3.1:012`
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#125:10.5.3.1:012` · Study
+
+구현 영향: 포트·자원·레이어 수
 
 > For CSI-RS sharing use case 1 (sharing a common set or subset of REs among CSI-RS with different number of ports) in 6GR, study the following aspects
 > - Level 1: Sharing granularity is CDM group level
@@ -233,13 +255,13 @@
 
 출처: [Chair notes RAN1#125_eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Inbox/Chair_notes/Chair%20notes%20RAN1%23125_eom.docx) · `[125-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#125:10.5.3.1:013`
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#125:10.5.3.1:013` · Study
 
 > For CSI-RS sharing use case 2 (Sharing a common set or subset of REs among CSI-RS with different frequency densities), study whether/how to achieve frequency density common sequence mapping.
 
 출처: [Chair notes RAN1#125_eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Inbox/Chair_notes/Chair%20notes%20RAN1%23125_eom.docx) · `[125-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.3` Other aspects · `RAN1#125:10.5.3.3:001`
+**Agreement** · `10.5.3.3` Other aspects · `RAN1#125:10.5.3.3:001` · Study
 
 > Study and evaluate the following options on the candidate RS(s) for finer time and frequency tracking for connected and/or idle mode, if applicable
 > - Option 1: Dedicated RS for finer time and frequency tracking
@@ -268,18 +290,22 @@
 
 ## RAN1#124bis — 8건
 
-**Agreement** · `9.2` NR MIMO Phase 6 · `RAN1#124bis:9.2:005`
+**Agreement** · `9.2` NR MIMO Phase 6 · `RAN1#124bis:9.2:005` · 규격 작업 (WI)
+
+구현 영향: 포트·자원·레이어 수
 
 > For CSI-RS frequency-domain density ρ = 1/3, 1/4, 1/6 or 1/8 to the K NZP CSI-RS resources aggregating 48/64/128 CSI-RS ports, support RRC-configured RB-level offset(s) to indicate the occupied RBs of NZP CSI-RS resources.
 > - FFS: Candidate value(s) of the RB-level offset
 > - FFS: Whether to introduce any RB location restriction for the K aggregated NZP CSI-RS resources.
 > - FFS: Whether the RB-level offset(s) is configured per NZP CSI-RS resource or configured per NZP CSI-RS resource set.
 
-남은 FFS 3건
+FFS 3줄
 
 출처: [Chair notes RAN1#124bis_eom5](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Inbox/Chair_notes/Chair%20notes%20RAN1%23124bis_eom5.docx) · [R1-2602829](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Docs/R1-2602829.zip) · `[124b-R20-MIMO]`
 
-**Agreement** · `9.2` NR MIMO Phase 6 · `RAN1#124bis:9.2:006`
+**Agreement** · `9.2` NR MIMO Phase 6 · `RAN1#124bis:9.2:006` · 규격 작업 (WI)
+
+구현 영향: 포트·자원·레이어 수
 
 > For K NZP CSI-RS resources for 48/64/128 CSI-RS ports aggregation, configured with density = 1/3, 1/4, 1/6 or 1/8,
 > - Study and decide in RAN1#125 whether to introduce the frequency-domain restriction of the occupied RBs of the NZP CSI-RS resources, e.g.,
@@ -290,7 +316,7 @@
 
 출처: [Chair notes RAN1#124bis_eom5](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Inbox/Chair_notes/Chair%20notes%20RAN1%23124bis_eom5.docx) · [R1-2602829](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Docs/R1-2602829.zip) · `[124b-R20-MIMO]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#124bis:10.5.3.1:008`
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#124bis:10.5.3.1:008` · Study
 
 > 6GR CSI-RS pattern is defined as aggregation of CDM groups, for which study the following aspects
 > - Whether CSI-RS pattern is defined on single or multiple slots/RBs in time/frequency domain
@@ -314,7 +340,7 @@
 
 출처: [Chair notes RAN1#124bis_eom5](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Inbox/Chair_notes/Chair%20notes%20RAN1%23124bis_eom5.docx) · `[124b-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.3` Other aspects · `RAN1#124bis:10.5.3.3:001`
+**Agreement** · `10.5.3.3` Other aspects · `RAN1#124bis:10.5.3.3:001` · Study
 
 > Study and evaluate the following parameters and candidate values to determine the frequency domain structure of RS for finer time/frequency tracking for both connected and idle modes
 > - Minimum Bandwidth: candidate values {partial BW (please clarify) of the BWP, full BW of the BWP}.
@@ -322,19 +348,19 @@
 
 출처: [Chair notes RAN1#124bis_eom5](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Inbox/Chair_notes/Chair%20notes%20RAN1%23124bis_eom5.docx) · `[124b-R20-6GR-Other Aspects related to CSI]`
 
-**Agreement** · `10.5.3.3` Other aspects · `RAN1#124bis:10.5.3.3:002`
+**Agreement** · `10.5.3.3` Other aspects · `RAN1#124bis:10.5.3.3:002` · Study
 
 > Study single-port and multi-port RS for finer time/frequency tracking.
 
 출처: [Chair notes RAN1#124bis_eom5](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Inbox/Chair_notes/Chair%20notes%20RAN1%23124bis_eom5.docx) · `[124b-R20-6GR-Other Aspects related to CSI]`
 
-**Agreement** · `10.5.3.3` Other aspects · `RAN1#124bis:10.5.3.3:003`
+**Agreement** · `10.5.3.3` Other aspects · `RAN1#124bis:10.5.3.3:003` · Study
 
 > - Study and evaluate the mismatch and impact on performance, if any, between QCL parameters of the RS for finer time/frequency tracking and the target RSs/Channels.
 
 출처: [Chair notes RAN1#124bis_eom5](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Inbox/Chair_notes/Chair%20notes%20RAN1%23124bis_eom5.docx) · `[124b-R20-6GR-Other Aspects related to CSI]`
 
-**Agreement** · `10.5.3.3` Other aspects · `RAN1#124bis:10.5.3.3:004`
+**Agreement** · `10.5.3.3` Other aspects · `RAN1#124bis:10.5.3.3:004` · Study
 
 > Study and evaluate the following parameters and candidate values to determine the time domain factors of the RS for finer time/frequency tracking for both connected and idle modes
 > - Time domain behaviour:
@@ -351,7 +377,7 @@
 
 출처: [Chair notes RAN1#124bis_eom5](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Inbox/Chair_notes/Chair%20notes%20RAN1%23124bis_eom5.docx) · `[124b-R20-6GR-Other Aspects related to CSI]`
 
-**Agreement** · `10.5.3.3` Other aspects · `RAN1#124bis:10.5.3.3:005`
+**Agreement** · `10.5.3.3` Other aspects · `RAN1#124bis:10.5.3.3:005` · Study
 
 > Regarding the frequency domain density for RS for finer time/frequency tracking for both connected and idle modes, at least the following candidate values are considered for study and evaluation
 > - x∈{2,3,4,6,12}.
@@ -362,20 +388,22 @@
 
 ## RAN1#124 — 5건
 
-**Conclusion** · `9.2.2` Enhancing DL CSI acquisition · `RAN1#124:9.2.2:001`
+**Conclusion** · `9.2.2` Enhancing DL CSI acquisition · `RAN1#124:9.2.2:001` · 규격 작업 (WI)
 
 > There is no RAN1 consensus to support periodic TRS triggered by a MAC-CE in MSG4 when UE transition from IDLE/INACTIVE to CONNECTED mode.
 
 출처: [Chair notes RAN1#124 - eom_03](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124/Inbox/Chair_notes/Chair%20notes%20RAN1%23124%20-%20eom_03.docx) · [R1-2600647](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124/Docs/R1-2600647.zip)
 
-**Agreement** · `9.2.2` Enhancing DL CSI acquisition · `RAN1#124:9.2.2:009`
+**Agreement** · `9.2.2` Enhancing DL CSI acquisition · `RAN1#124:9.2.2:009` · 규격 작업 (WI)
 
 > MSG4-triggered aperiodic TRS is QCLed with the SSB the UE identified during the initial access procedure, on QCL-Type C.
 > - FSS:  Whether to consider QCL Type-D when applicable.
 
 출처: [Chair notes RAN1#124 - eom_03](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124/Inbox/Chair_notes/Chair%20notes%20RAN1%23124%20-%20eom_03.docx) · [R1-2600648](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124/Docs/R1-2600648.zip)
 
-**Agreement** · `10.5.3.3` Other aspects · `RAN1#124:10.5.3.3:001`
+**Agreement** · `10.5.3.3` Other aspects · `RAN1#124:10.5.3.3:001` · Study
+
+구현 영향: 포트·자원·레이어 수
 
 > Adopt the following simulation assumptions for tracking RS evaluation
 > Table 1: LLS assumptions for T/F tracking
@@ -400,7 +428,7 @@
 
 출처: [Chair notes RAN1#124 - eom_03](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124/Inbox/Chair_notes/Chair%20notes%20RAN1%23124%20-%20eom_03.docx) · `[124-R20-6GR-Other Aspects related to CSI]`
 
-**Agreement** · `10.5.3.3` Other aspects · `RAN1#124:10.5.3.3:004`
+**Agreement** · `10.5.3.3` Other aspects · `RAN1#124:10.5.3.3:004` · Study
 
 > Study and evaluate at least the following aspects on RS for finer time/frequency tracking for both connected and idle modes
 > - Frequency domain factors
@@ -412,11 +440,13 @@
 > - Spatial domain factors
 >   - FFS: Details
 
-남은 FFS 1건
+FFS 1줄
 
 출처: [Chair notes RAN1#124 - eom_03](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124/Inbox/Chair_notes/Chair%20notes%20RAN1%23124%20-%20eom_03.docx) · `[124-R20-6GR-Other Aspects related to CSI]`
 
-**Agreement** · `10.5.3.3` Other aspects · `RAN1#124:10.5.3.3:005`
+**Agreement** · `10.5.3.3` Other aspects · `RAN1#124:10.5.3.3:005` · Study
+
+구현 영향: 메모리·복잡도
 
 > Considering at least the following aspects for the tracking RS design for finer time/frequency tracking
 > Set 1 (KPI):
@@ -430,23 +460,29 @@
 
 ## RAN1#123 — 3건
 
-**Agreement** · `10.2.2` Enhancing DL CSI acquisition · `RAN1#123:10.2.2:003`
+**Agreement** · `10.2.2` Enhancing DL CSI acquisition · `RAN1#123:10.2.2:003` · 규격 작업 (WI)
+
+> ⚠️ 수식 누락 의심 — 원본 추출에서 Word 수식(변수·기호)이 빠졌을 수 있습니다. Chair notes 원문으로 확인하세요.
 
 > For early TRS reception when UE transition from IDLE/INACTIVE to CONNECTED mode, at least support aperiodic TRS with up to  TRS burst(s) triggered by a MAC-CE in MSG4 of 4-Step RACH.
 > - FFS: The value of
 > - FFS: Whether to further support periodic TRS triggered by MSG4
 
-남은 FFS 2건
+FFS 2줄
 
 출처: [Chair notes RAN1#123 - eom3](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Inbox/Chair_notes/Chair%20notes%20RAN1%23123%20-%20eom3.docx) · [R1-2508520](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Docs/R1-2508520.zip)
 
-**Conclusion** · `10.2.2` Enhancing DL CSI acquisition · `RAN1#123:10.2.2:010`
+**Conclusion** · `10.2.2` Enhancing DL CSI acquisition · `RAN1#123:10.2.2:010` · 규격 작업 (WI)
+
+구현 영향: 포트·자원·레이어 수
 
 > There is no RAN1 consensus to support different frequency-domain densities configured to the K NZP CSI-RS resources in the same CSI-RS resource set for 48/64/128 CSI-RS ports aggregation.
 
 출처: [Chair notes RAN1#123 - eom3](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Inbox/Chair_notes/Chair%20notes%20RAN1%23123%20-%20eom3.docx) · [R1-2508520](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Docs/R1-2508520.zip)
 
-**Conclusion** · `10.2.2` Enhancing DL CSI acquisition · `RAN1#123:10.2.2:011`
+**Conclusion** · `10.2.2` Enhancing DL CSI acquisition · `RAN1#123:10.2.2:011` · 규격 작업 (WI)
+
+구현 영향: 포트·자원·레이어 수
 
 > There is no RAN1 consensus to support cyclic RB position in different transmission occasions for K NZP CSI-RS resources in the same CSI-RS resource set for 48/64/128 CSI-RS ports aggregation.
 
@@ -454,7 +490,7 @@
 
 ## RAN1#122bis — 1건
 
-**Agreement** · `10.2.2` Enhancing DL CSI acquisition · `RAN1#122bis:10.2.2:004`
+**Agreement** · `10.2.2` Enhancing DL CSI acquisition · `RAN1#122bis:10.2.2:004` · 규격 작업 (WI)
 
 > For early TRS reception when UE transition from IDLE/INACTIVE to CONNECTED mode, down-select one from the followings in RAN1#123 meeting:
 > - Alt-1: Support aperiodic TRS triggered by MSG4 only
@@ -465,21 +501,27 @@
 
 ## RAN1#122 — 4건
 
-**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122:9.2:044`
+**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122:9.2:044` · UE features (FG)
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 59. NR_MIMO_Ph5 | 59-2-3-3 | CJTC wideband PO report | 1. Configured maximum resolution (number of steps) for the quantization alphabet for CJTC WB PO reporting 2. Supported value of scaling factor X for OCPU calculation 3. Supported maximum slot duration for NTRP P/SP CSI-RS occasions being confined in | 2-35 | yes | n/a | CJTC PO report is not supported | Per band and per BC | n/a | n/a | n/a | Component 1 candidate values: {16, 32} Component 2 candidate values: {1, 2} Component 3 candidate values: {1, 2} Note：OCPU =X.NTRP | Optional with capability signalling |
 
 출처: [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) · [R1-2506606](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506606.zip)
 
-**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122:9.2:045`
+**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122:9.2:045` · UE features (FG)
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 59. NR_MIMO_Ph5 | 59-2-3-4 | CJTC subband PO report | 1. Configured maximum resolution (number of steps) for the quantization alphabet for CJTC SB PO reporting 2. Configured minimum subband size in resource blocks for the CJTC subband PO report 3. Supported value of scaling factor X for OCPU calculation 4. Supported maximum slot duration for NTRP P/SP CSI-RS occasions being confined in | 2-35 | yes | n/a | CJTC subband PO report is not supported | Per band and Per BC | n/a | n/a | n/a | Component 1 candidate values: {16, 32} Component 2 candidate values: {1, 2, 4, 8, 16} Component 3 candidate values: {1, 2} Component 4 candidate values: {1, 2} Note：OCPU =X.NTRP | Optional with capability signalling |
 
 출처: [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) · [R1-2506606](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506606.zip)
 
-**Agreement** · `10.2.2` Enhancing DL CSI acquisition · `RAN1#122:10.2.2:004`
+**Agreement** · `10.2.2` Enhancing DL CSI acquisition · `RAN1#122:10.2.2:004` · 규격 작업 (WI)
+
+구현 영향: 포트·자원·레이어 수
 
 > CSI-RS frequency-domain density ρ = 1/4 can be configured to the K NZP CSI-RS resources at least for the following cases:
 >   - K=2 24-port NZP CSI-RS resources in a CSI-RS resource set aggregating 48 CSI-RS ports
@@ -489,18 +531,20 @@
 > FFS: K=3 16-port NZP CSI-RS resources in a CSI-RS resource set aggregating 48 CSI-RS ports
 > Note: It’s not precluded that the frequency-domain density configured to the K NZP CSI-RS resources in the same CSI-RS resource set for 48/64/128 CSI-RS ports aggregation can be different
 
-남은 FFS 1건
+FFS 1줄
 
 출처: [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) · [R1-2506539](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506539.zip)
 
-**Agreement** · `10.2.2` Enhancing DL CSI acquisition · `RAN1#122:10.2.2:005`
+**Agreement** · `10.2.2` Enhancing DL CSI acquisition · `RAN1#122:10.2.2:005` · 규격 작업 (WI)
+
+구현 영향: 포트·자원·레이어 수
 
 > CSI-RS frequency-domain density ρ = 1/3 and 1/6 can be configured to the K NZP CSI-RS resources at least for the following cases:
 >   - K=3 16-port NZP CSI-RS resources in a CSI-RS resource set aggregating 48 CSI-RS ports
 > FFS: K=2 24-port NZP CSI-RS resources in a CSI-RS resource set aggregating 48 CSI-RS ports
 > Note: It’s not precluded that the frequency-domain density configured to the K NZP CSI-RS resources in the same CSI-RS resource set for 48 CSI-RS ports aggregation can be different
 
-남은 FFS 1건
+FFS 1줄
 
 출처: [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) · [R1-2506576](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506576.zip)
 
@@ -685,7 +729,7 @@
 
 ### RAN1#126 — 3건
 
-**Agreement** · `8.2` Maintenance on others · `RAN1#126:8.2:010` · 후보
+**Agreement** · `8.2` Maintenance on others · `RAN1#126:8.2:010` · 후보 · 유지보수 (CR)
 
 > For Rel-20 LBCA via switching, in terms of collision handling, when Rel-20 LBCA via switching is configured, only the following modification to the existing Rel-19 LBCA via switching collision is needed
 > - UE can receive SS/PBCH block, PDSCH, or PDCCH, or CSI-RS, or PRS configured by higher layers on the PCell in a set of symbols of a slot with bit value ‘1’, unless the set of symbols includes at least one symbol that is in the second duration.
@@ -695,7 +739,9 @@
 
 출처: [Chair notes RAN1#126_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx) · [R1-2606746](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Docs/R1-2606746.zip) · `[126-R19-AI 8.2]`
 
-**Agreement** · `10.5.5` Other physical layer signals, channels and procedure · `RAN1#126:10.5.5:004` · 후보
+**Agreement** · `10.5.5` Other physical layer signals, channels and procedure · `RAN1#126:10.5.5:004` · 후보 · Study
+
+> ⚠️ 수식 누락 의심 — 원본 추출에서 Word 수식(변수·기호)이 빠졌을 수 있습니다. Chair notes 원문으로 확인하세요.
 
 > For remote interference management for 6GR:
 > - At least support wireless-based RIM framework specified in 5G/NR as starting point for 6GR.
@@ -712,11 +758,11 @@
 >   - FFS the time-domain and frequency domain design of RIM RS, the sequence in RIM RS, and the configuration methods of RIM RS, time location of RIM RS.
 >   - FFS whether CSI-RS can be reused as RIM RS.
 
-남은 FFS 4건
+FFS 4줄
 
 출처: [Chair notes RAN1#126_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx) · `[126-R20-6GR-Other signals, channels, and procedures]`
 
-**Agreement** · `10.5.5` Other physical layer signals, channels and procedure · `RAN1#126:10.5.5:005` · 후보
+**Agreement** · `10.5.5` Other physical layer signals, channels and procedure · `RAN1#126:10.5.5:005` · 후보 · Study
 
 > For BS-to-BS CLI handling in 6GR, recommend to support information exchange between BSs and study the following candidate information exchange content:
 > - The slot configuration in TDD and time/frequency configuration of SBFD.
@@ -730,7 +776,7 @@
 
 ### RAN1#125 — 1건
 
-**Agreement** · `10.5.5` Other physical layer signals, channels and procedure · `RAN1#125:10.5.5:004` · 후보
+**Agreement** · `10.5.5` Other physical layer signals, channels and procedure · `RAN1#125:10.5.5:004` · 후보 · Study
 
 > For BS-to-BS CLI measurement in 6GR:
 > - RAN1 recommends to use CSI-RS and synchronization signal (e.g., 6GR SSB) to measure BS-to-BS CLI or Channel.
@@ -746,7 +792,9 @@
 
 ### RAN1#124bis — 1건
 
-**Agreement** · `10.5.2.2` Downlink transmission scheme(s) for downlink shared channels · `RAN1#124bis:10.5.2.2:007` · 후보
+**Agreement** · `10.5.2.2` Downlink transmission scheme(s) for downlink shared channels · `RAN1#124bis:10.5.2.2:007` · 후보 · Study
+
+구현 영향: 포트·자원·레이어 수
 
 > - Study PDSCH and RS for PDSCH based on the following additional SLS EVM assumptions for HST scenario
 >   - Note: Other parameters follow agreements on SLS EVM for non-HST scenario
@@ -767,7 +815,9 @@
 
 ### RAN1#124 — 1건
 
-**Agreement** · `8.3` Maintenance on Evolution of NR duplex operation: Sub-band full duplex (SBFD) · `RAN1#124:8.3:003` · 후보
+**Agreement** · `8.3` Maintenance on Evolution of NR duplex operation: Sub-band full duplex (SBFD) · `RAN1#124:8.3:003` · 후보 · 유지보수 (CR)
+
+규격: TS 38.211 7.3.1.5, TS 38.214 5.1.4, TS 38.214 7.4.1.1.2, TS 38.214 7.4.1.5, TS 38.214 7.4.1.2
 
 > Adopt the following TP to section 7.3.1.5 TS 38.211
 > ---
@@ -784,14 +834,16 @@
 
 ### RAN1#123 — 3건
 
-**Conclusion** · `8.6` Maintenance on Low-power wake-up signal and receiver for NR (LP-WUS/WUR) · `RAN1#123:8.6:008` · 후보
+**Conclusion** · `8.6` Maintenance on Low-power wake-up signal and receiver for NR (LP-WUS/WUR) · `RAN1#123:8.6:008` · 후보 · 유지보수 (CR)
 
 > - For RRC connected, for the case where measurement resource refers to CSI-RS/SSB or the measurement gap outside active time overlaps with LP-WUS MO, a UE may not monitor LP-WUS.
 > - No specification changes.
 
 출처: [Chair notes RAN1#123 - eom3](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Inbox/Chair_notes/Chair%20notes%20RAN1%23123%20-%20eom3.docx) · `[123-R19-LP-WUS]`
 
-**Agreement** · `9.2` UE features Batch B · `RAN1#123:9.2:013` · 후보
+**Agreement** · `9.2` UE features Batch B · `RAN1#123:9.2:013` · 후보 · UE features (FG)
+
+구현 영향: UE capability·FG
 
 > Introduce the following FG 66-10/11/12/13:
 > | 66-10 | Triggered HARQ-ACK codebook re-transmission for DCI format 1_3 with different SCS and/or different carrier type | 1. Support HARQ-ACK re-transmission from an earlier PUCCH slot based on the triggering information in DCI format 1_3 2. Support the related PHY priority handling in terms of HARQ-ACK codebook selection and the applicable PUCCH configuration (for a UE supporting two HARQ-ACK codebooks / PUCCH config in 66-8) 3. Supported minimum value M for the HARQ re-tx offset 4. Supported maximum value N for the HARQ re-tx offset | 66-1 |  |  |  | Per band | N/A | N/A | N/A | Candidate values for component 3 is: M = {-7, -5, …, 1} Candidate values for component 4 is: N= {4, 6, …, 24} Note: The minimum requirement for Component 3 and Component 4 of this FG is valid for HARQ CBs consisted of HARQ Processes with a single HARQ bit per HARQ Process ID For component 3 and 4, same values as for FG25-7 are reported (if the UE also report FG25-7) | Optional with capability signaling |
@@ -801,7 +853,7 @@
 
 출처: [Chair notes RAN1#123 - eom3](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Inbox/Chair_notes/Chair%20notes%20RAN1%23123%20-%20eom3.docx)
 
-**Agreement** · `11.5` Energy efficiency · `RAN1#123:11.5:002` · 후보
+**Agreement** · `11.5` Energy efficiency · `RAN1#123:11.5:002` · 후보 · Study
 
 > Include the following non-sleep states as 6G UE power consumption model.
 > - Other power state(s) is not precluded
@@ -814,27 +866,31 @@
 > | PDCCH + PDSCH | PDCCH + PDSCH. ACK/NACK in long PUCCH is modeled by UL power state. | 300 | 350 |
 > | UL | Long PUCCH or PUSCH or PRACH FFS: Power values for more Tx power levels, i.e., X4, X5, X6, X7 | 250 (0 dBm) X4 (10 dBm) X5 (15 dBm) X6 (20 dBm) 700 (23 dBm) X7 (26 dBm) | 350 (FFS Tx power level) |
 
-남은 FFS 1건
+FFS 1줄
 
 출처: [Chair notes RAN1#123 - eom3](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Inbox/Chair_notes/Chair%20notes%20RAN1%23123%20-%20eom3.docx) · `[123-R20-6GR-Energy efficiency]`
 
 ### RAN1#122bis — 3건
 
-**Agreement** · `8.3` Maintenance on Evolution of NR duplex operation: Sub-band full duplex (SBFD) · `RAN1#122bis:8.3:004` · 후보
+**Agreement** · `8.3` Maintenance on Evolution of NR duplex operation: Sub-band full duplex (SBFD) · `RAN1#122bis:8.3:004` · 후보 · 유지보수 (CR)
+
+규격: TS 38.213 11.1
 
 > Adopt the following TP in principle to Clause 11.1, TS 38.213.
 > | 11.1 Slot configuration <omitted text> If a UE would transmit a PRACH triggered by higher layers in a set of SBFD symbols and would receive a PDCCH, or a PDSCH, or a CSI-RS, or a DL PRS, the UE can select based on its implementation whether to either transmit the PRACH or receive the PDSCH, or the CSI-RS, or the DL PRSPL RS, or the PDCCH. <omitted text> |
 
 출처: [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · `[122bis-R19-SBFD]`
 
-**Agreement** · `8.3` Maintenance on Evolution of NR duplex operation: Sub-band full duplex (SBFD) · `RAN1#122bis:8.3:013` · 후보
+**Agreement** · `8.3` Maintenance on Evolution of NR duplex operation: Sub-band full duplex (SBFD) · `RAN1#122bis:8.3:013` · 후보 · 유지보수 (CR)
+
+규격: TS 38.213 11.1
 
 > Adopt the following TP in principle for section 11.1, TS 38.213:
 > | 11.1 Slot configuration <Unchanged parts omitted> For a set of symbols of a slot corresponding to a valid PRACH occasion and symbols before the valid PRACH occasion, as described in clause 8.1, the UE does not receive PDCCH, PDSCH, or CSI-RS in the slot if a reception would overlap with any symbol from the set of symbols. The UE does not expect the set of symbols of the slot to be indicated as downlink by tdd-UL-DL-ConfigurationCommon or tdd-UL-DL-ConfigurationDedicated. If a UE would transmit a PRACH triggered by higher layers in a set of SBFD symbols and would receive a PDCCH, or a PDSCH, or a CSI-RS, or a DL PRS, the UE can select based on its implementation whether to either transmit the PRACH or receive the PDSCH, or the CSI-RS, or the PL RS, or the PDCCH. |
 
 출처: [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · `[122bis-R19-SBFD]`
 
-**Conclusion** · `8.8` Maintenance on others · `RAN1#122bis:8.8:006` · 후보
+**Conclusion** · `8.8` Maintenance on others · `RAN1#122bis:8.8:006` · 후보 · 유지보수 (CR)
 
 > Confirm the following UE behavior as RAN1 common understanding:
 > - After UE receives the LTM CSC MAC CE, a capable UE can still measure P-CSI-RS and SP CSI-RS resources activated before the LTM CSC MAC-CE, even if these CSI-RS resources are not counted/defined as “active”.

@@ -98,3 +98,30 @@ def test_hidden_counts_are_shown_and_clickable(dash):
     dash.locator("#latest-hidden .hidden-btn", has_text="후보").click()
     assert dash.is_checked("#g-cand") and dash.input_value("#f-agenda") == "cand"
     assert count(dash) == int(re.search(r"후보 (\d+)건", hidden).group(1))
+
+
+def test_tables_links_and_warnings_in_decisions(dash):
+    dash.fill("#q", "58-3-1")
+    dash.wait_for_timeout(400)  # 검색창은 입력 후 150ms 뒤에 반영
+    first = dash.locator("#results .result").first
+    assert first.locator(".orig-table td").count() >= 4                 # '|' 줄이 표로
+    assert first.locator(".chip.stage").text_content() == "UE features (FG)"
+    dash.fill("#q", "R1-2607797")
+    dash.wait_for_timeout(400)
+    res = dash.locator("#results .result").first
+    assert "⚠ 실제 변경 내용은 TDoc에" in res.text_content()
+
+
+def test_extra_filters_ffs_and_fg_sections(dash):
+    dash.select_option("#f-stage", "study")
+    n_study = count(dash)
+    assert 0 < n_study and all(c == "Study" for c in dash.locator("#results .chip.stage").all_text_contents())
+    dash.click("#reset")
+    dash.select_option("#f-clause", "TS 38.214 5.2")
+    assert count(dash) >= 1
+    assert re.match(r"\d+줄", dash.text_content("#ffs-summary"))
+    dash.locator("#ffs .link-btn").first.click()                      # '원 결정 보기' → 목록에 그 결정 1건
+    assert count(dash) == 1
+    assert dash.locator("#fg-body tr").count() >= 1
+    dash.locator("#fg-body .link-btn").first.click()
+    assert count(dash) >= 1 and "정의·수정 결정" in dash.text_content("#summary")

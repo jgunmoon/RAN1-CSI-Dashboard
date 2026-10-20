@@ -102,7 +102,7 @@ button.cell { font: inherit; font-family: var(--font-data); font-variant-numeric
 button.cell:hover { background: var(--bg); }
 button.cell:disabled { color: var(--ink-3); text-decoration: none; cursor: default; background: none; }
 .search { display: grid; gap: 10px; }
-.search input[type=search] { width: 100%; box-sizing: border-box; font: inherit; font-size: 16px; padding: 10px 12px;
+.search input[type=search], #fg-q { width: 100%; box-sizing: border-box; font: inherit; font-size: 16px; padding: 10px 12px;
   border: 1px solid var(--rule); border-radius: 6px; background: var(--bg); color: var(--ink); }
 .filters { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; font-size: 13px; color: var(--ink-2); }
 .filters label { display: inline-flex; gap: 6px; align-items: center; max-width: 100%; min-width: 0; }
@@ -124,7 +124,22 @@ button.cell:disabled { color: var(--ink-3); text-decoration: none; cursor: defau
 .chip.cand { color: var(--cand); background: var(--cand-bg); border-color: transparent; }
 .label-orig { font-size: 11px; letter-spacing: .06em; color: var(--ink-3); font-family: var(--font-data); }
 .orig { margin: 0; padding: 10px 12px; border: 1px solid var(--rule); border-radius: 6px; background: var(--bg);
-  font-size: 13px; white-space: pre-line; overflow-wrap: anywhere; max-height: 16em; overflow-y: auto; }
+  font-size: 13px; overflow-wrap: anywhere; max-height: 20em; overflow-y: auto; display: grid; gap: 6px; min-width: 0; }
+.orig-text { white-space: pre-line; }
+.orig-table { overflow-x: auto; }
+.orig-table table { font-size: 12px; width: auto; min-width: 100%; background: var(--panel); }
+.orig-table td { border: 1px solid var(--rule); padding: 4px 6px; min-width: 6ch; max-width: 60ch; white-space: pre-line; }
+.meta { font-size: 12px; color: var(--ink-2); }
+.meta b { font-weight: 600; color: var(--ink-3); }
+.warn { font-size: 12px; color: var(--cand); background: var(--cand-bg); border-radius: 6px; padding: 4px 8px; }
+.chip.stage { border-style: dashed; }
+.ffs-item { border-top: 1px solid var(--rule); padding: 10px 0; display: grid; gap: 6px; }
+.ffs-line { font-size: 13px; padding: 6px 10px; border-left: 3px solid var(--accent); background: var(--bg); border-radius: 4px; overflow-wrap: anywhere; }
+.ffs-follow { font-size: 12px; color: var(--ink-2); display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.link-btn { font: inherit; font-size: 12px; padding: 0 8px; border: 1px solid var(--rule); border-radius: 999px; background: var(--panel);
+  color: var(--accent); cursor: pointer; }
+td.fg-row { font-size: 12px; color: var(--ink-2); max-width: 70ch; }
+td.fg-row summary { cursor: pointer; color: var(--accent); }
 .src { font-size: 12px; color: var(--ink-3); overflow-wrap: anywhere; }
 .kw { font-size: 12px; color: var(--cand); }
 .related-tags { font-size: 12px; color: var(--ink-3); }
@@ -176,7 +191,7 @@ SCRIPT = r"""
   function stateText() {
     const types = [...bar.querySelectorAll('input[data-type]:checked')].map(i => SHORT[i.value]);
     const scopes = [...bar.querySelectorAll('input[data-scope]:checked')].map(i => i.value === 'candidate' ? '후보' : '확정');
-    return `${scopes.join('+') || '범위 없음'} · ${types.join('·') || '구분 없음'}${$('g-ffs').checked ? ' · FFS 남은 것만' : ''}`;
+    return `${scopes.join('+') || '범위 없음'} · ${types.join('·') || '구분 없음'}${$('g-ffs').checked ? ' · FFS 있는 것만' : ''}`;
   }
   const countBy = (list, key) => { const o = {}; list.forEach(e => { const k = key(e); o[k] = (o[k] || 0) + 1; }); return o; };
   // 지금 체크 때문에 보이지 않는 결정 수 (구분별, 후보). 놓치지 않도록 상태 줄에 항상 보여주고, 누르면 그 체크를 켭니다.
@@ -343,14 +358,64 @@ SCRIPT = r"""
   opt(fAgenda, 'manual', '수동 포함 (include_ids)');
   opt(fAgenda, 'cand', '[후보 전체]');
   D.cand_agendas.forEach(c => opt(fAgenda, 'c' + c.key, `[후보] ${c.title}`));
+  const fStage = $('f-stage'), fImpact = $('f-impact'), fClause = $('f-clause'), fWarn = $('f-warn');
+  D.stages.forEach(s => opt(fStage, s.id, s.label));
+  D.impacts.forEach(t => opt(fImpact, t.id, t.label));
+  // 규격 조항: 사양 + 조항 앞 두 단계로 묶음 (예: TS 38.214 5.2). 많이 나온 순이 아니라 사양·조항 번호 순.
+  (() => {
+    const groups = {};
+    D.entries.forEach(e => new Set(e.clauses.map(c => { const [ts, spec, num] = c.split(' '); return `${ts} ${spec} ${num.split('.').slice(0, 2).join('.')}`; }))
+      .forEach(g => { groups[g] = (groups[g] || 0) + 1; }));
+    const key = g => g.split(/[ .]/).slice(1).map(x => x.padStart(4, '0')).join('.');
+    Object.keys(groups).sort((a, b) => key(a) < key(b) ? -1 : 1).forEach(g => opt(fClause, g, `${g} (${groups[g]})`));
+  })();
+  const extraOk = e => (!fStage.value || e.stage === fStage.value) && (!fImpact.value || e.impact.includes(fImpact.value))
+    && (!fClause.value || e.clauses.some(c => c === fClause.value || c.startsWith(fClause.value + '.')))
+    && (!fWarn.checked || e.warn.length > 0);
   const esc = t => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   const pattern = (t, word) => word ? `(?<![A-Za-z0-9])${esc(t)}(?![A-Za-z0-9])` : esc(t);
   function highlight(node, text, re) {
-    if (!re) { node.textContent = text; return; }
+    if (!re) { node.append(text); return; }
     let last = 0;
     for (const m of text.matchAll(re)) { if (!m[0]) continue; node.append(text.slice(last, m.index), el('mark', null, m[0])); last = m.index + m[0].length; }
     node.append(text.slice(last));
   }
+  // 원문의 R1- 번호는 3GPP FTP 링크로 (회의 폴더는 원본 근거 TDoc 번호 범위로 추정, 드물게 403이면 근거 TDoc·Chair notes 링크 사용)
+  function inline(node, text, re, tdocs) {
+    let last = 0;
+    for (const m of text.matchAll(/\bR1-\d{7}\b/g)) {
+      if (!tdocs[m[0]]) continue;
+      highlight(node, text.slice(last, m.index), re);
+      const a = link(tdocs[m[0]], m[0]); a.title = 'TDoc 열기 (3GPP FTP)'; node.append(a);
+      last = m.index + m[0].length;
+    }
+    highlight(node, text.slice(last), re);
+  }
+  // '|'로 시작하는 줄은 표 한 행으로 그립니다 (FG 표, TP 표 등). 원문 글자는 바꾸지 않습니다.
+  function richText(e, re) {
+    const box = el('div', 'orig'); let buf = [], rows = [];
+    const flushText = () => { if (buf.length) { const d = el('div', 'orig-text'); inline(d, buf.join('\n'), re, e.tdocs); box.append(d); buf = []; } };
+    const flushTable = () => {
+      if (!rows.length) return;
+      const wrap = el('div', 'orig-table'), t = el('table');
+      rows.forEach(r => { const tr = el('tr'); r.forEach(c => { const td = el('td'); inline(td, c, re, e.tdocs); tr.append(td); }); t.append(tr); });
+      wrap.append(t); box.append(wrap); rows = [];
+    };
+    e.text.split('\n').forEach(l => {
+      const s = l.trim();
+      if (s.length > 1 && s[0] === '|') { flushText(); rows.push(s.replace(/^\||\|$/g, '').split('|').map(c => c.trim())); }
+      else { flushTable(); buf.push(l); }
+    });
+    flushText(); flushTable();
+    return box;
+  }
+  const STAGE = Object.fromEntries(D.stages.map(s => [s.id, s.label]));
+  const IMPACT = Object.fromEntries(D.impacts.map(t => [t.id, t.label]));
+  const WARN = {
+    math: '수식 누락 의심 — 원본 추출에서 Word 수식(변수·기호)이 빠졌을 수 있습니다. 숫자·기호는 Chair notes 원문으로 확인하세요.',
+    color: '색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없어 무엇이 바뀌었는지 알 수 없습니다. TDoc에서 확인하세요.',
+    tdoc: '실제 변경 내용은 TDoc에 있습니다 — 본문·출처의 TDoc 링크를 여세요.',
+  };
   function render(e, re) {
     const box = el('article', 'result' + (e.meeting === latest ? ' is-new' : ''));
     const head = el('div', 'result-head');
@@ -362,19 +427,30 @@ SCRIPT = r"""
     const rel = e.tags.filter(t => t !== e.topic);
     if (rel.length) head.append(el('span', 'related-tags', '관련: ' + rel.map(t => TOPIC[t].label).join(' · ')));
     head.append(el('span', 'chip', SHORT[e.type]));
+    const sc = el('span', 'chip stage', STAGE[e.stage]); sc.title = '진행 단계'; head.append(sc);
     if (e.scope === 'candidate') head.append(el('span', 'chip cand', '후보'));
     if (e.scope === 'manual') head.append(el('span', 'chip', '수동 포함'));
     head.append(el('span', 'mono', e.item), el('span', 'muted', e.title));
     box.append(head);
     if (e.scope === 'candidate') box.append(el('div', 'kw', '일치: ' + e.kw.join(', ')));
+    if (e.impact.length || e.clauses.length) {
+      const meta = el('div', 'meta');
+      if (e.impact.length) meta.append(el('b', null, '구현 영향 '), e.impact.map(i => IMPACT[i]).join(' · '));
+      if (e.clauses.length) {
+        if (e.impact.length) meta.append('  ');
+        meta.append(el('b', null, '규격 '), e.clauses.slice(0, 5).join(', ') + (e.clauses.length > 5 ? ` 외 ${e.clauses.length - 5}` : ''));
+      }
+      box.append(meta);
+    }
+    e.warn.forEach(w => box.append(el('div', 'warn', '⚠ ' + WARN[w])));
     box.append(el('span', 'label-orig', 'Chair notes 원문'));
-    const text = el('p', 'orig'); highlight(text, e.text, re); box.append(text);
+    box.append(richText(e, re));
     const src = el('div', 'src'); const s = e.source;
     src.append(link(s.url, s.doc));
     if (s.tdoc) src.append(' · ', link(s.tdoc_url, s.tdoc));
     if (s.discussion) src.append(' · ', el('span', 'mono', `[${s.discussion}]`));
     src.append(' · ', el('span', 'mono', e.id));
-    if (e.ffs) src.append(` · 남은 FFS ${e.ffs}건`);
+    if (e.ffs) src.append(` · FFS ${e.ffs}줄`);
     box.append(src);
     return box;
   }
@@ -411,7 +487,7 @@ SCRIPT = r"""
     const terms = groups.flat();
     const groupRes = groups.map(g => g.map(t => new RegExp(pattern(t, fWord.checked), 'i')));
     curRe = terms.length ? new RegExp(terms.map(t => pattern(t, fWord.checked)).join('|'), 'gi') : null;
-    hits = base.filter(e => topicOk(e) && (!fMeeting.value || e.meeting === fMeeting.value) && agendaOk(e) &&
+    hits = base.filter(e => topicOk(e) && (!fMeeting.value || e.meeting === fMeeting.value) && agendaOk(e) && extraOk(e) &&
       (!groupRes.length || groupRes.some(g => g.every(r => r.test(e.text) || r.test(e.title))))).reverse();
     out.replaceChildren(); shown = 0;
     const per = countBy(hits, e => e.meeting);
@@ -423,6 +499,7 @@ SCRIPT = r"""
   // 카드·차트·표의 숫자를 누르면 이전 검색어와 조건을 모두 지우고 누른 조건만 적용합니다 (남아 있으면 0건처럼 보임).
   function focusList(f) {
     q.value = ''; fTopic.value = f.topic || ''; fMeeting.value = f.meeting || ''; fAgenda.value = f.agenda || '';
+    fStage.value = fImpact.value = fClause.value = ''; fWarn.checked = false;
     idFilter = f.ids ? new Set(f.ids) : null; idLabel = f.label || '';
     if (fAgenda.value[0] === 'c' && !$('g-cand').checked) { $('g-cand').checked = true; }
     update(); $('list').scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -438,8 +515,70 @@ SCRIPT = r"""
   bar.addEventListener('change', update);
   let rw; addEventListener('resize', () => { clearTimeout(rw); rw = setTimeout(() => chart(D.entries.filter(pred())), 200); });
   q.addEventListener('input', () => { idFilter = null; clearTimeout(timer); timer = setTimeout(() => list(D.entries.filter(pred())), 150); });
-  [fTopic, fMeeting, fAgenda, fWord].forEach(n => n.addEventListener('change', () => { idFilter = null; list(D.entries.filter(pred())); }));
-  $('reset').addEventListener('click', () => { idFilter = null; q.value = ''; fTopic.value = fMeeting.value = fAgenda.value = ''; list(D.entries.filter(pred())); });
+  [fTopic, fMeeting, fAgenda, fWord, fStage, fImpact, fClause, fWarn].forEach(n => n.addEventListener('change', () => { idFilter = null; list(D.entries.filter(pred())); }));
+  $('reset').addEventListener('click', () => {
+    idFilter = null; q.value = ''; fTopic.value = fMeeting.value = fAgenda.value = fStage.value = fImpact.value = fClause.value = ''; fWarn.checked = false;
+    list(D.entries.filter(pred())); });
+  const BYID = Object.fromEntries(D.entries.map(e => [e.id, e]));
+  const idButton = (label, ids, title) => { const b = el('button', 'link-btn', label); b.type = 'button';
+    b.addEventListener('click', () => focusList({ ids, label: title })); return b; };
+  // ── FFS 추적: 확정 결정의 FFS 줄마다, 같은 Agenda의 이후 회의 결정 중 단어가 많이 겹치는 '후속 결정 후보'
+  (() => {
+    const fT = $('ffs-topic'), fM = $('ffs-meeting'), fOpen = $('ffs-open'), outF = $('ffs-list'), sumF = $('ffs-summary');
+    D.topics.forEach(t => opt(fT, t.id, t.label));
+    [...D.meetings].reverse().forEach(m => opt(fM, m, m));
+    let rows = [], shownF = 0;
+    function item(f) {
+      const e = BYID[f.id], box = el('div', 'ffs-item'), head = el('div', 'result-head');
+      head.append(el('span', 'mono', f.meeting));
+      if (f.meeting === latest) head.append(el('span', 'chip new', '신규 FFS'));
+      const tc = el('span', 'chip'); tc.append(swatch(e.topic), TOPIC[e.topic].label); head.append(tc);
+      head.append(el('span', 'mono', e.item), el('span', 'muted', e.title), idButton('원 결정 보기', [f.id], `${f.meeting} FFS의 원 결정`));
+      const line = el('div', 'ffs-line'); line.textContent = f.line;
+      const fol = el('div', 'ffs-follow');
+      if (f.followups.length) {
+        fol.append('후속 결정 후보 (단어 겹침, 해소 판정 아님):');
+        f.followups.forEach(id => fol.append(idButton(BYID[id].meeting, [id], `${f.meeting} FFS "${f.line.slice(0, 40)}…"의 후속 결정 후보`)));
+      } else if (f.meeting === latest) fol.append('최신 회의의 FFS — 다음 회의 결과를 기다리는 중입니다.');
+      else fol.append('후속 결정 후보 없음 — 이후 회의에서 같은 Agenda에 겹치는 결정이 아직 없습니다. 미결이거나 다른 표현으로 다뤄졌을 수 있습니다.');
+      box.append(head, line, fol);
+      return box;
+    }
+    function more() {
+      outF.querySelector('.more')?.remove();
+      rows.slice(shownF, shownF + 30).forEach(f => outF.append(item(f)));
+      shownF = Math.min(shownF + 30, rows.length);
+      if (shownF < rows.length) { const b = el('button', 'more', `더 보기 (남은 ${rows.length - shownF}줄)`); b.type = 'button'; b.addEventListener('click', more); outF.append(b); }
+    }
+    function draw() {
+      rows = D.ffs.filter(f => (!fT.value || BYID[f.id].topic === fT.value) && (!fM.value || f.meeting === fM.value) && (!fOpen.checked || !f.followups.length)).reverse();
+      outF.replaceChildren(); shownF = 0;
+      const open = rows.filter(f => !f.followups.length).length;
+      sumF.replaceChildren(el('span', 'num', `${rows.length}줄`), ` · 후속 결정 후보 있음 ${rows.length - open} · 없음 ${open} · 최신 회의부터`);
+      more();
+    }
+    [fT, fM, fOpen].forEach(n => n.addEventListener('change', draw));
+    draw();
+  })();
+  // ── UE feature(FG) 목록
+  (() => {
+    const body = $('fg-body'), fq = $('fg-q');
+    function draw() {
+      const words = fq.value.trim().toLowerCase().split(/\s+/).filter(Boolean);
+      body.replaceChildren();
+      D.fgs.filter(f => words.every(w => (f.id + ' ' + f.name).toLowerCase().includes(w))).forEach(f => {
+        const tr = el('tr');
+        tr.append(el('td', 'mono', f.id));
+        const name = el('td'); name.append(f.name); if (f.item) name.append(el('span', 'sub', f.item)); tr.append(name);
+        tr.append(el('td', 'mono small', [...new Set(f.meetings)].map(short).join(', ')));
+        const det = el('td', 'fg-row'), d = el('details'), sm = el('summary', null, '표 내용');
+        d.append(sm, el('div', null, f.row.slice(3).join(' | ') || '—')); det.append(d); tr.append(det);
+        const b = el('td'); b.append(idButton(`결정 ${f.ids.length}건`, f.ids, `FG ${f.id} 정의·수정 결정`)); tr.append(b);
+        body.append(tr);
+      });
+    }
+    fq.addEventListener('input', draw); draw();
+  })();
   document.querySelectorAll('[data-ids]').forEach(b => b.addEventListener('click', () =>
     focusList({ ids: JSON.parse(b.dataset.ids), label: b.dataset.label })));
   // 최신 회의에서 기본 화면(확정 Agreement) 밖에 있는 결정 수. 체크 상태와 관계없이 고정 표시합니다.
@@ -513,6 +652,7 @@ def data(m):
         entries.append({"id": e["id"], "meeting": e["meeting"], "item": e["agenda_item"], "title": e["agenda_title"],
                         "type": e["type"], "text": e["text"], "ffs": len(e.get("ffs") or []), "topic": e["topic"], "tags": e["tags"],
                         "scope": e["scope"], "rule": e["agenda_rule"], "kw": e["keywords"], "cand_key": ck,
+                        "stage": e["stage"], "impact": e["impact"], "clauses": e["clauses"], "warn": e["warn"], "tdocs": e["tdocs"],
                         "source": {k: e["source"].get(k) for k in ("doc", "url", "tdoc", "tdoc_url", "discussion") if e["source"].get(k)}})
     counts = {}
     for e in entries:
@@ -530,7 +670,10 @@ def data(m):
             "agendas": [{"index": a["index"], "label": a["label"], "section": a["section"],
                          "number_note": _numbers_note(a, m["meetings"])} for a in m["agendas"]],
             "cand_agendas": cands, "entries": entries,
-            "recent": _recent(m)}
+            "recent": _recent(m), "stages": m["stages"], "impacts": m["impacts"],
+            "fgs": [{"id": f["id"], "item": f["item"], "name": f["name"], "ids": f["ids"], "meetings": f["meetings"], "row": f["row"]}
+                    for f in m["fgs"]],
+            "ffs": m["ffs"]}
 
 
 def _recent(m):
@@ -641,7 +784,7 @@ def render_body(m):
 </header>
 
 <form class="filterbar" id="filters" onsubmit="return false" aria-label="표시할 결정 고르기">
-  <fieldset><legend>구분</legend>{types}<label class="sep"><input type="checkbox" id="g-ffs"> FFS 남은 결정만</label></fieldset>
+  <fieldset><legend>구분</legend>{types}<label class="sep" title="FFS 줄이 들어 있는 결정. 이후 회의에서 해소됐는지는 'FFS 추적'에서 후보로 확인합니다."><input type="checkbox" id="g-ffs"> FFS 있는 결정만</label></fieldset>
   <fieldset><legend>범위</legend>{_check("data-scope", "confirmed", "확정", True)}{_check('data-scope id="g-cand"', "candidate", "후보 (키워드 일치)", False)}</fieldset>
   <span class="state small" id="state" aria-live="polite"></span>
 </form>
@@ -677,6 +820,34 @@ def render_body(m):
   </table></div>
 </section>
 
+<section id="ffs">
+  <h2>FFS 추적</h2>
+  <p class="lede">확정 결정에 남은 FFS(For Further Study) 줄입니다. 같은 포함 Agenda의 <b>이후 회의</b> 결정 중 단어가 많이 겹치는 것을
+    '후속 결정 후보'로 붙였습니다. 단어 겹침으로 고른 후보일 뿐 FFS가 해소됐다는 판정이 아니니 원문으로 확인하세요.
+    '후속 결정 후보가 없는 FFS만'을 켜면 아직 아무 후속 논의도 보이지 않는 미결 항목만 남습니다.</p>
+  <div class="panel">
+    <div class="filters">
+      <label>주된 주제 <select id="ffs-topic"><option value="">전체</option></select></label>
+      <label>회의 <select id="ffs-meeting"><option value="">전체</option></select></label>
+      <label><input type="checkbox" id="ffs-open"> 후속 결정 후보가 없는 FFS만</label>
+    </div>
+    <div class="summary-line" id="ffs-summary" aria-live="polite"></div>
+    <div id="ffs-list"></div>
+  </div>
+</section>
+
+<section id="fg">
+  <h2>UE feature (FG) 목록</h2>
+  <p class="lede">확정 범위의 UE feature 결정 표에서 FG 번호·이름과, 그 FG를 정의·수정한 결정을 모았습니다(HW 사양 체크리스트용).
+    원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없어 '표 내용'에는 지운 글자도 섞여 있을 수 있습니다. 최종 정의는 TDoc(FG 시트)으로 확인하세요.</p>
+  <div class="panel">
+    <input type="search" id="fg-q" placeholder="FG 번호·이름으로 찾기 (예: 58-1, CSI prediction, 128 ports)" autocomplete="off" aria-label="FG 찾기">
+    <div class="table-scroll"><table>
+      <thead><tr><th>FG</th><th>이름</th><th>수정한 회의</th><th>표 내용</th><th></th></tr></thead><tbody id="fg-body"></tbody>
+    </table></div>
+  </div>
+</section>
+
 <section id="list">
   <h2>결정 목록</h2>
   <div class="panel search" role="search">
@@ -685,6 +856,12 @@ def render_body(m):
       <label>주제 <select id="f-topic"><option value="">전체</option></select></label>
       <label>회의 <select id="f-meeting"><option value="">전체</option></select></label>
       <label>Agenda <select id="f-agenda"><option value="">전체</option></select></label>
+    </div>
+    <div class="filters">
+      <label>진행 단계 <select id="f-stage"><option value="">전체</option></select></label>
+      <label>구현 영향 <select id="f-impact"><option value="">전체</option></select></label>
+      <label>규격 조항 <select id="f-clause"><option value="">전체</option></select></label>
+      <label title="수식 누락 의심, 색 표시 변경 손실, 실제 변경이 TDoc에만 있는 결정"><input type="checkbox" id="f-warn"> 원문·TDoc 확인 필요만</label>
       <label><input type="checkbox" id="f-word" checked> 단어 단위로만 찾기</label>
       <button type="button" class="reset" id="reset">조건 지우기</button>
     </div>
@@ -692,7 +869,8 @@ def render_body(m):
     <div class="summary-line" id="summary" aria-live="polite"></div>
     <div class="results" id="results"></div>
   </div>
-  <p class="lede">결정 본문은 Chair notes <b>원문 그대로</b>이며 요약하지 않았습니다. 주제·신규·후보 표시만 이 대시보드가 붙인 것입니다.
+  <p class="lede">결정 본문은 Chair notes <b>원문 그대로</b>이며 요약하지 않았습니다(표는 표로, R1- 번호는 TDoc 링크로만 바꿔 보여줍니다).
+    주제·진행 단계·구현 영향·규격 조항·신규·후보·⚠ 표시는 이 대시보드가 원문 단어로 붙인 것입니다.
     띄어 쓰면 모두 포함(AND), <span class="mono">|</span> 또는 대문자 <span class="mono">OR</span>로 나누면 하나라도 포함(OR)된 결정을 찾습니다.</p>
 </section>
 

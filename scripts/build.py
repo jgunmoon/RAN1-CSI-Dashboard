@@ -40,7 +40,7 @@ def build(config, db, out_dir, now=None, notify_file=None):
     out = Path(out_dir)
     out.mkdir(parents=True, exist_ok=True)
     keep = ("id", "meeting", "agenda_item", "agenda_title", "agenda_path", "type", "text", "ffs", "source",
-            "scope", "topic", "tags", "keywords")
+            "scope", "topic", "tags", "keywords", "stage", "impact", "clauses", "warn")
     export = {"source_db": source.db_url(config), "source_updated_at": db.get("updated_at"), "topics": m["topics"],
               "entries": [{k: e.get(k) for k in keep} for e in m["entries"]]}
     now = now or datetime.now(timezone.utc).isoformat(timespec="minutes")

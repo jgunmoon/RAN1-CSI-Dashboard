@@ -30,7 +30,7 @@ CSI 범위는 넓게 봅니다: CSI 획득·보고, CSI-RS, codebook(PMI/CQI/RI)
      관련 주제 = 주된 주제 + 맞는 모든 규칙 + 일치한 조항의 topic. 차트·표의 회의별 숫자는 주된 주제(합계 = 전체),
      표의 '관련 포함' 열과 목록의 '관련 주제 포함' 필터는 태그로 셉니다. 'CSI 보고' 규칙의 `\bCSI\b` 패턴은 넓어서 이 태그가 많이 붙습니다.
    범위를 바꿀 때는 먼저 원본 DB로 건수를 확인하고(아래 명령의 출력) 사용자 확인을 받습니다.
-4. **기본 표시는 확정 범위의 Agreement.** Working Assumption·Conclusion, 'FFS 남은 결정만', 후보는 체크박스로 켭니다.
+4. **기본 표시는 확정 범위의 Agreement.** Working Assumption·Conclusion, 'FFS 있는 결정만', 후보는 체크박스로 켭니다.
    대신 놓치지 않도록 상태 줄에 '숨김: WA n · Conclusion n · 후보 n'(누르면 켜짐)과, 최신 회의의 기본 화면 밖 건수를 항상 보여줍니다.
 5. **'잠정' 회의.** 원본 DB의 `meetings.*.provisional`이 있는 회의는 종료본 전 결과이므로 README·대시보드에 '잠정'으로 표시합니다.
 6. **조용히 빠지는 것을 막는 장치.** 이 프로젝트의 목적은 CSI 담당 엔지니어가 결정을 놓치지 않는 것입니다.
@@ -41,6 +41,14 @@ CSI 범위는 넓게 봅니다: CSI 획득·보고, CSI-RS, codebook(PMI/CQI/RI)
      추가·변경·삭제(원본 재처리, 잠정 → 종료본, 범위 설정 변경)를 남깁니다. id만 바뀐 결정은 변경으로 보지 않습니다. 최근 30묶음 보관.
      '신규'는 최신 회의만 뜻하므로 과거 회의 변화는 이 이력과 결정 목록의 '과거 회의에 추가'/'원문·범위 변경' 표시로만 보입니다.
    - 알림: 결과가 달라진 실행마다 워크플로가 GitHub Issue를 만듭니다(`build --notify-file`, 첫 줄이 제목). 설정은 config `notify`.
+7. **단말 알고리즘·HW 실무용 표시** (`scripts/enrich.py`, 원문은 그대로 두고 표시용 필드만 추가).
+   - 진행 단계(config `stages`: UE features·유지보수 CR·Study·규격 작업), 구현 영향 태그(config `impact_tags`), 원문의 사양 조항(`clauses`).
+   - ⚠ 확인 필요(`warn`): `math` 수식 누락 의심(원본 파서가 Word 수식을 못 읽어 기호가 빠진 흔적 — 근본 수정은 원본 트래커),
+     `color` 색 표시 변경 손실(UE feature 표의 'chromatic fonts'), `tdoc` 실제 변경이 TDoc에만 있음.
+   - 원문의 R1- 번호는 FTP 링크(`TdocLinker`): 회의 폴더를 원본 근거 TDoc 번호 범위로 추정합니다. 회의 사이 빈 구간 번호는
+     인용한 결정의 회의를 우선해 실측 99%가 맞습니다(틀리면 403). 원문의 '|' 줄은 화면에서 표로 그립니다(글자는 바꾸지 않음).
+   - FFS 추적: 확정 결정의 FFS 줄마다 같은 포함 Agenda 이후 회의 결정 중 단어가 많이 겹치는 것을 '후속 결정 후보'로 붙입니다.
+     해소 판정이 아니며 화면에도 그렇게 적습니다. FG 목록: 확정 UE feature 표의 두 번째 칸(FG 번호)으로 FG별 정의·수정 결정을 모읍니다.
 
 ## 2. 구조
 
@@ -51,6 +59,7 @@ scripts/scope.py             # 범위 판정(agenda/manual/candidate)과 주제 
 scripts/model.py             # 리포트용 집계 (HTML·마크다운 공용)
 scripts/render_html.py       # reports/index.html (HTML 대시보드)
 scripts/render_md.py         # reports/README.md(요약), reports/by_topic/<주제>.md(주제별 전체 결정)
+scripts/enrich.py            # 진행 단계·구현 영향·규격 조항·⚠ 확인 필요·TDoc 링크, FG 목록, FFS 후속 결정 후보
 scripts/changes.py           # 직전 결과 대비 변경 이력 (reports/changes.json)
 scripts/build.py             # 진입점: 원본 DB → reports/ 전체 생성
 reports/                     # 생성물 (직접 수정 금지). csi_decisions.json은 고른 결정 + 주제·범위 (다음 실행의 비교 기준이므로 지우지 않음)

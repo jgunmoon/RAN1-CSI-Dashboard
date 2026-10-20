@@ -125,6 +125,17 @@ def readme(m):
     return "\n".join(out)
 
 
+WARN_MD = {
+    "math": "수식 누락 의심 — 원본 추출에서 Word 수식(변수·기호)이 빠졌을 수 있습니다. Chair notes 원문으로 확인하세요.",
+    "color": "색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.",
+    "tdoc": "실제 변경 내용은 TDoc에 있습니다.",
+}
+
+
+def _labels(items):
+    return {x["id"]: x["label"] for x in items}
+
+
 def _entry_md(e, m):
     meta = [f"**{TYPE_SHORT[e['type']]}**", f"`{e['agenda_item']}` {e['agenda_title']}", f"`{e['id']}`"]
     if e["scope"] != "agenda":
@@ -134,10 +145,19 @@ def _entry_md(e, m):
     rel = [m["topic_label"][t] for t in e["tags"] if t != e["topic"]]
     if rel:
         meta.append("관련 주제: " + ", ".join(rel))
+    meta.append(_labels(m["stages"])[e["stage"]])
     lines = [" · ".join(meta), ""]
+    extra = []
+    if e["impact"]:
+        extra.append("구현 영향: " + ", ".join(_labels(m["impacts"])[i] for i in e["impact"]))
+    if e["clauses"]:
+        extra.append("규격: " + ", ".join(e["clauses"][:5]) + (f" 외 {len(e['clauses']) - 5}" if len(e["clauses"]) > 5 else ""))
+    if extra:
+        lines += [" · ".join(extra), ""]
+    lines += [f"> ⚠️ {WARN_MD[w]}" for w in e["warn"]] + ([""] if e["warn"] else [])
     lines += ["> " + ln if ln.strip() else ">" for ln in e["text"].split("\n")]
     if e.get("ffs"):
-        lines += ["", f"남은 FFS {len(e['ffs'])}건"]
+        lines += ["", f"FFS {len(e['ffs'])}줄"]
     lines += ["", f"출처: {_source(e['source'])}", ""]
     return lines
 

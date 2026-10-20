@@ -2,6 +2,7 @@
 from collections import defaultdict
 from datetime import datetime, timedelta, timezone
 
+from scripts import enrich as enrich_mod
 from scripts import scope as scope_mod
 
 TYPES = ("Agreement", "Working Assumption", "Conclusion")
@@ -36,6 +37,9 @@ def count(entries, key, meetings, pred=lambda e: True):
 def build(db, config):
     sel = scope_mod.select(db, config)
     sc, entries, meetings = sel["scope"], sel["entries"], sel["meetings"]
+    en = enrich_mod.Enricher(config, db)
+    for e in entries:
+        e.update(en.enrich(e))
     topics = sc.topic_list()
     topic_label = {t["id"]: t["label"] for t in topics}
     agendas = []
@@ -51,7 +55,13 @@ def build(db, config):
                         "entries": mine})
     latest = meetings[-1] if meetings else None
     prev = meetings[-2] if len(meetings) > 1 else None
+    conf = [e for e in entries if confirmed(e)]
     return {
+        "stages": en.stage_list(), "impacts": en.impact_list(),
+        "fgs": enrich_mod.feature_groups([e for e in conf if e["stage"] == "fg"]),
+        # FFS 후속 결정 후보: 확정 결정끼리, 같은 포함 Agenda 항목(수동 포함은 같은 Agenda 제목) 안에서만 찾습니다.
+        "ffs": enrich_mod.ffs_followups(conf, lambda e: e["agenda_rule"] if e["agenda_rule"] is not None
+                                        else (e["agenda_path"][0]["title"], e["agenda_title"])),
         "alerts": agenda_alerts(db, entries, agendas, meetings),
         "db": db, "config": config, "entries": entries, "meetings": meetings, "topics": topics, "topic_label": topic_label,
         "agendas": agendas, "latest": latest, "prev": prev, "unknown_manual_ids": sel["unknown_manual_ids"],

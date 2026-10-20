@@ -7,21 +7,29 @@
 
 ## RAN1#126bis — 18건
 
-**Agreement** · `8.1` Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT · `RAN1#126bis:8.1:004` · 🆕 신규
+**Agreement** · `8.1` Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT · `RAN1#126bis:8.1:004` · 🆕 신규 · 유지보수 (CR)
+
+규격: TS 38.214 5.2.2.5
+
+> ⚠️ 실제 변경 내용은 TDoc에 있습니다.
 
 > The draft CR in R1-2607797 for Rel-19 TS38.214, Clause 5.2.2.5 is endorsed.
 > The corresponding final CR for Rel-19 TS38.214, Clause 5.2.2.5 in R1-2608711 is endorsed.
 
 출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R19-AI 8.1]`
 
-**Agreement** · `8.1` Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT · `RAN1#126bis:8.1:009` · 🆕 신규
+**Agreement** · `8.1` Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT · `RAN1#126bis:8.1:009` · 🆕 신규 · 유지보수 (CR)
+
+규격: TS 38.214 5.2.5
+
+> ⚠️ 실제 변경 내용은 TDoc에 있습니다.
 
 > Proposal 1 in Section 4 of R1-2608695 for Rel-19, TS38.214, Clause 5.2.5 is endorsed.
 > The corresponding final CR for Rel-19, TS38.214 in R1-2608703 is endorsed.
 
 출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R19-AI 8.1]`
 
-**Agreement** · `9.2` NR MIMO Phase 6 · `RAN1#126bis:9.2:004` · 🆕 신규 · 관련 주제: CSI-RS
+**Agreement** · `9.2` NR MIMO Phase 6 · `RAN1#126bis:9.2:004` · 🆕 신규 · 관련 주제: CSI-RS · 규격 작업 (WI)
 
 > On MAC-CE triggering indication for early CSI/CSI-RS based on a SCell activation command, study the following alternatives and down-select one in RAN1#127:
 > - Alt-1: Indicating a CSI report configuration for each SCell activated by the SCell activation command MAC-CE.
@@ -34,11 +42,11 @@
 >   - The new CSI trigger state(s) for each SCell activated by the SCell activation command MAC-CE is configured in the SCell itself
 >   - Note: It is not legacy CSI trigger state.
 
-남은 FFS 2건
+FFS 2줄
 
 출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · [R1-2607054](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2607054.zip) · `[126bis-R20-MIMO]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:001` · 🆕 신규
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:001` · 🆕 신규 · Study
 
 > For the 6GR CJT report to facilitate CJT deployment,
 > - Study whether/how to support reporting CJTC delay offset report and codebook-based CSI (with NTRP>1) assuming TRP/panel-specific SD basis selection and TRP/panel-common FD basis selection (if applicable), including:
@@ -50,11 +58,13 @@
 >       - FFS: precoder frequency granularity due to the delay offset
 >     - not as a part of codebook-based CSI report (in one report, e.g., ri-pmi-cqi-Dd)
 
-남은 FFS 1건
+FFS 1줄
 
 출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:002` · 🆕 신규
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:002` · 🆕 신규 · Study
+
+구현 영향: 포트·자원·레이어 수
 
 > For the study of the 6GR codebook design for CSI report, regarding the SD basis selection for the high-resolution scheme, regarding candidate L values
 > - For Option 2, L>=1 Layer-specific/layer-group-specific SD basis selection, consider at least L= {1, 2} for evaluation
@@ -69,7 +79,9 @@
 
 출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:005` · 🆕 신규 · 관련 주제: CSI-RS
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:005` · 🆕 신규 · 관련 주제: CSI-RS · Study
+
+구현 영향: 메모리·복잡도
 
 > For 6GR CSI-RS, to study the threshold X on whether M1 is larger than 1, and the detailed (M1, M2) values, the following aspects need to be considered
 > - Channel coherent time or coherent bandwidth
@@ -81,7 +93,7 @@
 
 출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:006` · 🆕 신규 · 관련 주제: CSI-RS
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:006` · 🆕 신규 · 관련 주제: CSI-RS · Study
 
 > For 6GR CSI-RS study, the following template is adopted to collect evaluation results for CSI-RS pattern design
 > | Parameters | Parameters | Company A |
@@ -119,7 +131,7 @@
 
 출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:007` · 🆕 신규 · 관련 주제: CSI-RS
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:007` · 🆕 신규 · 관련 주제: CSI-RS · Study
 
 > For 6G CSI-RS sequence design, the following template is adopted to collect evaluation results
 > | Parameters | Parameters | Company A |
@@ -158,17 +170,19 @@
 
 출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:008` · 🆕 신규 · 관련 주제: CSI-RS
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:008` · 🆕 신규 · 관련 주제: CSI-RS · Study
 
 > On the pattern for CSI-IM in 6G, both pattern 0 (2x2 resource grid) and pattern 1 (4x1 resource grid) defined in 5G NR are considered as baseline.
 > - FFS in frequency domain, whether CSI-IM needs to appear in all the RBs associated with the CSI report
 > - FFS in time domain, whether CSI-IM needs to appear in one or more slots when M1>1 for the associated CSI-RS
 
-남은 FFS 2건
+FFS 2줄
 
 출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:010` · 🆕 신규 · 관련 주제: CSI-RS
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:010` · 🆕 신규 · 관련 주제: CSI-RS · Study
+
+구현 영향: 측정·보고량
 
 > - For 6G CSI-RS study, assuming different cells use different scrambling IDs for sequence initialization, identify the cases where inter-cell interference issue caused by NR CSI-RS sequence mapping impacts PMI calculation considering the following
 > - In the case of wideband channel estimation or subband channel estimation
@@ -186,7 +200,9 @@
 
 출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:011` · 🆕 신규 · 관련 주제: CSI-RS
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:011` · 🆕 신규 · 관련 주제: CSI-RS · Study
+
+구현 영향: 메모리·복잡도, 측정·보고량
 
 > For the evaluation of configurable/downloadable codebook/basis, at least the following can be considered:
 > - Number of bases indicated/configured
@@ -221,7 +237,7 @@
 
 출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:012` · 🆕 신규
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:012` · 🆕 신규 · Study
 
 > For the evaluation of explicit CSI feedback, the compression method, at least considering the following:
 > - Option 1: the same structure of high-resolution with the following on top of the codebook design for implicit CSI,
@@ -249,7 +265,9 @@
 
 출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:014` · 🆕 신규
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:014` · 🆕 신규 · Study
+
+구현 영향: 측정·보고량
 
 > For the evaluation on UE-initiated or event-triggered CSI reporting, the quantity for event definition
 > - For CQI based event definition (under the condition of unchanged PMI/RI assumption),
@@ -262,14 +280,16 @@
 
 출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Conclusion** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:019` · 🆕 신규
+**Conclusion** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:019` · 🆕 신규 · Study
 
 > For study on PAPR reduction for JSCM-based CSI compression, deprioritize Option 0 without any subsequent nonlinear operation for PAPR reduction.
 > - Note: Option 0 with subsequent nonlinear operation for PAPR reduction may be similar as Option 2 depending on the design of the nonlinear operation
 
 출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:020` · 🆕 신규
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:020` · 🆕 신규 · Study
+
+> ⚠️ 수식 누락 의심 — 원본 추출에서 Word 수식(변수·기호)이 빠졌을 수 있습니다. Chair notes 원문으로 확인하세요.
 
 > For the study on necessity and benefit of reliability verification for JSCM-based CSI compression, study on at least the following:
 > - The purpose for reliability verification: it can be used by the NW to determinate whether to use the reconstructed CSI based on per JCSM-based CSI report
@@ -295,11 +315,11 @@
 >   - companies report along with the reliability verification, how NW determinate the precoder (e.g., fall back to previous report, NW side model selection),
 >   - companies report the details on how to identify the reliability issue.
 
-남은 FFS 1건
+FFS 1줄
 
 출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:022` · 🆕 신규
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:022` · 🆕 신규 · Study
 
 > For the study of CSI reporting and AI-based CSI compression, adopt the templates in the following documents for collecting companies’ results.
 > - 10.5.3.1 Simulation results for CSI report.xlsx in R1-2608772
@@ -308,7 +328,7 @@
 
 출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.3` Other aspects · `RAN1#126bis:10.5.3.3:005` · 🆕 신규
+**Agreement** · `10.5.3.3` Other aspects · `RAN1#126bis:10.5.3.3:005` · 🆕 신규 · Study
 
 > Study and evaluate the following assistance information for sub use case 1A
 > - Channel covariance matrix/spectrum
@@ -318,7 +338,7 @@
 
 출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Other Aspects related to CSI]`
 
-**Agreement** · `10.5.3.3` Other aspects · `RAN1#126bis:10.5.3.3:010` · 🆕 신규
+**Agreement** · `10.5.3.3` Other aspects · `RAN1#126bis:10.5.3.3:010` · 🆕 신규 · Study
 
 > For the study of other aspects related to CSI, adopt the templates in the following documents for collecting companies’ results.
 > - Simulation results for joint DL and UL CSI acquisition_template_v1.xlsx in R1-2607650
@@ -328,7 +348,9 @@
 
 ## RAN1#126 — 15건
 
-**Agreement** · `8.1` Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT · `RAN1#126:8.1:001` · 관련 주제: CSI-RS
+**Agreement** · `8.1` Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT · `RAN1#126:8.1:001` · 관련 주제: CSI-RS · 유지보수 (CR)
+
+구현 영향: 처리 시간·CPU, UE capability·FG, 측정·보고량 · 규격: TS 38.214 5.2.1.6, TS 38.213 10.1
 
 > The following TP for TS 38.214 Clause 5.2.1.6 is endorsed.
 > The corresponding CR for Rel-19, TS 38.214 in R1-2606870 is endorsed.
@@ -339,7 +361,9 @@
 
 출처: [Chair notes RAN1#126_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx) · [R1-2606794](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Docs/R1-2606794.zip) · `[126-R19-AI 8.1]`
 
-**Agreement** · `8.1` Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT · `RAN1#126:8.1:006`
+**Agreement** · `8.1` Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT · `RAN1#126:8.1:006` · 유지보수 (CR)
+
+규격: TS 38.213 9
 
 > The following changes for Clause 9 in TS 38.213 is endorsed.
 > The corresponding CR for Rel-19, TS 38.213 in R1-2606869 is endorsed.
@@ -350,14 +374,16 @@
 
 출처: [Chair notes RAN1#126_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx) · [R1-2606809](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Docs/R1-2606809.zip) · `[126-R19-AI 8.1]`
 
-**Conclusion** · `8.1` Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT · `RAN1#126:8.1:010`
+**Conclusion** · `8.1` Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT · `RAN1#126:8.1:010` · 유지보수 (CR)
+
+규격: TS 38.212 6.3.2.1.2, TS 38.214 5.2.1.5.4.1
 
 > There is no consensus in RAN1 to support the TP from R1-2605669 of Clause 6.3.2.1.2 in TS 38.212 and Clause 5.2.1.5.4.1 in TS 38.214.
 > NES
 
 출처: [Chair notes RAN1#126_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx) · [R1-2606867](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Docs/R1-2606867.zip) · `[126-R19-AI 8.1]`
 
-**Agreement** · `9.2` NR MIMO Phase 6 · `RAN1#126:9.2:001` · 관련 주제: CSI-RS
+**Agreement** · `9.2` NR MIMO Phase 6 · `RAN1#126:9.2:001` · 관련 주제: CSI-RS · 규격 작업 (WI)
 
 > In SIBx configuration for early aperiodic CSI reporting and associated CSI-RS, when UE transition from IDLE/INACTIVE to CONNECTED mode:
 > - Only one CSI-RS resource set is provided in a CSI resource configuration for channel measurement; and
@@ -365,13 +391,17 @@
 
 출처: [Chair notes RAN1#126_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx) · [R1-2606464](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Docs/R1-2606464.zip) · `[126-R20-MIMO]`
 
-**Agreement** · `9.2` NR MIMO Phase 6 · `RAN1#126:9.2:005`
+**Agreement** · `9.2` NR MIMO Phase 6 · `RAN1#126:9.2:005` · 규격 작업 (WI)
 
 > For aperiodic CSI reporting triggered based on a SCell activation command, on how to determine the serving cell where the PUSCH for the aperiodic CSI reporting is transmitted in, support Alt-1, i.e., PUSCH must be scheduled for transmission in the serving cell from which the SCell activation command is received.
 
 출처: [Chair notes RAN1#126_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx) · [R1-2606465](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Docs/R1-2606465.zip) · `[126-R20-MIMO]`
 
-**Agreement** · `9.2` NR MIMO Phase 6 · `RAN1#126:9.2:010` · 관련 주제: CSI-RS
+**Agreement** · `9.2` NR MIMO Phase 6 · `RAN1#126:9.2:010` · 관련 주제: CSI-RS · 규격 작업 (WI)
+
+구현 영향: 처리 시간·CPU
+
+> ⚠️ 수식 누락 의심 — 원본 추출에서 Word 수식(변수·기호)이 빠졌을 수 있습니다. Chair notes 원문으로 확인하세요.
 
 > For aperiodic CSI reporting associated with aperiodic CSI-RS triggered by MAC-CE in MSG4 when UE transition from IDLE/INACTIVE to CONNECTED mode, support the followings to define the corresponding timeline for UE CSI computation:
 > - The duration between the starting symbol and the first symbol of PUSCH carrying the aperiodic CSI report should satisfy the legacy CSI computation  delay requirement.
@@ -380,7 +410,9 @@
 
 출처: [Chair notes RAN1#126_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx) · [R1-2606466](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Docs/R1-2606466.zip) · `[126-R20-MIMO]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126:10.5.3.1:001`
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126:10.5.3.1:001` · Study
+
+구현 영향: 포트·자원·레이어 수, 메모리·복잡도, 측정·보고량
 
 > For the 6GR codebook design for CSI report, study a W1W2 only structure for the low-resolution scheme with the following considerations at least for RI=1-4:
 > - W1-structure
@@ -407,11 +439,13 @@
 > - Note: CBSR discussion will be discussed separately
 > - Note: For discussion of low resolution scheme, eType-1 Scheme-A and eType-II with L=1 are precluded
 
-남은 FFS 10건
+FFS 10줄
 
 출처: [Chair notes RAN1#126_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx) · `[126-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Conclusion** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126:10.5.3.1:002`
+**Conclusion** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126:10.5.3.1:002` · Study
+
+구현 영향: 메모리·복잡도
 
 > For the 6GR codebook design for CSI report, for discussion purposes, based on the previous agreements, the following separate category is used:
 > - Category for resolution: low- and high-resolution, comprising at least the following criteria:
@@ -421,14 +455,20 @@
 
 출처: [Chair notes RAN1#126_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx) · `[126-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126:10.5.3.1:004` · 관련 주제: CSI-RS
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126:10.5.3.1:004` · 관련 주제: CSI-RS · Study
+
+구현 영향: 포트·자원·레이어 수
 
 > For CSI-RS for CSI acquisition in 6GR, design on CSI-RS and CSI assumes the maximum number of CSI-RS ports is 256.
 > - Final decision on the maximum number of CSI-RS ports (128, 256 or 512) is to be made in RAN1#127
 
 출처: [Chair notes RAN1#126_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx) · `[126-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126:10.5.3.1:012`
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126:10.5.3.1:012` · Study
+
+구현 영향: 포트·자원·레이어 수
+
+> ⚠️ 수식 누락 의심 — 원본 추출에서 Word 수식(변수·기호)이 빠졌을 수 있습니다. Chair notes 원문으로 확인하세요.
 
 > For the evaluation on downloadable/configurable codebook/basis for CSI report, the following is considered additionally on top of the agreement in RAN 1 #125:
 > - Type-I-like scheme:
@@ -453,7 +493,9 @@
 
 출처: [Chair notes RAN1#126_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx) · `[126-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126:10.5.3.1:013`
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126:10.5.3.1:013` · Study
+
+구현 영향: 메모리·복잡도, 측정·보고량
 
 > For the 6GR codebook design for CSI report, study a W1W2Wf structure as a starting point for the high-resolution scheme with the following considerations for RI=1-4:
 > - W1-structure
@@ -482,11 +524,15 @@
 > - FFS parameter combination (PC) design
 > - Note: UE implementation complexity is to be considered in the design of SD-basis selection, including the additional complexity of inter-layer interference mitigation for layer-specific schemes.
 
-남은 FFS 10건
+FFS 10줄
 
 출처: [Chair notes RAN1#126_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx) · `[126-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126:10.5.3.1:015`
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126:10.5.3.1:015` · Study
+
+구현 영향: 측정·보고량
+
+> ⚠️ 수식 누락 의심 — 원본 추출에서 Word 수식(변수·기호)이 빠졌을 수 있습니다. Chair notes 원문으로 확인하세요.
 
 > For evaluation on CPI reporting in SD/FD/TD, study the following options of form of CPI:
 > - Option 1: Channel covariance matrix/spectrum, e.g., ,  in form of basis matrix and associated coefficients and/or power, wherein  is in port/frequency domain
@@ -502,11 +548,13 @@
 > Companies report calculation assumption of the channel covariance matrix/spectrum, e.g., average over time domain, average over frequency domain, average over spatial domain.
 > Note: Strive for common report quantities for use cases for a certain domain, if applicable.
 
-남은 FFS 4건
+FFS 4줄
 
 출처: [Chair notes RAN1#126_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx) · `[126-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126:10.5.3.1:019` · 관련 주제: CSI-RS
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126:10.5.3.1:019` · 관련 주제: CSI-RS · Study
+
+구현 영향: 포트·자원·레이어 수
 
 > For evaluation on precoded CSI-RS without considering CSI-RS overhead reduction:
 > - Assume cell-specific wideband precoded CSI-RS, e.g., the number of precoded CSI-RS ports is same as the number of TXRUs at aNB
@@ -524,11 +572,11 @@
 > Note: downloadable basis/precoder (e.g. FD basis/precoder associated with each precoded CSI-RS port) can be considered additionally with precoded CSI-RS and the assumption/consideration for downloadable basis is taken into account
 > Note: the PAPR issue of precoded CSI-RS is to be studied.
 
-남은 FFS 1건
+FFS 1줄
 
 출처: [Chair notes RAN1#126_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx) · `[126-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126:10.5.3.1:021` · 관련 주제: CSI-RS
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126:10.5.3.1:021` · 관련 주제: CSI-RS · Study
 
 > For the evaluation on PDSCH DMRS-based CSI for PDSCH link adaptation, the following is consideration:
 > - For channel measurement, the DMRS port(s) associated with data is considered as the baseline
@@ -537,11 +585,13 @@
 > - Company to report the UE assumptions for DMRS-based CSI calculation.
 > - Email discussion for the templates and collect results for the use cases, e.g., fixed codebook, AI-CSI, CPI, downloadable/configurable codebook/basis, DMRS-based CSI, precoded CSI-RS.
 
-남은 FFS 1건
+FFS 1줄
 
 출처: [Chair notes RAN1#126_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx) · `[126-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.3` Other aspects · `RAN1#126:10.5.3.3:003`
+**Agreement** · `10.5.3.3` Other aspects · `RAN1#126:10.5.3.3:003` · Study
+
+구현 영향: 메모리·복잡도
 
 > For the evaluation of joint DL/UL based CSI acquisition, additionally consider the following KPIs
 > - UPT
@@ -555,7 +605,7 @@
 
 ## RAN1#125 — 15건
 
-**Agreement** · `8.1` Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT · `RAN1#125:8.1:001`
+**Agreement** · `8.1` Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT · `RAN1#125:8.1:001` · 유지보수 (CR)
 
 > The following TP is endorsed as Alignment CR for TS.38.212 and Clause 6.3.2.1.2.
 > Reason for change: The current specification incorrectly states the SGCS fields of the CSI report for CSI-PAI are included in CSI part 1.
@@ -565,7 +615,9 @@
 
 출처: [Chair notes RAN1#125_eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Inbox/Chair_notes/Chair%20notes%20RAN1%23125_eom.docx) · [R1-2605022](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Docs/R1-2605022.zip)
 
-**Agreement** · `8.1` Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT · `RAN1#125:8.1:002`
+**Agreement** · `8.1` Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT · `RAN1#125:8.1:002` · 유지보수 (CR)
+
+규격: TS 38.214 5.2.1.4.6
 
 > The following TP is endorsed as Alignment CR for TS.38.214 for Clause 5.2.1.4.6.
 > Reason for change: Incorrect capture of previous agreement.
@@ -575,7 +627,9 @@
 
 출처: [Chair notes RAN1#125_eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Inbox/Chair_notes/Chair%20notes%20RAN1%23125_eom.docx) · [R1-2605022](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Docs/R1-2605022.zip)
 
-**Agreement** · `8.1` Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT · `RAN1#125:8.1:005`
+**Agreement** · `8.1` Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT · `RAN1#125:8.1:005` · 유지보수 (CR)
+
+규격: TS 38.213 9
 
 > The following is endorsed as Alignment CR for Clause 9 in Rel-19 TS38.213.
 > Adopt the following changes in Clause 9 in TS 38.213:
@@ -583,7 +637,9 @@
 
 출처: [Chair notes RAN1#125_eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Inbox/Chair_notes/Chair%20notes%20RAN1%23125_eom.docx) · [R1-2604993](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Docs/R1-2604993.zip)
 
-**Agreement** · `8.1` Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT · `RAN1#125:8.1:008`
+**Agreement** · `8.1` Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT · `RAN1#125:8.1:008` · 유지보수 (CR)
+
+구현 영향: 처리 시간·CPU · 규격: TS 38.213 9, TS 38.214 6.1.2.1
 
 > The following TP for Clause 9 of TS 38.213 is endorsed.
 > The corresponding final CR for TS38.213 in R1-2605107 is endorsed.
@@ -593,7 +649,7 @@
 
 출처: [Chair notes RAN1#125_eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Inbox/Chair_notes/Chair%20notes%20RAN1%23125_eom.docx) · [R1-2604991](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Docs/R1-2604991.zip)
 
-**Agreement** · `9.2` NR MIMO Phase 6 · `RAN1#125:9.2:005` · 관련 주제: CSI-RS
+**Agreement** · `9.2` NR MIMO Phase 6 · `RAN1#125:9.2:005` · 관련 주제: CSI-RS · 규격 작업 (WI)
 
 > For aperiodic CSI-RS associated with aperiodic CSI reporting triggered by MAC-CE in MSG4, support Option-2, i.e.,
 > - If the aperiodic CSI-RS is triggered along with an aperiodic TRS by the same MAC-CE in MSG4 and the aperiodic TRS is transmitted before the aperiodic CSI-RS , the CSI-RS is QCLed Type-A with the triggered aperiodic TRS; otherwise, the CSI-RS is QCLed Type-C with the SSB the UE identified during the random access procedure when UE transition from IDLE/INACTIVE to CONNECTED mode.
@@ -601,17 +657,17 @@
 
 출처: [Chair notes RAN1#125_eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Inbox/Chair_notes/Chair%20notes%20RAN1%23125_eom.docx) · [R1-2603722](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Docs/R1-2603722.zip) · `[125-R20-MIMO]`
 
-**Agreement** · `9.2` NR MIMO Phase 6 · `RAN1#125:9.2:008` · 관련 주제: CSI-RS
+**Agreement** · `9.2` NR MIMO Phase 6 · `RAN1#125:9.2:008` · 관련 주제: CSI-RS · 규격 작업 (WI)
 
 > For MSG4-triggered aperiodic TRS when UE transition from IDLE/INACTIVE to CONNECTED mode, the MAC-CE in MSG4 can indicate triggering of one or two TRS burst(s).
 > - In SIBx, only one CSI resource set for tracking is provided in the CSI resource configuration for aperiodic TRS
 > - FFS: Whether the gap between two TRS bursts is configured in SIBx or indicated in MAC-CE
 
-남은 FFS 1건
+FFS 1줄
 
 출처: [Chair notes RAN1#125_eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Inbox/Chair_notes/Chair%20notes%20RAN1%23125_eom.docx) · [R1-2605114](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Docs/R1-2605114.zip) · `[125-R20-MIMO]`
 
-**Conclusion** · `9.2` NR MIMO Phase 6 · `RAN1#125:9.2:010` · 관련 주제: CSI-RS
+**Conclusion** · `9.2` NR MIMO Phase 6 · `RAN1#125:9.2:010` · 관련 주제: CSI-RS · 규격 작업 (WI)
 
 > For CSI-RS frequency-domain densities ρ = 1/3 and 1/6, there is no RAN1 consensus to support the following new CSI subband sizes for different BWP sizes.
 > | Bandwidth part size (PRBs) | CSI subband size (PRBs) |
@@ -621,7 +677,9 @@
 
 출처: [Chair notes RAN1#125_eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Inbox/Chair_notes/Chair%20notes%20RAN1%23125_eom.docx) · [R1-2605114](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Docs/R1-2605114.zip) · `[125-R20-MIMO]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#125:10.5.3.1:004`
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#125:10.5.3.1:004` · Study
+
+구현 영향: 메모리·복잡도
 
 > Support at least codebook based implicit CSI feedback in 6GR.
 > Study whether/how to support explicit CSI feedback, including at least the following aspects:
@@ -635,7 +693,11 @@
 
 출처: [Chair notes RAN1#125_eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Inbox/Chair_notes/Chair%20notes%20RAN1%23125_eom.docx) · `[125-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#125:10.5.3.1:006` · 관련 주제: CSI-RS
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#125:10.5.3.1:006` · 관련 주제: CSI-RS · Study
+
+구현 영향: 포트·자원·레이어 수, 메모리·복잡도, 측정·보고량
+
+> ⚠️ 수식 누락 의심 — 원본 추출에서 Word 수식(변수·기호)이 빠졌을 수 있습니다. Chair notes 원문으로 확인하세요.
 
 > For the 6GR codebook design for CSI report, the following is considered:
 > - NR fixed DFT basis is used as a baseline for evaluation for W1 and Wf  at least for non-precoded CSI-RS
@@ -658,11 +720,13 @@
 >   - Note: The term “TRP” and “panel” are used for discussion purposes
 > Note: Additional details are still to be studied, including enhancements for UPT-overhead trade-off and UE complexity
 
-남은 FFS 2건
+FFS 2줄
 
 출처: [Chair notes RAN1#125_eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Inbox/Chair_notes/Chair%20notes%20RAN1%23125_eom.docx) · `[125-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#125:10.5.3.1:014`
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#125:10.5.3.1:014` · Study
+
+구현 영향: 처리 시간·CPU
 
 > For 6GR CSI container design, CSI report in L1 is supported with
 > - separate CSI measurement/computation triggering/configuration and CSI reporting triggering/configuration
@@ -673,7 +737,7 @@
 
 출처: [Chair notes RAN1#125_eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Inbox/Chair_notes/Chair%20notes%20RAN1%23125_eom.docx) · `[125-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#125:10.5.3.1:015` · 관련 주제: CSI-RS
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#125:10.5.3.1:015` · 관련 주제: CSI-RS · Study
 
 > For CJT calibration report,
 > - Study the following three types of reporting quantities:
@@ -687,7 +751,7 @@
 
 출처: [Chair notes RAN1#125_eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Inbox/Chair_notes/Chair%20notes%20RAN1%23125_eom.docx) · `[125-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#125:10.5.3.1:017`
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#125:10.5.3.1:017` · Study
 
 > For SLS/LLS evaluation for JSCM-based CSI compression,
 > - For both JSCM and SSCCM, the following Tx/Rx chain is considered.
@@ -695,7 +759,7 @@
 
 출처: [Chair notes RAN1#125_eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Inbox/Chair_notes/Chair%20notes%20RAN1%23125_eom.docx) · `[125-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#125:10.5.3.1:018` · 관련 주제: CSI-RS
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#125:10.5.3.1:018` · 관련 주제: CSI-RS · Study
 
 > For SLS evaluation for JSCM-based CSI compression,
 > - Considering the following options of the SSCCM below could be used for the SLS evaluation as a starting point:
@@ -750,7 +814,9 @@
 
 출처: [Chair notes RAN1#125_eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Inbox/Chair_notes/Chair%20notes%20RAN1%23125_eom.docx) · `[125-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.3` Other aspects · `RAN1#125:10.5.3.3:004`
+**Agreement** · `10.5.3.3` Other aspects · `RAN1#125:10.5.3.3:004` · Study
+
+구현 영향: 측정·보고량
 
 > Study and evaluate the following assistance information for joint DL/UL based CSI acquisition use case 2
 > - SINR
@@ -761,7 +827,7 @@
 
 출처: [Chair notes RAN1#125_eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Inbox/Chair_notes/Chair%20notes%20RAN1%23125_eom.docx) · `[125-R20-6GR-Other Aspects related to CSI]`
 
-**Agreement** · `10.5.3.3` Other aspects · `RAN1#125:10.5.3.3:005`
+**Agreement** · `10.5.3.3` Other aspects · `RAN1#125:10.5.3.3:005` · Study
 
 > Study and evaluate the following assistance information for joint DL/UL based CSI acquisition use case 1
 > - Channel covariance matrix related information
@@ -781,7 +847,9 @@
 
 ## RAN1#124bis — 14건
 
-**Agreement** · `8.2` Maintenance on NR MIMO Phase 5 · `RAN1#124bis:8.2:001`
+**Agreement** · `8.2` Maintenance on NR MIMO Phase 5 · `RAN1#124bis:8.2:001` · 유지보수 (CR)
+
+구현 영향: 측정·보고량 · 규격: TS 38.212 6.3.2.1.2
 
 > The following TP for Clause  6.3.2.1.2 is endorsed for Alignment CR for 38.212.
 > - Reason for change: In TS 38.212, “CapabilityIndex” appears in the title of Table 6.3.2.1.2-14. However, CapabilityIndex is not present in the table itself, nor is it one of the parameters that should be included in the CSI report for UE-initiated CSI reporting.
@@ -791,7 +859,11 @@
 
 출처: [Chair notes RAN1#124bis_eom5](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Inbox/Chair_notes/Chair%20notes%20RAN1%23124bis_eom5.docx) · [R1-2603249](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Docs/R1-2603249.zip) · `[124-R19b-MIMO]`
 
-**Agreement** · `8.2` Maintenance on NR MIMO Phase 5 · `RAN1#124bis:8.2:003`
+**Agreement** · `8.2` Maintenance on NR MIMO Phase 5 · `RAN1#124bis:8.2:003` · 유지보수 (CR)
+
+구현 영향: 포트·자원·레이어 수 · 규격: TS 38.213 7.2.1
+
+> ⚠️ 수식 누락 의심 — 원본 추출에서 Word 수식(변수·기호)이 빠졌을 수 있습니다. Chair notes 원문으로 확인하세요.
 
 > The following TP for Rel-19 TS38.213, Clause 7.2.1, is endorsed as Alignment CR.
 > - Reason for change: In the current specification, UEIRI is considered as a new type of SR for multiplexing rules of UEIRI. However, that is not described for PUCCH power control part.
@@ -801,7 +873,9 @@
 
 출처: [Chair notes RAN1#124bis_eom5](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Inbox/Chair_notes/Chair%20notes%20RAN1%23124bis_eom5.docx) · [R1-2603250](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Docs/R1-2603250.zip) · `[124-R19b-MIMO]`
 
-**Agreement** · `8.2` Maintenance on NR MIMO Phase 5 · `RAN1#124bis:8.2:006` · 관련 주제: CSI-RS
+**Agreement** · `8.2` Maintenance on NR MIMO Phase 5 · `RAN1#124bis:8.2:006` · 관련 주제: CSI-RS · 유지보수 (CR)
+
+구현 영향: 측정·보고량 · 규격: TS 38.212 6.3.2.1.2
 
 > The following TP for TS38.212 , Clause 6.3.2.1.2 is endorsed.
 > The corresponding final CR for Rel-19 TS38.212 in R1-2603414 is endorsed.
@@ -813,7 +887,7 @@
 
 출처: [Chair notes RAN1#124bis_eom5](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Inbox/Chair_notes/Chair%20notes%20RAN1%23124bis_eom5.docx) · [R1-2602154](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Docs/R1-2602154.zip) · `[124-R19b-MIMO]`
 
-**Agreement** · `9.2` NR MIMO Phase 6 · `RAN1#124bis:9.2:003` · 관련 주제: CSI-RS
+**Agreement** · `9.2` NR MIMO Phase 6 · `RAN1#124bis:9.2:003` · 관련 주제: CSI-RS · 규격 작업 (WI)
 
 > For aperiodic CSI-RS associated with aperiodic CSI reporting triggered by MAC-CE in MSG4, down select one from the following options in RAN1#125:
 > - Option-1: The triggered aperiodic CSI-RS is QCLed Type-C with the SSB the UE identified during the random access procedure when UE transition from IDLE/INACTIVE to CONNECTED mode
@@ -821,11 +895,13 @@
 >     - FFS whether/how there is impact on the time gap requirements between the triggered AP-TRS and AP-CSI-RS.
 > FFS: Whether to consider QCL Type-D when applicable
 
-남은 FFS 2건
+FFS 2줄
 
 출처: [Chair notes RAN1#124bis_eom5](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Inbox/Chair_notes/Chair%20notes%20RAN1%23124bis_eom5.docx) · [R1-2602826](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Docs/R1-2602826.zip) · `[124b-R20-MIMO]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#124bis:10.5.3.1:001`
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#124bis:10.5.3.1:001` · Study
+
+구현 영향: 메모리·복잡도
 
 > For 6GR codebook design for CSI report, study considering the following to ensure better performance than 5G
 >   - SU-MIMO and MU-MIMO
@@ -835,7 +911,9 @@
 
 출처: [Chair notes RAN1#124bis_eom5](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Inbox/Chair_notes/Chair%20notes%20RAN1%23124bis_eom5.docx) · `[124b-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#124bis:10.5.3.1:002`
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#124bis:10.5.3.1:002` · Study
+
+구현 영향: 처리 시간·CPU, 메모리·복잡도
 
 > Starting from NR L1-based CSI reporting design, study whether/how the following aspects to be addressed in 6GR CSI reporting design taking into account of the comparison, at least including:
 > - B1. Scheduling constraint relaxation
@@ -853,7 +931,9 @@
 
 출처: [Chair notes RAN1#124bis_eom5](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Inbox/Chair_notes/Chair%20notes%20RAN1%23124bis_eom5.docx) · `[124b-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#124bis:10.5.3.1:004` · 관련 주제: CSI-RS
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#124bis:10.5.3.1:004` · 관련 주제: CSI-RS · Study
+
+구현 영향: 포트·자원·레이어 수, 메모리·복잡도
 
 > For CSI-RS for CSI acquisition in 6GR, study the maximum number of ports considering the following alternatives
 >   - Alt 1: The maximum number of CSI-RS ports is 128
@@ -863,30 +943,30 @@
 >     - Note: relevant complexity can also be considered
 >   - FFS whether all the NR port numbers are supported
 
-남은 FFS 1건
+FFS 1줄
 
 출처: [Chair notes RAN1#124bis_eom5](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Inbox/Chair_notes/Chair%20notes%20RAN1%23124bis_eom5.docx) · `[124b-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#124bis:10.5.3.1:005` · 관련 주제: CSI-RS
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#124bis:10.5.3.1:005` · 관련 주제: CSI-RS · Study
 
 > 6GR supports NZP CSI-RS as the channel measurement RS for DL based CSI acquisition
 > - FFS other reference signals, e.g., DMRS
 > - FFS Aspects related with non-precoded CSI-RS or precoded CSI-RS
 
-남은 FFS 2건
+FFS 2줄
 
 출처: [Chair notes RAN1#124bis_eom5](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Inbox/Chair_notes/Chair%20notes%20RAN1%23124bis_eom5.docx) · `[124b-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#124bis:10.5.3.1:006` · 관련 주제: CSI-RS
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#124bis:10.5.3.1:006` · 관련 주제: CSI-RS · Study
 
 > Consider CSI-IM as the baseline for interference measurement resource for DL CSI acquisition in 6GR
 > - FFS other RS types, e.g., NZP CSI-RS, DMRS, etc
 
-남은 FFS 1건
+FFS 1줄
 
 출처: [Chair notes RAN1#124bis_eom5](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Inbox/Chair_notes/Chair%20notes%20RAN1%23124bis_eom5.docx) · `[124b-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#124bis:10.5.3.1:007` · 관련 주제: CSI-RS
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#124bis:10.5.3.1:007` · 관련 주제: CSI-RS · Study
 
 > On time-domain type of 6G CSI-RS for downlink based CSI acquisition, at least support periodic and aperiodic CSI-RS, and further study
 > - Whether semi-persistent CSI-RS is additionally supported
@@ -894,7 +974,9 @@
 
 출처: [Chair notes RAN1#124bis_eom5](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Inbox/Chair_notes/Chair%20notes%20RAN1%23124bis_eom5.docx) · `[124b-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#124bis:10.5.3.1:011` · 관련 주제: CSI-RS
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#124bis:10.5.3.1:011` · 관련 주제: CSI-RS · Study
+
+구현 영향: 포트·자원·레이어 수
 
 > For 6GR CSI-RS for DL based CSI acquisition, study CSI-RS RE sharing considering the following use cases.
 > - Use case 1: Sharing a common set or subset of REs among CSI-RS with different number of ports
@@ -907,7 +989,11 @@
 
 출처: [Chair notes RAN1#124bis_eom5](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Inbox/Chair_notes/Chair%20notes%20RAN1%23124bis_eom5.docx) · `[124b-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#124bis:10.5.3.1:014`
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#124bis:10.5.3.1:014` · Study
+
+구현 영향: 메모리·복잡도
+
+> ⚠️ 수식 누락 의심 — 원본 추출에서 Word 수식(변수·기호)이 빠졌을 수 있습니다. Chair notes 원문으로 확인하세요.
 
 > For the codebook design, study at least the following codebook structures
 > - For low-resolution/ high-resolution CSI, considering ,  for evaluation
@@ -923,7 +1009,9 @@
 
 출처: [Chair notes RAN1#124bis_eom5](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Inbox/Chair_notes/Chair%20notes%20RAN1%23124bis_eom5.docx) · `[124b-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#124bis:10.5.3.1:015`
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#124bis:10.5.3.1:015` · Study
+
+구현 영향: 포트·자원·레이어 수
 
 > For the evaluation of scalability/generalization for AI-based CSI compression, the evaluation methodology in NR (as in TR 38.843) can be considered as the starting point. The set of configurations are considered focusing on one or more of the following aspects at a starting point:
 > - Various DL channels for compression, for example, deployment scenarios (e.g., UMa, UMi, InH), outdoor/indoor UE distributions (e.g., 10:0, 8:2, 5:5, 2:8, 0:10), antenna virtualization (TxRU mapping)
@@ -936,7 +1024,7 @@
 
 출처: [Chair notes RAN1#124bis_eom5](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Inbox/Chair_notes/Chair%20notes%20RAN1%23124bis_eom5.docx) · `[124b-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#124bis:10.5.3.1:017`
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#124bis:10.5.3.1:017` · Study
 
 > Study on whether/how to support CSI report for CJT calibration.
 
@@ -944,7 +1032,9 @@
 
 ## RAN1#124 — 9건
 
-**Agreement** · `8.2` Maintenance on NR MIMO Phase 5 · `RAN1#124:8.2:005`
+**Agreement** · `8.2` Maintenance on NR MIMO Phase 5 · `RAN1#124:8.2:005` · 유지보수 (CR)
+
+구현 영향: 측정·보고량 · 규격: TS 38.213 9.2.5
 
 > Adopt the following changes in Section 9.2.5 in TS38.213:
 > The corresponding CR for Rel-19 and TS38.214 in R1-2601679 is endorsed.
@@ -956,7 +1046,11 @@
 
 출처: [Chair notes RAN1#124 - eom_03](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124/Inbox/Chair_notes/Chair%20notes%20RAN1%23124%20-%20eom_03.docx) · [R1-2601519](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124/Docs/R1-2601519.zip) · `[124-R19-MIMO]`
 
-**Agreement** · `8.2` Maintenance on NR MIMO Phase 5 · `RAN1#124:8.2:006`
+**Agreement** · `8.2` Maintenance on NR MIMO Phase 5 · `RAN1#124:8.2:006` · 유지보수 (CR)
+
+구현 영향: 측정·보고량 · 규격: TS 38.214 5.2.2.2.5
+
+> ⚠️ 수식 누락 의심 — 원본 추출에서 Word 수식(변수·기호)이 빠졌을 수 있습니다. Chair notes 원문으로 확인하세요.
 
 > Adopt the following changes in Section 5.2.2.2.5a in TS38.214:
 > The corresponding CR for Rel-19 and TS38.214 in R1-2601680 is endorsed.
@@ -968,18 +1062,18 @@
 
 출처: [Chair notes RAN1#124 - eom_03](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124/Inbox/Chair_notes/Chair%20notes%20RAN1%23124%20-%20eom_03.docx) · [R1-2601519](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124/Docs/R1-2601519.zip) · `[124-R19-MIMO]`
 
-**Agreement** · `9.2.2` Enhancing DL CSI acquisition · `RAN1#124:9.2.2:003`
+**Agreement** · `9.2.2` Enhancing DL CSI acquisition · `RAN1#124:9.2.2:003` · 규격 작업 (WI)
 
 > For aperiodic CSI reporting for a SCell(s), triggered based on a legacy SCell activation command activating the SCell(s), the SCell activation command indicates a UL grant for a PUSCH to carry the aperiodic CSI report(s) for the CSI report configuration(s) triggered for the SCell(s)
 > - Strive to reuse legacy UL grant design in RAR
 > - The aperiodic CSI report(s) is reported in the same PUSCH.
 > - FFS: The serving cell where the PUSCH is scheduled in
 
-남은 FFS 1건
+FFS 1줄
 
 출처: [Chair notes RAN1#124 - eom_03](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124/Inbox/Chair_notes/Chair%20notes%20RAN1%23124%20-%20eom_03.docx) · [R1-2600647](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124/Docs/R1-2600647.zip)
 
-**Agreement** · `9.2.2` Enhancing DL CSI acquisition · `RAN1#124:9.2.2:007` · 관련 주제: CSI-RS
+**Agreement** · `9.2.2` Enhancing DL CSI acquisition · `RAN1#124:9.2.2:007` · 관련 주제: CSI-RS · 규격 작업 (WI)
 
 > For CSI-RS frequency-domain densities ρ = 1/3 and 1/6, support new CSI subband sizes as follows:
 > | Bandwidth part size (PRBs) | CSI subband size (PRBs) |
@@ -990,14 +1084,18 @@
 
 출처: [Chair notes RAN1#124 - eom_03](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124/Inbox/Chair_notes/Chair%20notes%20RAN1%23124%20-%20eom_03.docx) · [R1-2600648](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124/Docs/R1-2600648.zip)
 
-**Conclusion** · `9.2.2` Enhancing DL CSI acquisition · `RAN1#124:9.2.2:008` · 관련 주제: CSI-RS
+**Conclusion** · `9.2.2` Enhancing DL CSI acquisition · `RAN1#124:9.2.2:008` · 관련 주제: CSI-RS · 규격 작업 (WI)
+
+규격: TS 38.214 5.2.1.4
 
 > No enhancement to the following legacy specification restriction on frequency density of CSI-RS port in a CSI subband for the frequency-domain densities ρ = 1/3 and 1/6, i.e., the following from Clause 5.2.1.4 in TS 38.214 shall be applied:
 > - A UE is not expected to be configured with csi-ReportingBand which contains a subband where a CSI-RS resource linked to the CSI Report setting has the frequency density of each CSI-RS port per PRB in the subband less than the configured density of the CSI-RS resource.
 
 출처: [Chair notes RAN1#124 - eom_03](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124/Inbox/Chair_notes/Chair%20notes%20RAN1%23124%20-%20eom_03.docx) · [R1-2600648](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124/Docs/R1-2600648.zip)
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#124:10.5.3.1:001` · 관련 주제: CSI-RS
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#124:10.5.3.1:001` · 관련 주제: CSI-RS · Study
+
+> ⚠️ 수식 누락 의심 — 원본 추출에서 Word 수식(변수·기호)이 빠졌을 수 있습니다. Chair notes 원문으로 확인하세요.
 
 > Adopt the following table as the basic assumption of SLS for evaluation of DL-based CSI acquisition.
 > Table General Assumption
@@ -1030,7 +1128,9 @@
 
 출처: [Chair notes RAN1#124 - eom_03](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124/Inbox/Chair_notes/Chair%20notes%20RAN1%23124%20-%20eom_03.docx) · `[124-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#124:10.5.3.1:005`
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#124:10.5.3.1:005` · Study
+
+구현 영향: 포트·자원·레이어 수, 메모리·복잡도
 
 > For the study on AI-based CSI compression, the following is considered:
 > - KPI: SGCS (Intermediate), PAPR (when applicable), throughput vs CSI feedback overhead, DL throughput/BLER vs SNR
@@ -1054,14 +1154,14 @@
 
 출처: [Chair notes RAN1#124 - eom_03](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124/Inbox/Chair_notes/Chair%20notes%20RAN1%23124%20-%20eom_03.docx) · `[124-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.3` Other aspects · `RAN1#124:10.5.3.3:002`
+**Agreement** · `10.5.3.3` Other aspects · `RAN1#124:10.5.3.3:002` · Study
 
 > For joint DL and UL based DL CSI acquisition, reuse the evaluation methodology for LLS and SLS agreed in DL CSI / UL CSI agendas.
 > - Note: Specific necessary aspects on joint operation will be discussed.
 
 출처: [Chair notes RAN1#124 - eom_03](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124/Inbox/Chair_notes/Chair%20notes%20RAN1%23124%20-%20eom_03.docx) · `[124-R20-6GR-Other Aspects related to CSI]`
 
-**Agreement** · `10.5.3.3` Other aspects · `RAN1#124:10.5.3.3:003`
+**Agreement** · `10.5.3.3` Other aspects · `RAN1#124:10.5.3.3:003` · Study
 
 > Study joint DL and UL based CSI acquisition in TDD system.
 
@@ -1069,7 +1169,11 @@
 
 ## RAN1#123 — 8건
 
-**Agreement** · `8.2` Maintenance on NR MIMO Phase 5 · `RAN1#123:8.2:004`
+**Agreement** · `8.2` Maintenance on NR MIMO Phase 5 · `RAN1#123:8.2:004` · 유지보수 (CR)
+
+규격: TS 38.214 6
+
+> ⚠️ 수식 누락 의심 — 원본 추출에서 Word 수식(변수·기호)이 빠졌을 수 있습니다. Chair notes 원문으로 확인하세요.
 
 > Adopt the following changes in Clause 6 of TS38.214:
 > For  the remaining of this clause, unless otherwise stated, reference to PUSCH with aperiodic CSI reports includes a PUSCH with UE initiated report when reportTransmissionMode is configured as ‘ModeA’ in the CSI report configuration (as defined in Section 5.2.1.5.4.1).
@@ -1079,13 +1183,17 @@
 
 출처: [Chair notes RAN1#123 - eom3](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Inbox/Chair_notes/Chair%20notes%20RAN1%23123%20-%20eom3.docx) · [R1-2508529](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Docs/R1-2508529.zip) · `[123-R19-MIMO]`
 
-**Conclusion** · `8.2` Maintenance on NR MIMO Phase 5 · `RAN1#123:8.2:011`
+**Conclusion** · `8.2` Maintenance on NR MIMO Phase 5 · `RAN1#123:8.2:011` · 유지보수 (CR)
+
+구현 영향: UE capability·FG
 
 > The UE capability mixCodeBookSpatialAdaptation from Rel-18 NES is not supported with Rel-19 Type-I codebook.
 
 출처: [Chair notes RAN1#123 - eom3](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Inbox/Chair_notes/Chair%20notes%20RAN1%23123%20-%20eom3.docx) · [R1-2508775](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Docs/R1-2508775.zip) · `[123-R19-MIMO]`
 
-**Agreement** · `8.2` Maintenance on NR MIMO Phase 5 · `RAN1#123:8.2:012`
+**Agreement** · `8.2` Maintenance on NR MIMO Phase 5 · `RAN1#123:8.2:012` · 유지보수 (CR)
+
+규격: TS 38.214 5.2.1.4.10
 
 > - The following TP for TS38.215 is endorsed.
 > | Spec | TS38.215 |
@@ -1096,7 +1204,7 @@
 
 출처: [Chair notes RAN1#123 - eom3](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Inbox/Chair_notes/Chair%20notes%20RAN1%23123%20-%20eom3.docx) · [R1-2508775](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Docs/R1-2508775.zip) · `[123-R19-MIMO]`
 
-**Agreement** · `10.2.2` Enhancing DL CSI acquisition · `RAN1#123:10.2.2:004` · 관련 주제: CSI-RS
+**Agreement** · `10.2.2` Enhancing DL CSI acquisition · `RAN1#123:10.2.2:004` · 관련 주제: CSI-RS · 규격 작업 (WI)
 
 > For early triggering of aperiodic TRS when UE transition from IDLE/INACTIVE to CONNECTED mode, support Option-1, i.e.,
 > - In Step-1, SIBx provides one CSI resource configuration for aperiodic TRS
@@ -1104,32 +1212,36 @@
 > - In Step-2, UE reports through MSG3 whether the CSI resource configuration for aperiodic TRS provided in SIBx is supported.
 >   - FFS: Whether/How UE additionally reports via MSG3 the number of TRS bursts that the UE needs
 
-남은 FFS 2건
+FFS 2줄
 
 출처: [Chair notes RAN1#123 - eom3](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Inbox/Chair_notes/Chair%20notes%20RAN1%23123%20-%20eom3.docx) · [R1-2508520](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Docs/R1-2508520.zip)
 
-**Agreement** · `10.2.2` Enhancing DL CSI acquisition · `RAN1#123:10.2.2:006` · 관련 주제: CSI-RS
+**Agreement** · `10.2.2` Enhancing DL CSI acquisition · `RAN1#123:10.2.2:006` · 관련 주제: CSI-RS · 규격 작업 (WI)
 
 > On PUSCH allocation for MSG4-triggered aperiodic CSI reporting associated with aperiodic CSI-RS for CSI, when UE transition from IDLE/INACTIVE to CONNECTED mode, support Alt-1 from Agreement in RAN1#122bis, i.e., the PUSCH is scheduled by MAC CE in MSG4 along with the aperiodic CSI report triggering.
 > - Strive to reuse legacy UL grant design in RAR
 > - FFS: Whether/How to handle the re-transmission of MSG4 PDSCH with the aperiodic CSI report triggering
 > - FFS: Whether HARQ-ACK for PDSCH Msg4 is transmitted or not.
 
-남은 FFS 2건
+FFS 2줄
 
 출처: [Chair notes RAN1#123 - eom3](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Inbox/Chair_notes/Chair%20notes%20RAN1%23123%20-%20eom3.docx) · [R1-2508520](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Docs/R1-2508520.zip)
 
-**Conclusion** · `10.2.2` Enhancing DL CSI acquisition · `RAN1#123:10.2.2:007` · 관련 주제: CSI-RS
+**Conclusion** · `10.2.2` Enhancing DL CSI acquisition · `RAN1#123:10.2.2:007` · 관련 주제: CSI-RS · 규격 작업 (WI)
+
+규격: TS 38.214 5.2.1.4
 
 > No enhancement to the following legacy specification restriction on frequency density of CSI-RS port in a CSI subband for the frequency-domain densities ρ = 1/4 and 1/8, i.e., the following from Clause 5.2.1.4 in TS 38.214 shall be applied:
 > - A UE is not expected to be configured with csi-ReportingBand which contains a subband where a CSI-RS resource linked to the CSI Report setting has the frequency density of each CSI-RS port per PRB in the subband less than the configured density of the CSI-RS resource.
 > FFS: Whether to apply the legacy specification restriction to the frequency-domain densities ρ = 1/3 and 1/6
 
-남은 FFS 1건
+FFS 1줄
 
 출처: [Chair notes RAN1#123 - eom3](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Inbox/Chair_notes/Chair%20notes%20RAN1%23123%20-%20eom3.docx) · [R1-2508520](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Docs/R1-2508520.zip)
 
-**Agreement** · `10.2.2` Enhancing DL CSI acquisition · `RAN1#123:10.2.2:008` · 관련 주제: CSI-RS
+**Agreement** · `10.2.2` Enhancing DL CSI acquisition · `RAN1#123:10.2.2:008` · 관련 주제: CSI-RS · 규격 작업 (WI)
+
+구현 영향: 포트·자원·레이어 수
 
 > Support frequency-domain density ρ = 1/8 for K NZP CSI-RS resources in the same CSI-RS resource set for 48/64/128 CSI-RS ports aggregation with the following configurations, for wideband CSI reporting based on Rel-19 Type-1 codebooks:
 > - K=4 16-port NZP CSI-RS resources in a resource set aggregating 64 CSI-RS ports
@@ -1137,208 +1249,318 @@
 
 출처: [Chair notes RAN1#123 - eom3](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Inbox/Chair_notes/Chair%20notes%20RAN1%23123%20-%20eom3.docx) · [R1-2508520](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Docs/R1-2508520.zip)
 
-**WA** · `10.2.2` Enhancing DL CSI acquisition · `RAN1#123:10.2.2:009` · 관련 주제: CSI-RS
+**WA** · `10.2.2` Enhancing DL CSI acquisition · `RAN1#123:10.2.2:009` · 관련 주제: CSI-RS · 규격 작업 (WI)
+
+구현 영향: UE capability·FG, 포트·자원·레이어 수
 
 >   - K=2 24-port NZP CSI-RS resources in a resource set aggregating 48 CSI-RS ports
 > - FFS: For subband CSI reporting and Type-2 codebook
 > Support of frequency-domain density ρ = 1/8 is a separate UE capability.
 > Note: Different frequency-domain densities configured to the K NZP CSI-RS resources in the same CSI-RS resource set for 48/64/128 CSI-RS ports aggregation are not precluded
 
-남은 FFS 1건
+FFS 1줄
 
 출처: [Chair notes RAN1#123 - eom3](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Inbox/Chair_notes/Chair%20notes%20RAN1%23123%20-%20eom3.docx) · [R1-2508520](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Docs/R1-2508520.zip)
 
 ## RAN1#122bis — 33건
 
-**Agreement** · `8.2` Maintenance on NR MIMO Phase 5 · `RAN1#122bis:8.2:011`
+**Agreement** · `8.2` Maintenance on NR MIMO Phase 5 · `RAN1#122bis:8.2:011` · 유지보수 (CR)
+
+규격: TS 38.214 5.2.2.5
 
 > The TP1.B for TS38.214 in R1-2507269 is endorsed. Note that the Clause number for this TP is Clause 5.2.2.5 and not 5.2.1.4.1.
 
 출처: [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · [R1-2507269](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2507269.zip) · `[122bis-R19-MIMO]`
 
-**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122bis:9.2:001` · 관련 주제: CSI-RS
+**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122bis:9.2:001` · 관련 주제: CSI-RS · UE features (FG)
+
+구현 영향: 처리 시간·CPU, 포트·자원·레이어 수
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 59. NR_MIMO_Ph5 | 59-2-1-1 | Enhanced Type-I SP codebook for 64 ports – Scheme-A | 1. Support of enhanced Type-I SP codebook for Scheme-A with 64 Tx ports by aggregating multiple NZP CSI-RS resources within one slot 2. A list of supported combinations, each combination is {Max # of resources and total # of Tx ports} across all CCs in a band when reported per band, and across all CCs in a band combination when reported per BC simultaneously 3. Supported maximum rank 4. Max # of CSI-RS resource in a resource set 5. Supported processing capability 6. A list of supported combinations, each combination is {Max # of resources and total # of Tx ports} per CC simultaneously | 2-35 | yes | n/a | Enhanced Type-I SP codebook is not supported for 64 ports – Scheme-A, aggregated CSI-RS resources within one slot | Per band and per BC | n/a | n/a | n/a | Component 2 candidate values a. {1, …, 64, 128, 256} b. {64, …, 256, 512, 768, 1024} Component 3 candidate value {4, 5, 6, 7, 8} Component 4 candidate value {2,4} Component 5 candidate value {Capability 1, Capability 2} Component 6 candidate values a. {1, …, 64, 128, 256} b. {64, …, 256, 512, 768, 1024} Note: For component of processing capability Capability 1: Reuse legacy Z/Z’ values OCPU = ceil(P/32) Capability 2: Scale the legacy timeline Z/Z’ by ceil(P/32) where P is the total number of ports across all the K aggregated CSI-RS resources OCPU = 1 | Optional with capability signalling |
 
 출처: [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · [R1-2508081](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508081.zip)
 
-**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122bis:9.2:002` · 관련 주제: CSI-RS
+**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122bis:9.2:002` · 관련 주제: CSI-RS · UE features (FG)
+
+구현 영향: 처리 시간·CPU, 포트·자원·레이어 수
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as show
 > | 59. NR_MIMO_Ph5 | 59-2-1-1a | Enhanced Type-I SP codebook for 48 ports – Scheme-A | 1. Support of enhanced Type-I SP codebook for Scheme-A with 48 Tx ports by aggregating multiple NZP CSI-RS resources within one slot 2. A list of supported combinations, each combination is {Max # of resources and total # of Tx ports} across all CCs in a band when reported per band, and across all CCs in a band combination when reported per BC simultaneously 3. Supported maximum rank 4. Max # of CSI-RS resource in a resource set 5. Supported processing capability 6. A list of supported combinations, each combination is {Max # of resources and total # of Tx ports} per CC simultaneously | 59-2-1-1 | yes | n/a | Enhanced Type-I SP codebook is not supported for Scheme-A for 48 Tx ports, aggregated CSI-RS resources within one slot | Per band and per BC | n/a | n/a | n/a | Component 2 candidate values a. {1, …, 64, 128, 256} b. {64, …, 256, 512, 768, 1024} Component 3 candidate value {4, 5, 6, 7, 8} Component 4 candidate value {1:82,3} Component 5 candidate value {Capability 1, Capability 2} Component 6 candidate values a. {1, …, 64, 128, 256} b. {64, …, 256, 512, 768, 1024} Note: For component of processing capability Capability 1: Reuse legacy Z/Z’ values OCPU = ceil(P/32) Capability 2: Scale the legacy timeline Z/Z’ by ceil(P/32) where P is the total number of ports across all the K aggregated CSI-RS resources OCPU = 1 | Optional with capability signalling |
 
 출처: [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · [R1-2508081](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508081.zip)
 
-**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122bis:9.2:003` · 관련 주제: CSI-RS
+**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122bis:9.2:003` · 관련 주제: CSI-RS · UE features (FG)
+
+구현 영향: 처리 시간·CPU, 포트·자원·레이어 수
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 59. NR_MIMO_Ph5 | 59-2-1-1b | Enhanced Type-I SP codebook for 128 ports – Scheme-A | 1. Support of enhanced Type-I SP codebook for Scheme-A with 128 Tx ports by aggregating multiple NZP CSI-RS resources within one slot 2. A list of supported combinations, each combination is Max # of resources and total # of Tx ports} across all CCs in a band when reported per band, and across all CCs in a band combination when reported per BC simultaneously 3. Supported maximum rank 4. Support 4 CSI-RS resources in a resource set 5. Supported processing capability 6. A list of supported combinations, each combination is {Max # of resources and total # of Tx ports} per CC simultaneously | 59-2-1-1 | yes | n/a | Enhanced Type-I SP codebook is not supported for Scheme-A for 128 Tx ports, aggregated CSI-RS resources within one slot | Per band and per BC | n/a | n/a | n/a | Component 2 candidate values a. {1, …, 64, 128, 256} b. {64, …, 256, 512, 768, 1024} Component 3 candidate value {4, 5, 6, 7, 8} Component 5 candidate value {Capability 1, Capability 2} Component 6 candidate values a. {1, …, 64, 128, 256} b. {64, …, 256, 512, 768, 1024} Note: For component of processing capability Capability 1: Reuse legacy Z/Z’ values OCPU = ceil(P/32) Capability 2: Scale the legacy timeline Z/Z’ by ceil(P/32) where P is the total number of ports across all the K aggregated CSI-RS resources OCPU = 1 | Optional with capability signalling |
 
 출처: [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · [R1-2508081](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508081.zip)
 
-**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122bis:9.2:004` · 관련 주제: CSI-RS
+**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122bis:9.2:004` · 관련 주제: CSI-RS · UE features (FG)
+
+구현 영향: 처리 시간·CPU, 포트·자원·레이어 수
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 59. NR_MIMO_Ph5 | 59-2-1-1c | Enhanced Type-I SP codebook for 64 ports – Scheme-B | 1. Support of enhanced Type-I SP codebook for Scheme-B with 64 Tx ports by aggregating multiple NZP CSI-RS resources within one slot 2. A list of supported combinations, each combination is Max # of resources and total # of Tx ports} across all CCs in a band when reported per band, and across all CCs in a band combination when reported per BC simultaneously 3. Supported maximum rank 4. Max # of CSI-RS resource in a resource set 5. Supported processing capability 6. A list of supported combinations, each combination is {Max # of resources and total # of Tx ports} per CC simultaneously | 2-35 | yes | n/a | Enhanced Type-I SP codebook is not supported for Scheme-B for 64 Tx ports, aggregated CSI-RS resources within one slot | Per band and per BC | n/a | n/a | n/a | Component 2 candidate values a. {1, …, 64, 128, 256} b. {64, …, 256, 512, 768, 1024} Component 3 candidate value {4, 5, 6, 7, 8} Component 4 candidate value {2,4} Component 5 candidate value {Capability 1, Capability 2} Component 6 candidate values a. {1, …, 64, 128, 256} b. {64, …, 256, 512, 768, 1024} Note: For component of processing capability Capability 1: Reuse legacy Z/Z’ values OCPU = ceil(P/32) Capability 2: Scale the legacy timeline Z/Z’ by ceil(P/32) where P is the total number of ports across all the K aggregated CSI-RS resources OCPU = 1 | Optional with capability signalling |
 
 출처: [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · [R1-2508081](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508081.zip)
 
-**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122bis:9.2:005` · 관련 주제: CSI-RS
+**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122bis:9.2:005` · 관련 주제: CSI-RS · UE features (FG)
+
+구현 영향: 처리 시간·CPU, 포트·자원·레이어 수
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 59. NR_MIMO_Ph5 | 59-2-1-1d | Enhanced Type-I SP codebook for 48 ports – Scheme-B | 1. Support of enhanced Type-I SP codebook for Scheme-B with 48 Tx ports by aggregating multiple NZP CSI-RS resources within one slot 2. A list of supported combinations, each combination is Max # of resources and total # of Tx ports} across all CCs in a band when reported per band, and across all CCs in a band combination when reported per BC simultaneously 3. Supported maximum rank 4. Max # of CSI-RS resource in a resource set 5. Supported processing capability 6. A list of supported combinations, each combination is {Max # of resources and total # of Tx ports} per CC simultaneously | 59-2-1-1c | yes | n/a | Enhanced Type-I SP codebook is not supported for Scheme-B for 48 Tx ports, aggregated CSI-RS resources within one slot | Per band and per BC | n/a | n/a | n/a | Component 2 candidate values a. {1, …, 64, 128, 256} b. {64, …, 256, 512, 768, 1024} Component 3 candidate value {4, 5, 6, 7, 8} Component 4 candidate value {2,3} Component 5 candidate value {Capability 1, Capability 2} Component 6 candidate values a. {1, …, 64, 128, 256} b. {64, …, 256, 512, 768, 1024} Note: For component of processing capability Capability 1: Reuse legacy Z/Z’ values OCPU = ceil(P/32) Capability 2: Scale the legacy timeline Z/Z’ by ceil(P/32) where P is the total number of ports across all the K aggregated CSI-RS resources OCPU = 1 | Optional with capability signalling |
 
 출처: [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · [R1-2508081](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508081.zip)
 
-**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122bis:9.2:006` · 관련 주제: CSI-RS
+**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122bis:9.2:006` · 관련 주제: CSI-RS · UE features (FG)
+
+구현 영향: 처리 시간·CPU, 포트·자원·레이어 수
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 59. NR_MIMO_Ph5 | 59-2-1-1e | Enhanced Type-I SP codebook for 128 ports – Scheme-B | 1. Support of enhanced Type-I SP codebook for Scheme-B with 128 Tx ports by aggregating multiple NZP CSI-RS resources within one slot 2. A list of supported combinations, each combination is Max # of resources and total # of Tx ports} across all CCs in a band when reported per band, and across all CCs in a band combination when reported per BC simultaneously 3. Supported maximum rank 4. Support 4 CSI-RS resources in a resource set 5. Supported processing capability 6. A list of supported combinations, each combination is {Max # of resources and total # of Tx ports} per CC simultaneously | 59-2-1-1c | yes | n/a | Enhanced Type-I SP codebook is not supported for Scheme-B for 128 Tx ports, aggregated CSI-RS resources within one slot | Per band and per BC | n/a | n/a | n/a | Component 2 candidate values a. {1, …, 64, 128, 256} b. {64, …, 256, 512, 768, 1024} Component 3 candidate value {4, 5, 6, 7, 8} Component 5 candidate value {Capability 1, Capability 2} Component 6 candidate values a. {1, …, 64, 128, 256} b. {64, …, 256, 512, 768, 1024} Note: For component of processing capability Capability 1: Reuse legacy Z/Z’ values OCPU = ceil(P/32) Capability 2: Scale the legacy timeline Z/Z’ by ceil(P/32) where P is the total number of ports across all the K aggregated CSI-RS resources OCPU = 1 | Optional with capability signalling |
 
 출처: [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · [R1-2508081](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508081.zip)
 
-**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122bis:9.2:007` · 관련 주제: CSI-RS
+**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122bis:9.2:007` · 관련 주제: CSI-RS · UE features (FG)
+
+구현 영향: 처리 시간·CPU, 포트·자원·레이어 수
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 59. NR_MIMO_Ph5 | 59-2-1-2 | Enhanced Type-I MP codebook for 64 ports | 1. Support of enhanced Type-I MP codebook for 64 ports within 1 slot 2. A list of supported combinations, each combination is {Max # of resources and total # of Tx ports} across all CCs in a band when reported per band, and across all CCs in a band combination when reported per BC simultaneously 3. Supported maximum number of panels 4. Max # of CSI-RS resource in a resource set 5. Supported processing capability 6. A list of supported combinations, each combination is {Max # of resources and total # of Tx ports} per CC simultaneously | 2-35 | yes | n/a | Enhanced Type-I MP codebook is not supported for 64 ports, aggregated CSI-RS resources within one slot | Per band and per BC | n/a | n/a | n/a | Component 2 candidate values a. {1, …, 64, 128, 256} b. {64, …, 256, 512, 768, 1024} Component 3 candidate value {2, 4} Component 4 candidate value {2,4} Component 5 candidate value {Capability 1, Capability 2} Component 6 candidate values a. {1, …, 64, 128, 256} b. {64, …, 256, 512, 768, 1024} Note: For component of processing capability Capability 1: Reuse legacy Z/Z’ values OCPU = ceil(P/32) Capability 2: Scale the legacy timeline Z/Z’ by ceil(P/32) where P is the total number of ports across all the K aggregated CSI-RS resources OCPU = 1 | Optional with capability signalling |
 
 출처: [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · [R1-2508081](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508081.zip)
 
-**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122bis:9.2:008` · 관련 주제: CSI-RS
+**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122bis:9.2:008` · 관련 주제: CSI-RS · UE features (FG)
+
+구현 영향: 처리 시간·CPU, 포트·자원·레이어 수
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 59. NR_MIMO_Ph5 | 59-2-1-2a | Enhanced Type-I MP codebook for 48 ports | 1. Support of enhanced Type-I MP codebook for 48 ports within 1 slot 2. A list of supported combinations, each combination is {Max # of resources and total # of Tx ports} across all CCs in a band when reported per band, and across all CCs in a band combination when reported per BC simultaneously 3. Supported maximum number of panels 4. Max # of CSI-RS resource in a resource set 5. Supported processing capability 6. A list of supported combinations, each combination is {Max # of resources and total # of Tx ports} per CC simultaneously | 59-2-1-2 | yes | n/a | Enhanced Type-I MP codebook is not supported for 48 ports, aggregated CSI-RS resources within one slot | Per band and per BC | n/a | n/a | n/a | Component 2 candidate values a. {1, …, 64, 128, 256} b. {64, …, 256, 512, 768, 1024} Component 3 candidate value {2, 4} Component 4 candidate value {2,3} Component 5 candidate value {Capability 1, Capability 2} Component 6 candidate values a. {1, …, 64, 128, 256} b. {64, …, 256, 512, 768, 1024} Note: For component of processing capability Capability 1: Reuse legacy Z/Z’ values OCPU = ceil(P/32) Capability 2: Scale the legacy timeline Z/Z’ by ceil(P/32) where P is the total number of ports across all the K aggregated CSI-RS resources OCPU = 1 | Optional with capability signalling |
 
 출처: [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · [R1-2508081](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508081.zip)
 
-**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122bis:9.2:009` · 관련 주제: CSI-RS
+**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122bis:9.2:009` · 관련 주제: CSI-RS · UE features (FG)
+
+구현 영향: 처리 시간·CPU, 포트·자원·레이어 수
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 59. NR_MIMO_Ph5 | 59-2-1-2b | Enhanced Type-I MP codebook for 128 ports | 1. Support of enhanced Type-I MP codebook for 128 ports within 1 slot 2. A list of supported combinations, each combination is {Max # of resources and total # of Tx ports} across all CCs in a band when reported per band, and across all CCs in a band combination when reported per BC simultaneously 3. Supported maximum number of panels 4. Support 4 CSI-RS resources in a resource set 5. Supported processing capability 6. A list of supported combinations, each combination is {Max # of resources and total # of Tx ports} per CC simultaneously | 59-2-1-2 | yes | n/a | Enhanced Type-I MP codebook is not supported for 128 ports, aggregated CSI-RS resources within one slot | Per band and per BC | n/a | n/a | n/a | Component 2 candidate values a. {1, …, 64, 128, 256} b. {64, …, 256, 512, 768, 1024} Component 3 candidate value {2, 4} Component 5 candidate value {Capability 1, Capability 2} Component 6 candidate values a. {1, …, 64, 128, 256} b. {64, …, 256, 512, 768, 1024} Note: For component of processing capability Capability 1: Reuse legacy Z/Z’ values OCPU = ceil(P/32) Capability 2: Scale the legacy timeline Z/Z’ by ceil(P/32) where P is the total number of ports across all the K aggregated CSI-RS resources OCPU =1 | Optional with capability signalling |
 
 출처: [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · [R1-2508081](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508081.zip)
 
-**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122bis:9.2:010` · 관련 주제: CSI-RS
+**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122bis:9.2:010` · 관련 주제: CSI-RS · UE features (FG)
+
+구현 영향: 처리 시간·CPU, 포트·자원·레이어 수
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 59. NR_MIMO_Ph5 | 59-2-1-3 | Extended Rel-16 eType-II codebook for 64 Tx ports | 1. Support of extended Rel-16 eType-II codebook for 64 Tx ports by aggregating multiple NZP CSI-RS resources within 1 slot 2. Support of parameter combination 1-6 3. Support of rank 1-2 4. Support R=1 5. A list of supported combinations, each combination is {Max # of resources and total # of Tx ports} across all CCs in a band when reported per band, and across all CCs in a band combination when reported per BC simultaneously with R=1 6. supported processing capability 7. Max # of CSI-RS resource in a resource set 8. A list of supported combinations, each combination is {Max # of resources and total # of Tx ports} per CC simultaneously | 16-3a | yes | n/a | Extended Rel-16 eType-II codebook is not supported for 64 Tx ports, aggregated CSI-RS resources within one slot | Per band and per BC | n/a | n/a | n/a | Component 5 candidate values a. {1, …, 64, 128, 256} b. {64, …, 256, 512, 768, 1024} Component 6 candidate value {Capability 1, Capability 2} Component 7 candidate value {2,4} Component 8 candidate values a. {1, …, 64, 128, 256} b. {64, …, 256, 512, 768, 1024} Note: For component of processing capability Capability 1: Reuse legacy Z/Z’ values OCPU = ceil(P/32) Capability 2: Scale the legacy timeline Z/Z’ by ceil(P/32) where P is the total number of ports across all the K aggregated CSI-RS resources OCPU = 1 | Optional with capability signalling |
 
 출처: [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · [R1-2508081](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508081.zip)
 
-**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122bis:9.2:011` · 관련 주제: CSI-RS
+**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122bis:9.2:011` · 관련 주제: CSI-RS · UE features (FG)
+
+구현 영향: 처리 시간·CPU, 포트·자원·레이어 수
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 59. NR_MIMO_Ph5 | 59-2-1-3a | Extended Rel-16 eType-II codebook for 48 Tx ports | 1. Support of extended Rel-16 eType-II codebook for 48 Tx ports by aggregating multiple NZP CSI-RS resources within 1 slot 2. Support of parameter combination 1-6 3. Support of rank 1-2 4. Support R=1 5. A list of supported combinations, each combination is {Max # of resources and total # of Tx ports} across all CCs in a band when reported per band, and across all CCs in a band combination when reported per BC simultaneously with R=1 6. supported processing capability 7. Max # of CSI-RS resource in a resource set 8. A list of supported combinations, each combination is {Max # of resources and total # of Tx ports} per CC simultaneously | 59-2-1-3 | yes | n/a | Extended Rel-16 eType-II codebook is not supported for 48 Tx ports, aggregated CSI-RS resources within one slot | Per band and per BC | n/a | n/a | n/a | Component 5 candidate values a. {1, …, 64, 128, 256} b. {64, …, 256, 512, 768, 1024} Component 6 candidate value {Capability 1, Capability 2} Component 7 candidate value {2,3} Component 8 candidate values a. {1, …, 64, 128, 256} b. {64, …, 256, 512, 768, 1024} Note: For component of processing capability Capability 1: Reuse legacy Z/Z’ values OCPU = ceil(P/32) Capability 2: Scale the legacy timeline Z/Z’ by ceil(P/32) where P is the total number of ports across all the K aggregated CSI-RS resources OCPU = 1 | Optional with capability signalling |
 
 출처: [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · [R1-2508081](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508081.zip)
 
-**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122bis:9.2:012` · 관련 주제: CSI-RS
+**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122bis:9.2:012` · 관련 주제: CSI-RS · UE features (FG)
+
+구현 영향: 처리 시간·CPU, 포트·자원·레이어 수
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 59. NR_MIMO_Ph5 | 59-2-1-3b | Extended Rel-16 eType-II codebook for 128 Tx ports | 1. Support of extended Rel-16 eType-II codebook for 128 Tx ports by aggregating multiple NZP CSI-RS resources within 1 slot 2. Support of parameter combination 1-6 3. Support of rank 1-2 4. Support R=1 5. A list of supported combinations, each combination is {Max # of resources and total # of Tx ports} across all CCs in a band when reported per band, and across all CCs in a band combination when reported per BC simultaneously with R=1 6. supported processing capability 7. Support 4 CSI-RS resources in a resource set 8. A list of supported combinations, each combination is {Max # of resources and total # of Tx ports} per CC simultaneously | 59-2-1-3 | yes | n/a | Extended Rel-16 eType-II codebook is not supported for 128 Tx ports, aggregated CSI-RS resources within one slot | Per band and per BC | n/a | n/a | n/a | Component 5 candidate values a. {1, …, 64, 128, 256} b. {64, …, 256, 512, 768, 1024} Component 6 candidate value {Capability 1, Capability 2} Component 8 candidate values a. {1, …, 64, 128, 256} b. {64, …, 256, 512, 768, 1024} Note: For component of processing capability Capability 1: Reuse legacy Z/Z’ values OCPU = ceil(P/32) Capability 2: Scale the legacy timeline Z/Z’ by ceil(P/32) where P is the total number of ports across all the K aggregated CSI-RS resources OCPU = 1 | Optional with capability signalling |
 
 출처: [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · [R1-2508081](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508081.zip)
 
-**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122bis:9.2:013`
+**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122bis:9.2:013` · UE features (FG)
+
+구현 영향: 포트·자원·레이어 수, 측정·보고량
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 59. NR_MIMO_Ph5 | 59-2-1-3-1 | PMI sub-bands with R=2 for extended Rel-16 eType-II codebook for up to 128 ports | 1. Support of PMI sub-bands with R=2 for extended Rel-16 eType-II codebook for up to 128 ports 2. A list of supported combinations, each combination is {Max # of Tx ports in a report, Max # of sets of aggregated resources, and total # of Tx ports} across all CCs in a band when reported per band, and across all CCs in a band combination when reported per BC simultaneously with R=2 | 59-2-1-3 | Yes | n/a | PMI sub-bands with R=2 for extended Rel-16 eType-II codebook for up to 128 ports is not supported | Per band and Per BC | n/a | n/a | n/a | Component 2 candidate values a. {48, 64, 128} b. {1, …, 64, 128, 256} c. {64, …, 256, 512, 768, 1024} | Optional with capability signalling |
 
 출처: [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · [R1-2508081](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508081.zip)
 
-**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122bis:9.2:014`
+**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122bis:9.2:014` · UE features (FG)
+
+구현 영향: 포트·자원·레이어 수
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 59. NR_MIMO_Ph5 | 59-2-1-3-3 | Rank 3,4 for extended Rel-16 eType-II codebook for up to 128 ports | 1. Support of Rank 3,4 for extended Rel-16 eType-II codebook for up to 128 ports 4. Support R=1 5. A list of supported combinations, each combination is {Max # of Tx ports in a report, Max # of sets of aggregated resources, and total # of Tx ports} across all CCs in a band when reported per band, and across all CCs in a band combination when reported per BC simultaneously with R=1 | 59-2-1-3 | Yes | n/a | Rank 3,4 for extended Rel-16 eType-II codebook for up to 128 ports is not supported | Per band and Per BC | n/a | n/a | n/a | Component 5 candidate values a. {48, 64, 128} b. {1, 2, …, 64} c. {64, …, 256, 512, 768, 1024} | Optional with capability signalling |
 
 출처: [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · [R1-2508081](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508081.zip)
 
-**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122bis:9.2:015` · 관련 주제: CSI-RS
+**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122bis:9.2:015` · 관련 주제: CSI-RS · UE features (FG)
+
+구현 영향: 처리 시간·CPU, 포트·자원·레이어 수
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 59. NR_MIMO_Ph5 | 59-2-1-4 | Extended Rel-17 FeType-II codebook with 64 Tx ports | 1. Support of extended Rel-17 FeType-II codebook for 64 Tx ports by aggregating multiple NZP CSI-RS resources within 1 slot 2. Support of parameter combinations with M=1 3. Support of rank 1-2 4. Support R=1 5. A list of supported combinations, each combination is {Max # of resources and total # of Tx ports} across all CCs in a band when reported per band, and across all CCs in a band combination when reported per BC simultaneously with M=1 and R=1 6. Supported processing capability 7. Max # of CSI-RS resource in a resource set 8. A list of supported combinations, each combination is {Max # of resources and total # of Tx ports} per CC simultaneously | 23-9-1 | yes | n/a | Extended Rel-17 FeType-II codebook is not supported with 64 Tx ports, aggregated CSI-RS resources within one slot | Per band and per BC | n/a | n/a | n/a | Component 5 candidate values a. {1, …, 64, 128, 256} b. {64, …, 256, 512, 768, 1024} Component 6 candidate value {Capability 1, Capability 2} Component 7 candidate value {2,4} Component 8 candidate values a. {1, …, 64, 128, 256} b. {64, …, 256, 512, 768, 1024} Note: For component of processing capability Capability 1: Reuse legacy Z/Z’ values OCPU = ceil(P/32) Capability 2: Scale the legacy timeline Z/Z’ by ceil(P/32) where P is the total number of ports across all the K aggregated CSI-RS resources OCPU = 1 | Optional with capability signalling |
 
 출처: [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · [R1-2508081](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508081.zip)
 
-**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122bis:9.2:016` · 관련 주제: CSI-RS
+**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122bis:9.2:016` · 관련 주제: CSI-RS · UE features (FG)
+
+구현 영향: 처리 시간·CPU, 포트·자원·레이어 수
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 59. NR_MIMO_Ph5 | 59-2-1-4a | Extended Rel-17 FeType-II codebook with 48 Tx ports | 1. Support of extended Rel-17 FeType-II codebook for 48 Tx ports by aggregating multiple NZP CSI-RS resources within 1 slot 2. Support of parameter combinations with M=1 3. Support of rank 1-2 4. Support R=1 5. A list of supported combinations, each combination is {Max # of resources and total # of Tx ports} across all CCs in a band when reported per band, and across all CCs in a band combination when reported per BC simultaneously with M=1 and R=1 6. Supported processing capability 7. Max # of CSI-RS resource in a resource set 8. A list of supported combinations, each combination is {Max # of resources and total # of Tx ports} per CC simultaneously | 59-2-1-4 | yes | n/a | Extended Rel-17 FeType-II codebook is not supported with 48 Tx ports, aggregated CSI-RS resources within one slot | Per band and per BC | n/a | n/a | n/a | Component 5 candidate values a. {1, …, 64, 128, 256} b. {64, …, 256, 512, 768, 1024} Component 6 candidate value {Capability 1, Capability 2} Component 7 candidate value {2,3} Component 8 candidate values a. {1, …, 64, 128, 256} b. {64, …, 256, 512, 768, 1024} Note: For component of processing capability Capability 1: Reuse legacy Z/Z’ values OCPU = ceil(P/32) Capability 2: Scale the legacy timeline Z/Z’ by ceil(P/32) where P is the total number of ports across all the K aggregated CSI-RS resources OCPU = 1 | Optional with capability signalling |
 
 출처: [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · [R1-2508081](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508081.zip)
 
-**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122bis:9.2:017` · 관련 주제: CSI-RS
+**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122bis:9.2:017` · 관련 주제: CSI-RS · UE features (FG)
+
+구현 영향: 처리 시간·CPU, 포트·자원·레이어 수, 측정·보고량
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 59. NR_MIMO_Ph5 | 59-2-1-5 | Extended Rel-18 eType-II Doppler codebook for 64 Tx ports | 1. Support of extended Rel-18 Type-II Doppler codebook for 64 Tx ports by aggregating multiple NZP CSI-RS resource groups within 1 slot 2. Support X=1 CQI based on the first/earliest slot of the CSI reporting window and the first/earliest predicted PMI (TDCQI=’1-1’) 3. Support PMI subband R=1 4. Support parameter combinations with L=2,4 5. Support rank = 1,2 6. Support 64 ports 7. A list of supported combinations, each combination is {Max # of resources and total # of Tx ports} across all CCs in a band when reported per band, and across all CCs in a band combination when reported per BC simultaneously 8. Supported processing capability 9. Value of Y for CPU occupation when P/SP-CSI-RS is configured for CMR 10. Value of Y for CPU occupation when A-CSI-RS is configured for CMR 11. Support for the size of DD-basis, N4=1 12. Scaling factor for active resource counting Kp 13. Max # of CSI-RS resource in a resource group for aperiodic CSI-RS resource set or in a resource set for periodic CSI-RS resource set 14. A list of supported combinations, each combination is {Max # of resources and total # of Tx ports} per CC simultaneously | 40-3-2-1 | yes | n/a | Extended Rel-18 Type-II Doppler codebook is not supported for 64 Tx ports, aggregated CSI-RS resources within one slot | Per band and per BC | n/a | n/a | n/a | Component 7 candidate values a. {1, …, 64, 128, 256} b. {64, …, 256, 512, 768, 1024} Component 8 candidate value {Capability 1, Capability 2} Component 9 candidate values: {1, 2, 3} Component 10 candidate values: {1, 2, 3} Component 12 candidate values: {1, 2, 4} Component 13 candidate value {2,4} Component 14 candidate values a. {1, …, 64, 128, 256} b. {64, …, 256, 512, 768, 1024} Note: For component of processing capability Capability 1: Legacy timeline OCPU = YxN4xceil(P/32) ), when P/SP-CSI-RS is configured for CMR OCPU = Yx KDOPPxceil(P/32)), when A-CSI-RS is configured for CMR Capability 2: Scale the legacy timeline by ceil(P/32) where P is the total number of ports across all the K aggregated CSI-RS resources OCPU = YxN4, when P/SP-CSI-RS is configured for CMR OCPU = Yx KDOPP, when A-CSI-RS is configured for CMR Note: maximum OCPU is 8 Note: KDOPP is the number of CSI-RS resource groups configured for channel measurement, and each CSI-RS resource groups contain K CSI-RS resources for aggregating up to 128 ports | Optional with capability signalling |
 
 출처: [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · [R1-2508081](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508081.zip)
 
-**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122bis:9.2:018` · 관련 주제: CSI-RS
+**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122bis:9.2:018` · 관련 주제: CSI-RS · UE features (FG)
+
+구현 영향: 처리 시간·CPU, 포트·자원·레이어 수, 측정·보고량
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 59. NR_MIMO_Ph5 | 59-2-1-5a | Extended Rel-18 eType-II Doppler codebook for 48 Tx ports | 1. Support of extended Rel-18 Type-II Doppler codebook for 48 Tx ports by aggregating multiple NZP CSI-RS resource groups within 1 slot 2. Support X=1 CQI based on the first/earliest slot of the CSI reporting window and the first/earliest predicted PMI (TDCQI=’1-1’) 3. Support PMI subband R=1 4. Support parameter combinations with L=2,4 5. Support rank = 1,2 6. Support 64 ports 7. A list of supported combinations, each combination is {Max # of resources and total # of Tx ports} across all CCs in a band when reported per band, and across all CCs in a band combination when reported per BC simultaneously 8. Supported processing capability 9. Value of Y for CPU occupation when P/SP-CSI-RS is configured for CMR 10. Value of Y for CPU occupation when A-CSI-RS is configured for CMR 11. Support for the size of DD-basis, N4=1 12. Scaling factor for active resource counting Kp 13. Max # of CSI-RS resource in a resource group for aperiodic CSI-RS resource set or in a resource set for periodic CSI-RS resource set 14. A list of supported combinations, each combination is {Max # of resources and total # of Tx ports} per CC simultaneously | 59-2-1-5 | yes | n/a | Extended Rel-18 Type-II Doppler codebook is not supported for 48 Tx ports, aggregated CSI-RS resources within one slot | Per band and per BC | n/a | n/a | n/a | Component 7 candidate values a. {1, …, 64, 128, 256} b. {64, …, 256, 512, 768, 1024} Component 8 candidate value {Capability 1, Capability 2} Component 9 candidate values: {1, 2, 3} Component 10 candidate values: {1, 2, 3} Component 12 candidate values: {1, 2, 4} Component 13 candidate value {2,3} Component 14 candidate values a. {1, …, 64} b. {64, …, 256, 512, 768, 1024} Note: For component of processing capability Capability 1: Legacy timeline OCPU = Y x N4 x ceil(P/32) ), when P/SP-CSI-RS is configured for CMR OCPU = Y x KDOPP x ceil(P/32)), when A-CSI-RS is configured for CMR Capability 2: Scale the legacy timeline by ceil(P/32) where P is the total number of ports across all the K aggregated CSI-RS resources OCPU = Y x N4, when P/SP-CSI-RS is configured for CMR OCPU = Y x KDOPP, when A-CSI-RS is configured for CMR Note: maximum OCPU is 8 Note: KDOPP is the number of CSI-RS resource groups configured for channel measurement, and each CSI-RS resource groups contain K CSI-RS resources for aggregating up to 128 ports | Optional with capability signalling |
 
 출처: [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · [R1-2508081](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508081.zip)
 
-**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122bis:9.2:019` · 관련 주제: CSI-RS
+**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122bis:9.2:019` · 관련 주제: CSI-RS · UE features (FG)
+
+구현 영향: 처리 시간·CPU, 포트·자원·레이어 수, 측정·보고량
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 59. NR_MIMO_Ph5 | 59-2-1-5b | Extended Rel-18 eType-II Doppler codebook for 128 Tx ports | 1. Support of extended Rel-18 Type-II Doppler codebook for 128 Tx ports by aggregating multiple NZP CSI-RS resource groups within 1 slot 2. Support X=1 CQI based on the first/earliest slot of the CSI reporting window and the first/earliest predicted PMI (TDCQI=’1-1’) 3. Support of PMI subband R=1 for extended Rel-18 eType II Doppler codebook 4. Support parameter combinations with L=2,4 5. Support for rank = 1,2 6. Support 64 ports 7. A list of supported combinations, each combination is { Max # of Tx ports in one resource, Max # of resources and total # of Tx ports} across all CCs in a band when reported per band, and across all CCs in a band combination when reported per BC simultaneously 8. Supported processing capability 9. Value of Y for CPU occupation (OCPU = Y.N4), when P/SP-CSI-RS is configured for CMR 10. Value of Y for CPU occupation (OCPU = Y. KDOPP), when A-CSI-RS is configured for CMR 11. Support for the size of DD-basis, N4=1 12. Scaling factor for active resource counting Kp 13. Support 4 CSI-RS resources in a resource group for aperiodic CSI-RS resource set or in a resource set for periodic CSI-RS resource set 14. A list of supported combinations, each combination is {Max # of resources and total # of Tx ports} per CC simultaneously | 59-2-1-5 | yes | n/a | Extended Rel-18 Type-II Doppler codebook is not supported for 128 Tx ports, aggregated CSI-RS resources within one slot | Per band and per BC | n/a | n/a | n/a | Component 7 candidate values a. {1, …, 64, 128, 256} b. {64, …, 256, 512, 768, 1024} Component 8 candidate value {Capability 1, Capability 2} Component 9 candidate values: {1, 2, 3} Component 10 candidate values: {1, 2, 3} Component 12 candidate values: {1, 2, 4} Component 14 candidate values a. {1, …, 64, 128, 256} b. {64, …, 256, 512, 768, 1024} Note: For component of processing capability Capability 1: Legacy timeline OCPU = Y x N4 x ceil(P/32) ), when P/SP-CSI-RS is configured for CMR OCPU = Y x KDOPP x ceil(P/32)), when A-CSI-RS is configured for CMR Capability 2: Scale the legacy timeline by ceil(P/32) where P is the total number of ports across all the K aggregated CSI-RS resources OCPU = Y x N4, when P/SP-CSI-RS is configured for CMR OCPU = Y x KDOPP, when A-CSI-RS is configured for CMR Note: maximum OCPU is 8 Note: KDOPP is the number of CSI-RS resource groups configured for channel measurement, and each CSI-RS resource groups contain K CSI-RS resources for aggregating up to 128 ports | Optional with capability signalling |
 
 출처: [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · [R1-2508081](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508081.zip)
 
-**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122bis:9.2:020`
+**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122bis:9.2:020` · UE features (FG)
+
+구현 영향: 포트·자원·레이어 수, 측정·보고량
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 59. NR_MIMO_Ph5 | 59-2-2-1 | Hybrid BF (CRI-based) with Rel-15 Type-I SP codebook | 1. The maximal supported number of CRI report M 2. A list of supported combinations, each combination is {Max # of Tx ports in one resource, Max # of resources and total # of Tx ports} across all CCs simultaneously. 3. The maximum value of KS | 2-36 | yes | n/a | Hybrid BF (CRI-based) with Rel-15 Type-I SP codebook is not supported | Per band and per BC | n/a | n/a | n/a | Component 1 candidate values: {1,2,3,4} Component 2 candidate values: a. {2,4,8,12,16, 24, 32} b. {1,2,3,4 … 256} c. {64, …, 256, 512, 768, 1024} Component 3 candidate values: {2,3,4,5,6,7,8} | Optional with capability signalling |
 
 출처: [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · [R1-2508081](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508081.zip)
 
-**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122bis:9.2:021`
+**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122bis:9.2:021` · UE features (FG)
+
+구현 영향: 포트·자원·레이어 수, 측정·보고량
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 59. NR_MIMO_Ph5 | 59-2-2-2 | Hybrid BF (CRI-based) with Rel-16 eType-II codebook | 1. The maximal supported number of CRI report M 2. A list of supported combinations, each combination is {Max # of Tx ports in one resource, Max # of resources and total # of Tx ports} across all CCs simultaneously. 3. The maximum value of KS | 16-3a | yes | n/a | Hybrid BF (CRI-based) with Rel-16 eType-II codebook is not supported | Per band and per BC | n/a | n/a | n/a | Component 1 candidate values: {1,2} Component 2 candidate values: a. {2,4,8,12,16, 24, 32} b. {1,2,3,4 … 256} c. {64, …, 256, 512, 768, 1024} Component 3 candidate values: {2,3,4,5,6,7,8} | Optional with capability signalling |
 
 출처: [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · [R1-2508081](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508081.zip)
 
-**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122bis:9.2:023`
+**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122bis:9.2:023` · UE features (FG)
+
+구현 영향: 포트·자원·레이어 수
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 59. NR_MIMO_Ph5 | 59-2-1-4b | M=2 and R=1 for extended Rel-17 FeType-II PS (port selection) codebook for up to 64 ports | 1. Support M=2 and R=1 for extended Rel-17 FeType-II PS (port selection) codebook for up to 64 ports 2. Support of parameter combinations with M=2 3. A list of supported combinations, each combination is {Max # of Tx ports in a report, Max # of sets of aggregated resources, and total # of Tx ports} across all CCs in a band when reported per band, and across all CCs in a band combination when reported per BC simultaneously with M=2 and R=1 | 59-2-1-4 | Yes | n/a | M=2 and R=1 for extended Rel-17 FeType-II PS (port selection) codebook for up to 64 ports is not supported | Per band and Per BC | n/a | n/a | n/a | Component 3 candidate values a. {48, 64} b. {1, 2, …, 64, 128, 256} c. {64, …, 256, 512, 768, 1024} | Optional with capability signalling |
 
 출처: [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · [R1-2508081](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508081.zip)
 
-**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122bis:9.2:024`
+**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122bis:9.2:024` · UE features (FG)
+
+구현 영향: 포트·자원·레이어 수
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 59. NR_MIMO_Ph5 | 59-2-1-4c | M=2 and R=2 for extended Rel-17 FeType-II PS (port selection) codebook for up to 64 ports | 1. Support M=2 and R=2 for extended Rel-17 FeType-II PS (port selection) codebook for up to 64ports 2. A list of supported combinations, each combination is {Max # of Tx ports in a report, Max # of sets of aggregated resources, and total # of Tx ports} across all CCs in a band when reported per band, and across all CCs in a band combination when reported per BC simultaneously with M=2 and R=2 | 59-2-1-4 | Yes | n/a | M=2 and R=2 for extended Rel-17 FeType-II PS (port selection) codebook for up to 64 ports is not supported | Per band and Per BC | n/a | n/a | n/a | Component 2 candidate values a. {48, 64} b. {1, 2, …, 64, 128, 256} c. {64, …, 256, 512, 768, 1024} | Optional with capability signalling |
 
 출처: [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · [R1-2508081](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508081.zip)
 
-**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122bis:9.2:025` · 관련 주제: CSI-RS
+**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122bis:9.2:025` · 관련 주제: CSI-RS · UE features (FG)
+
+구현 영향: 포트·자원·레이어 수
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 59. NR_MIMO_Ph5 | 59-2-1-5c | N4>1 for extended Rel-18 Type-II Doppler codebook for up to 128 ports | 1. Support for the size of DD-basis, N4>1 2. A list of supported combinations, each combination is {Max N4, Max # of Tx ports in a report, Max # of sets of aggregated resources or groups of aggregated resource, and total # of Tx ports} across all CCs in a band when reported per band, and across all CCs in a band combination when reported per BC simultaneously 3. A list of supported combinations, each combination is {Max N4, Max # of Tx ports in a report, Max # of sets of aggregated resources or groups of aggregated resource, and total # of Tx ports} for one CSI report setting 4. Value of d=m for the DD unit size when A-CSI-RS is configured for CMR | 59-2-1-5 | Yes | n/a | N4>1 for extended Rel-18 Type-II Doppler codebook for up to 128 ports is not supported | Per band and Per BC | n/a | n/a | n/a | Component 2 candidate values a. {1,2,4,8} b. {48, 64,128} c. {1, 2,3,4 … 64, 128, 256} d. {64, …, 256, 512, 768, 1024} Component 3 Candidate values a. {1,2,4,8} b. {48, 64,128} c. {4,8,12} d. {64, …, 256} | Optional with capability signalling |
 
 출처: [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · [R1-2508081](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508081.zip)
 
-**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122bis:9.2:026`
+**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122bis:9.2:026` · UE features (FG)
+
+구현 영향: 포트·자원·레이어 수, 측정·보고량
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 59. NR_MIMO_Ph5 | 59-2-1-5f | PMI subband R=2 for extended Rel-18 Type-II Doppler codebook for up to 128 ports | 1. Support PMI subband R=2 for Rel-18 Type-II Doppler codebook enhancement for up to 128 ports 2. A list of supported combinations, each combination is {Max N4, Max # of Tx ports in a report, Max # of sets of aggregated resources or groups of aggregated resource, and total # of Tx ports} across all CCs in a band when reported per band, and across all CCs in a band combination when reported per BC simultaneously with R=2 | 59-2-1-5 | Yes | n/a | PMI subband R=2 for extended Rel-18 Type-II Doppler codebook for up to 128 ports is not supported | Per band and Per BC | n/a | n/a | n/a | Component 2 candidate values a. {1,2,4,8} b. {48, 64,128} c. {1, 2,3,4 … 64, 128, 256} d. {64, …, 256, 512, 768, 1024} | Optional with capability signalling |
 
 출처: [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · [R1-2508081](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508081.zip)
 
-**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122bis:9.2:027` · 관련 주제: CSI-RS
+**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122bis:9.2:027` · 관련 주제: CSI-RS · UE features (FG)
+
+구현 영향: 처리 시간·CPU, 포트·자원·레이어 수
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 59. NR_MIMO_Ph5 | 59-2-1-9 | NES SD Type1 for Rel-19 Type-I single-panel codebook | 1. Support NES SD Type1 for Rel-19 Type-I single-panel codebook 2. Supported NES SD Type1 timeline from two timeline capabilities, for Rel-19 Type-I single-panel codebook 3 Supported number of ports for CSI report subconfig | 59-2-1-1, 1a, 1b, 1c, 1d, or 1e and 42-1,1a, 1b or 1c | Yes | n/a | NES SD Type1 for Rel-19 Type-I single-panel codebook is not supported | [Per-band and per-BC] | n/a | n/a | n/a | Component 2 candidate values: Capability 1: Reuse legacy Z/Z’ values (i.e., Z2 and Z’2) Capability 2 timeline: Scale the legacy timeline Z/Z’ (i.e., Z2 and Z’2) by where M is the number of sub-configurations that refer to the any of the K aggregated CSI-RS resources Component 3 candidate values: One or more values from {2, 4, 8, 12, 16, 24, 32, 48, 64, 128} | Optional with capability signaling |
 
 출처: [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · [R1-2508081](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508081.zip)
 
-**Agreement** · `10.2.2` Enhancing DL CSI acquisition · `RAN1#122bis:10.2.2:002` · 관련 주제: CSI-RS
+**Agreement** · `10.2.2` Enhancing DL CSI acquisition · `RAN1#122bis:10.2.2:002` · 관련 주제: CSI-RS · 규격 작업 (WI)
+
+구현 영향: 처리 시간·CPU
 
 > For early triggering of CSI/CSI-RS when SCell transition from a dormant BWP to a non-dormant BWP, support aperiodic CSI reporting for the non-dormant BWP, triggered via a DCI indicating switching out of SCell dormancy.
 > - The aperiodic CSI reporting is associated with aperiodic CSI-RS for CSI on the non-dormant BWP
@@ -1347,44 +1569,52 @@
 > - FFS: Triggering mechanism(s)
 > - FFS: Timeline of the aperiodic CSI reporting and corresponding aperiodic CSI-RS for CSI (requirement is up to RAN4)
 
-남은 FFS 3건
+FFS 3줄
 
 출처: [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · [R1-2506838](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2506838.zip)
 
-**Agreement** · `10.2.2` Enhancing DL CSI acquisition · `RAN1#122bis:10.2.2:003`
+**Agreement** · `10.2.2` Enhancing DL CSI acquisition · `RAN1#122bis:10.2.2:003` · 규격 작업 (WI)
+
+구현 영향: 측정·보고량
 
 > For UE transition from IDLE/INACTIVE to CONNECTED mode, support the followings for aperiodic CSI reporting triggered by MSG4:
 > - For PMI-based reporting, support the report quantity ‘CRI-RI-PMI-CQI’
 >   - FFS: ‘CRI-RI-LI-PMI-CQI’
 > - For PMI-free reporting, support the report quantity ‘CRI-RI-CQI’
 
-남은 FFS 1건
+FFS 1줄
 
 출처: [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · [R1-2506838](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2506838.zip)
 
-**Agreement** · `10.2.2` Enhancing DL CSI acquisition · `RAN1#122bis:10.2.2:006`
+**Agreement** · `10.2.2` Enhancing DL CSI acquisition · `RAN1#122bis:10.2.2:006` · 규격 작업 (WI)
+
+구현 영향: 측정·보고량
 
 > For SCell transition from deactivation to activation, support the followings for aperiodic CSI reporting triggered based on legacy SCell activation command:
 > - For PMI-based reporting, support the report quantity ‘CRI-RI-PMI-CQI’
 >   - FFS: ‘CRI-RI-LI-PMI-CQI’
 > - For PMI-free reporting, support the report quantity ‘CRI-RI-CQI’
 
-남은 FFS 1건
+FFS 1줄
 
 출처: [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · [R1-2506839](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2506839.zip)
 
-**Agreement** · `10.2.2` Enhancing DL CSI acquisition · `RAN1#122bis:10.2.2:007`
+**Agreement** · `10.2.2` Enhancing DL CSI acquisition · `RAN1#122bis:10.2.2:007` · 규격 작업 (WI)
+
+구현 영향: 측정·보고량
 
 > For SCell transition from dormant-BWP to non-dormant BWP, support the followings for aperiodic CSI reporting triggered via a DCI indicating switching out of SCell dormancy:
 > - For PMI-based reporting, support the report quantity ‘CRI-RI-PMI-CQI’
 >   - FFS: ‘CRI-RI-LI-PMI-CQI’
 > - For PMI-free reporting, support the report quantity ‘CRI-RI-CQI’
 
-남은 FFS 1건
+FFS 1줄
 
 출처: [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · [R1-2506839](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2506839.zip)
 
-**Agreement** · `10.2.2` Enhancing DL CSI acquisition · `RAN1#122bis:10.2.2:010` · 관련 주제: CSI-RS
+**Agreement** · `10.2.2` Enhancing DL CSI acquisition · `RAN1#122bis:10.2.2:010` · 관련 주제: CSI-RS · 규격 작업 (WI)
+
+구현 영향: UE capability·FG, 포트·자원·레이어 수
 
 > For early triggering of aperiodic CSI reporting and the associated CSI-RS for CSI when UE transition from IDLE/INACTIVE to CONNECTED mode, support Option-2 as follows:
 > - In Step-1, SIBx provides one or multiple CSI report configurations based on one or multiple UE capability assumptions
@@ -1396,11 +1626,13 @@
 > - In Step-2, UE reports through MSG3 which/whether the CSI report configuration(s) provided in SIBx is/are supported.
 >   - FFS: How to report which/whether the CSI report configuration(s) provided in SIBx is/are supported.
 
-남은 FFS 3건
+FFS 3줄
 
 출처: [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · [R1-2506840](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2506840.zip)
 
-**Agreement** · `10.2.2` Enhancing DL CSI acquisition · `RAN1#122bis:10.2.2:011` · 관련 주제: CSI-RS
+**Agreement** · `10.2.2` Enhancing DL CSI acquisition · `RAN1#122bis:10.2.2:011` · 관련 주제: CSI-RS · 규격 작업 (WI)
+
+구현 영향: 처리 시간·CPU
 
 > On PUSCH allocation for MSG4-triggered aperiodic CSI reporting associated with aperiodic CSI-RS for CSI, when UE transition from IDLE/INACTIVE to CONNECTED mode, down select one from the following alternatives to determine PUSCH for carrying the aperiodic CSI report by RAN1#123:
 > - Alt-1: The PUSCH is scheduled by MAC CE in MSG4 along with the aperiodic CSI report triggering.
@@ -1412,7 +1644,9 @@
 
 ## RAN1#122 — 25건
 
-**Agreement** · `8.2.1` Enhancements for UE-initiated/event-driven beam management · `RAN1#122:8.2.1:003`
+**Agreement** · `8.2.1` Enhancements for UE-initiated/event-driven beam management · `RAN1#122:8.2.1:003` · 유지보수 (CR)
+
+규격: TS 38.214 5.2.5
 
 > Adopt the following changes in Clause 5.2.5 in TS38.214.
 > - Reason for change: Reusing the intra-UE multiplexing/prioritization rules of PUSCH with SP-CSI for PUSCH for UEI-BR for Mode B was agreed. However, it is not captured in the current specification on the priority rules of CSI reports.
@@ -1422,13 +1656,15 @@
 
 출처: [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) · [R1-2506253](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506253.zip)
 
-**Agreement** · `8.2.2` CSI enhancements · `RAN1#122:8.2.2:002`
+**Agreement** · `8.2.2` CSI enhancements · `RAN1#122:8.2.2:002` · 유지보수 (CR)
 
 > For the Rel-19 Type-I SP and Type-II codebook refinement, refine the following agreement in RAN1#121 as follows:
 
 출처: [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) · [R1-2505535](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2505535.zip)
 
-**Agreement** · `8.2.2` CSI enhancements · `RAN1#122:8.2.2:003` · 관련 주제: CSI-RS
+**Agreement** · `8.2.2` CSI enhancements · `RAN1#122:8.2.2:003` · 관련 주제: CSI-RS · 유지보수 (CR)
+
+구현 영향: 포트·자원·레이어 수, 측정·보고량
 
 > For the Rel-19 Type-I SP and Type-II codebook refinement for P=48, 64, and 128 CSI-RS ports with K>1 aggregated NZP aperiodic CSI-RS resources for CMR, to implement the previous agreements on the mapping from CSI-RS resource index/port index per resource and port index to CSI/PMI calculation
 > - In TS38.211, extend the enumeration of antenna port p=3000+p’ with p’=0 …P–1
@@ -1438,31 +1674,45 @@
 
 출처: [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) · [R1-2505535](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2505535.zip)
 
-**Conclusion** · `8.2.2` CSI enhancements · `RAN1#122:8.2.2:004` · 관련 주제: CSI-RS
+**Conclusion** · `8.2.2` CSI enhancements · `RAN1#122:8.2.2:004` · 관련 주제: CSI-RS · 유지보수 (CR)
+
+구현 영향: 포트·자원·레이어 수
 
 > For the Rel-19 Type-I SP codebook refinement for 48, 64, and 128 CSI-RS ports, joint configuration of the Rel-18 SD NES Type-I, the Rel-19 Type-I SP codebook, and the Rel-19 soft scaling for the Rel-19 Type-I SP codebook is not supported.
 
 출처: [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) · [R1-2506513](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506513.zip)
 
-**Conclusion** · `8.2.2` CSI enhancements · `RAN1#122:8.2.2:005` · 관련 주제: CSI-RS
+**Conclusion** · `8.2.2` CSI enhancements · `RAN1#122:8.2.2:005` · 관련 주제: CSI-RS · 유지보수 (CR)
+
+구현 영향: 포트·자원·레이어 수 · 규격: TS 38.211 7.4.1.5.3
+
+> ⚠️ 수식 누락 의심 — 원본 추출에서 Word 수식(변수·기호)이 빠졌을 수 있습니다. Chair notes 원문으로 확인하세요.
 
 > For Rel-19 Type-II codebook refinement for 48, 64, and 128 CSI-RS ports based on the Rel-18 Type-II Doppler codebook, following the legacy (Rel-18) principle, a UE shall assume that CSI-RS ports mapped to the same port index  across the K aperiodic CSI-RS resources, , as described in Clause 7.4.1.5.3 of [4, TS 38.211], share the same antenna port.
 
 출처: [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) · [R1-2506513](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506513.zip)
 
-**Conclusion** · `8.2.2` CSI enhancements · `RAN1#122:8.2.2:006` · 관련 주제: CSI-RS
+**Conclusion** · `8.2.2` CSI enhancements · `RAN1#122:8.2.2:006` · 관련 주제: CSI-RS · 유지보수 (CR)
+
+구현 영향: 포트·자원·레이어 수
+
+> ⚠️ 수식 누락 의심 — 원본 추출에서 Word 수식(변수·기호)이 빠졌을 수 있습니다. Chair notes 원문으로 확인하세요.
 
 > For the Rel-19 Type-II codebook refinement for 48, 64, and 128 CSI-RS ports, on CBSR, the -bit group-based bitmap is identical for all the  groups
 
 출처: [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) · [R1-2506513](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506513.zip)
 
-**Conclusion** · `8.2.2` CSI enhancements · `RAN1#122:8.2.2:007` · 관련 주제: CSI-RS
+**Conclusion** · `8.2.2` CSI enhancements · `RAN1#122:8.2.2:007` · 관련 주제: CSI-RS · 유지보수 (CR)
+
+구현 영향: 포트·자원·레이어 수, 측정·보고량
 
 > For the Rel-19 CRI-based CSI refinement for up to 128 CSI-RS ports, when one NZP CSI-RS resource for interference measurement is configured, it is associated with all the KS NZP CSI-RS resources for channel measurement
 
 출처: [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) · [R1-2506513](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506513.zip)
 
-**Agreement** · `8.2.3` Support for 3-antenna-port codebook-based transmissions · `RAN1#122:8.2.3:005`
+**Agreement** · `8.2.3` Support for 3-antenna-port codebook-based transmissions · `RAN1#122:8.2.3:005` · 유지보수 (CR)
+
+구현 영향: 포트·자원·레이어 수 · 규격: TS 38.214 6.2.3.1, TS 38.212 7.3.1
 
 > Adopt the following TP for TS 38.214 section 6.2.3.1.
 > Reason for change: Correct the PTRS-DMRS association as DCI format 0_3 is not supported for a 3TX UE
@@ -1472,35 +1722,55 @@
 
 출처: [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) · [R1-2506516](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506516.zip)
 
-**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122:9.2:001`
+**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122:9.2:001` · UE features (FG)
+
+구현 영향: 포트·자원·레이어 수, 측정·보고량
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 59. NR_MIMO_Ph5 | 59-2-1-3-1 | PMI sub-bands with R=2 for extended Rel-16 eType-II codebook for up to 128 ports | 1. Support of PMI sub-bands with R=2 for extended Rel-16 eType-II codebook for up to 128 ports 2. A list of supported combinations, each combination is {Max # of Tx ports in a report, Max # of sets of aggregated resources, and total # of Tx ports} across all CCs in a band when reported per band, and across all CCs in a band combination when reported per BC simultaneously with R=2 | 59-2-1-3 | Yes | n/a | PMI sub-bands with R=2 for extended Rel-16 eType-II codebook for up to 128 ports is not supported | Per band and Per BC | n/a | n/a | n/a | Component 2 candidate values a. {48, 64, 128} b. {1, …, 64} c. {64, …, 256, 512, 768, 1024} | Optional with capability signalling |
 
 출처: [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) · [R1-2506606](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506606.zip)
 
-**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122:9.2:002`
+**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122:9.2:002` · UE features (FG)
+
+구현 영향: 포트·자원·레이어 수
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 59. NR_MIMO_Ph5 | 59-2-1-3-3 | Rank 3,4 for extended Rel-16 eType-II codebook for up to 128 ports | 1. Support of Rank 3,4 for extended Rel-16 eType-II codebook for up to 128 ports 4. Support R=1 5. A list of supported combinations, each combination is {Max # of Tx ports in a report, Max # of sets of aggregated resources, and total # of Tx ports} across all CCs in a band when reported per band, and across all CCs in a band combination when reported per BC simultaneously with R=1 | one or more of {59-2-1-3, 59-2-1-3a, 59-2-1-3b} | Yes | n/a | Rank 3,4 for extended Rel-16 eType-II codebook for up to 128 ports is not supported | Per band and Per BC | n/a | n/a | n/a | Component 5 candidate values a. {48, 64, 128} b. {1, 2, …, 64} c. {64, …, 256, 1024} | Optional with capability signalling |
 
 출처: [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) · [R1-2506606](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506606.zip)
 
-**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122:9.2:003`
+**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122:9.2:003` · UE features (FG)
+
+구현 영향: 포트·자원·레이어 수, 측정·보고량
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 59. NR_MIMO_Ph5 | 59-2-1-5f | PMI subband R=2 for extended Rel-18 Type-II Doppler codebook for up to 128 ports | 1. Support PMI subband R=2 for Rel-18 Type-II Doppler codebook enhancement for up to 128 ports 2. A list of supported combinations, each combination is {Max N4, Max # of Tx ports in a report, Max # of sets of aggregated resources or groups of aggregated resource, and total # of Tx ports} across all CCs in a band when reported per band, and across all CCs in a band combination when reported per BC simultaneously with R=2 | 59-2-1-5 | Yes | n/a | PMI subband R=2 for extended Rel-18 Type-II Doppler codebook for up to 128 ports is not supported | Per band and Per BC | n/a | n/a | n/a | Component 2 candidate values a.{1,2,4,8} ab {48, 64,128} bc. {2,3,4 … 64} cd. {64, …, 256, 1024} | Optional with capability signalling |
 
 출처: [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) · [R1-2506606](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506606.zip)
 
-**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122:9.2:004` · 관련 주제: CSI-RS
+**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122:9.2:004` · 관련 주제: CSI-RS · UE features (FG)
+
+구현 영향: 처리 시간·CPU, UE capability·FG, 포트·자원·레이어 수
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 59. NR_MIMO_Ph5 | 59-2-1-5l | Processing timeline for CSI reference slot for extended Rel-18 Type-II Doppler codebook for up to 128 ports | 1. Aperiodic CSI report timing relaxation, w, extended Rel-18 Type-II Doppler codebook for up to 128 ports 2. Aperiodic CSI report timing relaxation, type, for extended Rel-18 Type-II Doppler codebook for up to 128 ports | 59-2-1-5 | Yes | n/a |  | Per band and Per BC | n/a | n/a | n/a | Component 1 candidate values: UE reports candidate value, w, independently for each SCS in unit of symbols: {14*(KP–1)*d, 14*KP*d} Note: Kp is according to Component 12 of FG 59-2-1-5 Note: d=4 (minimum periodicity of periodic CSI-RS) Component 2 candidate values: {CAP1, CAP2} For N4 = 1 1) For AP CSI-RS: (Z,Z’) = (Z2 + 14*( KDOPP –1)*m, Z'2) 2) For P/SP CSI-RS: (Z,Z’) = (Z2 + w, Z'2) For N4 > 1 and CAP1 in component 2 1) For AP CSI-RS: (Z,Z’) = (Z2 + 14*( KDOPP –1)*m, Z'2) 2) For P/SP CSI-RS: (Z,Z’) = (Z2 + w, Z'2) For N4 > 1 and CAP2 in component 2 1) For AP CSI-RS: (Z,Z’) = (Z2 + 14*( KDOPP –1)*m + Z'2, 2Z'2) 2) For P/SP CSI-RS: (Z,Z’) = (Z2 + w + Z'2, 2Z'2) Z2/Z'2 are defined in Table 5.4-2 in TS38.214 KDOPP is the number of CSI-RS resource groups configured for channel measurement, and each CSI-RS resource groups contain K CSI-RS resources for aggregating up to 128 ports M = {1,2}, is the offset between two adjacent AP CSI-RS resource groups for the CMR in slots This FG is not applicable to FR 2-2 | Optional with capability signalling |
 
 출처: [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) · [R1-2506606](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506606.zip)
 
-**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122:9.2:007` · 관련 주제: CSI-RS
+**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122:9.2:007` · 관련 주제: CSI-RS · UE features (FG)
+
+구현 영향: 처리 시간·CPU, 포트·자원·레이어 수, 측정·보고량
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 59. NR_MIMO_Ph5 | 59-2-1-1 | Enhanced Type-I SP codebook for 64 ports – Scheme-A | 1. Support of enhanced Type-I SP codebook for Scheme-A with 64 Tx ports by aggregating multiple NZP CSI-RS resources within one slot 2. A list of supported combinations, each combination is {Max # of resources and total # of Tx ports} across all CCs in a band when reported per band, and across all CCs in a band combination when reported per BC simultaneously 3. Supported maximum rank 4. Max # of CSI-RS resource in a resource set 5. Supported processing capability 6. A list of supported combinations, each combination is {Max # of resources and total # of Tx ports} per CC simultaneously | 2-35 | yes | n/a | Enhanced Type-I SP codebook is not supported for 64 ports – Scheme-A, aggregated CSI-RS resources within one slot | Per band and per BC | n/a | n/a | n/a | Component 2 candidate values a. {1, …, 64} b. {64, …, 256, 1024} Component 3 candidate value {4, 5, 6, 7, 8} Component 4 candidate value {1:8}{2,4} Component 5 candidate value {Capability 1, Capability 2} Component 6 candidate values a. {1, …, 64} b. {64, …, 256, 1024} Note: For component of processing capability Capability 1: Reuse legacy Z/Z’ values OCPU = ceil(P/32) Capability 2: Scale the legacy timeline Z/Z’ by ceil(P/32) where P is the total number of ports across all the K aggregated CSI-RS resources OCPU = 1 ceil(P/32) | Optional with capability signalling |
@@ -1523,21 +1793,31 @@
 
 출처: [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) · [R1-2506606](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506606.zip)
 
-**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122:9.2:008`
+**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122:9.2:008` · UE features (FG)
+
+구현 영향: 포트·자원·레이어 수, 측정·보고량
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 59. NR_MIMO_Ph5 | 59-2-2-1 | Hybrid BF (CRI-based) with Rel-15 Type-I SP codebook | 1. The maximal supported number of CRI report M 2. A list of supported combinations, each combination is {Max # of Tx ports in one resource, Max # of resources and total # of Tx ports} across all CCs simultaneously. 3. The maximum value of KS | FFS 2-36 | yes | n/a | Hybrid BF (CRI-based) with Rel-15 Type-I SP codebook is not supported | Per band and per BC | n/a | n/a | n/a | Component 1 candidate values: {1,2,3,4} Component 2 candidate values: a. {2,4,8,12,16, 24, 32} b. {1,2,3,4 … 256} c. {64, …, 256, 1024} Component 3 candidate values: {2,3,4,5,6,7,8} | Optional with capability signalling |
 
 출처: [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) · [R1-2506606](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506606.zip)
 
-**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122:9.2:009`
+**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122:9.2:009` · UE features (FG)
+
+구현 영향: 포트·자원·레이어 수, 측정·보고량
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 59. NR_MIMO_Ph5 | 59-2-2-2 | Hybrid BF (CRI-based) with Rel-16 eType-II codebook | 1. The maximal supported number of CRI report M 2. A list of supported combinations, each combination is {Max # of Tx ports in one resource, Max # of resources and total # of Tx ports} across all CCs simultaneously. 3. The maximum value of KS | FFS 16-3a | yes | n/a | Hybrid BF (CRI-based) with Rel-16 eType-II codebook is not supported | Per band and per BC | n/a | n/a | n/a | Component 1 candidate values: {1,2} Component 2 candidate values: a. {2,4,8,12,16, 24, 32} b. {1,2,3,4 … 256} c. {64, …, 256, 1024} Component 3 candidate values: {2,3,4,5,6,7,8} | Optional with capability signalling |
 
 출처: [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) · [R1-2506606](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506606.zip)
 
-**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122:9.2:014` · 관련 주제: CSI-RS
+**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122:9.2:014` · 관련 주제: CSI-RS · UE features (FG)
+
+구현 영향: 처리 시간·CPU, UE capability·FG, 포트·자원·레이어 수
 
 > Introduce the following Rel. 19 UE FGs (yellow highlighting, if any, shows text that’s not yet agreed)
 > | 59. NR_MIMO_Ph5 | 59-2-3-1a | CJTC Dd report processing | 1. Maximum number of configured TRS resource sets for delay offset report 2. Maximum number of configured TRS resource sets for delay offset report across all CCs in a band when reported per band, and across all CCs in a band combination when reported per BC 3. Maximum number of simultaneously active CSI-RS resources for delay offset report per CC 4. Maximum number of simultaneously active CSI-RS resources for delay offset report across all CCs in a band when reported per band, and across all CCs in a band combination when reported per BC 5. Value of X for CPU occupation (OCPU=XNTRP) | 59-2-3-1 | yes | n/a |  | Per band and Per BC | n/a | n/a | n/a | Component 1 candidate values: {2, 4, 6, 8, 10, 12} Component 2 candidate values: {2, 4, 6, 8, 12, … 64} Component 3 candidate values: {2, 4, 6, 8, 12, 16, 20, 24, 28, 32} Component 4 candidate values: {2, 4, 6, 8, 12, 16, 20, 24, 28, 32, …, 64} Component 5 candidate values: {1, 2} | Optional with capability signalling |
@@ -1547,56 +1827,82 @@
 
 출처: [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) · [R1-2506606](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506606.zip)
 
-**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122:9.2:016` · 관련 주제: CSI-RS
+**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122:9.2:016` · 관련 주제: CSI-RS · UE features (FG)
+
+구현 영향: 포트·자원·레이어 수
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 59. NR_MIMO_Ph5 | 59-2-1-6 | CSI-RS resource time domain restriction for extended Type-I and Type II codebook enhancement for up to 128 ports | Support of the K CSI-RS resources configured within two slots for Type-I and Type II codebook enhancement for up to 128 ports | FFS One or more of {59-2-1-1,1c, 2, 3, 4, 5} | yes | n/a | 2-slot resource aggregation is not supported | Per band and per BC | n/a | n/a | n/a |  | Optional with capability signalling |
 
 출처: [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) · [R1-2506606](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506606.zip)
 
-**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122:9.2:017`
+**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122:9.2:017` · UE features (FG)
+
+구현 영향: 포트·자원·레이어 수
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 59. NR_MIMO_Ph5 | 59-2-1-7 | Group-specific 3-bit scaling factors for up to 128 ports | Support of group-specific 3-bit scaling factors | FFS One or more of {59-2-1-1, 59-2-1-1c} | yes | n/a | Group-specific 3-bit scaling factors is not supported | Per band and per BC | n/a | n/a | n/a | Candidate values: {’rank-1’, ‘rank-1 and rank-2’} Note: 3-bit scaling applies only to the Type-I SP codebook | Optional with capability signalling |
 
 출처: [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) · [R1-2506606](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506606.zip)
 
-**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122:9.2:019`
+**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122:9.2:019` · UE features (FG)
+
+구현 영향: 측정·보고량
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 59. NR_MIMO_Ph5 | 59-2-2-3a | Configuration of MR always-reported resources with Rel-15 Type-I SP codebook | Support MR={1,2} for hybrid BF (CRI-based) with Rel-15 Type-I SP codebook | FFS 59-2-2-1 | yes | n/a | Configuration of MR always-reported resources is not supported, i.e. MR=0 with Rel-15 Type-I SP codebook | Per band and per BC | n/a | n/a | n/a |  | Optional with capability signalling |
 
 출처: [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) · [R1-2506606](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506606.zip)
 
-**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122:9.2:020`
+**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122:9.2:020` · UE features (FG)
+
+구현 영향: 측정·보고량
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 59. NR_MIMO_Ph5 | 59-2-2-3b | Configuration of MR always-reported resources with Rel-16 eType-II codebook with R=1 | Support MR={1} for hybrid BF (CRI-based) with Rel-16 eType-II codebook with R=1 | FFS 59-2-2-2 | Yes | n/a | Configuration of MR always-reported resources is not supported, i.e. MR=0 with Rel-16 eType-II codebook with R=1 | Per band and per BC | n/a | n/a | n/a |  | Optional with capability signalling |
 
 출처: [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) · [R1-2506606](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506606.zip)
 
-**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122:9.2:024`
+**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122:9.2:024` · UE features (FG)
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 59. NR_MIMO_Ph5 | 59-2-3-7 | Linkage of CJTC Dd and Rel-18 eType-II CJT with joint triggering | 1. Support of joint triggering for linked CJTC Delay offset reporting and Rel-18 eType-II CJT CSI | FFS 59-2-3-1 and 40-3-1-1 | yes | n/a | Linkage of CJTC Dd and Rel-18 eType-II CJT with joint triggering is not supported | Per band and Per BC | n/a | n/a | n/a |  | Optional with capability signalling |
 
 출처: [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) · [R1-2506606](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506606.zip)
 
-**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122:9.2:025`
+**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122:9.2:025` · UE features (FG)
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 59. NR_MIMO_Ph5 | 59-2-3-7a | Linkage of CJTC Dd and Rel-18 eType-II CJT with separate triggering | Support separate triggering for linked CJTC Delay offset reporting and Rel-18 eType-II CJT CSI | FFS 59-2-3-1 and 40-3-1-1 | yes | n/a | Separate triggering for linked CJTC Delay offset reporting and Rel-18 eType-II CJT CSI is not supported | Per band and Per BC | n/a | n/a | n/a |  | Optional with capability signalling |
 
 출처: [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) · [R1-2506606](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506606.zip)
 
-**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122:9.2:026`
+**Agreement** · `9.2` UE features for NR MIMO Phase 5 · `RAN1#122:9.2:026` · UE features (FG)
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 59. NR_MIMO_Ph5 | 59-2-3-8 | Separate triggering with configuration of 1-bit indicator per CSI trigger state | Support of 1 bit indicate per trigger state for separate triggering of linked DO reporting and Type II CJT reporting | FFS 59-2-3-7a | yes | n/a | Separate triggering with configuration of 1-bit indicator per CSI trigger state is not supported | Per band and Per BC | n/a | n/a | n/a |  | Optional with capability signalling |
 
 출처: [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) · [R1-2506606](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506606.zip)
 
-**Agreement** · `10.2.2` Enhancing DL CSI acquisition · `RAN1#122:10.2.2:002` · 관련 주제: CSI-RS
+**Agreement** · `10.2.2` Enhancing DL CSI acquisition · `RAN1#122:10.2.2:002` · 관련 주제: CSI-RS · 규격 작업 (WI)
+
+구현 영향: 측정·보고량
+
+> ⚠️ 수식 누락 의심 — 원본 추출에서 Word 수식(변수·기호)이 빠졌을 수 있습니다. Chair notes 원문으로 확인하세요.
 
 > For UE transition from IDLE/INACTIVE to CONNECTED mode, support aperiodic CSI reporting  triggered via MSG4 of 4-Step RACH based on the followings:
 > - The aperiodic CSI reporting is transmitted on PUSCH.
@@ -1606,11 +1912,13 @@
 > - Support PMI-free reporting with wideband CQI
 >   - FFS: Which report quantity can be configured
 
-남은 FFS 2건
+FFS 2줄
 
 출처: [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) · [R1-2506539](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506539.zip)
 
-**Agreement** · `10.2.2` Enhancing DL CSI acquisition · `RAN1#122:10.2.2:007` · 관련 주제: CSI-RS
+**Agreement** · `10.2.2` Enhancing DL CSI acquisition · `RAN1#122:10.2.2:007` · 관련 주제: CSI-RS · 규격 작업 (WI)
+
+구현 영향: 처리 시간·CPU
 
 > For early triggering of CSI/CSI-RS when SCell transition from deactivation to activation, support aperiodic CSI reporting for a SCell triggered based on legacy SCell activation command activating the SCell.
 > - The aperiodic CSI reporting is assosicated with at least aperiodic CSI-RS for CSI on the SCell
@@ -1618,7 +1926,7 @@
 > - FFS: How to trigger the aperiodic CSI reporting and corresponding aperiodic CSI-RS for CSI based on legacy SCell activation command?
 > - FFS: Whether/what new information is provided in SCell activation command?
 
-남은 FFS 3건
+FFS 3줄
 
 출처: [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) · [R1-2506583](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506583.zip)
 
@@ -1900,7 +2208,9 @@
 
 ### RAN1#126bis — 6건
 
-**Agreement** · `8.2` Maintenance on others · `RAN1#126bis:8.2:005` · 후보 · 🆕 신규 · 관련 주제: CSI-RS
+**Agreement** · `8.2` Maintenance on others · `RAN1#126bis:8.2:005` · 후보 · 🆕 신규 · 관련 주제: CSI-RS · 유지보수 (CR)
+
+구현 영향: UE capability·FG, 포트·자원·레이어 수 · 규격: TS 38.213 4.2, TS 38.211 4.5
 
 > Adopt the following TP for TS38.214 in principle
 > | Reason for change: nCSI_ref is determined based on the number of CSI-RS/SSB resources. For L1-CLI-RSSI report, the CLI is measured based on the CLI-RSSI resource rather than CSI-RS/SSB resources. The existing rule for nCSI_ref determination is not applicable for L1 CLI-RSSI report. Summary of change: Clarify nCSI_ref for L1-CLI-RSSI report as follows: If a single CLI-RSSI measurement resource is configured for interference measurement, nCSI_ref is the smallest value greater than or equal to , such that it corresponds to a valid downlink slot. If multiple CLI-RSSI measurement resources are configured for interference measurement, nCSI_ref is the smallest value greater than or equal to , such that it corresponds to a valid downlink slot. Consequences if not approved: UE behavior for nCSI_ref determination of LI-CLI-RSSI report is unclear. |
@@ -1909,7 +2219,9 @@
 
 출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · [R1-2608698](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2608698.zip) · `[126bis-R19-AI 8.2]`
 
-**Agreement** · `8.2` Maintenance on others · `RAN1#126bis:8.2:010` · 후보 · 🆕 신규 · 관련 주제: CSI-RS
+**Agreement** · `8.2` Maintenance on others · `RAN1#126bis:8.2:010` · 후보 · 🆕 신규 · 관련 주제: CSI-RS · 유지보수 (CR)
+
+구현 영향: 처리 시간·CPU, UE capability·FG, 포트·자원·레이어 수, 측정·보고량 · 규격: TS 38.214 5.2.4
 
 > Adopt the following TP to TS38.214 Section 5.2.4a in principle
 > | Reason for change: | Clause 5.2.4a specifies early CSI acquisition for both LTM and L3 handover. In the first paragraph, "candidate cell" is used for LTM and "target cell" is used for handover. However, in the remaining part of the clause, the CSI-IM association, the number of NZP-CSI-RS resources for channel measurement, and the PUSCH used for the CSI report are described only for a candidate cell, although the same procedures apply to the target cell for handover. |
@@ -1922,7 +2234,9 @@
 
 출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · [R1-2608653](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2608653.zip) · `[126bis-R19-AI 8.2]`
 
-**Agreement** · `8.2` Maintenance on others · `RAN1#126bis:8.2:011` · 후보 · 🆕 신규 · 관련 주제: CSI-RS
+**Agreement** · `8.2` Maintenance on others · `RAN1#126bis:8.2:011` · 후보 · 🆕 신규 · 관련 주제: CSI-RS · 유지보수 (CR)
+
+구현 영향: 측정·보고량 · 규격: TS 38.214 5.2.1.4.2, TS 38.321 5.35.1, TS 38.321 5.35.4, TS 38.321 6.1.3.84
 
 > Adopt the following TP to TS38.214 Section 5.2.1.4.2 in principle
 > | Reason for change: | SSBRI and CRI (the highlighted part below) are used in event triggered L1 measurement report (TS 38.321 clause 5.35.1, 5.35.4, 6.1.3.84), which is associated with LTM-CSI-ReportConfig with ltm-ReportConfigType set to ‘eventTriggered’ and with reportquantity set to ssb-index-RSRP or cri-RSRP (the highlighted part below). However SSBRI and CRI (with definition highlighted below) are not defined when ltm-ReportConfigType is set to ‘eventTriggered’ (the highlighted condition below), as from RAN1 TS 38.214 clause 5.2.1.4.2: A CR to TS 38.321 was submitted to RAN2-135 meeting, it was discussed in RAN2, and the conclusion is ‘Noted. Interesting company can submit RAN1 correction’. |
@@ -1936,7 +2250,11 @@
 
 출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · [R1-2608653](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2608653.zip) · `[126bis-R19-AI 8.2]`
 
-**Agreement** · `10.3.2` Modulation · `RAN1#126bis:10.3.2:002` · 후보 · 🆕 신규
+**Agreement** · `10.3.2` Modulation · `RAN1#126bis:10.3.2:002` · 후보 · 🆕 신규 · Study
+
+구현 영향: 메모리·복잡도, 측정·보고량
+
+> ⚠️ 수식 누락 의심 — 원본 추출에서 Word 수식(변수·기호)이 빠졌을 수 있습니다. Chair notes 원문으로 확인하세요.
 
 > For performance study to allow a single spectrum efficiency point (subject to quantization error) to be supported by multiple  pairs, both fixed SE simulations and simulations with link adaptation are needed.
 > - The performance study is to identify if the preferred  pair changes with respect to channel profile, rank, spatial-layer imbalance, receiver type, Doppler, EVM, UL power back-off, and LDPC code
@@ -1966,11 +2284,15 @@
 >   - Receiver used (MMSE or rML(DL))
 >   - Demapping/decoding complexity difference with respect to NR MCS for fixed SE evaluations
 
-남은 FFS 1건
+FFS 1줄
 
 출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · [R1-2608656](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2608656.zip) · `[126bis-R20-6GR-Modulation, joint channel coding and modulation]`
 
-**Agreement** · `10.5.2.3` Uplink transmission scheme(s) for uplink channels · `RAN1#126bis:10.5.2.3:012` · 후보 · 🆕 신규
+**Agreement** · `10.5.2.3` Uplink transmission scheme(s) for uplink channels · `RAN1#126bis:10.5.2.3:012` · 후보 · 🆕 신규 · Study
+
+구현 영향: 포트·자원·레이어 수, 메모리·복잡도
+
+> ⚠️ 수식 누락 의심 — 원본 추출에서 Word 수식(변수·기호)이 빠졌을 수 있습니다. Chair notes 원문으로 확인하세요.
 
 > For the study on downloadable UL codebook for codebook based PUSCH transmission for 6GR, the following is considered for evaluation:
 > - Each precoder matrix , where  is a P-dimensional precoding vector for layer , and  is the number of layers, where P is the number of UE antenna ports.
@@ -1985,7 +2307,7 @@
 
 출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · [R1-2607567](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2607567.zip) · `[126bis-R20-6GR-Transmission scheme for UL channels]`
 
-**Agreement** · `10.5.2.3` Uplink transmission scheme(s) for uplink channels · `RAN1#126bis:10.5.2.3:014` · 후보 · 🆕 신규
+**Agreement** · `10.5.2.3` Uplink transmission scheme(s) for uplink channels · `RAN1#126bis:10.5.2.3:014` · 후보 · 🆕 신규 · Study
 
 > For the study of DL/UL reciprocity based PUSCH transmission for 6GR, companies to report the following
 > - Sensitivity of performance to DL/UL reciprocity calibration error comparing the case of zero reciprocity calibration error
@@ -1995,14 +2317,18 @@
 
 ### RAN1#126 — 14건
 
-**Agreement** · `7` Pre-Rel-19 NR Maintenance · `RAN1#126:7:006` · 후보
+**Agreement** · `7` Pre-Rel-19 NR Maintenance · `RAN1#126:7:006` · 후보 · 유지보수 (CR)
+
+> ⚠️ 실제 변경 내용은 TDoc에 있습니다.
 
 > The draft CR for TS38.214 in R1-2605800 is endorsed in principle with removing “'codebook'/” from the revision.
 > Final CRs in R1-2606917 for Rel-18 and in R1-2606918 for Rel-19 are endorsed.
 
 출처: [Chair notes RAN1#126_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx) · [R1-2605800](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Docs/R1-2605800.zip)
 
-**Agreement** · `8.2` Maintenance on others · `RAN1#126:8.2:005` · 후보 · 관련 주제: CSI-RS
+**Agreement** · `8.2` Maintenance on others · `RAN1#126:8.2:005` · 후보 · 관련 주제: CSI-RS · 유지보수 (CR)
+
+구현 영향: 측정·보고량 · 규격: TS 38.214 5.2.1.4
 
 > Adopt the following TP to TS38.214 Section 5.2.1.4 in principle.
 > | ---- Reason for change: The agreement achieved during RAN1#117 meeting for CSI reporting subband with SBFD operation is missing. It should be captured in TS 38.214 that if a configured CSI subband overlaps with at least one PRB outside DL usable PRBs, the CSI reporting subband includes PRB(s) within DL usable PRBs only, on top of the TP agreed in RAN1#122 meeting. ----------------------------------------------------------Start of TP#1-------------------------------------------------------------- 5.2.1.4 Reporting configurations … The reportFreqConfiguration contained in a CSI-ReportConfig indicates the frequency granularity of the CSI Report. A CSI Reporting Setting configuration defines a CSI reporting band as a subset of subbands of the bandwidth part, where the reportFreqConfiguration indicates: - the csi-ReportingBand as a contiguous or non-contiguous subset of subbands in the bandwidth part for which CSI shall be reported. - A UE is not expected to be configured with csi-ReportingBand which contains a subband where a CSI-RS resource linked to the CSI Report setting has the frequency density of each CSI-RS port per PRB in the subband less than the configured density of the CSI-RS resource. - If a CSI-IM resource is linked to the CSI Report Setting, a UE is not expected to be configured with csi-ReportingBand which contains a subband where not all PRBs in the subband have the CSI-IM REs present. - For a CSI-ReportConfig with the higher layer parameter symbolType set to ‘sbfd’, a UE can be configured with a CSI subband if at least one PRB in the CSI subband is within PRBs that are both in the active DL BWP and in the DL sub-band(s). The CSI subband for CSI derivation only includes PRB(s) that are both in the active DL BWP and in the DL sub-band(s). - wideband CQI or subband CQI reporting, as configured by the higher layer parameter cqi-FormatIndicator. When wideband CQI reporting is configured, a wideband CQI is reported for each codeword for the entire CSI reporting band. When subband CQI reporting is configured, one CQI for each codeword is reported for each subband in the CSI reporting band. … ----------------------------------------------------------End of TP#1--------------------------------------------------------------- |
@@ -2010,14 +2336,18 @@
 
 출처: [Chair notes RAN1#126_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx) · [R1-2605539](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Docs/R1-2605539.zip) · `[126-R19-AI 8.2]`
 
-**Agreement** · `8.2` Maintenance on others · `RAN1#126:8.2:007` · 후보
+**Agreement** · `8.2` Maintenance on others · `RAN1#126:8.2:007` · 후보 · 유지보수 (CR)
+
+규격: TS 38.213 8, TS 38.213 11, TS 38.212 8.1, TS 38.212 8
 
 > Adopt the following TP to section 8 and 11, TS 38.213 as alignment CR
 > | 8 Random access procedure *** Unchanged parts are omitted *** For unpaired spectrum - if a UE is not provided tdd-UL-DL-ConfigurationCommon or sib1-tdd-UL-DL-ConfigurationCommon, all PRACH occasions are first PRACH occasions - otherwise, a PRACH occasion is - a first PRACH occasion, when it includes only symbols that are indicated as uplink or flexible by tdd-UL-DL-ConfigurationCommon or sib1-tdd-UL-DL-ConfigurationCommon and the UE is not provided by sbfd-RACH-DualConfig, and, or - a second PRACH occasion, when the UE is provided by sbfd-RACHDualConfigsbfd-RACH-DualConfig, or when it is only within SBFD symbols and includes at least one SBFD symbol indicated as downlink by tdd-UL-DL-ConfigurationCommon and the UE is provided sbfd-RACHSingleConfigsbfd-RACH-SingleConfig The procedures in clause 8.1 apply separately for the first PRACH occasions and the second PRACH occasions. Only a Type-1 random access procedure is applicable for the second PRACH occasions. *** Unchanged parts are omitted *** If a random access procedure is initiated by a PDCCH order and the UE is provided either sbfd-RACHSingleConfigsbfd-RACH-SingleConfig or sbfd-RACHDualConfigsbfd-RACH-DualConfig, the PDCCH order indicates [5, TS 38.212] whether the UE uses a PRACH occasion associated with either the first PRACH occasions or the second PRACH occasions, for the PRACH transmission that is initiated by the PDCCH order. 8.1 Random access preamble *** Unchanged parts are omitted *** - for a second PRACH occasion - it is in RBs that are both in the active UL BWP and in the UL sub-band, and - it starts at least symbols after a last non-SBFD downlink symbol and at least symbols after a last SS/PBCH block symbol, where is provided in Table 8.1-2, and does not overlap with a SS/PBCH block symbol, and - it is only within SBFD symbols, includes at least one SBFD symbol indicated as downlink by tdd-UL-DL-ConfigurationCommon, if the UE is provided sbfd-RACHSingleConfigsbfd-RACH-SingleConfig, or - it is only within SBFD symbols, if the UE is provided sbfd-RACHDualConfigsbfd-RACH-DualConfig, or - it starts from an SBFD symbol and ends in a non-SBFD symbols, if the UE is provided sbfd-RACHDualConfigsbfd-RACH-DualConfig and sbfd-RACHDualConfig-ValidROAcrossSymbolTypessbfd-RACH-DualConfig-ValidRO-AcrossSymbolTypes - for each of the candidate cells configured by LTM-config, if a UE is provided ltm-tdd-UL-DL-ConfigurationCommon, a PRACH occasion in a PRACH slot for a candidate cell is valid if *** Unchanged parts are omitted *** 11.1 Slot configuration *** Unchanged parts are omitted *** Except for a PRACH transmission in a PRACH occasion determined based on a second RACH configuration provided by sbfd-RACHDualConfigsbfd-RACH-DualConfig as described in clause 8, the UE transmits or receives a physical channel or signal either only in SBFD symbols or only in non-SBFD symbols. For a PUCCH transmission with SP-CSI reports, or for a PUCCH with SR, LRR, UEIRI, UE doesn’t transmit the PUCCH transmission occasion that is mapped to SBFD symbols and non-SBFD symbols. *** Unchanged parts are omitted *** |
 
 출처: [Chair notes RAN1#126_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx) · [R1-2606864](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Docs/R1-2606864.zip) · `[126-R19-AI 8.2]`
 
-**Agreement** · `8.2` Maintenance on others · `RAN1#126:8.2:014` · 후보 · 관련 주제: CSI-RS
+**Agreement** · `8.2` Maintenance on others · `RAN1#126:8.2:014` · 후보 · 관련 주제: CSI-RS · 유지보수 (CR)
+
+구현 영향: 처리 시간·CPU, 측정·보고량 · 규격: TS 38.214 5.2.1.2, TS 38.214 5.2.1.4.2, TS 38.331 5.2.1.2, TS 38.331 5.2.1.4.2
 
 > Adopt the following TP to TS38.214 Section 5.2.1.2 and 5.2.1.4.2 as alignment CR
 > | Reason for change: | The higher layer parameter carrying the list of SS/PBCH block indices in an LTM CSI resource setting was renamed by RAN2 in Rel-19. In TS 38.331 Rel-19 the parameter is ltm-SSB-ResourceList-r18 within LTM-SSB-ResourceSet-r18, whereas TS 38.214 still refers to it as ltm-CSI-SSB-ResourceList. The corresponding resource set parameter was already aligned in TS 38.214 v19.4.0, but the resource list parameter was not, so a misalignment between the RAN1 and RAN2 specifications remains. The Rel-18 versions of TS 38.214 and TS 38.331 are mutually consistent and are not affected. | The higher layer parameter carrying the list of SS/PBCH block indices in an LTM CSI resource setting was renamed by RAN2 in Rel-19. In TS 38.331 Rel-19 the parameter is ltm-SSB-ResourceList-r18 within LTM-SSB-ResourceSet-r18, whereas TS 38.214 still refers to it as ltm-CSI-SSB-ResourceList. The corresponding resource set parameter was already aligned in TS 38.214 v19.4.0, but the resource list parameter was not, so a misalignment between the RAN1 and RAN2 specifications remains. The Rel-18 versions of TS 38.214 and TS 38.331 are mutually consistent and are not affected. | The higher layer parameter carrying the list of SS/PBCH block indices in an LTM CSI resource setting was renamed by RAN2 in Rel-19. In TS 38.331 Rel-19 the parameter is ltm-SSB-ResourceList-r18 within LTM-SSB-ResourceSet-r18, whereas TS 38.214 still refers to it as ltm-CSI-SSB-ResourceList. The corresponding resource set parameter was already aligned in TS 38.214 v19.4.0, but the resource list parameter was not, so a misalignment between the RAN1 and RAN2 specifications remains. The Rel-18 versions of TS 38.214 and TS 38.331 are mutually consistent and are not affected. | The higher layer parameter carrying the list of SS/PBCH block indices in an LTM CSI resource setting was renamed by RAN2 in Rel-19. In TS 38.331 Rel-19 the parameter is ltm-SSB-ResourceList-r18 within LTM-SSB-ResourceSet-r18, whereas TS 38.214 still refers to it as ltm-CSI-SSB-ResourceList. The corresponding resource set parameter was already aligned in TS 38.214 v19.4.0, but the resource list parameter was not, so a misalignment between the RAN1 and RAN2 specifications remains. The Rel-18 versions of TS 38.214 and TS 38.331 are mutually consistent and are not affected. |
@@ -2042,25 +2372,27 @@
 
 출처: [Chair notes RAN1#126_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx) · [R1-2606748](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Docs/R1-2606748.zip) · `[126-R19-AI 8.2]`
 
-**Agreement** · `10.5.2.1` Downlink transmission scheme(s) for downlink control channels · `RAN1#126:10.5.2.1:007` · 후보
+**Agreement** · `10.5.2.1` Downlink transmission scheme(s) for downlink control channels · `RAN1#126:10.5.2.1:007` · 후보 · Study
+
+구현 영향: 메모리·복잡도
 
 > Study the need, feasibility including at least UE complexity and benefits of CSI acquisition for PDCCH.
 > Note: Solutions, if found to be feasible and needed, shall be coordinated with the other AIs.
 
 출처: [Chair notes RAN1#126_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx) · [R1-2606614](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Docs/R1-2606614.zip) · `[126-R20-6GR-Transmission scheme for DL control channel]`
 
-**Agreement** · `10.5.2.2` Downlink transmission scheme(s) for downlink shared channels · `RAN1#126:10.5.2.2:008` · 후보
+**Agreement** · `10.5.2.2` Downlink transmission scheme(s) for downlink shared channels · `RAN1#126:10.5.2.2:008` · 후보 · Study
 
 > - Study (semi-)open-loop transmission and whether/how to support specification-non-transparent schemes for PDSCH
 >   - Consider, at least, high-mobility scenario, scenarios with outdated CSI, and UE specific/common PDSCH
 >   - Consider specification-transparent and closed-loop schemes as performance baselines
 >   - FFS: Impact on DMRS
 
-남은 FFS 1건
+FFS 1줄
 
 출처: [Chair notes RAN1#126_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx) · [R1-2606678](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Docs/R1-2606678.zip) · `[126-R20-6GR-Transmission scheme for DL shared channel]`
 
-**Agreement** · `10.5.2.3` Uplink transmission scheme(s) for uplink channels · `RAN1#126:10.5.2.3:001` · 후보
+**Agreement** · `10.5.2.3` Uplink transmission scheme(s) for uplink channels · `RAN1#126:10.5.2.3:001` · 후보 · Study
 
 > For codebook based PUSCH transmission for 6GR, study the following coherency types of UL precoder
 > - Non-coherent type
@@ -2070,7 +2402,7 @@
 
 출처: [Chair notes RAN1#126_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx) · [R1-2605829](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Docs/R1-2605829.zip) · `[126-R20-6GR-Transmission scheme for UL channels]`
 
-**Agreement** · `10.5.2.3` Uplink transmission scheme(s) for uplink channels · `RAN1#126:10.5.2.3:002` · 후보
+**Agreement** · `10.5.2.3` Uplink transmission scheme(s) for uplink channels · `RAN1#126:10.5.2.3:002` · 후보 · Study
 
 > For codebook based PUSCH transmission for 6GR, study fixed codebook for full-coherent precoder type considering the following options and aspects:
 > - Option 1. Reuse NR UL codebook
@@ -2090,7 +2422,7 @@
 
 출처: [Chair notes RAN1#126_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx) · [R1-2605829](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Docs/R1-2605829.zip) · `[126-R20-6GR-Transmission scheme for UL channels]`
 
-**Agreement** · `10.5.2.3` Uplink transmission scheme(s) for uplink channels · `RAN1#126:10.5.2.3:004` · 후보
+**Agreement** · `10.5.2.3` Uplink transmission scheme(s) for uplink channels · `RAN1#126:10.5.2.3:004` · 후보 · Study
 
 > Support both of the following methods to convey the UCI over physical channel:
 > - Method 1: Define a UCI dedicated physical channel, i.e., Physical Uplink Control Channel (PUCCH)
@@ -2100,7 +2432,9 @@
 
 출처: [Chair notes RAN1#126_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx) · [R1-2605830](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Docs/R1-2605830.zip) · `[126-R20-6GR-Transmission scheme for UL channels]`
 
-**Agreement** · `10.5.2.3` Uplink transmission scheme(s) for uplink channels · `RAN1#126:10.5.2.3:012` · 후보
+**Agreement** · `10.5.2.3` Uplink transmission scheme(s) for uplink channels · `RAN1#126:10.5.2.3:012` · 후보 · Study
+
+> ⚠️ 수식 누락 의심 — 원본 추출에서 Word 수식(변수·기호)이 빠졌을 수 있습니다. Chair notes 원문으로 확인하세요.
 
 > The following is endorsed  as Draft an LS to RAN4 regarding the 6GR the RF coherence requirements.
 > 1 Overall description:
@@ -2115,7 +2449,7 @@
 
 출처: [Chair notes RAN1#126_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx) · [R1-2605832](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Docs/R1-2605832.zip) · `[126-R20-6GR-Transmission scheme for UL channels]`
 
-**Agreement** · `10.5.2.3` Uplink transmission scheme(s) for uplink channels · `RAN1#126:10.5.2.3:013` · 후보
+**Agreement** · `10.5.2.3` Uplink transmission scheme(s) for uplink channels · `RAN1#126:10.5.2.3:013` · 후보 · Study
 
 > For codebook based PUSCH transmission for 6GR, a fixed codebook is further clarified as follow:
 > - For a given precoder indication size, a set of precoder(s) in fixed codebook is pre-defined/specified in the specification
@@ -2124,7 +2458,9 @@
 
 출처: [Chair notes RAN1#126_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx) · [R1-2605832](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Docs/R1-2605832.zip) · `[126-R20-6GR-Transmission scheme for UL channels]`
 
-**Agreement** · `10.5.2.3` Uplink transmission scheme(s) for uplink channels · `RAN1#126:10.5.2.3:014` · 후보
+**Agreement** · `10.5.2.3` Uplink transmission scheme(s) for uplink channels · `RAN1#126:10.5.2.3:014` · 후보 · Study
+
+구현 영향: 포트·자원·레이어 수, 메모리·복잡도
 
 > For codebook based PUSCH transmission for 6GR, study configurable codebook considering the following options and aspects:
 > - Option 1. Downloadable codebook
@@ -2144,7 +2480,7 @@
 
 출처: [Chair notes RAN1#126_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx) · [R1-2605832](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Docs/R1-2605832.zip) · `[126-R20-6GR-Transmission scheme for UL channels]`
 
-**Agreement** · `10.5.4.3` HARQ related Aspects · `RAN1#126:10.5.4.3:001` · 후보
+**Agreement** · `10.5.4.3` HARQ related Aspects · `RAN1#126:10.5.4.3:001` · 후보 · Study
 
 > - For the study of downlink HARQ-ACK feedback granularity smaller than TB-level and the corresponding mechanism, candidate options in RAN1#125 are categorized as follow.
 > - Category A (HARQ-ACK schemes):
@@ -2162,11 +2498,13 @@
 > - At least a common set of evaluation assumptions are to be determined in this meeting for Category A.
 > - FFS same/additional evaluation assumptions are to be applied for Category B.
 
-남은 FFS 1건
+FFS 1줄
 
 출처: [Chair notes RAN1#126_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx) · [R1-2606797](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Docs/R1-2606797.zip) · `[126-R20-6GR-HARQ related]`
 
-**Agreement** · `10.5.4.3` HARQ related Aspects · `RAN1#126:10.5.4.3:003` · 후보
+**Agreement** · `10.5.4.3` HARQ related Aspects · `RAN1#126:10.5.4.3:003` · 후보 · Study
+
+구현 영향: 메모리·복잡도
 
 > - For study of 6G HARQ-ACK codebook based on NR Type-1 codebook as starting point, consider at least the following
 >   - Whether / how to reduce the codebook payload size
@@ -2186,13 +2524,15 @@
 >   - Whether/how to support standalone operation
 > - FFS: other approaches
 
-남은 FFS 2건
+FFS 2줄
 
 출처: [Chair notes RAN1#126_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx) · [R1-2606799](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Docs/R1-2606799.zip) · `[126-R20-6GR-HARQ related]`
 
 ### RAN1#125 — 5건
 
-**Agreement** · `8.2` Maintenance on others · `RAN1#125:8.2:006` · 후보
+**Agreement** · `8.2` Maintenance on others · `RAN1#125:8.2:006` · 후보 · 유지보수 (CR)
+
+규격: TS 38.214 5.2.4
 
 > Adopt the following TP to TS38.214 Section 5.2.4a
 > | Reason for change | For LTM, ‘ltm-CandidateConfig’ includes an RRCReconfiguration message that is used to provide an LTM candidate configuration, where the RRCReconfiguration message includes a ‘CellGroupConfig’ containing a ‘ReconfigurationWithSync’ that carries a ‘newUE-Identity’ to indicate a RNTI value for UE applied in target cell. For L3 handover, such ‘newUE-Identity’ is also provided for UE through handover command ‘ReconfigurationWithSync’. Thus, for 2-step CBRA based LTM or handover, UE always carries the C-RNTI in MSG A. Based on the above considerations and the CR (R1-2603427) already agreed in RAN1#124bis meeting, the wording “MSG B or” in clause 5.2.4a of TS 38.214-j30 should be removed. The reason is that for the determination of first PUSCH for early CSI report in 2-step CBRA based LTM or handover, the UE shall transmit the CSI report to the candidate cell using the first PUSCH corresponding to a dynamic grant or a configured grant after the HARQ-ACK transmission corresponding to “PDSCH scheduled by a PDCCH transmission addressed to the C-RNTI that is received in response to MSG A”, rather than referencing “MSG B”. |
@@ -2204,7 +2544,7 @@
 
 출처: [Chair notes RAN1#125_eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Inbox/Chair_notes/Chair%20notes%20RAN1%23125_eom.docx) · [R1-2605008](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Docs/R1-2605008.zip)
 
-**Agreement** · `9.4.1` Coverage enhancement · `RAN1#125:9.4.1:011` · 후보
+**Agreement** · `9.4.1` Coverage enhancement · `RAN1#125:9.4.1:011` · 후보 · 규격 작업 (WI)
 
 > Repurposing the following fields in UL Grant in RAR to indicate the UL beam information for multiple PRACH transmissions with different Tx beams.
 > - For 1bit indication, 1 bit of CSI request
@@ -2214,7 +2554,9 @@
 
 출처: [Chair notes RAN1#125_eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Inbox/Chair_notes/Chair%20notes%20RAN1%23125_eom.docx) · [R1-2604288](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Docs/R1-2604288.zip)
 
-**Agreement** · `10.2.1` Waveform · `RAN1#125:10.2.1:003` · 후보
+**Agreement** · `10.2.1` Waveform · `RAN1#125:10.2.1:003` · 후보 · Study
+
+구현 영향: UE capability·FG
 
 > - Max rank for multi-layer UL DFT-s-OFDM:
 >   - Max rank = 2
@@ -2230,11 +2572,13 @@
 >     - FFS: details
 > - Note: UE capability for above features can be discussed later once 6G UE capability framework is decided
 
-남은 FFS 2건
+FFS 2줄
 
 출처: [Chair notes RAN1#125_eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Inbox/Chair_notes/Chair%20notes%20RAN1%23125_eom.docx) · [R1-2603725](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Docs/R1-2603725.zip)
 
-**Agreement** · `10.5.2.3` Uplink transmission scheme(s) for uplink channels · `RAN1#125:10.5.2.3:008` · 후보
+**Agreement** · `10.5.2.3` Uplink transmission scheme(s) for uplink channels · `RAN1#125:10.5.2.3:008` · 후보 · Study
+
+구현 영향: 포트·자원·레이어 수, 메모리·복잡도
 
 > For 6GR PUSCH transmission
 > - Study codeword-to-layer mapping scheme at least considering the followings:
@@ -2249,7 +2593,7 @@
 
 출처: [Chair notes RAN1#125_eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Inbox/Chair_notes/Chair%20notes%20RAN1%23125_eom.docx) · `[125-R20-6GR-Transmission scheme for UL channels]`
 
-**Agreement** · `10.5.4.3` HARQ related Aspects · `RAN1#125:10.5.4.3:004` · 후보
+**Agreement** · `10.5.4.3` HARQ related Aspects · `RAN1#125:10.5.4.3:004` · 후보 · Study
 
 > In 6GR, for the study of downlink HARQ-ACK feedback granularity smaller than TB-level and corresponding mechanism, consider at least the following:
 > - XOR-based retransmission feedback
@@ -2272,7 +2616,9 @@
 
 ### RAN1#124bis — 5건
 
-**Agreement** · `8.3` Maintenance on Evolution of NR duplex operation: Sub-band full duplex (SBFD) · `RAN1#124bis:8.3:005` · 후보
+**Agreement** · `8.3` Maintenance on Evolution of NR duplex operation: Sub-band full duplex (SBFD) · `RAN1#124bis:8.3:005` · 후보 · 유지보수 (CR)
+
+구현 영향: 측정·보고량
 
 > Adopt the following TPs for TS38.214.
 > | 5.2.2.5 CSI reference resource definition *** Unchanged parts are omitted *** If configured to report CQI index, in the CSI reference resource, the UE shall assume the following for the purpose of deriving the CQI index, and if also configured, for deriving PMI and RI: The first 2 OFDM symbols are occupied by control signaling. The number of PDSCH and DM-RS symbols is equal to 12. The same bandwidth part subcarrier spacing configured as for the PDSCH reception The bandwidth as configured for the corresponding CQI report If a UE is configured with SBFD symbols and a CSI-ReportConfig with the higher layer parameter symbolType indicating SBFD symbols, CQI is generated based on the PRBs in the configured CSI report bandwidth that are both in the active DL BWP and in the DL sub-band(s). The IAB-MT shall only assume the frequency resources as indicated by the DL TX power adjustment MAC CE, if indicated for the slot of the CSI reference resource by DL Tx Power Adjustment MAC CE as described in [10, TS 38.321]. *** Unchanged parts are omitted *** |
@@ -2281,7 +2627,9 @@
 
 출처: [Chair notes RAN1#124bis_eom5](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Inbox/Chair_notes/Chair%20notes%20RAN1%23124bis_eom5.docx) · [R1-2603361](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Docs/R1-2603361.zip) · `[124b-R19-SBFD]`
 
-**Agreement** · `8.7` Maintenance on others · `RAN1#124bis:8.7:001` · 후보 · 관련 주제: CSI-RS
+**Agreement** · `8.7` Maintenance on others · `RAN1#124bis:8.7:001` · 후보 · 관련 주제: CSI-RS · 유지보수 (CR)
+
+구현 영향: UE capability·FG, 측정·보고량 · 규격: TS 38.214 5.2.4
 
 > - Adopt the following TP to TS38.214 Section 5.2.4a
 > | Reason for change: periodic CSI-RS/CSI-IM configuration for early CSI acquisition for a candidate cell is captured in the TS 38.214, while the semi-persistent CSI-RS/CSI-IM support is missing. Summary of change: Clarify that the CSI-RS/CSI-IM for CSI acquisition on a candidate cell can be semi-persistently activated. Consequences if not approved: UE’s behaviors of CSI acquisition for a candidate cell become incomplete. |
@@ -2290,7 +2638,9 @@
 
 출처: [Chair notes RAN1#124bis_eom5](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Inbox/Chair_notes/Chair%20notes%20RAN1%23124bis_eom5.docx) · [R1-2603335](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Docs/R1-2603335.zip) · `[124b-R19-others]`
 
-**Agreement** · `8.7` Maintenance on others · `RAN1#124bis:8.7:006` · 후보
+**Agreement** · `8.7` Maintenance on others · `RAN1#124bis:8.7:006` · 후보 · 유지보수 (CR)
+
+규격: TS 38.214 5.2.4
 
 > - Adopt the following TP to TS38.214 Section 5.2.4a
 > | Reason for change: In existing specification, for early CSI acquisition during RACH-based HO with CBRA, the current 2-step RA relies on “after MsgB HARQ-ACK”, which does not cover the MsgA success path via C-RNTI addressed PDCCH UL grant, and it also does not exclude the NACK case. Summary of change: Update TS 38.214 to clarify that ACK value is required for the MsgB HARQ-ACK and allow the first PUSCH to be the one scheduled by a C-RNTI addressed PDCCH received in response to MsgA. Consequences if not approved: Early CSI acquisition for 2-step RA HO may be missing in the MsgA UL-grant success path and may be triggered after a NACK, leading to inconsistent UE behavior and potential performance/interoperability issues. |
@@ -2299,7 +2649,9 @@
 
 출처: [Chair notes RAN1#124bis_eom5](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Inbox/Chair_notes/Chair%20notes%20RAN1%23124bis_eom5.docx) · [R1-2603381](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Docs/R1-2603381.zip) · `[124b-R19-others]`
 
-**Agreement** · `8.7` Maintenance on others · `RAN1#124bis:8.7:007` · 후보
+**Agreement** · `8.7` Maintenance on others · `RAN1#124bis:8.7:007` · 후보 · 유지보수 (CR)
+
+규격: TS 38.214 5.2.4
 
 > - Adopt the following TP to TS38.214 Section 5.2.4a
 > | Reason for change: | For CBRA based LTM or handover scenario, UE shall transmit CSI report to the candidate cell using the first PUSCH corresponding to a dynamic grant or a configured grant after the HARQ-ACK transmission corresponding to PDSCH scheduled by a PDCCH transmission addressed to the C-RNTI that is received in response to MSG A. However, the above method for determining UL resource of early CSI report is missing in the RAN1 spec, i.e., TS 38.214 clause 5.2.4a. |
@@ -2312,7 +2664,7 @@
 
 출처: [Chair notes RAN1#124bis_eom5](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Inbox/Chair_notes/Chair%20notes%20RAN1%23124bis_eom5.docx) · [R1-2603381](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Docs/R1-2603381.zip) · `[124b-R19-others]`
 
-**Agreement** · `9.4.1` Coverage enhancement · `RAN1#124bis:9.4.1:010` · 후보
+**Agreement** · `9.4.1` Coverage enhancement · `RAN1#124bis:9.4.1:010` · 후보 · 규격 작업 (WI)
 
 > For the repurposing fields for indication of UL beam information in UL Grant in RAR, down-select the following option:
 > - For 1bit indication, 1 bit of CSI request
@@ -2320,13 +2672,15 @@
 > - For 3-bit indication: 1 bit of CSI request + 2 bits from FDRA
 > - FFS: interaction with bits borrowed from FDRA for frequency hopping
 
-남은 FFS 1건
+FFS 1줄
 
 출처: [Chair notes RAN1#124bis_eom5](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Inbox/Chair_notes/Chair%20notes%20RAN1%23124bis_eom5.docx) · [R1-2602217](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124b/Docs/R1-2602217.zip)
 
 ### RAN1#124 — 4건
 
-**Agreement** · `8.7.2` Maintenance for Rel-19 IoT NTN · `RAN1#124:8.7.2:004` · 후보
+**Agreement** · `8.7.2` Maintenance for Rel-19 IoT NTN · `RAN1#124:8.7.2:004` · 후보 · 유지보수 (CR)
+
+구현 영향: 측정·보고량
 
 > The draft LS in R1-2601608 is endorsed with applying the following change.
 > - The CQI should can be measured on the narrowband on which MPDCCH of CB-Msg4 is monitored.
@@ -2334,13 +2688,15 @@
 
 출처: [Chair notes RAN1#124 - eom_03](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124/Inbox/Chair_notes/Chair%20notes%20RAN1%23124%20-%20eom_03.docx)
 
-**Conclusion** · `8.8` Maintenance on others · `RAN1#124:8.8:002` · 후보
+**Conclusion** · `8.8` Maintenance on others · `RAN1#124:8.8:002` · 후보 · 유지보수 (CR)
 
 > There is no consensus on the spec change on the definition of CSI reference resource and valid slot for R19 LBCA.
 
 출처: [Chair notes RAN1#124 - eom_03](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124/Inbox/Chair_notes/Chair%20notes%20RAN1%23124%20-%20eom_03.docx) · [R1-2600811](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124/Docs/R1-2600811.zip) · `[124-R19-others]`
 
-**Agreement** · `8.8` Maintenance on others · `RAN1#124:8.8:007` · 후보 · 관련 주제: CSI-RS
+**Agreement** · `8.8` Maintenance on others · `RAN1#124:8.8:007` · 후보 · 관련 주제: CSI-RS · 유지보수 (CR)
+
+구현 영향: 처리 시간·CPU, 포트·자원·레이어 수 · 규격: TS 38.214 5.2.4
 
 > Adopt the following TP to TS38.214 Section 5.2.4a
 > ---
@@ -2362,7 +2718,11 @@
 
 출처: [Chair notes RAN1#124 - eom_03](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124/Inbox/Chair_notes/Chair%20notes%20RAN1%23124%20-%20eom_03.docx) · [R1-2601559](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_124/Docs/R1-2601559.zip) · `[124-R19-others]`
 
-**Agreement** · `8.9` Maintenance on UE features · `RAN1#124:8.9:005` · 후보 · 관련 주제: CSI-RS
+**Agreement** · `8.9` Maintenance on UE features · `RAN1#124:8.9:005` · 후보 · 관련 주제: CSI-RS · UE features (FG)
+
+구현 영향: 처리 시간·CPU, UE capability·FG, 포트·자원·레이어 수
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 59. NR_MIMO_Ph5 | 59-2-1-5l | Processing timeline for CSI reference slot for extended Rel-18 Type-II Doppler codebook for up to 128 ports | 1. Aperiodic CSI report timing relaxation, w, extended Rel-18 Type-II Doppler codebook for up to 128 ports 2. Aperiodic CSI report timing relaxation, type, for extended Rel-18 Type-II Doppler codebook for up to 128 ports | 59-2-1-5 | Yes | n/a |  | Per band and Per BC | n/a | n/a | n/a | Component 1 candidate values: UE reports candidate value, w, independently for each SCS in unit of symbols: {14*(KP–1)*d, 14*KP*d} Note: Kp is according to Component 12 of FG59-2-1-5 Note: d=4 (minimum periodicity of periodic CSI-RS) Component 2 candidate values: {CAP1, CAP2} Note: For Component 2 ‘CAP2’ is the lower capability For N4 = 1 1) For AP CSI-RS: (Z,Z’) = (Z2 + 14*( KDOPP –1)*m, Z'2) 2) For P/SP CSI-RS: (Z,Z’) = (Z2 + w, Z'2) For N4 > 1 and CAP1 in component 2 1) For AP CSI-RS: (Z,Z’) = (Z2 + 14*( KDOPP –1)*m, Z'2) 2) For P/SP CSI-RS: (Z,Z’) = (Z2 + w, Z'2) For N4 > 1 and CAP2 in component 2 1) For AP CSI-RS: (Z,Z’) = (Z2 + 14*( KDOPP –1)*m + Z'2, 2Z'2) 2) For P/SP CSI-RS: (Z,Z’) = (Z2 + w + Z'2, 2Z'2) Z2/Z'2 are defined in Table 5.4-2 in TS38.214 KDOPP is the number of CSI-RS resource groups configured for channel measurement, and each CSI-RS resource groups contain K CSI-RS resources for aggregating up to 128 ports M = {1,2}, is the offset between two adjacent AP CSI-RS resource groups for the CMR in slots This FG is not applicable to FR 2-2 | Optional with capability signalling |
@@ -2371,21 +2731,27 @@
 
 ### RAN1#123 — 15건
 
-**Agreement** · `8.3` Maintenance on Evolution of NR duplex operation: Sub-band full duplex (SBFD) · `RAN1#123:8.3:004` · 후보
+**Agreement** · `8.3` Maintenance on Evolution of NR duplex operation: Sub-band full duplex (SBFD) · `RAN1#123:8.3:004` · 후보 · 유지보수 (CR)
+
+규격: TS 38.213 9.2.6, TS 38.214 9.2.3, TS 38.214 9.2.4, TS 38.214 5.2.1.4, TS 38.214 11.1
 
 > Adopt the following TP in principle to Clause 9.2.6, TS 38.213.
 > | 9.2.6 PUCCH repetition procedure For unpaired spectrum, the UE determines the slots for a PUCCH transmission starting from a slot indicated to the UE as described in clause 9.2.3 for HARQ-ACK reporting, or a slot determined as described in clause 9.2.4 for SR reporting or in clause 5.2.1.4 of [6, TS 38.214] for CSI reporting and having - an UL symbol, as described in clause 11.1, or flexible symbol, or an SBFD symbol as described in clause 11.1, that is not SS/PBCH block symbol provided by startingSymbolIndex as a first symbol, and - consecutive UL symbols, as described in clause 11.1, or flexible symbols, or consecutive SBFD symbols as described in clause 11.1, respectively, that are not SS/PBCH block symbols, starting from the first symbol, equal to or larger than a number of symbols provided by nrofsymbols, and - if the UE is not provided sbfd-Config2-Transmission, and if the valid symbol type for the PUCCH transmission is determined as SBFD symbol, the UE shall only consider slots containing consecutive SBFD symbols, that are not SS/PBCH block symbols, starting from the first symbol provided by startingSymbolIndex, with a length equal to or larger than the number of symbols provided by nrofsymbols. if the valid symbol type for the PUCCH transmission is determined as non-SBFD symbol, the UE shall only consider slots containing consecutive non-SBFD symbols, that are not DL symbols indicated by tdd-UL-DL-ConfigurationCommon or tdd-UL-DL-ConfigurationDedicated if provided or SS/PBCH block symbols, starting from the first symbol provided by startingSymbolIndex, with a length equal to or larger than the number of symbols provided by nrofsymbols. |
 
 출처: [Chair notes RAN1#123 - eom3](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Inbox/Chair_notes/Chair%20notes%20RAN1%23123%20-%20eom3.docx) · `[123-R19-SBFD]`
 
-**Agreement** · `8.3` Maintenance on Evolution of NR duplex operation: Sub-band full duplex (SBFD) · `RAN1#123:8.3:006` · 후보
+**Agreement** · `8.3` Maintenance on Evolution of NR duplex operation: Sub-band full duplex (SBFD) · `RAN1#123:8.3:006` · 후보 · 유지보수 (CR)
+
+규격: TS 38.213 6.3.2.4.1.1, TS 38.213 6.3.2.4.1.2, TS 38.213 6.3.2.4.1.3, TS 38.213 6.3.2.4.1.4, TS 38.213 6.3.2.4.1.5 외 1
 
 > Adopt the following TPs in principle to Clause 6.3.2.4.1.1, 6.3.2.4.1.2, 6.3.2.4.1.3, 6.3.2.4.1.4 and 6.3.2.4.1.5, TS 38.213.
 > | 6.3.2.4.1 UCI encoded by Polar code If the higher layer parameter nrofBitsInUTO-UCI is configured, the procedures in this clause and the clauses it refers to apply by replacing CG-UCI with UTO-UCI in all the notations and texts, when applicable. 6.3.2.4.1.1 HARQ-ACK For HARQ-ACK transmission on PUSCH not using repetition type B with UL-SCH and if numberOfSlotsTBoMS is not present in the resource allocation table, or if numberOfSlotsTBoMS is present in the resource allocation table and the value of numberOfSlotsTBoMS in the row indicated by the Time domain resource assignment field in DCI is equal to 1, the number of coded modulation symbols per layer for HARQ-ACK transmission, denoted as , is determined as follows: where … - is the scheduled bandwidth of the PUSCH transmission, expressed as a number of subcarriers; - If the PUSCH transmission is in SBFD symbols, only includes subcarriers of the scheduled bandwidth that are both in the active UL BWP and in the UL sub-band, as described in Clause 6.1.2.2.1 in [6, TS 38.214]; <omitted text> For HARQ-ACK transmission on PUSCH without UL-SCH, the number of coded modulation symbols per layer for HARQ-ACK transmission, denoted as , is determined as follows: where <omitted text> - is the scheduled bandwidth of the PUSCH transmission, expressed as a number of subcarriers; - If the PUSCH transmission is in SBFD symbols, only includes subcarriers of the scheduled bandwidth that are both in the active UL BWP and in the UL sub-band, as described in Clause 6.1.2.2.1 in [6, TS 38.214]; <omitted text> 6.3.2.4.1.2 CSI part 1 For CSI part 1 transmission on PUSCH not using repetition type B with UL-SCH and if numberOfSlotsTBoMS is not present in the resource allocation table, or if numberOfSlotsTBoMS is present in the resource allocation table and the value of numberOfSlotsTBoMS in the row indicated by the Time domain resource assignment field in DCI is equal to 1, the number of coded modulation symbols per layer for CSI part 1 transmission, denoted as , is determined as follows: where … - is the scheduled bandwidth of the PUSCH transmission, expressed as a number of subcarriers; - If the PUSCH transmission is in SBFD symbols, only includes subcarriers of the scheduled bandwidth that are both in the active UL BWP and in the UL sub-band, as described in Clause 6.1.2.2.1 in [6, TS 38.214]; <omitted text> For CSI part 1 transmission on PUSCH without UL-SCH, the number of coded modulation symbols per layer for CSI part 1 transmission, denoted as , is determined as follows: if there is CSI part 2 to be transmitted on the PUSCH, else end if where <omitted text> - is the scheduled bandwidth of the PUSCH transmission, expressed as a number of subcarriers; - If the PUSCH transmission is in SBFD symbols, only includes subcarriers of the scheduled bandwidth that are both in the active UL BWP and in the UL sub-band, as described in Clause 6.1.2.2.1 in [6, TS 38.214]; <omitted text> 6.3.2.4.1.3 CSI part 2 For CSI part 2 transmission on PUSCH not using repetition type B with UL-SCH and if numberOfSlotsTBoMS is not present in the resource allocation table, or if numberOfSlotsTBoMS is present in the resource allocation table and the value of numberOfSlotsTBoMS in the row indicated by the Time domain resource assignment field in DCI is equal to 1, the number of coded modulation symbols per layer for CSI part 2 transmission, denoted as , is determined as follows: where <omitted text> - is the scheduled bandwidth of the PUSCH transmission, expressed as a number of subcarriers; - If the PUSCH transmission is in SBFD symbols, only includes subcarriers of the scheduled bandwidth that are both in the active UL BWP and in the UL sub-band, as described in Clause 6.1.2.2.1 in [6, TS 38.214]; <omitted text> For CSI part 2 transmission on PUSCH without UL-SCH, the number of coded modulation symbols per layer for CSI part 2 transmission, denoted as , is determined as follows: where - is the scheduled bandwidth of the PUSCH transmission, expressed as a number of subcarriers; - If the PUSCH transmission is in SBFD symbols, only includes subcarriers of the scheduled bandwidth that are both in the active UL BWP and in the UL sub-band, as described in Clause 6.1.2.2.1 in [6, TS 38.214]; <omitted text> 6.3.2.4.1.4 CG-UCI For CG-UCI transmission on PUSCH with UL-SCH and if numberOfSlotsTBoMS is not present in the resource allocation table, or if numberOfSlotsTBoMS is present in the resource allocation table and the value of numberOfSlotsTBoMS in the row indicated by the Time domain resource assignment field in DCI is equal to 1, the number of coded modulation symbols per layer for CG-UCI transmission, denoted as , is determined as follows: where <omitted text> - is the scheduled bandwidth of the PUSCH transmission, expressed as a number of subcarriers; - If the PUSCH transmission is in SBFD symbols, only includes subcarriers of the scheduled bandwidth that are both in the active UL BWP and in the UL sub-band, as described in Clause 6.1.2.2.1 in [6, TS 38.214]; <omitted text> 6.3.2.4.1.5 HARQ-ACK and CG-UCI For HARQ-ACK and CG-UCI transmission on PUSCH with UL-SCH and if numberOfSlotsTBoMS is not present in the resource allocation table, or if numberOfSlotsTBoMS is present in the resource allocation table and the value of numberOfSlotsTBoMS in the row indicated by the Time domain resource assignment field in DCI is equal to 1, the number of coded modulation symbols per layer for HARQ-ACK and CG-UCI transmission, denoted as , is determined as follows: where <omitted text> - is the scheduled bandwidth of the PUSCH transmission, expressed as a number of subcarriers; - If the PUSCH transmission is in SBFD symbols, only includes subcarriers of the scheduled bandwidth that are both in the active UL BWP and in the UL sub-band, as described in Clause 6.1.2.2.1 in [6, TS 38.214]; <omitted text> |
 
 출처: [Chair notes RAN1#123 - eom3](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Inbox/Chair_notes/Chair%20notes%20RAN1%23123%20-%20eom3.docx) · `[123-R19-SBFD]`
 
-**Agreement** · `8.5` Maintenance on Enhancements of network energy savings for NR · `RAN1#123:8.5:005` · 후보
+**Agreement** · `8.5` Maintenance on Enhancements of network energy savings for NR · `RAN1#123:8.5:005` · 후보 · 유지보수 (CR)
+
+구현 영향: 처리 시간·CPU · 규격: TS 38.214 6.1.2.1, TS 38.214 6.1.2.3, TS 38.214 6.1, TS 38.213 9.2.6, TS 38.213 9.2.5.4 외 2
 
 > The following is background information:
 > | For a cell supporting on-demand SSB SCell operation, PUSCH available slot counting (as described in Clause 6.1.2.1 of TS 38.214) PUSCH transmissions, e.g., repetition types A and B, TBoMS, CG-PUSCH (as described in Clause 6.1.2.3 of TS 38.214) Multi-PUSCH scheduling by a single DCI (as described in Clauses 6.1 and 6.1.2.1 of TS 38.214) PUCCH repetition (as described in Clause 9.2.6 of TS 38.213) PUCCH deferral (as described in Clause 9.2.5.4 of TS 38.213) UTO-UCI (as described in Clause 9.3.1 of TS 38.213) CPU occupancy (as described in Clause 5.2.1.6 of TS 38.214) the SS/PBCH blocks at least for the above Clauses can be replaced by Union of all configured OD-SSB configuration(s) in RRC for Case #1, and Union of AO-SSB and all configured OD-SSB configuration(s) in RRC for Case #2. |
@@ -2395,7 +2761,9 @@
 
 출처: [Chair notes RAN1#123 - eom3](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Inbox/Chair_notes/Chair%20notes%20RAN1%23123%20-%20eom3.docx) · [R1-2508896](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Docs/R1-2508896.zip) · `[123-R19-NES]`
 
-**Agreement** · `8.7.1` Maintenance for Rel-19 NR NTN · `RAN1#123:8.7.1:004` · 후보
+**Agreement** · `8.7.1` Maintenance for Rel-19 NR NTN · `RAN1#123:8.7.1:004` · 후보 · 유지보수 (CR)
+
+구현 영향: 처리 시간·CPU · 규격: TS 38.214 5.2.2.5, TS 38.213 4.2
 
 > The following TP is endorsed in Pricipal for TS 38.214 Clause 5.2.2.5
 > | Reason for change: | When a CSI report is transmitted in an OCC group, the CSI reference resource should be defined relative to the first slot in the OCC group. |
@@ -2405,14 +2773,18 @@
 
 출처: [Chair notes RAN1#123 - eom3](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Inbox/Chair_notes/Chair%20notes%20RAN1%23123%20-%20eom3.docx) · [R1-2509589](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Docs/R1-2509589.zip)
 
-**Agreement** · `8.8` Maintenance on others · `RAN1#123:8.8:007` · 후보 · 관련 주제: CSI-RS
+**Agreement** · `8.8` Maintenance on others · `RAN1#123:8.8:007` · 후보 · 관련 주제: CSI-RS · 유지보수 (CR)
+
+구현 영향: 측정·보고량 · 규격: TS 38.214 5.2.1.6
 
 > Endorse the following TP to TS38.214 Section 5.2.1.6
 > | 5.2.1.6 CSI processing criteria <Unchanged parts are omitted> For a report setting ltm-CSI-ReportConfig configured with reportQuantity is set to 'cri-RI-PMI-CQI': - If the UE is capable of performing CSI measurement for CSI acquisition for candidate cell(s) before receiving the LTM Cell Switch Command MAC CE [10, TS 38.321]: - For a periodic CSI-RS, the CSI-RS resource and CSI-RS ports within the CSI-RS resource are counted as active in a duration of time starting when the periodic CSI-RS resource is configured by higher layer signaling until, and ending at the end of when the reception of the LTM cell switch command MAC CE is applied or a RRC reconfiguration message when the periodic CSI-RS configuration is released, whichever occurs first. - For a semi-persistent CSI-RS, the CSI-RS resource and CSI-RS ports within the CSI-RS resource are counted as active in a duration of time starting from the end of when the activation command MAC CE is applied until, and ending at the end of when the reception of the LTM cell switch command MAC CE or a deactivation command MAC CE is applied, whichever occurs first. - If the UE is only capable of performing CSI measurement for CSI acquisition for a candidate cell (given by Target Configuration ID field in the LTM Cell Switch Command MAC CE) after receiving the LTM Cell Switch Command MAC CE [10, TS 38.321], no CSI-RS resource and CSI-RS ports are counted as active before the reception of the LTM Cell Switch Command MAC CE [10, TS 38.321]. <Unchanged parts are omitted> |
 
 출처: [Chair notes RAN1#123 - eom3](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Inbox/Chair_notes/Chair%20notes%20RAN1%23123%20-%20eom3.docx) · [R1-2509087](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Docs/R1-2509087.zip)
 
-**Agreement** · `9.2` UE features Batch B · `RAN1#123:9.2:004` · 후보
+**Agreement** · `9.2` UE features Batch B · `RAN1#123:9.2:004` · 후보 · UE features (FG)
+
+구현 영향: UE capability·FG
 
 > Support the following new components in FG 60-8
 > - Maximum number of aperiodic CSI report setting per BWP for L1-CLI-RSSI report
@@ -2424,7 +2796,9 @@
 
 출처: [Chair notes RAN1#123 - eom3](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Inbox/Chair_notes/Chair%20notes%20RAN1%23123%20-%20eom3.docx)
 
-**Agreement** · `9.2` UE features Batch B · `RAN1#123:9.2:011` · 후보
+**Agreement** · `9.2` UE features Batch B · `RAN1#123:9.2:011` · 후보 · UE features (FG)
+
+구현 영향: UE capability·FG
 
 > Introduce the following FG 66-8/8a/8b:
 > | 66-8 | Two HARQ-ACK codebooks with up to one sub-slot based HARQ-ACK codebook simultaneously constructed for supporting HARQ-ACK codebooks with different priorities by DCI format 1_3 with different SCS and/or different carrier type | 1. Supports two HARQ-ACK codebooks with different priorities to be simultaneously constructed with the restriction up to one sub-slot based HARQ-ACK codebook. 2. Supports separate PUCCH configuration for different HARQ-ACK codebooks. 3. Supports 2-level priority of HARQ-ACK for dynamically scheduled PDSCH and SPS PDSCH. 4. Supports a DCI format 1_3 scheduling PDSCH with different HARQ-ACK priorities when only DCI format 0_3/1_3 is configured per BWP. 5. Supports separate configuration of parameters PDSCH-HARQ-ACK-Codebook, UCI-OnPUSCH and 'codeBlockGroupTransmission" for different HARQ-ACK codebooks. 6. Supported maximum number of actual PUCCH transmissions for HARQ-ACK within a slot Candidate values for the component 6 of this FG is: For NCP, {4, 5, 6, 7} for 2-symbol*7 sub-slot configuration; For ECP, the candidate value is {4,5,6} for 2-symbol*6 sub-slot configuration 7. Support intra-UE multiplexing/prioritization of UL overlapping channels/signals with two priority levels for HARQ-ACK | 66-1 | Yes |  |  | Per FS | N/A | N/A | N/A | If a UE reports both 11-3 and this FG, it can support two slot-based HARQ-ACK codebooks, and one slot-based and one-sub-slot-based HARQ-ACK codebooks. If a UE reports this FG but not 11-3, it can only support two slot-based HARQ-ACK codebooks. The number of PUCCHs for CSI reporting per slot is not impacted compared with Rel-15 by introducing the new HARQ-ACK CBs Component 6 is applied to the sub-slot HARQ-ACK codebook. It is assumed that only 1 actual PUCCH transmission for HARQ-ACK within a slot for slot-based HARQ-ACK codebook. Component 6 is reported for 2-symbol*7 sub-slot configuration. For 7-symbol*2 sub-slot configuration, the value of component 6 is {2} for both NCP and ECP cases. For component 6, maximum of 1 actual PUCCH transmission for HARQ-ACK within a slot for slot-based HARQ-ACK codebook. Thus value reported for component 6 has no meaning for "slot-based + slot based". For component 6, same values as for FG11-4 are reported (if the UE also report FG11-4) | Optional with capability signaling |
@@ -2433,7 +2807,11 @@
 
 출처: [Chair notes RAN1#123 - eom3](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Inbox/Chair_notes/Chair%20notes%20RAN1%23123%20-%20eom3.docx)
 
-**Agreement** · `9.3` UE features Batch C · `RAN1#123:9.3:001` · 후보 · 관련 주제: CSI-RS
+**Agreement** · `9.3` UE features Batch C · `RAN1#123:9.3:001` · 후보 · 관련 주제: CSI-RS · UE features (FG)
+
+구현 영향: 처리 시간·CPU, UE capability·FG, 포트·자원·레이어 수
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 58. NR_AIML_air | 58-1-2 | UE-side beam prediction for BM Case1 for inference | 1. Support of beam prediction with reporting of predicted beam index for BM-Case1 for inference with UE-side model 3. Maximum number of inference report(s) configured for BM-Case1 per BWP 3a. Maximum number of inference report(s) configured for BM-Case1 across all CCs 6. Support of SSB as RS type for Set B 6a. Support of CSI-RS as RS type for Set B 6b. Support of SSB as RS type for Set A 6c. Support of CSI-RS as RS type for Set A 7a: Supported maximum number of resources for Set B 7b: Supported maximum number of resources for Set A 8. Supported CSI-RS resource types for Set B 9. Supported inference report types 11. Supported BM-Case 1 sub-usecase(s) 12. Supported maximum number of predicted beams in each reporting instance 13. Supported number of occupied CPU 14. Supported number of occupied CPU,2/CPU,3 15. Supported value of di for the relaxation of Z3 timeline, where i is the index of SCS, i=1,2,3,4,5,6 corresponding to 15,30,60,120,480,960 kHz SCS 16. Supported value of d’i for the relaxation of Z’3 timeline, where i is the index of SCS, i=1,2,3,4,5,6 corresponding to 15,30,60,120,480,960 kHz SCS 17. Occupied resource pool between CPU,2 and CPU,3 | 2-35 | yes | n/a | UE-sided beam prediction for BM Case 1 for inference is not supported | Per band | n/a | n/a | n/a | Component 3 candidate values: - Periodic reporting: {1, 2, 3, 4} - Aperiodic reporting: {1, 2, 3, 4} - Semi-persistent reporting: {1, 2, 3, 4} Component 3a candidate values: {1, 2, 3, 4, 8, 10, 12, 16} Component 7a candidate values: {4, 8, 16} Component 7b candidate values: {8, 16, 32, 64} Component 8 candidate values: {Periodic CSI-RS, Semi-persistent CSI-RS, Aperiodic CSI-RS} Component 9 candidate values: {Periodic CSI report, Aperiodic CSI report, semi-persistent CSI report} Component 11 candidate values: {setB-subset-of-setA, setB-different-from-setA, both} Component 12 candidate values: {1, 2, 3, 4} Component 13 candidate values: {0, 1, 2, …, 8} Component 14 candidate values: {0, 1, 2, …, 8} Note: The values of component 13 and 14 are not allowed to be 0 simultaneously Component 15 candidate values: d1 is FFS {7,14, 21, 28, 35, 42, 56} d2 is FFS {14, 28, 42, 56, 70, 84, 112} d3 is FFS {28, 56, 84,112, 140, 168, 224} d4 is FFS {56, 112, 168, 224, 280, 336, 448} d5 is FFS {224, 448, 672, 896, 1120, 1344, 1792} d6 is FFS {448, 896, 1344, 1792} Component 16 candidate values: d1 is FFS {7,14, 21, 28, 35, 42, 56} d2 is FFS {14, 28, 42, 56, 70, 84, 112} d3 is FFS {28, 56, 84,112, 140, 168, 224} d4 is FFS {56, 112, 168, 224, 280, 336, 448} d5 is FFS {224, 448, 672, 896, 1120, 1344, 1792} d6 is FFS {448, 896, 1344, 1792} Component 17 candidate values: {1, 2} representing the first CPU pool (i.e., CPU,2) and the second CPU pool (i.e., CPU,3), respectively | Optional with capability signalling |
@@ -2441,14 +2819,20 @@
 
 출처: [Chair notes RAN1#123 - eom3](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Inbox/Chair_notes/Chair%20notes%20RAN1%23123%20-%20eom3.docx)
 
-**Agreement** · `9.3` UE features Batch C · `RAN1#123:9.3:005` · 후보
+**Agreement** · `9.3` UE features Batch C · `RAN1#123:9.3:005` · 후보 · UE features (FG)
+
+구현 영향: 처리 시간·CPU, UE capability·FG
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 58. NR_AIML_air | 58-0-1 | CSI report framework for UE-side inference | 1. Number of CPU,x pools N 2. Maximum number of CPU,x in each CPU,x pool of UE-sided inference for CSI report(s) simultaneously in a CC 3. Maximum number of CPU,x in each CPU,x pool of UE-sided inference for CSI report(s) simultaneously across all CCs | 2-35 | yes | n/a | Maximum number of CPU(s),x per each CPU pool and CPU pool(s) for UE-sided inference is unknown to the network | Per band and per BC | n/a | n/a | n/a | Component 1 candidate values: {1,2} Component 2candidate values: {1…8} Component 3 candidate values: {1…32} Note: Component 2 and 3 candidate values are signalled separately for each pool A UE that does not support this FG should not report non-zero occupied CPU,2 or CPU,3 values in any dependency FG | Optional with capability signalling |
 
 출처: [Chair notes RAN1#123 - eom3](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Inbox/Chair_notes/Chair%20notes%20RAN1%23123%20-%20eom3.docx)
 
-**Agreement** · `9.3` UE features Batch C · `RAN1#123:9.3:007` · 후보 · 관련 주제: CSI-RS
+**Agreement** · `9.3` UE features Batch C · `RAN1#123:9.3:007` · 후보 · 관련 주제: CSI-RS · UE features (FG)
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 63. NR_Mob_Ph4 | 63-8 | Inclusion of current SpCell in the L1 measurement report based on CSI-RS (s) | 1. Support of always including the current SpCell in the L1 measurement report based on CSI-RS (s) | 63-1, or 63-2, 63-1a, or 63-2a | Yes | No | UE does not always include measurement report for SpCell in the L1 measurement report based on CSI-RS (s) | Per BC | n/a | n/a | n/a |  | Optional with capability signalling |
@@ -2456,14 +2840,22 @@
 
 출처: [Chair notes RAN1#123 - eom3](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Inbox/Chair_notes/Chair%20notes%20RAN1%23123%20-%20eom3.docx)
 
-**Agreement** · `9.3` UE features Batch C · `RAN1#123:9.3:009` · 후보 · 관련 주제: CSI-RS
+**Agreement** · `9.3` UE features Batch C · `RAN1#123:9.3:009` · 후보 · 관련 주제: CSI-RS · UE features (FG)
+
+구현 영향: 처리 시간·CPU, 포트·자원·레이어 수, 측정·보고량
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 59. NR_MIMO_Ph5 | 59-2-1-5b | Extended Rel-18 eType-II Doppler codebook for 128 Tx ports | 1. Support of extended Rel-18 Type-II Doppler codebook for 128 Tx ports by aggregating multiple NZP CSI-RS resource groups within 1 slot 2. Support X=1 CQI based on the first/earliest slot of the CSI reporting window and the first/earliest predicted PMI (TDCQI=’1-1’) 3. Support of PMI subband R=1 for extended Rel-18 eType II Doppler codebook 4. Support parameter combinations with L=2,4 5. Support for rank = 1,2 6. Support 64 ports 7. A list of supported combinations, each combination is { Max # of Tx ports in one resource, Max # of resources and total # of Tx ports} across all CCs in a band when reported per band, and across all CCs in a band combination when reported per BC simultaneously 8. Supported processing capability 9. Value of Y for CPU occupation (OCPU = Y.N4), when P/SP-CSI-RS is configured for CMR 10. Value of Y for CPU occupation (OCPU = Y. KDOPP), when A-CSI-RS is configured for CMR 11. Support for the size of DD-basis, N4=1 12. Scaling factor for active resource counting Kp 13. Support 4 CSI-RS resources in a resource group for aperiodic CSI-RS resource set or in a resource set for periodic CSI-RS resource set 14. A list of supported combinations, each combination is {Max # of resources and total # of Tx ports} per CC simultaneously | 59-2-1-5 | yes | n/a | Extended Rel-18 Type-II Doppler codebook is not supported for 128 Tx ports, aggregated CSI-RS resources within one slot | Per band and per BC | n/a | n/a | n/a | Component 7 candidate values a. {1, …, 64, 128, 256} b. {64, …, 256, 512, 768, 1024} Component 8 candidate value {Capability 1, Capability 2} Component 9 candidate values: {1, 2, 3} Component 10 candidate values: {1, 2, 3} Component 12 candidate values: {1, 2, 4} Component 14 candidate values a. {1, …, 64, 128, 256} b. {64, …, 256, 512, 768, 1024} Note: For component of processing capability Capability 1: Legacy timeline OCPU = Y x N4 x ceil(P/32) ), when P/SP-CSI-RS is configured for CMR OCPU = Y x KDOPP x ceil(P/32)), when A-CSI-RS is configured for CMR Capability 2: Scale the legacy timeline by ceil(P/32) where P is the total number of ports across all the K aggregated CSI-RS resources OCPU = Y x N4, when P/SP-CSI-RS is configured for CMR OCPU = Y x KDOPP, when A-CSI-RS is configured for CMR Note: maximum OCPU is 8 Note: KDOPP is the number of CSI-RS resource groups configured for channel measurement, and each CSI-RS resource groups contain K CSI-RS resources for aggregating up to 128 ports | Optional with capability signalling |
 
 출처: [Chair notes RAN1#123 - eom3](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Inbox/Chair_notes/Chair%20notes%20RAN1%23123%20-%20eom3.docx)
 
-**Agreement** · `9.3` UE features Batch C · `RAN1#123:9.3:011` · 후보
+**Agreement** · `9.3` UE features Batch C · `RAN1#123:9.3:011` · 후보 · UE features (FG)
+
+구현 영향: 포트·자원·레이어 수
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 59. NR_MIMO_Ph5 | 59-2-1-7 | Group-specific 3-bit scaling factors for up to 128 ports | Support of group-specific 3-bit scaling factors | One or more of {59-2-1-1, 59-2-1-1c} | yes | n/a | Group-specific 3-bit scaling factors is not supported | Per band and per BC | n/a | n/a | n/a | Candidate values: {’rank-1’, ‘rank-1 and rank-2’} Note: ‘rank-1’is the lower capability Note: 3-bit scaling applies only to the Type-I SP codebook | Optional with capability signalling |
@@ -2471,21 +2863,29 @@
 
 출처: [Chair notes RAN1#123 - eom3](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Inbox/Chair_notes/Chair%20notes%20RAN1%23123%20-%20eom3.docx)
 
-**Agreement** · `9.3` UE features Batch C · `RAN1#123:9.3:013` · 후보 · 관련 주제: CSI-RS
+**Agreement** · `9.3` UE features Batch C · `RAN1#123:9.3:013` · 후보 · 관련 주제: CSI-RS · UE features (FG)
+
+구현 영향: 처리 시간·CPU, UE capability·FG, 포트·자원·레이어 수
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 59. NR_MIMO_Ph5 | 59-2-1-5l | Processing timeline for CSI reference slot for extended Rel-18 Type-II Doppler codebook for up to 128 ports | 1. Aperiodic CSI report timing relaxation, w, extended Rel-18 Type-II Doppler codebook for up to 128 ports 2. Aperiodic CSI report timing relaxation, type, for extended Rel-18 Type-II Doppler codebook for up to 128 ports | 59-2-1-5 | Yes | n/a |  | Per band and Per BC | n/a | n/a | n/a | Component 1 candidate values: UE reports candidate value, w, independently for each SCS in unit of symbols: {14*(KP–1)*d, 14*KP*d} Note: Kp is according to Component 12 of FG59-2-5 Note: d=4 (minimum periodicity of periodic CSI-RS) Component 2 candidate values: {CAP1, CAP2} Note: For Component 2 ‘CAP2’ is the lower capability For N4 = 1 1) For AP CSI-RS: (Z,Z’) = (Z2 + 14*( KDOPP –1)*m, Z'2) 2) For P/SP CSI-RS: (Z,Z’) = (Z2 + w, Z'2) For N4 > 1 and CAP1 in component 2 1) For AP CSI-RS: (Z,Z’) = (Z2 + 14*( KDOPP –1)*m, Z'2) 2) For P/SP CSI-RS: (Z,Z’) = (Z2 + w, Z'2) For N4 > 1 and CAP2 in component 2 1) For AP CSI-RS: (Z,Z’) = (Z2 + 14*( KDOPP –1)*m + Z'2, 2Z'2) 2) For P/SP CSI-RS: (Z,Z’) = (Z2 + w + Z'2, 2Z'2) Z2/Z'2 are defined in Table 5.4-2 in TS38.214 KDOPP is the number of CSI-RS resource groups configured for channel measurement, and each CSI-RS resource groups contain K CSI-RS resources for aggregating up to 128 ports M = {1,2}, is the offset between two adjacent AP CSI-RS resource groups for the CMR in slots This FG is not applicable to FR 2-2 | Optional with capability signalling |
 
 출처: [Chair notes RAN1#123 - eom3](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Inbox/Chair_notes/Chair%20notes%20RAN1%23123%20-%20eom3.docx)
 
-**Agreement** · `9.3` UE features Batch C · `RAN1#123:9.3:016` · 후보 · 관련 주제: CSI-RS
+**Agreement** · `9.3` UE features Batch C · `RAN1#123:9.3:016` · 후보 · 관련 주제: CSI-RS · UE features (FG)
+
+구현 영향: 처리 시간·CPU, UE capability·FG, 포트·자원·레이어 수
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 58. NR_AIML_air | 58-1-4 | UE-side beam prediction for BM Case2 for inference | 1. Support of beam prediction with reporting of predicted beam index for BM-Case2 for inference with UE-side model 3. Maximum number of inference report(s) configured for BM-Case2 per BWP 3a. Maximum number of inference report(s) configured for BM-Case2 across all CCs 6. Support of SSB as RS type for Set B 6a. Support of CSI-RS as RS type for Set B 6b. Support of SSB as RS type for Set A 6c. Support of CSI-RS as RS type for Set A 7a: Supported maximum number of resources for Set B 7b: Supported maximum number of resources for Set A 7c: Supported minimum number of received transmission occasions KBM for Set B 8. Supported CSI-RS resource types for Set B 9. Supported inference report types 11. Supported maximum number of predicted beams in each predicted time instance 12. Supported maximum number of predicted time instances 13. Supported maximum total number of reported predicted beams for predicted time instances in one report 15. Supported value(s) of time gap between predicted time instances and between reference time to the first future time instance 21. supported number of occupied CPU 22. supported number of occupied CPU,2/CPU,3 23. supported value of di for the relaxation of Z3 timeline, where i is the index of SCS, i=1,2,3,4,5,6 corresponding to 15,30,60,120,480,960 kHz SCS 24. supported value of d’i for the relaxation of Z’3 timeline, where i is the index of SCS, i=1,2,3,4,5,6 corresponding to 15,30,60,120,480,960 kHz SCS 25. Occupied resource pool between CPU,2 and CPU,3 | 2-35 | yes | n/a | UE-side beam prediction for BM-Case2 for inference is not supported | Per band | n/a | n/a | n/a | Component 3 candidate values: - Periodic reporting: {1, 2, 3, 4} - Aperiodic reporting: {1, 2, 3, 4} - Semi-persistent reporting: {1, 2, 3, 4} Component 3a candidate values: {1, 2, 3, 4, 8, 10, 12, 16} Component 7a candidate values: {4, 8, 16, 32, 64} Component 7b candidate values: {4, 8, 16, 32, 64} Component 7c candidate values: {2, 4, 8} Component 8 candidate values: {Periodic CSI-RS, Semi-persistent CSI-RS} Component 9 candidate values: {Periodic CSI report, Aperiodic CSI report, semi-persistent CSI report} Component 11 candidate values: {1, 2, 3, 4} Component 12 candidate values: {1, 2, 4, 8} Component 13 candidate values: {1, 2, 4, 6, 8, 12, 16, 32} Component 15 candidate values: {10ms, 20ms, 40ms, 80ms, 160ms} Component 21 candidate values: {0, 1, 2, … 8} Component 22 candidate values: {0, 1, 2, … 8} Note: The values of component 21 and 22 are not allowed to be 0 simultaneously. Component 23 candidate values: d1 is {14, 28, 42, 56, 70, 84, 98} d2 is {28, 56, 84, 112, 140, 168, 196} d3 is {56, 112, 168, 224, 280, 336, 392} d4 is {112, 224, 336, 448} d5 is {448, 896, 1344, 1792} d6 is {896, 1792} Component 24 candidate values: d'1 is {14, 28, 42, 56, 70, 84, 98} d’2 is {28, 56, 84, 112, 140, 168, 196} d’3 is {56, 112, 168, 224, 280, 336, 392} d’4 is {112, 224, 336, 448} d’5 is {448, 896, 1344, 1792} d’6 is {896, 1792} Component 25 candidate values: {1, 2} representing the first CPU pool (i.e., CPU,2) and the second CPU pool (i.e., CPU,3), respectively Note: UE should not report non-zero value for Component 22 if FG 58-0-1 is not signalled | Optional with capability signalling |
 
 출처: [Chair notes RAN1#123 - eom3](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_123/Inbox/Chair_notes/Chair%20notes%20RAN1%23123%20-%20eom3.docx)
 
-**Agreement** · `11.2` Evaluation assumptions for 6GR air interface · `RAN1#123:11.2:007` · 후보
+**Agreement** · `11.2` Evaluation assumptions for 6GR air interface · `RAN1#123:11.2:007` · 후보 · Study
 
 > For 6GR evaluation, the following are assumed for system-level simulation:
 > | Parameters | Indoor Hotspot | Dense Urban | Rural | Urban Macro | Suburban Macro |
@@ -2515,21 +2915,25 @@
 
 ### RAN1#122bis — 14건
 
-**Agreement** · `8.3` Maintenance on Evolution of NR duplex operation: Sub-band full duplex (SBFD) · `RAN1#122bis:8.3:015` · 후보
+**Agreement** · `8.3` Maintenance on Evolution of NR duplex operation: Sub-band full duplex (SBFD) · `RAN1#122bis:8.3:015` · 후보 · 유지보수 (CR)
+
+규격: TS 38.214 5.2.1.4.8
 
 > Adopt the following TP in principle to section 5.2.1.4.8, TS 38.214
 > | 5.2.1.4.8 L1-CLI-RSSI Reporting <Unchanged part omitted> If the higher layer parameter timeRestrictionForChannelMeasurements in CSI-ReportConfig is set to ‘Configured’, the UE shall derive the channel measurements for computing L1-CLI-RSSI reported in uplink, SBFD or [flexible] slot n based on only the most recent, no later than the CSI reference resource, occasion of CLI-RSSI resources (defined in [4, TS 38.211]) associated with the CSI resource setting. A UE configured with SBFD symbols and with a CLI-RSSI measurement resource in SBFD symbols and across two DL subbands shall derive the frequency resources for L1-CLI-RSSI measurement by excluding the frequency resources outside the RBs that are both in the active DL BWP and in the DL sub-bands and shall report a single wideband L1-CLI-RSSI measurement. A UE configured with SBFD symbols does not expect to be configured with a CSI-ReportConfig associated with CLI-RSSI measurement resources configured within an UL subband and with CLI-RSSI measurement resources configured within one DL subband or across two DL subbands. A UE configured with SBFD symbols does not expect to be configured with CLI-RSSI measurement resources within an UL subband and CLI-RSSI measurement resources within one DL subband or across two DL subbands in a same symbol. |
 
 출처: [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · `[122bis-R19-SBFD]`
 
-**Agreement** · `8.3` Maintenance on Evolution of NR duplex operation: Sub-band full duplex (SBFD) · `RAN1#122bis:8.3:017` · 후보
+**Agreement** · `8.3` Maintenance on Evolution of NR duplex operation: Sub-band full duplex (SBFD) · `RAN1#122bis:8.3:017` · 후보 · 유지보수 (CR)
+
+규격: TS 38.214 5.2.2.7, TS 38.211 7.4.1.5
 
 > Adopt the following TP in principle to section 5.2.2.7, TS 38.214
 > | 5.2.2.7 CLI-RSSI measurement resource <Unchanged parts omitted> [The bandwidth and initial common resource block (CRB) index of a CLI-RSSI resource within a BWP, as defined in Clause 7.4.1.5 of [4, TS 38.211], are determined based on the higher layer parameters nrofRBs and startingRB, respectively. Both nrofRBs and startingRB are is configured as integer multiples of [4] RBs, and the reference point for startingRB is CRB 0 on the common resource block grid. If the UE shall assume that the initial CRB index of the CLI-RSSI resource is , otherwise . If , the UE shall assume that the bandwidth of the CLI-RSSI resource is , otherwise .] |
 
 출처: [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · `[122bis-R19-SBFD]`
 
-**Conclusion** · `8.5` Maintenance on Enhancements of network energy savings for NR · `RAN1#122bis:8.5:002` · 후보
+**Conclusion** · `8.5` Maintenance on Enhancements of network energy savings for NR · `RAN1#122bis:8.5:002` · 후보 · 유지보수 (CR)
 
 > - For a cell supporting on-demand SSB SCell operation and for Case #2 (i.e., Always-on SSB is periodically transmitted on the cell),
 >   - If a CSI report configuration is associated with both of AO-SSB and OD-SSB,
@@ -2539,14 +2943,20 @@
 
 출처: [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · [R1-2508034](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508034.zip) · `[122bis-R19-NES]`
 
-**Agreement** · `8.8` Maintenance on others · `RAN1#122bis:8.8:001` · 후보 · 관련 주제: CSI-RS
+**Agreement** · `8.8` Maintenance on others · `RAN1#122bis:8.8:001` · 후보 · 관련 주제: CSI-RS · 유지보수 (CR)
+
+구현 영향: 처리 시간·CPU · 규격: TS 38.214 5.2.1.2
 
 > Adopt the following TP to TS38.214 Section 5.2.1.2 in principle.
 > | 5.2.1.2 Resource settings <unchanged parts are omitted> Each LTM CSI Resource Setting LTM-CSI-ResourceConfig contains either configuration of a ltm-CSI-SSB-ResourceSet or a ltm-NZP-CSI-RS-ResourceSet. - A ltm-CSI-SSB-ResourceSet comprises of a list of Z ≥ 1 SS/PBCH blocks indices (given by ltm-CSI-SSB-ResourceList) and a list of Z LTM-CandidateIds (given by ltm-CandidateIdList) referring to candidate cells associated with the SS/PBCH block indices. For each candidate cell, the UE determines the time domain behavior of a SS/PBCH block from ssb-Periodicity and ssb-PositionsInBurst and the frequency domain behavior of a SS/PBCH block is determined by the higher layer parameters subcarrierSpacing, ssb-Frequency. - A ltm-NZP-CSI-RS-ResourceSet comprises of a list of Z ≥ 1 NZP CSI-RS resource indices (given by ltm- CSI-RS-ResourceList) and a list of Z LTM-CandidateIds (given by ltm-CandidateIdList) referring to candidate cells associated with the NZP CSI-RS resource indices. The UE shall expect that the NZP CSI-RS resources in ltm-NZP-CSI-RS-ResourceSet are configured with the higher layer parameter repetition set to ‘off’ when LTM-ReportContent configured within the LTM-CSI-ReportConfig associated with the LTM CSI Resource Setting is set to ‘cri-RSRP’. For a report setting ltm-CSI-ReportConfig configured with ltm-ReportConfigType set to ‘periodic’ or ‘semiPersistentOnPUCCH’ or ‘semiPersistentOnPUSCH’ or ‘aperiodic’, the time domain behavior of the NZP CSI-RS resources within a ltm-NZP-CSI-RS-ResourceSet are indicated by the higher layer parameter resourceType. <unchanged parts are omitted> |
 
 출처: [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · [R1-2508156](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508156.zip)
 
-**Agreement** · `8.8` Maintenance on others · `RAN1#122bis:8.8:002` · 후보 · 관련 주제: CSI-RS
+**Agreement** · `8.8` Maintenance on others · `RAN1#122bis:8.8:002` · 후보 · 관련 주제: CSI-RS · 유지보수 (CR)
+
+규격: TS 38.214 5.2.1.5.2, TS 38.321 6.1.3.16, TS 38.321 6.1.3
+
+> ⚠️ 수식 누락 의심 — 원본 추출에서 Word 수식(변수·기호)이 빠졌을 수 있습니다. Chair notes 원문으로 확인하세요.
 
 > Adopt the following TP to TS38.214 Section 5.2.1.5.2 in principle
 > <omitted text>
@@ -2558,34 +2968,42 @@
 
 출처: [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · [R1-2508156](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508156.zip)
 
-**Agreement** · `8.8` Maintenance on others · `RAN1#122bis:8.8:004` · 후보
+**Agreement** · `8.8` Maintenance on others · `RAN1#122bis:8.8:004` · 후보 · 유지보수 (CR)
+
+구현 영향: 측정·보고량
 
 > - For the purpose of deriving the CQI for target candidate cell, the UE shall assume the following:
 >   - The parameters are derived from the initial BWP configuration of the target cell.
 
 출처: [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · [R1-2508156](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508156.zip)
 
-**Agreement** · `8.8` Maintenance on others · `RAN1#122bis:8.8:005` · 후보
+**Agreement** · `8.8` Maintenance on others · `RAN1#122bis:8.8:005` · 후보 · 유지보수 (CR)
 
 > - In case PUSCH repetition Type-B or Type-A is applied for first CG-PUSCH or DG-PUSCH, reuse the legacy rule for CSI multiplexing and CSI for target candidate cell is transmitted on the first actual repetition for Type-B or the first repetition for Type-A.
 
 출처: [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · [R1-2508156](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508156.zip)
 
-**Agreement** · `8.8` Maintenance on others · `RAN1#122bis:8.8:007` · 후보
+**Agreement** · `8.8` Maintenance on others · `RAN1#122bis:8.8:007` · 후보 · 유지보수 (CR)
+
+규격: TS 38.214 5.2.4
 
 > Adopt the following TP#7-1 to TS38.214 Section 5.2.4a.
 > | 5.2.4a CSI Reporting for LTM <omitted Text> For RACH-less LTM cell switch [23, TS 38.300], the UE shall transmit the CSI report to the candidate cell using the first PUSCH corresponding to a dynamic grant or a configured grant [6, TS 38.213]. For RACH-based LTM cell switch using a contention-free random access procedure [23, TS 38.300], the UE shall transmit the CSI report to the candidate cell using the PUSCH scheduled by the RAR UL grant or MsgA PUSCH. For RACH-based LTM cell switch using a contention-based random access procedure [23, TS 38.300], the UE shall transmit the CSI report to the candidate cell using the first PUSCH corresponding to a dynamic grant or a configured grant after the HARQ-ACK transmission corresponding to Msg4 or MsgB, or the first PUSCH scheduled by a PDCCH transmission addressed to the C-RNTI, received in response to Msg3. <omitted Text> |
 
 출처: [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · [R1-2508156](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508156.zip)
 
-**Agreement** · `8.8` Maintenance on others · `RAN1#122bis:8.8:013` · 후보
+**Agreement** · `8.8` Maintenance on others · `RAN1#122bis:8.8:013` · 후보 · 유지보수 (CR)
+
+규격: TS 38.213 9.1.3.1
 
 > - Following TP to Section 9.1.3.1, TS38.213 is endorsed in principle.
 > | 9.1.3.1 Type-2 HARQ-ACK codebook in physical uplink control channel <Unchanged parts are omitted> If a UE is provided pdsch-TimeDomainAllocationListForMultiPDSCH-DCI-1-3 for a serving cell in a set of serving cells provided by MC-DCI-SetofCells in a PUCCH group, the UE determines the according to the previous pseudo-codes with the following modifications - the first HARQ-ACK sub-codebook is associated with - unicast SPS PDSCH receptions - any unicast DCI format scheduling a single PDSCH reception on a serving cell - any unicast DCI format having associated HARQ-ACK information without scheduling a PDSCH reception - any DCI format 1_3 scheduling more than one PDSCH receptions on a serving cell for which the UE is provided nrofHARQ-BundlingGroups with value - the second HARQ-ACK sub-codebook is associated with DCI format 1_3 that - schedules PDSCH receptions on more than one serving cells from the set of serving cells, or - schedules more than one PDSCH receptions on a serving cell , from the set of serving cells, for which the UE is not provided nrofHARQ-BundlingGroups or is provided nrofHARQ-BundlingGroups with value , or - does not include a SCell dormancy indication field or the SCell dormancy indication field is reserved, indicates SCell dormancy, and schedules PDSCH receptions on one or more serving cells from the set of serving cells - in the above, and for the purpose of providing HARQ-ACK information corresponding to SCell dormancy indication by the DCI format 1_3 - the UE assumes that the UE receives one PDSCH, with first SLIV in the row of pdsch-TimeDomainAllocationListForMultiPDSCH-DCI-1-3 for DCI format 1_3, on the serving cell associated with fields in DCI format 1_3 for SCell dormancy indication, as described in Clause 10.3, and that the PDSCH provides one transport block that the UE correctly decodes, if the UE is not provided nrofHARQ-BundlingGroups for the serving cell - the UE assumes that the UE receives one or more PDSCHs associated with a TBG with smallest index, or a PDSCH reception group with smallest index, among one or more PDSCH receptions scheduled by the DCI format 1_3, on the serving cell associated with fields in DCI format 1_3 for SCell dormancy indication, as described in Clause 10.3, and that each of the one or more PDSCHs provides one transport block that the UE correctly decodes if the UE is provided nrofHARQ-BundlingGroups for the serving cell - the UE assumes incorrect decoding for transport blocks in each of the remaining PDSCH receptions scheduled by the DCI format 1_3 on the serving cell associated with fields in DCI format 1_3 for SCell dormancy indication - instead of generating HARQ-ACK information bits when harq-ACK-SpatialBundlingPUCCH is not provided, or generating HARQ-ACK information bits when harq-ACK-SpatialBundlingPUCCH is provided, for the PDSCH receptions scheduled by a DCI format 1_3, the UE generates - HARQ-ACK information bits for the PDSCH receptions scheduled by the DCI format 1_3, where is the maximum number, over the number sets of serving cells provided by MC-DCI-SetofCells in the PUCCH group, of the sum of - if nrofHARQ-BundlingGroups is not provided for a serving cell , or - if nrofHARQ-BundlingGroups is provided for the serving cell , across serving cells of a respective set of serving cells MC-DCI-SetofCells that can be scheduled PDSCH reception by a DCI format 1_3, where - is the value of maxNrofCodeWordsScheduledByDCI for serving cell if harq-ACK-SpatialBundlingPUCCH is not provided; else, ; - is the maximum number of SLIVs over all rows of the TDRA table provided by pdsch-TimeDomainAllocationListForMultiPDSCH-DCI-1-3 for serving cell ; and - is provided by nrofHARQ-BundlingGroups for serving cell - If the UE is provided with pdsch-TimeDomainAllocationListForMultiPDSCH-DCI-1-3 for the serving cell in the set s, by applying the above procedure, the UE generates - HARQ-ACK information bits if nrofHARQ-BundlingGroups is not provided for a serving cell - HARQ-ACK information bits if nrofHARQ-BundlingGroups is provided for the serving cell - where the UE assumes incorrect decoding for transport blocks in each of the PDSCH receptions scheduled by the DCI format 1_3 on the serving cell , if PDCCH monitoring occasion is before an active DL BWP change on serving cell , and the active DL BWP change is not triggered in PDCCH monitoring occasion , and the PUCCH with the HARQ-ACK information starts at or after a slot for the active DL BWP change. - If for a set of serving cells provided by MC-DCI-SetofCells, is equal to the sum of - if nrofHARQ-BundlingGroups is not provided for a serving cell , or - if nrofHARQ-BundlingGroups is provided for the serving cell , across the serving cells of the set that are scheduled PDSCH receptions by a DCI format 1_3, and , the UE generates NACK values for the last HARQ-ACK information bits corresponding to the DCI format 1_3 - The counter DAI value and the total DAI value apply separately for each HARQ-ACK sub-codebook. - The UE generates the HARQ-ACK codebook by appending the second HARQ-ACK sub-codebook to the first HARQ-ACK sub-codebook. <Unchanged parts are omitted> |
 
 출처: [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · [R1-2507657](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2507657.zip)
 
-**Agreement** · `9.3` UE features for evolution of NR duplex operation: SBFD · `RAN1#122bis:9.3:008` · 후보 · 관련 주제: CSI-RS
+**Agreement** · `9.3` UE features for evolution of NR duplex operation: SBFD · `RAN1#122bis:9.3:008` · 후보 · 관련 주제: CSI-RS · UE features (FG)
+
+구현 영향: 처리 시간·CPU, UE capability·FG
 
 > Regarding “FFS: details of counting” in FG 60-1, adopt Alt1.1
 > - Alt-1: Update candidate values for Component 11
@@ -2593,21 +3011,33 @@
 
 출처: [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · [R1-2507966](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2507966.zip)
 
-**Agreement** · `9.6` UE features for NR mobility enhancements Phase 4 · `RAN1#122bis:9.6:002` · 후보 · 관련 주제: CSI-RS
+**Agreement** · `9.6` UE features for NR mobility enhancements Phase 4 · `RAN1#122bis:9.6:002` · 후보 · 관련 주제: CSI-RS · UE features (FG)
+
+구현 영향: UE capability·FG, 포트·자원·레이어 수
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 63. NR_Mob_Ph4 | 63-6 | Intra-frequency CSI-RS and CSI-IM measurement and CSI reporting for cell indicated in CSC MAC CE after reception of LTM CSC MAC CE based on periodic CSI-RS and CSI-IM resource | 1. Support of CSI-RS and CSI-IM measurement and CSI reporting after reception of LTM CSC MAC CE based on periodic CSI-RS(s) and CSI-IM resources of cell indicated in CSC MAC CE 3. Maximum number of CSI-RS resources for CMR associated with CSI report configuration for a candidate cell 4. Max number of ports of CSI-RS resource(s) associated with a CSI report configuration for CSI reporting for a candidate cell 5. Maximum number of ports in one NZP CSI-RS resource 6. Max rank for CSI reporting for a candidate cell 7. Maximum number of CSI-IM resources for interference measurement associated with CSI report configuration for a candidate cell | FFS RAN2 FG for LTM in Rel-18 | Yes | No | Intra-frequency Periodic CSI-RS and CSI-IM measurement and CSI reporting for cell indicated in CSC MAC CE after reception of LTM CSC MAC CE is not supported | Per band | n/a | n/a | n/a | Component 3 candidate values: {1,2,3,4,5,6,7,8} Component 4 candidate values: {1,2,4,8,12,16,24,32,48,64,128} Component 5 candidate values: {1, 2, 4, 8, 12, 16, 24, 32} Component 6 candidate values: {1,2,3,4,5,6,7,8} Component 7 candidate values: {1,2,3,4,5,6,7,8} | Optional with capability signaling |
 
 출처: [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · [R1-2508083](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508083.zip)
 
-**Agreement** · `9.6` UE features for NR mobility enhancements Phase 4 · `RAN1#122bis:9.6:003` · 후보 · 관련 주제: CSI-RS
+**Agreement** · `9.6` UE features for NR mobility enhancements Phase 4 · `RAN1#122bis:9.6:003` · 후보 · 관련 주제: CSI-RS · UE features (FG)
+
+구현 영향: 포트·자원·레이어 수
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 63. NR_Mob_Ph4 | 63-6a | Intra-frequency CSI-RS and CSI-IM measurement and CSI reporting for cell indicated in CSC MAC CE after reception of LTM CSC MAC CE based on semi-persistent CSI-RS and CSI-IM resource | 1. Support of CSI-RS and CSI-IM measurement and CSI reporting after reception of LTM CSC MAC CE based on periodic semi-persistent CSI-RS(s) and CSI-IM resources of cell indicated in CSC MAC CE 3. Maximum number of CSI-RS resources for CMR associated with CSI report configuration for a candidate cell 4. Max number of ports of CSI-RS resource(s) associated with a CSI report configuration for CSI reporting for a candidate cell 5. Maximum number of ports in one NZP CSI-RS resource 6. Max rank for CSI reporting for a candidate cell 7. Maximum number of CSI-IM resources for interference measurement associated with CSI report configuration for a candidate cell | FFS 63-6 | Yes | No | Intra-frequency Semi-persistent CSI-RS and CSI-IM measurement and CSI reporting for cell indicated in CSC MAC CE after reception of LTM CSC MAC CE is not supported | Per band | n/a | n/a | n/a | Component 3 candidate values: {1,2,3,4,5,6,7,8} Component 4 candidate values: {1,2,4,8,12,16,24,32,48,64,128} Component 5 candidate values: {1, 2, 4, 8, 12, 16, 24, 32} Component 6 candidate values: {1,2,3,4,5,6,7,8} Component 7 candidate values: {1,2,3,4,5,6,7,8} | Optional with capability signaling |
 
 출처: [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · [R1-2508083](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508083.zip)
 
-**Agreement** · `9.6` UE features for NR mobility enhancements Phase 4 · `RAN1#122bis:9.6:004` · 후보 · 관련 주제: CSI-RS
+**Agreement** · `9.6` UE features for NR mobility enhancements Phase 4 · `RAN1#122bis:9.6:004` · 후보 · 관련 주제: CSI-RS · UE features (FG)
+
+구현 영향: 포트·자원·레이어 수
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 63. NR_Mob_Ph4 | 63-7 | Intra-frequency CSI-RS and CSI-IM measurement for candidate cell before reception of LTM CSC MAC CE based on periodic CSI-RS(s) and CSI-IM resources of candidate cells | 1. Support of intra-frequency CSI-RS and CSI-IM measurement before reception of CSC MAC CE based on periodic CSI-RS(s) and CSI-IM resources of candidate cells 2. Maximum number of RRC configured candidate cells for CSI measurement before LTM CSC MAC CE 3. Maximum number of RRC configured CSI-RS resources across candidate cells RRC configured for CSI measurement before LTM CSC MAC CE 4. Max number of ports of CSI-RS resource(s) associated with a CSI report configuration for CSI reporting for a candidate cell 5. Maximum number of ports in one NZP CSI-RS resource associated with a CSI report configuration for CSI reporting for a candidate cell 6. Maximum number of RRC configured CSI-IM resources across candidate cells RRC configured for CSI measurement before LTM CSC MAC CE | 63-6 | Yes | No | Intra-frequency periodic CSI-RS and CSI-IM measurement for candidate cell before reception of LTM CSC MAC CE is not supported | Per BC | n/a | n/a | n/a | Component 2 candidate values: {1,2,3,4,5,6,7,8} Component 3 candidate values: {1,2,...64} Component 4 candidate values: {1,2,4,8,12,16,24,32,48,64,128} Component 5 candidate values: {1,2,4,8,12,16,24,32} Component 6 candidate values: {1,2,…64} | Optional with capability signaling |
@@ -2617,7 +3047,9 @@
 
 출처: [Chair notes RAN1#122b eom4](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Inbox/Chair_Notes/Chair%20notes%20RAN1%23122b%20eom4.docx) · [R1-2508083](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122b/Docs/R1-2508083.zip)
 
-**Agreement** · `9.6` UE features for NR mobility enhancements Phase 4 · `RAN1#122bis:9.6:005` · 후보 · 관련 주제: CSI-RS
+**Agreement** · `9.6` UE features for NR mobility enhancements Phase 4 · `RAN1#122bis:9.6:005` · 후보 · 관련 주제: CSI-RS · UE features (FG)
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 63. NR_Mob_Ph4 | 63-10 | Intra-frequency CSI-RS-RS measurement and CSI reporting without CSI-IM reception | 1. Support of CSI-RS measurement and CSI reporting for candidate cells without CSI-IM resource configuration | 63-6 or 63-6a or 63-7 or 63-7a or 63-11 | Yes | No | Intra-frequency CSI-RS-RS measurement and CSI reporting without CSI-IM reception is not supported | Per band | n/a | n/a | n/a |  | Optional with capability signaling |
@@ -2626,14 +3058,18 @@
 
 ### RAN1#122 — 19건
 
-**Agreement** · `8.3.1` SBFD TX/RX/measurement procedures · `RAN1#122:8.3.1:003` · 후보 · 관련 주제: CSI-RS
+**Agreement** · `8.3.1` SBFD TX/RX/measurement procedures · `RAN1#122:8.3.1:003` · 후보 · 관련 주제: CSI-RS · 유지보수 (CR)
+
+규격: TS 38.214 5.2.1.4
 
 > Adopt the following TP in principle to Section 5.2.1.4, TS 38.214.
 > | 5.2.1.4 Reporting configurations *** Unchanged parts are omitted *** The reportFreqConfiguration contained in a CSI-ReportConfig indicates the frequency granularity of the CSI Report. A CSI Reporting Setting configuration defines a CSI reporting band as a subset of subbands of the bandwidth part, where the reportFreqConfiguration indicates: - the csi-ReportingBand as a contiguous or non-contiguous subset of subbands in the bandwidth part for which CSI shall be reported. - A UE is not expected to be configured with csi-ReportingBand which contains a subband where a CSI-RS resource linked to the CSI Report setting has the frequency density of each CSI-RS port per PRB in the subband less than the configured density of the CSI-RS resource. - If a CSI-IM resource is linked to the CSI Report Setting, a UE is not expected to be configured with csi-ReportingBand which contains a subband where not all PRBs in the subband have the CSI-IM REs present. - For a CSI-ReportConfig with the higher layer parameter symbolType set to ‘sbfd’, UE can be configured with a CSI subband if at least one PRB in the CSI subband is within PRBs that are both in the active DL BWP and in the DL sub-band(s). *** Unchanged parts are omitted *** |
 
 출처: [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip)
 
-**Agreement** · `8.5.1` On-demand SSB SCell operation · `RAN1#122:8.5.1:002` · 후보
+**Agreement** · `8.5.1` On-demand SSB SCell operation · `RAN1#122:8.5.1:002` · 후보 · 유지보수 (CR)
+
+구현 영향: 측정·보고량 · 규격: TS 38.214 5.2.1.4
 
 > Adopt the following TP for TS 38.214 Clause 5.2.1.4
 > Reason for change: To clarify that CSI report for an SCell configured with od-ssb-config cannot be configured with eventType
@@ -2643,7 +3079,9 @@
 
 출처: [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) · [R1-2506493](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506493.zip)
 
-**Agreement** · `8.5.1` On-demand SSB SCell operation · `RAN1#122:8.5.1:005` · 후보 · 관련 주제: CSI-RS
+**Agreement** · `8.5.1` On-demand SSB SCell operation · `RAN1#122:8.5.1:005` · 후보 · 관련 주제: CSI-RS · 유지보수 (CR)
+
+규격: TS 38.214 4.1, TS 38.213 4.4
 
 > Adopt the following TP for TS 38.214 Clause 4.1
 > Reason for change
@@ -2658,7 +3096,9 @@
 
 출처: [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) · [R1-2506493](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506493.zip)
 
-**Agreement** · `8.9.1` Measurements related enhancements for LTM · `RAN1#122:8.9.1:001` · 후보 · 관련 주제: CSI-RS
+**Agreement** · `8.9.1` Measurements related enhancements for LTM · `RAN1#122:8.9.1:001` · 후보 · 관련 주제: CSI-RS · 유지보수 (CR)
+
+구현 영향: UE capability·FG, 측정·보고량 · 규격: TS 38.214 5.2.4
 
 > Following TP to TS38.214 Section 5.2.4a is endorsed in principle.
 > - Reason for change: Current texts in the referred paragraph in TS 38.214 create some ambiguity. First, “corresponding NZP CSI-RS resources” is unclear. It presents unclear meaning of what the NZP CSI-RS resources are corresponding to. In our views, we should instead describe that NZP CSI-RS resources are corresponding to a [ltm-eCSI-ReportConfig]. Second, “start” is redundant here and never exists in the agreement.
@@ -2668,7 +3108,9 @@
 
 출처: [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip)
 
-**Agreement** · `8.9.1` Measurements related enhancements for LTM · `RAN1#122:8.9.1:003` · 후보 · 관련 주제: CSI-RS
+**Agreement** · `8.9.1` Measurements related enhancements for LTM · `RAN1#122:8.9.1:003` · 후보 · 관련 주제: CSI-RS · 유지보수 (CR)
+
+규격: TS 38.214 5.2.4
 
 > Following TP to TS38.214 Section 5.2.4a is endorsed in principle.
 > | Reason for change: | For LTM CSI reporting, both channel measurements and interference measurements would be done by UE. For interference measurement, UE could either measure NZP CSI-RS or CSI-IM depending on the configuration. In TS 38.214, the measurement on CSI-IM resources is missing. |
@@ -2685,14 +3127,18 @@
 
 출처: [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip)
 
-**Agreement** · `8.9.1` Measurements related enhancements for LTM · `RAN1#122:8.9.1:004` · 후보 · 관련 주제: CSI-RS
+**Agreement** · `8.9.1` Measurements related enhancements for LTM · `RAN1#122:8.9.1:004` · 후보 · 관련 주제: CSI-RS · 유지보수 (CR)
+
+구현 영향: 측정·보고량 · 규격: TS 38.214 5.2.4
 
 > Following TP to TS38.214 Section 5.2.4a is endorsed in principle.
 > | 5.2.4a CSI Reporting for LTM <omitted text> A UE configured with LTM-Config can be provided configurations for CSI acquisition, by up to one Reporting Setting, [ltm-eCSI-ReportConfig], for a candidate cell. Each Reporting Setting [ltm-eCSI-ReportConfig] is associated with either one or two Resource Settings - When one Resource Setting (given by higher layer parameter ltm-ResourcesForChannelMeasurement) is configured, it provides a list of NZP CSI-RS resources for both channel and interference measurements. The UE is not expected to be configured with more than 128 NZP CSI-RS ports in the CSI-RS resource set contained within the Resource Setting. - When two Resource Settings are configured, the first Resource Setting (given by higher layer parameter ltm-ResourcesForChannelMeasurement) provides a list of NZP CSI-RS resources for channel measurement, and the second Resource Setting (given by higher layer parameter [ltm-ResourceForInterferenceMeasurements]), provides a list of [CSI-IM resources] for interference measurement. The UE shall expect the following configuration provided [ltm-eCSI-ReportConfig]: - For the frequency granularity of the CSI report, the CQI format indicator is Wideband CQI. - For the frequency granularity of the CSI report, the PMI format indicator is Wideband PMI. - The codebook type is typeI-SinglePanel. - The reportQuantity is set to ‘cri-RI-PMI-CQI’. <omitted text> |
 
 출처: [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip)
 
-**Agreement** · `8.9.1` Measurements related enhancements for LTM · `RAN1#122:8.9.1:005` · 후보
+**Agreement** · `8.9.1` Measurements related enhancements for LTM · `RAN1#122:8.9.1:005` · 후보 · 유지보수 (CR)
+
+> ⚠️ 수식 누락 의심 — 원본 추출에서 Word 수식(변수·기호)이 빠졌을 수 있습니다. Chair notes 원문으로 확인하세요.
 
 > - Introduce a new RRC IE for LTM codebook configuration
 > CodebookConfig-LTM-r19 ::=         CHOICE {
@@ -2704,27 +3150,29 @@
 
 출처: [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip)
 
-**Agreement** · `8.9.1` Measurements related enhancements for LTM · `RAN1#122:8.9.1:006` · 후보 · 관련 주제: CSI-RS
+**Agreement** · `8.9.1` Measurements related enhancements for LTM · `RAN1#122:8.9.1:006` · 후보 · 관련 주제: CSI-RS · 유지보수 (CR)
 
 > - Add the optional field ‘repetition’ to LTM-NZP-CSI-RS-ResourceSet
 >   - When LTM-NZP-CSI-RS-ResourceSet is used for beam-management, ‘repetition’ should be set to ‘off’ and when it is used for early CSI acquisition, the field should be absent.
 
 출처: [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip)
 
-**Agreement** · `8.9.1` Measurements related enhancements for LTM · `RAN1#122:8.9.1:007` · 후보 · 관련 주제: CSI-RS
+**Agreement** · `8.9.1` Measurements related enhancements for LTM · `RAN1#122:8.9.1:007` · 후보 · 관련 주제: CSI-RS · 유지보수 (CR)
+
+구현 영향: 측정·보고량
 
 > - Adapt LTM-CSI-ReportConfig to include cqi-Table for CQI reporting
 > - Clarify in RAN1 specification that the LTM-CandidateId-r18 in ltm-CandidateIdList-r19 of LTM-NZP-CSI-RS-ResourceSet-r19 should be same as that of LTM-Candidate-r18 under which CSI report configuration for CSI acquisition is configured.
 
 출처: [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip)
 
-**Agreement** · `8.9.1` Measurements related enhancements for LTM · `RAN1#122:8.9.1:008` · 후보 · 관련 주제: CSI-RS
+**Agreement** · `8.9.1` Measurements related enhancements for LTM · `RAN1#122:8.9.1:008` · 후보 · 관련 주제: CSI-RS · 유지보수 (CR)
 
 > Semi-persistent CSI-IM measurement resource is supported for the CSI acquisition for candidate cells.
 
 출처: [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip)
 
-**Agreement** · `8.9.1` Measurements related enhancements for LTM · `RAN1#122:8.9.1:009` · 후보 · 관련 주제: CSI-RS
+**Agreement** · `8.9.1` Measurements related enhancements for LTM · `RAN1#122:8.9.1:009` · 후보 · 관련 주제: CSI-RS · 유지보수 (CR)
 
 > For a UE capable of CSI acquisition of performing early CSI measurement operations before and after LTM Cell Switch Command MAC CE:
 > - For candidate cell(s), a periodic CSI-RS resource and port are counted as ‘active’ in a duration starting when the periodic CSI-RS resource is configured by higher layer signaling until the reception of the LTM cell switch command MAC CE or a RRC reconfiguration message, which comes first.
@@ -2732,14 +3180,16 @@
 
 출처: [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip)
 
-**Agreement** · `8.9.1` Measurements related enhancements for LTM · `RAN1#122:8.9.1:010` · 후보 · 관련 주제: CSI-RS
+**Agreement** · `8.9.1` Measurements related enhancements for LTM · `RAN1#122:8.9.1:010` · 후보 · 관련 주제: CSI-RS · 유지보수 (CR)
 
 > For a UE capable of CSI acquisition of performing early CSI measurement operations only after LTM Cell Switch Command MAC CE:
 > - For candidate cell(s), periodic and SP-CSI-RS resources and ports configured for early CSI acquisition in an LTM Candidate cell are not counted as active before reception of LTM Cell Switch Command MAC CE.
 
 출처: [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip)
 
-**Agreement** · `9.3` UE features for evolution of NR duplex operation: SBFD · `RAN1#122:9.3:002` · 후보 · 관련 주제: CSI-RS
+**Agreement** · `9.3` UE features for evolution of NR duplex operation: SBFD · `RAN1#122:9.3:002` · 후보 · 관련 주제: CSI-RS · UE features (FG)
+
+구현 영향: 처리 시간·CPU, UE capability·FG
 
 > - FG 60-1 to include support of PDSCH/CSI-RS reception in two DL subbands
 > Ø   Add a new component to report the number of partial PRGs supported
@@ -2754,46 +3204,66 @@
 > - Introduce two FGs “separate UL resource muting for Type-1 CG PUSCH for CP-OFDM waveform” and “separate UL resource muting for Type-1 CG PUSCH for DFT-s-OFDM waveform”.
 >   - FFS: Whether/how to capture maximum number of UL muting symbols per slot
 
-남은 FFS 1건
+FFS 1줄
 
 출처: [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) · [R1-2506409](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506409.zip)
 
-**Agreement** · `9.6` UE features for NR mobility enhancements Phase 4 · `RAN1#122:9.6:001` · 후보 · 관련 주제: CSI-RS
+**Agreement** · `9.6` UE features for NR mobility enhancements Phase 4 · `RAN1#122:9.6:001` · 후보 · 관련 주제: CSI-RS · UE features (FG)
+
+구현 영향: 포트·자원·레이어 수
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 63. NR_Mob_Ph4 | 63-6 | Intra-frequency CSI-RS and CSI-IM measurement and CSI reporting for cell indicated in CSC MAC CE after reception of LTM CSC MAC CE based on periodic CSI-RS resource | 1. Support of CSI-RS and CSI-IM measurement and CSI reporting after reception of LTM CSC MAC CE based on periodic CSI-RS(s) of cell indicated in CSC MAC CE [2. Maximum number of the RRC configured candidate cells] 3. Maximum number of CSI-RS resources for CMR associated with CSI report configuration for a candidate cell 4. Max number of CSI-RS ports of CSI-RS resource(s) associated with a CSI report configuration for CSI reporting for a candidate cell 5. Maximum number of Tx ports in one NZP CSI-RS resource 6. Max rank for CSI reporting for a candidate cell 7. Maximum number of CSI-IM resources for interference measurement associated with CSI report configuration for a candidate cell | FFS | Yes | No | Intra-frequency periodic CSI-RS and CSI-IM measurement and CSI reporting for cell indicated in CSC MAC CE after reception of LTM CSC MAC CE is not supported | FFS Per Band | n/a | n/a | n/a | Component 2 candidate values: {1,2,3,4,5,6,7,8} Component 3 candidate values: {1,2,3,4,5,6,7,8} Component 4 candidate values: {1,2,4,8,12,16,24,32,48,64,128} Component 5 candidate values: {1, 2, 4, 8, 12, 16, 24, 32} Component 6 candidate values: FFS {1,2,3,4,5,6,7,8} Component 7 candidate values: {1,2,3,4,5,6,7,8} | Optional with capability signaling |
 
 출처: [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) · [R1-2506608](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506608.zip)
 
-**Agreement** · `9.6` UE features for NR mobility enhancements Phase 4 · `RAN1#122:9.6:002` · 후보 · 관련 주제: CSI-RS
+**Agreement** · `9.6` UE features for NR mobility enhancements Phase 4 · `RAN1#122:9.6:002` · 후보 · 관련 주제: CSI-RS · UE features (FG)
+
+구현 영향: 포트·자원·레이어 수
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 63. NR_Mob_Ph4 | 63-6a | Intra-frequency CSI-RS and CSI-IM measurement and CSI reporting for cell indicated in CSC MAC CE after reception of LTM CSC MAC CE based on semi-persistent CSI-RS resource | 1. Support of CSI-RS and CSI-IM measurement and CSI reporting after reception of LTM CSC MAC CE based on periodic CSI-RS(s) of cell indicated in CSC MAC CE [2. Maximum number of the RRC configured candidate cells] 3. Maximum number of CSI-RS resources for CMR associated with CSI report configuration for a candidate cell 4. Max number of CSI-RS ports of CSI-RS resource(s) associated with a CSI report configuration for CSI reporting for a candidate cell 5. Maximum number of Tx ports in one NZP CSI-RS resource 6. Max rank for CSI reporting for a candidate cell 7. Maximum number of CSI-IM resources for interference measurement associated with CSI report configuration for a candidate cell | FFS | Yes | No | Intra-frequency semi-persistent CSI-RS and CSI-IM measurement and CSI reporting for cell indicated in CSC MAC CE after reception of LTM CSC MAC CE is not supported | FFS Per Band | n/a | n/a | n/a | Component 2 candidate values: {1,2,3,4,5,6,7,8} Component 3 candidate values: {1,2,3,4,5,6,7,8} Component 4 candidate values: {1,2,4,8,12,16,24,32,48,64,128} Component 5 candidate values: {1, 2, 4, 8, 12, 16, 24, 32} Component 6 candidate values: FFS {1,2,3,4,5,6,7,8} Component 7 candidate values: {1,2,3,4,5,6,7,8} | Optional with capability signaling |
 
 출처: [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) · [R1-2506608](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506608.zip)
 
-**Agreement** · `9.6` UE features for NR mobility enhancements Phase 4 · `RAN1#122:9.6:003` · 후보 · 관련 주제: CSI-RS
+**Agreement** · `9.6` UE features for NR mobility enhancements Phase 4 · `RAN1#122:9.6:003` · 후보 · 관련 주제: CSI-RS · UE features (FG)
+
+구현 영향: 포트·자원·레이어 수
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 63. NR_Mob_Ph4 | 63-7 | Intra-frequency CSI-RS and CSI-IM measurement for candidate cell before reception of LTM CSC MAC CE based on periodic CSI-RS(s) of candidate cells | 1. Support of CSI-RS and CSI-IM measurement before reception of CSC MAC CE based on periodic CSI-RS(s) of candidate cells 2. Maximum number of RRC configured candidate cells for CSI measurement before LTM CSC MAC CE 3. Maximum number of RRC configured CSI-RS resources across candidate cells for CSI measurement before LTM CSC MAC CE 4. Max number of CSI-RS ports of CSI-RS resource(s) associated with a CSI report configuration for CSI reporting for a candidate cell 5. Maximum number of Tx ports in one NZP CSI-RS resource associated with a CSI report configuration for CSI reporting for a candidate cell [6. Max rank for CSI reporting for a candidate cell] 6. Maximum number of RRC configured CSI-IM resources across candidate cells for CSI measurement before LTM CSC MAC CE | 63-6 | Yes | No | Intra-frequency periodic CSI-RS and CSI-IM measurement for candidate cell before reception of LTM CSC MAC CE is not supported | Per BC | n/a | n/a | n/a | Component 2 candidate values: {1,2,3,4,5,6,7,8} Component 3 candidate values: {1,2,...64} Component 4 candidate values: FFS {1,2,4,8,12,16,24,32,48,64,128} Component 5 candidate values: FFS {1,2,4,8,12,16,24,32} Component 6 candidate values: {1,2,…64} | Optional with capability signaling |
 
 출처: [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) · [R1-2506608](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506608.zip)
 
-**Agreement** · `9.6` UE features for NR mobility enhancements Phase 4 · `RAN1#122:9.6:004` · 후보 · 관련 주제: CSI-RS
+**Agreement** · `9.6` UE features for NR mobility enhancements Phase 4 · `RAN1#122:9.6:004` · 후보 · 관련 주제: CSI-RS · UE features (FG)
+
+구현 영향: 포트·자원·레이어 수
+
+> ⚠️ 색 표시 손실 — 원문은 추가·삭제를 색으로 표시했지만 추출된 글에는 색이 없습니다. TDoc에서 확인하세요.
 
 > Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown
 > | 63. NR_Mob_Ph4 | 63-7a | Intra-frequency CSI-RS and CSI-IM measurement for candidate cell before reception of LTM CSC MAC CE based on semi-persistent CSI-RS(s) of candidate cells | 1. Support of CSI-RS and CSI-IM measurement before reception of CSC MAC CE based on semi-persistent CSI-RS(s) of candidate cells 2. Maximum number of RRC configured candidate cells for CSI measurement before LTM CSC MAC CE 3. Maximum number of RRC configured CSI-RS resources across candidate cells for CSI measurement before LTM CSC MAC CE 4. Max number of CSI-RS ports of CSI-RS resource(s) associated with a CSI report configuration for CSI reporting for a candidate cell 5. Maximum number of Tx ports in one NZP CSI-RS resource associated with a CSI report configuration for CSI reporting for a candidate cell [6. Max rank for CSI reporting for a candidate cell] 6. Maximum number of RRC configured CSI-IM resources across candidate cells for CSI measurement before LTM CSC MAC CE | 63-6a | Yes | No | Intra-frequency semi-persistent CSI-RS and CSI-IM measurement for candidate cell before reception of LTM CSC MAC CE is not supported | Per BC | n/a | n/a | n/a | Component 2 candidate values: {1,2,3,4,5,6,7,8} Component 3 candidate values: {1,2,...64} Component 4 candidate values: FFS {1,2,4,8,12,16,24,32,48,64,128} Component 5 candidate values: FFS {1,2,4,8,12,16,24,32} Component 6 candidate values: {1,2,...64} | Optional with capability signaling |
 
 출처: [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) · [R1-2506608](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506608.zip)
 
-**Agreement** · `9.6` UE features for NR mobility enhancements Phase 4 · `RAN1#122:9.6:005` · 후보 · 관련 주제: CSI-RS
+**Agreement** · `9.6` UE features for NR mobility enhancements Phase 4 · `RAN1#122:9.6:005` · 후보 · 관련 주제: CSI-RS · UE features (FG)
+
+구현 영향: UE capability·FG
 
 > Introduce the following Rel. 19 UE FGs (yellow highlighting, if any, shows text that’s not yet agreed)
 > | 63. NR_Mob_Ph4 | 63-10 | Intra-frequency CSI-RS-RS measurement and CSI reporting without CSI-IM reception | 1. Support of CSI-RS measurement and CSI reporting for candidate cells without CSI-IM resource configuration | 63-6 or 63-6a or 63-7 or 63-7a | Yes | No | Intra-frequency CSI-RS-RS measurement and CSI reporting without CSI-IM reception is not supported | Per band | n/a | n/a | n/a |  | Optional with capability signaling |
 
 출처: [Chair notes RAN1#122 eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Inbox/Chair_notes/Chair%20notes%20RAN1%23122%20eom.zip) · [R1-2506608](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_122/Docs/R1-2506608.zip)
 
-**Agreement** · `9.14` Others · `RAN1#122:9.14:004` · 후보 · 관련 주제: CSI-RS
+**Agreement** · `9.14` Others · `RAN1#122:9.14:004` · 후보 · 관련 주제: CSI-RS · UE features (FG)
+
+구현 영향: UE capability·FG, 포트·자원·레이어 수
 
 > Introduce the following Rel. 19 UE FGs (yellow highlighting, if any, shows text that’s not yet agreed)
 > | 67. TEI19 [SimCSI_countNES] | 67-8 | Simultaneous NZP-CSI-RS resource counting NES | For simultaneous CSI-RS reception in Network Energy Saving UE features 42-1/1a/1b/1c, and 42-2/2a/2b/2c, for a periodic/semi-persistent CSI-RS resource referred N times by one or more CSI Reporting Settings with at least one CSI Reporting Setting configured with higher layer csi-ReportSubConfigToAddModList, the CSI-RS resource is counted one time by the UE and the CSI-RS ports within that CSI-RS resource, are counted as P, where P is the number of ports configured by nrofPorts. | 42-1/1a/1b/1c, or 42-2/2a/2b/2c | yes | n/a | gNB would not assume that UE supports this capability | Per BC | No | No | n/a |  | Optional with capability signalling |
