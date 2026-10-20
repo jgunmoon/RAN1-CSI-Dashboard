@@ -155,3 +155,13 @@ def test_tabs_start_on_summary_and_open_from_hash(dash):
     dash.goto(dash.url.split("#")[0] + "#ffs")                         # 공유한 주소의 #탭으로 바로 열림
     dash.wait_for_timeout(200)
     assert dash.is_visible("#ffs-list") and dash.is_hidden("#filters")
+
+
+def test_first_visit_guide(dash):
+    assert dash.get_attribute("#guide", "open") is not None             # 처음 방문: 펼쳐짐
+    dash.locator('#guide [data-goto="ffs"]').click()                     # 안내 속 탭 이름 → 그 탭으로
+    assert dash.is_visible("#ffs-list")
+    dash.click("#guide > summary")                                       # 접으면 기억
+    dash.reload()
+    dash.wait_for_selector("#guide", state="attached")
+    assert dash.get_attribute("#guide", "open") is None

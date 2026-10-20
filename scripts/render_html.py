@@ -69,7 +69,17 @@ section { display: grid; gap: 14px; min-width: 0; }
 .tab-panel { display: grid; gap: 28px; min-width: 0; }
 .tab-panel[hidden] { display: none; }
 .title-row { display: flex; flex-wrap: wrap; gap: 8px 32px; align-items: baseline; justify-content: space-between; }
-.lede-row { display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: baseline; }
+details.guide { background: var(--panel); border: 1px solid var(--rule); border-radius: 8px; }
+details.guide > summary { cursor: pointer; padding: 10px 14px; font-size: 14px; font-weight: 600; }
+details.guide[open] > summary { border-bottom: 1px solid var(--rule); }
+.guide-body { padding: 4px 16px 14px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: 0 28px;
+  font-size: 13px; color: var(--ink-2); }
+.guide-body h3 { font-size: 13px; color: var(--ink); margin: 12px 0 4px; }
+.guide-body p { margin: 0; }
+.guide-body p.small { margin-top: 10px; }
+details.guide > summary .small { font-weight: 400; }
+.guide-body ul { margin: 0; padding-left: 18px; display: grid; gap: 4px; }
+.guide-body li b { color: var(--ink); margin-right: 4px; }
 .section-head { display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: baseline; }
 details.help { font-size: 13px; color: var(--ink-2); max-width: 80ch; }
 details.help > summary { cursor: pointer; color: var(--accent); font-size: 12px; list-style: none; display: inline; }
@@ -567,6 +577,11 @@ SCRIPT = r"""
   }));
   document.querySelectorAll('[data-goto]').forEach(b => b.addEventListener('click', () => { showTab(b.dataset.goto); scrollTo({ top: header.offsetTop + header.offsetHeight }); }));
   addEventListener('hashchange', () => showTab(location.hash.slice(1), false));
+  // '처음 보시는 분께' 안내: 처음 방문하면 펼치고, 한 번 접으면 이 브라우저에서는 접힌 채로 둡니다.
+  const guide = $('guide');
+  let seen = false; try { seen = localStorage.getItem('csi-guide-seen') === '1'; } catch (e) {}
+  guide.open = !seen;
+  guide.addEventListener('toggle', () => { if (!guide.open) { try { localStorage.setItem('csi-guide-seen', '1'); } catch (e) {} } });
   bar.addEventListener('change', update);
   let rw; addEventListener('resize', () => { clearTimeout(rw); rw = setTimeout(() => chart(D.entries.filter(pred())), 200); });
   q.addEventListener('input', () => { idFilter = null; clearTimeout(timer); timer = setTimeout(() => list(D.entries.filter(pred())), 150); });
@@ -756,6 +771,51 @@ def _alerts_html(m):
             f'결정이 범위에서 조용히 빠지지 않도록 확인하세요.<ul>{"".join(rows)}</ul></div>')
 
 
+def _guide(m):
+    """'처음 보시는 분께' 안내. 처음 방문하면 펼쳐지고, 접으면 그 브라우저에서는 접힌 채로 둡니다(스크립트에서 처리)."""
+    repo = (m["config"].get("report_base_url") or "").split("/blob/")[0]
+    go = lambda tab, label: f'<button type="button" class="link-btn" data-goto="{tab}">{label}</button>'  # noqa: E731
+    watch = (f'<a href="{_e(repo)}" target="_blank" rel="noopener">GitHub 저장소</a>에서 <b>Watch → All Activity</b>를 누르면'
+             if repo.startswith("https://github.com/") else "이 대시보드의 GitHub 저장소를 Watch하면")
+    return f"""<details class="guide" id="guide">
+  <summary>👋 처음 보시는 분께 — 2분 사용 안내 <span class="small muted">(접어 두면 다음부터는 접힌 채로 열립니다)</span></summary>
+  <div class="guide-body">
+    <div class="guide-col">
+      <h3>무엇인가요?</h3>
+      <p>3GPP RAN1 회의록(Chair notes)의 결정 중 <b>CSI 관련</b>만 모았습니다. 단말 알고리즘·HW에 반영할 결정을 빠뜨리지 않기 위한 페이지입니다.
+        결정 문장은 요약하지 않은 <b>원문 그대로</b>이고, 결정마다 회의록·TDoc 링크가 있습니다. 매일 오전 10시 20분쯤 자동으로 갱신됩니다.</p>
+      <h3>알아 둘 말</h3>
+      <ul>
+        <li><b>확정</b> CSI Agenda에서 나온 결정. 기본 화면은 확정 중 <b>Agreement만</b> 보여줍니다.</li>
+        <li><b>후보</b> 다른 Agenda에서 CSI 단어가 나온 결정. CSI가 아닐 수도 있어 기본으로 숨깁니다.</li>
+        <li><b>WA · Conclusion</b> 잠정 합의와 결론. "~는 지원하지 않는다" 같은 결론도 여기 있습니다.</li>
+        <li><b>숨김</b> 필터 줄 오른쪽의 '숨김: WA · Conclusion · 후보' 건수를 누르면 함께 보입니다.</li>
+        <li><b>⚠</b> 원문만으로는 부족하니 원본 문서를 확인하라는 표시(수식 누락 의심, 색 표시 손실, 변경은 TDoc에). 마우스를 올리면 설명이 나옵니다.</li>
+      </ul>
+    </div>
+    <div class="guide-col">
+      <h3>탭</h3>
+      <ul>
+        <li>{go("summary", "요약")} 최신 회의 주제별 건수와 직전 회의 대비, 최근 변경, 회의별 차트. 숫자를 누르면 그 결정 목록으로 갑니다.</li>
+        <li>{go("list", "결정 목록")} 원문 검색(띄어 쓰면 AND, <span class="mono">|</span>는 OR). '상세 필터'에 진행 단계·구현 영향·규격 조항이 있습니다.</li>
+        <li>{go("agenda", "Agenda별")} CSI Agenda별 회의마다 결정 수.</li>
+        <li>{go("ffs", "FFS 추적")} 결정에 남은 FFS와, 이후 회의의 '후속 결정 후보'(단어 겹침 기준 — 해결 여부는 원문 확인).</li>
+        <li>{go("fg", "FG 목록")} UE capability(FG) 번호·이름으로 찾고, 그 FG를 정의·수정한 결정 보기.</li>
+        <li>{go("changes", "변경 이력")} 지난 회의 결정이 나중에 추가·변경된 기록.</li>
+      </ul>
+      <h3>이렇게 쓰면 편합니다</h3>
+      <ul>
+        <li><b>회의가 끝나면</b> 요약 탭 카드 → 신규 결정 확인 → '숨김'의 Conclusion·후보도 한 번 확인</li>
+        <li><b>HW 영향만</b> 결정 목록 → 상세 필터 → 구현 영향 '처리 시간·CPU' 또는 '포트·자원·레이어 수'</li>
+        <li><b>탭 공유</b> 주소 끝에 <span class="mono">#ffs</span>, <span class="mono">#fg</span>, <span class="mono">#list</span>를 붙이면 그 탭이 바로 열립니다.</li>
+        <li><b>메일 알림</b> {watch} 새 결정이 들어올 때 알림 Issue 메일을 받습니다.</li>
+      </ul>
+      <p class="small muted">자동 추출이라 중요한 결정은 원문 링크로 확인해 주세요. 빠지거나 잘못 들어간 결정은 카드 아래 id(예: <span class="mono">RAN1#126:9.2:003</span>)를 담당자에게 알려 주세요.</p>
+    </div>
+  </div>
+</details>"""
+
+
 def _help(text):
     """제목 옆 '설명' 펼침. 긴 설명은 기본으로 접어 화면을 짧게 둡니다."""
     return f'<details class="help"><summary>설명</summary><div>{text}</div></details>'
@@ -860,10 +920,8 @@ def render_body(m):
       <div><dt>후보</dt><dd>{cand:,}</dd></div>
     </dl>
   </div>
-  <div class="lede-row"><p class="lede">CSI 획득·보고, CSI-RS, codebook, beam management, SRS, AI/ML CSI에 관한 RAN1 결정을 Chair notes 원문 그대로 모았습니다.</p>
-    {_help("<b>확정</b>은 CSI Agenda(설정 파일의 포함 목록)에 기록된 결정, <b>후보</b>는 다른 Agenda에서 CSI 키워드가 나온 결정이라 CSI가 아닐 수 있습니다. "
-           "기본 화면은 확정 Agreement만 보여주며, 숨긴 결정 수는 필터 줄 오른쪽 '숨김'에 항상 나옵니다. "
-           "결정 본문은 요약하지 않은 원문이고, 주제·진행 단계·구현 영향·⚠ 표시는 이 대시보드가 원문 단어로 붙인 것입니다.")}</div>
+  <p class="lede">CSI 획득·보고, CSI-RS, codebook, beam management, SRS, AI/ML CSI에 관한 RAN1 결정을 Chair notes 원문 그대로 모았습니다.</p>
+  {_guide(m)}
   {_alerts_html(m)}
   {notices}
 </header>
