@@ -157,11 +157,31 @@ def test_tabs_start_on_summary_and_open_from_hash(dash):
     assert dash.is_visible("#ffs-list") and dash.is_hidden("#filters")
 
 
-def test_first_visit_guide(dash):
-    assert dash.get_attribute("#guide", "open") is not None             # 처음 방문: 펼쳐짐
-    dash.locator('#guide [data-goto="ffs"]').click()                     # 안내 속 탭 이름 → 그 탭으로
-    assert dash.is_visible("#ffs-list")
-    dash.click("#guide > summary")                                       # 접으면 기억
-    dash.reload()
-    dash.wait_for_selector("#guide", state="attached")
-    assert dash.get_attribute("#guide", "open") is None
+def test_first_visit_guide(tmp_path, db, config):
+    # localStorage는 file:// 주소에서 브라우저마다 다르게 동작하므로(실제 게시 주소는 https) 로컬 HTTP 서버로 엽니다.
+    import functools
+    import threading
+    from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
+
+    build.build(config, db, tmp_path)
+    handler = functools.partial(SimpleHTTPRequestHandler, directory=str(tmp_path))
+    handler.log_message = lambda *a: None
+    server = ThreadingHTTPServer(("127.0.0.1", 0), handler)
+    threading.Thread(target=server.serve_forever, daemon=True).start()
+    try:
+        with sync_playwright() as p:
+            browser = p.chromium.launch()
+            pg = browser.new_page()
+            pg.route(re.compile(r"fonts\.(googleapis|gstatic)\.com"), lambda r: r.abort())
+            pg.goto(f"http://127.0.0.1:{server.server_address[1]}/index.html")
+            assert pg.get_attribute("#guide", "open") is not None             # 처음 방문: 펼쳐짐
+            pg.locator('#guide [data-goto="ffs"]').click()                     # 안내 속 탭 이름 → 그 탭으로
+            assert pg.is_visible("#ffs-list")
+            pg.click("#guide > summary")                                       # 접으면 기억
+            pg.wait_for_function("localStorage.getItem('csi-guide-seen') === '1'")  # toggle 이벤트는 비동기
+            pg.reload()
+            pg.wait_for_selector("#guide", state="attached")
+            assert pg.get_attribute("#guide", "open") is None
+            browser.close()
+    finally:
+        server.shutdown()
