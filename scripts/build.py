@@ -78,6 +78,8 @@ def summary(m):
     for r in m["alerts"]["new"]:
         lines.append(f"::warning::{m['latest']}에 새 Agenda '{r['number']} {r['title']}' ({r['section']}): "
                      f"확정 {r['confirmed']} · 후보 {r['candidate']}건. CSI Agenda면 config agendas에 넣으세요.")
+    for k in m["alerts"]["acknowledged"]:
+        lines.append(f"Agenda 경고 확인함(acknowledged_alerts)으로 숨김: {k}")
     c = m["change_new"]
     if c:
         lines.append(f"변경 이력 추가 ({c['reason']}): 새 회의 " + (", ".join(f"{x['meeting']} {x['count']}건" for x in c["new_meetings"]) or "없음")

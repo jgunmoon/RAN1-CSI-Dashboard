@@ -62,7 +62,7 @@ def build(db, config):
         # FFS 후속 결정 후보: 확정 결정끼리, 같은 포함 Agenda 항목(수동 포함은 같은 Agenda 제목) 안에서만 찾습니다.
         "ffs": enrich_mod.ffs_followups(conf, lambda e: e["agenda_rule"] if e["agenda_rule"] is not None
                                         else (e["agenda_path"][0]["title"], e["agenda_title"])),
-        "alerts": agenda_alerts(db, entries, agendas, meetings),
+        "alerts": agenda_alerts(db, entries, agendas, meetings, config.get("acknowledged_alerts") or []),
         "db": db, "config": config, "entries": entries, "meetings": meetings, "topics": topics, "topic_label": topic_label,
         "agendas": agendas, "latest": latest, "prev": prev, "unknown_manual_ids": sel["unknown_manual_ids"],
         "updated_kst": format_kst(db.get("updated_at")),
@@ -91,14 +91,16 @@ def candidate_agendas(m):
                    for (s, t), v in per.items()), key=lambda r: (-r[2], r[0], r[1]))
 
 
-def agenda_alerts(db, entries, agendas, meetings):
+def agenda_alerts(db, entries, agendas, meetings, acknowledged=()):
     """최신 회의에서 Agenda 구성이 바뀐 곳. 결정이 조용히 빠지지 않도록 대시보드·README·실행 요약에 경고로 보여줍니다.
 
     dropped: 직전 회의에는 결정이 있던 포함 Agenda가 최신 회의에는 없음 (제목·섹션이 바뀌었거나 끝난 Agenda).
     new    : 이전 회의에 없던 Agenda(섹션 제목 + Agenda 제목)가 최신 회의에 생겼고, CSI 결정(확정·후보)이 있음.
+    acknowledged(config acknowledged_alerts)에 적힌 경고는 관리자가 확인을 마친 것이라 'acknowledged'로 따로 둡니다.
+    키는 '최신 회의: 섹션 > Agenda 제목'(new) 또는 '최신 회의: 포함 Agenda 이름'(dropped)이라 그 회의에만 적용됩니다.
     """
     if len(meetings) < 2:
-        return {"dropped": [], "new": []}
+        return {"dropped": [], "new": [], "acknowledged": []}
     latest, prev = meetings[-1], meetings[-2]
     dropped = []
     for a in agendas:
@@ -107,7 +109,7 @@ def agenda_alerts(db, entries, agendas, meetings):
             per[e["meeting"]] = per.get(e["meeting"], 0) + 1
         if per.get(prev) and not per.get(latest):
             dropped.append({"label": a["label"], "section": a["section"], "prev_count": per[prev],
-                            "prev_number": a["numbers"].get(prev, "")})
+                            "prev_number": a["numbers"].get(prev, ""), "key": f"{latest}: {a['label']}"})
 
     # 회의 간 연결은 '섹션 + Agenda 제목'(번호·상위가 바뀌어도 같은 Agenda). 같은 회의에 같은 제목이 여러 번 나오면
     # (예: 'Other aspects') 상위 제목 전체 경로로 구분합니다 (원본 scripts/agenda.py와 같은 방식).
@@ -132,6 +134,7 @@ def agenda_alerts(db, entries, agendas, meetings):
             continue
         p = e["agenda_path"]
         row = new.setdefault(key(e), {"section": p[0]["title"], "title": p[-1]["title"], "number": p[-1]["number"],
+                                      "key": f"{latest}: {p[0]['title']} > {p[-1]['title']}",
                                       "new_section": key(e)[0] not in earlier_sections,
                                       "total": 0, "confirmed": 0, "candidate": 0})
         row["total"] += 1
@@ -140,4 +143,7 @@ def agenda_alerts(db, entries, agendas, meetings):
             row["confirmed" if confirmed(c) else "candidate"] += 1
     rows = [r for r in new.values() if r["confirmed"] or r["candidate"]]
     rows.sort(key=lambda r: (-r["candidate"] - r["confirmed"], r["number"]))
-    return {"dropped": dropped, "new": rows}
+    ack = {scope_mod.norm(k) for k in acknowledged}
+    done = [x for x in dropped + rows if scope_mod.norm(x["key"]) in ack]
+    return {"dropped": [d for d in dropped if d not in done], "new": [r for r in rows if r not in done],
+            "acknowledged": [x["key"] for x in done]}

@@ -7,6 +7,7 @@
 import json
 from html import escape
 
+from scripts import changes as changes_mod
 from scripts.model import TYPES, provisional, short
 
 TITLE = "RAN1 CSI 결정 대시보드"
@@ -152,6 +153,8 @@ button.cell:disabled { color: var(--ink-3); text-decoration: none; cursor: defau
 .presets button, .more, .reset { font: inherit; font-size: 13px; padding: 3px 10px; border: 1px solid var(--rule); border-radius: 999px;
   background: var(--bg); color: var(--accent); cursor: pointer; }
 .summary-line { font-size: 13px; color: var(--ink-2); }
+.list-head { display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: baseline; justify-content: space-between; }
+.link-btn:disabled { opacity: .5; cursor: default; }
 .summary-line .num { color: var(--ink); }
 .results { display: grid; gap: 12px; min-width: 0; }
 .result { border-top: 1px solid var(--rule); padding-top: 12px; display: grid; gap: 6px; min-width: 0; }
@@ -205,6 +208,25 @@ SCRIPT = r"""
   const link = (url, label) => { if (!/^https:\/\//.test(url || '')) return el('span', null, label);
     const a = el('a', null, label); a.href = url; a.target = '_blank'; a.rel = 'noopener'; return a; };
   const short = m => m.replace('RAN1#', '#');
+  // 결정 하나만 열리는 주소 (…/#id=RAN1%23126%3A9.2%3A003). 사내 미러처럼 다른 주소로 게시해도 그 주소 기준입니다.
+  const shareUrl = id => location.href.split('#')[0] + '#id=' + encodeURIComponent(id);
+  async function copyText(text) {  // 클립보드 API가 막힌 환경(권한·http)에서는 예전 방식으로, 그것도 안 되면 false
+    try { await navigator.clipboard.writeText(text); return true; } catch (err) {}
+    const t = el('textarea'); t.value = text; t.setAttribute('readonly', ''); t.style.cssText = 'position:fixed;opacity:0';
+    document.body.append(t); t.select();
+    let ok = false; try { ok = document.execCommand('copy'); } catch (err) {}
+    t.remove(); return ok;
+  }
+  function copyButton(id) {
+    const b = el('button', 'link-btn', '링크 복사'); b.type = 'button';
+    b.title = '이 결정만 열리는 주소를 복사합니다 (메신저·메일로 공유)';
+    b.addEventListener('click', async () => {
+      const url = shareUrl(id);
+      if (await copyText(url)) { b.textContent = '복사됨'; setTimeout(() => { b.textContent = '링크 복사'; }, 1500); }
+      else prompt('아래 주소를 복사하세요', url);
+    });
+    return b;
+  }
   const TOPIC = Object.fromEntries(D.topics.map((t, i) => [t.id, { ...t, i }]));
   const SHORT = { 'Agreement': 'Agreement', 'Working Assumption': 'WA', 'Conclusion': 'Conclusion' };
   const latest = D.meetings[D.meetings.length - 1], prev = D.meetings[D.meetings.length - 2];
@@ -462,7 +484,7 @@ SCRIPT = r"""
     head.append(el('span', 'mono', e.meeting));
     if (e.meeting === latest) head.append(el('span', 'chip new', '신규'));
     if (D.provisional.includes(e.meeting)) head.append(el('span', 'chip cand', '잠정'));
-    if (RECENT[e.id]) { const c = el('span', 'chip changed', RECENT[e.id]); c.title = `${D.recent.at.slice(0, 10)} 실행에서 과거 회의 결정이 바뀜`; head.append(c); }
+    if (RECENT[e.id]) { const c = el('span', 'chip changed', RECENT[e.id]); c.title = `${D.recent.at.slice(0, 10)} 원본 회의록 갱신으로 과거 회의 결정이 바뀜 (변경 이력 탭)`; head.append(c); }
     const tc = el('span', 'chip'); tc.append(swatch(e.topic), TOPIC[e.topic].label); tc.title = '주된 주제'; head.append(tc);
     const rel = e.tags.filter(t => t !== e.topic);
     if (rel.length) head.append(el('span', 'related-tags', '관련: ' + rel.map(t => TOPIC[t].label).join(' · ')));
@@ -495,6 +517,7 @@ SCRIPT = r"""
     if (s.discussion) src.append(' · ', el('span', 'mono', `[${s.discussion}]`));
     src.append(' · ', el('span', 'mono', e.id));
     if (e.ffs) src.append(` · FFS ${e.ffs}줄`);
+    src.append(' ', copyButton(e.id));
     box.append(src);
     return box;
   }
@@ -502,7 +525,7 @@ SCRIPT = r"""
   // 최근 변경 이력: 변경 묶음이 30일 안이면 해당 결정에 '과거 회의 추가/변경' 표시
   const RECENT = {};
   if (D.recent && Date.now() - Date.parse(D.recent.at) < 30 * 864e5)
-    Object.entries(D.recent.items).forEach(([id, w]) => { RECENT[id] = w === 'added' ? '과거 회의에 추가' : '원문·범위 변경'; });
+    Object.assign(RECENT, D.recent.items);
   function showMore() {
     out.querySelector('.more')?.remove();
     hits.slice(shown, shown + PAGE).forEach(e => out.append(render(e, curRe)));
@@ -527,7 +550,7 @@ SCRIPT = r"""
     if (idFilter) {  // '최근 변경' 버튼: 구분·범위 체크와 다른 조건을 무시하고 그 결정만 보여줌
       hits = D.entries.filter(e => idFilter.has(e.id)).reverse(); curRe = null; out.replaceChildren(); shown = 0;
       summary.replaceChildren(el('span', 'num', `${hits.length}건`), ` · ${idLabel} (구분·범위 체크와 관계없이 모두 표시 · '조건 지우기'로 해제)`);
-      showMore(); return;
+      setCsv(); showMore(); return;
     }
     const groups = q.value.trim().split(/\s+OR\s+|\s*\|\s*/).map(g => g.split(/\s+/).filter(Boolean)).filter(g => g.length);
     const terms = groups.flat();
@@ -540,8 +563,31 @@ SCRIPT = r"""
     summary.replaceChildren(el('span', 'num', `${hits.length.toLocaleString()}건`),
       hits.length ? ' · 회의별 ' + D.meetings.filter(m => per[m]).map(m => `${short(m)} ${per[m]}`).join(' · ') + ` · 최신 회의부터 · ${stateText()}`
                   : ` · 조건에 맞는 결정이 없습니다 (${stateText()}). 위 체크박스나 검색어를 확인하세요.`);
-    showMore();
+    setCsv(); showMore();
   }
+  // ── CSV: 지금 목록에 걸린 결정 전부('더 보기' 전 포함). 엑셀에서 한글이 깨지지 않게 UTF-8 BOM을 붙이고,
+  // 원문이 '- Adopt …'처럼 -, =, +, @로 시작하면 엑셀이 수식으로 읽지 않도록 그 칸 앞에 '를 붙입니다.
+  const csvBtn = $('csv');
+  const SCOPE_KO = { agenda: '확정', manual: '수동 포함', candidate: '후보' };
+  function setCsv() { csvBtn.textContent = `CSV 내려받기 (${hits.length.toLocaleString()}건)`; csvBtn.disabled = !hits.length; }
+  function csvCell(v) {
+    let s = v == null ? '' : String(v);
+    if (/^[=+\-@\t\r]/.test(s)) s = "'" + s;
+    return /[",\r\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s;
+  }
+  csvBtn.addEventListener('click', () => {
+    const head = ['id', '회의', '신규', '잠정', 'Agenda 번호', 'Agenda 제목', '구분', '범위', '주된 주제', '관련 주제', '진행 단계', '구현 영향',
+      '규격 조항', '확인 필요', 'FFS 줄 수', '후보 일치', 'Chair notes 원문', 'Chair notes', 'Chair notes 링크', 'TDoc', 'TDoc 링크', '대시보드 링크',
+      '담당자', '반영 여부', '메모'];
+    const rows = hits.map(e => [e.id, e.meeting, e.meeting === latest ? '신규' : '', D.provisional.includes(e.meeting) ? '잠정' : '',
+      e.item, e.title, e.type, SCOPE_KO[e.scope], TOPIC[e.topic].label, e.tags.filter(t => t !== e.topic).map(t => TOPIC[t].label).join(', '),
+      STAGE[e.stage], e.impact.map(i => IMPACT[i]).join(', '), e.clauses.join(', '), e.warn.map(k => WARN_SHORT[k]).join(', '), e.ffs || '',
+      e.kw.join(', '), e.text, e.source.doc, e.source.url, e.source.tdoc, e.source.tdoc_url, shareUrl(e.id), '', '', '']);
+    const csv = '\ufeff' + [head, ...rows].map(r => r.map(csvCell).join(',')).join('\r\n') + '\r\n';
+    const a = el('a'); a.href = URL.createObjectURL(new Blob([csv], { type: 'text/csv;charset=utf-8' }));
+    a.download = `RAN1_CSI_decisions_${new Date().toISOString().slice(0, 10)}.csv`;
+    document.body.append(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+  });
   // 카드·차트·표의 숫자를 누르면 이전 검색어와 조건을 모두 지우고 누른 조건만 적용합니다 (남아 있으면 0건처럼 보임).
   function focusList(f) {
     q.value = ''; fTopic.value = f.topic || ''; fMeeting.value = f.meeting || ''; fAgenda.value = f.agenda || '';
@@ -576,7 +622,7 @@ SCRIPT = r"""
     if (scrollY > top) scrollTo({ top });
   }));
   document.querySelectorAll('[data-goto]').forEach(b => b.addEventListener('click', () => { showTab(b.dataset.goto); scrollTo({ top: header.offsetTop + header.offsetHeight }); }));
-  addEventListener('hashchange', () => showTab(location.hash.slice(1), false));
+  addEventListener('hashchange', openHash);
   // '처음 보시는 분께' 안내: 처음 방문하면 펼치고, 한 번 접으면 이 브라우저에서는 접힌 채로 둡니다.
   const guide = $('guide');
   let seen = false; try { seen = localStorage.getItem('csi-guide-seen') === '1'; } catch (e) {}
@@ -592,6 +638,25 @@ SCRIPT = r"""
     idFilter = null; q.value = ''; fTopic.value = fMeeting.value = fAgenda.value = fStage.value = fImpact.value = fClause.value = ''; fWarn.checked = false;
     list(D.entries.filter(pred())); });
   const BYID = Object.fromEntries(D.entries.map(e => [e.id, e]));
+  // 공유 주소(#id=…): 그 결정 하나만 결정 목록에 보여줍니다. 원본이 회의록을 다시 처리해 순번(id 끝 번호)이 바뀌었으면
+  // 같은 회의·Agenda의 결정을 대신 보여줍니다.
+  function openShared(id) {
+    if (BYID[id]) focusList({ ids: [id], label: `공유된 결정 ${id}` });
+    else {
+      const [meeting, item] = id.split(':');
+      const near = D.entries.filter(e => e.meeting === meeting && e.item === item).map(e => e.id);
+      focusList({ ids: near, label: near.length
+        ? `공유된 결정 ${id}이 지금은 없어 같은 회의·Agenda(${meeting} ${item}) 결정을 보여줍니다 — 원본 재처리로 번호가 바뀌었을 수 있습니다`
+        : `공유된 결정 ${id}이 지금은 없습니다 — 번호가 바뀌었거나 CSI 범위에서 빠졌을 수 있습니다` });
+    }
+    history.replaceState(null, '', '#id=' + encodeURIComponent(id));  // 새로 고쳐도 같은 결정
+  }
+  function openHash() {
+    const h = location.hash.slice(1);
+    if (!h.startsWith('id=')) { showTab(h || 'summary', false); return; }
+    let id = h.slice(3); try { id = decodeURIComponent(id); } catch (err) {}
+    openShared(id);
+  }
   const idButton = (label, ids, title) => { const b = el('button', 'link-btn', label); b.type = 'button';
     b.addEventListener('click', () => focusList({ ids, label: title })); return b; };
   // ── FFS 추적: 확정 결정의 FFS 줄마다, 같은 Agenda의 이후 회의 결정 중 단어가 많이 겹치는 '후속 결정 후보'
@@ -675,7 +740,7 @@ SCRIPT = r"""
   })();
   document.querySelectorAll('[data-preset]').forEach(b => b.addEventListener('click', () => { q.value = b.dataset.preset; list(D.entries.filter(pred())); q.focus(); }));
   update();
-  showTab(location.hash.slice(1) || 'summary', false);
+  openHash();
 })();
 """
 
@@ -750,11 +815,14 @@ def data(m):
 
 
 def _recent(m):
-    """가장 최근 변경 묶음에서 아직 남아 있는 결정(추가·변경)의 id → 종류."""
-    hist = m.get("changes") or []
-    if not hist:
+    """가장 최근 원본(회의록) 변경 묶음에서 아직 남아 있는 결정의 id → 카드 표시.
+
+    대시보드 설정(범위·키워드)을 바꿔 생긴 변경은 RAN1 회의록 변화가 아니라서 카드에 표시하지 않습니다(변경 이력 탭에만).
+    """
+    c = changes_mod.latest_source(m.get("changes") or [])
+    if not c:
         return None
-    return {"at": hist[0]["at"], "items": {x["id"]: x["what"] for x in hist[0]["items"] if x["what"] != "removed"}}
+    return {"at": c["at"], "items": {x["id"]: changes_mod.item_label(x) for x in c["items"] if x["what"] != "removed"}}
 
 
 WHAT = {"added": "추가", "changed": "변경", "removed": "삭제"}
@@ -762,15 +830,17 @@ FIELD_KO = {"meeting": "회의", "type": "구분", "text": "원문", "scope": "�
 
 
 def _alerts_html(m):
+    """팀원에게 보이는 Agenda 변화 알림. 고치는 방법(관리자용)은 README·실행 요약·알림 Issue에만 둡니다."""
     a = m["alerts"]
     if not (a["dropped"] or a["new"]):
         return ""
-    rows = [f'<li>포함 Agenda <b>{_e(d["label"])}</b> ({_e(d["section"])}): {_e(m["prev"])}에 {d["prev_count"]}건 → '
-            f'{_e(m["latest"])}에 없음. 제목·섹션이 바뀌었으면 config/csi_scope.yaml의 agendas를 고칩니다.</li>' for d in a["dropped"]]
+    rows = [f'<li>CSI Agenda <b>{_e(d["label"])}</b>: {_e(short(m["prev"]))}에는 결정 {d["prev_count"]}건이 있었지만 '
+            f'{_e(short(m["latest"]))}에는 없습니다. 제목이 바뀌었는지 확인하고 있습니다.</li>' for d in a["dropped"]]
     rows += [f'<li>새 Agenda <b>{_e(r["number"])} {_e(r["title"])}</b> ({_e(r["section"])}{" · 새 섹션" if r["new_section"] else ""}): '
-             f'확정 {r["confirmed"]} · 후보 {r["candidate"]} / 전체 {r["total"]}건. CSI Agenda면 agendas에 넣습니다.</li>' for r in a["new"]]
-    return (f'<div class="notice alert"><b>Agenda 확인 필요 ({_e(m["prev"])} → {_e(m["latest"])})</b> — '
-            f'결정이 범위에서 조용히 빠지지 않도록 확인하세요.<ul>{"".join(rows)}</ul></div>')
+             f'CSI 관련 결정 {r["confirmed"] + r["candidate"]}건 — CSI Agenda로 넣을지 확인하고 있습니다. '
+             f'그때까지 이 결정들은 \'후보\'로 볼 수 있습니다.</li>' for r in a["new"]]
+    return (f'<div class="notice alert"><b>Agenda 구성 변화 ({_e(short(m["prev"]))} → {_e(short(m["latest"]))})</b> — '
+            f'관리자가 확인 중입니다. 확인이 끝나면 이 알림은 사라집니다.<ul>{"".join(rows)}</ul></div>')
 
 
 def _guide(m):
@@ -809,10 +879,11 @@ def _guide(m):
       <ul>
         <li><b>회의가 끝나면</b> 요약 탭 카드 → 신규 결정 확인 → '숨김'의 Conclusion·후보도 한 번 확인</li>
         <li><b>HW 영향만</b> 결정 목록 → 상세 필터 → 구현 영향 '처리 시간·CPU' 또는 '포트·자원·레이어 수'</li>
-        <li><b>탭 공유</b> 주소 끝에 <span class="mono">#ffs</span>, <span class="mono">#fg</span>, <span class="mono">#list</span>를 붙이면 그 탭이 바로 열립니다.</li>
+        <li><b>결정 공유</b> 카드 아래 '링크 복사' → 메신저에 붙여 넣으면 그 결정만 열립니다. 탭은 주소 끝에 <span class="mono">#ffs</span>, <span class="mono">#fg</span>처럼 붙입니다.</li>
+        <li><b>담당 정리</b> 결정 목록에서 조건을 고른 뒤 'CSV 내려받기' → 엑셀에서 담당자·반영 여부를 적어 관리</li>
         <li><b>메일 알림</b> {watch} 새 결정이 들어올 때 알림 Issue 메일을 받습니다.</li>
       </ul>
-      <p class="small muted">자동 추출이라 중요한 결정은 원문 링크로 확인해 주세요. 빠지거나 잘못 들어간 결정은 카드 아래 id(예: <span class="mono">RAN1#126:9.2:003</span>)를 담당자에게 알려 주세요.</p>
+      <p class="small muted">자동 추출이라 중요한 결정은 원문 링크로 확인해 주세요. 빠지거나 잘못 들어간 결정은 카드 아래 '링크 복사'로 주소를 담당자에게 알려 주세요.</p>
     </div>
   </div>
 </details>"""
@@ -829,17 +900,17 @@ def _batch_ids(m, c):
 
 
 def _change_brief(m):
-    """요약 탭의 최근 변경 한 줄."""
-    hist = m.get("changes") or []
-    if not hist:
+    """요약 탭의 최근 변경 한 줄. 원본(회의록) 변경만 보여줍니다 (설정 변경은 변경 이력 탭에만)."""
+    c = changes_mod.latest_source(m.get("changes") or [])
+    if not c:
         return ""
-    c, k = hist[0], hist[0]["counts"]
+    k = c["counts"]
     nm = ", ".join(f'{x["meeting"]} {x["count"]}건' for x in c["new_meetings"])
     parts = ([f"새 회의 {nm}"] if nm else []) + [f"과거 회의 추가 {k['added']} · 변경 {k['changed']} · 삭제 {k['removed']}"]
     ids = _batch_ids(m, c)
     view = (f'<button type="button" class="link-btn" data-ids="{_e(json.dumps(ids))}" data-label="{_e(c["at"][:10])} 과거 회의 추가·변경 결정">'
             f'목록에서 보기 ({len(ids)})</button>') if ids else ""
-    return (f'<div class="brief"><b>최근 변경</b> <span class="mono">{_e(c["at"][:10])}</span> · {_e(c["reason"])} · {" · ".join(_e(x) for x in parts)} '
+    return (f'<div class="brief"><b>최근 변경</b> <span class="mono">{_e(c["at"][:10])}</span> · {_e(changes_mod.reason_label(c))} · {" · ".join(_e(x) for x in parts)} '
             f'{view} <button type="button" class="link-btn" data-goto="changes">변경 이력 탭</button></div>')
 
 
@@ -856,7 +927,7 @@ def _changes_html(m):
     for c in hist[:10]:
         k = c["counts"]
         nm = ", ".join(f'{x["meeting"]} {x["count"]}건' for x in c["new_meetings"]) or "새 회의 없음"
-        summary = (f'<span class="mono">{_e(c["at"].replace("T", " ")[:16])} UTC</span> · {_e(c["reason"])} · {_e(nm)} · '
+        summary = (f'<span class="mono">{_e(c["at"].replace("T", " ")[:16])} UTC</span> · {_e(changes_mod.reason_label(c))} · {_e(nm)} · '
                    f'과거 회의 추가 {k["added"]} · 변경 {k["changed"]} · 삭제 {k["removed"]}')
         body = '<p class="small muted">과거 회의 변경 없음</p>'
         if c["items"]:
@@ -965,7 +1036,9 @@ def render_body(m):
     {_help("결정 본문은 Chair notes <b>원문 그대로</b>이며 요약하지 않았습니다(표는 표로, R1- 번호는 TDoc 링크로만 바꿔 보여줍니다). "
            "띄어 쓰면 모두 포함(AND), <span class='mono'>|</span> 또는 대문자 <span class='mono'>OR</span>로 나누면 하나라도 포함(OR)된 결정을 찾습니다. "
            "⚠ 표시: <b>수식 누락 의심</b>은 원본 추출에서 Word 수식(변수·기호)이 빠졌을 수 있다는 뜻, <b>색 표시 손실</b>은 색으로 표시된 추가·삭제를 알 수 없다는 뜻, "
-           "<b>변경은 TDoc에</b>는 실제 변경 내용이 TDoc에만 있다는 뜻입니다. 표시에 마우스를 올리면 설명이 나옵니다.")}</div>
+           "<b>변경은 TDoc에</b>는 실제 변경 내용이 TDoc에만 있다는 뜻입니다. 표시에 마우스를 올리면 설명이 나옵니다. "
+           "카드 아래 <b>링크 복사</b>는 그 결정만 열리는 주소를 복사합니다. <b>CSV 내려받기</b>는 지금 목록의 결정 전부('더 보기' 전 포함)를 "
+           "엑셀용으로 받으며, 담당자·반영 여부·메모 칸은 비워 두었습니다. 엑셀이 수식으로 읽지 않도록 -, =, +, @로 시작하는 칸 앞에는 '를 붙였습니다.")}</div>
   <div class="panel search" role="search">
     <input type="search" id="q" placeholder="예: CSI-RS | NZP, codebook OR PMI, beam failure" autocomplete="off" aria-label="결정 원문과 Agenda 제목에서 찾을 키워드">
     <div class="filters">
@@ -984,7 +1057,8 @@ def render_body(m):
       </div>
       {f'<div class="presets">추천 검색어 {presets}</div>' if presets else ""}
     </details>
-    <div class="summary-line" id="summary" aria-live="polite"></div>
+    <div class="list-head"><div class="summary-line" id="summary" aria-live="polite"></div>
+      <button type="button" class="link-btn" id="csv" title="지금 목록의 결정 전부를 엑셀용 CSV로 받습니다 (담당자·반영 여부·메모 칸 포함)">CSV 내려받기</button></div>
     <div class="results" id="results"></div>
   </div>
 </section>

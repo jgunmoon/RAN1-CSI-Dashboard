@@ -2,8 +2,11 @@
 
 playwright가 없으면 건너뜁니다. CI에서는 REQUIRE_BROWSER_TEST=1로 실행해 건너뛰지 않고 실패하게 합니다.
 """
+import csv
+import io
 import os
 import re
+from urllib.parse import quote
 
 import pytest
 
@@ -16,6 +19,19 @@ from playwright.sync_api import sync_playwright  # noqa: E402
 
 @pytest.fixture
 def dash(tmp_path, db, config):
+    yield from _open(tmp_path, db, config)
+
+
+@pytest.fixture
+def dash_many(tmp_path, db, config):
+    # 한 화면(20건)보다 많은 결정: #125 Beam management 결정을 원문만 바꿔 25건 더함
+    base = next(e for e in db["entries"] if e["id"] == "RAN1#125:10.5.2.4:001")
+    extra = [{**base, "id": f"RAN1#125:10.5.2.4:{i:03d}", "text": f"- Support option {i} for beam reporting."} for i in range(2, 27)]
+    db = {**db, "entries": db["entries"] + extra}
+    yield from _open(tmp_path, db, config)
+
+
+def _open(tmp_path, db, config):
     build.build(config, db, tmp_path)
     errors = []
     with sync_playwright() as p:
@@ -193,3 +209,52 @@ def test_choosing_candidate_agenda_turns_on_candidates(dash):
     label = [o for o in dash.eval_on_selector_all("#f-agenda option", "os => os.map(o => o.textContent)") if o.startswith("[후보]")][0]
     dash.select_option("#f-agenda", label=label)
     assert dash.is_checked("#g-cand") and count(dash) >= 1
+
+
+def test_copy_link_opens_only_that_decision(dash):
+    tab(dash, "list")
+    dash.evaluate("navigator.clipboard.writeText = t => { window.__copied = t; return Promise.resolve(); }")  # 권한 없이 확인
+    card = dash.locator("#results .result").first
+    rid = card.locator(".src .mono").last.text_content()
+    card.get_by_role("button", name="링크 복사").click()
+    assert card.get_by_role("button", name="복사됨").is_visible()
+    url = dash.evaluate("window.__copied")
+    assert url == dash.url.split("#")[0] + "#id=" + quote(rid, safe="")
+    tab(dash, "summary")
+    dash.goto(url)                                                       # 같은 페이지에서 주소만 바뀜 (hashchange)
+    assert dash.is_visible("#results") and count(dash) == 1 and "공유된 결정" in dash.text_content("#summary")
+    assert dash.locator("#results .result .src .mono").last.text_content() == rid
+    dash.reload()                                                        # 처음 여는 경우
+    dash.wait_for_selector("#results .result")
+    assert count(dash) == 1 and dash.evaluate("location.hash") == "#id=" + quote(rid, safe="")
+
+
+def test_shared_link_with_renumbered_id_shows_same_agenda(dash):
+    dash.goto(dash.url.split("#")[0] + "#id=" + quote("RAN1#126:10.5.3.4:099", safe=""))
+    dash.wait_for_timeout(200)
+    assert count(dash) == 1 and "같은 회의·Agenda(RAN1#126 10.5.3.4)" in dash.text_content("#summary")
+
+
+def test_csv_download_has_all_hits(dash_many, db):
+    dash = dash_many
+    tab(dash, "list")
+    n = count(dash)
+    assert n > dash.locator("#results .result").count() and dash.text_content("#csv") == f"CSV 내려받기 ({n}건)"     # '더 보기' 전 20건이 아니라 전부
+    with dash.expect_download() as d:
+        dash.click("#csv")
+    raw = open(d.value.path(), "rb").read()
+    assert raw.startswith(b"\xef\xbb\xbf")                                        # 엑셀용 UTF-8 BOM
+    rows = list(csv.reader(io.StringIO(raw.decode("utf-8-sig"), newline="")))
+    head, body = rows[0], rows[1:]
+    assert head[:3] == ["id", "회의", "신규"] and head[-3:] == ["담당자", "반영 여부", "메모"]
+    assert len(body) == n
+    text = {e["id"]: e["text"] for e in db["entries"]}
+    col = head.index("Chair notes 원문")
+    for r in body:
+        orig = text.get(r[0], f"- Support option {int(r[0][-3:])} for beam reporting.")
+        assert r[col] == ("'" + orig if orig[:1] in "=+-@" else orig)               # 원문 그대로 (수식 방지 ' 만)
+    assert any(r[col].startswith("'- Support option") for r in body)
+    assert body[0][head.index("대시보드 링크")].endswith("#id=" + quote(body[0][0], safe=""))
+    dash.fill("#q", "zzzz")
+    dash.wait_for_timeout(400)
+    assert dash.is_disabled("#csv")

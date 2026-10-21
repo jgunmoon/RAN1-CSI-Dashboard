@@ -106,7 +106,33 @@ def test_agenda_alerts_dropped_and_new(tmp_path, db, config):
     summary = build.summary(m)
     assert "::warning::포함 Agenda 'Beam management for downlink and uplink'가 RAN1#125에는 1건" in summary
     html = (tmp_path / "index.html").read_text(encoding="utf-8")
-    assert "Agenda 확인 필요 (RAN1#125 → RAN1#126)" in html
+    assert "Agenda 구성 변화 (#125 → #126)" in html and "acknowledged_alerts" not in html  # 고치는 방법은 README·요약에만
+
+
+def test_acknowledged_alerts_are_hidden(tmp_path, db, config):
+    db = {**db, "entries": [x for x in db["entries"] if x["id"] != "RAN1#126:10.5.3.4:001"]}
+    config = {**config, "acknowledged_alerts": ["ran1#126:  Beam management for downlink and uplink"]}  # 대소문자·공백 무시
+    m = build.build(config, db, tmp_path)
+    assert "Beam management for downlink and uplink" not in [d["label"] for d in m["alerts"]["dropped"]]
+    assert m["alerts"]["acknowledged"] == ["RAN1#126: Beam management for downlink and uplink"]
+    assert "Agenda 경고 확인함(acknowledged_alerts)으로 숨김: RAN1#126: Beam management" in build.summary(m)
+    readme = (tmp_path / "README.md").read_text(encoding="utf-8")
+    assert "`RAN1#126: UE features for AI/ML (positioning 제외)`" in readme  # 남은 경고는 넣을 키를 알려 줌
+
+
+def test_config_change_is_not_shown_as_ran1_change(tmp_path, db, config):
+    note = tmp_path / "notify.md"
+    build.build(config, db, tmp_path, now="2026-10-20T01:20+00:00", notify_file=note)
+    narrow = {**config, "exclude_ids": list(config.get("exclude_ids") or []) + ["RAN1#125:10.5.2.4:001"]}
+    m = build.build(narrow, db, tmp_path, now="2026-10-21T01:20+00:00", notify_file=note)  # 같은 DB, 설정만 바뀜
+    assert m["changes"][0]["reason"].startswith("설정 변경")
+    body = note.read_text(encoding="utf-8")
+    assert body.startswith("CSI 대시보드 범위 조정: ") and "RAN1 회의록이 바뀐 것이 아니라" in body
+    html = (tmp_path / "index.html").read_text(encoding="utf-8")
+    data = json.loads(re.search(r'<script type="application/json" id="csi-data">(.*?)</script>', html, re.S).group(1))
+    assert data["recent"] is None                                  # 결정 카드에 '변경' 표시를 붙이지 않음
+    assert 'class="brief"' not in html                             # 요약 탭 '최근 변경' 줄도 원본 변경만
+    assert "대시보드 범위 조정 (RAN1 회의록 변화 아님)" in html    # 변경 이력 탭에는 이유와 함께 남음
 
 
 def test_regex_title_rules_match_future_agendas(config, db):

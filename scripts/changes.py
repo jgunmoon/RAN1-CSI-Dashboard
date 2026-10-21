@@ -27,6 +27,37 @@ def _item(e, what, fields=()):
             "line": _first_line(e["text"]), "url": e["source"]["url"]}
 
 
+def is_source(change):
+    """원본(회의록) DB가 바뀌어 생긴 변경인지. 아니면 이 대시보드의 범위·키워드·주제 설정을 바꾼 결과입니다."""
+    return change["reason"].startswith("원본")
+
+
+def reason_label(change):
+    """팀원에게 보이는 이유. 설정 변경은 RAN1 회의록 변화로 오해하지 않도록 분명히 적습니다."""
+    return "원본 회의록 갱신" if is_source(change) else "대시보드 범위 조정 (RAN1 회의록 변화 아님)"
+
+
+def item_label(item):
+    """결정 목록 카드에 붙일 짧은 표시."""
+    if item["what"] == "added":
+        return "과거 회의에 추가"
+    if item["what"] == "removed":
+        return "삭제"
+    f = item["fields"]
+    if "text" in f:
+        return "원문 변경"
+    if "type" in f:
+        return "구분 변경"
+    if "meeting" in f:
+        return "회의 변경"
+    return "CSI 범위 변경"
+
+
+def latest_source(history):
+    """가장 최근의 원본(회의록) 변경 묶음. 없으면 None."""
+    return next((c for c in history if is_source(c)), None)
+
+
 def diff(prev_entries, cur_entries):
     """이전·현재 결정 목록 → (new_meetings, items, renumbered)."""
     prev = {e["id"]: e for e in prev_entries}

@@ -1,4 +1,5 @@
 """마크다운 리포트: reports/README.md(요약 대시보드)와 reports/by_topic/<주제>.md(주제별 전체 결정)."""
+from scripts import changes as changes_mod
 from scripts.model import (SCOPE_LABEL, TYPE_SHORT, TYPES, agreement, candidate_agendas, confirmed, count, provisional,
                            short)
 
@@ -217,6 +218,9 @@ def alert_lines(m):
         sec = " (새 섹션)" if r["new_section"] else ""
         out.append(f"> - 새 Agenda **{r['number']} {_cell(r['title'])}** ({r['section']}{sec}): 확정 {r['confirmed']} · 후보 {r['candidate']}"
                    f" / 전체 {r['total']}건. CSI Agenda면 agendas에 넣습니다.")
+    keys = [x["key"] for x in a["dropped"] + a["new"]]
+    out += [">", "> 확인했고 CSI와 무관하면 `acknowledged_alerts`에 아래 키를 넣으면 경고가 사라집니다: "
+            + ", ".join(f"`{k}`" for k in keys)]
     return out + [""]
 
 
@@ -231,7 +235,7 @@ def change_lines(m, limit=5):
     out += ["| 시각 (UTC) | 이유 | 새 회의 | 기존 회의 추가 | 변경 | 삭제 |", "|---|---|---|---:|---:|---:|"]
     for c in hist[:limit]:
         nm = ", ".join(f"{x['meeting']} {x['count']}건" for x in c["new_meetings"]) or "—"
-        out.append(f"| {c['at'].replace('T', ' ')[:16]} | {c['reason']} | {nm} | {c['counts']['added']} | {c['counts']['changed']} | {c['counts']['removed']} |")
+        out.append(f"| {c['at'].replace('T', ' ')[:16]} | {changes_mod.reason_label(c)} | {nm} | {c['counts']['added']} | {c['counts']['changed']} | {c['counts']['removed']} |")
     items = hist[0]["items"]
     if items:
         # 길어지지 않도록 접어 둡니다 (GitHub에서 눌러 펼침)
@@ -257,9 +261,12 @@ def notification(m, change):
         parts.append(f"기존 회의 추가 {c['added']} · 변경 {c['changed']} · 삭제 {c['removed']}")
     if m["alerts"]["dropped"] or m["alerts"]["new"]:
         parts.append("Agenda 확인 필요")
-    title = "CSI 결정 업데이트: " + " / ".join(parts)
+    source = changes_mod.is_source(change)
+    title = ("CSI 결정 업데이트: " if source else "CSI 대시보드 범위 조정: ") + " / ".join(parts)
     out = [title, "",
-           f"[HTML 대시보드]({cfg.get('dashboard_url', '')}) · 원본 DB 업데이트 {m['updated_kst']} · 이유: {change['reason']}", ""]
+           f"[HTML 대시보드]({cfg.get('dashboard_url', '')}) · 원본 DB 업데이트 {m['updated_kst']} · 이유: {changes_mod.reason_label(change)}", ""]
+    if not source:
+        out += ["> 이 알림은 RAN1 회의록이 바뀐 것이 아니라, 대시보드의 범위·키워드 설정을 바꿔 결정이 확정·후보 사이로 옮겨진 기록입니다.", ""]
     mentions = (cfg.get("notify") or {}).get("mentions") or []
     if mentions:
         out += [" ".join(f"@{u}" for u in mentions), ""]

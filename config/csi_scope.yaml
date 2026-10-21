@@ -58,6 +58,12 @@ agendas:
   - {section: "Maintenance on Rel-19 NR and E-UTRA", path: ["Specification support for CSI prediction"], topic: aiml,
      label: "AI/ML: Specification support for CSI prediction"}
 
+# Agenda 경고 중 관리자가 원문을 보고 확인을 마친 것 (대시보드·README·알림에서 숨김, 실행 요약에만 '확인함'으로 남음).
+# 키는 경고 문구의 '최신 회의: 섹션 > Agenda 제목'(새 Agenda) 또는 '최신 회의: 포함 Agenda 이름'(사라진 Agenda)입니다.
+# 회의 번호가 들어 있어 그 회의의 경고에만 적용됩니다.
+acknowledged_alerts:
+  - "RAN1#126bis: Rel-20 Study of 6GR > Modulation"   # 'Modulation, joint channel coding and modulation'에서 이름만 바뀜. 변조 Agenda라 CSI 아님 (후보 1건)
+
 # ── 2. 보조 키워드 (후보) ────────────────────────────────────────────
 # 위 Agenda 밖에서 이 키워드가 결정 원문(또는 FFS 줄)에 있으면 '후보'로 따로 표시합니다.
 # 정규식이며 대소문자를 구분합니다 ((?i)를 앞에 붙이면 구분 안 함).

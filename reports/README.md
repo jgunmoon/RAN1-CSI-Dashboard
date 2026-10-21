@@ -2,10 +2,6 @@
 
 > 원본 DB 마지막 업데이트 **2026-10-21 09:04 KST** · 범위 RAN1#122 – #126bis (8회) · [HTML 대시보드](https://jgunmoon.github.io/RAN1-CSI-Dashboard/) · 원본 [jgunmoon/RAN1-Decision-Tracker](https://github.com/jgunmoon/RAN1-Decision-Tracker)
 
-> ⚠️ **Agenda 확인 필요 (RAN1#126 → RAN1#126bis)** — 결정이 범위에서 조용히 빠지지 않도록 확인하세요.
->
-> - 새 Agenda **10.3.2 Modulation** (Rel-20 Study of 6GR): 확정 0 · 후보 1 / 전체 5건. CSI Agenda면 agendas에 넣습니다.
-
 3GPP RAN1 Chair notes의 결정 중 CSI 관련(CSI 획득·보고, CSI-RS, codebook, beam management, SRS, AI/ML CSI)만 모았습니다.
 범위·주제 규칙은 [`config/csi_scope.yaml`](../config/csi_scope.yaml)에 있습니다. 이 파일은 자동 생성물이므로 직접 고치지 않습니다.
 
@@ -173,7 +169,7 @@ Agenda 번호는 회의마다 바뀌므로 '섹션 + Agenda 제목'으로 이어
 
 | 시각 (UTC) | 이유 | 새 회의 | 기존 회의 추가 | 변경 | 삭제 |
 |---|---|---|---:|---:|---:|
-| 2026-10-20 08:01 | 설정 변경 (범위·키워드·주제 규칙) | — | 25 | 68 | 2 |
+| 2026-10-20 08:01 | 대시보드 범위 조정 (RAN1 회의록 변화 아님) | — | 25 | 68 | 2 |
 
 <details><summary>가장 최근(2026-10-20) 기존 회의 변경 95건 펼치기</summary>
 
