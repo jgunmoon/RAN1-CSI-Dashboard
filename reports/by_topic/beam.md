@@ -1,6 +1,6 @@
 # Beam management — RAN1 CSI 결정
 
-> 원본 DB 마지막 업데이트 **2026-10-19 20:12 KST** · [요약으로 돌아가기](../README.md)
+> 원본 DB 마지막 업데이트 **2026-10-21 09:04 KST** · [요약으로 돌아가기](../README.md)
 
 주된 주제가 Beam management인 확정 121건 (Agreement 118 · WA 1 · Conclusion 2), 후보 55건. 결정 본문은 Chair notes 원문 그대로입니다(요약 없음). 최신 회의부터 보여줍니다.
 주된 주제가 다른 결정 중 이 주제가 관련 주제로 붙은 것은 맨 아래 '관련 결정'에 모았습니다.
@@ -42,7 +42,7 @@
 > | PUCCH format 1 |  |  |  |
 > Note: 2 more rows for PSS/SSS, PBCH with 4 times combination will be added additionally.
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Synchronization and Beam Measurement]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Synchronization and Beam Measurement]`
 
 **Agreement** · `10.5.1.1` Synchronization acquisition and beam measurement · `RAN1#126bis:10.5.1.1:002` · 🆕 신규 · Study
 
@@ -50,7 +50,7 @@
 > - For TN,
 >   - For FR1, Timing Advance Offset values include 0, 25600 Tc and 39936 Tc, where Tc is the time unit used in NR.
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Synchronization and Beam Measurement]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Synchronization and Beam Measurement]`
 
 **Agreement** · `10.5.1.1` Synchronization acquisition and beam measurement · `RAN1#126bis:10.5.1.1:003` · 🆕 신규 · Study
 
@@ -59,7 +59,7 @@
 >   - Alt 2: 2 symbols for PSS for X = 5, 6
 > - Each slot including candidate SSBs consists of two candidate SSBs time locations
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Synchronization and Beam Measurement]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Synchronization and Beam Measurement]`
 
 **Agreement** · `10.5.1.1` Synchronization acquisition and beam measurement · `RAN1#126bis:10.5.1.1:004` · 🆕 신규 · Study
 
@@ -73,7 +73,7 @@
 
 FFS 1줄
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Synchronization and Beam Measurement]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Synchronization and Beam Measurement]`
 
 **Agreement** · `10.5.1.1` Synchronization acquisition and beam measurement · `RAN1#126bis:10.5.1.1:005` · 🆕 신규 · Study
 
@@ -130,14 +130,14 @@ FFS 1줄
 
 FFS 4줄
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Synchronization and Beam Measurement]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Synchronization and Beam Measurement]`
 
 **Agreement** · `10.5.1.1` Synchronization acquisition and beam measurement · `RAN1#126bis:10.5.1.1:006` · 🆕 신규 · 관련 주제: AI/ML CSI · Study
 
 > Study Sub-case D in R1-2600986 with focusing on potential spec impact of AI/ML based spatial/temporal beam prediction during 6GR initial access.
 > - Note: the benefits and the feasibility justification can refer to study outcome in TR 38.843.
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Synchronization and Beam Measurement]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Synchronization and Beam Measurement]`
 
 **Agreement** · `10.5.1.1` Synchronization acquisition and beam measurement · `RAN1#126bis:10.5.1.1:007` · 🆕 신규 · Study
 
@@ -161,7 +161,7 @@ FFS 4줄
 >   - [Memory usage: the amount of memory for PSS and SSS detection]
 > Note: companies are encouraged to report the PSS/SSS detection procedure, interference modeling, and algorithms for the above evaluation.
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Synchronization and Beam Measurement]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Synchronization and Beam Measurement]`
 
 **Agreement** · `10.5.1.1` Synchronization acquisition and beam measurement · `RAN1#126bis:10.5.1.1:008` · 🆕 신규 · Study
 
@@ -187,7 +187,7 @@ FFS 4줄
 > - Option 1 and Option 3 are recommended (referring to the 6 SSB periodicity options) for the number of SSB repetitions and number of SSB periodicities for combining.
 > - Companies are encouraged to model the sampling frequency offset (SFO).
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Synchronization and Beam Measurement]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Synchronization and Beam Measurement]`
 
 **Agreement** · `10.5.3.3` Other aspects · `RAN1#126bis:10.5.3.3:002` · 🆕 신규 · 관련 주제: CSI 보고/codebook, CSI-RS · Study
 
@@ -203,7 +203,7 @@ FFS 4줄
 >   - CQI is derived from the NZP CSI-RS as CMR and a CSI-IM as IMR
 >   - CQI is derived from PDSCH DMRS
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Other Aspects related to CSI]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Other Aspects related to CSI]`
 
 **Agreement** · `10.5.3.4` Beam management for downlink and uplink · `RAN1#126bis:10.5.3.4:001` · 🆕 신규 · Study
 
@@ -215,7 +215,7 @@ FFS 4줄
 
 FFS 1줄
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Beam management]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Beam management]`
 
 **Agreement** · `10.5.3.4` Beam management for downlink and uplink · `RAN1#126bis:10.5.3.4:002` · 🆕 신규 · Study
 
@@ -233,7 +233,7 @@ FFS 1줄
 
 FFS 1줄
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Beam management]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Beam management]`
 
 **Agreement** · `10.5.3.4` Beam management for downlink and uplink · `RAN1#126bis:10.5.3.4:003` · 🆕 신규 · 관련 주제: AI/ML CSI · Study
 
@@ -252,7 +252,7 @@ FFS 1줄
 
 FFS 2줄
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Beam management]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Beam management]`
 
 **Agreement** · `10.5.3.4` Beam management for downlink and uplink · `RAN1#126bis:10.5.3.4:004` · 🆕 신규 · 관련 주제: AI/ML CSI · Study
 
@@ -262,13 +262,13 @@ FFS 2줄
 > - Regarding UE-side prediction, study the report contents in one report instance, training and inference consistency for UE-side model, e.g., extensions of the association ID to support cross-frequency.
 > - Note: Prediction can be performed based on AI/ML or non-AI/advanced schemes.
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Beam management]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Beam management]`
 
 **Agreement** · `10.5.3.4` Beam management for downlink and uplink · `RAN1#126bis:10.5.3.4:005` · 🆕 신규 · Study
 
 > Regarding QCL framework, study whether and how to define QCL combination of one or more QCL properties (associated with a same source QCL-RS)
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Beam management]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Beam management]`
 
 **Agreement** · `10.5.3.4` Beam management for downlink and uplink · `RAN1#126bis:10.5.3.4:006` · 🆕 신규 · Study
 
@@ -276,7 +276,7 @@ FFS 2줄
 > - Support QCL relationship at least for spatial Rx parameters, where the source QCL-RS and target channel/RS is in a same CC.
 > - Support intra-band cross-CC QCL relationship w.r.t. spatial Rx parameter, where the source QCL-RS can be located on a carrier different from the carrier of the target channel/RS.
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Beam management]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Beam management]`
 
 **Agreement** · `10.5.3.4` Beam management for downlink and uplink · `RAN1#126bis:10.5.3.4:007` · 🆕 신규 · Study
 
@@ -291,7 +291,7 @@ FFS 2줄
 
 FFS 1줄
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Beam management]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Beam management]`
 
 **Agreement** · `10.5.3.4` Beam management for downlink and uplink · `RAN1#126bis:10.5.3.4:008` · 🆕 신규 · Study
 
@@ -300,7 +300,7 @@ FFS 1줄
 > - Sequence-domain/CDMed for NW Tx beam sweeping.
 > - Sub-symbol/TDMed for UE Rx beam sweeping.
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Beam management]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Beam management]`
 
 **Agreement** · `10.5.3.4` Beam management for downlink and uplink · `RAN1#126bis:10.5.3.4:009` · 🆕 신규 · Study
 
@@ -312,7 +312,7 @@ FFS 1줄
 > - Matrix size
 > - Companies to report applicability of this approach, e.g., single/multi-TRP spatial domain, co-located frequency domain beam prediction (cross-frequency).
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Beam management]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Beam management]`
 
 ## RAN1#126 — 33건
 
@@ -1981,7 +1981,7 @@ FFS 1줄
 
 FFS 1줄
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · [R1-2607734](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2607734.zip) · `[126bis-R20-6GR-Transmission scheme for DL shared channel]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · [R1-2607734](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2607734.zip) · `[126bis-R20-6GR-Transmission scheme for DL shared channel]`
 
 **Agreement** · `10.5.5` Other physical layer signals, channels and procedure · `RAN1#126bis:10.5.5:004` · 후보 · 🆕 신규 · Study
 
@@ -2004,7 +2004,7 @@ FFS 1줄
 >     - Other option is not precluded.
 > - Note: the reporting overhead, latency reporting reliability and specification complexity of UEI CLI reporting (with pre-configured (if any) or with requested reporting resources)) is to be compared with network-controlled CLI reporting.
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Other signals, channels, and procedures]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Other signals, channels, and procedures]`
 
 **Agreement** · `10.6.3` WUS operation with other functionalities · `RAN1#126bis:10.6.3:001` · 후보 · 🆕 신규 · 관련 주제: CSI 보고/codebook · Study
 
@@ -2020,7 +2020,7 @@ FFS 1줄
 >   - Note: 5G NR design is assumed as starting point and further RAN1 and RAN2 progress on relevant features are considered, if applicable.
 > Note: Interaction between DL-WUS and PDCCH monitoring adaption (at least including ‘SSSG switching’ / monitoring-config selection, PDCCH skipping, ‘PDCCH BD reduction’) are to be handled under AI 10.6.1.2.
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-WUS operation with other functionalities]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-WUS operation with other functionalities]`
 
 **Agreement** · `10.8.2` Aspects of integration with communication · `RAN1#126bis:10.8.2:002` · 후보 · 🆕 신규 · Study
 
@@ -2028,14 +2028,14 @@ FFS 1줄
 >   - Measurement/report/information to determine best Tx-Rx beam pair(s) for sensing
 >   - QCL/TCI state or spatial-relation assumptions of sensing RS
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-ISAC-Integration]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-ISAC-Integration]`
 
 **Agreement** · `10.8.2` Aspects of integration with communication · `RAN1#126bis:10.8.2:008` · 후보 · 🆕 신규 · Study
 
 > Study at least the following aspects for a sensing RS resource consisting of one or multiple component RS
 > - The multiple component RS have the same [QCL, Tx beamforming, spatial transmit filter, spatial transmit reference, antenna port(s)] and can be assumed to be transmitted coherently
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · [R1-2607233](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2607233.zip) · `[126bis-R20-6GR-ISAC-Integration]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · [R1-2607233](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2607233.zip) · `[126bis-R20-6GR-ISAC-Integration]`
 
 ### RAN1#126 — 5건
 

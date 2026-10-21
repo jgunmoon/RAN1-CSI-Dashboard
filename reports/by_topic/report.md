@@ -1,6 +1,6 @@
 # CSI 보고/codebook — RAN1 CSI 결정
 
-> 원본 DB 마지막 업데이트 **2026-10-19 20:12 KST** · [요약으로 돌아가기](../README.md)
+> 원본 DB 마지막 업데이트 **2026-10-21 09:04 KST** · [요약으로 돌아가기](../README.md)
 
 주된 주제가 CSI 보고/codebook인 확정 137건 (Agreement 125 · WA 1 · Conclusion 11), 후보 82건. 결정 본문은 Chair notes 원문 그대로입니다(요약 없음). 최신 회의부터 보여줍니다.
 주된 주제가 다른 결정 중 이 주제가 관련 주제로 붙은 것은 맨 아래 '관련 결정'에 모았습니다.
@@ -16,7 +16,7 @@
 > The draft CR in R1-2607797 for Rel-19 TS38.214, Clause 5.2.2.5 is endorsed.
 > The corresponding final CR for Rel-19 TS38.214, Clause 5.2.2.5 in R1-2608711 is endorsed.
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R19-AI 8.1]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R19-AI 8.1]`
 
 **Agreement** · `8.1` Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT · `RAN1#126bis:8.1:009` · 🆕 신규 · 유지보수 (CR)
 
@@ -27,7 +27,7 @@
 > Proposal 1 in Section 4 of R1-2608695 for Rel-19, TS38.214, Clause 5.2.5 is endorsed.
 > The corresponding final CR for Rel-19, TS38.214 in R1-2608703 is endorsed.
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R19-AI 8.1]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R19-AI 8.1]`
 
 **Agreement** · `9.2` NR MIMO Phase 6 · `RAN1#126bis:9.2:004` · 🆕 신규 · 관련 주제: CSI-RS · 규격 작업 (WI)
 
@@ -44,7 +44,7 @@
 
 FFS 2줄
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · [R1-2607054](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2607054.zip) · `[126bis-R20-MIMO]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · [R1-2607054](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2607054.zip) · `[126bis-R20-MIMO]`
 
 **Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:001` · 🆕 신규 · Study
 
@@ -60,7 +60,7 @@ FFS 2줄
 
 FFS 1줄
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
 
 **Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:002` · 🆕 신규 · Study
 
@@ -77,7 +77,7 @@ FFS 1줄
 > - For port-selection basis, L represents the number of port-selection basis analogous to legacy Type-II Port Selection
 > Note: the above doesn’t mean Option 1 is down-selected.
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
 
 **Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:005` · 🆕 신규 · 관련 주제: CSI-RS · Study
 
@@ -91,7 +91,7 @@ FFS 1줄
 > - UE CSI processing complexity
 > - Frame structure
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
 
 **Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:006` · 🆕 신규 · 관련 주제: CSI-RS · Study
 
@@ -129,7 +129,7 @@ FFS 1줄
 > | Performance | KPI (BLER, TPUT/SE, UPT) |  |
 > | Performance | Observation |  |
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
 
 **Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:007` · 🆕 신규 · 관련 주제: CSI-RS · Study
 
@@ -168,7 +168,7 @@ FFS 1줄
 > | Performance | KPI (AC, XC, BLER, TPUT/SE, UPT) |  |
 > | Performance | Performance observation |  |
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
 
 **Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:008` · 🆕 신규 · 관련 주제: CSI-RS · Study
 
@@ -178,7 +178,7 @@ FFS 1줄
 
 FFS 2줄
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
 
 **Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:010` · 🆕 신규 · 관련 주제: CSI-RS · Study
 
@@ -198,7 +198,7 @@ FFS 2줄
 > - Inter-cell Option 8: OCC-specific sequence initialization
 > - Note: combination of the above options can be considered
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
 
 **Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:011` · 🆕 신규 · 관련 주제: CSI-RS · Study
 
@@ -235,7 +235,7 @@ FFS 2줄
 > - Companies report the UE buffer of the codebook/basis
 > - Note: both non-precoded CSI-RS and precoded CSI-RS can be considered
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
 
 **Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:012` · 🆕 신규 · Study
 
@@ -263,7 +263,7 @@ FFS 2줄
 > - Companies report the basis assumption, e.g., fixed basis or downloadable basis, when applicable
 > - Companies report the frequency granularity unit (finer than wideband)
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
 
 **Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:014` · 🆕 신규 · Study
 
@@ -278,14 +278,14 @@ FFS 2줄
 > - Companies report the event-check periodicity and the overhead assumed for the event indication and the assumption on the reporting mechanism and latency for the event-triggered CSI reporting.
 > For the evaluation on event-triggered CSI reporting configuration selection/adaptation by the UE, e.g., based on channel property information, companies report corresponding details.
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
 
 **Conclusion** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:019` · 🆕 신규 · Study
 
 > For study on PAPR reduction for JSCM-based CSI compression, deprioritize Option 0 without any subsequent nonlinear operation for PAPR reduction.
 > - Note: Option 0 with subsequent nonlinear operation for PAPR reduction may be similar as Option 2 depending on the design of the nonlinear operation
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
 
 **Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:020` · 🆕 신규 · Study
 
@@ -317,7 +317,7 @@ FFS 2줄
 
 FFS 1줄
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
 
 **Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:022` · 🆕 신규 · Study
 
@@ -326,7 +326,7 @@ FFS 1줄
 > - 10.5.3.1 Simulation results for AI-based CSI report.xlsx in R1-2608772
 > Note: additional separate templates can be added.
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
 
 **Agreement** · `10.5.3.3` Other aspects · `RAN1#126bis:10.5.3.3:005` · 🆕 신규 · Study
 
@@ -336,7 +336,7 @@ FFS 1줄
 > - Precoding matrix index reporting, e.g., via NR R16 eType II codebook
 > - Explicit channel information
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Other Aspects related to CSI]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Other Aspects related to CSI]`
 
 **Agreement** · `10.5.3.3` Other aspects · `RAN1#126bis:10.5.3.3:010` · 🆕 신규 · Study
 
@@ -344,7 +344,7 @@ FFS 1줄
 > - Simulation results for joint DL and UL CSI acquisition_template_v1.xlsx in R1-2607650
 > - Simulation results for RS for finer time and frequency tracking_template_v1.xlsx in R1-2607650
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Other Aspects related to CSI]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Other Aspects related to CSI]`
 
 ## RAN1#126 — 15건
 
@@ -1938,22 +1938,22 @@ FFS 3줄
 
 | 회의 | 구분 | 주된 주제 | Agenda | 원문 첫 줄 | 출처 |
 |---|---|---|---|---|---|
-| RAN1#126bis | Agreement | [Beam management](beam.md) | 10.5.3.3 Other aspects | Further study and evaluate the following assistant information for use case 2 | [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Other Aspects related to CSI]` |
-| RAN1#126bis | Agreement | [SRS](srs.md) | 10.5.3.2 Aspects of uplink-based CSI acquisition | For the study of AI based receiver for SRS overhead reduction, the following template is used as a starting p… | [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Aspects of UL based CSI acquisition]` |
-| RAN1#126bis | Agreement | [SRS](srs.md) | 10.5.3.2 Aspects of uplink-based CSI acquisition | Study at least the following aspects of TD-OCC: | [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Aspects of UL based CSI acquisition]` |
-| RAN1#126bis | Agreement | [SRS](srs.md) | 10.5.3.1 Aspects of downlink-based CSI acquisition | For the study/evaluation of early CSI triggering/reporting, the following is considered: | [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]` |
-| RAN1#126bis | Agreement | [AI/ML CSI](aiml.md) | 10.5.3.1 Aspects of downlink-based CSI acquisition | For the study of time-domain CSI prediction at UE side in 6GR, among UE-side prediction schemes, consider N4=… | [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]` |
-| RAN1#126bis | Conclusion | [SRS](srs.md) | 9.2 NR MIMO Phase 6 | There is no consensus to support Rel-20 early CSI/SRS/CSI-RS for the case that BWP switching is configured in… | [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · [R1-2607055](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2607055.zip) · `[126bis-R20-MIMO]` |
-| RAN1#126bis | Agreement | [SRS](srs.md) | 9.2 NR MIMO Phase 6 | MSG4-triggered CSI/TRS/SRS must be in the initial BWP. | [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · [R1-2607055](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2607055.zip) · `[126bis-R20-MIMO]` |
-| RAN1#126bis | Agreement | [SRS](srs.md) | 9.2 NR MIMO Phase 6 | To determine the transmission/reception slot of the DL/UL signalling triggered/scheduled via the DCI indicati… | [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · [R1-2607055](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2607055.zip) · `[126bis-R20-MIMO]` |
-| RAN1#126bis | Agreement | [SRS](srs.md) | 9.2 NR MIMO Phase 6 | For early aperiodic SRS/CSI/CSI-RS triggered via SCell activation command or DCI indicating switching out of … | [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · [R1-2607054](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2607054.zip) · `[126bis-R20-MIMO]` |
-| RAN1#126bis | Agreement | [SRS](srs.md) | 9.2 NR MIMO Phase 6 | Support a per-cell new RRC parameter to disable/enable Rel-20 early SRS triggering for a SCell switching out … | [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · [R1-2607052](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2607052.zip) · `[126bis-R20-MIMO]` |
-| RAN1#126bis | Agreement | [SRS](srs.md) | 9.2 NR MIMO Phase 6 | The first slot as the reference slot in the following agreement is determined based on the numerology of the … | [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · [R1-2607052](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2607052.zip) · `[126bis-R20-MIMO]` |
-| RAN1#126bis | Conclusion | [AI/ML CSI](aiml.md) | 9.1.2 Inter-vendor training collaboration for two-sided AI/ML models | For Option 4-1 under Direction A in AI/ML based CSI compression, there is no consensus to support additional … | [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) |
-| RAN1#126bis | Agreement | [AI/ML CSI](aiml.md) | 9.1.1 CSI spatial/frequency compression without temporal aspects (“Case 0”) | For CSI feedback via two-sided model, for inference only, support CSI processing timeline {Z+t’, Z’+t’} where… | [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · [R1-2608403](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2608403.zip) |
-| RAN1#126bis | Agreement | [AI/ML CSI](aiml.md) | 9.1.1 CSI spatial/frequency compression without temporal aspects (“Case 0”) | For CSI feedback via two-sided model, for inference only, reuse the legacy R19 APU and CPU framework consider… | [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · [R1-2608403](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2608403.zip) |
-| RAN1#126bis | Agreement | [AI/ML CSI](aiml.md) | 9.1.1 CSI spatial/frequency compression without temporal aspects (“Case 0”) | Support following configuration for NW data collection | [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) |
-| RAN1#126bis | Conclusion | [AI/ML CSI](aiml.md) | 9.1.1 CSI spatial/frequency compression without temporal aspects (“Case 0”) | For CSI feedback via two-sided model, there is no consensus on the need for RAN1 specification impact of CQI. | [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) |
+| RAN1#126bis | Agreement | [Beam management](beam.md) | 10.5.3.3 Other aspects | Further study and evaluate the following assistant information for use case 2 | [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Other Aspects related to CSI]` |
+| RAN1#126bis | Agreement | [SRS](srs.md) | 10.5.3.2 Aspects of uplink-based CSI acquisition | For the study of AI based receiver for SRS overhead reduction, the following template is used as a starting p… | [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Aspects of UL based CSI acquisition]` |
+| RAN1#126bis | Agreement | [SRS](srs.md) | 10.5.3.2 Aspects of uplink-based CSI acquisition | Study at least the following aspects of TD-OCC: | [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Aspects of UL based CSI acquisition]` |
+| RAN1#126bis | Agreement | [SRS](srs.md) | 10.5.3.1 Aspects of downlink-based CSI acquisition | For the study/evaluation of early CSI triggering/reporting, the following is considered: | [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]` |
+| RAN1#126bis | Agreement | [AI/ML CSI](aiml.md) | 10.5.3.1 Aspects of downlink-based CSI acquisition | For the study of time-domain CSI prediction at UE side in 6GR, among UE-side prediction schemes, consider N4=… | [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]` |
+| RAN1#126bis | Conclusion | [SRS](srs.md) | 9.2 NR MIMO Phase 6 | There is no consensus to support Rel-20 early CSI/SRS/CSI-RS for the case that BWP switching is configured in… | [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · [R1-2607055](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2607055.zip) · `[126bis-R20-MIMO]` |
+| RAN1#126bis | Agreement | [SRS](srs.md) | 9.2 NR MIMO Phase 6 | MSG4-triggered CSI/TRS/SRS must be in the initial BWP. | [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · [R1-2607055](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2607055.zip) · `[126bis-R20-MIMO]` |
+| RAN1#126bis | Agreement | [SRS](srs.md) | 9.2 NR MIMO Phase 6 | To determine the transmission/reception slot of the DL/UL signalling triggered/scheduled via the DCI indicati… | [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · [R1-2607055](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2607055.zip) · `[126bis-R20-MIMO]` |
+| RAN1#126bis | Agreement | [SRS](srs.md) | 9.2 NR MIMO Phase 6 | For early aperiodic SRS/CSI/CSI-RS triggered via SCell activation command or DCI indicating switching out of … | [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · [R1-2607054](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2607054.zip) · `[126bis-R20-MIMO]` |
+| RAN1#126bis | Agreement | [SRS](srs.md) | 9.2 NR MIMO Phase 6 | Support a per-cell new RRC parameter to disable/enable Rel-20 early SRS triggering for a SCell switching out … | [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · [R1-2607052](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2607052.zip) · `[126bis-R20-MIMO]` |
+| RAN1#126bis | Agreement | [SRS](srs.md) | 9.2 NR MIMO Phase 6 | The first slot as the reference slot in the following agreement is determined based on the numerology of the … | [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · [R1-2607052](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2607052.zip) · `[126bis-R20-MIMO]` |
+| RAN1#126bis | Conclusion | [AI/ML CSI](aiml.md) | 9.1.2 Inter-vendor training collaboration for two-sided AI/ML models | For Option 4-1 under Direction A in AI/ML based CSI compression, there is no consensus to support additional … | [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) |
+| RAN1#126bis | Agreement | [AI/ML CSI](aiml.md) | 9.1.1 CSI spatial/frequency compression without temporal aspects (“Case 0”) | For CSI feedback via two-sided model, for inference only, support CSI processing timeline {Z+t’, Z’+t’} where… | [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · [R1-2608403](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2608403.zip) |
+| RAN1#126bis | Agreement | [AI/ML CSI](aiml.md) | 9.1.1 CSI spatial/frequency compression without temporal aspects (“Case 0”) | For CSI feedback via two-sided model, for inference only, reuse the legacy R19 APU and CPU framework consider… | [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · [R1-2608403](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2608403.zip) |
+| RAN1#126bis | Agreement | [AI/ML CSI](aiml.md) | 9.1.1 CSI spatial/frequency compression without temporal aspects (“Case 0”) | Support following configuration for NW data collection | [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) |
+| RAN1#126bis | Conclusion | [AI/ML CSI](aiml.md) | 9.1.1 CSI spatial/frequency compression without temporal aspects (“Case 0”) | For CSI feedback via two-sided model, there is no consensus on the need for RAN1 specification impact of CQI. | [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) |
 | RAN1#126 | Agreement | [SRS](srs.md) | 10.5.3.3 Other aspects | On top of agreement in RAN1#125, further study and evaluate the following sub use cases for joint DL/UL CSI a… | [Chair notes RAN1#126_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx) · `[126-R20-6GR-Other Aspects related to CSI]` |
 | RAN1#126 | Agreement | [SRS](srs.md) | 10.5.3.3 Other aspects | For the evaluation of joint DL/UL based CSI acquisition, at least take the following baseline for use case 2 | [Chair notes RAN1#126_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx) · `[126-R20-6GR-Other Aspects related to CSI]` |
 | RAN1#126 | Agreement | [SRS](srs.md) | 10.5.3.3 Other aspects | Use the following template to collect the simulation results for use case 2: | [Chair notes RAN1#126_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx) · `[126-R20-6GR-Other Aspects related to CSI]` |
@@ -2217,7 +2217,7 @@ FFS 3줄
 > | 5.2.2.5 CSI reference resource definition The CSI reference resource for a serving cell is defined as follows: - In the frequency domain, the CSI reference resource is defined by the group of downlink physical resource blocks corresponding to the band to which the derived CSI relates. - In the time domain, the CSI reference resource for a CSI reporting in uplink slot n', or a CSI reporting in an OCC group starting in uplink slot n' if OCC is enabled, is defined by a single downlink slot , where is a parameter configured by higher layer as specified in clause 4.2 of [6, TS 38.213], and where is the subcarrier spacing configuration for with a value of 0 for frequency range 1 and for FR2-NTN, - where and and are the subcarrier spacing configurations for DL and UL, respectively, and and are determined by higher-layer configured ca-SlotOffset for the cells transmitting the uplink and downlink, as defined in clause 4.5 of [4, TS 38.211] - where for periodic and semi-persistent CSI reporting or for periodic CLI RSSI reporting - if a single CSI-RS/SSB resource is configured for channel measurement or if a single CLI-RSSI measurement resource is configured for interference measurement, nCSI_ref is the smallest value greater than or equal to , such that it corresponds to a valid downlink slot, or - if multiple CSI-RS/SSB resources are configured for channel measurement or if multiple CLI-RSSI measurement resources are configured for interference measurement, nCSI_ref is the smallest value greater than or equal to , such that it corresponds to a valid downlink slot. If a CSI-ReportConfig is configured with the higher layer parameter codebookType set to 'typeI-SinglePanel-r19', with total number of CSI-RS ports , for capability 2, as reported by UE capability indication, nCSI_ref is the smallest value greater than or equal to , such that it corresponds to a valid downlink slot. |
 > Final CR in R1-2608747 is agreed.
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · [R1-2608698](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2608698.zip) · `[126bis-R19-AI 8.2]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · [R1-2608698](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2608698.zip) · `[126bis-R19-AI 8.2]`
 
 **Agreement** · `8.2` Maintenance on others · `RAN1#126bis:8.2:010` · 후보 · 🆕 신규 · 관련 주제: CSI-RS · 유지보수 (CR)
 
@@ -2232,7 +2232,7 @@ FFS 3줄
 > | ==============First change============== 5.2.4a CSI Reporting for LTM and handover A UE configured with LTM-Config can be provided configurations for CSI acquisition, by up to one Reporting Setting, ltm-CSI-ReportConfig, for a candidate cell. A UE can be provided configuration for CSI acquisition, by one Reporting Setting, earlyCSI-Acquisition in ReconfigurationWithSync, for a target cell. Each Reporting Setting ltm-CSI-ReportConfig or earlyCSI-Acquisition is associated with either one or two Resource Settings - When one Resource Setting (given by higher layer parameter ltm-ResourcesForChannelMeasurement or early-NZP-CSI-RS-ResourceSet) is configured, it provides a list of NZP CSI-RS resources for both channel and interference measurements. The UE is not expected to be configured with more than 128 NZP CSI-RS ports in the CSI-RS resource set contained within the Resource Setting. - When two Resource Settings are configured, the first Resource Setting (given by higher layer parameter ltm-ResourcesForChannelMeasurement or early-NZP-CSI-RS-ResourceSet) provides a list of NZP CSI-RS resources for channel measurement, and the second Resource Setting (given by higher layer parameter ltm-ResourceForInterferenceMeasurements or early-CSI-IM-ResourceSet), provides a list of CSI-IM resources for interference measurement. The UE is not expected to be configured with more than 128 NZP CSI-RS ports in the CSI-RS resource set contained within the Resource Setting. The Resource Setting given by higher layer parameter ltm-ResourcesForChannelMeasurement, LTM-CSI-ResourceConfig, contains configuration of a LTM-NZP-CSI-RS-ResourceSet which comprises of a list of Z ≥ 1 NZP CSI-RS resource indices (given by ltm-CSI-RS-ResourceList) and a list of Z LTM-CandidateIds (given by ltm-CandidateIdList) referring to candidate cells associated with the NZP CSI-RS resource indices. For CSI acquisition associated with a Reporting Setting, ltm-CSI-ReportConfig, the UE is expected to measure the NZP-CSI-RS resources in ltm-CSI-RS-ResourceList associated with the LTM-CandidateId that is equal to the LTM-CandidateId of the LTM-Candidate under which the Reporting Setting is configured. If interference measurement is performed on CSI-IM, each NZP-CSI-RS resource the UE is expected to measure for channel measurement for a candidate cell is resource-wise associated with a CSI-IM resource for the same candidate cell by the ordering of the NZP-CSI-RS resources and CSI-IM resources in the corresponding resource sets. The number of NZP-CSI-RS resources the UE is expected to measure for channel measurement for a candidate cell equals to the number of CSI-IM resources for interference measurement. The UE shall expect the following configuration provided by ltm-CSI-ReportConfig or earlyCSI-Acquisition: - For the frequency granularity of the CSI report, the CQI format indicator is Wideband CQI. - For the frequency granularity of the CSI report, the PMI format indicator is Wideband PMI. - The codebook type is typeI-SinglePanel. - The reportQuantity is set to ‘cri-RI-PMI-CQI’. After a UE receives an LTM Cell Switch Command MAC CE [10, TS 38.321] providing a candidate cell (given by Target Configuration ID field), and a ltm-CSI-ReportConfig is configured for the candidate cell, the UE can measure corresponding NZP CSI-RS resources and CSI-IM resources if configured/activated, and shall transmit a CSI report to the candidate cell. After a UE receives a ReconfigurationWithSync configured with earlyCSI-Acquisition, the UE can measure corresponding NZP CSI-RS resources and CSI-IM resources if configured/activated, and shall transmit a CSI report to the target cell. For RACH-less LTM cell switch or RACH-less handover [23, TS 38.300], the UE shall transmit the CSI report to the candidate cell using the first PUSCH corresponding to a dynamic grant or a configured grant [6, TS 38.213]. For RACH-based LTM cell switch or RACH-based handover using a contention-free random access procedure [23, TS 38.300], the UE shall transmit the CSI report to the candidate cell using the PUSCH scheduled by the RAR UL grant or MsgA PUSCH. For RACH-based LTM cell switch or RACH-based handover using a contention-based random access procedure [23, TS 38.300], the UE shall transmit the CSI report to the candidate cell using the first PUSCH corresponding to a dynamic grant or a configured grant after the HARQ-ACK transmission having ACK value corresponding to PDSCH scheduled by a PDCCH transmission addressed to the C-RNTI that is received in response to MSG A, or the first PUSCH scheduled by a PDCCH transmission addressed to the C-RNTI, received in response to Msg3 or MsgA. For the PUSCH determined for CSI reporting, when the UE applies PUSCH repetition Type A or Type B, the CSI report is transmitted only on the first repetition for PUSCH repetition Type A, or on the first actual repetition for PUSCH repetition Type B. If a valid CSI is not available, the UE shall transmit a CSI report which contains a CQI corresponding to the lowest CQI index. Depending on the UE capability, the UE may measure NZP CSI-RS resources and CSI-IM resources if configured/activated corresponding to a ltm-CSI-ReportConfig before receiving the LTM Cell Switch Command MAC CE [10, TS 38.321]. ==============End of change============== |
 > Final CR in R1-2608766 is agreed.
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · [R1-2608653](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2608653.zip) · `[126bis-R19-AI 8.2]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · [R1-2608653](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2608653.zip) · `[126bis-R19-AI 8.2]`
 
 **Agreement** · `8.2` Maintenance on others · `RAN1#126bis:8.2:011` · 후보 · 🆕 신규 · 관련 주제: CSI-RS · 유지보수 (CR)
 
@@ -2248,7 +2248,7 @@ FFS 3줄
 > Final CR in R1-2608767 is agreed.
 > XR Phase 3
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · [R1-2608653](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2608653.zip) · `[126bis-R19-AI 8.2]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · [R1-2608653](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2608653.zip) · `[126bis-R19-AI 8.2]`
 
 **Agreement** · `10.3.2` Modulation · `RAN1#126bis:10.3.2:002` · 후보 · 🆕 신규 · Study
 
@@ -2286,7 +2286,7 @@ FFS 3줄
 
 FFS 1줄
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · [R1-2608656](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2608656.zip) · `[126bis-R20-6GR-Modulation, joint channel coding and modulation]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · [R1-2608656](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2608656.zip) · `[126bis-R20-6GR-Modulation, joint channel coding and modulation]`
 
 **Agreement** · `10.5.2.3` Uplink transmission scheme(s) for uplink channels · `RAN1#126bis:10.5.2.3:012` · 후보 · 🆕 신규 · Study
 
@@ -2305,7 +2305,7 @@ FFS 1줄
 >   - Encourage companies to report the detail procedure of determination of downloadable codebook, and which information is used for determination (if applicable) as much as possible
 > - Companies report signalling overhead, representing format of downloadable codebook, updated frequency of the downloadable codebook, how to determinate when to update
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · [R1-2607567](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2607567.zip) · `[126bis-R20-6GR-Transmission scheme for UL channels]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · [R1-2607567](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2607567.zip) · `[126bis-R20-6GR-Transmission scheme for UL channels]`
 
 **Agreement** · `10.5.2.3` Uplink transmission scheme(s) for uplink channels · `RAN1#126bis:10.5.2.3:014` · 후보 · 🆕 신규 · Study
 
@@ -2313,7 +2313,7 @@ FFS 1줄
 > - Sensitivity of performance to DL/UL reciprocity calibration error comparing the case of zero reciprocity calibration error
 > - Performance comparison between NR codebook based PUSCH and DL/UL reciprocity based PUSCH transmission with DL/UL reciprocity calibration error value(s)
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · [R1-2607568](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2607568.zip) · `[126bis-R20-6GR-Transmission scheme for UL channels]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · [R1-2607568](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2607568.zip) · `[126bis-R20-6GR-Transmission scheme for UL channels]`
 
 ### RAN1#126 — 14건
 

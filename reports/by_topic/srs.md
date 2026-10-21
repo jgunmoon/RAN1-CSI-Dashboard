@@ -1,6 +1,6 @@
 # SRS — RAN1 CSI 결정
 
-> 원본 DB 마지막 업데이트 **2026-10-19 20:12 KST** · [요약으로 돌아가기](../README.md)
+> 원본 DB 마지막 업데이트 **2026-10-21 09:04 KST** · [요약으로 돌아가기](../README.md)
 
 주된 주제가 SRS인 확정 178건 (Agreement 166 · WA 1 · Conclusion 11), 후보 56건. 결정 본문은 Chair notes 원문 그대로입니다(요약 없음). 최신 회의부터 보여줍니다.
 주된 주제가 다른 결정 중 이 주제가 관련 주제로 붙은 것은 맨 아래 '관련 결정'에 모았습니다.
@@ -12,7 +12,7 @@
 > The first slot as the reference slot in the following agreement is determined based on the numerology of the SCell where the aperiodic SRS/CSI-RS is located.
 > | Agreement: To determine the transmission/reception slot of the DL/UL signalling triggered/scheduled based on a legacy SCell activation command (i.e., aperiodic SRS-AS, aperiodic CSI-RS and the PUSCH scheduled for aperiodic CSI reporting), for applying a slot offset between a reference slot and a transmission/reception slot of the DL/UL signalling triggered/scheduled based on the legacy SCell activation command, the reference slot is the first slot that is 3ms after UE transmits HARQ-ACK for the PDSCH carrying the SCell activation command |
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · [R1-2607052](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2607052.zip) · `[126bis-R20-MIMO]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · [R1-2607052](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2607052.zip) · `[126bis-R20-MIMO]`
 
 **Agreement** · `9.2` NR MIMO Phase 6 · `RAN1#126bis:9.2:003` · 🆕 신규 · 관련 주제: CSI 보고/codebook, CSI-RS · 규격 작업 (WI)
 
@@ -21,7 +21,7 @@
 
 FFS 1줄
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · [R1-2607052](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2607052.zip) · `[126bis-R20-MIMO]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · [R1-2607052](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2607052.zip) · `[126bis-R20-MIMO]`
 
 **Agreement** · `9.2` NR MIMO Phase 6 · `RAN1#126bis:9.2:005` · 🆕 신규 · 관련 주제: CSI 보고/codebook, CSI-RS · 규격 작업 (WI)
 
@@ -31,32 +31,32 @@ FFS 1줄
 > - Rel-15 SRS antenna switching pattern (i.e., 1T1R, 1T2R, 1T4R, 2T2R, 2T4R, and 4T4R) for aperiodic SRS-AS
 > - Up to 32 CSI-RS ports for aperiodic CSI-RS associated with aperiodic CSI reporting
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · [R1-2607054](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2607054.zip) · `[126bis-R20-MIMO]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · [R1-2607054](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2607054.zip) · `[126bis-R20-MIMO]`
 
 **Agreement** · `9.2` NR MIMO Phase 6 · `RAN1#126bis:9.2:006` · 🆕 신규 · 관련 주제: CSI 보고/codebook, CSI-RS · 규격 작업 (WI)
 
 > To determine the transmission/reception slot of the DL/UL signalling triggered/scheduled via the DCI indicating switching out of SCell dormancy  (i.e., aperiodic SRS-AS, aperiodic CSI-RS and the PUSCH scheduled for aperiodic CSI reporting), for applying a slot offset between a reference slot and a transmission/reception slot of the DL/UL signalling triggered/scheduled via the DCI indicating switching out of SCell dormancy, the reference slot is the first slot after BWP switching to non-dormant BWP is completed.
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · [R1-2607055](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2607055.zip) · `[126bis-R20-MIMO]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · [R1-2607055](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2607055.zip) · `[126bis-R20-MIMO]`
 
 **Agreement** · `9.2` NR MIMO Phase 6 · `RAN1#126bis:9.2:007` · 🆕 신규 · 관련 주제: CSI 보고/codebook, CSI-RS · 규격 작업 (WI)
 
 > MSG4-triggered CSI/TRS/SRS must be in the initial BWP.
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · [R1-2607055](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2607055.zip) · `[126bis-R20-MIMO]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · [R1-2607055](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2607055.zip) · `[126bis-R20-MIMO]`
 
 **Conclusion** · `9.2` NR MIMO Phase 6 · `RAN1#126bis:9.2:008` · 🆕 신규 · 관련 주제: CSI 보고/codebook, CSI-RS · 규격 작업 (WI)
 
 > There is no consensus to support Rel-20 early CSI/SRS/CSI-RS for the case that BWP switching is configured in RRCSetup/RRCResume message contained in MSG4 PDSCH.
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · [R1-2607055](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2607055.zip) · `[126bis-R20-MIMO]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · [R1-2607055](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2607055.zip) · `[126bis-R20-MIMO]`
 
 **Agreement** · `9.2` NR MIMO Phase 6 · `RAN1#126bis:9.2:009` · 🆕 신규 · 규격 작업 (WI)
 
 > For PF = K (i.e., PF = 2, K = 2 and PF = 4, K = 4):
 > - Simultaneous enabling of (i)pseudo-random RPFS start RB hopping across different SRS frequency hopping period groups and (ii)Rel-17 deterministic RPFS start RB hopping is not supported.
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · [R1-2607397](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2607397.zip) · `[126bis-R20-MIMO]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · [R1-2607397](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2607397.zip) · `[126bis-R20-MIMO]`
 
 **Agreement** · `9.2` NR MIMO Phase 6 · `RAN1#126bis:9.2:010` · 🆕 신규 · 규격 작업 (WI)
 
@@ -65,7 +65,7 @@ FFS 1줄
 >   - Note: Comb offset hopping of cross-slot SRS is applied across the slot boundaries.
 >   - Note: Comb offset value may change at slot boundaries for cross-slot SRS repetition.
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · [R1-2607398](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2607398.zip) · `[126bis-R20-MIMO]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · [R1-2607398](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2607398.zip) · `[126bis-R20-MIMO]`
 
 **Agreement** · `9.2` NR MIMO Phase 6 · `RAN1#126bis:9.2:011` · 🆕 신규 · 규격 작업 (WI)
 
@@ -74,7 +74,7 @@ FFS 1줄
 >     - If the bitmap is not configured,
 >   - For PF = 2 (i.e., PF = K = 2),
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · [R1-2607398](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2607398.zip) · `[126bis-R20-MIMO]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · [R1-2607398](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2607398.zip) · `[126bis-R20-MIMO]`
 
 **Agreement** · `9.2` NR MIMO Phase 6 · `RAN1#126bis:9.2:012` · 🆕 신규 · 규격 작업 (WI)
 
@@ -83,7 +83,7 @@ FFS 1줄
 > Regarding the RPFS start RB index hopping across multiple legacy SRS frequency hopping periods determined by pseudo-random sequence for intra-repetition hopping with ,
 > - Hopping granularity  can be configured as 1 or 2 adjacent frequency hopping period(s)
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · [R1-2607398](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2607398.zip) · `[126bis-R20-MIMO]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · [R1-2607398](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2607398.zip) · `[126bis-R20-MIMO]`
 
 **Agreement** · `9.2` NR MIMO Phase 6 · `RAN1#126bis:9.2:013` · 🆕 신규 · 규격 작업 (WI)
 
@@ -99,7 +99,7 @@ FFS 1줄
 > | 2 | - | - | 1 |
 > | 3 | - | - | 3 |
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · [R1-2607398](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2607398.zip) · `[126bis-R20-MIMO]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · [R1-2607398](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2607398.zip) · `[126bis-R20-MIMO]`
 
 **Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:013` · 🆕 신규 · 관련 주제: CSI 보고/codebook, CSI-RS · Study
 
@@ -119,7 +119,7 @@ FFS 1줄
 > - Companies report the traffic/load assumption for each scenario
 > - Note: the evaluation on SRS triggering for early CSI acquisition is to be handled in 10.5.3.2.
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
 
 **Agreement** · `10.5.3.2` Aspects of uplink-based CSI acquisition · `RAN1#126bis:10.5.3.2:001` · 🆕 신규 · Study
 
@@ -132,7 +132,7 @@ FFS 1줄
 
 FFS 1줄
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Aspects of UL based CSI acquisition]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Aspects of UL based CSI acquisition]`
 
 **Agreement** · `10.5.3.2` Aspects of uplink-based CSI acquisition · `RAN1#126bis:10.5.3.2:002` · 🆕 신규 · Study
 
@@ -140,7 +140,7 @@ FFS 1줄
 > - Prioritize cases where y/x=integer
 > - At least the combinations of x and y as supported in NR shall be supported
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Aspects of UL based CSI acquisition]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Aspects of UL based CSI acquisition]`
 
 **Agreement** · `10.5.3.2` Aspects of uplink-based CSI acquisition · `RAN1#126bis:10.5.3.2:003` · 🆕 신규 · Study
 
@@ -154,7 +154,7 @@ FFS 1줄
 >   - Usage type
 >   - Power control related parameters
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Aspects of UL based CSI acquisition]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Aspects of UL based CSI acquisition]`
 
 **Agreement** · `10.5.3.2` Aspects of uplink-based CSI acquisition · `RAN1#126bis:10.5.3.2:004` · 🆕 신규 · Study
 
@@ -163,7 +163,7 @@ FFS 1줄
 > - The maximum number of cyclic shifts up to 12 for comb-4
 > - The maximum number of cyclic shifts up to 6 for comb-8
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Aspects of UL based CSI acquisition]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Aspects of UL based CSI acquisition]`
 
 **Agreement** · `10.5.3.2` Aspects of uplink-based CSI acquisition · `RAN1#126bis:10.5.3.2:005` · 🆕 신규 · 관련 주제: CSI 보고/codebook · Study
 
@@ -173,7 +173,7 @@ FFS 1줄
 > - The performance under partial dropping, and the feasibility of retaining orthogonality-preserved SRS ports under partial dropping, instead of dropping all ports. That is, only the SRS ports that lose orthogonality due to the dropped symbol(s) are discarded, while the remaining SRS ports that can still maintain orthogonality using the surviving symbols are retained for CSI acquisition.
 > - TD-OCC hopping for interference randomization
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Aspects of UL based CSI acquisition]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Aspects of UL based CSI acquisition]`
 
 **Agreement** · `10.5.3.2` Aspects of uplink-based CSI acquisition · `RAN1#126bis:10.5.3.2:006` · 🆕 신규 · Study
 
@@ -190,7 +190,7 @@ FFS 1줄
 > - Adding an NR baseline column to the template for evaluation results collection
 > XC is measured over all delay lags in over sampling domain
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Aspects of UL based CSI acquisition]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Aspects of UL based CSI acquisition]`
 
 **Agreement** · `10.5.3.2` Aspects of uplink-based CSI acquisition · `RAN1#126bis:10.5.3.2:007` · 🆕 신규 · Study
 
@@ -209,7 +209,7 @@ FFS 1줄
 >   - Option 5: Assuming the minimum bandwidth =32 RBs, CS lengths up to 8 [or 6 or 4]
 > - other values of min SRS BW can be reported
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Aspects of UL based CSI acquisition]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Aspects of UL based CSI acquisition]`
 
 **Agreement** · `10.5.3.2` Aspects of uplink-based CSI acquisition · `RAN1#126bis:10.5.3.2:008` · 🆕 신규 · Study
 
@@ -225,14 +225,14 @@ FFS 1줄
 >   - Option 3: Subband or partial SRS subband Sequential hopping patterns
 > Note: this does not mean that two-level hopping is supported and single-level hopping is precluded.
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Aspects of UL based CSI acquisition]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Aspects of UL based CSI acquisition]`
 
 **Agreement** · `10.5.3.2` Aspects of uplink-based CSI acquisition · `RAN1#126bis:10.5.3.2:009` · 🆕 신규 · Study
 
 > For the evaluation of 6GR SRS sequence designs, adopt the following for PAPR/IAPR/CM and XC calculations of sequences,
 > - FFT size=max(8192, 8*sequence length*Comb size).
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Aspects of UL based CSI acquisition]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Aspects of UL based CSI acquisition]`
 
 **Agreement** · `10.5.3.2` Aspects of uplink-based CSI acquisition · `RAN1#126bis:10.5.3.2:010` · 🆕 신규 · Study
 
@@ -245,14 +245,14 @@ FFS 1줄
 > - For each pair of sequences, the cross-correlation metric is defined as the maximum value of the normalized delay cross-correlation spectrum
 > - For M sequences of the same length, collect the mean values of the normalized delay cross-correlation spectrum for all pairs and derive the following statistics: maximum, average, CDF@10%, 50%, 90%.
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Aspects of UL based CSI acquisition]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Aspects of UL based CSI acquisition]`
 
 **Agreement** · `10.5.3.2` Aspects of uplink-based CSI acquisition · `RAN1#126bis:10.5.3.2:011` · 🆕 신규 · Study
 
 > For evaluation of 6GR SRS sequence designs, adopt the following assumption on XC calculations for sequences with lengths
 > - The position of the desired SRS(victim) sliding in the granularity of 1 RB level within the range of the interfering SRS.
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Aspects of UL based CSI acquisition]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Aspects of UL based CSI acquisition]`
 
 **Agreement** · `10.5.3.2` Aspects of uplink-based CSI acquisition · `RAN1#126bis:10.5.3.2:012` · 🆕 신규 · 관련 주제: AI/ML CSI, CSI 보고/codebook · Study
 
@@ -277,7 +277,7 @@ FFS 1줄
 > | #11b-2 Tput gain | Reported by company Note: Companies should also report the corresponding benchmark. Note: Gain in terms of Tput of PUSCH or PDSCH based on UL/DL CSI acquisition from SRS |
 > | #11b-3 NMSE/SGCS gain | Reported by company (optional) Note: Companies should also report the corresponding benchmark. Note: NMSE is evaluated on the channel estimation/interpolation output of the SRS receiver. Note: SGCS can be evaluated on the estimated channel and/or on the selected precoder (precoder SGCS). |
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Aspects of UL based CSI acquisition]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Aspects of UL based CSI acquisition]`
 
 **Agreement** · `10.5.3.3` Other aspects · `RAN1#126bis:10.5.3.3:006` · 🆕 신규 · Study
 
@@ -291,7 +291,7 @@ FFS 1줄
 
 FFS 1줄
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Other Aspects related to CSI]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Other Aspects related to CSI]`
 
 ## RAN1#126 — 27건
 
@@ -2069,7 +2069,7 @@ FFS 3줄
 > Final CR in R1-2608750 is agreed.
 > LTM
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · [R1-2608726](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2608726.zip) · `[126bis-R19-AI 8.2]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · [R1-2608726](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2608726.zip) · `[126bis-R19-AI 8.2]`
 
 **Agreement** · `10.5.2.3` Uplink transmission scheme(s) for uplink channels · `RAN1#126bis:10.5.2.3:002` · 후보 · 🆕 신규 · Study
 
@@ -2094,7 +2094,7 @@ FFS 3줄
 
 FFS 1줄
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Transmission scheme for UL channels]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Transmission scheme for UL channels]`
 
 **Agreement** · `10.5.2.3` Uplink transmission scheme(s) for uplink channels · `RAN1#126bis:10.5.2.3:006` · 후보 · 🆕 신규 · 관련 주제: CSI 보고/codebook, CSI-RS · Study
 
@@ -2107,7 +2107,7 @@ FFS 1줄
 >   - Companies compare the performance with SRS coverage enhancement alternatives, e.g., SRS repetition and narrowband SRS
 > - For both above schemes, for RAN1 evaluation purpose, companies evaluate with considering DL/UL reciprocity error model
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Transmission scheme for UL channels]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Transmission scheme for UL channels]`
 
 **Agreement** · `10.5.5` Other physical layer signals, channels and procedure · `RAN1#126bis:10.5.5:003` · 후보 · 🆕 신규 · Study
 
@@ -2123,7 +2123,7 @@ FFS 1줄
 
 FFS 2줄
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · `[126bis-R20-6GR-Other signals, channels, and procedures]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Other signals, channels, and procedures]`
 
 **Agreement** · `10.8.2` Aspects of integration with communication · `RAN1#126bis:10.8.2:003` · 후보 · 🆕 신규 · Study
 
@@ -2138,7 +2138,7 @@ FFS 2줄
 >   - the impact/interference to communication and sensing
 > - Companies are encouraged to bring up evaluation results on potential power control issues.
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · [R1-2607231](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2607231.zip) · `[126bis-R20-6GR-ISAC-Integration]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · [R1-2607231](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2607231.zip) · `[126bis-R20-6GR-ISAC-Integration]`
 
 **WA** · `10.8.3` Waveform and frame structure · `RAN1#126bis:10.8.3:009` · 후보 · 🆕 신규 · 관련 주제: CSI-RS · Study
 
@@ -2171,7 +2171,7 @@ FFS 2줄
 > | RS for TRP transmission | NR DL CSI-RS (Gold sequence) | NR DL CSI-RS (Gold sequence) | NR DL CSI-RS (Gold sequence) |
 > Note: as example, the source of parameters: first column from UAV, second column from vehicle, third column from human case.
 
-출처: [Chair notes RAN1#126bis_eom](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom.docx) · [R1-2607997](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2607997.zip) · `[126bis-R20-6GR-ISAC-Waveform and FS]`
+출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · [R1-2607997](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2607997.zip) · `[126bis-R20-6GR-ISAC-Waveform and FS]`
 
 ### RAN1#126 — 3건
 
