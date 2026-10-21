@@ -586,6 +586,8 @@ SCRIPT = r"""
   let rw; addEventListener('resize', () => { clearTimeout(rw); rw = setTimeout(() => chart(D.entries.filter(pred())), 200); });
   q.addEventListener('input', () => { idFilter = null; clearTimeout(timer); timer = setTimeout(() => list(D.entries.filter(pred())), 150); });
   [fTopic, fMeeting, fAgenda, fWord, fStage, fImpact, fClause, fWarn].forEach(n => n.addEventListener('change', () => { idFilter = null; list(D.entries.filter(pred())); }));
+  // Agenda에서 '[후보 …]'를 고르면 필터 줄의 '후보'도 켭니다 (꺼져 있으면 후보가 걸러져 0건으로 보임)
+  fAgenda.addEventListener('change', () => { if (fAgenda.value[0] === 'c' && !$('g-cand').checked) { $('g-cand').checked = true; update(); } });
   $('reset').addEventListener('click', () => {
     idFilter = null; q.value = ''; fTopic.value = fMeeting.value = fAgenda.value = fStage.value = fImpact.value = fClause.value = ''; fWarn.checked = false;
     list(D.entries.filter(pred())); });

@@ -185,3 +185,11 @@ def test_first_visit_guide(tmp_path, db, config):
             browser.close()
     finally:
         server.shutdown()
+
+
+def test_choosing_candidate_agenda_turns_on_candidates(dash):
+    tab(dash, "list")
+    assert not dash.is_checked("#g-cand")
+    label = [o for o in dash.eval_on_selector_all("#f-agenda option", "os => os.map(o => o.textContent)") if o.startswith("[후보]")][0]
+    dash.select_option("#f-agenda", label=label)
+    assert dash.is_checked("#g-cand") and count(dash) >= 1
