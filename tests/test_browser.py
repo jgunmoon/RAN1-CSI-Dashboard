@@ -258,3 +258,12 @@ def test_csv_download_has_all_hits(dash_many, db):
     dash.fill("#q", "zzzz")
     dash.wait_for_timeout(400)
     assert dash.is_disabled("#csv")
+
+
+def test_source_line_shows_tdoc_or_why_not(dash):
+    tab(dash, "list")
+    srcs = dash.locator("#results .result .src")
+    texts = srcs.all_text_contents()
+    assert all("회의록" in x and "근거 TDoc" in x for x in texts)
+    with_tdoc = dash.locator("#results .result .src a.mono").first           # 합성 DB의 근거 TDoc
+    assert with_tdoc.text_content() == "R1-2600001" and with_tdoc.get_attribute("href").endswith("R1-2600001.zip")
