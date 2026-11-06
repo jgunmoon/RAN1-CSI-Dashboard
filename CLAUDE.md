@@ -100,7 +100,7 @@ python -m scripts.build --db 파일.json  # 내려받은 DB 파일로 생성
   결정 공유: 카드의 '링크 복사'는 `…/#id=<encodeURIComponent(id)>`를 복사하고, 그 주소는 결정 목록에 그 결정만 엽니다. 원본 재처리로 id 순번이
   바뀌어 없으면 같은 회의·Agenda 결정을 보여줍니다. 'CSV 내려받기'는 지금 목록의 결정 전부(UTF-8 BOM, 빈 담당자·반영 여부·메모 칸)이며,
   엑셀 수식 방지를 위해 -, =, +, @로 시작하는 칸 앞에만 `'`를 붙입니다(그 밖에는 원문 그대로). 열을 바꾸면 화면 설명과 테스트도 고칩니다.
-- 화면 테스트의 playwright 버전은 requirements.txt에 고정했습니다. 클라우드 세션에는 Chromium이 미리 설치돼 있어(PLAYWRIGHT_BROWSERS_PATH)
+- 화면 테스트의 playwright 버전은 requirements.txt에 고정했고, 그 버전이 Chromium을 설치할 수 있도록 build 작업의 runner를 `ubuntu-24.04`로 고정했습니다(26.04 미지원). 클라우드 세션에는 Chromium이 미리 설치돼 있어(PLAYWRIGHT_BROWSERS_PATH)
   `playwright install` 없이 실행됩니다.
 - 차트 주제 색은 config `topics` 순서대로 dataviz 기본 범주 팔레트 1~5번을 쓰고, 마지막(기타)은 회색입니다. 주제를 6개 넘게 늘리면 색 규칙을 다시 정합니다.
 - `reports/` 아래 파일은 생성물입니다. 직접 고치지 말고 설정이나 스크립트를 고친 뒤 다시 생성합니다.
