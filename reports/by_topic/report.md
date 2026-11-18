@@ -1,13 +1,22 @@
 # CSI 보고/codebook — RAN1 CSI 결정
 
-> 원본 DB 마지막 업데이트 **2026-10-21 09:04 KST** · [요약으로 돌아가기](../README.md)
+> 원본 DB 마지막 업데이트 **2026-11-18 13:43 KST** · [요약으로 돌아가기](../README.md)
 
-주된 주제가 CSI 보고/codebook인 확정 137건 (Agreement 125 · WA 1 · Conclusion 11), 후보 82건. 결정 본문은 Chair notes 원문 그대로입니다(요약 없음). 최신 회의부터 보여줍니다.
+주된 주제가 CSI 보고/codebook인 확정 138건 (Agreement 126 · WA 1 · Conclusion 11), 후보 82건. 결정 본문은 Chair notes 원문 그대로입니다(요약 없음). 최신 회의부터 보여줍니다.
 주된 주제가 다른 결정 중 이 주제가 관련 주제로 붙은 것은 맨 아래 '관련 결정'에 모았습니다.
+
+## RAN1#127 (잠정) — 1건
+
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#127:10.5.3.1:001` · 🆕 신규 · Study
+
+> - For NW-triggered CSI reporting, support Aperiodic CSI reporting on PUSCH for both wideband and subband CSI based on NW triggering
+> - For NW-configured CSI reporting, support Periodic CSI reporting assuming the capacity of the container is not larger than X bits
+
+출처: [Chair notes RAN1#127_v05](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v05.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]`
 
 ## RAN1#126bis — 18건
 
-**Agreement** · `8.1` Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT · `RAN1#126bis:8.1:004` · 🆕 신규 · 유지보수 (CR)
+**Agreement** · `8.1` Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT · `RAN1#126bis:8.1:004` · 유지보수 (CR)
 
 규격: TS 38.214 5.2.2.5
 
@@ -18,7 +27,7 @@
 
 출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R19-AI 8.1]`
 
-**Agreement** · `8.1` Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT · `RAN1#126bis:8.1:009` · 🆕 신규 · 유지보수 (CR)
+**Agreement** · `8.1` Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT · `RAN1#126bis:8.1:009` · 유지보수 (CR)
 
 규격: TS 38.214 5.2.5
 
@@ -29,7 +38,7 @@
 
 출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R19-AI 8.1]`
 
-**Agreement** · `9.2` NR MIMO Phase 6 · `RAN1#126bis:9.2:004` · 🆕 신규 · 관련 주제: CSI-RS · 규격 작업 (WI)
+**Agreement** · `9.2` NR MIMO Phase 6 · `RAN1#126bis:9.2:004` · 관련 주제: CSI-RS · 규격 작업 (WI)
 
 > On MAC-CE triggering indication for early CSI/CSI-RS based on a SCell activation command, study the following alternatives and down-select one in RAN1#127:
 > - Alt-1: Indicating a CSI report configuration for each SCell activated by the SCell activation command MAC-CE.
@@ -46,7 +55,7 @@ FFS 2줄
 
 출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · [R1-2607054](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2607054.zip) · `[126bis-R20-MIMO]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:001` · 🆕 신규 · Study
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:001` · Study
 
 > For the 6GR CJT report to facilitate CJT deployment,
 > - Study whether/how to support reporting CJTC delay offset report and codebook-based CSI (with NTRP>1) assuming TRP/panel-specific SD basis selection and TRP/panel-common FD basis selection (if applicable), including:
@@ -62,7 +71,7 @@ FFS 1줄
 
 출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:002` · 🆕 신규 · Study
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:002` · Study
 
 구현 영향: 포트·자원·레이어 수
 
@@ -79,7 +88,7 @@ FFS 1줄
 
 출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:005` · 🆕 신규 · 관련 주제: CSI-RS · Study
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:005` · 관련 주제: CSI-RS · Study
 
 구현 영향: 메모리·복잡도
 
@@ -93,7 +102,7 @@ FFS 1줄
 
 출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:006` · 🆕 신규 · 관련 주제: CSI-RS · Study
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:006` · 관련 주제: CSI-RS · Study
 
 > For 6GR CSI-RS study, the following template is adopted to collect evaluation results for CSI-RS pattern design
 > | Parameters | Parameters | Company A |
@@ -131,7 +140,7 @@ FFS 1줄
 
 출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:007` · 🆕 신규 · 관련 주제: CSI-RS · Study
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:007` · 관련 주제: CSI-RS · Study
 
 > For 6G CSI-RS sequence design, the following template is adopted to collect evaluation results
 > | Parameters | Parameters | Company A |
@@ -170,7 +179,7 @@ FFS 1줄
 
 출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:008` · 🆕 신규 · 관련 주제: CSI-RS · Study
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:008` · 관련 주제: CSI-RS · Study
 
 > On the pattern for CSI-IM in 6G, both pattern 0 (2x2 resource grid) and pattern 1 (4x1 resource grid) defined in 5G NR are considered as baseline.
 > - FFS in frequency domain, whether CSI-IM needs to appear in all the RBs associated with the CSI report
@@ -180,7 +189,7 @@ FFS 2줄
 
 출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:010` · 🆕 신규 · 관련 주제: CSI-RS · Study
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:010` · 관련 주제: CSI-RS · Study
 
 구현 영향: 측정·보고량
 
@@ -200,7 +209,7 @@ FFS 2줄
 
 출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:011` · 🆕 신규 · 관련 주제: CSI-RS · Study
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:011` · 관련 주제: CSI-RS · Study
 
 구현 영향: 메모리·복잡도, 측정·보고량
 
@@ -237,7 +246,7 @@ FFS 2줄
 
 출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:012` · 🆕 신규 · Study
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:012` · Study
 
 > For the evaluation of explicit CSI feedback, the compression method, at least considering the following:
 > - Option 1: the same structure of high-resolution with the following on top of the codebook design for implicit CSI,
@@ -265,7 +274,7 @@ FFS 2줄
 
 출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:014` · 🆕 신규 · Study
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:014` · Study
 
 구현 영향: 측정·보고량
 
@@ -280,14 +289,14 @@ FFS 2줄
 
 출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Conclusion** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:019` · 🆕 신규 · Study
+**Conclusion** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:019` · Study
 
 > For study on PAPR reduction for JSCM-based CSI compression, deprioritize Option 0 without any subsequent nonlinear operation for PAPR reduction.
 > - Note: Option 0 with subsequent nonlinear operation for PAPR reduction may be similar as Option 2 depending on the design of the nonlinear operation
 
 출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:020` · 🆕 신규 · Study
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:020` · Study
 
 > ⚠️ 수식 누락 의심 — 원본 추출에서 Word 수식(변수·기호)이 빠졌을 수 있습니다. Chair notes 원문으로 확인하세요.
 
@@ -319,7 +328,7 @@ FFS 1줄
 
 출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:022` · 🆕 신규 · Study
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:022` · Study
 
 > For the study of CSI reporting and AI-based CSI compression, adopt the templates in the following documents for collecting companies’ results.
 > - 10.5.3.1 Simulation results for CSI report.xlsx in R1-2608772
@@ -328,7 +337,7 @@ FFS 1줄
 
 출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.3` Other aspects · `RAN1#126bis:10.5.3.3:005` · 🆕 신규 · Study
+**Agreement** · `10.5.3.3` Other aspects · `RAN1#126bis:10.5.3.3:005` · Study
 
 > Study and evaluate the following assistance information for sub use case 1A
 > - Channel covariance matrix/spectrum
@@ -338,7 +347,7 @@ FFS 1줄
 
 출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Other Aspects related to CSI]`
 
-**Agreement** · `10.5.3.3` Other aspects · `RAN1#126bis:10.5.3.3:010` · 🆕 신규 · Study
+**Agreement** · `10.5.3.3` Other aspects · `RAN1#126bis:10.5.3.3:010` · Study
 
 > For the study of other aspects related to CSI, adopt the templates in the following documents for collecting companies’ results.
 > - Simulation results for joint DL and UL CSI acquisition_template_v1.xlsx in R1-2607650
@@ -1932,12 +1941,13 @@ FFS 3줄
 
 ---
 
-## 관련 결정 261건 (주된 주제는 다른 주제)
+## 관련 결정 262건 (주된 주제는 다른 주제)
 
 원문에 CSI 보고/codebook 관련 표현이 있지만 주된 주제가 다른 확정 결정입니다. 전문은 각 주된 주제 리포트에 있습니다.
 
 | 회의 | 구분 | 주된 주제 | Agenda | 원문 첫 줄 | 출처 |
 |---|---|---|---|---|---|
+| RAN1#127 | Agreement | [SRS](srs.md) | 10.5.3.2 Aspects of uplink-based CSI acquisition | Support at least the following case of sharing one SRS transmission occasion for multiple usages: | [Chair notes RAN1#127_v05](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v05.docx) · `[127-R20-6GR-Aspects of UL based CSI acquisition]` |
 | RAN1#126bis | Agreement | [Beam management](beam.md) | 10.5.3.3 Other aspects | Further study and evaluate the following assistant information for use case 2 | [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Other Aspects related to CSI]` |
 | RAN1#126bis | Agreement | [SRS](srs.md) | 10.5.3.2 Aspects of uplink-based CSI acquisition | For the study of AI based receiver for SRS overhead reduction, the following template is used as a starting p… | [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Aspects of UL based CSI acquisition]` |
 | RAN1#126bis | Agreement | [SRS](srs.md) | 10.5.3.2 Aspects of uplink-based CSI acquisition | Study at least the following aspects of TD-OCC: | [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Aspects of UL based CSI acquisition]` |
@@ -2208,7 +2218,7 @@ FFS 3줄
 
 ### RAN1#126bis — 6건
 
-**Agreement** · `8.2` Maintenance on others · `RAN1#126bis:8.2:005` · 후보 · 🆕 신규 · 관련 주제: CSI-RS · 유지보수 (CR)
+**Agreement** · `8.2` Maintenance on others · `RAN1#126bis:8.2:005` · 후보 · 관련 주제: CSI-RS · 유지보수 (CR)
 
 구현 영향: UE capability·FG, 포트·자원·레이어 수 · 규격: TS 38.213 4.2, TS 38.211 4.5
 
@@ -2219,7 +2229,7 @@ FFS 3줄
 
 출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · [R1-2608698](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2608698.zip) · `[126bis-R19-AI 8.2]`
 
-**Agreement** · `8.2` Maintenance on others · `RAN1#126bis:8.2:010` · 후보 · 🆕 신규 · 관련 주제: CSI-RS · 유지보수 (CR)
+**Agreement** · `8.2` Maintenance on others · `RAN1#126bis:8.2:010` · 후보 · 관련 주제: CSI-RS · 유지보수 (CR)
 
 구현 영향: 처리 시간·CPU, UE capability·FG, 포트·자원·레이어 수, 측정·보고량 · 규격: TS 38.214 5.2.4
 
@@ -2234,7 +2244,7 @@ FFS 3줄
 
 출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · [R1-2608653](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2608653.zip) · `[126bis-R19-AI 8.2]`
 
-**Agreement** · `8.2` Maintenance on others · `RAN1#126bis:8.2:011` · 후보 · 🆕 신규 · 관련 주제: CSI-RS · 유지보수 (CR)
+**Agreement** · `8.2` Maintenance on others · `RAN1#126bis:8.2:011` · 후보 · 관련 주제: CSI-RS · 유지보수 (CR)
 
 구현 영향: 측정·보고량 · 규격: TS 38.214 5.2.1.4.2, TS 38.321 5.35.1, TS 38.321 5.35.4, TS 38.321 6.1.3.84
 
@@ -2250,7 +2260,7 @@ FFS 3줄
 
 출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · [R1-2608653](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2608653.zip) · `[126bis-R19-AI 8.2]`
 
-**Agreement** · `10.3.2` Modulation · `RAN1#126bis:10.3.2:002` · 후보 · 🆕 신규 · Study
+**Agreement** · `10.3.2` Modulation · `RAN1#126bis:10.3.2:002` · 후보 · Study
 
 구현 영향: 메모리·복잡도, 측정·보고량
 
@@ -2288,7 +2298,7 @@ FFS 1줄
 
 출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · [R1-2608656](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2608656.zip) · `[126bis-R20-6GR-Modulation, joint channel coding and modulation]`
 
-**Agreement** · `10.5.2.3` Uplink transmission scheme(s) for uplink channels · `RAN1#126bis:10.5.2.3:012` · 후보 · 🆕 신규 · Study
+**Agreement** · `10.5.2.3` Uplink transmission scheme(s) for uplink channels · `RAN1#126bis:10.5.2.3:012` · 후보 · Study
 
 구현 영향: 포트·자원·레이어 수, 메모리·복잡도
 
@@ -2307,7 +2317,7 @@ FFS 1줄
 
 출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · [R1-2607567](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2607567.zip) · `[126bis-R20-6GR-Transmission scheme for UL channels]`
 
-**Agreement** · `10.5.2.3` Uplink transmission scheme(s) for uplink channels · `RAN1#126bis:10.5.2.3:014` · 후보 · 🆕 신규 · Study
+**Agreement** · `10.5.2.3` Uplink transmission scheme(s) for uplink channels · `RAN1#126bis:10.5.2.3:014` · 후보 · Study
 
 > For the study of DL/UL reciprocity based PUSCH transmission for 6GR, companies to report the following
 > - Sensitivity of performance to DL/UL reciprocity calibration error comparing the case of zero reciprocity calibration error

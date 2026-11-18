@@ -1,5 +1,23 @@
 [
  {
+  "at": "2026-11-18T08:36+00:00",
+  "source_updated_at": "2026-11-18T04:43:32+00:00",
+  "reason": "원본 DB 갱신",
+  "new_meetings": [
+   {
+    "meeting": "RAN1#127",
+    "count": 14
+   }
+  ],
+  "counts": {
+   "added": 0,
+   "changed": 0,
+   "removed": 0
+  },
+  "renumbered": 0,
+  "items": []
+ },
+ {
   "at": "2026-10-20T08:01+00:00",
   "source_updated_at": "2026-10-19T11:12:42+00:00",
   "reason": "설정 변경 (범위·키워드·주제 규칙)",

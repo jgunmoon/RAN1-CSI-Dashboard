@@ -1,19 +1,19 @@
 # 기타 CSI — RAN1 CSI 결정
 
-> 원본 DB 마지막 업데이트 **2026-10-21 09:04 KST** · [요약으로 돌아가기](../README.md)
+> 원본 DB 마지막 업데이트 **2026-11-18 13:43 KST** · [요약으로 돌아가기](../README.md)
 
 주된 주제가 기타 CSI인 확정 63건 (Agreement 55 · WA 0 · Conclusion 8), 후보 0건. 결정 본문은 Chair notes 원문 그대로입니다(요약 없음). 최신 회의부터 보여줍니다.
 주된 주제가 다른 결정 중 이 주제가 관련 주제로 붙은 것은 맨 아래 '관련 결정'에 모았습니다.
 
 ## RAN1#126bis — 11건
 
-**Agreement** · `9.2` NR MIMO Phase 6 · `RAN1#126bis:9.2:001` · 🆕 신규 · 규격 작업 (WI)
+**Agreement** · `9.2` NR MIMO Phase 6 · `RAN1#126bis:9.2:001` · 규격 작업 (WI)
 
 > The draft LS to RAN2 in R1-2608676 is endorsed. The final LS in R1-2608623 is agreed.
 
 출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · [R1-2608676](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Docs/R1-2608676.zip) · `[126bis-R20-MIMO]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:015` · 🆕 신규 · Study
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:015` · Study
 
 > ⚠️ 수식 누락 의심 — 원본 추출에서 Word 수식(변수·기호)이 빠졌을 수 있습니다. Chair notes 원문으로 확인하세요.
 
@@ -29,19 +29,19 @@
 
 출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:017` · 🆕 신규 · Study
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:017` · Study
 
 > Draft LS R1-2608754 is endorsed in principle.
 
 출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:018` · 🆕 신규 · Study
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#126bis:10.5.3.1:018` · Study
 
 > Final LS R1-2608755 is endorsed.
 
 출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.3` Other aspects · `RAN1#126bis:10.5.3.3:001` · 🆕 신규 · Study
+**Agreement** · `10.5.3.3` Other aspects · `RAN1#126bis:10.5.3.3:001` · Study
 
 > Support periodic RS in addition to SS for finer time and frequency tracking at least for connected mode in 6GR.
 > - FFS: Whether periodic RS for finer time and frequency tracking can be used in idle mode
@@ -58,14 +58,14 @@ FFS 2줄
 
 출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Other Aspects related to CSI]`
 
-**Agreement** · `10.5.3.3` Other aspects · `RAN1#126bis:10.5.3.3:003` · 🆕 신규 · Study
+**Agreement** · `10.5.3.3` Other aspects · `RAN1#126bis:10.5.3.3:003` · Study
 
 > Study the RS for finer time and frequency tracking in single/multi-TRP scenario by considering the overhead, tracking performance, NW&UE energy efficiency and potential DL multi-TRP transmission schemes.
 > Note: the DL transmission scheme is not discussed in this agenda.
 
 출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Other Aspects related to CSI]`
 
-**Agreement** · `10.5.3.3` Other aspects · `RAN1#126bis:10.5.3.3:004` · 🆕 신규 · Study
+**Agreement** · `10.5.3.3` Other aspects · `RAN1#126bis:10.5.3.3:004` · Study
 
 > Study UE using aperiodic RS in addition to periodic RS for finer time and frequency tracking at least for connected mode in 6GR by considering the following aspects
 > - Whether aperiodic RS for finer time and frequency tracking can be used in idle mode.
@@ -82,14 +82,14 @@ FFS 1줄
 
 출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Other Aspects related to CSI]`
 
-**Agreement** · `10.5.3.3` Other aspects · `RAN1#126bis:10.5.3.3:008` · 🆕 신규 · Study
+**Agreement** · `10.5.3.3` Other aspects · `RAN1#126bis:10.5.3.3:008` · Study
 
 > For finer time and frequency tracking in multi-carrier scenario, considering Per CC RS for finer time and frequency tracking as starting point
 > - Study cross-carrier finer time and frequency tracking mechanism
 
 출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Other Aspects related to CSI]`
 
-**Agreement** · `10.5.3.3` Other aspects · `RAN1#126bis:10.5.3.3:009` · 🆕 신규 · Study
+**Agreement** · `10.5.3.3` Other aspects · `RAN1#126bis:10.5.3.3:009` · Study
 
 > Study whether and how specific design is needed for the finer time and frequency tracking mechanism for larger than 200MHz channel bandwidth, e.g., up to 400MHz DL CBW, at least consider the following options
 > - Option 0: No specific design is needed.
@@ -98,13 +98,13 @@ FFS 1줄
 
 출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Other Aspects related to CSI]`
 
-**Agreement** · `10.5.3.3` Other aspects · `RAN1#126bis:10.5.3.3:011` · 🆕 신규 · Study
+**Agreement** · `10.5.3.3` Other aspects · `RAN1#126bis:10.5.3.3:011` · Study
 
 > Draft LS is R1-2608760 endorsed in principle.
 
 출처: [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Other Aspects related to CSI]`
 
-**Agreement** · `10.5.3.3` Other aspects · `RAN1#126bis:10.5.3.3:012` · 🆕 신규 · Study
+**Agreement** · `10.5.3.3` Other aspects · `RAN1#126bis:10.5.3.3:012` · Study
 
 > Final LS is R1-2608761 endorsed.
 
