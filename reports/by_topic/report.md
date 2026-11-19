@@ -1,18 +1,77 @@
 # CSI 보고/codebook — RAN1 CSI 결정
 
-> 원본 DB 마지막 업데이트 **2026-11-18 13:43 KST** · [요약으로 돌아가기](../README.md)
+> 원본 DB 마지막 업데이트 **2026-11-19 13:30 KST** · [요약으로 돌아가기](../README.md)
 
-주된 주제가 CSI 보고/codebook인 확정 138건 (Agreement 126 · WA 1 · Conclusion 11), 후보 82건. 결정 본문은 Chair notes 원문 그대로입니다(요약 없음). 최신 회의부터 보여줍니다.
+주된 주제가 CSI 보고/codebook인 확정 143건 (Agreement 130 · WA 1 · Conclusion 12), 후보 82건. 결정 본문은 Chair notes 원문 그대로입니다(요약 없음). 최신 회의부터 보여줍니다.
 주된 주제가 다른 결정 중 이 주제가 관련 주제로 붙은 것은 맨 아래 '관련 결정'에 모았습니다.
 
-## RAN1#127 (잠정) — 1건
+## RAN1#127 (잠정) — 6건
 
 **Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#127:10.5.3.1:001` · 🆕 신규 · Study
 
 > - For NW-triggered CSI reporting, support Aperiodic CSI reporting on PUSCH for both wideband and subband CSI based on NW triggering
 > - For NW-configured CSI reporting, support Periodic CSI reporting assuming the capacity of the container is not larger than X bits
 
-출처: [Chair notes RAN1#127_v05](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v05.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]`
+출처: [Chair notes RAN1#127_v09](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]`
+
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#127:10.5.3.1:004` · 🆕 신규 · Study
+
+구현 영향: UE capability·FG, 측정·보고량
+
+> ⚠️ 수식 누락 의심 — 원본 추출에서 Word 수식(변수·기호)이 빠졌을 수 있습니다. Chair notes 원문으로 확인하세요.
+
+> For the 6GR codebook design for CSI report, for sTRP, targeting different use cases, support W1W2 structure based and W1W2Wf structure based schemes
+> - UE reports recommended PMI may include:
+>   - Indicators for the selected SD basis vector(s) W1 and, if applicable, the selected FD basis vectors Wf
+>     - Note: this does not imply that the W1W2 structure based and W1W2Wf  structure based schemes share the same SD basis design
+>   - Indicators, W2, for selection of inter-polarization co-phasing coefficients for W1W2 structure based scheme or linear combination coefficients of the selected SD basis vector(s) and, if applicable, FD basis vectors for W1W2Wf structure based scheme
+>     - Note: whether W2 include inter-polarization amplitude for W1W2 structure scheme to be decided in the normative phase
+> - Note: This does not imply that all of the above schemes are mandatory UE features and there will be separate UE feature discussion during the normative phase.
+> - Note: Basis design will be discussed separately.
+
+출처: [Chair notes RAN1#127_v09](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]`
+
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#127:10.5.3.1:005` · 🆕 신규 · Study
+
+구현 영향: 측정·보고량
+
+> ⚠️ 수식 누락 의심 — 원본 추출에서 Word 수식(변수·기호)이 빠졌을 수 있습니다. Chair notes 원문으로 확인하세요.
+
+> For the 6GR codebook design for CSI report, for CJT, RAN 1 recommends to support at least one of the W1W2 structure based and W1W2Wf structure based scheme with TRP-specific SD basis selection conditioned on the support of CJT PDSCH-DMRS QCL in normative phase
+> - UE reports recommended PMI may include:
+>   - Indicators, W1 for the selected SD basis vector(s) and, if applicable, inter-TRP co-phasing for the   W1W2 structure based scheme (if supported)
+>     - Note: this does not imply that the W1W2 structure based and W1W2Wf  structure based schemes share the same SD basis design
+>   - Indicators, W2, for selection of inter-polarization co-phasing coefficients of the selected SD basis vectors for  W1W2 structure based (if supported) or linear combination coefficients of the selected SD basis vectors and, FD basis vectors for W1W2Wf structure based (if supported)
+>     - Note: whether W2 include inter-polarization amplitude for W1W2 structure based scheme to be decided in the normative phase
+>   - Whether/how to support dynamic TRP selection mechanism can be decided in normative phase
+> - Note: Basis design will be discussed separately.
+
+출처: [Chair notes RAN1#127_v09](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]`
+
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#127:10.5.3.1:006` · 🆕 신규 · Study
+
+> - For UE-assisted report for the 6GR DL based CSI, to facilitate CJT deployments, RAN 1 recommends to support CJT calibration (CJTC) reports of delay offset, frequency offset, and phase offset conditioned on the support of CJT PDSCH-DMRS QCL in normative phase.
+> - Other detailed design aspects are to be finalized based on the existing agreements
+
+출처: [Chair notes RAN1#127_v09](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]`
+
+**Conclusion** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#127:10.5.3.1:007` · 🆕 신규 · Study
+
+> For study on PAPR reduction for JSCM-based CSI compression, deprioritize Option 2.
+> Note: discrete constellation with constant amplitude is treated as Option 1.
+
+출처: [Chair notes RAN1#127_v09](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]`
+
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#127:10.5.3.1:008` · 🆕 신규 · Study
+
+> For UE-assisted report for the 6GR DL based CSI, RAN 1 recommends to support Channel Property Information (CPI) reports at least for SD:
+> Support single option confined within Option 1 (from RAN #126bis agreement) during normative phase.
+> - Note: the averaging over time domain for CPI is up to UE implementation.
+> - Whether to support CPI for FD can be decided in normative phase with the same scheme as for SD CPI.
+> Other detailed design aspects are to be finalized based on the existing agreements
+> Note: send LS to RAN 4 to include the above agreement.
+
+출처: [Chair notes RAN1#127_v09](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]`
 
 ## RAN1#126bis — 18건
 
@@ -1947,7 +2006,7 @@ FFS 3줄
 
 | 회의 | 구분 | 주된 주제 | Agenda | 원문 첫 줄 | 출처 |
 |---|---|---|---|---|---|
-| RAN1#127 | Agreement | [SRS](srs.md) | 10.5.3.2 Aspects of uplink-based CSI acquisition | Support at least the following case of sharing one SRS transmission occasion for multiple usages: | [Chair notes RAN1#127_v05](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v05.docx) · `[127-R20-6GR-Aspects of UL based CSI acquisition]` |
+| RAN1#127 | Agreement | [SRS](srs.md) | 10.5.3.2 Aspects of uplink-based CSI acquisition | Support at least the following case of sharing one SRS transmission occasion for multiple usages: | [Chair notes RAN1#127_v09](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) · `[127-R20-6GR-Aspects of UL based CSI acquisition]` |
 | RAN1#126bis | Agreement | [Beam management](beam.md) | 10.5.3.3 Other aspects | Further study and evaluate the following assistant information for use case 2 | [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Other Aspects related to CSI]` |
 | RAN1#126bis | Agreement | [SRS](srs.md) | 10.5.3.2 Aspects of uplink-based CSI acquisition | For the study of AI based receiver for SRS overhead reduction, the following template is used as a starting p… | [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Aspects of UL based CSI acquisition]` |
 | RAN1#126bis | Agreement | [SRS](srs.md) | 10.5.3.2 Aspects of uplink-based CSI acquisition | Study at least the following aspects of TD-OCC: | [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Aspects of UL based CSI acquisition]` |

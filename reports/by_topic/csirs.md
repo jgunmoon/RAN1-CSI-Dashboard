@@ -1,6 +1,6 @@
 # CSI-RS — RAN1 CSI 결정
 
-> 원본 DB 마지막 업데이트 **2026-11-18 13:43 KST** · [요약으로 돌아가기](../README.md)
+> 원본 DB 마지막 업데이트 **2026-11-19 13:30 KST** · [요약으로 돌아가기](../README.md)
 
 주된 주제가 CSI-RS인 확정 48건 (Agreement 42 · WA 1 · Conclusion 5), 후보 12건. 결정 본문은 Chair notes 원문 그대로입니다(요약 없음). 최신 회의부터 보여줍니다.
 주된 주제가 다른 결정 중 이 주제가 관련 주제로 붙은 것은 맨 아래 '관련 결정'에 모았습니다.
@@ -13,13 +13,13 @@
 
 > For 6GR, the maximum number of CSI-RS ports is 256
 
-출처: [Chair notes RAN1#127_v05](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v05.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]`
+출처: [Chair notes RAN1#127_v09](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]`
 
 **Conclusion** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#127:10.5.3.1:003` · 🆕 신규 · Study
 
 > For NW side prediction at spatial and/or frequency domain, deprioritize prediction input Option 1-1: UE reported channel matrix derived from reduced dimension CSI-RS measurement
 
-출처: [Chair notes RAN1#127_v05](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v05.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]`
+출처: [Chair notes RAN1#127_v09](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]`
 
 ## RAN1#126bis — 5건
 

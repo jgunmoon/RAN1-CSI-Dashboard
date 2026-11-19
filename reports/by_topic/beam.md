@@ -1,18 +1,18 @@
 # Beam management — RAN1 CSI 결정
 
-> 원본 DB 마지막 업데이트 **2026-11-18 13:43 KST** · [요약으로 돌아가기](../README.md)
+> 원본 DB 마지막 업데이트 **2026-11-19 13:30 KST** · [요약으로 돌아가기](../README.md)
 
-주된 주제가 Beam management인 확정 125건 (Agreement 122 · WA 1 · Conclusion 2), 후보 55건. 결정 본문은 Chair notes 원문 그대로입니다(요약 없음). 최신 회의부터 보여줍니다.
+주된 주제가 Beam management인 확정 126건 (Agreement 123 · WA 1 · Conclusion 2), 후보 55건. 결정 본문은 Chair notes 원문 그대로입니다(요약 없음). 최신 회의부터 보여줍니다.
 주된 주제가 다른 결정 중 이 주제가 관련 주제로 붙은 것은 맨 아래 '관련 결정'에 모았습니다.
 
-## RAN1#127 (잠정) — 4건
+## RAN1#127 (잠정) — 5건
 
 **Agreement** · `10.5.1.1` Synchronization acquisition and beam measurement · `RAN1#127:10.5.1.1:001` · 🆕 신규 · Study
 
 > For 6GR PSS,
 > - 6GR PSS carry 3 physical Cell ID hypotheses
 
-출처: [Chair notes RAN1#127_v05](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v05.docx) · `[127-R20-6GR-Synchronization and Beam Measurement]`
+출처: [Chair notes RAN1#127_v09](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) · `[127-R20-6GR-Synchronization and Beam Measurement]`
 
 **Agreement** · `10.5.1.1` Synchronization acquisition and beam measurement · `RAN1#127:10.5.1.1:002` · 🆕 신규 · Study
 
@@ -21,21 +21,31 @@
 > - The number of SSS sequences for carrying physical Cell ID is 336 per PSS physical Cell ID hypotheses
 >   - Note: continue to study the motivation to carry other information
 
-출처: [Chair notes RAN1#127_v05](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v05.docx) · `[127-R20-6GR-Synchronization and Beam Measurement]`
+출처: [Chair notes RAN1#127_v09](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) · `[127-R20-6GR-Synchronization and Beam Measurement]`
+
+**Agreement** · `10.5.1.1` Synchronization acquisition and beam measurement · `RAN1#127:10.5.1.1:003` · 🆕 신규 · Study
+
+> For SSB design, downselect one from Alt 1 and Alt 2,
+> Alt 1:
+> - One 6GR SSB spans 4 OFDM symbols within a slot, with 1 symbol for PSS and 1 symbol for SSS
+> Alt 2:
+> - One 6GR SSB spans 5 OFDM symbols within a slot, with 2 symbols for PSS and 1 symbol for SSS
+
+출처: [Chair notes RAN1#127_v09](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) · `[127-R20-6GR-Synchronization and Beam Measurement]`
 
 **Agreement** · `10.5.3.4` Beam management for downlink and uplink · `RAN1#127:10.5.3.4:001` · 🆕 신규 · Study
 
 > At least for FR2, study UE UL beam sweeping for 6GR targeting at least Asymmetric DL sTRP and UL mTRP.
 > Note: Which multi-TRP transmission scheme to be supported will be discussed under other agenda.
 
-출처: [Chair notes RAN1#127_v05](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v05.docx) · `[127-R20-6GR-Beam management]`
+출처: [Chair notes RAN1#127_v09](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) · `[127-R20-6GR-Beam management]`
 
 **Agreement** · `10.5.3.4` Beam management for downlink and uplink · `RAN1#127:10.5.3.4:002` · 🆕 신규 · Study
 
 > - Study the procedure of NW initiated UL beam sweeping considering, at least for FR2
 >   - At least consider inter-symbol NW/UE-side beam sweeping including multiple UL RS(s) for UL Tx beam sweeping/repetition.
 
-출처: [Chair notes RAN1#127_v05](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v05.docx) · `[127-R20-6GR-Beam management]`
+출처: [Chair notes RAN1#127_v09](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) · `[127-R20-6GR-Beam management]`
 
 ## RAN1#126bis — 18건
 
