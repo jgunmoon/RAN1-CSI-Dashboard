@@ -1,11 +1,11 @@
 # CSI-RS — RAN1 CSI 결정
 
-> 원본 DB 마지막 업데이트 **2026-11-19 13:30 KST** · [요약으로 돌아가기](../README.md)
+> 원본 DB 마지막 업데이트 **2026-11-20 13:18 KST** · [요약으로 돌아가기](../README.md)
 
-주된 주제가 CSI-RS인 확정 48건 (Agreement 42 · WA 1 · Conclusion 5), 후보 12건. 결정 본문은 Chair notes 원문 그대로입니다(요약 없음). 최신 회의부터 보여줍니다.
+주된 주제가 CSI-RS인 확정 52건 (Agreement 46 · WA 1 · Conclusion 5), 후보 13건. 결정 본문은 Chair notes 원문 그대로입니다(요약 없음). 최신 회의부터 보여줍니다.
 주된 주제가 다른 결정 중 이 주제가 관련 주제로 붙은 것은 맨 아래 '관련 결정'에 모았습니다.
 
-## RAN1#127 (잠정) — 2건
+## RAN1#127 (잠정) — 6건
 
 **Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#127:10.5.3.1:002` · 🆕 신규 · Study
 
@@ -13,13 +13,57 @@
 
 > For 6GR, the maximum number of CSI-RS ports is 256
 
-출처: [Chair notes RAN1#127_v09](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]`
+출처: [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]`
 
 **Conclusion** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#127:10.5.3.1:003` · 🆕 신규 · Study
 
 > For NW side prediction at spatial and/or frequency domain, deprioritize prediction input Option 1-1: UE reported channel matrix derived from reduced dimension CSI-RS measurement
 
-출처: [Chair notes RAN1#127_v09](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]`
+출처: [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]`
+
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#127:10.5.3.1:009` · 🆕 신규 · Study
+
+구현 영향: UE capability·FG
+
+> 6GR CSI-RS supports the following numbers of ports: 1, 2, 4, 8, 12, 16, 24, 32, 48, 64, 128, 256
+> - Note: UE capability is a separate discussion in WI
+
+출처: [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]`
+
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#127:10.5.3.1:010` · 🆕 신규 · Study
+
+> For 6GR CSI-RS CDM size and type, prioritize the following candidates for further down-selection per port number basis
+> - Candidate 2-1-1: cdm1
+> - Candidate 2-1-2: cdm2-FD2
+> - Candidate 2-1-3: cdm4-FD2-TD2
+> - Candidate 2-1-4: cdm8-FD2-TD4
+> - Candidate 2-2-1: cdm16-FD4-TD4
+> - Note: cell edge performance should be considered and compared with full-power CSI-RS transmission
+
+출처: [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]`
+
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#127:10.5.3.1:011` · 🆕 신규 · Study
+
+> For 6GR CSI-RS, on the study of options to address the potential inter-cell interference issue caused by NR CSI-RS sequence mapping, and the potential PAPR issue caused by precoded CSI-RS and NR CSI-RS sequence mapping, prioritize the following for further down-selection
+> - Option 2: Map the PN sequence to the global subcarrier indices in the whole bandwidth sequentially
+>   - FFS whether it needs to be combined with inter-cell option 1 and/or 8
+> - Option 4: Multiply the PN sequence with an additional port-specific scrambling sequence
+>   - FFS whether it needs to be combined with inter-cell option 1
+> - Option 6: Port-specific sequence initialization
+>   - FFS whether it needs to be combined with inter-cell option 1
+> - A single solution from the above 3 is selected for both inter-cell issue and PAPR issue
+
+FFS 3줄
+
+출처: [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]`
+
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#127:10.5.3.1:012` · 🆕 신규 · Study
+
+> On the locations of M2 RBs in each RB set for 6GR CSI-RS, support
+> - The M2 RBs are consecutive RBs in each RB set
+> - Note: whether the CSI-RS pattern occupies a same or different set of REs in each of the M1 slots and M2 RBs is a separate discussion
+
+출처: [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]`
 
 ## RAN1#126bis — 5건
 
@@ -566,12 +610,13 @@ FFS 1줄
 
 ---
 
-## 관련 결정 164건 (주된 주제는 다른 주제)
+## 관련 결정 165건 (주된 주제는 다른 주제)
 
 원문에 CSI-RS 관련 표현이 있지만 주된 주제가 다른 확정 결정입니다. 전문은 각 주된 주제 리포트에 있습니다.
 
 | 회의 | 구분 | 주된 주제 | Agenda | 원문 첫 줄 | 출처 |
 |---|---|---|---|---|---|
+| RAN1#127 | Agreement | [Beam management](beam.md) | 10.5.1.1 Synchronization acquisition and beam measurement | - For UEs in connected mode, additional transmission of synchronization signal(s)/reference signals in additi… | [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Synchronization and Beam Measurement]` |
 | RAN1#126bis | Agreement | [Beam management](beam.md) | 10.5.3.3 Other aspects | Further study and evaluate the following assistant information for use case 2 | [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Other Aspects related to CSI]` |
 | RAN1#126bis | Agreement | [SRS](srs.md) | 10.5.3.1 Aspects of downlink-based CSI acquisition | For the study/evaluation of early CSI triggering/reporting, the following is considered: | [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]` |
 | RAN1#126bis | Agreement | [CSI 보고/codebook](report.md) | 10.5.3.1 Aspects of downlink-based CSI acquisition | For the evaluation of configurable/downloadable codebook/basis, at least the following can be considered: | [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Aspects of DL based CSI acquisition]` |
@@ -739,9 +784,25 @@ FFS 1줄
 
 ---
 
-## 후보 12건 (키워드 일치 · 확인 필요)
+## 후보 13건 (키워드 일치 · 확인 필요)
 
 포함 Agenda 밖에서 키워드로 잡힌 결정입니다. CSI 범위가 아닐 수 있습니다.
+
+### RAN1#127 — 1건
+
+**Agreement** · `10.5.5` Other physical layer signals, channels and procedure · `RAN1#127:10.5.5:010` · 후보 · 🆕 신규 · Study
+
+> The information exchange between BSs for handling BS-to-BS CLI at least supports the following information:
+> - The time domain configuration in TDD and time/frequency configuration of SBFD.
+> - The configuration of BS-to-BS CLI measurement RS: CSI-RS and 6GR SSB.
+> - Non-recommended beam(s), i.e., the strongest DL beam(s) from the victim BS.
+> - BS-to-BS CLI mitigation request from the victim BS.
+> - Note: no normative behaviour is implied for BS receiving the non-recommended beam(s) or the BS-to-BS CLI mitigation request.
+> - FFS other information.
+
+FFS 1줄
+
+출처: [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Other signals, channels, and procedures]`
 
 ### RAN1#126 — 3건
 

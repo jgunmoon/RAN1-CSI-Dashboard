@@ -1,18 +1,18 @@
 # Beam management — RAN1 CSI 결정
 
-> 원본 DB 마지막 업데이트 **2026-11-19 13:30 KST** · [요약으로 돌아가기](../README.md)
+> 원본 DB 마지막 업데이트 **2026-11-20 13:18 KST** · [요약으로 돌아가기](../README.md)
 
-주된 주제가 Beam management인 확정 126건 (Agreement 123 · WA 1 · Conclusion 2), 후보 55건. 결정 본문은 Chair notes 원문 그대로입니다(요약 없음). 최신 회의부터 보여줍니다.
+주된 주제가 Beam management인 확정 131건 (Agreement 128 · WA 1 · Conclusion 2), 후보 55건. 결정 본문은 Chair notes 원문 그대로입니다(요약 없음). 최신 회의부터 보여줍니다.
 주된 주제가 다른 결정 중 이 주제가 관련 주제로 붙은 것은 맨 아래 '관련 결정'에 모았습니다.
 
-## RAN1#127 (잠정) — 5건
+## RAN1#127 (잠정) — 10건
 
 **Agreement** · `10.5.1.1` Synchronization acquisition and beam measurement · `RAN1#127:10.5.1.1:001` · 🆕 신규 · Study
 
 > For 6GR PSS,
 > - 6GR PSS carry 3 physical Cell ID hypotheses
 
-출처: [Chair notes RAN1#127_v09](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) · `[127-R20-6GR-Synchronization and Beam Measurement]`
+출처: [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Synchronization and Beam Measurement]`
 
 **Agreement** · `10.5.1.1` Synchronization acquisition and beam measurement · `RAN1#127:10.5.1.1:002` · 🆕 신규 · Study
 
@@ -21,7 +21,7 @@
 > - The number of SSS sequences for carrying physical Cell ID is 336 per PSS physical Cell ID hypotheses
 >   - Note: continue to study the motivation to carry other information
 
-출처: [Chair notes RAN1#127_v09](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) · `[127-R20-6GR-Synchronization and Beam Measurement]`
+출처: [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Synchronization and Beam Measurement]`
 
 **Agreement** · `10.5.1.1` Synchronization acquisition and beam measurement · `RAN1#127:10.5.1.1:003` · 🆕 신규 · Study
 
@@ -31,21 +31,169 @@
 > Alt 2:
 > - One 6GR SSB spans 5 OFDM symbols within a slot, with 2 symbols for PSS and 1 symbol for SSS
 
-출처: [Chair notes RAN1#127_v09](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) · `[127-R20-6GR-Synchronization and Beam Measurement]`
+출처: [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Synchronization and Beam Measurement]`
+
+**Agreement** · `10.5.1.1` Synchronization acquisition and beam measurement · `RAN1#127:10.5.1.1:004` · 🆕 신규 · Study
+
+> The coverage gaps relative to the basic coverage of 143 dB MaxCL and extended coverage of 153 dB MaxCL for different signals and channels during initial access are captured in the following tables.
+> Note: It is understood that the trimmed mean Msg5 PUSCH is using the evaluation results assuming different payload.
+> Table X: Coverage gap relative to 143 dB MaxCL for different signals and channels during initial access based on R15 NR assumptions, 0.7 GHz, 15kHz SCS, 2T2R or DL, 1T2R for UL
+> | Signals/channels | Number of Sample(s) | Coverage gap (trimmed mean) | Standard Deviation (w/o outlier) |
+> | PSS/SSS w/o combining | 9 | -1.54 | 1.12 |
+> | PBCH w/o combining | 9 | 0.34 | 1.18 |
+> | PSS/SSS w/ 4 combining | 8 | 3.05 | 0.72 |
+> | PBCH w/ 4 combining | 9 | 4.88 | 1.21 |
+> | SIB1 PDCCH | 10 | 2.34 | 0.37 |
+> | SIB1 PDSCH | 10 | 1.24 | 0.63 |
+> | Msg2 PDSCH | 9 | 2.59 | 1.59 |
+> | Msg4 PDSCH | 9 | 1.58 | 0.49 |
+> | PRACH format 0 | 9 | -2.77 | 0.63 |
+> | PRACH format B4 | 6 | -2.70 | 1.37 |
+> | PRACH format C2 | 7 | -6.53 | 1.04 |
+> | Msg3 PUSCH | 10 | -5.18 | 0.72 |
+> | Msg5 PUSCH | 10 | -10.73 | 3.32 |
+> | PUCCH format 1 | 8 | 1.99 | 0.55 |
+> Table X: Coverage gap relative to 143 dB MaxCL for different signals and channels during initial access based on R15 NR assumptions, 0.7 GHz, 15kHz SCS, 2T1R for DL
+> | Signals/channels | Number of Sample(s) | Coverage gap (trimmed mean) | Standard Deviation (w/o outlier) |
+> | PSS/SSS w/o combining | 9 | -6.48 | 1.60 |
+> | PBCH w/o combining | 10 | -4.07 | 1.93 |
+> | PSS/SSS w/ 4 combining | 8 | -1.08 | 1.26 |
+> | PBCH w/ 4 combining | 9 | 1.20 | 1.80 |
+> | SIB1 PDCCH | 11 | -1.37 | 0.60 |
+> | SIB1 PDSCH | 11 | -2.70 | 0.78 |
+> | Msg2 PDSCH | 10 | -1.93 | 1.72 |
+> | Msg4 PDSCH | 10 | -2.25 | 0.64 |
+> Table X: Coverage gap relative to 153 dB MaxCL for different signals and channels during initial access based on R15 NR assumptions, 0.7 GHz, 15kHz SCS, 2T2R or DL, 1T2R for UL
+> | Signals/channels | Number of Sample(s) | Coverage gap (trimmed mean) | Standard Deviation (w/o outlier) |
+> | PSS/SSS w/o combining | 9 | -11.54 | 1.12 |
+> | PBCH w/o combining | 9 | -9.66 | 1.18 |
+> | PSS/SSS w/ 4 combining | 8 | -6.95 | 0.72 |
+> | PBCH w/ 4 combining | 9 | -5.12 | 1.21 |
+> | SIB1 PDCCH | 10 | -7.66 | 0.37 |
+> | SIB1 PDSCH | 10 | -8.76 | 0.63 |
+> | Msg2 PDSCH | 9 | -7.41 | 1.59 |
+> | Msg4 PDSCH | 9 | -8.42 | 0.49 |
+> | PRACH format 0 | 9 | -12.77 | 0.63 |
+> | PRACH format B4 | 6 | -12.70 | 1.37 |
+> | PRACH format C2 | 7 | -16.53 | 1.04 |
+> | Msg3 PUSCH | 10 | -15.18 | 0.72 |
+> | Msg5 PUSCH | 10 | -20.73 | 3.32 |
+> | PUCCH format 1 | 8 | -8.01 | 0.55 |
+> Table X: Coverage gap relative to 153 dB MaxCL for different signals and channels during initial access based on R15 NR assumptions, 0.7 GHz, 15kHz SCS, 2T1R for DL
+> | Signals/channels | Number of Sample(s) | Coverage gap (trimmed mean) | Standard Deviation (w/o outlier) |
+> | PSS/SSS w/o combining | 9 | -16.48 | 1.60 |
+> | PBCH w/o combining | 10 | -14.07 | 1.93 |
+> | PSS/SSS w/ 4 combining | 8 | -11.08 | 1.26 |
+> | PBCH w/ 4 combining | 9 | -8.80 | 1.80 |
+> | SIB1 PDCCH | 11 | -11.37 | 0.60 |
+> | SIB1 PDSCH | 11 | -12.70 | 0.78 |
+> | Msg2 PDSCH | 10 | -11.93 | 1.72 |
+> | Msg4 PDSCH | 10 | -12.25 | 0.64 |
+> Table X: Coverage gap relative to 143 dB MaxCL for different signals and channels during initial access based on R15 NR assumptions, 2.6 GHz, 30kHz SCS, 2T2R for DL, 1T2R for UL
+> | Signals/channels | Number of Sample(s) | Coverage gap (trimmed mean) | Standard Deviation (w/o outlier) |
+> | PSS/SSS w/o combining | 10 | -1.80 | 0.88 |
+> | PBCH w/o combining | 11 | 0.45 | 1.46 |
+> | PSS/SSS w/ 4 combining | 8 | 3.96 | 0.73 |
+> | PBCH w/ 4 combining | 10 | 5.20 | 0.96 |
+> | SIB1 PDCCH | 11 | 2.32 | 0.33 |
+> | SIB1 PDSCH | 11 | 0.93 | 0.85 |
+> | Msg2 PDSCH | 10 | 2.06 | 1.77 |
+> | Msg4 PDSCH | 10 | 1.00 | 1.25 |
+> | PRACH format 0 | 8 | -2.28 | 0.50 |
+> | PRACH format B4 | 7 | -4.37 | 0.61 |
+> | PRACH format C2 | 7 | -7.96 | 0.94 |
+> | Msg3 PUSCH | 10 | -7.94 | 0.78 |
+> | Msg5 PUSCH | 10 | -13.67 | 3.33 |
+> | PUCCH format 1 | 8 | -0.50 | 0.91 |
+> Table X: Coverage gap relative to 143 dB MaxCL for different signals and channels during initial access based on R15 NR assumptions, 2.6 GHz, 30kHz SCS, 2T1R for DL
+> | Signals/channels | Number of Sample(s) | Coverage gap (trimmed mean) | Standard Deviation (w/o outlier) |
+> | PSS/SSS w/o combining | 10 | -7.06 | 1.89 |
+> | PBCH w/o combining | 10 | -4.74 | 2.63 |
+> | PSS/SSS w/ 4 combining | 8 | 0.76 | 0.64 |
+> | PBCH w/ 4 combining | 10 | 1.93 | 1.36 |
+> | SIB1 PDCCH | 10 | -1.45 | 0.57 |
+> | SIB1 PDSCH | 10 | -2.66 | 0.91 |
+> | Msg2 PDSCH | 9 | -1.21 | 1.26 |
+> | Msg4 PDSCH | 9 | -2.20 | 0.78 |
+> Table X: Coverage gap relative to 153 dB MaxCL for different signals and channels during initial access based on R15 NR assumptions, 2.6 GHz, 30kHz SCS, 2T2R for DL, 1T2R for UL
+> | Signals/channels | Number of Sample(s) | Coverage gap (trimmed mean) | Standard Deviation (w/o outlier) |
+> | PSS/SSS w/o combining | 10 | -11.80 | 0.88 |
+> | PBCH w/o combining | 11 | -9.55 | 1.46 |
+> | PSS/SSS w/ 4 combining | 8 | -6.04 | 0.73 |
+> | PBCH w/ 4 combining | 10 | -4.80 | 0.96 |
+> | SIB1 PDCCH | 11 | -7.68 | 0.33 |
+> | SIB1 PDSCH | 11 | -9.07 | 0.85 |
+> | Msg2 PDSCH | 10 | -7.94 | 1.77 |
+> | Msg4 PDSCH | 10 | -9.00 | 1.25 |
+> | PRACH format 0 | 8 | -12.28 | 0.50 |
+> | PRACH format B4 | 7 | -14.37 | 0.61 |
+> | PRACH format C2 | 7 | -17.96 | 0.94 |
+> | Msg3 PUSCH | 10 | -17.94 | 0.78 |
+> | Msg5 PUSCH | 10 | -23.67 | 3.33 |
+> | PUCCH format 1 | 8 | -10.50 | 0.91 |
+> Table X: Coverage gap relative to 153 dB MaxCL for different signals and channels during initial access based on R15 NR assumptions, 2.6 GHz, 30kHz SCS, 2T1R for DL
+> | Signals/channels | Number of Sample(s) | Coverage gap (trimmed mean) | Standard Deviation (w/o outlier) |
+> | PSS/SSS w/o combining | 10 | -17.06 | 1.89 |
+> | PBCH w/o combining | 10 | -14.74 | 2.63 |
+> | PSS/SSS w/ 4 combining | 8 | -9.24 | 0.64 |
+> | PBCH w/ 4 combining | 10 | -8.07 | 1.36 |
+> | SIB1 PDCCH | 10 | -11.45 | 0.57 |
+> | SIB1 PDSCH | 10 | -12.66 | 0.91 |
+> | Msg2 PDSCH | 9 | -11.21 | 1.26 |
+> | Msg4 PDSCH | 9 | -12.20 | 0.78 |
+
+출처: [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Synchronization and Beam Measurement]`
+
+**Agreement** · `10.5.1.1` Synchronization acquisition and beam measurement · `RAN1#127:10.5.1.1:005` · 🆕 신규 · Study
+
+> For the extended coverage of 153 dB MaxCL in TR 38.914, study how to meet the requirement with relaxed performance requirements compared to basic coverage for one or more channels/signals during initial access, e.g.:
+> - Additional latency, e.g., combining over a larger number of transmissions/periods
+> - Relaxed one-shot detection/decoding target, e.g., a relaxed MDR/BLER for a single transmission of a given signal/channel
+> - Note: the above does not imply there will be RAN4 requirement
+> - Note: The above does not imply that a new basic physical-signal or channel design is required to meet the 153 dB MaxCL target.
+
+출처: [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Synchronization and Beam Measurement]`
+
+**Agreement** · `10.5.1.1` Synchronization acquisition and beam measurement · `RAN1#127:10.5.1.1:006` · 🆕 신규 · 관련 주제: CSI-RS · Study
+
+> - For UEs in connected mode, additional transmission of synchronization signal(s)/reference signals in addition to the SSBs for initial cell search is supported for at least for T/F tracking and RLM/RRM of serving cell
+> - For UEs in idle mode, additional transmission of synchronization/reference signal(s) in addition to the SSBs for initial cell search is provided for fine T/F tracking and beam acquisition
+> - FFS: the signal structure of additional synchronization/reference signal(s), including
+>   - Alt 1: 6GR SSB
+>   - Alt 2: PSS and/or SSS without PBCH or without PBCH data REs
+>   - Alt 3: CSI-RS
+
+FFS 1줄
+
+출처: [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Synchronization and Beam Measurement]`
+
+**Agreement** · `10.5.1.1` Synchronization acquisition and beam measurement · `RAN1#127:10.5.1.1:007` · 🆕 신규 · Study
+
+> Study FDMed paging, where the paging occasions/messages are multiplexed in frequency domain, to facilitate network energy savings
+
+출처: [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Synchronization and Beam Measurement]`
 
 **Agreement** · `10.5.3.4` Beam management for downlink and uplink · `RAN1#127:10.5.3.4:001` · 🆕 신규 · Study
 
 > At least for FR2, study UE UL beam sweeping for 6GR targeting at least Asymmetric DL sTRP and UL mTRP.
 > Note: Which multi-TRP transmission scheme to be supported will be discussed under other agenda.
 
-출처: [Chair notes RAN1#127_v09](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) · `[127-R20-6GR-Beam management]`
+출처: [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Beam management]`
 
 **Agreement** · `10.5.3.4` Beam management for downlink and uplink · `RAN1#127:10.5.3.4:002` · 🆕 신규 · Study
 
 > - Study the procedure of NW initiated UL beam sweeping considering, at least for FR2
 >   - At least consider inter-symbol NW/UE-side beam sweeping including multiple UL RS(s) for UL Tx beam sweeping/repetition.
 
-출처: [Chair notes RAN1#127_v09](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) · `[127-R20-6GR-Beam management]`
+출처: [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Beam management]`
+
+**Agreement** · `10.5.3.4` Beam management for downlink and uplink · `RAN1#127:10.5.3.4:003` · 🆕 신규 · Study
+
+> For RAN4 LS on 6G FR2 UE digital beamforming architecture [R1-2609011/R4-2621663]:
+> - RAN1 notes that 6GR Layer 1 procedures are not specific to a particular UE RF beamforming architecture. At this stage, RAN1 has not identified L1 procedure or specification changes specific to UE digital beamforming architecture for FR2.
+>   - RAN1 does not specify the UE beamforming architecture for FR2; it is up to UE implementation.
+
+출처: [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Beam management]`
 
 ## RAN1#126bis — 18건
 

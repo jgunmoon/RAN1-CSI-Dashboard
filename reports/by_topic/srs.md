@@ -1,11 +1,11 @@
 # SRS — RAN1 CSI 결정
 
-> 원본 DB 마지막 업데이트 **2026-11-19 13:30 KST** · [요약으로 돌아가기](../README.md)
+> 원본 DB 마지막 업데이트 **2026-11-20 13:18 KST** · [요약으로 돌아가기](../README.md)
 
-주된 주제가 SRS인 확정 185건 (Agreement 173 · WA 1 · Conclusion 11), 후보 58건. 결정 본문은 Chair notes 원문 그대로입니다(요약 없음). 최신 회의부터 보여줍니다.
+주된 주제가 SRS인 확정 187건 (Agreement 175 · WA 1 · Conclusion 11), 후보 58건. 결정 본문은 Chair notes 원문 그대로입니다(요약 없음). 최신 회의부터 보여줍니다.
 주된 주제가 다른 결정 중 이 주제가 관련 주제로 붙은 것은 맨 아래 '관련 결정'에 모았습니다.
 
-## RAN1#127 (잠정) — 7건
+## RAN1#127 (잠정) — 9건
 
 **Agreement** · `10.5.3.2` Aspects of uplink-based CSI acquisition · `RAN1#127:10.5.3.2:001` · 🆕 신규 · Study
 
@@ -14,13 +14,13 @@
 > - The maximum number of cyclic shifts up to 12 for comb-4
 > - The maximum number of cyclic shifts up to 6 for comb-8
 
-출처: [Chair notes RAN1#127_v09](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) · `[127-R20-6GR-Aspects of UL based CSI acquisition]`
+출처: [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Aspects of UL based CSI acquisition]`
 
 **Agreement** · `10.5.3.2` Aspects of uplink-based CSI acquisition · `RAN1#127:10.5.3.2:002` · 🆕 신규 · Study
 
 > Support SRS repetition in 6GR.
 
-출처: [Chair notes RAN1#127_v09](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) · `[127-R20-6GR-Aspects of UL based CSI acquisition]`
+출처: [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Aspects of UL based CSI acquisition]`
 
 **Agreement** · `10.5.3.2` Aspects of uplink-based CSI acquisition · `RAN1#127:10.5.3.2:003` · 🆕 신규 · Study
 
@@ -31,7 +31,7 @@
 
 FFS 1줄
 
-출처: [Chair notes RAN1#127_v09](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) · `[127-R20-6GR-Aspects of UL based CSI acquisition]`
+출처: [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Aspects of UL based CSI acquisition]`
 
 **Agreement** · `10.5.3.2` Aspects of uplink-based CSI acquisition · `RAN1#127:10.5.3.2:004` · 🆕 신규 · 관련 주제: CSI 보고/codebook · Study
 
@@ -44,7 +44,7 @@ FFS 1줄
 
 FFS 3줄
 
-출처: [Chair notes RAN1#127_v09](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) · `[127-R20-6GR-Aspects of UL based CSI acquisition]`
+출처: [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Aspects of UL based CSI acquisition]`
 
 **Agreement** · `10.5.3.2` Aspects of uplink-based CSI acquisition · `RAN1#127:10.5.3.2:005` · 🆕 신규 · Study
 
@@ -56,19 +56,9 @@ FFS 3줄
 
 FFS 1줄
 
-출처: [Chair notes RAN1#127_v09](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) · `[127-R20-6GR-Aspects of UL based CSI acquisition]`
+출처: [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Aspects of UL based CSI acquisition]`
 
 **Agreement** · `10.5.3.2` Aspects of uplink-based CSI acquisition · `RAN1#127:10.5.3.2:006` · 🆕 신규 · Study
-
-> For the following 2-level SRS frequency hopping patterns for 6GR:
-> - Pattern 1-X: Down-select one from the following patterns:
-> - Pattern 1-2 (Option 1 + Option 2): Hopping over the whole BW with one or multiple frequency hops following nested tree-like frequency hopping pattern as in NR, and the SRS pattern within each frequency hop follows the partial frequency sounding pattern with(opt 2.1)/without(opt 2.2) intra-repetition hopping
-> - Pattern 1-3 (Option 1 + Option3): Hopping over the whole BW with one or multiple frequency hops following nested tree-like frequency hopping pattern as in NR, and the SRS pattern within each frequency hop follows the sequential hopping pattern
-> Note 1: The first level of 2-level hopping pattern(s) can serves as the corresponding single-level SRS frequency hopping pattern
-
-출처: [Chair notes RAN1#127_v09](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) · `[127-R20-6GR-Aspects of UL based CSI acquisition]`
-
-**Agreement** · `10.5.3.2` Aspects of uplink-based CSI acquisition · `RAN1#127:10.5.3.2:007` · 🆕 신규 · Study
 
 구현 영향: 처리 시간·CPU, 포트·자원·레이어 수
 
@@ -88,7 +78,35 @@ FFS 1줄
 
 FFS 3줄
 
-출처: [Chair notes RAN1#127_v09](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) · `[127-R20-6GR-Aspects of UL based CSI acquisition]`
+출처: [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Aspects of UL based CSI acquisition]`
+
+**Agreement** · `10.5.3.2` Aspects of uplink-based CSI acquisition · `RAN1#127:10.5.3.2:007` · 🆕 신규 · Study
+
+> For 2-level SRS frequency hopping patterns for 6GR, support the following pattern within frequency hopping period (Option 1 + Option 2):
+> - First level: Hopping over the whole BW with one or multiple frequency hops following nested tree-like frequency hopping pattern as in NR, and
+> - Second level: SRS within each frequency hop follows the partial frequency sounding.
+>   - Support fixed hopping patterns in the second level.
+>   - Details FFS. At least consider intra-repetition hopping specified in R20.
+> Note: The first level of 2-level hopping pattern can serve as the single-level SRS frequency hopping pattern
+
+출처: [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Aspects of UL based CSI acquisition]`
+
+**Agreement** · `10.5.3.2` Aspects of uplink-based CSI acquisition · `RAN1#127:10.5.3.2:008` · 🆕 신규 · Study
+
+> For 6GR SRS, support start RB hopping across different frequency hopping periods.
+
+출처: [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Aspects of UL based CSI acquisition]`
+
+**Agreement** · `10.5.3.2` Aspects of uplink-based CSI acquisition · `RAN1#127:10.5.3.2:009` · 🆕 신규 · 관련 주제: CSI 보고/codebook · Study
+
+구현 영향: 처리 시간·CPU
+
+> Send an LS to RAN4 to clarify the UE RF retuning/switching timeline and requirement when switching SRS between different frequency chunks under DL/UL CBW asymmetry, and inform RAN4 the agreements about SRS.
+> Email discussion on evaluation and results collection for UL-based CSI acquisition (Dec.1~Dec.11)
+> - Templates
+> - Results collection
+
+출처: [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Aspects of UL based CSI acquisition]`
 
 ## RAN1#126bis — 25건
 
@@ -2149,7 +2167,7 @@ FFS 3줄
 
 FFS 2줄
 
-출처: [Chair notes RAN1#127_v09](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) · `[127-R20-6GR-Other signals, channels, and procedures]`
+출처: [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Other signals, channels, and procedures]`
 
 **WA** · `10.6.3` WUS operation with other functionalities · `RAN1#127:10.6.3:002` · 후보 · 🆕 신규 · 관련 주제: CSI 보고/codebook · Study
 
@@ -2160,7 +2178,7 @@ FFS 2줄
 
 FFS 2줄
 
-출처: [Chair notes RAN1#127_v09](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) · `[127-R20-6GR-WUS operation with other functionalities]`
+출처: [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-WUS operation with other functionalities]`
 
 ### RAN1#126bis — 6건
 

@@ -1,8 +1,8 @@
 # RAN1 CSI 결정 대시보드
 
-> 원본 DB 마지막 업데이트 **2026-11-19 13:30 KST** · 범위 RAN1#122 – #127 (9회) · [HTML 대시보드](https://jgunmoon.github.io/RAN1-CSI-Dashboard/) · 원본 [jgunmoon/RAN1-Decision-Tracker](https://github.com/jgunmoon/RAN1-Decision-Tracker)
+> 원본 DB 마지막 업데이트 **2026-11-20 13:18 KST** · 범위 RAN1#122 – #127 (9회) · [HTML 대시보드](https://jgunmoon.github.io/RAN1-CSI-Dashboard/) · 원본 [jgunmoon/RAN1-Decision-Tracker](https://github.com/jgunmoon/RAN1-Decision-Tracker)
 
-> ⚠️ **RAN1#127는 '잠정'** 결과입니다 (`Chair notes RAN1#127_v09.docx` 기준, 회의 종료본 전). 결정이 바뀌거나 빠질 수 있습니다.
+> ⚠️ **RAN1#127는 '잠정'** 결과입니다 (`Chair notes RAN1#127_v12.docx` 기준, 회의 종료본 전). 결정이 바뀌거나 빠질 수 있습니다.
 
 > ⚠️ **Agenda 확인 필요 (RAN1#126bis → RAN1#127)** — 결정이 범위에서 조용히 빠지지 않도록 확인하세요.
 >
@@ -19,8 +19,8 @@
 
 | 구분 | 건수 |
 |---|---:|
-| 확정 (포함 Agenda + 수동 포함) | **753** (Agreement 701 · WA 4 · Conclusion 48) |
-| 후보 (다른 Agenda의 키워드 일치, 확인 필요) | 212 |
+| 확정 (포함 Agenda + 수동 포함) | **764** (Agreement 712 · WA 4 · Conclusion 48) |
+| 후보 (다른 Agenda의 키워드 일치, 확인 필요) | 213 |
 
 ## 직전 회의 대비 (RAN1#126bis → RAN1#127)
 
@@ -29,12 +29,12 @@
 | 주제 | #126bis | **#127** | 증감 |
 |---|---:|---:|---:|
 | [AI/ML CSI](by_topic/aiml.md) | 7 | **0** | -7 |
-| [SRS](by_topic/srs.md) | 24 | **7** | -17 |
-| [Beam management](by_topic/beam.md) | 18 | **5** | -13 |
+| [SRS](by_topic/srs.md) | 24 | **9** | -15 |
+| [Beam management](by_topic/beam.md) | 18 | **10** | -8 |
 | [CSI 보고/codebook](by_topic/report.md) | 17 | **5** | -12 |
-| [CSI-RS](by_topic/csirs.md) | 5 | **1** | -4 |
+| [CSI-RS](by_topic/csirs.md) | 5 | **5** | +0 |
 | [기타 CSI](by_topic/other.md) | 11 | **0** | -11 |
-| **합계** | 82 | **18** | -64 |
+| **합계** | 82 | **29** | -53 |
 
 ## 주제별 · 회의별 Agreement
 
@@ -45,19 +45,19 @@
 | 주된 주제 | #122 | #122bis | #123 | #124 | #124bis | #125 | #126 | #126bis | #127 | 합계 | 관련 포함 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | [AI/ML CSI](by_topic/aiml.md) | 58 | 43 | 15 | 17 | 15 | 13 | 10 | 7 | · | **178** | 192 |
-| [SRS](by_topic/srs.md) | 28 | 16 | 9 | 17 | 25 | 21 | 26 | 24 | 7 | **173** | 185 |
-| [Beam management](by_topic/beam.md) | 15 | 3 | 3 | 15 | 11 | 22 | 31 | 18 | 5 | **123** | 144 |
-| [CSI 보고/codebook](by_topic/report.md) | 21 | 33 | 5 | 8 | 14 | 14 | 13 | 17 | 5 | **130** | 379 |
-| [CSI-RS](by_topic/csirs.md) | 4 | 1 | 1 | 4 | 8 | 9 | 9 | 5 | 1 | **42** | 190 |
+| [SRS](by_topic/srs.md) | 28 | 16 | 9 | 17 | 25 | 21 | 26 | 24 | 9 | **175** | 187 |
+| [Beam management](by_topic/beam.md) | 15 | 3 | 3 | 15 | 11 | 22 | 31 | 18 | 10 | **128** | 149 |
+| [CSI 보고/codebook](by_topic/report.md) | 21 | 33 | 5 | 8 | 14 | 14 | 13 | 17 | 5 | **130** | 380 |
+| [CSI-RS](by_topic/csirs.md) | 4 | 1 | 1 | 4 | 8 | 9 | 9 | 5 | 5 | **46** | 195 |
 | [기타 CSI](by_topic/other.md) | 16 | 15 | 6 | 1 | 1 | 2 | 3 | 11 | · | **55** | 55 |
-| **합계** | **142** | **111** | **39** | **62** | **74** | **81** | **92** | **82** | **18** | **701** | — |
+| **합계** | **142** | **111** | **39** | **62** | **74** | **81** | **92** | **82** | **29** | **712** | — |
 
 ```mermaid
 xychart-beta
     title "회의별 CSI Agreement (확정 범위)"
     x-axis ["#122", "#122bis", "#123", "#124", "#124bis", "#125", "#126", "#126bis", "#127"]
     y-axis "건수" 0 --> 147
-    bar [142, 111, 39, 62, 74, 81, 92, 82, 18]
+    bar [142, 111, 39, 62, 74, 81, 92, 82, 29]
 ```
 
 ## 포함 Agenda별 · 회의별 Agreement
@@ -66,10 +66,10 @@ Agenda 번호는 회의마다 바뀌므로 '섹션 + Agenda 제목'으로 이어
 
 | Agenda | #122 | #122bis | #123 | #124 | #124bis | #125 | #126 | #126bis | #127 | 합계 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Aspects of downlink-based CSI acquisition (Rel-20 Study of 6GR, 최근 10.5.3.1) | · | · | · | 5 | 17 | 18 | 20 | 21 | 6 | **87** |
-| Aspects of uplink-based CSI acquisition (Rel-20 Study of 6GR, 최근 10.5.3.2) | · | · | · | 5 | 14 | 9 | 7 | 12 | 7 | **54** |
-| Beam management for downlink and uplink (Rel-20 Study of 6GR, 최근 10.5.3.4) | · | · | · | 4 | 9 | 13 | 12 | 9 | 2 | **49** |
-| Synchronization acquisition and beam measurement (Rel-20 Study of 6GR, 최근 10.5.1.1) | · | · | · | 6 | 1 | 8 | 15 | 8 | 3 | **41** |
+| Aspects of downlink-based CSI acquisition (Rel-20 Study of 6GR, 최근 10.5.3.1) | · | · | · | 5 | 17 | 18 | 20 | 21 | 10 | **91** |
+| Aspects of uplink-based CSI acquisition (Rel-20 Study of 6GR, 최근 10.5.3.2) | · | · | · | 5 | 14 | 9 | 7 | 12 | 9 | **56** |
+| Beam management for downlink and uplink (Rel-20 Study of 6GR, 최근 10.5.3.4) | · | · | · | 4 | 9 | 13 | 12 | 9 | 3 | **50** |
+| Synchronization acquisition and beam measurement (Rel-20 Study of 6GR, 최근 10.5.1.1) | · | · | · | 6 | 1 | 8 | 15 | 8 | 7 | **45** |
 | CSI acquisition and report: Other aspects (TRS, DL+UL 결합 CSI 등) (Rel-20 Study of 6GR, 최근 10.5.3.3) | · | · | · | 5 | 9 | 5 | 8 | 12 | · | **39** |
 | NR MIMO Phase 6 (상위 Agenda) (Release 20 NR, 최근 9.2) | · | · | · | · | 7 | 14 | 15 | 12 | · | **48** |
 | Enhancing DL CSI acquisition (Release 20 NR, 최근 9.2.2) | 8 | 12 | 5 | 9 | · | · | · | · | · | **34** |
@@ -83,32 +83,43 @@ Agenda 번호는 회의마다 바뀌므로 '섹션 + Agenda 제목'으로 이어
 | Maintenance on AI/ML·MIMO Ph5·NES·NTN (CSI 키워드·조항 있는 결정만) (Maintenance on Rel-19 NR and E-UTRA, 최근 8.1) | · | · | · | · | · | 5 | 7 | 2 | · | **14** |
 | AI/ML: Specification support for beam management (Maintenance on Rel-19 NR and E-UTRA, 최근 8.1.1) | 12 | · | · | · | · | · | · | · | · | **12** |
 | AI/ML: Specification support for CSI prediction (Maintenance on Rel-19 NR and E-UTRA, 최근 8.1.3) | 9 | · | · | · | · | · | · | · | · | **9** |
-| **합계** | **142** | **111** | **39** | **62** | **74** | **81** | **92** | **82** | **18** | **701** |
+| **합계** | **142** | **111** | **39** | **62** | **74** | **81** | **92** | **82** | **29** | **712** |
 
-## RAN1#127 신규 CSI Agreement (18건)
+## RAN1#127 신규 CSI Agreement (29건)
 
 아래 문장은 요약이 아니라 **원문 첫 줄**입니다(길면 자름). 전체 원문은 주제별 리포트와 HTML 대시보드에 있습니다.
 
 | 주제 | Agenda | 원문 첫 줄 | 출처 |
 |---|---|---|---|
-| Beam management | 10.5.1.1 Synchronization acquisition and beam measurement | For 6GR PSS, | [Chair notes RAN1#127_v09](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) · `[127-R20-6GR-Synchronization and Beam Measurement]` |
-| Beam management | 10.5.1.1 Synchronization acquisition and beam measurement | For 6GR SSS | [Chair notes RAN1#127_v09](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) · `[127-R20-6GR-Synchronization and Beam Measurement]` |
-| Beam management | 10.5.1.1 Synchronization acquisition and beam measurement | For SSB design, downselect one from Alt 1 and Alt 2, | [Chair notes RAN1#127_v09](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) · `[127-R20-6GR-Synchronization and Beam Measurement]` |
-| CSI 보고/codebook | 10.5.3.1 Aspects of downlink-based CSI acquisition | - For NW-triggered CSI reporting, support Aperiodic CSI reporting on PUSCH for both wideband and subband CSI … | [Chair notes RAN1#127_v09](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]` |
-| CSI-RS | 10.5.3.1 Aspects of downlink-based CSI acquisition | For 6GR, the maximum number of CSI-RS ports is 256 | [Chair notes RAN1#127_v09](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]` |
-| CSI 보고/codebook | 10.5.3.1 Aspects of downlink-based CSI acquisition | For the 6GR codebook design for CSI report, for sTRP, targeting different use cases, support W1W2 structure b… | [Chair notes RAN1#127_v09](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]` |
-| CSI 보고/codebook | 10.5.3.1 Aspects of downlink-based CSI acquisition | For the 6GR codebook design for CSI report, for CJT, RAN 1 recommends to support at least one of the W1W2 str… | [Chair notes RAN1#127_v09](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]` |
-| CSI 보고/codebook | 10.5.3.1 Aspects of downlink-based CSI acquisition | - For UE-assisted report for the 6GR DL based CSI, to facilitate CJT deployments, RAN 1 recommends to support… | [Chair notes RAN1#127_v09](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]` |
-| CSI 보고/codebook | 10.5.3.1 Aspects of downlink-based CSI acquisition | For UE-assisted report for the 6GR DL based CSI, RAN 1 recommends to support Channel Property Information (CP… | [Chair notes RAN1#127_v09](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]` |
-| SRS | 10.5.3.2 Aspects of uplink-based CSI acquisition | Support at least the following combinations of comb value and cyclic shift for comb values less than or equal… | [Chair notes RAN1#127_v09](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) · `[127-R20-6GR-Aspects of UL based CSI acquisition]` |
-| SRS | 10.5.3.2 Aspects of uplink-based CSI acquisition | Support SRS repetition in 6GR. | [Chair notes RAN1#127_v09](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) · `[127-R20-6GR-Aspects of UL based CSI acquisition]` |
-| SRS | 10.5.3.2 Aspects of uplink-based CSI acquisition | For DL CBW larger than 200MHz, for sounding of all parts of the target bandwidth over multiple transmissions … | [Chair notes RAN1#127_v09](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) · `[127-R20-6GR-Aspects of UL based CSI acquisition]` |
-| SRS | 10.5.3.2 Aspects of uplink-based CSI acquisition | Support at least the following case of sharing one SRS transmission occasion for multiple usages: | [Chair notes RAN1#127_v09](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) · `[127-R20-6GR-Aspects of UL based CSI acquisition]` |
-| SRS | 10.5.3.2 Aspects of uplink-based CSI acquisition | For 6GR, support at least the following interference randomization mechanisms | [Chair notes RAN1#127_v09](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) · `[127-R20-6GR-Aspects of UL based CSI acquisition]` |
-| SRS | 10.5.3.2 Aspects of uplink-based CSI acquisition | For the following 2-level SRS frequency hopping patterns for 6GR: | [Chair notes RAN1#127_v09](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) · `[127-R20-6GR-Aspects of UL based CSI acquisition]` |
-| SRS | 10.5.3.2 Aspects of uplink-based CSI acquisition | Support dynamic adaptation (other than RRC configuration) of at least one of the following parameters of SRS: | [Chair notes RAN1#127_v09](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) · `[127-R20-6GR-Aspects of UL based CSI acquisition]` |
-| Beam management | 10.5.3.4 Beam management for downlink and uplink | At least for FR2, study UE UL beam sweeping for 6GR targeting at least Asymmetric DL sTRP and UL mTRP. | [Chair notes RAN1#127_v09](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) · `[127-R20-6GR-Beam management]` |
-| Beam management | 10.5.3.4 Beam management for downlink and uplink | - Study the procedure of NW initiated UL beam sweeping considering, at least for FR2 | [Chair notes RAN1#127_v09](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) · `[127-R20-6GR-Beam management]` |
+| Beam management | 10.5.1.1 Synchronization acquisition and beam measurement | For 6GR PSS, | [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Synchronization and Beam Measurement]` |
+| Beam management | 10.5.1.1 Synchronization acquisition and beam measurement | For 6GR SSS | [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Synchronization and Beam Measurement]` |
+| Beam management | 10.5.1.1 Synchronization acquisition and beam measurement | For SSB design, downselect one from Alt 1 and Alt 2, | [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Synchronization and Beam Measurement]` |
+| Beam management | 10.5.1.1 Synchronization acquisition and beam measurement | The coverage gaps relative to the basic coverage of 143 dB MaxCL and extended coverage of 153 dB MaxCL for di… | [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Synchronization and Beam Measurement]` |
+| Beam management | 10.5.1.1 Synchronization acquisition and beam measurement | For the extended coverage of 153 dB MaxCL in TR 38.914, study how to meet the requirement with relaxed perfor… | [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Synchronization and Beam Measurement]` |
+| Beam management | 10.5.1.1 Synchronization acquisition and beam measurement | - For UEs in connected mode, additional transmission of synchronization signal(s)/reference signals in additi… | [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Synchronization and Beam Measurement]` |
+| Beam management | 10.5.1.1 Synchronization acquisition and beam measurement | Study FDMed paging, where the paging occasions/messages are multiplexed in frequency domain, to facilitate ne… | [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Synchronization and Beam Measurement]` |
+| CSI 보고/codebook | 10.5.3.1 Aspects of downlink-based CSI acquisition | - For NW-triggered CSI reporting, support Aperiodic CSI reporting on PUSCH for both wideband and subband CSI … | [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]` |
+| CSI-RS | 10.5.3.1 Aspects of downlink-based CSI acquisition | For 6GR, the maximum number of CSI-RS ports is 256 | [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]` |
+| CSI 보고/codebook | 10.5.3.1 Aspects of downlink-based CSI acquisition | For the 6GR codebook design for CSI report, for sTRP, targeting different use cases, support W1W2 structure b… | [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]` |
+| CSI 보고/codebook | 10.5.3.1 Aspects of downlink-based CSI acquisition | For the 6GR codebook design for CSI report, for CJT, RAN 1 recommends to support at least one of the W1W2 str… | [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]` |
+| CSI 보고/codebook | 10.5.3.1 Aspects of downlink-based CSI acquisition | - For UE-assisted report for the 6GR DL based CSI, to facilitate CJT deployments, RAN 1 recommends to support… | [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]` |
+| CSI 보고/codebook | 10.5.3.1 Aspects of downlink-based CSI acquisition | For UE-assisted report for the 6GR DL based CSI, RAN 1 recommends to support Channel Property Information (CP… | [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]` |
+| CSI-RS | 10.5.3.1 Aspects of downlink-based CSI acquisition | 6GR CSI-RS supports the following numbers of ports: 1, 2, 4, 8, 12, 16, 24, 32, 48, 64, 128, 256 | [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]` |
+| CSI-RS | 10.5.3.1 Aspects of downlink-based CSI acquisition | For 6GR CSI-RS CDM size and type, prioritize the following candidates for further down-selection per port num… | [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]` |
+| CSI-RS | 10.5.3.1 Aspects of downlink-based CSI acquisition | For 6GR CSI-RS, on the study of options to address the potential inter-cell interference issue caused by NR C… | [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]` |
+| CSI-RS | 10.5.3.1 Aspects of downlink-based CSI acquisition | On the locations of M2 RBs in each RB set for 6GR CSI-RS, support | [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]` |
+| SRS | 10.5.3.2 Aspects of uplink-based CSI acquisition | Support at least the following combinations of comb value and cyclic shift for comb values less than or equal… | [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Aspects of UL based CSI acquisition]` |
+| SRS | 10.5.3.2 Aspects of uplink-based CSI acquisition | Support SRS repetition in 6GR. | [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Aspects of UL based CSI acquisition]` |
+| SRS | 10.5.3.2 Aspects of uplink-based CSI acquisition | For DL CBW larger than 200MHz, for sounding of all parts of the target bandwidth over multiple transmissions … | [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Aspects of UL based CSI acquisition]` |
+| SRS | 10.5.3.2 Aspects of uplink-based CSI acquisition | Support at least the following case of sharing one SRS transmission occasion for multiple usages: | [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Aspects of UL based CSI acquisition]` |
+| SRS | 10.5.3.2 Aspects of uplink-based CSI acquisition | For 6GR, support at least the following interference randomization mechanisms | [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Aspects of UL based CSI acquisition]` |
+| SRS | 10.5.3.2 Aspects of uplink-based CSI acquisition | Support dynamic adaptation (other than RRC configuration) of at least one of the following parameters of SRS: | [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Aspects of UL based CSI acquisition]` |
+| SRS | 10.5.3.2 Aspects of uplink-based CSI acquisition | For 2-level SRS frequency hopping patterns for 6GR, support the following pattern within frequency hopping pe… | [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Aspects of UL based CSI acquisition]` |
+| SRS | 10.5.3.2 Aspects of uplink-based CSI acquisition | For 6GR SRS, support start RB hopping across different frequency hopping periods. | [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Aspects of UL based CSI acquisition]` |
+| SRS | 10.5.3.2 Aspects of uplink-based CSI acquisition | Send an LS to RAN4 to clarify the UE RF retuning/switching timeline and requirement when switching SRS betwee… | [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Aspects of UL based CSI acquisition]` |
+| Beam management | 10.5.3.4 Beam management for downlink and uplink | At least for FR2, study UE UL beam sweeping for 6GR targeting at least Asymmetric DL sTRP and UL mTRP. | [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Beam management]` |
+| Beam management | 10.5.3.4 Beam management for downlink and uplink | - Study the procedure of NW initiated UL beam sweeping considering, at least for FR2 | [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Beam management]` |
+| Beam management | 10.5.3.4 Beam management for downlink and uplink | For RAN4 LS on 6G FR2 UE digital beamforming architecture [R1-2609011/R4-2621663]: | [Chair notes RAN1#127_v12](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) · `[127-R20-6GR-Beam management]` |
 
 ## 최근 변경 이력
 
@@ -117,22 +128,29 @@ Agenda 번호는 회의마다 바뀌므로 '섹션 + Agenda 제목'으로 이어
 
 | 시각 (UTC) | 이유 | 새 회의 | 기존 회의 추가 | 변경 | 삭제 |
 |---|---|---|---:|---:|---:|
+| 2026-11-20 08:37 | 원본 회의록 갱신 | — | 12 | 2 | 0 |
 | 2026-11-19 08:51 | 원본 회의록 갱신 | — | 8 | 0 | 0 |
 | 2026-11-18 08:36 | 원본 회의록 갱신 | RAN1#127 14건 | 0 | 0 | 0 |
 | 2026-10-20 08:01 | 대시보드 범위 조정 (RAN1 회의록 변화 아님) | — | 25 | 68 | 2 |
 
-<details><summary>가장 최근(2026-11-19) 기존 회의 변경 8건 펼치기</summary>
+<details><summary>가장 최근(2026-11-20) 기존 회의 변경 14건 펼치기</summary>
 
 | 변경 | 회의 | 구분 | 범위 | Agenda | 원문 첫 줄 | id |
 |---|---|---|---|---|---|---|
-| 추가 | RAN1#127 | Agreement | 확정 | 10.5.1.1 Synchronization acquisition and beam measurement | For SSB design, downselect one from Alt 1 and Alt 2, | [`RAN1#127:10.5.1.1:003`](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) |
-| 추가 | RAN1#127 | Agreement | 확정 | 10.5.3.1 Aspects of downlink-based CSI acquisition | For the 6GR codebook design for CSI report, for sTRP, targeting different use cases, support W1W2 structure based and W1W2Wf structure base… | [`RAN1#127:10.5.3.1:004`](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) |
-| 추가 | RAN1#127 | Agreement | 확정 | 10.5.3.1 Aspects of downlink-based CSI acquisition | For the 6GR codebook design for CSI report, for CJT, RAN 1 recommends to support at least one of the W1W2 structure based and W1W2Wf struct… | [`RAN1#127:10.5.3.1:005`](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) |
-| 추가 | RAN1#127 | Agreement | 확정 | 10.5.3.1 Aspects of downlink-based CSI acquisition | - For UE-assisted report for the 6GR DL based CSI, to facilitate CJT deployments, RAN 1 recommends to support CJT calibration (CJTC) report… | [`RAN1#127:10.5.3.1:006`](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) |
-| 추가 | RAN1#127 | Conclusion | 확정 | 10.5.3.1 Aspects of downlink-based CSI acquisition | For study on PAPR reduction for JSCM-based CSI compression, deprioritize Option 2. | [`RAN1#127:10.5.3.1:007`](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) |
-| 추가 | RAN1#127 | Agreement | 확정 | 10.5.3.1 Aspects of downlink-based CSI acquisition | For UE-assisted report for the 6GR DL based CSI, RAN 1 recommends to support Channel Property Information (CPI) reports at least for SD: | [`RAN1#127:10.5.3.1:008`](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) |
-| 추가 | RAN1#127 | Agreement | 확정 | 10.5.3.2 Aspects of uplink-based CSI acquisition | Support dynamic adaptation (other than RRC configuration) of at least one of the following parameters of SRS: | [`RAN1#127:10.5.3.2:007`](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) |
-| 추가 | RAN1#127 | WA | 후보 | 10.6.3 WUS operation with other functionalities | For UEs in RRC_CONNECTED and configured with DL-WUS and C-DRX in 6GR, if WUS is used to activate the C-DRX active time, RAN1 to support the… | [`RAN1#127:10.6.3:002`](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v09.docx) |
+| 추가 | RAN1#127 | Agreement | 확정 | 10.5.1.1 Synchronization acquisition and beam measurement | The coverage gaps relative to the basic coverage of 143 dB MaxCL and extended coverage of 153 dB MaxCL for different signals and channels d… | [`RAN1#127:10.5.1.1:004`](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) |
+| 추가 | RAN1#127 | Agreement | 확정 | 10.5.1.1 Synchronization acquisition and beam measurement | For the extended coverage of 153 dB MaxCL in TR 38.914, study how to meet the requirement with relaxed performance requirements compared to… | [`RAN1#127:10.5.1.1:005`](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) |
+| 추가 | RAN1#127 | Agreement | 확정 | 10.5.1.1 Synchronization acquisition and beam measurement | - For UEs in connected mode, additional transmission of synchronization signal(s)/reference signals in addition to the SSBs for initial cel… | [`RAN1#127:10.5.1.1:006`](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) |
+| 추가 | RAN1#127 | Agreement | 확정 | 10.5.1.1 Synchronization acquisition and beam measurement | Study FDMed paging, where the paging occasions/messages are multiplexed in frequency domain, to facilitate network energy savings | [`RAN1#127:10.5.1.1:007`](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) |
+| 추가 | RAN1#127 | Agreement | 확정 | 10.5.3.1 Aspects of downlink-based CSI acquisition | 6GR CSI-RS supports the following numbers of ports: 1, 2, 4, 8, 12, 16, 24, 32, 48, 64, 128, 256 | [`RAN1#127:10.5.3.1:009`](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) |
+| 추가 | RAN1#127 | Agreement | 확정 | 10.5.3.1 Aspects of downlink-based CSI acquisition | For 6GR CSI-RS CDM size and type, prioritize the following candidates for further down-selection per port number basis | [`RAN1#127:10.5.3.1:010`](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) |
+| 추가 | RAN1#127 | Agreement | 확정 | 10.5.3.1 Aspects of downlink-based CSI acquisition | For 6GR CSI-RS, on the study of options to address the potential inter-cell interference issue caused by NR CSI-RS sequence mapping, and th… | [`RAN1#127:10.5.3.1:011`](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) |
+| 추가 | RAN1#127 | Agreement | 확정 | 10.5.3.1 Aspects of downlink-based CSI acquisition | On the locations of M2 RBs in each RB set for 6GR CSI-RS, support | [`RAN1#127:10.5.3.1:012`](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) |
+| 변경 (원문) | RAN1#127 | Agreement | 확정 | 10.5.3.2 Aspects of uplink-based CSI acquisition | Support dynamic adaptation (other than RRC configuration) of at least one of the following parameters of SRS: | [`RAN1#127:10.5.3.2:006`](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) |
+| 변경 (원문) | RAN1#127 | Agreement | 확정 | 10.5.3.2 Aspects of uplink-based CSI acquisition | For 2-level SRS frequency hopping patterns for 6GR, support the following pattern within frequency hopping period (Option 1 + Option 2): | [`RAN1#127:10.5.3.2:007`](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) |
+| 추가 | RAN1#127 | Agreement | 확정 | 10.5.3.2 Aspects of uplink-based CSI acquisition | For 6GR SRS, support start RB hopping across different frequency hopping periods. | [`RAN1#127:10.5.3.2:008`](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) |
+| 추가 | RAN1#127 | Agreement | 확정 | 10.5.3.2 Aspects of uplink-based CSI acquisition | Send an LS to RAN4 to clarify the UE RF retuning/switching timeline and requirement when switching SRS between different frequency chunks u… | [`RAN1#127:10.5.3.2:009`](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) |
+| 추가 | RAN1#127 | Agreement | 확정 | 10.5.3.4 Beam management for downlink and uplink | For RAN4 LS on 6G FR2 UE digital beamforming architecture [R1-2609011/R4-2621663]: | [`RAN1#127:10.5.3.4:003`](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) |
+| 추가 | RAN1#127 | Agreement | 후보 | 10.5.5 Other physical layer signals, channels and procedure | The information exchange between BSs for handling BS-to-BS CLI at least supports the following information: | [`RAN1#127:10.5.5:010`](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx) |
 
 </details>
 
@@ -148,7 +166,7 @@ Agenda 번호는 회의마다 바뀌므로 '섹션 + Agenda 제목'으로 이어
 | Rel-20 Study of 6GR | Uplink transmission scheme(s) for uplink channels | 10.5.2.3 | 15 |
 | Maintenance on Rel-19 NR and E-UTRA | Measurements related enhancements for LTM | 8.9.1 | 10 |
 | Rel-19 UE Features | UE features Batch C | 9.3 | 10 |
-| Rel-20 Study of 6GR | Other physical layer signals, channels and procedure | 10.5.5 | 9 |
+| Rel-20 Study of 6GR | Other physical layer signals, channels and procedure | 10.5.5 | 10 |
 | Maintenance on Rel-19 NR and E-UTRA | Maintenance on Low-power wake-up signal and receiver for NR (LP-WUS/WUR) | 8.5, 8.6 | 7 |
 | Rel-19 UE Features | UE features Batch B | 9.2 | 7 |
 | Rel-20 Study of 6GR | Downlink transmission scheme(s) for downlink shared channels | 10.5.2.2 | 7 |
