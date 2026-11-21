@@ -1,9 +1,41 @@
 # 기타 CSI — RAN1 CSI 결정
 
-> 원본 DB 마지막 업데이트 **2026-11-20 13:18 KST** · [요약으로 돌아가기](../README.md)
+> 원본 DB 마지막 업데이트 **2026-11-21 13:17 KST** · [요약으로 돌아가기](../README.md)
 
-주된 주제가 기타 CSI인 확정 63건 (Agreement 55 · WA 0 · Conclusion 8), 후보 0건. 결정 본문은 Chair notes 원문 그대로입니다(요약 없음). 최신 회의부터 보여줍니다.
+주된 주제가 기타 CSI인 확정 67건 (Agreement 58 · WA 0 · Conclusion 9), 후보 0건. 결정 본문은 Chair notes 원문 그대로입니다(요약 없음). 최신 회의부터 보여줍니다.
 주된 주제가 다른 결정 중 이 주제가 관련 주제로 붙은 것은 맨 아래 '관련 결정'에 모았습니다.
+
+## RAN1#127 — 4건
+
+**Conclusion** · `9.2` NR MIMO Phase 6 · `RAN1#127:9.2:002` · 🆕 신규 · 규격 작업 (WI)
+
+구현 영향: UE capability·FG
+
+> It is up to RAN2’s design on the condition of whether to send the UE capability signaling in MSG3 or not (e.g., based on MAC layer logical channel prioritization). There is no RAN1 enhancement on the maximum payload size of MSG3.
+
+출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · [R1-2609214](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2609214.zip) · `[127-R20-MIMO]`
+
+**Agreement** · `9.2` NR MIMO Phase 6 · `RAN1#127:9.2:006` · 🆕 신규 · 규격 작업 (WI)
+
+> ⚠️ 수식 누락 의심 — 원본 추출에서 Word 수식(변수·기호)이 빠졌을 수 있습니다. Chair notes 원문으로 확인하세요.
+
+> Support close-loop power control (CLPC) for MSG4-scheduled PUSCH when UE transition from IDLE/INACTIVE to CONNECTED mode, and reuse legacy CLPC mechanism, i.e.,
+> - For PUSCH initial Tx, the power control adjustment state is determined based on PRACH total power ramp-up and an absolute TPC command indicated via the MAC-CE in MSG4,
+> - For PUSCH Re-Tx scheduled by a DCI format 0_0, the power control adjustment state is determined based on a sum of the accumulated TPC command(s),  if TPC accumulation is enabled; otherwise, the power control adjustment state is determined based on the absolute TPC command indicated in the DCI,
+
+출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · [R1-2609214](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2609214.zip) · `[127-R20-MIMO]`
+
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#127:10.5.3.1:013` · 🆕 신규 · Study
+
+> For the supported W1W2Wf structure based schemes, for the FD basis design, support at least NR DFT FD basis design.
+
+출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]`
+
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#127:10.5.3.1:018` · 🆕 신규 · Study
+
+> Draft LS R1-2610974 on UE channel property information reporting is endorsed in principle.
+
+출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]`
 
 ## RAN1#126bis — 11건
 

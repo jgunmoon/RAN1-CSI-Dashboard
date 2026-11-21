@@ -1,9 +1,171 @@
 # AI/ML CSI — RAN1 CSI 결정
 
-> 원본 DB 마지막 업데이트 **2026-11-20 13:18 KST** · [요약으로 돌아가기](../README.md)
+> 원본 DB 마지막 업데이트 **2026-11-21 13:17 KST** · [요약으로 돌아가기](../README.md)
 
-주된 주제가 AI/ML CSI인 확정 188건 (Agreement 178 · WA 0 · Conclusion 10), 후보 5건. 결정 본문은 Chair notes 원문 그대로입니다(요약 없음). 최신 회의부터 보여줍니다.
+주된 주제가 AI/ML CSI인 확정 204건 (Agreement 188 · WA 0 · Conclusion 16), 후보 5건. 결정 본문은 Chair notes 원문 그대로입니다(요약 없음). 최신 회의부터 보여줍니다.
 주된 주제가 다른 결정 중 이 주제가 관련 주제로 붙은 것은 맨 아래 '관련 결정'에 모았습니다.
+
+## RAN1#127 — 16건
+
+**Agreement** · `9.1.1` CSI spatial/frequency compression without temporal aspects (“Case 0”) · `RAN1#127:9.1.1:001` · 🆕 신규 · 규격 작업 (WI)
+
+구현 영향: UE capability·FG
+
+> For L1 performance monitoring, support UE indication of monitoring output with 1-bit reliability indicator
+> - Report with wideband granularity and all layers
+>   - Value “0” indicates “unreliable”
+>   - Value “1” indicates “reliable”
+> - Note1: It is upto UE implementation how to determine the value of the reliability indicator bit.
+> - Note2: Supporting UE indication of monitoring output with 1-bit reliability indicator is upto separate UE capability reporting
+
+출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx)
+
+**Agreement** · `9.1.1` CSI spatial/frequency compression without temporal aspects (“Case 0”) · `RAN1#127:9.1.1:002` · 🆕 신규 · 관련 주제: CSI 보고/codebook · 규격 작업 (WI)
+
+구현 영향: 처리 시간·CPU, UE capability·FG, 측정·보고량
+
+> ⚠️ 수식 누락 의심 — 원본 추출에서 Word 수식(변수·기호)이 빠졌을 수 있습니다. Chair notes 원문으로 확인하세요.
+
+> For L1 performance monitoring and the reliability indication, support
+> - Configuring the reliability indication and inference in the same CSI reporting configuration
+> - Introduce a dedicated report quantity for reporting the reliability indicator and CSI (CQI, PMI, RI)
+> - report the 1-bit reliability indicator at the end of CSI part 1
+> - Dedicated AI/ML PU (, with   or ) and/or legacy CPU () are occupied where  and/or  is upto UE capability
+>   - and  are different than  and/or  reported for inference only.
+> - When reliability indication is configured, support CSI processing timeline {Z+t’’, Z’+t’’}, where t’’ is reported as UE capability and it is different than the t’ value reported for the case when reliability indicator is not configured
+
+출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx)
+
+**Agreement** · `9.1.1` CSI spatial/frequency compression without temporal aspects (“Case 0”) · `RAN1#127:9.1.1:003` · 🆕 신규 · 관련 주제: CSI 보고/codebook · 규격 작업 (WI)
+
+구현 영향: 측정·보고량
+
+> For CSI feedback via two-sided model, clarify that neither CRI nor LI is reported. UE is not expected to be configured with reportQuantity set to 'cri-RI-LI-PMI-CQI'.
+
+출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx)
+
+**Agreement** · `9.1.1` CSI spatial/frequency compression without temporal aspects (“Case 0”) · `RAN1#127:9.1.1:004` · 🆕 신규 · 관련 주제: CSI 보고/codebook, CSI-RS · 규격 작업 (WI)
+
+구현 영향: 처리 시간·CPU
+
+> For UE side data collection for CSI feedback via two-sided model, reuse the CPU duration agreed for Rel-19 CSI prediction:
+> - the CPU occupancy starts from the first symbol of each P/SP-CSI-RS occasion till Z3’ symbols after the P/SP-CSI-RS occasion.
+
+출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx)
+
+**Agreement** · `9.1.1` CSI spatial/frequency compression without temporal aspects (“Case 0”) · `RAN1#127:9.1.1:005` · 🆕 신규 · 관련 주제: CSI 보고/codebook · 규격 작업 (WI)
+
+> Regarding incoming LS R2-2608003 on L3 performance monitoring, reply to RAN2 that
+> - Answer to Q1:
+>   - According to previous LS R1-2310681 agreed in RAN1 114-bis, performance monitoring is near-real-time (e.g., several tens of msecs to a few seconds).
+>   - For L3 performance monitoring, whether the UE can log multiple samples and report later or the performance monitoring sample should be immediately reported upon obtaining target CSI and CSI feedback pair are upto RAN2 discussion.
+> - Answer to Q2:
+> - RAN1 has not agreed on any L1 event/condition to trigger UE initiated reporting for the L3-signaling based performance monitoring.
+> - Target CSI is quantized via the same format as NW data collection
+> - Note: From RAN1 point of view, monitoring based on L3 signalling and L1 signalling are independently considered.
+> - RAN1 would like to inform RAN2 about the following agreements:
+
+출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx)
+
+**Agreement** · `9.1.1` CSI spatial/frequency compression without temporal aspects (“Case 0”) · `RAN1#127:9.1.1:006` · 🆕 신규 · 규격 작업 (WI)
+
+구현 영향: UE capability·FG
+
+> For L1 performance monitoring, support UE indication of monitoring output with 1-bit reliability indicator
+> - Report with wideband granularity and all layers
+>   - Value “0” indicates “unreliable”
+>   - Value “1” indicates “reliable”
+> - Note1: It is upto UE implementation how to determine the value of the reliability indicator bit.
+> - Note2: Supporting UE indication of monitoring output with 1-bit reliability indicator is upto separate UE capability reporting
+
+출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx)
+
+**Agreement** · `9.1.1` CSI spatial/frequency compression without temporal aspects (“Case 0”) · `RAN1#127:9.1.1:007` · 🆕 신규 · 관련 주제: CSI 보고/codebook · 규격 작업 (WI)
+
+구현 영향: 처리 시간·CPU, UE capability·FG, 측정·보고량
+
+> ⚠️ 수식 누락 의심 — 원본 추출에서 Word 수식(변수·기호)이 빠졌을 수 있습니다. Chair notes 원문으로 확인하세요.
+
+> For L1 performance monitoring and the reliability indication, support
+> - Configuring the reliability indication and inference in the same CSI reporting configuration
+> - Introduce a dedicated report quantity for reporting the reliability indicator and CSI (CQI, PMI, RI)
+> - report the 1-bit reliability indicator at the end of CSI part 1
+> - Dedicated AI/ML PU (, with   or ) and/or legacy CPU () are occupied where  and/or  is upto UE capability
+>   - and  are different than  and/or  reported for inference only.
+> - When reliability indication is configured, support CSI processing timeline {Z+t’’, Z’+t’’}, where t’’ is reported as UE capability and it is different than the t’ value reported for the case when reliability indicator is not configured
+> The corresponding draft LS response to RAN2 in R1-2610955 is endorsed.
+> The final LS response to RAN2 in R1-2610956 is endorsed
+
+출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx)
+
+**Conclusion** · `9.1.1` CSI spatial/frequency compression without temporal aspects (“Case 0”) · `RAN1#127:9.1.1:008` · 🆕 신규 · 관련 주제: CSI 보고/codebook · 규격 작업 (WI)
+
+> There is no consensus on supporting target CSI restriction at UE side for CSI feedback via two-sided model in R20.
+
+출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · [R1-2610448](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2610448.zip)
+
+**Conclusion** · `9.1.1` CSI spatial/frequency compression without temporal aspects (“Case 0”) · `RAN1#127:9.1.1:009` · 🆕 신규 · 규격 작업 (WI)
+
+> For NW data collection,
+> - There is no consensus on reporting a suggested rank or any form of data quality indicator.
+> - There is no consensus on defining an event based on the configured rank or any form of data quality indicator.
+
+출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · [R1-2610448](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2610448.zip)
+
+**Conclusion** · `9.1.2` Inter-vendor training collaboration for two-sided AI/ML models · `RAN1#127:9.1.2:001` · 🆕 신규 · 관련 주제: CSI 보고/codebook, CSI-RS · 규격 작업 (WI)
+
+구현 영향: 포트·자원·레이어 수
+
+> For the association between Target CSI and CSI feedback in Option 4-1, when the total number of antenna ports is larger than 32, there is no consensus to include the number of aggregated CSI-RS resources and the portMappingMethod applicable to aggregated resources in the target CSI set metadata.
+
+출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx)
+
+**Conclusion** · `9.1.2` Inter-vendor training collaboration for two-sided AI/ML models · `RAN1#127:9.1.2:002` · 🆕 신규 · 규격 작업 (WI)
+
+구현 영향: 포트·자원·레이어 수
+
+> For Direction A, Option 3a-1, when the total number of antenna ports is larger than 32, there is no consensus to include the portMappingMethod in the combination(s) of the configuration parameters to which the exchanged model parameters apply.
+
+출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx)
+
+**Conclusion** · `9.1.2` Inter-vendor training collaboration for two-sided AI/ML models · `RAN1#127:9.1.2:003` · 🆕 신규 · 관련 주제: CSI 보고/codebook · 규격 작업 (WI)
+
+> For Option 3a-1 under Direction A in AI/ML based CSI compression, there is no consensus to provide performance target along the model parameter exchange.
+
+출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx)
+
+**Agreement** · `9.1.2` Inter-vendor training collaboration for two-sided AI/ML models · `RAN1#127:9.1.2:004` · 🆕 신규 · 관련 주제: CSI-RS · 규격 작업 (WI)
+
+> For model applicability procedure for inference with Option B, the following inference related parameters are provided in otherConfig in Step 3:
+> - Pairing ID
+> - Subband configuration
+> - Payload size configuration (parameter combination), Tx port configuration (N1, N2)
+> - Rank restriction indicates the supported ranks.
+> - Note: CSI-RS resource configuration and reportConfigType are not included.
+
+출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx)
+
+**Agreement** · `9.1.2` Inter-vendor training collaboration for two-sided AI/ML models · `RAN1#127:9.1.2:005` · 🆕 신규 · 관련 주제: CSI 보고/codebook · 규격 작업 (WI)
+
+> For the model pairing procedure for AI/ML based CSI compression,
+> - For Option B, one pairing ID is provided in each candidate applicability set.
+> - For Option A, one pairing ID is provided in each CSI-ReportConfig for inference.
+
+출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · [R1-2609843](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2609843.zip)
+
+**Agreement** · `9.1.2` Inter-vendor training collaboration for two-sided AI/ML models · `RAN1#127:9.1.2:006` · 🆕 신규 · 규격 작업 (WI)
+
+> Regarding the LS from RAN2 in R1-2603496, the draft LS response in R1-2610935 is endorsed with the following changes:
+> - “FFS: whether to include the maximum rank” is replaced with “Rank restriction indicates the supported ranks.”
+> The corresponding final LS in R1-2610936 is endorsed.
+
+출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · [R1-2609843](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2609843.zip)
+
+**Conclusion** · `9.1.2` Inter-vendor training collaboration for two-sided AI/ML models · `RAN1#127:9.1.2:007` · 🆕 신규 · 관련 주제: CSI 보고/codebook · 규격 작업 (WI)
+
+> For Target CSI in Option 4-1 under Direction A, there is no consensus to support k1 and k2 values larger than the agreed values for NW side data collection, i.e., (k1, k2) = (3, 4) is used.
+
+출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · [R1-2609843](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2609843.zip)
 
 ## RAN1#126bis — 9건
 

@@ -1,6 +1,6 @@
 {
  "source_db": "https://raw.githubusercontent.com/jgunmoon/RAN1-Decision-Tracker/ccr-0c6b397f-j6xur9/data/agreements_db.json",
- "source_updated_at": "2026-11-20T04:18:34+00:00",
+ "source_updated_at": "2026-11-21T04:17:52+00:00",
  "topics": [
   {
    "id": "aiml",
@@ -40720,6 +40720,2171 @@
    "warn": []
   },
   {
+   "id": "RAN1#127:7:006",
+   "meeting": "RAN1#127",
+   "agenda_item": "7",
+   "agenda_title": "Pre-Rel-19 NR Maintenance",
+   "agenda_path": [
+    {
+     "number": "7",
+     "title": "Pre-Rel-19 NR Maintenance"
+    }
+   ],
+   "type": "Conclusion",
+   "text": "RAN1 understand that clause 6 (Link recovery procedures) of TS 38.213, Rel-18 onwards specifies:\n- The power control parameters (e.g., , , , , ) and the corresponding power control adjustment states for determination of a power are reset only for PUSCH/PUCCH/SRS transmissions applying the new beam, i.e., only if  is identified for the corresponding TRP.",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R19-AI 7",
+    "tdoc": "R1-2610947",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2610947.zip"
+   },
+   "scope": "candidate",
+   "topic": "srs",
+   "tags": [
+    "srs",
+    "beam"
+   ],
+   "keywords": [
+    "SRS",
+    "TS 38.213 6"
+   ],
+   "stage": "maint",
+   "impact": [],
+   "clauses": [
+    "TS 38.213 6"
+   ],
+   "warn": [
+    "math"
+   ]
+  },
+  {
+   "id": "RAN1#127:8.1:002",
+   "meeting": "RAN1#127",
+   "agenda_item": "8.1",
+   "agenda_title": "Maintenance on all items of Rel-19 NR and E-UTRA",
+   "agenda_path": [
+    {
+     "number": "8",
+     "title": "Maintenance on Rel-19 NR and E-UTRA"
+    },
+    {
+     "number": "8.1",
+     "title": "Maintenance on all items of Rel-19 NR and E-UTRA"
+    }
+   ],
+   "type": "Agreement",
+   "text": "The draft CR R1-2609995 for Rel-19 TS38.214, Clause 5.1.6.1 is endorsed.\nThe corresponding final CR in R1-2610943 for Rel-19 TS38.214, Clause 5.1.6.1 is endorsed.",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R19-AI 8.1",
+    "tdoc": "R1-2610916",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2610916.zip"
+   },
+   "scope": "candidate",
+   "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
+   "keywords": [
+    "TS 38.214 5.1.6.1"
+   ],
+   "stage": "maint",
+   "impact": [],
+   "clauses": [
+    "TS 38.214 5.1.6.1"
+   ],
+   "warn": [
+    "tdoc"
+   ]
+  },
+  {
+   "id": "RAN1#127:8.1:006",
+   "meeting": "RAN1#127",
+   "agenda_item": "8.1",
+   "agenda_title": "Maintenance on all items of Rel-19 NR and E-UTRA",
+   "agenda_path": [
+    {
+     "number": "8",
+     "title": "Maintenance on Rel-19 NR and E-UTRA"
+    },
+    {
+     "number": "8.1",
+     "title": "Maintenance on all items of Rel-19 NR and E-UTRA"
+    }
+   ],
+   "type": "Agreement",
+   "text": "The draft CR R1-2609994 for Rel-19 TS38.214, Clause 5.2.2.5 is endorsed.\nThe corresponding final CR in R1-2610944 for Rel-19 TS38.214, Clause 5.2.2.5 is endorsed.",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R19-AI 8.1",
+    "tdoc": "R1-2610918",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2610918.zip"
+   },
+   "scope": "candidate",
+   "topic": "report",
+   "tags": [
+    "report"
+   ],
+   "keywords": [
+    "TS 38.214 5.2.2.5"
+   ],
+   "stage": "maint",
+   "impact": [],
+   "clauses": [
+    "TS 38.214 5.2.2.5"
+   ],
+   "warn": [
+    "tdoc"
+   ]
+  },
+  {
+   "id": "RAN1#127:8.1:010",
+   "meeting": "RAN1#127",
+   "agenda_item": "8.1",
+   "agenda_title": "Maintenance on all items of Rel-19 NR and E-UTRA",
+   "agenda_path": [
+    {
+     "number": "8",
+     "title": "Maintenance on Rel-19 NR and E-UTRA"
+    },
+    {
+     "number": "8.1",
+     "title": "Maintenance on all items of Rel-19 NR and E-UTRA"
+    }
+   ],
+   "type": "Agreement",
+   "text": "Adopt the following TP for TS 38.214\n| Reason for change According to the current specification in Clause 5.2.1.4.2 of TS 38.214, a list of higher layer parameter reportQuantity values that the UE does not expect when configured with CSI sub-configurations (csi-ReportSubConfigToAddModList) is specified. However, 'cli-RSSI' and 'cli-SRS-RSRP' are missing from this exclusion list. Since sub-configurations are defined for CSI derivation based on NZP CSI-RS port subsets, power offsets, and resource lists, they are inapplicable to CLI measurement reporting, which relies on dedicated CLI measurement resource sets. Summary of change Add 'cli-RSSI' and 'cli-SRS-RSRP' to the list of reportQuantity values that the UE does not expect to be configured when csi-ReportSubConfigToAddModList is present in Clause 5.2.1.4.2. Consequences if not approved The specification remains incomplete regarding invalid parameter combinations for CSI sub-configurations, leading to potential ambiguity between gNB configuration and UE reporting expectations for CLI measurement. |\n| 5.2.1.4.2 Report quantity configurations *** Unchanged parts are omitted *** If the UE is configured with a CSI-ReportConfig that contains a list of sub-configurations, provided by csi-ReportSubConfigToAddModList: - The UE expects to be configured with the higher layer parameter codebookType set to 'typeI-SinglePanel', 'typeI-MultiPanel' or 'typeI-SinglePanel-r19' and the higher layer parameter valueOfM is not configured. If the UE indicates a capability for supporting mixed codebook combination in a slot with mixCodeBookSpatialAdaptation, each sub-configuration which is configured with portSubsetIndicator can be configured with the higher layer parameter codebookType set to 'typeI-SinglePanel' or 'typeI-MultiPanel'. - Each sub-configuration can be configured with an antenna port subset using - the higher layer bitmap parameter portSubsetIndicator, of length up to 32 bits, which contains the bit sequence , where is the MSB and is the LSB, bit corresponds to antenna port , and is the number of ports nrofPorts configured for the CSI-RS resources(s) within a NZP-CSI-RS-ResourceSet contained in the CSI-ResourceConfig for channel measurement that corresponds to the CSI-ReportConfig. A bit value 0 in portSubsetIndicator indicates that the corresponding antenna port is disabled for the sub-configuration, whereas bit value 1 indicates that the antenna port is enabled and belongs to the antenna port subset for the sub-configuration. For the derivation of PMI, antenna ports corresponding to all bits with value of 1 in portSubsetIndicator are mapped to consecutive antenna ports starting at CSI-RS antenna port 3000 in increasing order of the bit position in portSubsetIndicator, or - the higher layer bitmap parameter portSubsetIndicator-r19, of length 48, 64 or 128 bits, which contains the bit sequence , where is the MSB and is the LSB, bit corresponds to the port index, after CSI-RS resource aggregation, in order of increasing port index. A bit value 0 in portSubsetIndicator-r19 indicates that the corresponding antenna port is disabled for the sub-configuration, whereas bit value 1 indicates that the antenna port is enabled and belongs to the antenna port subset for the sub-configuration. For the derivation of PMI, port indices corresponding to all bits with value of 1 in portSubsetIndicator-r19 are mapped to consecutive port indices in increasing order of the bit position in portSubsetIndicator-r19. The number of enabled antenna ports can be 48, 64 or 128 for a sub-configuration configured with codebookType set to 'typeI-SinglePanel-r19' or 2, 4, 8, 12, 16, 24 or 32 for a sub-configuration configured with codebookType set to 'typeI-SinglePanel', according to UE capability. - If a sub-configuration is configured with an antenna port subset, then the sub-configuration can be configured with a ri-Restriction, codebookMode and, if the number of antenna ports of the subset greater than 2, with n1-n2 if the higher layer parameter codebookType is set to 'typeI-SinglePanel' or with ng-n1-n2 if the higher layer parameter codebookType is set to 'typeI-MultiPanel', and, if the corresponding number of antenna ports of the subset is 2, with twoTX-CodebookSubsetRestriction, where the parameters ri-Restriction, codebookMode, n1-n2, ng-n1-n2, twoTX-CodebookSubsetRestriction are as described in Clauses 5.2.2.2.1 and 5.2.2.2.2. If a sub-configuration is configured with an antenna port subset, and if higher layer parameter reportQuantity is set to 'cri-RI-i1-CQI', and if the higher layer parameter codebookType is set to 'typeI-SinglePanel', then the sub-configuration is configured with higher layer parameter typeI-SinglePanel-codebookSubsetRestriction-i2, where typeI-SinglePanel-codebookSubsetRestriction-i2 is as described in Clause 5.2.2.2.1. If a sub-configuration is configured with an antenna port subset, and if higher layer parameter codebookType is set to 'typeI-SinglePanel-r19', then the sub-configuration can be configured with codebookMode-r19, typeI-SinglePanelRI-Restriction-r19, typeI-CodebookSubsetRestriction-r19 and typeI-SoftScalingRank-r19, as described in Clause 5.2.2.2.1a. - If a sub-configuration is configured with an antenna port subset, and if the CSI-ReportConfig that contains a mix of sub-configuration(s) each corresponding to 'typeI-SinglePanel' and some other sub-configuration(s) each corresponding to 'typeI-MultiPanel', then the sub-configuration(s) which is configured with portSubsetIndicator is configured with the higher layer parameter codebookMode. - A sub-configuration can be configured with a power offset provided by powerOffset. - A sub-configuration can be configured with a list of NZP CSI-RS resources, provided by nzp-CSI-RS-ResourceList, which indicates one or more NZP CSI-RS resources, within a NZP-CSI-RS-ResourceSet contained in the CSI-ResourceConfig for channel measurement which corresponds to the CSI-ReportConfig. If there is no sub-configuration configured with a power offset provided by powerOffset, the list of NZP CSI-RS resources has no intersection with a list of NZP CSI-RS resources configured for any other sub-configuration(s) within the CSI-ReportConfig, otherwise, the list of NZP CSI-RS resources is identical to or has no intersection with a list of NZP CSI-RS resources configured for any other sub-configuration(s) within the CSI-ReportConfig. A UE does not expect to be configured with nzp-CSI-RS-ResourceList in a sub-configuration if codebookType is set to 'typeI-SinglePanel-r19'. - If a sub-configuration is configured with a list of NZP CSI-RS resources with more than one resource, the UE shall derive the CSI parameters other than CRI conditioned on the reported CRI, where the CRI k (k ≥ 0) for the sub-configuration corresponds to the configured (k+1)-th entry of associated NZP-CSI-RS-Resource in the list of NZP CSI-RS resources. - If a sub-configurations is not configured with nzp-CSI-RS-ResourceList then the sub-configuration shall be associated with all the NZP CSI-RS resources within a NZP-CSI-RS-ResourceSet contained in the CSI-ResourceConfig for channel measurement which corresponds to the CSI-ReportConfig. - the UE reports CSI(s) for one or more sub-configurations according to Clauses 5.2.1.5.1, 5.2.1.5.2, 5.2.3 and 5.2.4, and according to the higher layer parameter reportQuantity configured for that CSI-ReportConfig. - The UE does not expect the higher layer parameter reportQuantity to be set to 'cri-RSRP', 'cri-SINR', 'cri-SINR- Index', 'cri-RSRP-Index', 'none', 'ssb-Index-RSRP', 'ssb-Index-SINR', 'ssb-Index-RSRP- Index', 'ssb-Index-SINR- Index', 'tdcp', 'cjtc-Dd', 'cjtc-F', 'cjtc-Dd-F' or 'cjtc-P', 'p-CRI-r19', 'p-CRI-RSRP-r19', 'p-SSB-Index-r19', 'p-SSB-Index-RSRP-r19', 'rs-PAI-r19', 'csi-PAI-r19 ', 'noneCSI-r19', or 'noneBM-r19', 'cli-RSSI' or 'cli-SRS-RSRP'. |\nFinal CR in R1-2610992 is endorsed.",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R19-AI 8.1",
+    "tdoc": "R1-2610909",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2610909.zip"
+   },
+   "scope": "candidate",
+   "topic": "srs",
+   "tags": [
+    "srs",
+    "report",
+    "csirs"
+   ],
+   "keywords": [
+    "CSI-RS",
+    "csi-Report",
+    "codebook",
+    "PMI",
+    "CQI",
+    "SRS",
+    "CSI",
+    "TS 38.214 5.2.1.4.2"
+   ],
+   "stage": "maint",
+   "impact": [
+    "capability",
+    "dimension",
+    "measure"
+   ],
+   "clauses": [
+    "TS 38.214 5.2.1.4.2"
+   ],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:8.1:011",
+   "meeting": "RAN1#127",
+   "agenda_item": "8.1",
+   "agenda_title": "Maintenance on all items of Rel-19 NR and E-UTRA",
+   "agenda_path": [
+    {
+     "number": "8",
+     "title": "Maintenance on Rel-19 NR and E-UTRA"
+    },
+    {
+     "number": "8.1",
+     "title": "Maintenance on all items of Rel-19 NR and E-UTRA"
+    }
+   ],
+   "type": "Agreement",
+   "text": "Adopt the following TP for TS38.214\n| Reason for change According to Clause 6.2.1.3 of TS 38.214, the prioritization and dropping rules for an SRS transmission on one component carrier overlapping in time with a PUCCH or PUSCH transmission on another component carrier are specified by explicitly enumerating individual report quantities. While other CSI report quantities are included, CLI report quantities (L1-CLI-RSSI and L1-SRS-RSRP) are missing from these dropping rules. According to Clause 5.2.5, CSI reports carrying CLI information are associated with k = 1, i.e., the same priority class as CQI/PMI and TDCP reports, which are already included in these dropping rules. Omitting CLI reporting from Clause 6.2.1.3 leaves the UE behaviour undefined when an SRS transmission overlaps with a PUCCH or PUSCH transmission carrying a CSI report that includes CLI information. Summary of change Explicitly add L1-CLI-RSSI to the list of dropped periodic/semi-persistent CSI reports, and L1-CLI-RSSI and L1-SRS-RSRP to the list of dropped aperiodic CSI reports, in Clause 6.2.1.3 of TS 38.214 when overlapping with SRS transmissions on another component carrier. L1-SRS-RSRP is not added to the list for periodic/semi-persistent CSI, since L1-SRS-RSRP reporting can only be aperiodic (Clause 5.2.1.4). Consequences if not approved The specification remains incomplete regarding prioritization and collision handling for CLI reporting against SRS transmissions, leading to potential ambiguity between gNB reception and UE dropping behaviour. |\n| 6.2.1.3 UE sounding procedure between component carriers *** Unchanged parts are omitted *** - the UE shall drop PUCCH/PUSCH transmission carrying periodic/semi-persistent CSI comprising only CQI/PMI/L1-RSRP/L1-SINR/P-L1-RSRP/CSI-PAI/RS-PAI/L1-CLI-RSSI/CLI-RSSI-MRI and/or Type 1 configured grant PUSCH transmission carrying UE initiated CSI report, and/or SRS transmission on a carrier of a serving cell in set configured for PUSCH/PUCCH transmission whenever the transmission and SRS transmission (including any interruption due to uplink or downlink RF retuning time [11, TS 38.133] as defined by higher layer parameters switchingTimeUL and switchingTimeDL of SRS-SwitchingTimeNR) on the carrier of the serving cell happen to overlap in the same symbol - the UE shall drop PUSCH transmission carrying aperiodic CSI comprising only CQI/PMI/L1-RSRP/L1-SINR/TDCP/cjtc-Dd/cjtc-F/cjtc-Dd-F/cjtc-P/P-L1-RSRP/CSI-PAI/RS-PAI/L1-CLI-RSSI/L1-SRS-RSRP/CLI-RSSI-MRI/SRS-RSRP-MRI on a carrier of a serving cell in set whenever the transmission and aperiodic SRS transmission (including any interruption due to uplink or downlink RF retuning time [11, TS 38.133]) as defined by higher layer parameters switchingTimeUL and switchingTimeDL of SRS-SwitchingTimeNR) on the carrier of the serving cell happen to overlap in the same symbol. |\nFinal CR in R1-2610991 is endorsed.",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R19-AI 8.1",
+    "tdoc": "R1-2610909",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2610909.zip"
+   },
+   "scope": "candidate",
+   "topic": "srs",
+   "tags": [
+    "srs",
+    "beam",
+    "report"
+   ],
+   "keywords": [
+    "CSI report",
+    "PMI",
+    "CQI",
+    "L1-RSRP",
+    "SRS",
+    "CSI",
+    "TS 38.214 6.2.1.3",
+    "TS 38.214 5.2.5",
+    "TS 38.214 5.2.1.4"
+   ],
+   "stage": "maint",
+   "impact": [
+    "measure"
+   ],
+   "clauses": [
+    "TS 38.214 6.2.1.3",
+    "TS 38.214 5.2.5",
+    "TS 38.214 5.2.1.4"
+   ],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:8.1:012",
+   "meeting": "RAN1#127",
+   "agenda_item": "8.1",
+   "agenda_title": "Maintenance on all items of Rel-19 NR and E-UTRA",
+   "agenda_path": [
+    {
+     "number": "8",
+     "title": "Maintenance on Rel-19 NR and E-UTRA"
+    },
+    {
+     "number": "8.1",
+     "title": "Maintenance on all items of Rel-19 NR and E-UTRA"
+    }
+   ],
+   "type": "Agreement",
+   "text": "The FL draft reply LS as below. Final LS in R1-2610954 is endorsed.\n| [Draft] Reply LS on UE capability for Mobility Enh Ph5 Title: [Draft] Reply LS on UE capability for Mobility Enh Ph5 Response to: R1-2609014 (R2-2607807) Release: Rel-20 Work Item: NR_Mob_Ph5 Source: RAN1 To: RAN2 Cc: RAN4 1. Overall Description: RAN1 thanks RAN2 for the LS on UE capability for Mobility Enh Ph5. RAN1 discussed the RAN2 agreements on the reuse of the Rel-18/Rel-19 LTM UE capabilities and has no concern. RAN1 confirms that the following UE capabilities, including all their components, can be reused for the LTM SCell activation improvement, where the candidate cell in the field description includes both the LTM candidate SpCell and the LTM candidate SCell: Rel-18: intraFreqL1-MeasConfig-r18, interFreqL1-MeasConfig-r18, ltm-BeamIndicationJointTCI-r18, ltm-MAC-CE-JointTCI-r18, ltm-BeamIndicationSeparateTCI-r18, ltm-MAC-CE-SeparateTCI-r18 Rel-19: intraFreqL1-MeasConfigPeriodicCSI-RS-r19, interFreqL1-MeasConfigPeriodicCSI-RS-r19, intraFreqL1-MeasConfigSP-CSI-RS-r19, interFreqL1-MeasConfigSP-CSI-RS-r19, ltm-BeamIndicationJointTCI-CSI-RS-r19, ltm-MAC-CE-JointTCI-CSI-RS-r19, ltm-BeamIndicationSeparateTCI-CSI-RS-r19, ltm-MAC-CE-SeparateTCI-CSI-RS-r19 RAN1 also confirms that the current value ranges of these capabilities are reused without extension. The PerCell components (maxNumberJointTCI-PerCell-r18, maxNumberDL-TCI-PerCell-r18, maxNumberUL-TCI-PerCell-r18) apply independently to each LTM candidate SpCell and each LTM candidate SCell, while the AcrossCells components and maxNumberCells-r18 apply to the total across LTM candidate SpCells and LTM candidate SCells. RAN1 understands that an LTM candidate SpCell and an LTM candidate SCell are counted separately in maxNumberCells-r18. It is unclear for RAN1 regarding maxNumberCells-r18 and in the AcrossCells TCI-state components when an LTM candidate SCell configured under more than one LTM candidate configurations but would like to leave this for RAN2. 2. Actions: To RAN2: RAN1 kindly asks RAN2 to take the above information into account and to provide the clarification requested above. 3. Date of Next TSG-RAN1 Meetings: TSG RAN WG1 Meeting #128 January 25th – 29th, 2027 Kobe, Japan TSG RAN WG1 Meeting #128bis April 19th – 23rd, 2027 Lyon, France |",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R19-AI 8.1",
+    "tdoc": "R1-2610919",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2610919.zip"
+   },
+   "scope": "candidate",
+   "topic": "beam",
+   "tags": [
+    "beam",
+    "csirs"
+   ],
+   "keywords": [
+    "CSI-RS",
+    "TCI",
+    "CSI"
+   ],
+   "stage": "maint",
+   "impact": [
+    "capability"
+   ],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:8.1:013",
+   "meeting": "RAN1#127",
+   "agenda_item": "8.1",
+   "agenda_title": "Maintenance on all items of Rel-19 NR and E-UTRA",
+   "agenda_path": [
+    {
+     "number": "8",
+     "title": "Maintenance on Rel-19 NR and E-UTRA"
+    },
+    {
+     "number": "8.1",
+     "title": "Maintenance on all items of Rel-19 NR and E-UTRA"
+    }
+   ],
+   "type": "Agreement",
+   "text": "Adopt the following TP to section 5.1.5 TS 38.214 in principle:\n| Reason for change: | When the unified TCI framework is configured, WUS in RRC_CONNECTED follows the indicated TCI state, the same as other DL channels/signals (RAN1#120bis agreement; TS 38.213 clause 10.4D). Before application of an indicated TCI state, TS 38.214 clause 5.1.5 specifies the QCL assumption of WUS for an LTM cell switch by the LTM Cell Switch Command MAC CE and for a Reconfiguration with sync procedure (based on the SS/PBCH block identified during the random access procedure), and otherwise the SS/PBCH block identified during the initial access procedure. For RACH-less conditional LTM cell switch, the clause specifies the determined CandidateTCI-State only for DM-RS of PDSCH and PDCCH and CSI-RS. After a RACH-less conditional LTM cell switch, there is neither an LTM Cell Switch Command MAC CE nor a random access procedure. WUS therefore falls under the 'otherwise' case and is assumed quasi co-located with the SS/PBCH block of the initial access procedure, which may belong to a different cell, while the other DL channels/signals on the target cell use the determined CandidateTCI-State. TS 38.214 clause 5.1.5 specifies an explicit RACH-based conditional LTM cell switch case for DM-RS of PDSCH and PDCCH and CSI-RS, but not for WUS. |\n|  |  |\n| Summary of change: | Add the QCL assumption for WUS for RACH-less conditional LTM cell switch (the reference signal in the determined CandidateTCI-State) and for RACH-based conditional LTM cell switch (the SS/PBCH block identified during the random access procedure), with respect to 'typeC', and when applicable, also with respect to 'typeD', consistent with DM-RS of PDSCH and PDCCH and CSI-RS. |\n|  |  |\n| Consequences if not approved: | After a RACH-less conditional LTM cell switch, the UE assumes that WUS is quasi co-located with the SS/PBCH block identified during the initial access procedure, which may belong to a different cell, and may not receive WUS on the target cell; the QCL assumption for WUS after a RACH-based conditional LTM cell switch is not specified consistently with the other DL channels/signals. |\n| ==============Start of changes============== 5.1.5 Antenna ports quasi co-location <Unchanged parts are omitted> After a UE receives an initial higher layer configuration of dl-OrJointTCI-StateList where more than one TCI-State can be used as an indicated TCI state and before application of an indicated TCI state from the configured TCI states: - The UE assumes that DM-RS of PDSCH and DM-RS of PDCCH that are not received during the RACH procedure, WUS, and the CSI-RS applying the indicated TCI state are quasi co-located with the reference signal(s) in the CandidateTCI-State indicated in the LTM Cell Switch Command MAC CE [10, 38.321] if applicable. - The UE assumes that DM-RS of PDSCH and DM-RS of PDCCH and the CSI-RS applying the indicated TCI state are quasi co-located with the reference signal in the determined CandidateTCI-State for RACH-less conditional LTM cell switch [10, 38.321] if applicable. - The UE assumes that DM-RS of PDSCH and DM-RS of PDCCH and the CSI-RS applying the indicated TCI state are quasi co-located with the SS/PBCH block the UE identified during the random access procedure initiated by RACH-based conditional LTM cell switch if applicable. - Otherwise, the UE assumes that DM-RS of PDSCH and DM-RS of PDCCH, WUS, and the CSI-RS applying the indicated TCI state are quasi co-located with the SS/PBCH block the UE identified during the initial access procedure with respect to qcl-Type set to 'typeA', and when applicable, also with respect to qcl-Type set to 'typeD'. ==============End of changes============== |\nFinal CR in R1-2610986 is endorsed.",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R19-AI 8.1",
+    "tdoc": "R1-2610914",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2610914.zip"
+   },
+   "scope": "candidate",
+   "topic": "beam",
+   "tags": [
+    "beam",
+    "csirs"
+   ],
+   "keywords": [
+    "CSI-RS",
+    "TCI",
+    "CSI",
+    "TS 38.214 5.1.5"
+   ],
+   "stage": "maint",
+   "impact": [],
+   "clauses": [
+    "TS 38.214 5.1.5",
+    "TS 38.213 10.4"
+   ],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:8.1:016",
+   "meeting": "RAN1#127",
+   "agenda_item": "8.1",
+   "agenda_title": "Maintenance on all items of Rel-19 NR and E-UTRA",
+   "agenda_path": [
+    {
+     "number": "8",
+     "title": "Maintenance on Rel-19 NR and E-UTRA"
+    },
+    {
+     "number": "8.1",
+     "title": "Maintenance on all items of Rel-19 NR and E-UTRA"
+    }
+   ],
+   "type": "Agreement",
+   "text": "Reply to RAN3 LS as below, CC: RAN. Final LS in R1-2611015 is endorsed.\n---\nResponse to Question 1:\n- For TRP monostatic sensing, {Delay/range, 3D angle} in C4 and Position in C5 can be mutually transformed, assuming the necessary assistance information, e.g., TRP location, and antenna orientation (LCS to GCS transformation) are available. Doppler and radial velocity can be mutually transformed, assuming carrier frequency is known.\n- Difference on confidence/uncertainty metrics of C4 and C5 may exist, depending on how they are indicated. For C4, uncertainty is indicated separately for the reported delay and angle metrics, thereby allowing different accuracies in the radial and angular dimensions to be represented. For C5, uncertainty is indicated in position domain through position uncertainty elipsoid. For C5, for example, additional rotation of the uncertainty ellipsoid to the radial direction of the target can be used to approximate the uncertainty result of C4.\n- The impact of confidence/uncertainty metric of C4 and C5 was not evaluated.\nResponse to Question 2:\n- RAN1 also considers the same existing specification of UL RTOA and UL AOA for sensing metrics delay and angle of a point as categorized in RAN3 LS. From RAN1 perspective, if C4 is selected by RAN3, certain updates to RAN1 specification for delay and angle measurement definitionsmetrics compared to the two references are expected for sensing. There is no existing definition for Doppler. According to the WID, RAN1 doesn’t have TU to discuss how to define/update them in the normative work of NR ISAC.\n- Range and radial velocity are respectively equivalent to delay and Doppler for monostatic sensing, if C4 is selected by RAN3.\nResponse to Question 3:\n- RAN1 also considers the existing specification including the quantization of UL SRS RSRP/RSRPP for the design of sensing power metric of level Ca point. From RAN1 perspective, certain updates inclusion offor power metric in RAN1 specification compared to the existing specification isare expected for sensing. According to the WID, RAN1 doesn't have TU to discuss how to define/update it in the normative work of NR ISAC.\nResponse to Question 4:\n- RAN1 also considers the existing specification including the quantization of UL SRS RSRP/RSRPP for the design of sensing power metric of level D. From RAN1 perspective, certain updates for inclusion of power metric in RAN1 specification compared to the existing specification isare expected for sensing. RAN1 doesn't have TU to discuss how to define/update it in the normative work of NR ISAC.\nAccording to the current WID, RAN1 doesn’t have TU in the normative work of NR ISAC.\n---\nRelevant Tdocs:",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R19-AI 8.1",
+    "tdoc": "R1-2610941",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2610941.zip"
+   },
+   "scope": "candidate",
+   "topic": "srs",
+   "tags": [
+    "srs"
+   ],
+   "keywords": [
+    "SRS"
+   ],
+   "stage": "maint",
+   "impact": [],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:9.1.1:001",
+   "meeting": "RAN1#127",
+   "agenda_item": "9.1.1",
+   "agenda_title": "CSI spatial/frequency compression without temporal aspects (“Case 0”)",
+   "agenda_path": [
+    {
+     "number": "9",
+     "title": "Release 20 NR"
+    },
+    {
+     "number": "9.1",
+     "title": "Artificial Intelligence (AI)/Machine Learning (ML) for NR air interface enhancements"
+    },
+    {
+     "number": "9.1.1",
+     "title": "CSI spatial/frequency compression without temporal aspects (“Case 0”)"
+    }
+   ],
+   "type": "Agreement",
+   "text": "For L1 performance monitoring, support UE indication of monitoring output with 1-bit reliability indicator\n- Report with wideband granularity and all layers\n  - Value “0” indicates “unreliable”\n  - Value “1” indicates “reliable”\n- Note1: It is upto UE implementation how to determine the value of the reliability indicator bit.\n- Note2: Supporting UE indication of monitoring output with 1-bit reliability indicator is upto separate UE capability reporting",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx"
+   },
+   "scope": "agenda",
+   "topic": "aiml",
+   "tags": [
+    "aiml"
+   ],
+   "keywords": [],
+   "stage": "wi",
+   "impact": [
+    "capability"
+   ],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:9.1.1:002",
+   "meeting": "RAN1#127",
+   "agenda_item": "9.1.1",
+   "agenda_title": "CSI spatial/frequency compression without temporal aspects (“Case 0”)",
+   "agenda_path": [
+    {
+     "number": "9",
+     "title": "Release 20 NR"
+    },
+    {
+     "number": "9.1",
+     "title": "Artificial Intelligence (AI)/Machine Learning (ML) for NR air interface enhancements"
+    },
+    {
+     "number": "9.1.1",
+     "title": "CSI spatial/frequency compression without temporal aspects (“Case 0”)"
+    }
+   ],
+   "type": "Agreement",
+   "text": "For L1 performance monitoring and the reliability indication, support\n- Configuring the reliability indication and inference in the same CSI reporting configuration\n- Introduce a dedicated report quantity for reporting the reliability indicator and CSI (CQI, PMI, RI)\n- report the 1-bit reliability indicator at the end of CSI part 1\n- Dedicated AI/ML PU (, with   or ) and/or legacy CPU () are occupied where  and/or  is upto UE capability\n  - and  are different than  and/or  reported for inference only.\n- When reliability indication is configured, support CSI processing timeline {Z+t’’, Z’+t’’}, where t’’ is reported as UE capability and it is different than the t’ value reported for the case when reliability indicator is not configured",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx"
+   },
+   "scope": "agenda",
+   "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
+   "keywords": [],
+   "stage": "wi",
+   "impact": [
+    "timeline",
+    "capability",
+    "measure"
+   ],
+   "clauses": [],
+   "warn": [
+    "math"
+   ]
+  },
+  {
+   "id": "RAN1#127:9.1.1:003",
+   "meeting": "RAN1#127",
+   "agenda_item": "9.1.1",
+   "agenda_title": "CSI spatial/frequency compression without temporal aspects (“Case 0”)",
+   "agenda_path": [
+    {
+     "number": "9",
+     "title": "Release 20 NR"
+    },
+    {
+     "number": "9.1",
+     "title": "Artificial Intelligence (AI)/Machine Learning (ML) for NR air interface enhancements"
+    },
+    {
+     "number": "9.1.1",
+     "title": "CSI spatial/frequency compression without temporal aspects (“Case 0”)"
+    }
+   ],
+   "type": "Agreement",
+   "text": "For CSI feedback via two-sided model, clarify that neither CRI nor LI is reported. UE is not expected to be configured with reportQuantity set to 'cri-RI-LI-PMI-CQI'.",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx"
+   },
+   "scope": "agenda",
+   "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
+   "keywords": [],
+   "stage": "wi",
+   "impact": [
+    "measure"
+   ],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:9.1.1:004",
+   "meeting": "RAN1#127",
+   "agenda_item": "9.1.1",
+   "agenda_title": "CSI spatial/frequency compression without temporal aspects (“Case 0”)",
+   "agenda_path": [
+    {
+     "number": "9",
+     "title": "Release 20 NR"
+    },
+    {
+     "number": "9.1",
+     "title": "Artificial Intelligence (AI)/Machine Learning (ML) for NR air interface enhancements"
+    },
+    {
+     "number": "9.1.1",
+     "title": "CSI spatial/frequency compression without temporal aspects (“Case 0”)"
+    }
+   ],
+   "type": "Agreement",
+   "text": "For UE side data collection for CSI feedback via two-sided model, reuse the CPU duration agreed for Rel-19 CSI prediction:\n- the CPU occupancy starts from the first symbol of each P/SP-CSI-RS occasion till Z3’ symbols after the P/SP-CSI-RS occasion.",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx"
+   },
+   "scope": "agenda",
+   "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report",
+    "csirs"
+   ],
+   "keywords": [],
+   "stage": "wi",
+   "impact": [
+    "timeline"
+   ],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:9.1.1:005",
+   "meeting": "RAN1#127",
+   "agenda_item": "9.1.1",
+   "agenda_title": "CSI spatial/frequency compression without temporal aspects (“Case 0”)",
+   "agenda_path": [
+    {
+     "number": "9",
+     "title": "Release 20 NR"
+    },
+    {
+     "number": "9.1",
+     "title": "Artificial Intelligence (AI)/Machine Learning (ML) for NR air interface enhancements"
+    },
+    {
+     "number": "9.1.1",
+     "title": "CSI spatial/frequency compression without temporal aspects (“Case 0”)"
+    }
+   ],
+   "type": "Agreement",
+   "text": "Regarding incoming LS R2-2608003 on L3 performance monitoring, reply to RAN2 that\n- Answer to Q1:\n  - According to previous LS R1-2310681 agreed in RAN1 114-bis, performance monitoring is near-real-time (e.g., several tens of msecs to a few seconds).\n  - For L3 performance monitoring, whether the UE can log multiple samples and report later or the performance monitoring sample should be immediately reported upon obtaining target CSI and CSI feedback pair are upto RAN2 discussion.\n- Answer to Q2:\n- RAN1 has not agreed on any L1 event/condition to trigger UE initiated reporting for the L3-signaling based performance monitoring.\n- Target CSI is quantized via the same format as NW data collection\n- Note: From RAN1 point of view, monitoring based on L3 signalling and L1 signalling are independently considered.\n- RAN1 would like to inform RAN2 about the following agreements:",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx"
+   },
+   "scope": "agenda",
+   "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
+   "keywords": [],
+   "stage": "wi",
+   "impact": [],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:9.1.1:006",
+   "meeting": "RAN1#127",
+   "agenda_item": "9.1.1",
+   "agenda_title": "CSI spatial/frequency compression without temporal aspects (“Case 0”)",
+   "agenda_path": [
+    {
+     "number": "9",
+     "title": "Release 20 NR"
+    },
+    {
+     "number": "9.1",
+     "title": "Artificial Intelligence (AI)/Machine Learning (ML) for NR air interface enhancements"
+    },
+    {
+     "number": "9.1.1",
+     "title": "CSI spatial/frequency compression without temporal aspects (“Case 0”)"
+    }
+   ],
+   "type": "Agreement",
+   "text": "For L1 performance monitoring, support UE indication of monitoring output with 1-bit reliability indicator\n- Report with wideband granularity and all layers\n  - Value “0” indicates “unreliable”\n  - Value “1” indicates “reliable”\n- Note1: It is upto UE implementation how to determine the value of the reliability indicator bit.\n- Note2: Supporting UE indication of monitoring output with 1-bit reliability indicator is upto separate UE capability reporting",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx"
+   },
+   "scope": "agenda",
+   "topic": "aiml",
+   "tags": [
+    "aiml"
+   ],
+   "keywords": [],
+   "stage": "wi",
+   "impact": [
+    "capability"
+   ],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:9.1.1:007",
+   "meeting": "RAN1#127",
+   "agenda_item": "9.1.1",
+   "agenda_title": "CSI spatial/frequency compression without temporal aspects (“Case 0”)",
+   "agenda_path": [
+    {
+     "number": "9",
+     "title": "Release 20 NR"
+    },
+    {
+     "number": "9.1",
+     "title": "Artificial Intelligence (AI)/Machine Learning (ML) for NR air interface enhancements"
+    },
+    {
+     "number": "9.1.1",
+     "title": "CSI spatial/frequency compression without temporal aspects (“Case 0”)"
+    }
+   ],
+   "type": "Agreement",
+   "text": "For L1 performance monitoring and the reliability indication, support\n- Configuring the reliability indication and inference in the same CSI reporting configuration\n- Introduce a dedicated report quantity for reporting the reliability indicator and CSI (CQI, PMI, RI)\n- report the 1-bit reliability indicator at the end of CSI part 1\n- Dedicated AI/ML PU (, with   or ) and/or legacy CPU () are occupied where  and/or  is upto UE capability\n  - and  are different than  and/or  reported for inference only.\n- When reliability indication is configured, support CSI processing timeline {Z+t’’, Z’+t’’}, where t’’ is reported as UE capability and it is different than the t’ value reported for the case when reliability indicator is not configured\nThe corresponding draft LS response to RAN2 in R1-2610955 is endorsed.\nThe final LS response to RAN2 in R1-2610956 is endorsed",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx"
+   },
+   "scope": "agenda",
+   "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
+   "keywords": [],
+   "stage": "wi",
+   "impact": [
+    "timeline",
+    "capability",
+    "measure"
+   ],
+   "clauses": [],
+   "warn": [
+    "math"
+   ]
+  },
+  {
+   "id": "RAN1#127:9.1.1:008",
+   "meeting": "RAN1#127",
+   "agenda_item": "9.1.1",
+   "agenda_title": "CSI spatial/frequency compression without temporal aspects (“Case 0”)",
+   "agenda_path": [
+    {
+     "number": "9",
+     "title": "Release 20 NR"
+    },
+    {
+     "number": "9.1",
+     "title": "Artificial Intelligence (AI)/Machine Learning (ML) for NR air interface enhancements"
+    },
+    {
+     "number": "9.1.1",
+     "title": "CSI spatial/frequency compression without temporal aspects (“Case 0”)"
+    }
+   ],
+   "type": "Conclusion",
+   "text": "There is no consensus on supporting target CSI restriction at UE side for CSI feedback via two-sided model in R20.",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "tdoc": "R1-2610448",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2610448.zip"
+   },
+   "scope": "agenda",
+   "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
+   "keywords": [],
+   "stage": "wi",
+   "impact": [],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:9.1.1:009",
+   "meeting": "RAN1#127",
+   "agenda_item": "9.1.1",
+   "agenda_title": "CSI spatial/frequency compression without temporal aspects (“Case 0”)",
+   "agenda_path": [
+    {
+     "number": "9",
+     "title": "Release 20 NR"
+    },
+    {
+     "number": "9.1",
+     "title": "Artificial Intelligence (AI)/Machine Learning (ML) for NR air interface enhancements"
+    },
+    {
+     "number": "9.1.1",
+     "title": "CSI spatial/frequency compression without temporal aspects (“Case 0”)"
+    }
+   ],
+   "type": "Conclusion",
+   "text": "For NW data collection,\n- There is no consensus on reporting a suggested rank or any form of data quality indicator.\n- There is no consensus on defining an event based on the configured rank or any form of data quality indicator.",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "tdoc": "R1-2610448",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2610448.zip"
+   },
+   "scope": "agenda",
+   "topic": "aiml",
+   "tags": [
+    "aiml"
+   ],
+   "keywords": [],
+   "stage": "wi",
+   "impact": [],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:9.1.2:001",
+   "meeting": "RAN1#127",
+   "agenda_item": "9.1.2",
+   "agenda_title": "Inter-vendor training collaboration for two-sided AI/ML models",
+   "agenda_path": [
+    {
+     "number": "9",
+     "title": "Release 20 NR"
+    },
+    {
+     "number": "9.1",
+     "title": "Artificial Intelligence (AI)/Machine Learning (ML) for NR air interface enhancements"
+    },
+    {
+     "number": "9.1.2",
+     "title": "Inter-vendor training collaboration for two-sided AI/ML models"
+    }
+   ],
+   "type": "Conclusion",
+   "text": "For the association between Target CSI and CSI feedback in Option 4-1, when the total number of antenna ports is larger than 32, there is no consensus to include the number of aggregated CSI-RS resources and the portMappingMethod applicable to aggregated resources in the target CSI set metadata.",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx"
+   },
+   "scope": "agenda",
+   "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report",
+    "csirs"
+   ],
+   "keywords": [],
+   "stage": "wi",
+   "impact": [
+    "dimension"
+   ],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:9.1.2:002",
+   "meeting": "RAN1#127",
+   "agenda_item": "9.1.2",
+   "agenda_title": "Inter-vendor training collaboration for two-sided AI/ML models",
+   "agenda_path": [
+    {
+     "number": "9",
+     "title": "Release 20 NR"
+    },
+    {
+     "number": "9.1",
+     "title": "Artificial Intelligence (AI)/Machine Learning (ML) for NR air interface enhancements"
+    },
+    {
+     "number": "9.1.2",
+     "title": "Inter-vendor training collaboration for two-sided AI/ML models"
+    }
+   ],
+   "type": "Conclusion",
+   "text": "For Direction A, Option 3a-1, when the total number of antenna ports is larger than 32, there is no consensus to include the portMappingMethod in the combination(s) of the configuration parameters to which the exchanged model parameters apply.",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx"
+   },
+   "scope": "agenda",
+   "topic": "aiml",
+   "tags": [
+    "aiml"
+   ],
+   "keywords": [],
+   "stage": "wi",
+   "impact": [
+    "dimension"
+   ],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:9.1.2:003",
+   "meeting": "RAN1#127",
+   "agenda_item": "9.1.2",
+   "agenda_title": "Inter-vendor training collaboration for two-sided AI/ML models",
+   "agenda_path": [
+    {
+     "number": "9",
+     "title": "Release 20 NR"
+    },
+    {
+     "number": "9.1",
+     "title": "Artificial Intelligence (AI)/Machine Learning (ML) for NR air interface enhancements"
+    },
+    {
+     "number": "9.1.2",
+     "title": "Inter-vendor training collaboration for two-sided AI/ML models"
+    }
+   ],
+   "type": "Conclusion",
+   "text": "For Option 3a-1 under Direction A in AI/ML based CSI compression, there is no consensus to provide performance target along the model parameter exchange.",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx"
+   },
+   "scope": "agenda",
+   "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
+   "keywords": [],
+   "stage": "wi",
+   "impact": [],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:9.1.2:004",
+   "meeting": "RAN1#127",
+   "agenda_item": "9.1.2",
+   "agenda_title": "Inter-vendor training collaboration for two-sided AI/ML models",
+   "agenda_path": [
+    {
+     "number": "9",
+     "title": "Release 20 NR"
+    },
+    {
+     "number": "9.1",
+     "title": "Artificial Intelligence (AI)/Machine Learning (ML) for NR air interface enhancements"
+    },
+    {
+     "number": "9.1.2",
+     "title": "Inter-vendor training collaboration for two-sided AI/ML models"
+    }
+   ],
+   "type": "Agreement",
+   "text": "For model applicability procedure for inference with Option B, the following inference related parameters are provided in otherConfig in Step 3:\n- Pairing ID\n- Subband configuration\n- Payload size configuration (parameter combination), Tx port configuration (N1, N2)\n- Rank restriction indicates the supported ranks.\n- Note: CSI-RS resource configuration and reportConfigType are not included.",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx"
+   },
+   "scope": "agenda",
+   "topic": "aiml",
+   "tags": [
+    "aiml",
+    "csirs"
+   ],
+   "keywords": [],
+   "stage": "wi",
+   "impact": [],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:9.1.2:005",
+   "meeting": "RAN1#127",
+   "agenda_item": "9.1.2",
+   "agenda_title": "Inter-vendor training collaboration for two-sided AI/ML models",
+   "agenda_path": [
+    {
+     "number": "9",
+     "title": "Release 20 NR"
+    },
+    {
+     "number": "9.1",
+     "title": "Artificial Intelligence (AI)/Machine Learning (ML) for NR air interface enhancements"
+    },
+    {
+     "number": "9.1.2",
+     "title": "Inter-vendor training collaboration for two-sided AI/ML models"
+    }
+   ],
+   "type": "Agreement",
+   "text": "For the model pairing procedure for AI/ML based CSI compression,\n- For Option B, one pairing ID is provided in each candidate applicability set.\n- For Option A, one pairing ID is provided in each CSI-ReportConfig for inference.",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "tdoc": "R1-2609843",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2609843.zip"
+   },
+   "scope": "agenda",
+   "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
+   "keywords": [],
+   "stage": "wi",
+   "impact": [],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:9.1.2:006",
+   "meeting": "RAN1#127",
+   "agenda_item": "9.1.2",
+   "agenda_title": "Inter-vendor training collaboration for two-sided AI/ML models",
+   "agenda_path": [
+    {
+     "number": "9",
+     "title": "Release 20 NR"
+    },
+    {
+     "number": "9.1",
+     "title": "Artificial Intelligence (AI)/Machine Learning (ML) for NR air interface enhancements"
+    },
+    {
+     "number": "9.1.2",
+     "title": "Inter-vendor training collaboration for two-sided AI/ML models"
+    }
+   ],
+   "type": "Agreement",
+   "text": "Regarding the LS from RAN2 in R1-2603496, the draft LS response in R1-2610935 is endorsed with the following changes:\n- “FFS: whether to include the maximum rank” is replaced with “Rank restriction indicates the supported ranks.”\nThe corresponding final LS in R1-2610936 is endorsed.",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "tdoc": "R1-2609843",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2609843.zip"
+   },
+   "scope": "agenda",
+   "topic": "aiml",
+   "tags": [
+    "aiml"
+   ],
+   "keywords": [],
+   "stage": "wi",
+   "impact": [],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:9.1.2:007",
+   "meeting": "RAN1#127",
+   "agenda_item": "9.1.2",
+   "agenda_title": "Inter-vendor training collaboration for two-sided AI/ML models",
+   "agenda_path": [
+    {
+     "number": "9",
+     "title": "Release 20 NR"
+    },
+    {
+     "number": "9.1",
+     "title": "Artificial Intelligence (AI)/Machine Learning (ML) for NR air interface enhancements"
+    },
+    {
+     "number": "9.1.2",
+     "title": "Inter-vendor training collaboration for two-sided AI/ML models"
+    }
+   ],
+   "type": "Conclusion",
+   "text": "For Target CSI in Option 4-1 under Direction A, there is no consensus to support k1 and k2 values larger than the agreed values for NW side data collection, i.e., (k1, k2) = (3, 4) is used.",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "tdoc": "R1-2609843",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2609843.zip"
+   },
+   "scope": "agenda",
+   "topic": "aiml",
+   "tags": [
+    "aiml",
+    "report"
+   ],
+   "keywords": [],
+   "stage": "wi",
+   "impact": [],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:9.2:001",
+   "meeting": "RAN1#127",
+   "agenda_item": "9.2",
+   "agenda_title": "NR MIMO Phase 6",
+   "agenda_path": [
+    {
+     "number": "9",
+     "title": "Release 20 NR"
+    },
+    {
+     "number": "9.2",
+     "title": "NR MIMO Phase 6"
+    }
+   ],
+   "type": "Agreement",
+   "text": "On how to indicate the slot offset of PUSCH for aperiodic CSI reporting triggered by a SCell activation command activating the SCell(s),\n- A separate field in the MAC-CE indicates an entry from the configured slot offset list reportSlotOffsetList, and UE ignores the K2 indicated by PUSCH TDRA field in UL grant content.\n- Note: The new field has the same functionality as K2 obtained from TDRA field.",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R20-MIMO",
+    "tdoc": "R1-2609214",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2609214.zip"
+   },
+   "scope": "agenda",
+   "topic": "report",
+   "tags": [
+    "report"
+   ],
+   "keywords": [],
+   "stage": "wi",
+   "impact": [],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:9.2:002",
+   "meeting": "RAN1#127",
+   "agenda_item": "9.2",
+   "agenda_title": "NR MIMO Phase 6",
+   "agenda_path": [
+    {
+     "number": "9",
+     "title": "Release 20 NR"
+    },
+    {
+     "number": "9.2",
+     "title": "NR MIMO Phase 6"
+    }
+   ],
+   "type": "Conclusion",
+   "text": "It is up to RAN2’s design on the condition of whether to send the UE capability signaling in MSG3 or not (e.g., based on MAC layer logical channel prioritization). There is no RAN1 enhancement on the maximum payload size of MSG3.",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R20-MIMO",
+    "tdoc": "R1-2609214",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2609214.zip"
+   },
+   "scope": "agenda",
+   "topic": "other",
+   "tags": [
+    "other"
+   ],
+   "keywords": [],
+   "stage": "wi",
+   "impact": [
+    "capability"
+   ],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:9.2:003",
+   "meeting": "RAN1#127",
+   "agenda_item": "9.2",
+   "agenda_title": "NR MIMO Phase 6",
+   "agenda_path": [
+    {
+     "number": "9",
+     "title": "Release 20 NR"
+    },
+    {
+     "number": "9.2",
+     "title": "NR MIMO Phase 6"
+    }
+   ],
+   "type": "Agreement",
+   "text": "For a UE transition from IDLE/INACTIVE to CONNECT mode on the SUL, aperiodic SRS-AS triggered by MAC-CE in the MSG4 is not supported. \nFor a UE transition from IDLE/INACTIVE to CONNECT mode on the normal UL carrier, aperiodic SRS-AS triggered by MAC-CE in the MSG4 shall be on normal UL carrier.",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R20-MIMO",
+    "tdoc": "R1-2609214",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2609214.zip"
+   },
+   "scope": "agenda",
+   "topic": "srs",
+   "tags": [
+    "srs"
+   ],
+   "keywords": [],
+   "stage": "wi",
+   "impact": [],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:9.2:004",
+   "meeting": "RAN1#127",
+   "agenda_item": "9.2",
+   "agenda_title": "NR MIMO Phase 6",
+   "agenda_path": [
+    {
+     "number": "9",
+     "title": "Release 20 NR"
+    },
+    {
+     "number": "9.2",
+     "title": "NR MIMO Phase 6"
+    }
+   ],
+   "type": "Agreement",
+   "text": "For MSG4-triggered aperiodic TRS with two TRS bursts, the second TRS burst is transmitted in the slot which is a time gap after the last transmission slot of the first TRS burst, where the time gap is configured in a CSI resource configuration provided in the SIBx.",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R20-MIMO",
+    "tdoc": "R1-2609214",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2609214.zip"
+   },
+   "scope": "agenda",
+   "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
+   "keywords": [],
+   "stage": "wi",
+   "impact": [],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:9.2:005",
+   "meeting": "RAN1#127",
+   "agenda_item": "9.2",
+   "agenda_title": "NR MIMO Phase 6",
+   "agenda_path": [
+    {
+     "number": "9",
+     "title": "Release 20 NR"
+    },
+    {
+     "number": "9.2",
+     "title": "NR MIMO Phase 6"
+    }
+   ],
+   "type": "Agreement",
+   "text": "Support close-loop power control (CLPC) for MSG4-triggered SRS when UE transition from IDLE/INACTIVE to CONNECTED mode, and leverage legacy CLPC mechanism, i.e.,\n- The power control adjustment state is determined based on PRACH total power ramp-up and an absolute TPC command indicated via the MAC-CE in MSG4,",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R20-MIMO",
+    "tdoc": "R1-2609214",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2609214.zip"
+   },
+   "scope": "agenda",
+   "topic": "srs",
+   "tags": [
+    "srs"
+   ],
+   "keywords": [],
+   "stage": "wi",
+   "impact": [],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:9.2:006",
+   "meeting": "RAN1#127",
+   "agenda_item": "9.2",
+   "agenda_title": "NR MIMO Phase 6",
+   "agenda_path": [
+    {
+     "number": "9",
+     "title": "Release 20 NR"
+    },
+    {
+     "number": "9.2",
+     "title": "NR MIMO Phase 6"
+    }
+   ],
+   "type": "Agreement",
+   "text": "Support close-loop power control (CLPC) for MSG4-scheduled PUSCH when UE transition from IDLE/INACTIVE to CONNECTED mode, and reuse legacy CLPC mechanism, i.e.,\n- For PUSCH initial Tx, the power control adjustment state is determined based on PRACH total power ramp-up and an absolute TPC command indicated via the MAC-CE in MSG4,\n- For PUSCH Re-Tx scheduled by a DCI format 0_0, the power control adjustment state is determined based on a sum of the accumulated TPC command(s),  if TPC accumulation is enabled; otherwise, the power control adjustment state is determined based on the absolute TPC command indicated in the DCI,",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R20-MIMO",
+    "tdoc": "R1-2609214",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2609214.zip"
+   },
+   "scope": "agenda",
+   "topic": "other",
+   "tags": [
+    "other"
+   ],
+   "keywords": [],
+   "stage": "wi",
+   "impact": [],
+   "clauses": [],
+   "warn": [
+    "math"
+   ]
+  },
+  {
+   "id": "RAN1#127:9.2:007",
+   "meeting": "RAN1#127",
+   "agenda_item": "9.2",
+   "agenda_title": "NR MIMO Phase 6",
+   "agenda_path": [
+    {
+     "number": "9",
+     "title": "Release 20 NR"
+    },
+    {
+     "number": "9.2",
+     "title": "NR MIMO Phase 6"
+    }
+   ],
+   "type": "Agreement",
+   "text": "On triggering indication for early CSI reporting and associated aperiodic CSI-RS triggered by a SCell activation command, the SCell activation command MAC-CE indicates no CSI report configuration or a CSI report configuration for each newly activated SCell by the SCell activation command MAC-CE\n- The CSI report configuration for a SCell shall be configured in the SCell itself\n- Note: The above is based on legacy CSI report configuration(s)",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R20-MIMO",
+    "tdoc": "R1-2609215",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2609215.zip"
+   },
+   "scope": "agenda",
+   "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
+   "keywords": [],
+   "stage": "wi",
+   "impact": [],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:9.2:008",
+   "meeting": "RAN1#127",
+   "agenda_item": "9.2",
+   "agenda_title": "NR MIMO Phase 6",
+   "agenda_path": [
+    {
+     "number": "9",
+     "title": "Release 20 NR"
+    },
+    {
+     "number": "9.2",
+     "title": "NR MIMO Phase 6"
+    }
+   ],
+   "type": "Agreement",
+   "text": "On MAC-CE triggering indication for early SRS based on a SCell activation command, the SCell activation command MAC-CE indicates a codepoint mapping to an SRS trigger state for each newly activated SCell by the SCell activation command MAC-CE.\n- The SRS trigger state(s) is legacy SRS trigger state(s).",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R20-MIMO",
+    "tdoc": "R1-2609216",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2609216.zip"
+   },
+   "scope": "agenda",
+   "topic": "srs",
+   "tags": [
+    "srs"
+   ],
+   "keywords": [],
+   "stage": "wi",
+   "impact": [],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:9.2:009",
+   "meeting": "RAN1#127",
+   "agenda_item": "9.2",
+   "agenda_title": "NR MIMO Phase 6",
+   "agenda_path": [
+    {
+     "number": "9",
+     "title": "Release 20 NR"
+    },
+    {
+     "number": "9.2",
+     "title": "NR MIMO Phase 6"
+    }
+   ],
+   "type": "Agreement",
+   "text": "In a SIBx for early CSI-RS/SRS/CSI when UE transition from IDLE/INACTIVE to CONNECTED mode, support the following on the maximum number of resource/report configurations\n- Up to 6 SRS configurations can be configured.\n  - Note: As agreed in RAN1#126, up to two SRS resource sets can be configured in an SRS configuration\n  - Up to 3 SRS resources can be configured in an SRS resource set\n- Up to 8 CSI report configurations can be configured for PMI-based and/or PMI-free reporting.\n  - Up to 8 CSI resource configuration for channel measurement can be configured.\n    - Note: As agreed in RAN1#126, only one NZP CSI-RS resource set is provided in a CSI resource configuration for channel measurement\n    - Only 1 NZP CSI-RS resource is configured in the NZPCSI-RS resource set.\n  - Up to 8 CSI resource configuration for CSI-IM based interference measurement can be configured.\n    - Note: As agreed in RAN1#126, only one CSI-IM resource set is provided in a CSI resource configuration for CSI-IM based interference measurement\n    - Only 1 CSI-IM resource is configured in the CSI-IM resource set.\n  - Note: As agreed in RAN1#122bis, each CSI reporting configuration is associated with a CSI resource configuration for channel measurement and a CSI resource configuration for CSI-IM based interference measurement\n- Note: As agreed in RAN1#123 and RAN#125, up to 1 CSI resource configuration for aperiodic TRS can be configured, and only 1 CSI resource set for tracking is provided in the CSI resource configuration for aperiodic TRS.",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R20-MIMO",
+    "tdoc": "R1-2609216",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2609216.zip"
+   },
+   "scope": "agenda",
+   "topic": "srs",
+   "tags": [
+    "srs",
+    "report",
+    "csirs"
+   ],
+   "keywords": [],
+   "stage": "wi",
+   "impact": [
+    "dimension",
+    "measure"
+   ],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:9.2:010",
+   "meeting": "RAN1#127",
+   "agenda_item": "9.2",
+   "agenda_title": "NR MIMO Phase 6",
+   "agenda_path": [
+    {
+     "number": "9",
+     "title": "Release 20 NR"
+    },
+    {
+     "number": "9.2",
+     "title": "NR MIMO Phase 6"
+    }
+   ],
+   "type": "Conclusion",
+   "text": "When Rel-20 SRS triggering for SCell switching out of dormancy is enabled, the SRS trigger state indicated in a DCI indicating switching out of dormancy based on legacy DCI formats is applied to the scheduled cell(s) per legacy procedures.\nThere is no consensus to resolve the following FFS from RAN1#124bis. This conclusion also implies that there is no follow-up specification impact with respect to this FFS:\n- FFS: The cell(s) scheduled by legacy mechanism and configured with aperiodic SRS resource set(s) associated with the SRS trigger state;",
+   "ffs": [
+    "FFS: The cell(s) scheduled by legacy mechanism and configured with aperiodic SRS resource set(s) associated with the SRS trigger state;"
+   ],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R20-MIMO",
+    "tdoc": "R1-2609216",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2609216.zip"
+   },
+   "scope": "agenda",
+   "topic": "srs",
+   "tags": [
+    "srs"
+   ],
+   "keywords": [],
+   "stage": "wi",
+   "impact": [],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:9.2:011",
+   "meeting": "RAN1#127",
+   "agenda_item": "9.2",
+   "agenda_title": "NR MIMO Phase 6",
+   "agenda_path": [
+    {
+     "number": "9",
+     "title": "Release 20 NR"
+    },
+    {
+     "number": "9.2",
+     "title": "NR MIMO Phase 6"
+    }
+   ],
+   "type": "Conclusion",
+   "text": "For a UE transition from IDLE/INACTIVE to CONNECT mode, it is upto network implementation to ensure that the MSG4-triggered aperiodic SRS-AS is transmitted on non-SBFD symbols per legacy procedures. \nThere is no specification.",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R20-MIMO",
+    "tdoc": "R1-2609216",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2609216.zip"
+   },
+   "scope": "agenda",
+   "topic": "srs",
+   "tags": [
+    "srs"
+   ],
+   "keywords": [],
+   "stage": "wi",
+   "impact": [],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:9.2:012",
+   "meeting": "RAN1#127",
+   "agenda_item": "9.2",
+   "agenda_title": "NR MIMO Phase 6",
+   "agenda_path": [
+    {
+     "number": "9",
+     "title": "Release 20 NR"
+    },
+    {
+     "number": "9.2",
+     "title": "NR MIMO Phase 6"
+    }
+   ],
+   "type": "Agreement",
+   "text": "Regarding the RPFS start RB index hopping across multiple legacy SRS frequency hopping periods determined by pseudo-random sequence for intra-repetition hopping with ,\n- If hopping granularity is not configured, .",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R20-MIMO",
+    "tdoc": "R1-2609659",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2609659.zip"
+   },
+   "scope": "agenda",
+   "topic": "srs",
+   "tags": [
+    "srs"
+   ],
+   "keywords": [],
+   "stage": "wi",
+   "impact": [],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:9.2:013",
+   "meeting": "RAN1#127",
+   "agenda_item": "9.2",
+   "agenda_title": "NR MIMO Phase 6",
+   "agenda_path": [
+    {
+     "number": "9",
+     "title": "Release 20 NR"
+    },
+    {
+     "number": "9.2",
+     "title": "NR MIMO Phase 6"
+    }
+   ],
+   "type": "Agreement",
+   "text": "Regarding the configuration of KF, PF and K, down-select one from the following alternatives\n- Jointly configuring the ‘startRBIndex’, ‘freqScalingFactor’ (PF), and K into three combined fields:\n| startRBIndexAndFreqScalingFactor 2AndNrofStartRBHopping2-r20 | Configures the UE with the startRBIndex, freqScalingFactor, and nrofStartRBHopping for intra-repetition hopping for SRS repetition symbols within each SRS frequency hop. The startRBIndexAndFreqScalingFactor2AndNrofStartRBHopping2 gives the startRBIndex when freqScalingFactor is 2 and nrofStartRBHopping = 2 | 0, 1 |\n| startRBIndexAndFreqScalingFactor 4AndNrofStartRBHopping2-r20 | Configures the UE with the startRBIndex, freqScalingFactor, and nrofStartRBHopping for intra-repetition hopping for SRS repetition symbols within each SRS frequency hop. The startRBIndexAndFreqScalingFactor4AndNrofStartRBHopping2 gives the startRBIndex when freqScalingFactor is 4 and nrofStartRBHopping = 2 | 0, 1, 2, 3 |\n| startRBIndexAndFreqScalingFactor 4AndNrofStartRBHopping4-r20 | Configures the UE with the startRBIndex, freqScalingFactor, and nrofStartRBHopping for intra-repetition hopping for SRS repetition symbols within each SRS frequency hop. The startRBIndexAndFreqScalingFactor4AndNrofStartRBHopping4 gives the startRBIndex when freqScalingFactor is 4 and nrofStartRBHopping = 4 | 0, 1, 2, 3 |",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R20-MIMO",
+    "tdoc": "R1-2609659",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2609659.zip"
+   },
+   "scope": "agenda",
+   "topic": "srs",
+   "tags": [
+    "srs"
+   ],
+   "keywords": [],
+   "stage": "wi",
+   "impact": [],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:9.6:008",
+   "meeting": "RAN1#127",
+   "agenda_item": "9.6",
+   "agenda_title": "Rel-20 UE features",
+   "agenda_path": [
+    {
+     "number": "9",
+     "title": "Release 20 NR"
+    },
+    {
+     "number": "9.6",
+     "title": "Rel-20 UE features"
+    }
+   ],
+   "type": "Agreement",
+   "text": "Introduce the following Rel. 19 UE FGs (yellow highlighting, if any, shows text that’s not yet agreed)\n| 69. NR_MIMO_Ph6 | 69-1-1 | Early aperiodic CSI-RS and associated CSI report triggering during SCell activation | 1) Support of aperiodic CSI-RS for CSI for an SCell triggered by a new MAC-CE based on the Rel-17 enhanced SCell activation/deactivation MAC CE activating the SCell 2) Support of up to 32 CSI-RS ports for the aperiodic CSI-RS 3) Support of PUSCH carrying the aperiodic CSI report scheduled by the UL grant in the SCell activation/deactivation MAC CE 4) Support of report quantity ‘cri-RI-PMI-CQI’ | FFS | Yes | N/A | The UE does not support early aperiodic CSI-RS and associated CSI report triggering via SCell activation | FFS | FFS | FFS | FFS |  | Optional with capability signalling |\n| 69. NR_MIMO_Ph6 | 69-1-2 | PMI-free reporting for early aperiodic CSI reporting during SCell activation | 1) Support of report quantity ‘cri-RI-CQI’ for early aperiodic CSI reporting | FFS | Yes | N/A | The UE does not support PMI-free reporting for early aperiodic CSI reporting via SCell activation | FFS | FFS | FFS | FFS |  | Optional with capability signalling |\n| 69. NR_MIMO_Ph6 | 69-1-3 | Early aperiodic SRS triggering during SCell activation | 1) Support of aperiodic SRS-AS for an SCell triggered by a new MAC-CE based on the Rel-17 enhanced SCell activation/deactivation MAC CE activating the SCell 2) Support of Rel-15 SRS antenna switching configurations | FFS | Yes | N/A | The UE does not support early aperiodic SRS triggering via SCell activation | FFS | FFS | FFS | FFS |  | Optional with capability signalling |",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R20-AI 9.6"
+   },
+   "scope": "candidate",
+   "topic": "srs",
+   "tags": [
+    "srs",
+    "report",
+    "csirs"
+   ],
+   "keywords": [
+    "CSI-RS",
+    "CSI report",
+    "PMI",
+    "CQI",
+    "SRS",
+    "CSI"
+   ],
+   "stage": "fg",
+   "impact": [
+    "capability",
+    "dimension",
+    "measure"
+   ],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:9.6:009",
+   "meeting": "RAN1#127",
+   "agenda_item": "9.6",
+   "agenda_title": "Rel-20 UE features",
+   "agenda_path": [
+    {
+     "number": "9",
+     "title": "Release 20 NR"
+    },
+    {
+     "number": "9.6",
+     "title": "Rel-20 UE features"
+    }
+   ],
+   "type": "Agreement",
+   "text": "Introduce the following Rel. 19 UE FGs (yellow highlighting, if any, shows text that’s not yet agreed)\n| 69. NR_MIMO_Ph6 | 69-2-1 | Early aperiodic SRS triggering out of SCell dormancy | 1) Support of aperiodic SRS-AS, triggered into SCell(s) switch out of dormancy by the ‘SRS request’ field in DCI format 0_1/1_1 indicating switch out of dormancy 2) Support of Rel-15 SRS antenna switching configurations | FFS | Yes | N/A | The UE does not support early aperiodic SRS triggering out of SCell dormancy | FFS | FFS | FFS | FFS |  | Optional with capability signalling |\n| 69. NR_MIMO_Ph6 | 69-2-2 | Early aperiodic CSI-RS and associated CSI report triggering out of SCell dormancy | 1) Support of aperiodic CSI-RS for CSI, triggered into SCell(s) switch out of dormancy by the ‘CSI request’ field in DCI format 0_1 indicating switch out of dormancy 2) Support of up to 32 CSI-RS ports for the aperiodic CSI-RS 3) Support of aperiodic CSI report triggered into SCell(s) switch out of dormancy by the ‘CSI request’ field in DCI format 0_1 indicating switch out of dormancy 4) Support of report quantity ‘cri-RI-PMI-CQI’ | FFS | Yes | N/A | The UE does not support early aperiodic CSI-RS and associated CSI report triggering out of SCell dormancy | FFS | FFS | FFS | FFS |  | Optional with capability signalling |\n| 69. NR_MIMO_Ph6 | 69-2-3 | PMI-free reporting for early aperiodic CSI reporting out of SCell dormancy | 1) Support of report quantity ‘cri-RI-CQI’ for the aperiodic CSI reporting | FFS | Yes | N/A | The UE does not support PMI-free reporting for early aperiodic CSI reporting out of SCell dormancy | FFS | FFS | FFS | FFS |  | Optional with capability signalling |\n| 69. NR_MIMO_Ph6 | 69-2-4 | Early aperiodic SRS triggering out of SCell dormancy by DCI format 0_3/1_3 | 1) Support ‘SRS request’ field in DCI format 0_3/1_3 indicating switching out of dormancy | FFS | Yes | N/A | The UE does not support early triggering out of SCell dormancy by DCI format 0_3/1_3 | FFS | FFS | FFS | FFS |  | Optional with capability signalling |\n| 69. NR_MIMO_Ph6 | 69-2-5 | Early aperiodic CSI-RS and associated CSI report triggering out of SCell dormancy by DCI format 0_3 | 1) Support ‘CSI request’ field in DCI format 0_3 indicating switching out of dormancy | FFS | Yes | N/A | The UE does not support early triggering out of SCell dormancy by DCI format 0_3 | FFS | FFS | FFS | FFS |  | Optional with capability signalling |",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R20-AI 9.6"
+   },
+   "scope": "candidate",
+   "topic": "srs",
+   "tags": [
+    "srs",
+    "report",
+    "csirs"
+   ],
+   "keywords": [
+    "CSI-RS",
+    "CSI report",
+    "PMI",
+    "CQI",
+    "SRS",
+    "CSI"
+   ],
+   "stage": "fg",
+   "impact": [
+    "capability",
+    "dimension",
+    "measure"
+   ],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:9.6:010",
+   "meeting": "RAN1#127",
+   "agenda_item": "9.6",
+   "agenda_title": "Rel-20 UE features",
+   "agenda_path": [
+    {
+     "number": "9",
+     "title": "Release 20 NR"
+    },
+    {
+     "number": "9.6",
+     "title": "Rel-20 UE features"
+    }
+   ],
+   "type": "Agreement",
+   "text": "Introduce the following Rel. 19 UE FGs (yellow highlighting, if any, shows text that’s not yet agreed)\n| 69. NR_MIMO_Ph6 | 69-3-1 | Reduced CSI-RS density ρ = 1/3 for aggregated 48 CSI-RS ports | Support of CSI-RS frequency-domain density ρ = 1/3 with K=3, 16-port NZP CSI-RS resources aggregating 48 CSI-RS ports, including an RRC-configured RB-level offset per NZP CSI-RS resource | FFS | Yes | N/A | Reduced CSI-RS density ρ = 1/3 for aggregated 48 CSI-RS ports is not supported |  | FFS | FFS | FFS | FFS |  | Optional with capability signalling |\n| 69. NR_MIMO_Ph6 | 69-3-2 | Reduced CSI-RS density ρ = 1/4 for aggregated 48 CSI-RS ports | Support of CSI-RS frequency-domain density ρ = 1/4 with K=2, 24-port NZP CSI-RS resources aggregating 48 CSI-RS ports, including an RRC-configured RB-level offset per NZP CSI-RS resource | FFS | Yes | N/A | Reduced CSI-RS density ρ = 1/4 for aggregated 48 CSI-RS ports is not supported |  | FFS | FFS | FFS | FFS |  | Optional with capability signalling |\n| 69. NR_MIMO_Ph6 | 69-3-3 | Reduced CSI-RS density ρ = 1/4 for aggregated 64 CSI-RS ports | Support of CSI-RS frequency-domain density ρ = 1/4 for NZP CSI-RS resources aggregating 64 CSI-RS ports, including an RRC-configured RB-level offset per NZP CSI-RS resource | FFS | Yes | N/A | Reduced CSI-RS density ρ = 1/4 for aggregated 64 CSI-RS ports is not supported |  | FFS | FFS | FFS | FFS |  | Optional with capability signalling |\n| 69. NR_MIMO_Ph6 | 69-3-4 | Reduced CSI-RS density ρ = 1/4 for aggregated 128 CSI-RS ports | Support of CSI-RS frequency-domain density ρ = 1/4 with K=4, 32-port NZP CSI-RS resources aggregating 128 CSI-RS ports, including an RRC-configured RB-level offset per NZP CSI-RS resource | FFS | Yes | N/A | Reduced CSI-RS density ρ = 1/4 for aggregated 128 CSI-RS ports is not supported |  | FFS | FFS | FFS | FFS |  | Optional with capability signalling |\n| 69. NR_MIMO_Ph6 | 69-3-5 | Reduced CSI-RS density ρ = 1/6 for aggregated 48 CSI-RS ports | Support of CSI-RS frequency-domain density ρ = 1/6 with K=3,16-port NZP CSI-RS resources aggregating 48 CSI-RS ports, including an RRC-configured RB-level offset per NZP CSI-RS resource | FFS | Yes | N/A | Reduced CSI-RS density ρ = 1/6 for aggregated 48 CSI-RS ports is not supported |  | FFS | FFS | FFS | FFS |  | Optional with capability signalling |\n| 69. NR_MIMO_Ph6 | 69-3-6 | Reduced CSI-RS density ρ = 1/8 for aggregated 48 CSI-RS ports | Support of CSI-RS frequency-domain density ρ = 1/8 with K=2, 24-port NZP CSI-RS resources aggregating 48 CSI-RS ports, including an RRC-configured RB-level offset per NZP CSI-RS resource | FFS | Yes | N/A | Reduced CSI-RS density ρ = 1/8 for aggregated 48 CSI-RS ports is not supported |  | FFS | FFS | FFS | FFS |  | Optional with capability signalling |\n| 69. NR_MIMO_Ph6 | 69-3-7 | Reduced CSI-RS density ρ = 1/8 for aggregated 64 CSI-RS ports | Support of CSI-RS frequency-domain density ρ = 1/8 with K=4, 16-port NZP CSI-RS resources aggregating 64 CSI-RS ports, including an RRC-configured RB-level offset per NZP CSI-RS resource | FFS | Yes | N/A | Reduced CSI-RS density ρ = 1/8 for aggregated 64 CSI-RS ports is not supported |  | FFS | FFS | FFS | FFS |  | Optional with capability signalling |\n| 69. NR_MIMO_Ph6 | 69-3-8 | Reduced CSI-RS density ρ = 1/8 for aggregated 128 CSI-RS ports | Support of CSI-RS frequency-domain density ρ = 1/8 with K=4, 32-port NZP CSI-RS resources aggregating 128 CSI-RS ports, including an RRC-configured RB-level offset per NZP CSI-RS resource | FFS | Yes | N/A | Reduced CSI-RS density ρ = 1/8 for aggregated 128 CSI-RS ports is not supported |  | FFS | FFS | FFS | FFS |  | Optional with capability signalling |",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R20-AI 9.6"
+   },
+   "scope": "candidate",
+   "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
+   "keywords": [
+    "CSI-RS",
+    "CSI"
+   ],
+   "stage": "fg",
+   "impact": [
+    "capability",
+    "dimension"
+   ],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:9.6:011",
+   "meeting": "RAN1#127",
+   "agenda_item": "9.6",
+   "agenda_title": "Rel-20 UE features",
+   "agenda_path": [
+    {
+     "number": "9",
+     "title": "Release 20 NR"
+    },
+    {
+     "number": "9.6",
+     "title": "Rel-20 UE features"
+    }
+   ],
+   "type": "Agreement",
+   "text": "Introduce the following Rel. 19 UE FGs (yellow highlighting, if any, shows text that’s not yet agreed)\n| 69. NR_MIMO_Ph6 | 69-4-1 | Deterministic intra-repetition hopping within each SRS frequency hop | 1. Support for K = 2, 4 frequency domain starting positions for intra-repetition hopping with pseudo-random hopping pattern 2. Support for subset restriction for pseudo-random hopping pattern 3. Support for configurable hopping period for pseudo-random hopping pattern | FFS | Yes | N/A | Multiple frequency-domain starting positions for SRS repetition is not supported | FFS | FFS | FFS | FFS |  | Optional with capability signaling |\n| 69. NR_MIMO_Ph6 | 69-4-2 | R17 RPFS start RB index hopping + deterministic intra-repetition hopping within each SRS frequency hop | Support simultaneous enabling of the R17 RPFS start RB index hopping across multiple legacy SRS frequency hopping periods and intra-repetition hopping for SRS repetition symbols within each SRS frequency hop | FFS | Yes | N/A | R17 RPFS start RB index hopping + intra-repetition hopping within each SRS frequency hop is not supported | FFS | FFS | FFS | FFS | FFS: whether to merge this FG 69-4-2 | Optional with capability signaling |\n| 69. NR_MIMO_Ph6 | 69-4-3 | Pseudo-random intra-repetition hopping within each SRS frequency hop + deterministic intra-repetition hopping | Support simultaneous enabling of the pseudo-random RPFS start RB hopping across different SRS frequency hopping period groups and intra-repetition hopping for SRS repetition symbols | FFS | Yes | N/A | Pseudo-random RPFS start RB hopping + intra-repetition hopping is not supported | FFS | FFS | FFS | FFS |  | Optional with capability signaling |",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R20-AI 9.6"
+   },
+   "scope": "candidate",
+   "topic": "srs",
+   "tags": [
+    "srs"
+   ],
+   "keywords": [
+    "SRS"
+   ],
+   "stage": "fg",
+   "impact": [
+    "capability"
+   ],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:9.6:012",
+   "meeting": "RAN1#127",
+   "agenda_item": "9.6",
+   "agenda_title": "Rel-20 UE features",
+   "agenda_path": [
+    {
+     "number": "9",
+     "title": "Release 20 NR"
+    },
+    {
+     "number": "9.6",
+     "title": "Rel-20 UE features"
+    }
+   ],
+   "type": "Agreement",
+   "text": "Introduce the following Rel. 19 UE FGs (yellow highlighting, if any, shows text that’s not yet agreed)\n| 69. NR_MIMO_Ph6 | 69-5-1 | Support a periodic, semi-persistent, or aperiodic SRS resource set which includes at least one SRS resource with time-domain resource transmitted across a first S slot and a second consecutive U slot | 1. One set of time-domain resource allocation related parameters (i.e., startPosition, nrofSymbols, and repetitionFactor) is configured for the SRS resource without restriction on “within a slot”. For the index of each SRS symbol , . The offset counts symbols backwards from the end of the starting slot of the resource ‘’ is the starting symbol in the starting slot for an SRS resource. ‘’ is the symbol index in a slot or two consecutive S and U slots the maximum number of repetition factor is limited to 14 The maximum number of symbols per cross-slot SRS resource is limited to 14 2. Support of PUSCH transmission with a priority index 0 after the cross-slot SRS resource in the U slot 3. Support an aperiodic SRS resource set which includes at least one SRS resource with time-domain resource transmitted in a first S slot, and at least one another SRS resource with time-domain resource transmitted in a second consecutive U slot 4. Support of per-resource slot offset of an aperiodic SRS resource 5. Support of PUSCH transmission with a priority index 0 after all the SRS resources of the set entirely in the U slot 6. Support to allow SRS resource(s) in a non-cross-slot SRS resource set to be transmitted in a serving cell before the same-slot transmission of PUSCH with a priority index 0 and corresponding DMRS in the serving cell. | FFS | Yes | N/A | a periodic, semi-persistent, or aperiodic SRS resource set which includes at least one SRS resource with time-domain resource transmitted across a first S slot and a second consecutive U slot is not supported | FFS | FFS | FFS | FFS |  | Optional with capability signaling |\n| 69. NR_MIMO_Ph6 | 69-5-2 | The available slot(s) can include one slot or two consecutive S and U slots | The available slot(s) can include one slot or two consecutive S and U slots satisfying there are UL or flexible symbol(s) for the time-domain location(s) for all the SRS resources in the resource set and it satisfies UE capability on the minimum timing requirement between triggering PDCCH and all the SRS resources in the resource set | FFS | Yes | N/A | The available slot(s) can include one slot or two consecutive S and U slots is not supported | FFS | FFS | FFS | FFS |  | Optional with capability signaling |\n| 69. NR_MIMO_Ph6 | 69-5-3 | A single aperiodic SRS resource set configuration for 1T8R via cross-slot | Support adding a single aperiodic SRS resource set configuration for 1T8R via cross-slot, where eight SRS resources are transmitted in different symbols of two consecutive S and U slots, each mapped to a different UE antenna port. | FFS | Yes | N/A | 1T8R via cross-slot, is not supported | FFS | FFS | FFS | FFS |  | Optional with capability signaling |",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R20-AI 9.6"
+   },
+   "scope": "candidate",
+   "topic": "srs",
+   "tags": [
+    "srs"
+   ],
+   "keywords": [
+    "SRS"
+   ],
+   "stage": "fg",
+   "impact": [
+    "capability"
+   ],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:9.6:013",
+   "meeting": "RAN1#127",
+   "agenda_item": "9.6",
+   "agenda_title": "Rel-20 UE features",
+   "agenda_path": [
+    {
+     "number": "9",
+     "title": "Release 20 NR"
+    },
+    {
+     "number": "9.6",
+     "title": "Rel-20 UE features"
+    }
+   ],
+   "type": "Agreement",
+   "text": "Introduce the following Rel. 19 UE FGs (yellow highlighting, if any, shows text that’s not yet agreed)\n| 69. NR_MIMO_Ph6 | 69-3-10 | RB allocation enhancements for CSI-RS frequency-domain density reduction | 1. Support CSI-RS frequency-domain density reduction for aggregated 48/64/128 CSI-RS ports with uniform RB allocation for the frequency domain RB allocation of the NZP CSI-RS resources 2. Support CSI-RS frequency-domain density reduction for aggregated 48/64/128 CSI-RS ports with upto two consecutive RB allocation for the frequency domain RB allocation of the NZP CSI-RS resources | FFS | Yes | N/A | RB allocation enhancements for CSI-RS frequency-domain density reduction are not supported |  | FFS | FFS | FFS | FFS |  | Optional with capability signalling |",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R20-AI 9.6"
+   },
+   "scope": "candidate",
+   "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
+   "keywords": [
+    "CSI-RS",
+    "CSI"
+   ],
+   "stage": "fg",
+   "impact": [
+    "capability",
+    "dimension"
+   ],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:9.6:014",
+   "meeting": "RAN1#127",
+   "agenda_item": "9.6",
+   "agenda_title": "Rel-20 UE features",
+   "agenda_path": [
+    {
+     "number": "9",
+     "title": "Release 20 NR"
+    },
+    {
+     "number": "9.6",
+     "title": "Rel-20 UE features"
+    }
+   ],
+   "type": "Agreement",
+   "text": "Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown (yellow highlighting shows text that’s not yet agreed)\n| 69. NR_MIMO_Ph6 | 69-1-1 | Early aperiodic CSI-RS and associated CSI report triggering during SCell activation | 1) Support of aperiodic CSI-RS for CSI for an SCell triggered by a new MAC-CE based on the Rel-17 enhanced SCell activation/deactivation MAC CE activating the SCell 2) Support of up to 32 CSI-RS ports for the aperiodic CSI-RS 3) Support of PUSCH carrying the aperiodic CSI report scheduled by the UL grant in the SCell activation/deactivation MAC CE 4) Support of report quantity ‘cri-RI-PMI-CQI’ | FFS | Yes | N/A | The UE does not support early aperiodic CSI-RS and associated CSI report triggering via SCell activation | FFS Per band | FFS N/A | FFS N/A | FFS N/A |  | Optional with capability signalling |\n| 69. NR_MIMO_Ph6 | 69-1-2 | PMI-free reporting for early aperiodic CSI reporting during SCell activation | 1) Support of report quantity ‘cri-RI-CQI’ for early aperiodic CSI reporting | FFS | Yes | N/A | The UE does not support PMI-free reporting for early aperiodic CSI reporting via SCell activation | FFS Per band | FFS N/A | FFS N/A | FFS N/A |  | Optional with capability signalling |\n| 69. NR_MIMO_Ph6 | 69-1-3 | Early aperiodic SRS triggering during SCell activation | 1) Support of aperiodic SRS-AS for an SCell triggered by a new MAC-CE based on the Rel-17 enhanced SCell activation/deactivation MAC CE activating the SCell 2) Support of Rel-15 SRS antenna switching configurations | FFS | Yes | N/A | The UE does not support early aperiodic SRS triggering via SCell activation | FFS Per band | FFS N/A | FFS N/A | FFS N/A |  | Optional with capability signalling |",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R20-AI 9.6"
+   },
+   "scope": "candidate",
+   "topic": "srs",
+   "tags": [
+    "srs",
+    "report",
+    "csirs"
+   ],
+   "keywords": [
+    "CSI-RS",
+    "CSI report",
+    "PMI",
+    "CQI",
+    "SRS",
+    "CSI"
+   ],
+   "stage": "fg",
+   "impact": [
+    "dimension",
+    "measure"
+   ],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:9.6:015",
+   "meeting": "RAN1#127",
+   "agenda_item": "9.6",
+   "agenda_title": "Rel-20 UE features",
+   "agenda_path": [
+    {
+     "number": "9",
+     "title": "Release 20 NR"
+    },
+    {
+     "number": "9.6",
+     "title": "Rel-20 UE features"
+    }
+   ],
+   "type": "Agreement",
+   "text": "Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown (yellow highlighting shows text that’s not yet agreed)\n| 69. NR_MIMO_Ph6 | 69-2-1 | Early aperiodic SRS triggering out of SCell dormancy | 1) Support of aperiodic SRS-AS, triggered into SCell(s) switch out of dormancy by the ‘SRS request’ field in DCI format 0_1/1_1 indicating switch out of dormancy 2) Support of Rel-15 SRS antenna switching configurations | FFS | Yes | N/A | The UE does not support early aperiodic SRS triggering out of SCell dormancy | FFS Per band | FFS N/A | FFS N/A | FFS N/A |  | Optional with capability signalling |\n| 69. NR_MIMO_Ph6 | 69-2-2 | Early aperiodic CSI-RS and associated CSI report triggering out of SCell dormancy | 1) Support of aperiodic CSI-RS for CSI, triggered into SCell(s) switch out of dormancy by the ‘CSI request’ field in DCI format 0_1 indicating switch out of dormancy 2) Support of up to 32 CSI-RS ports for the aperiodic CSI-RS 3) Support of aperiodic CSI report triggered into SCell(s) switch out of dormancy by the ‘CSI request’ field in DCI format 0_1 indicating switch out of dormancy 4) Support of report quantity ‘cri-RI-PMI-CQI’ | FFS | Yes | N/A | The UE does not support early aperiodic CSI-RS and associated CSI report triggering out of SCell dormancy | FFS Per band | FFS N/A | FFS N/A | FFS N/A |  | Optional with capability signalling |\n| 69. NR_MIMO_Ph6 | 69-2-3 | PMI-free reporting for early aperiodic CSI reporting out of SCell dormancy | 1) Support of report quantity ‘cri-RI-CQI’ for the aperiodic CSI reporting | FFS | Yes | N/A | The UE does not support PMI-free reporting for early aperiodic CSI reporting out of SCell dormancy | FFS Per band | FFS N/A | FFS N/A | FFS N/A |  | Optional with capability signalling |\n| 69. NR_MIMO_Ph6 | 69-2-4 | Early aperiodic SRS triggering out of SCell dormancy by DCI format 0_3/1_3 | 1) Support ‘SRS request’ field in DCI format 0_3/1_3 indicating switching out of dormancy | FFS | Yes | N/A | The UE does not support early triggering out of SCell dormancy by DCI format 0_3/1_3 | FFS Per band | FFS N/A | FFS N/A | FFS N/A |  | Optional with capability signalling |\n| 69. NR_MIMO_Ph6 | 69-2-5 | Early aperiodic CSI-RS and associated CSI report triggering out of SCell dormancy by DCI format 0_3 | 1) Support ‘CSI request’ field in DCI format 0_3 indicating switching out of dormancy | FFS | Yes | N/A | The UE does not support early triggering out of SCell dormancy by DCI format 0_3 | FFS Per band | FFS N/A | FFS N/A | FFS N/A |  | Optional with capability signalling |",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R20-AI 9.6"
+   },
+   "scope": "candidate",
+   "topic": "srs",
+   "tags": [
+    "srs",
+    "report",
+    "csirs"
+   ],
+   "keywords": [
+    "CSI-RS",
+    "CSI report",
+    "PMI",
+    "CQI",
+    "SRS",
+    "CSI"
+   ],
+   "stage": "fg",
+   "impact": [
+    "dimension",
+    "measure"
+   ],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:9.6:016",
+   "meeting": "RAN1#127",
+   "agenda_item": "9.6",
+   "agenda_title": "Rel-20 UE features",
+   "agenda_path": [
+    {
+     "number": "9",
+     "title": "Release 20 NR"
+    },
+    {
+     "number": "9.6",
+     "title": "Rel-20 UE features"
+    }
+   ],
+   "type": "Agreement",
+   "text": "Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown (yellow highlighting shows text that’s not yet agreed)\n| 69. NR_MIMO_Ph6 | 69-4-1 | Deterministic intra-repetition hopping within each SRS frequency hop | 1. Support for K = 2, 4 frequency domain starting positions for intra-repetition hopping with pseudo-random hopping pattern 2. Support for subset restriction for pseudo-random hopping pattern 3. Support for configurable hopping period for pseudo-random hopping pattern | FFS | Yes | N/A | Multiple frequency-domain starting positions for SRS repetition is not supported | FFS Per band | FFS N/A | FFS N/A | FFS N/A |  | Optional with capability signaling |\n| 69. NR_MIMO_Ph6 | 69-4-2 | R17 RPFS start RB index hopping + deterministic intra-repetition hopping within each SRS frequency hop | Support simultaneous enabling of the R17 RPFS start RB index hopping across multiple legacy SRS frequency hopping periods and intra-repetition hopping for SRS repetition symbols within each SRS frequency hop | FFS | Yes | N/A | R17 RPFS start RB index hopping + intra-repetition hopping within each SRS frequency hop is not supported | FFS Per band | FFS N/A | FFS N/A | FFS N/A | FFS: whether to merge this FG 69-4-2 | Optional with capability signaling |\n| 69. NR_MIMO_Ph6 | 69-4-3 | Pseudo-random intra-repetition hopping within each SRS frequency hop + deterministic intra-repetition hopping | Support simultaneous enabling of the pseudo-random RPFS start RB hopping across different SRS frequency hopping period groups and intra-repetition hopping for SRS repetition symbols | FFS | Yes | N/A | Pseudo-random RPFS start RB hopping + intra-repetition hopping is not supported | FFS Per band | FFS N/A | FFS N/A | FFS N/A |  | Optional with capability signaling |",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R20-AI 9.6"
+   },
+   "scope": "candidate",
+   "topic": "srs",
+   "tags": [
+    "srs"
+   ],
+   "keywords": [
+    "SRS"
+   ],
+   "stage": "fg",
+   "impact": [
+    "capability"
+   ],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:9.6:017",
+   "meeting": "RAN1#127",
+   "agenda_item": "9.6",
+   "agenda_title": "Rel-20 UE features",
+   "agenda_path": [
+    {
+     "number": "9",
+     "title": "Release 20 NR"
+    },
+    {
+     "number": "9.6",
+     "title": "Rel-20 UE features"
+    }
+   ],
+   "type": "Agreement",
+   "text": "Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown (yellow highlighting shows text that’s not yet agreed)\n| 69. NR_MIMO_Ph6 | 69-5-1 | Support a periodic, semi-persistent, or aperiodic SRS resource set which includes at least one SRS resource with time-domain resource transmitted across a first S slot and a second consecutive U slot | 1. One set of time-domain resource allocation related parameters (i.e., startPosition, nrofSymbols, and repetitionFactor) is configured for the SRS resource without restriction on “within a slot”. For the index of each SRS symbol , . The offset counts symbols backwards from the end of the starting slot of the resource ‘’ is the starting symbol in the starting slot for an SRS resource. ‘’ is the symbol index in a slot or two consecutive S and U slots the maximum number of repetition factor is limited to 14 The maximum number of symbols per cross-slot SRS resource is limited to 14 2. Support of PUSCH transmission with a priority index 0 after the cross-slot SRS resource in the U slot 3. Support an aperiodic SRS resource set which includes at least one SRS resource with time-domain resource transmitted in a first S slot, and at least one another SRS resource with time-domain resource transmitted in a second consecutive U slot 4. Support of per-resource slot offset of an aperiodic SRS resource 5. Support of PUSCH transmission with a priority index 0 after all the SRS resources of the set entirely in the U slot 6. Support to allow SRS resource(s) in a non-cross-slot SRS resource set to be transmitted in a serving cell before the same-slot transmission of PUSCH with a priority index 0 and corresponding DMRS in the serving cell. | FFS | Yes | N/A | a periodic, semi-persistent, or aperiodic SRS resource set which includes at least one SRS resource with time-domain resource transmitted across a first S slot and a second consecutive U slot is not supported | FFS Per band | FFS N/A | FFS N/A | FFS N/A |  | Optional with capability signaling |\n| 69. NR_MIMO_Ph6 | 69-5-2 | The available slot(s) can include one slot or two consecutive S and U slots | The available slot(s) can include one slot or two consecutive S and U slots satisfying there are UL or flexible symbol(s) for the time-domain location(s) for all the SRS resources in the resource set and it satisfies UE capability on the minimum timing requirement between triggering PDCCH and all the SRS resources in the resource set | FFS | Yes | N/A | The available slot(s) can include one slot or two consecutive S and U slots is not supported | FFS Per band | FFS N/A | FFS N/A | FFS N/A |  | Optional with capability signaling |\n| 69. NR_MIMO_Ph6 | 69-5-3 | A single aperiodic SRS resource set configuration for 1T8R via cross-slot | Support adding a single aperiodic SRS resource set configuration for 1T8R via cross-slot, where eight SRS resources are transmitted in different symbols of two consecutive S and U slots, each mapped to a different UE antenna port. | FFS | Yes | N/A | 1T8R via cross-slot, is not supported | FFS Per band | FFS N/A | FFS N/A | FFS N/A |  | Optional with capability signaling |",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R20-AI 9.6"
+   },
+   "scope": "candidate",
+   "topic": "srs",
+   "tags": [
+    "srs"
+   ],
+   "keywords": [
+    "SRS"
+   ],
+   "stage": "fg",
+   "impact": [
+    "capability"
+   ],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:9.6:018",
+   "meeting": "RAN1#127",
+   "agenda_item": "9.6",
+   "agenda_title": "Rel-20 UE features",
+   "agenda_path": [
+    {
+     "number": "9",
+     "title": "Release 20 NR"
+    },
+    {
+     "number": "9.6",
+     "title": "Rel-20 UE features"
+    }
+   ],
+   "type": "Agreement",
+   "text": "Introduce the following Rel. 19 UE FGs (yellow highlighting, if any, shows text that’s not yet agreed)\n| 68. NR_AIML_air_Ph2 | 68-1a | CSI feedback based on pairing ID for up to 32 ports | 1. Support of CSI feedback based on pairing ID for up to 32 ports 2. A list of supported combinations, each combination is {Max # of Tx ports in one resource, Max # of resources and total # of Tx ports} across all CCs simultaneously 3. Supported value of ti for the relaxation of Z and Z’ timeline, where i is the index of SCS, i=1,2,3,4,5,6 corresponding to 15,30,60,120,480,960 kHz SCS 4. Supported number of occupied CPU 5. Supported number of occupied CPU2 / CPU3 6. Occupied resource pool between CPU,2 and CPU,3 7. Support of rank 1 to [4] 8. CSI feedback type [9. Support two-part UCI and layer-based UCI mapping and omission] [10. Maximum number of Tx port for CSI feedback] [11. Maximum number of subband for CSI feedback] [12. Maximum CSI feedback payload size for CSI feedback] [13. Support of parameter combinations PC3, PC4, PC5, and Rank1 and Rank2 of PC2] | 2-35 | Yes | N/A | CSI feedback based on pairing ID up to 32 ports is not supported | FFS | FFS | FFS | FFS | Component candidate values are FFS [Note: If UE is configured with PC2 and it does not support FG 68-x1, UE is not expected to report more than two layers] | Optional with capability signalling |",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R20-AI 9.6"
+   },
+   "scope": "candidate",
+   "topic": "report",
+   "tags": [
+    "report"
+   ],
+   "keywords": [
+    "CSI feedback",
+    "CSI",
+    "CPU"
+   ],
+   "stage": "fg",
+   "impact": [
+    "timeline",
+    "capability",
+    "dimension"
+   ],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:9.6:019",
+   "meeting": "RAN1#127",
+   "agenda_item": "9.6",
+   "agenda_title": "Rel-20 UE features",
+   "agenda_path": [
+    {
+     "number": "9",
+     "title": "Release 20 NR"
+    },
+    {
+     "number": "9.6",
+     "title": "Rel-20 UE features"
+    }
+   ],
+   "type": "Agreement",
+   "text": "Introduce the following Rel. 19 UE FGs (yellow highlighting, if any, shows text that’s not yet agreed)\n| 68. NR_AIML_air_Ph2 | 68-1b | CSI feedback based on pairing ID for 64 ports | 1. Support of CSI feedback based on pairing ID 64 Tx ports by aggregating multiple resources within 1 slot 2. A list of supported combinations, each combination is {Max # of resources and total # of Tx ports} across all CCs in a band when reported per band, and across all CCs in a band combination when reported per BC simultaneously [3. A list of supported combinations, each combination is {Max # of resources and total # of Tx ports} per CC simultaneously] 4. Supported processing capability 5. Supported value of ti for the relaxation of Z and Z’ timeline, where i is the index of SCS, i=1,2,3,4,5,6 corresponding to 15,30,60,120,480,960 kHz SCS 6. Supported number of occupied CPU 7. Supported number of occupied CPU2 / CPU3 8. Occupied resource pool between CPU,2 and CPU,3 [9. Support of up to 4 CSI-RS resources in a resource set] 10. Support of rank 1 to [4] 11. CSI feedback type [12. Support two-part UCI and layer-based UCI mapping and omission] [13. Maximum number of Tx port for CSI feedback] [14. Maximum number of subband for CSI feedback] [15. Maximum CSI feedback payload size for CSI feedback] [16. Support of parameter combinations PC3, PC4, PC5, and Rank1 and Rank2 of PC2] | 68-1a | Yes | N/A | CSI feedback based on pairing ID for 64 ports is not supported | FFS | FFS | FFS | FFS | Component candidate values are FFS [Note: If UE is configured with PC2 and it does not support FG 68-x1, UE is not expected to report more than two layers] | Optional with capability signalling |\n| 68. NR_AIML_air_Ph2 | 68-1c | CSI feedback based on pairing ID for 48 ports | 1. Support of CSI feedback based on pairing ID 48 Tx ports by aggregating multiple resources within 1 slot 2. A list of supported combinations, each combination is {Max # of resources and total # of Tx ports} across all CCs in a band when reported per band, and across all CCs in a band combination when reported per BC simultaneously [3. A list of supported combinations, each combination is {Max # of resources and total # of Tx ports} per CC simultaneously] 4. Supported processing capability 5. Supported value of ti for the relaxation of Z and Z’ timeline, where i is the index of SCS, i=1,2,3,4,5,6 corresponding to 15,30,60,120,480,960 kHz SCS 6. Supported number of occupied CPU 7. Supported number of occupied CPU2 / CPU3 8. Occupied resource pool between CPU,2 and CPU,3 [9. Support of up to 4 CSI-RS resources in a resource set] 10. Support of rank 1 to [4] 11. CSI feedback type [12. Support two-part UCI and layer-based UCI mapping and omission] [13. Maximum number of Tx port for CSI feedback] [14. Maximum number of subband for CSI feedback] [15. Maximum CSI feedback payload size for CSI feedback] [16. Support of parameter combinations PC3, PC4, PC5, and Rank1 and Rank2 of PC2] | 68-1a | Yes | N/A | CSI feedback based on pairing ID for 48 ports is not supported | FFS | FFS | FFS | FFS | Component candidate values are FFS [Note: If UE is configured with PC2 and it does not support FG 68-x1, UE is not expected to report more than two layers] | Optional with capability signalling |\n| 68. NR_AIML_air_Ph2 | 68-1d | CSI feedback based on pairing ID for 128 ports | 1. Support of CSI feedback based on pairing ID 128 Tx ports by aggregating multiple resources within 1 slot 2. A list of supported combinations, each combination is {Max # of resources and total # of Tx ports} across all CCs in a band when reported per band, and across all CCs in a band combination when reported per BC simultaneously [3. A list of supported combinations, each combination is {Max # of resources and total # of Tx ports} per CC simultaneously] 4. Supported processing capability 5. supported value of ti for the relaxation of Z and Z’ timeline, where i is the index of SCS, i=1,2,3,4,5,6 corresponding to 15,30,60,120,480,960 kHz SCS 6. supported number of occupied CPU 7. supported number of occupied CPU2 / CPU3 8. Occupied resource pool between CPU,2 and CPU,3 [9. Support of up to 4 CSI-RS resources in a resource set] 10. Support of rank 1 to [4] 11. CSI feedback type (semi-persistent, aperiodic) [12. Support two-part UCI and layer-based UCI mapping and omission] [13. Maximum number of Tx port for CSI feedback] [14. Maximum number of subband for CSI feedback] [15. Maximum CSI feedback payload size for CSI feedback] [16. Support of parameter combinations PC3, PC4, PC5, and Rank1 and Rank2 of PC2] | 68-1a | Yes | N/A | CSI feedback based on pairing ID for 128 ports is not supported | FFS | FFS | FFS | FFS | Component candidate values are FFS [Note: If UE is configured with PC2 and it does not support FG 68-x1, UE is not expected to report more than two layers] | Optional with capability signalling |",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R20-AI 9.6"
+   },
+   "scope": "candidate",
+   "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
+   "keywords": [
+    "CSI-RS",
+    "CSI feedback",
+    "CSI",
+    "CPU"
+   ],
+   "stage": "fg",
+   "impact": [
+    "timeline",
+    "capability",
+    "dimension"
+   ],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:9.6:020",
+   "meeting": "RAN1#127",
+   "agenda_item": "9.6",
+   "agenda_title": "Rel-20 UE features",
+   "agenda_path": [
+    {
+     "number": "9",
+     "title": "Release 20 NR"
+    },
+    {
+     "number": "9.6",
+     "title": "Rel-20 UE features"
+    }
+   ],
+   "type": "Agreement",
+   "text": "Introduce the following Rel. 19 UE FGs (yellow highlighting, if any, shows text that’s not yet agreed)\n| 68. NR_AIML_air_Ph2 | 68-2 | UE Data collection for CSI feedback based on pairing ID | 1. Support of UE data collection for CSI feedback based on pairing ID 2. Support of data collection with periodic and semi-persistent CSI-RS [3. Support of providing UE preferred configuration for UE-side CSI compression data configuration] | 2-35 | Yes | N/A | UE Data collection for CSI feedback based on pairing ID is not supported | FFS | FFS | FFS | FFS |  | Optional with capability signalling |",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R20-AI 9.6"
+   },
+   "scope": "candidate",
+   "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
+   "keywords": [
+    "CSI-RS",
+    "CSI feedback",
+    "CSI compression",
+    "CSI"
+   ],
+   "stage": "fg",
+   "impact": [
+    "capability"
+   ],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:9.6:021",
+   "meeting": "RAN1#127",
+   "agenda_item": "9.6",
+   "agenda_title": "Rel-20 UE features",
+   "agenda_path": [
+    {
+     "number": "9",
+     "title": "Release 20 NR"
+    },
+    {
+     "number": "9.6",
+     "title": "Rel-20 UE features"
+    }
+   ],
+   "type": "Agreement",
+   "text": "Introduce the following Rel. 19 UE FGs (yellow highlighting, if any, shows text that’s not yet agreed)\n| 68. NR_AIML_air_Ph2 | 68-3 | Active CSI-RS resources and ports for mixed CSI feedback based on pairing ID with other codebooks in any slot | 1. List of codebook combinations of two types 2. List of {max number of ports per resource, max number of resources, max number of total ports} for each codebook combination | FFS | Yes | N/A | Active CSI-RS resources and ports for mixed CSI feedback based on pairing ID with other codebooks in any slot is not supported | FFS | FFS | FFS | FFS | Component candidate values are FFS Note: if a UE reports one or more codebook combinations in 68-3, then usage of active CSI-RS resources and ports for multiple CSF feedback in any slot is allowed only within those combinations Note: For coexisting of mixed codebooks in any slot, gNB need to honor 16-8, 23-9-5, 58-3-1-7, 68-3 and per-codebook capability 2-36/40/41, 16-3a, and 23-9-1/23-9-2/23-9-4. | Optional with capability signaling |\n| Features | Index | Feature group | Components | Prerequisite feature groups | Need for the gNB to know if the feature is supported | Applicable to the capability signalling exchange between UEs (Sidelink WI only)”. | Consequence if the feature is not supported by the UE | Type (the ‘type’ definition from UE features should be based on the granularity of 1) Per UE or 2) Per Band or 3) Per BC or 4) Per FS or 5) Per FSPC) | Need of FDD/TDD differentiation | Need of FR1/FR2 differentiation | Capability interpretation for mixture of FDD/TDD and/or FR1/FR2 | Note | Mandatory/Optional |\n| 68. NR_AIML_air_Ph2 | 68-1a | CSI feedback based on pairing ID for up to 32 ports | 1. Support of CSI feedback based on pairing ID for up to 32 ports 2. A list of supported combinations, each combination is {Max # of Tx ports in one resource, Max # of resources and total # of Tx ports} across all CCs simultaneously 3. Supported value of ti for the relaxation of Z and Z’ timeline, where i is the index of SCS, i=1,2,3,4,5,6 corresponding to 15,30,60,120,480,960 kHz SCS 4. Supported number of occupied CPU 5. Supported number of occupied CPU2 / CPU3 6. Occupied resource pool between CPU,2 and CPU,3 7. Support of rank 1 to [4] 8. CSI feedback type [9. Support two-part UCI and layer-based UCI mapping and omission] [10. Maximum number of Tx port for CSI feedback] [11. Maximum number of subband for CSI feedback] [12. Maximum CSI feedback payload size for CSI feedback] [13. Support of parameter combinations PC3, PC4, PC5, and Rank1 and Rank2 of PC2] | 2-35 | Yes | N/A | CSI feedback based on pairing ID up to 32 ports is not supported | FFS | FFS | FFS | FFS | Component candidate values are FFS [Note: If UE is configured with PC2 and it does not support FG 68-x1, UE is not expected to report more than two layers] | Optional with capability signalling |\n| 68. NR_AIML_air_Ph2 | 68-1b | CSI feedback based on pairing ID for 64 ports | 1. Support of CSI feedback based on pairing ID 64 Tx ports by aggregating multiple resources within 1 slot 2. A list of supported combinations, each combination is {Max # of resources and total # of Tx ports} across all CCs in a band when reported per band, and across all CCs in a band combination when reported per BC simultaneously [3. A list of supported combinations, each combination is {Max # of resources and total # of Tx ports} per CC simultaneously] 4. Supported processing capability 5. Supported value of ti for the relaxation of Z and Z’ timeline, where i is the index of SCS, i=1,2,3,4,5,6 corresponding to 15,30,60,120,480,960 kHz SCS 6. Supported number of occupied CPU 7. Supported number of occupied CPU2 / CPU3 8. Occupied resource pool between CPU,2 and CPU,3 [9. Support of up to 4 CSI-RS resources in a resource set] 10. Support of rank 1 to [4] 11. CSI feedback type [12. Support two-part UCI and layer-based UCI mapping and omission] [13. Maximum number of Tx port for CSI feedback] [14. Maximum number of subband for CSI feedback] [15. Maximum CSI feedback payload size for CSI feedback] [16. Support of parameter combinations PC3, PC4, PC5, and Rank1 and Rank2 of PC2] | 68-1a | Yes | N/A | CSI feedback based on pairing ID for 64 ports is not supported | FFS | FFS | FFS | FFS | Component candidate values are FFS [Note: If UE is configured with PC2 and it does not support FG 68-x1, UE is not expected to report more than two layers] | Optional with capability signalling |\n| 68. NR_AIML_air_Ph2 | 68-1c | CSI feedback based on pairing ID for 48 ports | 1. Support of CSI feedback based on pairing ID 48 Tx ports by aggregating multiple resources within 1 slot 2. A list of supported combinations, each combination is {Max # of resources and total # of Tx ports} across all CCs in a band when reported per band, and across all CCs in a band combination when reported per BC simultaneously [3. A list of supported combinations, each combination is {Max # of resources and total # of Tx ports} per CC simultaneously] 4. Supported processing capability 5. Supported value of ti for the relaxation of Z and Z’ timeline, where i is the index of SCS, i=1,2,3,4,5,6 corresponding to 15,30,60,120,480,960 kHz SCS 6. Supported number of occupied CPU 7. Supported number of occupied CPU2 / CPU3 8. Occupied resource pool between CPU,2 and CPU,3 [9. Support of up to 4 CSI-RS resources in a resource set] 10. Support of rank 1 to [4] 11. CSI feedback type [12. Support two-part UCI and layer-based UCI mapping and omission] [13. Maximum number of Tx port for CSI feedback] [14. Maximum number of subband for CSI feedback] [15. Maximum CSI feedback payload size for CSI feedback] [16. Support of parameter combinations PC3, PC4, PC5, and Rank1 and Rank2 of PC2] | 68-1a | Yes | N/A | CSI feedback based on pairing ID for 48 ports is not supported | FFS | FFS | FFS | FFS | Component candidate values are FFS [Note: If UE is configured with PC2 and it does not support FG 68-x1, UE is not expected to report more than two layers] | Optional with capability signalling |\n| 68. NR_AIML_air_Ph2 | 68-1d | CSI feedback based on pairing ID for 128 ports | 1. Support of CSI feedback based on pairing ID 128 Tx ports by aggregating multiple resources within 1 slot 2. A list of supported combinations, each combination is {Max # of resources and total # of Tx ports} across all CCs in a band when reported per band, and across all CCs in a band combination when reported per BC simultaneously [3. A list of supported combinations, each combination is {Max # of resources and total # of Tx ports} per CC simultaneously] 4. Supported processing capability 5. supported value of ti for the relaxation of Z and Z’ timeline, where i is the index of SCS, i=1,2,3,4,5,6 corresponding to 15,30,60,120,480,960 kHz SCS 6. supported number of occupied CPU 7. supported number of occupied CPU2 / CPU3 8. Occupied resource pool between CPU,2 and CPU,3 [9. Support of up to 4 CSI-RS resources in a resource set] 10. Support of rank 1 to [4] 11. CSI feedback type (semi-persistent, aperiodic) [12. Support two-part UCI and layer-based UCI mapping and omission] [13. Maximum number of Tx port for CSI feedback] [14. Maximum number of subband for CSI feedback] [15. Maximum CSI feedback payload size for CSI feedback] [16. Support of parameter combinations PC3, PC4, PC5, and Rank1 and Rank2 of PC2] | 68-1a | Yes | N/A | CSI feedback based on pairing ID for 128 ports is not supported | FFS | FFS | FFS | FFS | Component candidate values are FFS [Note: If UE is configured with PC2 and it does not support FG 68-x1, UE is not expected to report more than two layers] | Optional with capability signalling |\n| 68. NR_AIML_air_Ph2 | 68-2 | UE Data collection for CSI feedback based on pairing ID | 1. Support of UE data collection for CSI feedback based on pairing ID 2. Support of data collection with periodic and semi-persistent CSI-RS [3. Support of providing UE preferred configuration for UE-side CSI compression data configuration] | 2-35 | Yes | N/A | UE Data collection for CSI feedback based on pairing ID is not supported | FFS | FFS | FFS | FFS |  | Optional with capability signalling |\n| 68. NR_AIML_air_Ph2 | 68-3 | Active CSI-RS resources and ports for mixed CSI feedback based on pairing ID with other codebooks in any slot | 1. List of codebook combinations of two types 2. List of {max number of ports per resource, max number of resources, max number of total ports} for each codebook combination | FFS | Yes | N/A | Active CSI-RS resources and ports for mixed CSI feedback based on pairing ID with other codebooks in any slot is not supported | FFS | FFS | FFS | FFS | Component candidate values are FFS Note: if a UE reports one or more codebook combinations in 68-3, then usage of active CSI-RS resources and ports for multiple CSF feedback in any slot is allowed only within those combinations Note: For coexisting of mixed codebooks in any slot, gNB need to honor 16-8, 23-9-5, 58-3-1-7, 68-3 and per-codebook capability 2-36/40/41, 16-3a, and 23-9-1/23-9-2/23-9-4. | Optional with capability signaling |\n| Features | Index | Feature group | Components | Prerequisite feature groups | Need for the eNB to know if the feature is supported | Need for the UE to know if the feature is supported (only for V2X WI, where the PC5-RRC capability signalling is delivered between the UEs) | Consequence if the feature is not supported by the UE | Type (the ‘type’ definition from UE features should be based on the granularity of 1) Per UE or 2) Per Band or 3) Per BC or 4) Per FS or 5) Per FSPC) | Need of FDD/TDD differentiation | Capability interpretation for mixture of FDD/TDD | Note | Mandatory/Optional |\n| 1. IoT_NTN_Ph4 | 1-1 | SPS for DL/UL data transmission for voice packets over NB-IoT NTN GSO | 1. Support of downlink SPS with one or two periodicities and additional time offset 2. Support of uplink SPS with one periodicity and additional time offset 3. Support of joint DL and UL SPS release via a single MAC CE 4. Support of DCI format N1 for DL SPS activation 5. Support of DCI format N0 for UL SPS activation 6. Support of DCI format N1 for DL SPS periodicity switching when 2 DL SPS periodicities are configured 7. Support one HARQ process for DL SPS and one HARQ process for UL SPS 8. Support of HARQ feedback disabling for SPS NPDSCH without corresponding NPDCCH | FFS | Yes | N/A | SPS for DL/UL data transmission for voice packets over NB-IoT NTN GSO is not supported | Per UE | FDD only | N/A | Component 1 candidate values: {one periodicity, two periodicities} Note: Component 6 only applies to UEs that signal two periodicities for component 1 Note: This FG is only applicable in IoT-NTN FDD bands Note: This FG is only applicable in GSO Note: OCC is not supported for UL SPS of Rel-20 IoT-NTN | Optional with capability signalling |",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R20-AI 9.6"
+   },
+   "scope": "candidate",
+   "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
+   "keywords": [
+    "CSI-RS",
+    "CSI feedback",
+    "CSI compression",
+    "codebook",
+    "CSI",
+    "CPU"
+   ],
+   "stage": "fg",
+   "impact": [
+    "timeline",
+    "capability",
+    "dimension"
+   ],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:10.4.2:006",
+   "meeting": "RAN1#127",
+   "agenda_item": "10.4.2",
+   "agenda_title": "Operation in connected mode",
+   "agenda_path": [
+    {
+     "number": "10",
+     "title": "Rel-20 Study of 6GR"
+    },
+    {
+     "number": "10.4",
+     "title": "Multiple carrier operation"
+    },
+    {
+     "number": "10.4.2",
+     "title": "Operation in connected mode"
+    }
+   ],
+   "type": "Agreement",
+   "text": "For fast enabling/disabling access to additional carriers for 6GR multiple carrier operation in connected mode, further discuss how to achieve fast r, considering the following:\n- For the study, RAN1 assumes the  operation is composed of one or more of the following:\n  - Enabling command processing\n  - RF preparation, e.g., retuning or switching on an RF module\n  - Synchronization acquisition, TA and AGC\n  - CSI acquisition and reporting\n  - Others\n- Which of the above steps can be prepared or skipped, shortened before/after the command for enabling, depending on at least one or more of the following:\n  - UE behaviors in an already-enabled carrier and another to-be-enabled carrier\n  - The synchronization relationship between a to-be-enabled carrier and another already-enabled carrier, e.g., D1/D2/D3\n  - Whether the to-be-enabled carrier shares an RF chain with the already-enabled carrier in UE side\n  - The information kept by the UE for the to-be-enabled carrier in the disabled state, e.g., configuration, measurement, synchronization, CSI\n- From RAN1’s study, for synchronization acquisition/AGC with synchronization source on the to-be-enabled carrier, at least consider the following candidates:\n  - SSB\n  - OD-SSB\n  - SS-only\n  - Periodic TRS\n  - Aperiodic TRS\n  - Others",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R20-6GR-MC-Operation in connected mode"
+   },
+   "scope": "candidate",
+   "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
+   "keywords": [
+    "CSI acquisition",
+    "CSI"
+   ],
+   "stage": "study",
+   "impact": [],
+   "clauses": [],
+   "warn": [
+    "math"
+   ]
+  },
+  {
    "id": "RAN1#127:10.5.1.1:001",
    "meeting": "RAN1#127",
    "agenda_item": "10.5.1.1",
@@ -40746,9 +42911,9 @@
    "text": "For 6GR PSS,\n- 6GR PSS carry 3 physical Cell ID hypotheses",
    "ffs": [],
    "source": {
-    "doc": "Chair notes RAN1#127_v12",
+    "doc": "Chair notes RAN1#127_eom1",
     "kind": "chairman_note",
-    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
     "discussion": "127-R20-6GR-Synchronization and Beam Measurement"
    },
    "scope": "agenda",
@@ -40789,9 +42954,9 @@
    "text": "For 6GR SSS\n- The sequence type is Gold sequence\n- The number of SSS sequences for carrying physical Cell ID is 336 per PSS physical Cell ID hypotheses\n  - Note: continue to study the motivation to carry other information",
    "ffs": [],
    "source": {
-    "doc": "Chair notes RAN1#127_v12",
+    "doc": "Chair notes RAN1#127_eom1",
     "kind": "chairman_note",
-    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
     "discussion": "127-R20-6GR-Synchronization and Beam Measurement"
    },
    "scope": "agenda",
@@ -40832,9 +42997,9 @@
    "text": "For SSB design, downselect one from Alt 1 and Alt 2,\nAlt 1:\n- One 6GR SSB spans 4 OFDM symbols within a slot, with 1 symbol for PSS and 1 symbol for SSS\nAlt 2:\n- One 6GR SSB spans 5 OFDM symbols within a slot, with 2 symbols for PSS and 1 symbol for SSS",
    "ffs": [],
    "source": {
-    "doc": "Chair notes RAN1#127_v12",
+    "doc": "Chair notes RAN1#127_eom1",
     "kind": "chairman_note",
-    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
     "discussion": "127-R20-6GR-Synchronization and Beam Measurement"
    },
    "scope": "agenda",
@@ -40875,9 +43040,9 @@
    "text": "The coverage gaps relative to the basic coverage of 143 dB MaxCL and extended coverage of 153 dB MaxCL for different signals and channels during initial access are captured in the following tables.\nNote: It is understood that the trimmed mean Msg5 PUSCH is using the evaluation results assuming different payload.\nTable X: Coverage gap relative to 143 dB MaxCL for different signals and channels during initial access based on R15 NR assumptions, 0.7 GHz, 15kHz SCS, 2T2R or DL, 1T2R for UL\n| Signals/channels | Number of Sample(s) | Coverage gap (trimmed mean) | Standard Deviation (w/o outlier) |\n| PSS/SSS w/o combining | 9 | -1.54 | 1.12 |\n| PBCH w/o combining | 9 | 0.34 | 1.18 |\n| PSS/SSS w/ 4 combining | 8 | 3.05 | 0.72 |\n| PBCH w/ 4 combining | 9 | 4.88 | 1.21 |\n| SIB1 PDCCH | 10 | 2.34 | 0.37 |\n| SIB1 PDSCH | 10 | 1.24 | 0.63 |\n| Msg2 PDSCH | 9 | 2.59 | 1.59 |\n| Msg4 PDSCH | 9 | 1.58 | 0.49 |\n| PRACH format 0 | 9 | -2.77 | 0.63 |\n| PRACH format B4 | 6 | -2.70 | 1.37 |\n| PRACH format C2 | 7 | -6.53 | 1.04 |\n| Msg3 PUSCH | 10 | -5.18 | 0.72 |\n| Msg5 PUSCH | 10 | -10.73 | 3.32 |\n| PUCCH format 1 | 8 | 1.99 | 0.55 |\nTable X: Coverage gap relative to 143 dB MaxCL for different signals and channels during initial access based on R15 NR assumptions, 0.7 GHz, 15kHz SCS, 2T1R for DL\n| Signals/channels | Number of Sample(s) | Coverage gap (trimmed mean) | Standard Deviation (w/o outlier) |\n| PSS/SSS w/o combining | 9 | -6.48 | 1.60 |\n| PBCH w/o combining | 10 | -4.07 | 1.93 |\n| PSS/SSS w/ 4 combining | 8 | -1.08 | 1.26 |\n| PBCH w/ 4 combining | 9 | 1.20 | 1.80 |\n| SIB1 PDCCH | 11 | -1.37 | 0.60 |\n| SIB1 PDSCH | 11 | -2.70 | 0.78 |\n| Msg2 PDSCH | 10 | -1.93 | 1.72 |\n| Msg4 PDSCH | 10 | -2.25 | 0.64 |\nTable X: Coverage gap relative to 153 dB MaxCL for different signals and channels during initial access based on R15 NR assumptions, 0.7 GHz, 15kHz SCS, 2T2R or DL, 1T2R for UL\n| Signals/channels | Number of Sample(s) | Coverage gap (trimmed mean) | Standard Deviation (w/o outlier) |\n| PSS/SSS w/o combining | 9 | -11.54 | 1.12 |\n| PBCH w/o combining | 9 | -9.66 | 1.18 |\n| PSS/SSS w/ 4 combining | 8 | -6.95 | 0.72 |\n| PBCH w/ 4 combining | 9 | -5.12 | 1.21 |\n| SIB1 PDCCH | 10 | -7.66 | 0.37 |\n| SIB1 PDSCH | 10 | -8.76 | 0.63 |\n| Msg2 PDSCH | 9 | -7.41 | 1.59 |\n| Msg4 PDSCH | 9 | -8.42 | 0.49 |\n| PRACH format 0 | 9 | -12.77 | 0.63 |\n| PRACH format B4 | 6 | -12.70 | 1.37 |\n| PRACH format C2 | 7 | -16.53 | 1.04 |\n| Msg3 PUSCH | 10 | -15.18 | 0.72 |\n| Msg5 PUSCH | 10 | -20.73 | 3.32 |\n| PUCCH format 1 | 8 | -8.01 | 0.55 |\nTable X: Coverage gap relative to 153 dB MaxCL for different signals and channels during initial access based on R15 NR assumptions, 0.7 GHz, 15kHz SCS, 2T1R for DL\n| Signals/channels | Number of Sample(s) | Coverage gap (trimmed mean) | Standard Deviation (w/o outlier) |\n| PSS/SSS w/o combining | 9 | -16.48 | 1.60 |\n| PBCH w/o combining | 10 | -14.07 | 1.93 |\n| PSS/SSS w/ 4 combining | 8 | -11.08 | 1.26 |\n| PBCH w/ 4 combining | 9 | -8.80 | 1.80 |\n| SIB1 PDCCH | 11 | -11.37 | 0.60 |\n| SIB1 PDSCH | 11 | -12.70 | 0.78 |\n| Msg2 PDSCH | 10 | -11.93 | 1.72 |\n| Msg4 PDSCH | 10 | -12.25 | 0.64 |\nTable X: Coverage gap relative to 143 dB MaxCL for different signals and channels during initial access based on R15 NR assumptions, 2.6 GHz, 30kHz SCS, 2T2R for DL, 1T2R for UL\n| Signals/channels | Number of Sample(s) | Coverage gap (trimmed mean) | Standard Deviation (w/o outlier) |\n| PSS/SSS w/o combining | 10 | -1.80 | 0.88 |\n| PBCH w/o combining | 11 | 0.45 | 1.46 |\n| PSS/SSS w/ 4 combining | 8 | 3.96 | 0.73 |\n| PBCH w/ 4 combining | 10 | 5.20 | 0.96 |\n| SIB1 PDCCH | 11 | 2.32 | 0.33 |\n| SIB1 PDSCH | 11 | 0.93 | 0.85 |\n| Msg2 PDSCH | 10 | 2.06 | 1.77 |\n| Msg4 PDSCH | 10 | 1.00 | 1.25 |\n| PRACH format 0 | 8 | -2.28 | 0.50 |\n| PRACH format B4 | 7 | -4.37 | 0.61 |\n| PRACH format C2 | 7 | -7.96 | 0.94 |\n| Msg3 PUSCH | 10 | -7.94 | 0.78 |\n| Msg5 PUSCH | 10 | -13.67 | 3.33 |\n| PUCCH format 1 | 8 | -0.50 | 0.91 |\nTable X: Coverage gap relative to 143 dB MaxCL for different signals and channels during initial access based on R15 NR assumptions, 2.6 GHz, 30kHz SCS, 2T1R for DL\n| Signals/channels | Number of Sample(s) | Coverage gap (trimmed mean) | Standard Deviation (w/o outlier) |\n| PSS/SSS w/o combining | 10 | -7.06 | 1.89 |\n| PBCH w/o combining | 10 | -4.74 | 2.63 |\n| PSS/SSS w/ 4 combining | 8 | 0.76 | 0.64 |\n| PBCH w/ 4 combining | 10 | 1.93 | 1.36 |\n| SIB1 PDCCH | 10 | -1.45 | 0.57 |\n| SIB1 PDSCH | 10 | -2.66 | 0.91 |\n| Msg2 PDSCH | 9 | -1.21 | 1.26 |\n| Msg4 PDSCH | 9 | -2.20 | 0.78 |\nTable X: Coverage gap relative to 153 dB MaxCL for different signals and channels during initial access based on R15 NR assumptions, 2.6 GHz, 30kHz SCS, 2T2R for DL, 1T2R for UL\n| Signals/channels | Number of Sample(s) | Coverage gap (trimmed mean) | Standard Deviation (w/o outlier) |\n| PSS/SSS w/o combining | 10 | -11.80 | 0.88 |\n| PBCH w/o combining | 11 | -9.55 | 1.46 |\n| PSS/SSS w/ 4 combining | 8 | -6.04 | 0.73 |\n| PBCH w/ 4 combining | 10 | -4.80 | 0.96 |\n| SIB1 PDCCH | 11 | -7.68 | 0.33 |\n| SIB1 PDSCH | 11 | -9.07 | 0.85 |\n| Msg2 PDSCH | 10 | -7.94 | 1.77 |\n| Msg4 PDSCH | 10 | -9.00 | 1.25 |\n| PRACH format 0 | 8 | -12.28 | 0.50 |\n| PRACH format B4 | 7 | -14.37 | 0.61 |\n| PRACH format C2 | 7 | -17.96 | 0.94 |\n| Msg3 PUSCH | 10 | -17.94 | 0.78 |\n| Msg5 PUSCH | 10 | -23.67 | 3.33 |\n| PUCCH format 1 | 8 | -10.50 | 0.91 |\nTable X: Coverage gap relative to 153 dB MaxCL for different signals and channels during initial access based on R15 NR assumptions, 2.6 GHz, 30kHz SCS, 2T1R for DL\n| Signals/channels | Number of Sample(s) | Coverage gap (trimmed mean) | Standard Deviation (w/o outlier) |\n| PSS/SSS w/o combining | 10 | -17.06 | 1.89 |\n| PBCH w/o combining | 10 | -14.74 | 2.63 |\n| PSS/SSS w/ 4 combining | 8 | -9.24 | 0.64 |\n| PBCH w/ 4 combining | 10 | -8.07 | 1.36 |\n| SIB1 PDCCH | 10 | -11.45 | 0.57 |\n| SIB1 PDSCH | 10 | -12.66 | 0.91 |\n| Msg2 PDSCH | 9 | -11.21 | 1.26 |\n| Msg4 PDSCH | 9 | -12.20 | 0.78 |",
    "ffs": [],
    "source": {
-    "doc": "Chair notes RAN1#127_v12",
+    "doc": "Chair notes RAN1#127_eom1",
     "kind": "chairman_note",
-    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
     "discussion": "127-R20-6GR-Synchronization and Beam Measurement"
    },
    "scope": "agenda",
@@ -40918,9 +43083,9 @@
    "text": "For the extended coverage of 153 dB MaxCL in TR 38.914, study how to meet the requirement with relaxed performance requirements compared to basic coverage for one or more channels/signals during initial access, e.g.:\n- Additional latency, e.g., combining over a larger number of transmissions/periods\n- Relaxed one-shot detection/decoding target, e.g., a relaxed MDR/BLER for a single transmission of a given signal/channel\n- Note: the above does not imply there will be RAN4 requirement\n- Note: The above does not imply that a new basic physical-signal or channel design is required to meet the 153 dB MaxCL target.",
    "ffs": [],
    "source": {
-    "doc": "Chair notes RAN1#127_v12",
+    "doc": "Chair notes RAN1#127_eom1",
     "kind": "chairman_note",
-    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
     "discussion": "127-R20-6GR-Synchronization and Beam Measurement"
    },
    "scope": "agenda",
@@ -40963,9 +43128,9 @@
     "FFS: the signal structure of additional synchronization/reference signal(s), including"
    ],
    "source": {
-    "doc": "Chair notes RAN1#127_v12",
+    "doc": "Chair notes RAN1#127_eom1",
     "kind": "chairman_note",
-    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
     "discussion": "127-R20-6GR-Synchronization and Beam Measurement"
    },
    "scope": "agenda",
@@ -41007,9 +43172,9 @@
    "text": "Study FDMed paging, where the paging occasions/messages are multiplexed in frequency domain, to facilitate network energy savings",
    "ffs": [],
    "source": {
-    "doc": "Chair notes RAN1#127_v12",
+    "doc": "Chair notes RAN1#127_eom1",
     "kind": "chairman_note",
-    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
     "discussion": "127-R20-6GR-Synchronization and Beam Measurement"
    },
    "scope": "agenda",
@@ -41018,6 +43183,206 @@
     "beam"
    ],
    "keywords": [],
+   "stage": "study",
+   "impact": [],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:10.5.1.1:008",
+   "meeting": "RAN1#127",
+   "agenda_item": "10.5.1.1",
+   "agenda_title": "Synchronization acquisition and beam measurement",
+   "agenda_path": [
+    {
+     "number": "10",
+     "title": "Rel-20 Study of 6GR"
+    },
+    {
+     "number": "10.5",
+     "title": "Multi-antenna system"
+    },
+    {
+     "number": "10.5.1",
+     "title": "Initial access and mobility"
+    },
+    {
+     "number": "10.5.1.1",
+     "title": "Synchronization acquisition and beam measurement"
+    }
+   ],
+   "type": "Working Assumption",
+   "text": "- For 6GR, support\n  - SSB repetition within one default SSB periodicity: UE is assumed to support SSB combining across different SSB repetitions within one default SSB periodicity by the maximum number of repetitions M and across different default SSB periodicities by the number of N\n    - 80 ms default SSB periodicity for initial cell search\n    - Maximum number of repetitions and number of default SSB periodicities for UE to perform SSB combining: M = 2, N = 2\n      - Fixed number of repetitions as starting point, where M within one SSB period: 2\n  - 2 symbols for PSS in one 6GR SSB，\n    - Using 5G NR SSS&PBCH time domain pattern\n  - A UE in connected mode expects that\n    - an additional periodic synchronization signal and the SSB transmissions for initial cell search provide an effective periodicity of up to 40 ms for synchronization, RLM and RRM of its serving “Pcell”\n    - an additional periodic reference signal for finer time and frequency tracking with 20ms periodicity\n      - FFS: Other periodicity for exceptions\n  - Strive to specify solutions to reduce the initial cell selection complexity/latency\nNote: the default SSB periodicity value above is applied at least for TN.",
+   "ffs": [
+    "FFS: Other periodicity for exceptions"
+   ],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R20-6GR-Synchronization and Beam Measurement"
+   },
+   "scope": "agenda",
+   "topic": "beam",
+   "tags": [
+    "beam"
+   ],
+   "keywords": [],
+   "stage": "study",
+   "impact": [
+    "complexity"
+   ],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:10.5.2.1:006",
+   "meeting": "RAN1#127",
+   "agenda_item": "10.5.2.1",
+   "agenda_title": "Downlink transmission scheme(s) for downlink control channels",
+   "agenda_path": [
+    {
+     "number": "10",
+     "title": "Rel-20 Study of 6GR"
+    },
+    {
+     "number": "10.5",
+     "title": "Multi-antenna system"
+    },
+    {
+     "number": "10.5.2",
+     "title": "MIMO operation"
+    },
+    {
+     "number": "10.5.2.1",
+     "title": "Downlink transmission scheme(s) for downlink control channels"
+    }
+   ],
+   "type": "Agreement",
+   "text": "For the study of CSI acquisition for PDCCH, consider the following options:\n- Option 1: NW implementation-based link adaptation, as in NR\n- Option 2: PDCCH-specific CSI report by the UE\n  - FFS: What RS/IMs are used to obtain CSI measurements for PDCCH.\n  - FFS, the content of the PDCCH-specific CSI report or reported preferred configuration (e.g., AL).\nOption 3: UE reporting of the PDCCH reception outcome, e.g., ACK/NACK for the DCI, or an indication of a missed DCI in the HARQ-ACK feedback.\n- FFS, evaluation metric(s) and assumptions for comparison of Options 2-3 against Option 1.",
+   "ffs": [
+    "FFS: What RS/IMs are used to obtain CSI measurements for PDCCH.",
+    "FFS, the content of the PDCCH-specific CSI report or reported preferred configuration (e.g., AL).",
+    "FFS, evaluation metric(s) and assumptions for comparison of Options 2-3 against Option 1."
+   ],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R20-6GR-Transmission scheme for DL control channel",
+    "tdoc": "R1-2610258",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2610258.zip"
+   },
+   "scope": "candidate",
+   "topic": "report",
+   "tags": [
+    "report"
+   ],
+   "keywords": [
+    "CSI report",
+    "CSI acquisition",
+    "CSI"
+   ],
+   "stage": "study",
+   "impact": [],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:10.5.2.2:006",
+   "meeting": "RAN1#127",
+   "agenda_item": "10.5.2.2",
+   "agenda_title": "Downlink transmission scheme(s) for downlink shared channels",
+   "agenda_path": [
+    {
+     "number": "10",
+     "title": "Rel-20 Study of 6GR"
+    },
+    {
+     "number": "10.5",
+     "title": "Multi-antenna system"
+    },
+    {
+     "number": "10.5.2",
+     "title": "MIMO operation"
+    },
+    {
+     "number": "10.5.2.2",
+     "title": "Downlink transmission scheme(s) for downlink shared channels"
+    }
+   ],
+   "type": "Agreement",
+   "text": "- For PDSCH rate matching, i.e., for mapping PDSCH to REs within the scheduled RBs, PDSCH is not mapped to REs within the corresponding RBs that are:\n  - Used for DMRS (including both associated DM-RS and DM-RS intended for other co-scheduled UEs) and PTRS\n  - Used at least for periodic NZP-CSI-RS\n  - Declared as not available for PDSCH\n- For PDSCH rate matching (including both channel/signal specific and non-specific rate matching):\n  - Support semi-static configuration and dynamic indication of rate matching pattern\n    - Further study which channels/signals that require semi-static configuration and which channels/signals that require dynamic indication\n  - Support RB-symbol-level and RE-level rate matching pattern\n    - Further study which channels/signals that require RB-symbol-level rate matching pattern and which channels/signals that require RE-level rate matching pattern\n  - With the above, support, at least, the following:\n    - PDSCH rate matching around, at least, the following 6GR channels/signals via specific rate matching pattern:\n      - At least for periodic CSI-RS\n      - SSB\n    - PDSCH rate matching around, at least, the following NR channels/signals via specific rate matching pattern:\n      - At least for periodic and semi-persistent CSI-RS\n      - SSB\n  - Support PDSCH rate matching around at least 6GR CORESET\n    - FFS: NR CORESET\n    - FFS: Whether/how to support PDSCH rate matching around part of NR/6GR CORESET\n  - FFS: Whether/how to support PDSCH rate matching around PDCCH carrying the DCI scheduling the PDSCH\n  - FFS: Other channels/signals\n  - Note: Only semi-static configuration for coexistence with NB-IoT/eMTC and LTE up to 20 MHz according to TR 38.914 requirement\n  - Note: No RE-level rate matching for coexistence with LTE up to 20 MHz according to RAN#112 agreement\n  - Note: Rate matching pattern design and how to configure rate matching pattern is a discussion for normative phase",
+   "ffs": [
+    "FFS: NR CORESET",
+    "FFS: Whether/how to support PDSCH rate matching around part of NR/6GR CORESET",
+    "FFS: Whether/how to support PDSCH rate matching around PDCCH carrying the DCI scheduling the PDSCH",
+    "FFS: Other channels/signals"
+   ],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R20-6GR-Transmission scheme for DL shared channel",
+    "tdoc": "R1-2610251",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2610251.zip"
+   },
+   "scope": "candidate",
+   "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
+   "keywords": [
+    "CSI-RS",
+    "CSI"
+   ],
+   "stage": "study",
+   "impact": [],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:10.5.2.3:012",
+   "meeting": "RAN1#127",
+   "agenda_item": "10.5.2.3",
+   "agenda_title": "Uplink transmission scheme(s) for uplink channels",
+   "agenda_path": [
+    {
+     "number": "10",
+     "title": "Rel-20 Study of 6GR"
+    },
+    {
+     "number": "10.5",
+     "title": "Multi-antenna system"
+    },
+    {
+     "number": "10.5.2",
+     "title": "MIMO operation"
+    },
+    {
+     "number": "10.5.2.3",
+     "title": "Uplink transmission scheme(s) for uplink channels"
+    }
+   ],
+   "type": "Agreement",
+   "text": "For evaluating the performance of UCI on PUSCH, adopt the following LLS assumptions:\n| Parameters | Proposals |\n| #1 Carrier frequency/Duplex | Refer to the assumption for PUSCH |\n| #2 SCS | Refer to the assumption for PUSCH |\n| #3 Channel model, Delay spread | Refer to the assumption for PUSCH |\n| #4 Antenna configuration | Refer to the assumption for PUSCH |\n| #5 UE speed | Refer to the assumption for PUSCH |\n| #6 UCI payload | 1/2/3/4/6/7/11/22/50/100/300/600/1706 bits as reference, other values can also be evaluated Assuming one UCI type is multiplexed per evaluation with/without UL-SCH (baseline) Assuming multiple UCI types are multiplexed per evaluation, e.g., HARQ-ACK + CSI with/without UL-SCH (optional) Assuming a fixed UCI payload per evaluation Note: Detailed assumptions on UCI modelling are up to companies to report |\n| #7 PRBs | Refer to the assumption for PUSCH The same number of PRBs is assumed when comparing different UCI on PUSCH schemes for the same UCI payload |\n| #8 OFDM symbols | Refer to the assumption for PUSCH The same number of symbols is assumed when comparing different UCI on PUSCH schemes for the same UCI payload. |\n| #9 UCI on PUSCH specific | Companies to report, including UCI coding (e.g. NR coding schemes such as repetition/simplex/RM/Polar as baseline, separate or joint coding of multiple UCI types) UCI mapping details onto PUSCH (e.g., including whether/how RE mapping priorities among UCI types are considered) Companies to report UCI effective code rate or beta/alpha values and UCI modulation order (e.g., whether UCI uses the PUSCH modulation order as in NR) Number of REs used for UCI mapping (i.e., resource overhead for containing UCI) |\n| #10 PUSCH specific | Companies to report, including Waveform (CP-OFDM or DFT-s-OFDM) MCS, if any DMRS configuration, if any With or without UL-SCH Precoding assumption |\n| #11 Metrics for UCI carried on PUSCH | For HARQ-ACK (same target values as for PUCCH): BER @ 1%, BLER @ 1% ACK missed probability @ 1% Minimum SNR value for NACK to ACK probability @ 0.1% For CSI: BLER @ 1% as baseline Other values can be reported by companies. In this case, UL-SCH throughput is also reported for the case with UL-SCH to reflect the trade-off (e.g., impact of CSI decoding error on UL-SCH decoding) PAPR @ 0.1% CCDF, @ 1% CCDF with the waveform reported (optional) PA modeling assumption Note: The target BLER values in this row do not imply that the performance of CSI should be equivalent to or better than that of HARQ-ACK. |",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R20-6GR-Transmission scheme for UL channels",
+    "tdoc": "R1-2609611",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2609611.zip"
+   },
+   "scope": "candidate",
+   "topic": "report",
+   "tags": [
+    "report"
+   ],
+   "keywords": [
+    "CSI"
+   ],
    "stage": "study",
    "impact": [],
    "clauses": [],
@@ -41050,9 +43415,9 @@
    "text": "- For NW-triggered CSI reporting, support Aperiodic CSI reporting on PUSCH for both wideband and subband CSI based on NW triggering\n- For NW-configured CSI reporting, support Periodic CSI reporting assuming the capacity of the container is not larger than X bits",
    "ffs": [],
    "source": {
-    "doc": "Chair notes RAN1#127_v12",
+    "doc": "Chair notes RAN1#127_eom1",
     "kind": "chairman_note",
-    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
     "discussion": "127-R20-6GR-Aspects of DL based CSI acquisition"
    },
    "scope": "agenda",
@@ -41093,9 +43458,9 @@
    "text": "For 6GR, the maximum number of CSI-RS ports is 256",
    "ffs": [],
    "source": {
-    "doc": "Chair notes RAN1#127_v12",
+    "doc": "Chair notes RAN1#127_eom1",
     "kind": "chairman_note",
-    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
     "discussion": "127-R20-6GR-Aspects of DL based CSI acquisition"
    },
    "scope": "agenda",
@@ -41138,9 +43503,9 @@
    "text": "For NW side prediction at spatial and/or frequency domain, deprioritize prediction input Option 1-1: UE reported channel matrix derived from reduced dimension CSI-RS measurement",
    "ffs": [],
    "source": {
-    "doc": "Chair notes RAN1#127_v12",
+    "doc": "Chair notes RAN1#127_eom1",
     "kind": "chairman_note",
-    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
     "discussion": "127-R20-6GR-Aspects of DL based CSI acquisition"
    },
    "scope": "agenda",
@@ -41181,9 +43546,9 @@
    "text": "For the 6GR codebook design for CSI report, for sTRP, targeting different use cases, support W1W2 structure based and W1W2Wf structure based schemes\n- UE reports recommended PMI may include:\n  - Indicators for the selected SD basis vector(s) W1 and, if applicable, the selected FD basis vectors Wf\n    - Note: this does not imply that the W1W2 structure based and W1W2Wf  structure based schemes share the same SD basis design\n  - Indicators, W2, for selection of inter-polarization co-phasing coefficients for W1W2 structure based scheme or linear combination coefficients of the selected SD basis vector(s) and, if applicable, FD basis vectors for W1W2Wf structure based scheme\n    - Note: whether W2 include inter-polarization amplitude for W1W2 structure scheme to be decided in the normative phase\n- Note: This does not imply that all of the above schemes are mandatory UE features and there will be separate UE feature discussion during the normative phase.\n- Note: Basis design will be discussed separately.",
    "ffs": [],
    "source": {
-    "doc": "Chair notes RAN1#127_v12",
+    "doc": "Chair notes RAN1#127_eom1",
     "kind": "chairman_note",
-    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
     "discussion": "127-R20-6GR-Aspects of DL based CSI acquisition"
    },
    "scope": "agenda",
@@ -41229,9 +43594,9 @@
    "text": "For the 6GR codebook design for CSI report, for CJT, RAN 1 recommends to support at least one of the W1W2 structure based and W1W2Wf structure based scheme with TRP-specific SD basis selection conditioned on the support of CJT PDSCH-DMRS QCL in normative phase\n- UE reports recommended PMI may include:\n  - Indicators, W1 for the selected SD basis vector(s) and, if applicable, inter-TRP co-phasing for the   W1W2 structure based scheme (if supported)\n    - Note: this does not imply that the W1W2 structure based and W1W2Wf  structure based schemes share the same SD basis design\n  - Indicators, W2, for selection of inter-polarization co-phasing coefficients of the selected SD basis vectors for  W1W2 structure based (if supported) or linear combination coefficients of the selected SD basis vectors and, FD basis vectors for W1W2Wf structure based (if supported)\n    - Note: whether W2 include inter-polarization amplitude for W1W2 structure based scheme to be decided in the normative phase\n  - Whether/how to support dynamic TRP selection mechanism can be decided in normative phase\n- Note: Basis design will be discussed separately.",
    "ffs": [],
    "source": {
-    "doc": "Chair notes RAN1#127_v12",
+    "doc": "Chair notes RAN1#127_eom1",
     "kind": "chairman_note",
-    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
     "discussion": "127-R20-6GR-Aspects of DL based CSI acquisition"
    },
    "scope": "agenda",
@@ -41276,9 +43641,9 @@
    "text": "- For UE-assisted report for the 6GR DL based CSI, to facilitate CJT deployments, RAN 1 recommends to support CJT calibration (CJTC) reports of delay offset, frequency offset, and phase offset conditioned on the support of CJT PDSCH-DMRS QCL in normative phase.\n- Other detailed design aspects are to be finalized based on the existing agreements",
    "ffs": [],
    "source": {
-    "doc": "Chair notes RAN1#127_v12",
+    "doc": "Chair notes RAN1#127_eom1",
     "kind": "chairman_note",
-    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
     "discussion": "127-R20-6GR-Aspects of DL based CSI acquisition"
    },
    "scope": "agenda",
@@ -41319,9 +43684,9 @@
    "text": "For study on PAPR reduction for JSCM-based CSI compression, deprioritize Option 2.\nNote: discrete constellation with constant amplitude is treated as Option 1.",
    "ffs": [],
    "source": {
-    "doc": "Chair notes RAN1#127_v12",
+    "doc": "Chair notes RAN1#127_eom1",
     "kind": "chairman_note",
-    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
     "discussion": "127-R20-6GR-Aspects of DL based CSI acquisition"
    },
    "scope": "agenda",
@@ -41362,9 +43727,9 @@
    "text": "For UE-assisted report for the 6GR DL based CSI, RAN 1 recommends to support Channel Property Information (CPI) reports at least for SD:\nSupport single option confined within Option 1 (from RAN #126bis agreement) during normative phase.\n- Note: the averaging over time domain for CPI is up to UE implementation.\n- Whether to support CPI for FD can be decided in normative phase with the same scheme as for SD CPI.\nOther detailed design aspects are to be finalized based on the existing agreements\nNote: send LS to RAN 4 to include the above agreement.",
    "ffs": [],
    "source": {
-    "doc": "Chair notes RAN1#127_v12",
+    "doc": "Chair notes RAN1#127_eom1",
     "kind": "chairman_note",
-    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
     "discussion": "127-R20-6GR-Aspects of DL based CSI acquisition"
    },
    "scope": "agenda",
@@ -41405,9 +43770,9 @@
    "text": "6GR CSI-RS supports the following numbers of ports: 1, 2, 4, 8, 12, 16, 24, 32, 48, 64, 128, 256\n- Note: UE capability is a separate discussion in WI",
    "ffs": [],
    "source": {
-    "doc": "Chair notes RAN1#127_v12",
+    "doc": "Chair notes RAN1#127_eom1",
     "kind": "chairman_note",
-    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
     "discussion": "127-R20-6GR-Aspects of DL based CSI acquisition"
    },
    "scope": "agenda",
@@ -41450,9 +43815,9 @@
    "text": "For 6GR CSI-RS CDM size and type, prioritize the following candidates for further down-selection per port number basis\n- Candidate 2-1-1: cdm1\n- Candidate 2-1-2: cdm2-FD2\n- Candidate 2-1-3: cdm4-FD2-TD2\n- Candidate 2-1-4: cdm8-FD2-TD4\n- Candidate 2-2-1: cdm16-FD4-TD4\n- Note: cell edge performance should be considered and compared with full-power CSI-RS transmission",
    "ffs": [],
    "source": {
-    "doc": "Chair notes RAN1#127_v12",
+    "doc": "Chair notes RAN1#127_eom1",
     "kind": "chairman_note",
-    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
     "discussion": "127-R20-6GR-Aspects of DL based CSI acquisition"
    },
    "scope": "agenda",
@@ -41497,9 +43862,9 @@
     "FFS whether it needs to be combined with inter-cell option 1"
    ],
    "source": {
-    "doc": "Chair notes RAN1#127_v12",
+    "doc": "Chair notes RAN1#127_eom1",
     "kind": "chairman_note",
-    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
     "discussion": "127-R20-6GR-Aspects of DL based CSI acquisition"
    },
    "scope": "agenda",
@@ -41540,15 +43905,325 @@
    "text": "On the locations of M2 RBs in each RB set for 6GR CSI-RS, support\n- The M2 RBs are consecutive RBs in each RB set\n- Note: whether the CSI-RS pattern occupies a same or different set of REs in each of the M1 slots and M2 RBs is a separate discussion",
    "ffs": [],
    "source": {
-    "doc": "Chair notes RAN1#127_v12",
+    "doc": "Chair notes RAN1#127_eom1",
     "kind": "chairman_note",
-    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
     "discussion": "127-R20-6GR-Aspects of DL based CSI acquisition"
    },
    "scope": "agenda",
    "topic": "csirs",
    "tags": [
     "csirs"
+   ],
+   "keywords": [],
+   "stage": "study",
+   "impact": [],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:10.5.3.1:013",
+   "meeting": "RAN1#127",
+   "agenda_item": "10.5.3.1",
+   "agenda_title": "Aspects of downlink-based CSI acquisition",
+   "agenda_path": [
+    {
+     "number": "10",
+     "title": "Rel-20 Study of 6GR"
+    },
+    {
+     "number": "10.5",
+     "title": "Multi-antenna system"
+    },
+    {
+     "number": "10.5.3",
+     "title": "CSI acquisition and report"
+    },
+    {
+     "number": "10.5.3.1",
+     "title": "Aspects of downlink-based CSI acquisition"
+    }
+   ],
+   "type": "Agreement",
+   "text": "For the supported W1W2Wf structure based schemes, for the FD basis design, support at least NR DFT FD basis design.",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R20-6GR-Aspects of DL based CSI acquisition"
+   },
+   "scope": "agenda",
+   "topic": "other",
+   "tags": [
+    "other"
+   ],
+   "keywords": [],
+   "stage": "study",
+   "impact": [],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:10.5.3.1:014",
+   "meeting": "RAN1#127",
+   "agenda_item": "10.5.3.1",
+   "agenda_title": "Aspects of downlink-based CSI acquisition",
+   "agenda_path": [
+    {
+     "number": "10",
+     "title": "Rel-20 Study of 6GR"
+    },
+    {
+     "number": "10.5",
+     "title": "Multi-antenna system"
+    },
+    {
+     "number": "10.5.3",
+     "title": "CSI acquisition and report"
+    },
+    {
+     "number": "10.5.3.1",
+     "title": "Aspects of downlink-based CSI acquisition"
+    }
+   ],
+   "type": "Agreement",
+   "text": "On CSI reporting based on a received PDSCH DMRS, decide by RAN 1 #128, whether or not to support the following:\n- PDSCH DMRS-based CQI-only report as the complementary mechanism for PDSCH MCS adaptation\n  - Without any inter-dependence or linkage with other CSI report(s)\n  - Only the DMRS port(s) associated with data is considered for the CQI calculation.\n- Note: The intention is to report CQI corresponding to the received PDSCH, and how the UE calculates the CQI is up to UE implementation\n- Note: This does not require additional DMRS design\n- Note: Other detailed design aspects are to be decided during the normative phase\n- Note: This does not impact HARQ feedback",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R20-6GR-Aspects of DL based CSI acquisition"
+   },
+   "scope": "agenda",
+   "topic": "report",
+   "tags": [
+    "report"
+   ],
+   "keywords": [],
+   "stage": "study",
+   "impact": [
+    "measure"
+   ],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:10.5.3.1:015",
+   "meeting": "RAN1#127",
+   "agenda_item": "10.5.3.1",
+   "agenda_title": "Aspects of downlink-based CSI acquisition",
+   "agenda_path": [
+    {
+     "number": "10",
+     "title": "Rel-20 Study of 6GR"
+    },
+    {
+     "number": "10.5",
+     "title": "Multi-antenna system"
+    },
+    {
+     "number": "10.5.3",
+     "title": "CSI acquisition and report"
+    },
+    {
+     "number": "10.5.3.1",
+     "title": "Aspects of downlink-based CSI acquisition"
+    }
+   ],
+   "type": "Agreement",
+   "text": "Draft Reply LS R1-2610976 on JSCM-based CSI compression with AI is endorsed in principle.",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R20-6GR-Aspects of DL based CSI acquisition"
+   },
+   "scope": "agenda",
+   "topic": "report",
+   "tags": [
+    "report"
+   ],
+   "keywords": [],
+   "stage": "study",
+   "impact": [],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:10.5.3.1:016",
+   "meeting": "RAN1#127",
+   "agenda_item": "10.5.3.1",
+   "agenda_title": "Aspects of downlink-based CSI acquisition",
+   "agenda_path": [
+    {
+     "number": "10",
+     "title": "Rel-20 Study of 6GR"
+    },
+    {
+     "number": "10.5",
+     "title": "Multi-antenna system"
+    },
+    {
+     "number": "10.5.3",
+     "title": "CSI acquisition and report"
+    },
+    {
+     "number": "10.5.3.1",
+     "title": "Aspects of downlink-based CSI acquisition"
+    }
+   ],
+   "type": "Agreement",
+   "text": "Final Reply LS R1-2610977 on JSCM-based CSI compression with AI is endorsed.",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R20-6GR-Aspects of DL based CSI acquisition"
+   },
+   "scope": "agenda",
+   "topic": "report",
+   "tags": [
+    "report"
+   ],
+   "keywords": [],
+   "stage": "study",
+   "impact": [],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:10.5.3.1:017",
+   "meeting": "RAN1#127",
+   "agenda_item": "10.5.3.1",
+   "agenda_title": "Aspects of downlink-based CSI acquisition",
+   "agenda_path": [
+    {
+     "number": "10",
+     "title": "Rel-20 Study of 6GR"
+    },
+    {
+     "number": "10.5",
+     "title": "Multi-antenna system"
+    },
+    {
+     "number": "10.5.3",
+     "title": "CSI acquisition and report"
+    },
+    {
+     "number": "10.5.3.1",
+     "title": "Aspects of downlink-based CSI acquisition"
+    }
+   ],
+   "type": "Agreement",
+   "text": "To assess whether specification enhancement is needed for SD-precoded CSI-RS,\n- Consider the following setup:\n  - The total number of transmitted SD-precoded CSI-RS ports is P, which equals the total number of TXRUs\n  - UE measures  CSI-RS ports, subsequently calculates and reports the CSI based on the measured  ports, and if applicable, the reconstruction information in Option 2.\n- Consider the following options for potential down-selection:\n  - Option 1: Type I-like (W1W2) and/or eType II-like (W1W2Wf) CSI reporting with port-selection (PS) basis with dimension\n  - Option 2: Type I-like (W1W2) and/or eType II-like (W1W2Wf) CSI reporting with NR DFT basis with dimension   with reconstruction information\n    - Companies to report how to get the reconstruction information\n  - Option 3: Type I-like (W1W2) and/or eType II-like(W1W2Wf) CSI reporting with NR DFT basis with  dimension  , including the use of CRI\n- Note: Companies to provide assumptions on how the precoder for CSI-RS is obtained at the aNB\n- Benchmark: Type I and eType II codebook with non-precoded CSI-RS with P CSI-RS ports (benchmark 1) or P’ CSI-RS ports (benchmark 2).\n- The assessment is based on the performance of the options and the benchmark and the UE complexity.\n- For evaluation, companies are to choose from the following (P, P’) values: (256, 32), (256, 64), (256, 256), (128, 128), (128, 32)",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R20-6GR-Aspects of DL based CSI acquisition"
+   },
+   "scope": "agenda",
+   "topic": "report",
+   "tags": [
+    "report",
+    "csirs"
+   ],
+   "keywords": [],
+   "stage": "study",
+   "impact": [
+    "dimension",
+    "complexity",
+    "measure"
+   ],
+   "clauses": [],
+   "warn": [
+    "math"
+   ]
+  },
+  {
+   "id": "RAN1#127:10.5.3.1:018",
+   "meeting": "RAN1#127",
+   "agenda_item": "10.5.3.1",
+   "agenda_title": "Aspects of downlink-based CSI acquisition",
+   "agenda_path": [
+    {
+     "number": "10",
+     "title": "Rel-20 Study of 6GR"
+    },
+    {
+     "number": "10.5",
+     "title": "Multi-antenna system"
+    },
+    {
+     "number": "10.5.3",
+     "title": "CSI acquisition and report"
+    },
+    {
+     "number": "10.5.3.1",
+     "title": "Aspects of downlink-based CSI acquisition"
+    }
+   ],
+   "type": "Agreement",
+   "text": "Draft LS R1-2610974 on UE channel property information reporting is endorsed in principle.",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R20-6GR-Aspects of DL based CSI acquisition"
+   },
+   "scope": "agenda",
+   "topic": "other",
+   "tags": [
+    "other"
+   ],
+   "keywords": [],
+   "stage": "study",
+   "impact": [],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:10.5.3.1:019",
+   "meeting": "RAN1#127",
+   "agenda_item": "10.5.3.1",
+   "agenda_title": "Aspects of downlink-based CSI acquisition",
+   "agenda_path": [
+    {
+     "number": "10",
+     "title": "Rel-20 Study of 6GR"
+    },
+    {
+     "number": "10.5",
+     "title": "Multi-antenna system"
+    },
+    {
+     "number": "10.5.3",
+     "title": "CSI acquisition and report"
+    },
+    {
+     "number": "10.5.3.1",
+     "title": "Aspects of downlink-based CSI acquisition"
+    }
+   ],
+   "type": "Agreement",
+   "text": "Final LS R1-2610975 on UE channel property information reporting is endorsed.\nEmail discussion for observation endorsement\nEmail discussion on the observations on DL CSI reporting and AI-CSI compression for approval, taking draft observations in Annex A and Annex B of R1-2610932 as the starting point. (Nov. 30 ~ Dec. 21).",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R20-6GR-Aspects of DL based CSI acquisition"
+   },
+   "scope": "agenda",
+   "topic": "report",
+   "tags": [
+    "report"
    ],
    "keywords": [],
    "stage": "study",
@@ -41583,9 +44258,9 @@
    "text": "Support at least the following combinations of comb value and cyclic shift for comb values less than or equal to 8 (assuming the minimum bandwidth = 4 PRBs for SRS in 6GR)\n- The maximum number of cyclic shifts up to 24 for comb-2\n- The maximum number of cyclic shifts up to 12 for comb-4\n- The maximum number of cyclic shifts up to 6 for comb-8",
    "ffs": [],
    "source": {
-    "doc": "Chair notes RAN1#127_v12",
+    "doc": "Chair notes RAN1#127_eom1",
     "kind": "chairman_note",
-    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
     "discussion": "127-R20-6GR-Aspects of UL based CSI acquisition"
    },
    "scope": "agenda",
@@ -41626,9 +44301,9 @@
    "text": "Support SRS repetition in 6GR.",
    "ffs": [],
    "source": {
-    "doc": "Chair notes RAN1#127_v12",
+    "doc": "Chair notes RAN1#127_eom1",
     "kind": "chairman_note",
-    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
     "discussion": "127-R20-6GR-Aspects of UL based CSI acquisition"
    },
    "scope": "agenda",
@@ -41671,9 +44346,9 @@
     "FFS: whether the different parts are non-overlapping, and whether they span the entire UL CBW"
    ],
    "source": {
-    "doc": "Chair notes RAN1#127_v12",
+    "doc": "Chair notes RAN1#127_eom1",
     "kind": "chairman_note",
-    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
     "discussion": "127-R20-6GR-Aspects of UL based CSI acquisition"
    },
    "scope": "agenda",
@@ -41718,9 +44393,9 @@
     "FFS: other usages that can be shared"
    ],
    "source": {
-    "doc": "Chair notes RAN1#127_v12",
+    "doc": "Chair notes RAN1#127_eom1",
     "kind": "chairman_note",
-    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
     "discussion": "127-R20-6GR-Aspects of UL based CSI acquisition"
    },
    "scope": "agenda",
@@ -41764,9 +44439,9 @@
     "FFS: TD-OCC hopping (if TD-OCC is supported)"
    ],
    "source": {
-    "doc": "Chair notes RAN1#127_v12",
+    "doc": "Chair notes RAN1#127_eom1",
     "kind": "chairman_note",
-    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
     "discussion": "127-R20-6GR-Aspects of UL based CSI acquisition"
    },
    "scope": "agenda",
@@ -41811,9 +44486,9 @@
     "FFS: Dynamic adaptation of other parameters"
    ],
    "source": {
-    "doc": "Chair notes RAN1#127_v12",
+    "doc": "Chair notes RAN1#127_eom1",
     "kind": "chairman_note",
-    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
     "discussion": "127-R20-6GR-Aspects of UL based CSI acquisition"
    },
    "scope": "agenda",
@@ -41857,9 +44532,9 @@
    "text": "For 2-level SRS frequency hopping patterns for 6GR, support the following pattern within frequency hopping period (Option 1 + Option 2):\n- First level: Hopping over the whole BW with one or multiple frequency hops following nested tree-like frequency hopping pattern as in NR, and\n- Second level: SRS within each frequency hop follows the partial frequency sounding.\n  - Support fixed hopping patterns in the second level.\n  - Details FFS. At least consider intra-repetition hopping specified in R20.\nNote: The first level of 2-level hopping pattern can serve as the single-level SRS frequency hopping pattern",
    "ffs": [],
    "source": {
-    "doc": "Chair notes RAN1#127_v12",
+    "doc": "Chair notes RAN1#127_eom1",
     "kind": "chairman_note",
-    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
     "discussion": "127-R20-6GR-Aspects of UL based CSI acquisition"
    },
    "scope": "agenda",
@@ -41900,9 +44575,9 @@
    "text": "For 6GR SRS, support start RB hopping across different frequency hopping periods.",
    "ffs": [],
    "source": {
-    "doc": "Chair notes RAN1#127_v12",
+    "doc": "Chair notes RAN1#127_eom1",
     "kind": "chairman_note",
-    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
     "discussion": "127-R20-6GR-Aspects of UL based CSI acquisition"
    },
    "scope": "agenda",
@@ -41940,12 +44615,57 @@
     }
    ],
    "type": "Agreement",
-   "text": "Send an LS to RAN4 to clarify the UE RF retuning/switching timeline and requirement when switching SRS between different frequency chunks under DL/UL CBW asymmetry, and inform RAN4 the agreements about SRS.\nEmail discussion on evaluation and results collection for UL-based CSI acquisition (Dec.1~Dec.11)\n- Templates\n- Results collection",
+   "text": "Send an LS to RAN4 to clarify the UE RF retuning/switching timeline and requirement when switching SRS between different frequency chunks under DL/UL CBW asymmetry, and inform RAN4 the agreements about SRS.",
    "ffs": [],
    "source": {
-    "doc": "Chair notes RAN1#127_v12",
+    "doc": "Chair notes RAN1#127_eom1",
     "kind": "chairman_note",
-    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R20-6GR-Aspects of UL based CSI acquisition"
+   },
+   "scope": "agenda",
+   "topic": "srs",
+   "tags": [
+    "srs"
+   ],
+   "keywords": [],
+   "stage": "study",
+   "impact": [
+    "timeline"
+   ],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:10.5.3.2:010",
+   "meeting": "RAN1#127",
+   "agenda_item": "10.5.3.2",
+   "agenda_title": "Aspects of uplink-based CSI acquisition",
+   "agenda_path": [
+    {
+     "number": "10",
+     "title": "Rel-20 Study of 6GR"
+    },
+    {
+     "number": "10.5",
+     "title": "Multi-antenna system"
+    },
+    {
+     "number": "10.5.3",
+     "title": "CSI acquisition and report"
+    },
+    {
+     "number": "10.5.3.2",
+     "title": "Aspects of uplink-based CSI acquisition"
+    }
+   ],
+   "type": "Agreement",
+   "text": "Consider computer-generated SRS sequences for lengths < M, and down-select one option for the value of M:\n- Option-1: M = 30\n- Option-2: M>30 and<=251, with the exact value to be further studied.\nEmail discussion on evaluation and results collection for UL-based CSI acquisition (Dec.1~Dec.11)\n- Templates\n- Results collection",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
     "discussion": "127-R20-6GR-Aspects of UL based CSI acquisition"
    },
    "scope": "agenda",
@@ -41956,9 +44676,7 @@
    ],
    "keywords": [],
    "stage": "study",
-   "impact": [
-    "timeline"
-   ],
+   "impact": [],
    "clauses": [],
    "warn": []
   },
@@ -41989,9 +44707,9 @@
    "text": "At least for FR2, study UE UL beam sweeping for 6GR targeting at least Asymmetric DL sTRP and UL mTRP.\nNote: Which multi-TRP transmission scheme to be supported will be discussed under other agenda.",
    "ffs": [],
    "source": {
-    "doc": "Chair notes RAN1#127_v12",
+    "doc": "Chair notes RAN1#127_eom1",
     "kind": "chairman_note",
-    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
     "discussion": "127-R20-6GR-Beam management"
    },
    "scope": "agenda",
@@ -42032,9 +44750,9 @@
    "text": "- Study the procedure of NW initiated UL beam sweeping considering, at least for FR2\n  - At least consider inter-symbol NW/UE-side beam sweeping including multiple UL RS(s) for UL Tx beam sweeping/repetition.",
    "ffs": [],
    "source": {
-    "doc": "Chair notes RAN1#127_v12",
+    "doc": "Chair notes RAN1#127_eom1",
     "kind": "chairman_note",
-    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
     "discussion": "127-R20-6GR-Beam management"
    },
    "scope": "agenda",
@@ -42075,9 +44793,9 @@
    "text": "For RAN4 LS on 6G FR2 UE digital beamforming architecture [R1-2609011/R4-2621663]:\n- RAN1 notes that 6GR Layer 1 procedures are not specific to a particular UE RF beamforming architecture. At this stage, RAN1 has not identified L1 procedure or specification changes specific to UE digital beamforming architecture for FR2.\n  - RAN1 does not specify the UE beamforming architecture for FR2; it is up to UE implementation.",
    "ffs": [],
    "source": {
-    "doc": "Chair notes RAN1#127_v12",
+    "doc": "Chair notes RAN1#127_eom1",
     "kind": "chairman_note",
-    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
     "discussion": "127-R20-6GR-Beam management"
    },
    "scope": "agenda",
@@ -42092,7 +44810,242 @@
    "warn": []
   },
   {
-   "id": "RAN1#127:10.5.5:003",
+   "id": "RAN1#127:10.5.3.4:004",
+   "meeting": "RAN1#127",
+   "agenda_item": "10.5.3.4",
+   "agenda_title": "Beam management for downlink and uplink",
+   "agenda_path": [
+    {
+     "number": "10",
+     "title": "Rel-20 Study of 6GR"
+    },
+    {
+     "number": "10.5",
+     "title": "Multi-antenna system"
+    },
+    {
+     "number": "10.5.3",
+     "title": "CSI acquisition and report"
+    },
+    {
+     "number": "10.5.3.4",
+     "title": "Beam management for downlink and uplink"
+    }
+   ],
+   "type": "Agreement",
+   "text": "With respect to RAN4 LS in R1-2609011(R4-2621663), the draft reply LS in R1-2610994 is endorsed in principle.",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R20-6GR-Beam management"
+   },
+   "scope": "agenda",
+   "topic": "beam",
+   "tags": [
+    "beam"
+   ],
+   "keywords": [],
+   "stage": "study",
+   "impact": [],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:10.5.3.4:005",
+   "meeting": "RAN1#127",
+   "agenda_item": "10.5.3.4",
+   "agenda_title": "Beam management for downlink and uplink",
+   "agenda_path": [
+    {
+     "number": "10",
+     "title": "Rel-20 Study of 6GR"
+    },
+    {
+     "number": "10.5",
+     "title": "Multi-antenna system"
+    },
+    {
+     "number": "10.5.3",
+     "title": "CSI acquisition and report"
+    },
+    {
+     "number": "10.5.3.4",
+     "title": "Beam management for downlink and uplink"
+    }
+   ],
+   "type": "Agreement",
+   "text": "Final reply LS in R1-2610995 is endorsed.",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R20-6GR-Beam management"
+   },
+   "scope": "agenda",
+   "topic": "beam",
+   "tags": [
+    "beam"
+   ],
+   "keywords": [],
+   "stage": "study",
+   "impact": [],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:10.5.3.4:006",
+   "meeting": "RAN1#127",
+   "agenda_item": "10.5.3.4",
+   "agenda_title": "Beam management for downlink and uplink",
+   "agenda_path": [
+    {
+     "number": "10",
+     "title": "Rel-20 Study of 6GR"
+    },
+    {
+     "number": "10.5",
+     "title": "Multi-antenna system"
+    },
+    {
+     "number": "10.5.3",
+     "title": "CSI acquisition and report"
+    },
+    {
+     "number": "10.5.3.4",
+     "title": "Beam management for downlink and uplink"
+    }
+   ],
+   "type": "Agreement",
+   "text": "Regarding DL beam measurement and report procedure, for the study on L1-SINR based DL beam measurement and report, the following is considered:\n- L1-SINR calculation\n  - NR L1-SINR definition and quantization can be used as the starting point\n  - FFS: Whether any other extension of L1-SINR definition is needed\n- Resource requirements for channel and interference measurement\n  - FFS: Whether/how to introduce interference measurement resource (IMR), besides for channel measurement resource (CMR)\n- Report content\n  - L1-SINR per reported CMR, or per reported CMR and its associated IMR(s), if supported.\n- At least following aspects to be considered for designing L1-SINR based DL beam measurement and report:\n  - NW flexibility for multiple interference hypotheses to support MU-MIMO pairing (Case-1) or cross-TRP/cell transmission (Case-2), via interference-aware beam selection.\n  - RS/measurement overhead\n  - Joint UL/DL CSI acquisition\nEmail discussion for the templates and collect results for DL beam measurement and report procedure: a) L1-SINR based DL beam measurement and report; b) NW determination of refined beam(s).\n- Duration (for templates): November 30th  – December 4th, 2026\n- Duration (for result collection): January 4th  – January 15th, 2027",
+   "ffs": [
+    "FFS: Whether any other extension of L1-SINR definition is needed",
+    "FFS: Whether/how to introduce interference measurement resource (IMR), besides for channel measurement resource (CMR)"
+   ],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R20-6GR-Beam management"
+   },
+   "scope": "agenda",
+   "topic": "beam",
+   "tags": [
+    "beam",
+    "report",
+    "csirs"
+   ],
+   "keywords": [],
+   "stage": "study",
+   "impact": [
+    "measure"
+   ],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:10.5.4.3:003",
+   "meeting": "RAN1#127",
+   "agenda_item": "10.5.4.3",
+   "agenda_title": "HARQ related Aspects",
+   "agenda_path": [
+    {
+     "number": "10",
+     "title": "Rel-20 Study of 6GR"
+    },
+    {
+     "number": "10.5",
+     "title": "Multi-antenna system"
+    },
+    {
+     "number": "10.5.4",
+     "title": "Downlink control channel, scheduling and HARQ operation"
+    },
+    {
+     "number": "10.5.4.3",
+     "title": "HARQ related Aspects"
+    }
+   ],
+   "type": "Agreement",
+   "text": "For downlink HARQ operation in 6GR,\n- Support a dynamic HARQ-ACK codebook type, based on NR Type-2 as the starting point.\n- Support one or two additional codebook type(s) based on the characteristics of NR Type-1 codebook and/or the NR (e)Type-3 codebook as the starting point.\n- For Method 1 (if supported),\n  - Triggering DCI provides timing and resource indication for HARQ-ACK feedback, and is different from DL DCI(s) with/without scheduling PDSCH for which the corresponding HARQ-ACK feedback is included in the HARQ-ACK codebook.\n  - DL DCI(s) with/without scheduling PDSCH associated with HARQ-ACK feedback can be used to indicate HARQ-ACK feedback timing and resource.\n  - The operation with triggering DCI is supported for at least one of the additional codebook type(s).\n    - FFS whether the triggering DCI is supported for the dynamic HARQ-ACK codebook type\n  - The operation without triggering DCI is supported for dynamic HARQ-ACK codebook type and at least for one of the additional codebook type(s).\n- For Method 3 (if supported), the operation with semi-statically configured HARQ-ACK feedback resource is supported for all codebook type(s).\n- Note: the enhancements of each codebook type are discussed separately, if any.",
+   "ffs": [
+    "FFS whether the triggering DCI is supported for the dynamic HARQ-ACK codebook type"
+   ],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R20-6GR-HARQ related",
+    "tdoc": "R1-2610772",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2610772.zip"
+   },
+   "scope": "candidate",
+   "topic": "report",
+   "tags": [
+    "report"
+   ],
+   "keywords": [
+    "codebook"
+   ],
+   "stage": "study",
+   "impact": [],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:10.5.4.4:004",
+   "meeting": "RAN1#127",
+   "agenda_item": "10.5.4.4",
+   "agenda_title": "Handling of potential multiple uplink transmissions",
+   "agenda_path": [
+    {
+     "number": "10",
+     "title": "Rel-20 Study of 6GR"
+    },
+    {
+     "number": "10.5",
+     "title": "Multi-antenna system"
+    },
+    {
+     "number": "10.5.4",
+     "title": "Downlink control channel, scheduling and HARQ operation"
+    },
+    {
+     "number": "10.5.4.4",
+     "title": "Handling of potential multiple uplink transmissions"
+    }
+   ],
+   "type": "Agreement",
+   "text": "For the study of defining a deterministic timeline for processing collision-handling, the timeline for processing collision-handling is independent of the UL channels/signals/UCI scheduled/configured within the time-unit\n- Note: “separate CSI measurement/computation triggering/configuration and CSI reporting triggering/configuration” was agreed in RAN1\n- The collision-handling timeline doesn’t consider the CSI measurement and computation process\n- The collision-handling timeline needs to consider the timeline for CSI report triggering and transmission\n- Note: details for the timeline for collision-handling at least depend on the details for “separate CSI measurement/computation triggering/configuration and CSI reporting triggering/configuration” in the CSI agenda",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R20-6GR-Handling of potential multiple uplink transmissions",
+    "tdoc": "R1-2610704",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2610704.zip"
+   },
+   "scope": "candidate",
+   "topic": "report",
+   "tags": [
+    "report"
+   ],
+   "keywords": [
+    "CSI report",
+    "CSI"
+   ],
+   "stage": "study",
+   "impact": [
+    "timeline"
+   ],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:10.5.5:001",
    "meeting": "RAN1#127",
    "agenda_item": "10.5.5",
    "agenda_title": "Other physical layer signals, channels and procedure",
@@ -42117,9 +45070,9 @@
     "FFS whether CLI reporting would follow the same CSI framework"
    ],
    "source": {
-    "doc": "Chair notes RAN1#127_v12",
+    "doc": "Chair notes RAN1#127_eom1",
     "kind": "chairman_note",
-    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
     "discussion": "127-R20-6GR-Other signals, channels, and procedures"
    },
    "scope": "candidate",
@@ -42138,7 +45091,7 @@
    "warn": []
   },
   {
-   "id": "RAN1#127:10.5.5:010",
+   "id": "RAN1#127:10.5.5:006",
    "meeting": "RAN1#127",
    "agenda_item": "10.5.5",
    "agenda_title": "Other physical layer signals, channels and procedure",
@@ -42162,9 +45115,9 @@
     "FFS other information."
    ],
    "source": {
-    "doc": "Chair notes RAN1#127_v12",
+    "doc": "Chair notes RAN1#127_eom1",
     "kind": "chairman_note",
-    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
     "discussion": "127-R20-6GR-Other signals, channels, and procedures"
    },
    "scope": "candidate",
@@ -42207,9 +45160,9 @@
     "FFS whether the same applies to periodic/semi-persistent SRS."
    ],
    "source": {
-    "doc": "Chair notes RAN1#127_v12",
+    "doc": "Chair notes RAN1#127_eom1",
     "kind": "chairman_note",
-    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_v12.docx",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
     "discussion": "127-R20-6GR-WUS operation with other functionalities"
    },
    "scope": "candidate",
@@ -42222,6 +45175,93 @@
     "CSI report",
     "SRS",
     "CSI"
+   ],
+   "stage": "study",
+   "impact": [],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:10.7.1:003",
+   "meeting": "RAN1#127",
+   "agenda_item": "10.7.1",
+   "agenda_title": "NTN specific requirements and design",
+   "agenda_path": [
+    {
+     "number": "10",
+     "title": "Rel-20 Study of 6GR"
+    },
+    {
+     "number": "10.7",
+     "title": "NTN"
+    },
+    {
+     "number": "10.7.1",
+     "title": "NTN specific requirements and design"
+    }
+   ],
+   "type": "Agreement",
+   "text": "For inter-satellite co-channel interference for same constellation/same-orbit scenario in 6GR NTN, RAN1 to evaluate potential gaps of the terrestrial CSI-IM/CSI-RS/SSB framework, taking into account:\n- Time-varying Doppler and timing offsets between serving and interfering satellites.\n- Measurement timing/alignment and validity under time-varying interference conditions.\n- Relevant scenarios e.g., co-channel interference from co-visible satellites with overlapping satellite coverage.\n- Whether CSI-IM/CSI-RS/SSB is needed",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R20-6GR-NTN specific requirement and design",
+    "tdoc": "R1-2610528",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2610528.zip"
+   },
+   "scope": "candidate",
+   "topic": "csirs",
+   "tags": [
+    "csirs"
+   ],
+   "keywords": [
+    "CSI-RS",
+    "CSI"
+   ],
+   "stage": "study",
+   "impact": [],
+   "clauses": [],
+   "warn": []
+  },
+  {
+   "id": "RAN1#127:10.7.1:013",
+   "meeting": "RAN1#127",
+   "agenda_item": "10.7.1",
+   "agenda_title": "NTN specific requirements and design",
+   "agenda_path": [
+    {
+     "number": "10",
+     "title": "Rel-20 Study of 6GR"
+    },
+    {
+     "number": "10.7",
+     "title": "NTN"
+    },
+    {
+     "number": "10.7.1",
+     "title": "NTN specific requirements and design"
+    }
+   ],
+   "type": "Agreement",
+   "text": "In 6GR NTN, under the label of “physical layer aspects of multi-satellite operation”, at least the following sub-aspects are studied in “For physical layer aspects related to mobility”:\n- Identify gaps (if any) in the NR design for the following:\n  - RACH-less handover\n  - Satellite switch, including:\n    - Soft and hard satellite switch with resynchronization\n    - With or without same PCI.\n    - Fast satellite switching/recovery upon blockage, including applicability of BFR.\nNOTE: For the aspect above it is assumed that the UE is only connected for data transmission to one satellite at a time.",
+   "ffs": [],
+   "source": {
+    "doc": "Chair notes RAN1#127_eom1",
+    "kind": "chairman_note",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx",
+    "discussion": "127-R20-6GR-NTN specific requirement and design",
+    "tdoc": "R1-2610531",
+    "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2610531.zip"
+   },
+   "scope": "candidate",
+   "topic": "beam",
+   "tags": [
+    "beam"
+   ],
+   "keywords": [
+    "BFR"
    ],
    "stage": "study",
    "impact": [],
