@@ -85,7 +85,7 @@ jobs:
       id-token: write
     environment:
       name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
+      url: ${{ steps.deploy.outputs.page_url || steps.deploy_retry.outputs.page_url }}
     steps:
       - uses: actions/checkout@v5
         with:
@@ -102,5 +102,13 @@ jobs:
         with:
           path: reports
 
+      # 게시 단계가 GitHub 쪽 일시 오류(방금 올린 artifact를 못 찾음 등)로 실패하면 1분 뒤 한 번 더 시도합니다.
       - id: deploy
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
+      - name: Wait before retrying deploy
+        if: steps.deploy.outcome == 'failure'
+        run: sleep 60
+      - id: deploy_retry
+        if: steps.deploy.outcome == 'failure'
         uses: actions/deploy-pages@v4
