@@ -1,6 +1,6 @@
 # Beam management — RAN1 CSI 결정
 
-> 원본 DB 마지막 업데이트 **2026-11-21 13:17 KST** · [요약으로 돌아가기](../README.md)
+> 원본 DB 마지막 업데이트 **2026-11-24 14:29 KST** · [요약으로 돌아가기](../README.md)
 
 주된 주제가 Beam management인 확정 135건 (Agreement 131 · WA 2 · Conclusion 2), 후보 58건. 결정 본문은 Chair notes 원문 그대로입니다(요약 없음). 최신 회의부터 보여줍니다.
 주된 주제가 다른 결정 중 이 주제가 관련 주제로 붙은 것은 맨 아래 '관련 결정'에 모았습니다.
@@ -12,7 +12,7 @@
 > For 6GR PSS,
 > - 6GR PSS carry 3 physical Cell ID hypotheses
 
-출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · `[127-R20-6GR-Synchronization and Beam Measurement]`
+출처: [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · `[127-R20-6GR-Synchronization and Beam Measurement]`
 
 **Agreement** · `10.5.1.1` Synchronization acquisition and beam measurement · `RAN1#127:10.5.1.1:002` · 🆕 신규 · Study
 
@@ -21,7 +21,7 @@
 > - The number of SSS sequences for carrying physical Cell ID is 336 per PSS physical Cell ID hypotheses
 >   - Note: continue to study the motivation to carry other information
 
-출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · `[127-R20-6GR-Synchronization and Beam Measurement]`
+출처: [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · `[127-R20-6GR-Synchronization and Beam Measurement]`
 
 **Agreement** · `10.5.1.1` Synchronization acquisition and beam measurement · `RAN1#127:10.5.1.1:003` · 🆕 신규 · Study
 
@@ -31,7 +31,7 @@
 > Alt 2:
 > - One 6GR SSB spans 5 OFDM symbols within a slot, with 2 symbols for PSS and 1 symbol for SSS
 
-출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · `[127-R20-6GR-Synchronization and Beam Measurement]`
+출처: [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · `[127-R20-6GR-Synchronization and Beam Measurement]`
 
 **Agreement** · `10.5.1.1` Synchronization acquisition and beam measurement · `RAN1#127:10.5.1.1:004` · 🆕 신규 · Study
 
@@ -142,7 +142,7 @@
 > | Msg2 PDSCH | 9 | -11.21 | 1.26 |
 > | Msg4 PDSCH | 9 | -12.20 | 0.78 |
 
-출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · `[127-R20-6GR-Synchronization and Beam Measurement]`
+출처: [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · `[127-R20-6GR-Synchronization and Beam Measurement]`
 
 **Agreement** · `10.5.1.1` Synchronization acquisition and beam measurement · `RAN1#127:10.5.1.1:005` · 🆕 신규 · Study
 
@@ -152,7 +152,7 @@
 > - Note: the above does not imply there will be RAN4 requirement
 > - Note: The above does not imply that a new basic physical-signal or channel design is required to meet the 153 dB MaxCL target.
 
-출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · `[127-R20-6GR-Synchronization and Beam Measurement]`
+출처: [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · `[127-R20-6GR-Synchronization and Beam Measurement]`
 
 **Agreement** · `10.5.1.1` Synchronization acquisition and beam measurement · `RAN1#127:10.5.1.1:006` · 🆕 신규 · 관련 주제: CSI-RS · Study
 
@@ -165,13 +165,13 @@
 
 FFS 1줄
 
-출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · `[127-R20-6GR-Synchronization and Beam Measurement]`
+출처: [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · `[127-R20-6GR-Synchronization and Beam Measurement]`
 
 **Agreement** · `10.5.1.1` Synchronization acquisition and beam measurement · `RAN1#127:10.5.1.1:007` · 🆕 신규 · Study
 
 > Study FDMed paging, where the paging occasions/messages are multiplexed in frequency domain, to facilitate network energy savings
 
-출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · `[127-R20-6GR-Synchronization and Beam Measurement]`
+출처: [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · `[127-R20-6GR-Synchronization and Beam Measurement]`
 
 **WA** · `10.5.1.1` Synchronization acquisition and beam measurement · `RAN1#127:10.5.1.1:008` · 🆕 신규 · Study
 
@@ -193,21 +193,21 @@ FFS 1줄
 
 FFS 1줄
 
-출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · `[127-R20-6GR-Synchronization and Beam Measurement]`
+출처: [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · `[127-R20-6GR-Synchronization and Beam Measurement]`
 
 **Agreement** · `10.5.3.4` Beam management for downlink and uplink · `RAN1#127:10.5.3.4:001` · 🆕 신규 · Study
 
 > At least for FR2, study UE UL beam sweeping for 6GR targeting at least Asymmetric DL sTRP and UL mTRP.
 > Note: Which multi-TRP transmission scheme to be supported will be discussed under other agenda.
 
-출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · `[127-R20-6GR-Beam management]`
+출처: [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · `[127-R20-6GR-Beam management]`
 
 **Agreement** · `10.5.3.4` Beam management for downlink and uplink · `RAN1#127:10.5.3.4:002` · 🆕 신규 · Study
 
 > - Study the procedure of NW initiated UL beam sweeping considering, at least for FR2
 >   - At least consider inter-symbol NW/UE-side beam sweeping including multiple UL RS(s) for UL Tx beam sweeping/repetition.
 
-출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · `[127-R20-6GR-Beam management]`
+출처: [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · `[127-R20-6GR-Beam management]`
 
 **Agreement** · `10.5.3.4` Beam management for downlink and uplink · `RAN1#127:10.5.3.4:003` · 🆕 신규 · Study
 
@@ -215,19 +215,19 @@ FFS 1줄
 > - RAN1 notes that 6GR Layer 1 procedures are not specific to a particular UE RF beamforming architecture. At this stage, RAN1 has not identified L1 procedure or specification changes specific to UE digital beamforming architecture for FR2.
 >   - RAN1 does not specify the UE beamforming architecture for FR2; it is up to UE implementation.
 
-출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · `[127-R20-6GR-Beam management]`
+출처: [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · `[127-R20-6GR-Beam management]`
 
 **Agreement** · `10.5.3.4` Beam management for downlink and uplink · `RAN1#127:10.5.3.4:004` · 🆕 신규 · Study
 
 > With respect to RAN4 LS in R1-2609011(R4-2621663), the draft reply LS in R1-2610994 is endorsed in principle.
 
-출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · `[127-R20-6GR-Beam management]`
+출처: [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · `[127-R20-6GR-Beam management]`
 
 **Agreement** · `10.5.3.4` Beam management for downlink and uplink · `RAN1#127:10.5.3.4:005` · 🆕 신규 · Study
 
 > Final reply LS in R1-2610995 is endorsed.
 
-출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · `[127-R20-6GR-Beam management]`
+출처: [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · `[127-R20-6GR-Beam management]`
 
 **Agreement** · `10.5.3.4` Beam management for downlink and uplink · `RAN1#127:10.5.3.4:006` · 🆕 신규 · 관련 주제: CSI 보고/codebook, CSI-RS · Study
 
@@ -245,13 +245,10 @@ FFS 1줄
 >   - NW flexibility for multiple interference hypotheses to support MU-MIMO pairing (Case-1) or cross-TRP/cell transmission (Case-2), via interference-aware beam selection.
 >   - RS/measurement overhead
 >   - Joint UL/DL CSI acquisition
-> Email discussion for the templates and collect results for DL beam measurement and report procedure: a) L1-SINR based DL beam measurement and report; b) NW determination of refined beam(s).
-> - Duration (for templates): November 30th  – December 4th, 2026
-> - Duration (for result collection): January 4th  – January 15th, 2027
 
 FFS 2줄
 
-출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · `[127-R20-6GR-Beam management]`
+출처: [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · `[127-R20-6GR-Beam management]`
 
 ## RAN1#126bis — 18건
 
@@ -2225,7 +2222,7 @@ FFS 1줄
 > The FL draft reply LS as below. Final LS in R1-2610954 is endorsed.
 > | [Draft] Reply LS on UE capability for Mobility Enh Ph5 Title: [Draft] Reply LS on UE capability for Mobility Enh Ph5 Response to: R1-2609014 (R2-2607807) Release: Rel-20 Work Item: NR_Mob_Ph5 Source: RAN1 To: RAN2 Cc: RAN4 1. Overall Description: RAN1 thanks RAN2 for the LS on UE capability for Mobility Enh Ph5. RAN1 discussed the RAN2 agreements on the reuse of the Rel-18/Rel-19 LTM UE capabilities and has no concern. RAN1 confirms that the following UE capabilities, including all their components, can be reused for the LTM SCell activation improvement, where the candidate cell in the field description includes both the LTM candidate SpCell and the LTM candidate SCell: Rel-18: intraFreqL1-MeasConfig-r18, interFreqL1-MeasConfig-r18, ltm-BeamIndicationJointTCI-r18, ltm-MAC-CE-JointTCI-r18, ltm-BeamIndicationSeparateTCI-r18, ltm-MAC-CE-SeparateTCI-r18 Rel-19: intraFreqL1-MeasConfigPeriodicCSI-RS-r19, interFreqL1-MeasConfigPeriodicCSI-RS-r19, intraFreqL1-MeasConfigSP-CSI-RS-r19, interFreqL1-MeasConfigSP-CSI-RS-r19, ltm-BeamIndicationJointTCI-CSI-RS-r19, ltm-MAC-CE-JointTCI-CSI-RS-r19, ltm-BeamIndicationSeparateTCI-CSI-RS-r19, ltm-MAC-CE-SeparateTCI-CSI-RS-r19 RAN1 also confirms that the current value ranges of these capabilities are reused without extension. The PerCell components (maxNumberJointTCI-PerCell-r18, maxNumberDL-TCI-PerCell-r18, maxNumberUL-TCI-PerCell-r18) apply independently to each LTM candidate SpCell and each LTM candidate SCell, while the AcrossCells components and maxNumberCells-r18 apply to the total across LTM candidate SpCells and LTM candidate SCells. RAN1 understands that an LTM candidate SpCell and an LTM candidate SCell are counted separately in maxNumberCells-r18. It is unclear for RAN1 regarding maxNumberCells-r18 and in the AcrossCells TCI-state components when an LTM candidate SCell configured under more than one LTM candidate configurations but would like to leave this for RAN2. 2. Actions: To RAN2: RAN1 kindly asks RAN2 to take the above information into account and to provide the clarification requested above. 3. Date of Next TSG-RAN1 Meetings: TSG RAN WG1 Meeting #128 January 25th – 29th, 2027 Kobe, Japan TSG RAN WG1 Meeting #128bis April 19th – 23rd, 2027 Lyon, France |
 
-출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · [R1-2610919](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2610919.zip) · `[127-R19-AI 8.1]`
+출처: [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · [R1-2610919](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2610919.zip) · `[127-R19-AI 8.1]`
 
 **Agreement** · `8.1` Maintenance on all items of Rel-19 NR and E-UTRA · `RAN1#127:8.1:013` · 후보 · 🆕 신규 · 관련 주제: CSI-RS · 유지보수 (CR)
 
@@ -2240,9 +2237,9 @@ FFS 1줄
 > | ==============Start of changes============== 5.1.5 Antenna ports quasi co-location <Unchanged parts are omitted> After a UE receives an initial higher layer configuration of dl-OrJointTCI-StateList where more than one TCI-State can be used as an indicated TCI state and before application of an indicated TCI state from the configured TCI states: - The UE assumes that DM-RS of PDSCH and DM-RS of PDCCH that are not received during the RACH procedure, WUS, and the CSI-RS applying the indicated TCI state are quasi co-located with the reference signal(s) in the CandidateTCI-State indicated in the LTM Cell Switch Command MAC CE [10, 38.321] if applicable. - The UE assumes that DM-RS of PDSCH and DM-RS of PDCCH and the CSI-RS applying the indicated TCI state are quasi co-located with the reference signal in the determined CandidateTCI-State for RACH-less conditional LTM cell switch [10, 38.321] if applicable. - The UE assumes that DM-RS of PDSCH and DM-RS of PDCCH and the CSI-RS applying the indicated TCI state are quasi co-located with the SS/PBCH block the UE identified during the random access procedure initiated by RACH-based conditional LTM cell switch if applicable. - Otherwise, the UE assumes that DM-RS of PDSCH and DM-RS of PDCCH, WUS, and the CSI-RS applying the indicated TCI state are quasi co-located with the SS/PBCH block the UE identified during the initial access procedure with respect to qcl-Type set to 'typeA', and when applicable, also with respect to qcl-Type set to 'typeD'. ==============End of changes============== |
 > Final CR in R1-2610986 is endorsed.
 
-출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · [R1-2610914](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2610914.zip) · `[127-R19-AI 8.1]`
+출처: [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · [R1-2610914](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2610914.zip) · `[127-R19-AI 8.1]`
 
-**Agreement** · `10.7.1` NTN specific requirements and design · `RAN1#127:10.7.1:013` · 후보 · 🆕 신규 · Study
+**Agreement** · `10.7.1` NTN specific requirements and design · `RAN1#127:10.7.1:012` · 후보 · 🆕 신규 · Study
 
 > In 6GR NTN, under the label of “physical layer aspects of multi-satellite operation”, at least the following sub-aspects are studied in “For physical layer aspects related to mobility”:
 > - Identify gaps (if any) in the NR design for the following:
@@ -2253,7 +2250,7 @@ FFS 1줄
 >     - Fast satellite switching/recovery upon blockage, including applicability of BFR.
 > NOTE: For the aspect above it is assumed that the UE is only connected for data transmission to one satellite at a time.
 
-출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · [R1-2610531](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2610531.zip) · `[127-R20-6GR-NTN specific requirement and design]`
+출처: [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · [R1-2610531](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2610531.zip) · `[127-R20-6GR-NTN specific requirement and design]`
 
 ### RAN1#126bis — 5건
 

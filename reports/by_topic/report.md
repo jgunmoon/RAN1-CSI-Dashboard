@@ -1,11 +1,11 @@
 # CSI 보고/codebook — RAN1 CSI 결정
 
-> 원본 DB 마지막 업데이트 **2026-11-21 13:17 KST** · [요약으로 돌아가기](../README.md)
+> 원본 DB 마지막 업데이트 **2026-11-24 14:29 KST** · [요약으로 돌아가기](../README.md)
 
-주된 주제가 CSI 보고/codebook인 확정 151건 (Agreement 138 · WA 1 · Conclusion 12), 후보 92건. 결정 본문은 Chair notes 원문 그대로입니다(요약 없음). 최신 회의부터 보여줍니다.
+주된 주제가 CSI 보고/codebook인 확정 149건 (Agreement 136 · WA 1 · Conclusion 12), 후보 92건. 결정 본문은 Chair notes 원문 그대로입니다(요약 없음). 최신 회의부터 보여줍니다.
 주된 주제가 다른 결정 중 이 주제가 관련 주제로 붙은 것은 맨 아래 '관련 결정'에 모았습니다.
 
-## RAN1#127 — 14건
+## RAN1#127 — 12건
 
 **Agreement** · `9.2` NR MIMO Phase 6 · `RAN1#127:9.2:001` · 🆕 신규 · 규격 작업 (WI)
 
@@ -13,13 +13,13 @@
 > - A separate field in the MAC-CE indicates an entry from the configured slot offset list reportSlotOffsetList, and UE ignores the K2 indicated by PUSCH TDRA field in UL grant content.
 > - Note: The new field has the same functionality as K2 obtained from TDRA field.
 
-출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · [R1-2609214](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2609214.zip) · `[127-R20-MIMO]`
+출처: [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · [R1-2609214](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2609214.zip) · `[127-R20-MIMO]`
 
 **Agreement** · `9.2` NR MIMO Phase 6 · `RAN1#127:9.2:004` · 🆕 신규 · 관련 주제: CSI-RS · 규격 작업 (WI)
 
 > For MSG4-triggered aperiodic TRS with two TRS bursts, the second TRS burst is transmitted in the slot which is a time gap after the last transmission slot of the first TRS burst, where the time gap is configured in a CSI resource configuration provided in the SIBx.
 
-출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · [R1-2609214](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2609214.zip) · `[127-R20-MIMO]`
+출처: [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · [R1-2609214](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2609214.zip) · `[127-R20-MIMO]`
 
 **Agreement** · `9.2` NR MIMO Phase 6 · `RAN1#127:9.2:007` · 🆕 신규 · 관련 주제: CSI-RS · 규격 작업 (WI)
 
@@ -27,16 +27,9 @@
 > - The CSI report configuration for a SCell shall be configured in the SCell itself
 > - Note: The above is based on legacy CSI report configuration(s)
 
-출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · [R1-2609215](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2609215.zip) · `[127-R20-MIMO]`
+출처: [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · [R1-2609215](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2609215.zip) · `[127-R20-MIMO]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#127:10.5.3.1:001` · 🆕 신규 · Study
-
-> - For NW-triggered CSI reporting, support Aperiodic CSI reporting on PUSCH for both wideband and subband CSI based on NW triggering
-> - For NW-configured CSI reporting, support Periodic CSI reporting assuming the capacity of the container is not larger than X bits
-
-출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]`
-
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#127:10.5.3.1:004` · 🆕 신규 · Study
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#127:10.5.3.1:003` · 🆕 신규 · Study
 
 구현 영향: UE capability·FG, 측정·보고량
 
@@ -51,9 +44,9 @@
 > - Note: This does not imply that all of the above schemes are mandatory UE features and there will be separate UE feature discussion during the normative phase.
 > - Note: Basis design will be discussed separately.
 
-출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]`
+출처: [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#127:10.5.3.1:005` · 🆕 신규 · Study
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#127:10.5.3.1:004` · 🆕 신규 · Study
 
 구현 영향: 측정·보고량
 
@@ -68,23 +61,23 @@
 >   - Whether/how to support dynamic TRP selection mechanism can be decided in normative phase
 > - Note: Basis design will be discussed separately.
 
-출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]`
+출처: [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#127:10.5.3.1:006` · 🆕 신규 · Study
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#127:10.5.3.1:005` · 🆕 신규 · Study
 
 > - For UE-assisted report for the 6GR DL based CSI, to facilitate CJT deployments, RAN 1 recommends to support CJT calibration (CJTC) reports of delay offset, frequency offset, and phase offset conditioned on the support of CJT PDSCH-DMRS QCL in normative phase.
 > - Other detailed design aspects are to be finalized based on the existing agreements
 
-출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]`
+출처: [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Conclusion** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#127:10.5.3.1:007` · 🆕 신규 · Study
+**Conclusion** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#127:10.5.3.1:006` · 🆕 신규 · Study
 
 > For study on PAPR reduction for JSCM-based CSI compression, deprioritize Option 2.
 > Note: discrete constellation with constant amplitude is treated as Option 1.
 
-출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]`
+출처: [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#127:10.5.3.1:008` · 🆕 신규 · Study
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#127:10.5.3.1:007` · 🆕 신규 · Study
 
 > For UE-assisted report for the 6GR DL based CSI, RAN 1 recommends to support Channel Property Information (CPI) reports at least for SD:
 > Support single option confined within Option 1 (from RAN #126bis agreement) during normative phase.
@@ -93,9 +86,9 @@
 > Other detailed design aspects are to be finalized based on the existing agreements
 > Note: send LS to RAN 4 to include the above agreement.
 
-출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]`
+출처: [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#127:10.5.3.1:014` · 🆕 신규 · Study
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#127:10.5.3.1:013` · 🆕 신규 · Study
 
 구현 영향: 측정·보고량
 
@@ -108,21 +101,21 @@
 > - Note: Other detailed design aspects are to be decided during the normative phase
 > - Note: This does not impact HARQ feedback
 
-출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]`
+출처: [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#127:10.5.3.1:015` · 🆕 신규 · Study
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#127:10.5.3.1:014` · 🆕 신규 · Study
 
 > Draft Reply LS R1-2610976 on JSCM-based CSI compression with AI is endorsed in principle.
 
-출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]`
+출처: [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#127:10.5.3.1:016` · 🆕 신규 · Study
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#127:10.5.3.1:015` · 🆕 신규 · Study
 
 > Final Reply LS R1-2610977 on JSCM-based CSI compression with AI is endorsed.
 
-출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]`
+출처: [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]`
 
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#127:10.5.3.1:017` · 🆕 신규 · 관련 주제: CSI-RS · Study
+**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#127:10.5.3.1:016` · 🆕 신규 · 관련 주제: CSI-RS · Study
 
 구현 영향: 포트·자원·레이어 수, 메모리·복잡도, 측정·보고량
 
@@ -142,15 +135,7 @@
 > - The assessment is based on the performance of the options and the benchmark and the UE complexity.
 > - For evaluation, companies are to choose from the following (P, P’) values: (256, 32), (256, 64), (256, 256), (128, 128), (128, 32)
 
-출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]`
-
-**Agreement** · `10.5.3.1` Aspects of downlink-based CSI acquisition · `RAN1#127:10.5.3.1:019` · 🆕 신규 · Study
-
-> Final LS R1-2610975 on UE channel property information reporting is endorsed.
-> Email discussion for observation endorsement
-> Email discussion on the observations on DL CSI reporting and AI-CSI compression for approval, taking draft observations in Annex A and Annex B of R1-2610932 as the starting point. (Nov. 30 ~ Dec. 21).
-
-출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]`
+출처: [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · `[127-R20-6GR-Aspects of DL based CSI acquisition]`
 
 ## RAN1#126bis — 18건
 
@@ -2079,26 +2064,25 @@ FFS 3줄
 
 ---
 
-## 관련 결정 275건 (주된 주제는 다른 주제)
+## 관련 결정 274건 (주된 주제는 다른 주제)
 
 원문에 CSI 보고/codebook 관련 표현이 있지만 주된 주제가 다른 확정 결정입니다. 전문은 각 주된 주제 리포트에 있습니다.
 
 | 회의 | 구분 | 주된 주제 | Agenda | 원문 첫 줄 | 출처 |
 |---|---|---|---|---|---|
-| RAN1#127 | Agreement | [Beam management](beam.md) | 10.5.3.4 Beam management for downlink and uplink | Regarding DL beam measurement and report procedure, for the study on L1-SINR based DL beam measurement and re… | [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · `[127-R20-6GR-Beam management]` |
-| RAN1#127 | Agreement | [SRS](srs.md) | 10.5.3.2 Aspects of uplink-based CSI acquisition | Consider computer-generated SRS sequences for lengths < M, and down-select one option for the value of M: | [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · `[127-R20-6GR-Aspects of UL based CSI acquisition]` |
-| RAN1#127 | Agreement | [SRS](srs.md) | 10.5.3.2 Aspects of uplink-based CSI acquisition | Support at least the following case of sharing one SRS transmission occasion for multiple usages: | [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · `[127-R20-6GR-Aspects of UL based CSI acquisition]` |
-| RAN1#127 | Agreement | [SRS](srs.md) | 9.2 NR MIMO Phase 6 | In a SIBx for early CSI-RS/SRS/CSI when UE transition from IDLE/INACTIVE to CONNECTED mode, support the follo… | [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · [R1-2609216](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2609216.zip) · `[127-R20-MIMO]` |
-| RAN1#127 | Conclusion | [AI/ML CSI](aiml.md) | 9.1.2 Inter-vendor training collaboration for two-sided AI/ML models | For Target CSI in Option 4-1 under Direction A, there is no consensus to support k1 and k2 values larger than… | [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · [R1-2609843](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2609843.zip) |
-| RAN1#127 | Agreement | [AI/ML CSI](aiml.md) | 9.1.2 Inter-vendor training collaboration for two-sided AI/ML models | For the model pairing procedure for AI/ML based CSI compression, | [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · [R1-2609843](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2609843.zip) |
-| RAN1#127 | Conclusion | [AI/ML CSI](aiml.md) | 9.1.2 Inter-vendor training collaboration for two-sided AI/ML models | For Option 3a-1 under Direction A in AI/ML based CSI compression, there is no consensus to provide performanc… | [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) |
-| RAN1#127 | Conclusion | [AI/ML CSI](aiml.md) | 9.1.2 Inter-vendor training collaboration for two-sided AI/ML models | For the association between Target CSI and CSI feedback in Option 4-1, when the total number of antenna ports… | [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) |
-| RAN1#127 | Conclusion | [AI/ML CSI](aiml.md) | 9.1.1 CSI spatial/frequency compression without temporal aspects (“Case 0”) | There is no consensus on supporting target CSI restriction at UE side for CSI feedback via two-sided model in… | [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · [R1-2610448](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2610448.zip) |
-| RAN1#127 | Agreement | [AI/ML CSI](aiml.md) | 9.1.1 CSI spatial/frequency compression without temporal aspects (“Case 0”) | For L1 performance monitoring and the reliability indication, support | [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) |
-| RAN1#127 | Agreement | [AI/ML CSI](aiml.md) | 9.1.1 CSI spatial/frequency compression without temporal aspects (“Case 0”) | Regarding incoming LS R2-2608003 on L3 performance monitoring, reply to RAN2 that | [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) |
-| RAN1#127 | Agreement | [AI/ML CSI](aiml.md) | 9.1.1 CSI spatial/frequency compression without temporal aspects (“Case 0”) | For UE side data collection for CSI feedback via two-sided model, reuse the CPU duration agreed for Rel-19 CS… | [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) |
-| RAN1#127 | Agreement | [AI/ML CSI](aiml.md) | 9.1.1 CSI spatial/frequency compression without temporal aspects (“Case 0”) | For CSI feedback via two-sided model, clarify that neither CRI nor LI is reported. UE is not expected to be c… | [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) |
-| RAN1#127 | Agreement | [AI/ML CSI](aiml.md) | 9.1.1 CSI spatial/frequency compression without temporal aspects (“Case 0”) | For L1 performance monitoring and the reliability indication, support | [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) |
+| RAN1#127 | Agreement | [Beam management](beam.md) | 10.5.3.4 Beam management for downlink and uplink | Regarding DL beam measurement and report procedure, for the study on L1-SINR based DL beam measurement and re… | [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · `[127-R20-6GR-Beam management]` |
+| RAN1#127 | Agreement | [SRS](srs.md) | 10.5.3.2 Aspects of uplink-based CSI acquisition | Support at least the following case of sharing one SRS transmission occasion for multiple usages: | [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · `[127-R20-6GR-Aspects of UL based CSI acquisition]` |
+| RAN1#127 | Agreement | [SRS](srs.md) | 9.2 NR MIMO Phase 6 | In a SIBx for early CSI-RS/SRS/CSI when UE transition from IDLE/INACTIVE to CONNECTED mode, support the follo… | [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · [R1-2609216](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2609216.zip) · `[127-R20-MIMO]` |
+| RAN1#127 | Conclusion | [AI/ML CSI](aiml.md) | 9.1.2 Inter-vendor training collaboration for two-sided AI/ML models | For Target CSI in Option 4-1 under Direction A, there is no consensus to support k1 and k2 values larger than… | [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · [R1-2609843](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2609843.zip) |
+| RAN1#127 | Agreement | [AI/ML CSI](aiml.md) | 9.1.2 Inter-vendor training collaboration for two-sided AI/ML models | For the model pairing procedure for AI/ML based CSI compression, | [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · [R1-2609843](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2609843.zip) |
+| RAN1#127 | Conclusion | [AI/ML CSI](aiml.md) | 9.1.2 Inter-vendor training collaboration for two-sided AI/ML models | For Option 3a-1 under Direction A in AI/ML based CSI compression, there is no consensus to provide performanc… | [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) |
+| RAN1#127 | Conclusion | [AI/ML CSI](aiml.md) | 9.1.2 Inter-vendor training collaboration for two-sided AI/ML models | For the association between Target CSI and CSI feedback in Option 4-1, when the total number of antenna ports… | [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) |
+| RAN1#127 | Conclusion | [AI/ML CSI](aiml.md) | 9.1.1 CSI spatial/frequency compression without temporal aspects (“Case 0”) | There is no consensus on supporting target CSI restriction at UE side for CSI feedback via two-sided model in… | [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · [R1-2610448](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2610448.zip) |
+| RAN1#127 | Agreement | [AI/ML CSI](aiml.md) | 9.1.1 CSI spatial/frequency compression without temporal aspects (“Case 0”) | For L1 performance monitoring and the reliability indication, support | [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) |
+| RAN1#127 | Agreement | [AI/ML CSI](aiml.md) | 9.1.1 CSI spatial/frequency compression without temporal aspects (“Case 0”) | Regarding incoming LS R2-2608003 on L3 performance monitoring, reply to RAN2 that | [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) |
+| RAN1#127 | Agreement | [AI/ML CSI](aiml.md) | 9.1.1 CSI spatial/frequency compression without temporal aspects (“Case 0”) | For UE side data collection for CSI feedback via two-sided model, reuse the CPU duration agreed for Rel-19 CS… | [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) |
+| RAN1#127 | Agreement | [AI/ML CSI](aiml.md) | 9.1.1 CSI spatial/frequency compression without temporal aspects (“Case 0”) | For CSI feedback via two-sided model, clarify that neither CRI nor LI is reported. UE is not expected to be c… | [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) |
+| RAN1#127 | Agreement | [AI/ML CSI](aiml.md) | 9.1.1 CSI spatial/frequency compression without temporal aspects (“Case 0”) | For L1 performance monitoring and the reliability indication, support | [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) |
 | RAN1#126bis | Agreement | [Beam management](beam.md) | 10.5.3.3 Other aspects | Further study and evaluate the following assistant information for use case 2 | [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Other Aspects related to CSI]` |
 | RAN1#126bis | Agreement | [SRS](srs.md) | 10.5.3.2 Aspects of uplink-based CSI acquisition | For the study of AI based receiver for SRS overhead reduction, the following template is used as a starting p… | [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Aspects of UL based CSI acquisition]` |
 | RAN1#126bis | Agreement | [SRS](srs.md) | 10.5.3.2 Aspects of uplink-based CSI acquisition | Study at least the following aspects of TD-OCC: | [Chair notes RAN1#126bis_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/Chair_notes/Chair%20notes%20RAN1%23126bis_eom1.docx) · `[126bis-R20-6GR-Aspects of UL based CSI acquisition]` |
@@ -2378,7 +2362,7 @@ FFS 3줄
 > The draft CR R1-2609994 for Rel-19 TS38.214, Clause 5.2.2.5 is endorsed.
 > The corresponding final CR in R1-2610944 for Rel-19 TS38.214, Clause 5.2.2.5 is endorsed.
 
-출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · [R1-2610918](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2610918.zip) · `[127-R19-AI 8.1]`
+출처: [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · [R1-2610918](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2610918.zip) · `[127-R19-AI 8.1]`
 
 **Agreement** · `9.6` Rel-20 UE features · `RAN1#127:9.6:018` · 후보 · 🆕 신규 · UE features (FG)
 
@@ -2387,7 +2371,7 @@ FFS 3줄
 > Introduce the following Rel. 19 UE FGs (yellow highlighting, if any, shows text that’s not yet agreed)
 > | 68. NR_AIML_air_Ph2 | 68-1a | CSI feedback based on pairing ID for up to 32 ports | 1. Support of CSI feedback based on pairing ID for up to 32 ports 2. A list of supported combinations, each combination is {Max # of Tx ports in one resource, Max # of resources and total # of Tx ports} across all CCs simultaneously 3. Supported value of ti for the relaxation of Z and Z’ timeline, where i is the index of SCS, i=1,2,3,4,5,6 corresponding to 15,30,60,120,480,960 kHz SCS 4. Supported number of occupied CPU 5. Supported number of occupied CPU2 / CPU3 6. Occupied resource pool between CPU,2 and CPU,3 7. Support of rank 1 to [4] 8. CSI feedback type [9. Support two-part UCI and layer-based UCI mapping and omission] [10. Maximum number of Tx port for CSI feedback] [11. Maximum number of subband for CSI feedback] [12. Maximum CSI feedback payload size for CSI feedback] [13. Support of parameter combinations PC3, PC4, PC5, and Rank1 and Rank2 of PC2] | 2-35 | Yes | N/A | CSI feedback based on pairing ID up to 32 ports is not supported | FFS | FFS | FFS | FFS | Component candidate values are FFS [Note: If UE is configured with PC2 and it does not support FG 68-x1, UE is not expected to report more than two layers] | Optional with capability signalling |
 
-출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · `[127-R20-AI 9.6]`
+출처: [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · `[127-R20-AI 9.6]`
 
 **Agreement** · `9.6` Rel-20 UE features · `RAN1#127:9.6:019` · 후보 · 🆕 신규 · 관련 주제: CSI-RS · UE features (FG)
 
@@ -2398,7 +2382,7 @@ FFS 3줄
 > | 68. NR_AIML_air_Ph2 | 68-1c | CSI feedback based on pairing ID for 48 ports | 1. Support of CSI feedback based on pairing ID 48 Tx ports by aggregating multiple resources within 1 slot 2. A list of supported combinations, each combination is {Max # of resources and total # of Tx ports} across all CCs in a band when reported per band, and across all CCs in a band combination when reported per BC simultaneously [3. A list of supported combinations, each combination is {Max # of resources and total # of Tx ports} per CC simultaneously] 4. Supported processing capability 5. Supported value of ti for the relaxation of Z and Z’ timeline, where i is the index of SCS, i=1,2,3,4,5,6 corresponding to 15,30,60,120,480,960 kHz SCS 6. Supported number of occupied CPU 7. Supported number of occupied CPU2 / CPU3 8. Occupied resource pool between CPU,2 and CPU,3 [9. Support of up to 4 CSI-RS resources in a resource set] 10. Support of rank 1 to [4] 11. CSI feedback type [12. Support two-part UCI and layer-based UCI mapping and omission] [13. Maximum number of Tx port for CSI feedback] [14. Maximum number of subband for CSI feedback] [15. Maximum CSI feedback payload size for CSI feedback] [16. Support of parameter combinations PC3, PC4, PC5, and Rank1 and Rank2 of PC2] | 68-1a | Yes | N/A | CSI feedback based on pairing ID for 48 ports is not supported | FFS | FFS | FFS | FFS | Component candidate values are FFS [Note: If UE is configured with PC2 and it does not support FG 68-x1, UE is not expected to report more than two layers] | Optional with capability signalling |
 > | 68. NR_AIML_air_Ph2 | 68-1d | CSI feedback based on pairing ID for 128 ports | 1. Support of CSI feedback based on pairing ID 128 Tx ports by aggregating multiple resources within 1 slot 2. A list of supported combinations, each combination is {Max # of resources and total # of Tx ports} across all CCs in a band when reported per band, and across all CCs in a band combination when reported per BC simultaneously [3. A list of supported combinations, each combination is {Max # of resources and total # of Tx ports} per CC simultaneously] 4. Supported processing capability 5. supported value of ti for the relaxation of Z and Z’ timeline, where i is the index of SCS, i=1,2,3,4,5,6 corresponding to 15,30,60,120,480,960 kHz SCS 6. supported number of occupied CPU 7. supported number of occupied CPU2 / CPU3 8. Occupied resource pool between CPU,2 and CPU,3 [9. Support of up to 4 CSI-RS resources in a resource set] 10. Support of rank 1 to [4] 11. CSI feedback type (semi-persistent, aperiodic) [12. Support two-part UCI and layer-based UCI mapping and omission] [13. Maximum number of Tx port for CSI feedback] [14. Maximum number of subband for CSI feedback] [15. Maximum CSI feedback payload size for CSI feedback] [16. Support of parameter combinations PC3, PC4, PC5, and Rank1 and Rank2 of PC2] | 68-1a | Yes | N/A | CSI feedback based on pairing ID for 128 ports is not supported | FFS | FFS | FFS | FFS | Component candidate values are FFS [Note: If UE is configured with PC2 and it does not support FG 68-x1, UE is not expected to report more than two layers] | Optional with capability signalling |
 
-출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · `[127-R20-AI 9.6]`
+출처: [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · `[127-R20-AI 9.6]`
 
 **Agreement** · `9.6` Rel-20 UE features · `RAN1#127:9.6:020` · 후보 · 🆕 신규 · 관련 주제: CSI-RS · UE features (FG)
 
@@ -2407,7 +2391,7 @@ FFS 3줄
 > Introduce the following Rel. 19 UE FGs (yellow highlighting, if any, shows text that’s not yet agreed)
 > | 68. NR_AIML_air_Ph2 | 68-2 | UE Data collection for CSI feedback based on pairing ID | 1. Support of UE data collection for CSI feedback based on pairing ID 2. Support of data collection with periodic and semi-persistent CSI-RS [3. Support of providing UE preferred configuration for UE-side CSI compression data configuration] | 2-35 | Yes | N/A | UE Data collection for CSI feedback based on pairing ID is not supported | FFS | FFS | FFS | FFS |  | Optional with capability signalling |
 
-출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · `[127-R20-AI 9.6]`
+출처: [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · `[127-R20-AI 9.6]`
 
 **Agreement** · `9.6` Rel-20 UE features · `RAN1#127:9.6:021` · 후보 · 🆕 신규 · 관련 주제: CSI-RS · UE features (FG)
 
@@ -2425,14 +2409,12 @@ FFS 3줄
 > | Features | Index | Feature group | Components | Prerequisite feature groups | Need for the eNB to know if the feature is supported | Need for the UE to know if the feature is supported (only for V2X WI, where the PC5-RRC capability signalling is delivered between the UEs) | Consequence if the feature is not supported by the UE | Type (the ‘type’ definition from UE features should be based on the granularity of 1) Per UE or 2) Per Band or 3) Per BC or 4) Per FS or 5) Per FSPC) | Need of FDD/TDD differentiation | Capability interpretation for mixture of FDD/TDD | Note | Mandatory/Optional |
 > | 1. IoT_NTN_Ph4 | 1-1 | SPS for DL/UL data transmission for voice packets over NB-IoT NTN GSO | 1. Support of downlink SPS with one or two periodicities and additional time offset 2. Support of uplink SPS with one periodicity and additional time offset 3. Support of joint DL and UL SPS release via a single MAC CE 4. Support of DCI format N1 for DL SPS activation 5. Support of DCI format N0 for UL SPS activation 6. Support of DCI format N1 for DL SPS periodicity switching when 2 DL SPS periodicities are configured 7. Support one HARQ process for DL SPS and one HARQ process for UL SPS 8. Support of HARQ feedback disabling for SPS NPDSCH without corresponding NPDCCH | FFS | Yes | N/A | SPS for DL/UL data transmission for voice packets over NB-IoT NTN GSO is not supported | Per UE | FDD only | N/A | Component 1 candidate values: {one periodicity, two periodicities} Note: Component 6 only applies to UEs that signal two periodicities for component 1 Note: This FG is only applicable in IoT-NTN FDD bands Note: This FG is only applicable in GSO Note: OCC is not supported for UL SPS of Rel-20 IoT-NTN | Optional with capability signalling |
 
-출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · `[127-R20-AI 9.6]`
+출처: [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · `[127-R20-AI 9.6]`
 
 **Agreement** · `10.4.2` Operation in connected mode · `RAN1#127:10.4.2:006` · 후보 · 🆕 신규 · 관련 주제: CSI-RS · Study
 
-> ⚠️ 수식 누락 의심 — 원본 추출에서 Word 수식(변수·기호)이 빠졌을 수 있습니다. Chair notes 원문으로 확인하세요.
-
-> For fast enabling/disabling access to additional carriers for 6GR multiple carrier operation in connected mode, further discuss how to achieve fast r, considering the following:
-> - For the study, RAN1 assumes the  operation is composed of one or more of the following:
+> For fast enabling/disabling access to additional carriers for 6GR multiple carrier operation in connected mode, further discuss how to achieve fast enabling access to an additional carrier, considering the following:
+> - For the study, RAN1 assumes the enabling operation is composed of one or more of the following:
 >   - Enabling command processing
 >   - RF preparation, e.g., retuning or switching on an RF module
 >   - Synchronization acquisition, TA and AGC
@@ -2451,7 +2433,7 @@ FFS 3줄
 >   - Aperiodic TRS
 >   - Others
 
-출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · `[127-R20-6GR-MC-Operation in connected mode]`
+출처: [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · `[127-R20-6GR-MC-Operation in connected mode]`
 
 **Agreement** · `10.5.2.1` Downlink transmission scheme(s) for downlink control channels · `RAN1#127:10.5.2.1:006` · 후보 · 🆕 신규 · Study
 
@@ -2465,7 +2447,7 @@ FFS 3줄
 
 FFS 3줄
 
-출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · [R1-2610258](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2610258.zip) · `[127-R20-6GR-Transmission scheme for DL control channel]`
+출처: [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · [R1-2610258](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2610258.zip) · `[127-R20-6GR-Transmission scheme for DL control channel]`
 
 **Agreement** · `10.5.2.3` Uplink transmission scheme(s) for uplink channels · `RAN1#127:10.5.2.3:012` · 후보 · 🆕 신규 · Study
 
@@ -2483,7 +2465,7 @@ FFS 3줄
 > | #10 PUSCH specific | Companies to report, including Waveform (CP-OFDM or DFT-s-OFDM) MCS, if any DMRS configuration, if any With or without UL-SCH Precoding assumption |
 > | #11 Metrics for UCI carried on PUSCH | For HARQ-ACK (same target values as for PUCCH): BER @ 1%, BLER @ 1% ACK missed probability @ 1% Minimum SNR value for NACK to ACK probability @ 0.1% For CSI: BLER @ 1% as baseline Other values can be reported by companies. In this case, UL-SCH throughput is also reported for the case with UL-SCH to reflect the trade-off (e.g., impact of CSI decoding error on UL-SCH decoding) PAPR @ 0.1% CCDF, @ 1% CCDF with the waveform reported (optional) PA modeling assumption Note: The target BLER values in this row do not imply that the performance of CSI should be equivalent to or better than that of HARQ-ACK. |
 
-출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · [R1-2609611](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2609611.zip) · `[127-R20-6GR-Transmission scheme for UL channels]`
+출처: [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · [R1-2609611](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2609611.zip) · `[127-R20-6GR-Transmission scheme for UL channels]`
 
 **Agreement** · `10.5.4.3` HARQ related Aspects · `RAN1#127:10.5.4.3:003` · 후보 · 🆕 신규 · Study
 
@@ -2501,7 +2483,7 @@ FFS 3줄
 
 FFS 1줄
 
-출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · [R1-2610772](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2610772.zip) · `[127-R20-6GR-HARQ related]`
+출처: [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · [R1-2610772](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2610772.zip) · `[127-R20-6GR-HARQ related]`
 
 **Agreement** · `10.5.4.4` Handling of potential multiple uplink transmissions · `RAN1#127:10.5.4.4:004` · 후보 · 🆕 신규 · Study
 
@@ -2513,7 +2495,7 @@ FFS 1줄
 > - The collision-handling timeline needs to consider the timeline for CSI report triggering and transmission
 > - Note: details for the timeline for collision-handling at least depend on the details for “separate CSI measurement/computation triggering/configuration and CSI reporting triggering/configuration” in the CSI agenda
 
-출처: [Chair notes RAN1#127_eom1](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) · [R1-2610704](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2610704.zip) · `[127-R20-6GR-Handling of potential multiple uplink transmissions]`
+출처: [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · [R1-2610704](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2610704.zip) · `[127-R20-6GR-Handling of potential multiple uplink transmissions]`
 
 ### RAN1#126bis — 6건
 
