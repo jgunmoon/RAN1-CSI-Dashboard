@@ -43,6 +43,10 @@ agendas:
   # Rel-19
   # 정규식: 지금은 Rel-19 Phase 5만 있고, 앞으로 생길 'Rel-20 UE Features > UE features for NR MIMO Phase 6' 등도 자동으로 잡습니다.
   - {section: "re:Rel-\\d+ UE Features", path: ["re:UE features for NR MIMO Phase \\d+"], label: "UE features for NR MIMO Phase N"}
+  # #127부터 Rel-19·Rel-20 UE feature가 'Release 20 NR > Rel-20 UE features' 한 Agenda로 모였습니다 (MIMO·AI/ML CSI FG 포함).
+  # 다른 기능 FG도 섞여 있어 CSI 키워드·조항이 있는 결정만 확정으로 넣습니다.
+  - {section: "re:Release \\d+ NR", path: ["re:Rel-\\d+ UE features"], require_keywords: true,
+     label: "Rel-N UE features 통합 (CSI 키워드 있는 결정만)"}
   - {section: "re:Maintenance on Rel-\\d+ NR and E-UTRA", path: ["re:Maintenance on NR MIMO Phase \\d+"], children: true,
      label: "Maintenance on NR MIMO Phase N (하위 포함)"}
   # Rel-19 AI/ML: BM·CSI 예측 FG/유지보수는 단말 HW·알고리즘에 직접 영향. positioning(FG 58-2, PRS, Associated ID)은 뺍니다.
@@ -50,9 +54,11 @@ agendas:
      exclude: ['(?i)positioning', '\bPRS\b', '\|\s*58-2-'], label: "UE features for AI/ML (positioning 제외)"}
   - {section: "Maintenance on Rel-19 NR and E-UTRA", path: ["Maintenance on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface"],
      topic: aiml, exclude: ['(?i)positioning', '(?i)associated ID'], label: "Maintenance on AI/ML (positioning 제외)"}
-  # #125부터 Rel-19 AI/ML·MIMO Phase 5 유지보수가 NES·NTN과 한 Agenda로 합쳐졌습니다. CSI 키워드·조항이 있는 결정만 확정으로 넣습니다.
-  - {section: "Maintenance on Rel-19 NR and E-UTRA", path: ["Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT"],
-     require_keywords: true, label: "Maintenance on AI/ML·MIMO Ph5·NES·NTN (CSI 키워드·조항 있는 결정만)"}
+  # #125부터 Rel-19 AI/ML·MIMO Phase 5 유지보수가 NES·NTN과 한 Agenda로 합쳐졌고, #127부터는 Rel-19 전체 유지보수
+  # ('Maintenance on all items of Rel-19 NR and E-UTRA')로 다시 합쳐졌습니다. 두 제목을 한 줄로 이어 보며, CSI 키워드·조항이 있는 결정만 확정으로 넣습니다.
+  - {section: "Maintenance on Rel-19 NR and E-UTRA",
+     path: ["re:Maintenance on (AI/ML for NR Air interface, NR MIMO Phase 5, NES and NTN for NR and IoT|all items of Rel-19 NR and E-UTRA)"],
+     require_keywords: true, label: "Maintenance on Rel-19 통합 (AI/ML·MIMO Ph5 등, CSI 키워드·조항 있는 결정만)"}
   - {section: "Maintenance on Rel-19 NR and E-UTRA", path: ["Specification support for beam management"], topic: aiml,
      label: "AI/ML: Specification support for beam management"}
   - {section: "Maintenance on Rel-19 NR and E-UTRA", path: ["Specification support for CSI prediction"], topic: aiml,
@@ -63,6 +69,9 @@ agendas:
 # 회의 번호가 들어 있어 그 회의의 경고에만 적용됩니다.
 acknowledged_alerts:
   - "RAN1#126bis: Rel-20 Study of 6GR > Modulation"   # 'Modulation, joint channel coding and modulation'에서 이름만 바뀜. 변조 Agenda라 CSI 아님 (후보 1건)
+  - "RAN1#127: CSI acquisition and report: Other aspects (TRS, DL+UL 결합 CSI 등)"   # #127에는 Observation만 있고 결정 없음 (eom2 확인)
+  - "RAN1#127: Release 20 NR > Rel-20 UE features"   # 위 agendas에 'Rel-N UE features 통합'으로 넣음 (확정 14건)
+  - "RAN1#127: Maintenance on Rel-19 NR and E-UTRA > Maintenance on all items of Rel-19 NR and E-UTRA"   # 기존 유지보수 규칙에 새 제목 추가 (확정 7건)
 
 # ── 2. 보조 키워드 (후보) ────────────────────────────────────────────
 # 위 Agenda 밖에서 이 키워드가 결정 원문(또는 FFS 줄)에 있으면 '후보'로 따로 표시합니다.

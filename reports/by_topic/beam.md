@@ -2,10 +2,34 @@
 
 > 원본 DB 마지막 업데이트 **2026-11-24 14:29 KST** · [요약으로 돌아가기](../README.md)
 
-주된 주제가 Beam management인 확정 135건 (Agreement 131 · WA 2 · Conclusion 2), 후보 58건. 결정 본문은 Chair notes 원문 그대로입니다(요약 없음). 최신 회의부터 보여줍니다.
+주된 주제가 Beam management인 확정 137건 (Agreement 133 · WA 2 · Conclusion 2), 후보 56건. 결정 본문은 Chair notes 원문 그대로입니다(요약 없음). 최신 회의부터 보여줍니다.
 주된 주제가 다른 결정 중 이 주제가 관련 주제로 붙은 것은 맨 아래 '관련 결정'에 모았습니다.
 
-## RAN1#127 — 14건
+## RAN1#127 — 16건
+
+**Agreement** · `8.1` Maintenance on all items of Rel-19 NR and E-UTRA · `RAN1#127:8.1:012` · 🆕 신규 · 관련 주제: CSI-RS · 유지보수 (CR)
+
+구현 영향: UE capability·FG
+
+> The FL draft reply LS as below. Final LS in R1-2610954 is endorsed.
+> | [Draft] Reply LS on UE capability for Mobility Enh Ph5 Title: [Draft] Reply LS on UE capability for Mobility Enh Ph5 Response to: R1-2609014 (R2-2607807) Release: Rel-20 Work Item: NR_Mob_Ph5 Source: RAN1 To: RAN2 Cc: RAN4 1. Overall Description: RAN1 thanks RAN2 for the LS on UE capability for Mobility Enh Ph5. RAN1 discussed the RAN2 agreements on the reuse of the Rel-18/Rel-19 LTM UE capabilities and has no concern. RAN1 confirms that the following UE capabilities, including all their components, can be reused for the LTM SCell activation improvement, where the candidate cell in the field description includes both the LTM candidate SpCell and the LTM candidate SCell: Rel-18: intraFreqL1-MeasConfig-r18, interFreqL1-MeasConfig-r18, ltm-BeamIndicationJointTCI-r18, ltm-MAC-CE-JointTCI-r18, ltm-BeamIndicationSeparateTCI-r18, ltm-MAC-CE-SeparateTCI-r18 Rel-19: intraFreqL1-MeasConfigPeriodicCSI-RS-r19, interFreqL1-MeasConfigPeriodicCSI-RS-r19, intraFreqL1-MeasConfigSP-CSI-RS-r19, interFreqL1-MeasConfigSP-CSI-RS-r19, ltm-BeamIndicationJointTCI-CSI-RS-r19, ltm-MAC-CE-JointTCI-CSI-RS-r19, ltm-BeamIndicationSeparateTCI-CSI-RS-r19, ltm-MAC-CE-SeparateTCI-CSI-RS-r19 RAN1 also confirms that the current value ranges of these capabilities are reused without extension. The PerCell components (maxNumberJointTCI-PerCell-r18, maxNumberDL-TCI-PerCell-r18, maxNumberUL-TCI-PerCell-r18) apply independently to each LTM candidate SpCell and each LTM candidate SCell, while the AcrossCells components and maxNumberCells-r18 apply to the total across LTM candidate SpCells and LTM candidate SCells. RAN1 understands that an LTM candidate SpCell and an LTM candidate SCell are counted separately in maxNumberCells-r18. It is unclear for RAN1 regarding maxNumberCells-r18 and in the AcrossCells TCI-state components when an LTM candidate SCell configured under more than one LTM candidate configurations but would like to leave this for RAN2. 2. Actions: To RAN2: RAN1 kindly asks RAN2 to take the above information into account and to provide the clarification requested above. 3. Date of Next TSG-RAN1 Meetings: TSG RAN WG1 Meeting #128 January 25th – 29th, 2027 Kobe, Japan TSG RAN WG1 Meeting #128bis April 19th – 23rd, 2027 Lyon, France |
+
+출처: [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · [R1-2610919](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2610919.zip) · `[127-R19-AI 8.1]`
+
+**Agreement** · `8.1` Maintenance on all items of Rel-19 NR and E-UTRA · `RAN1#127:8.1:013` · 🆕 신규 · 관련 주제: CSI-RS · 유지보수 (CR)
+
+규격: TS 38.214 5.1.5, TS 38.213 10.4
+
+> Adopt the following TP to section 5.1.5 TS 38.214 in principle:
+> | Reason for change: | When the unified TCI framework is configured, WUS in RRC_CONNECTED follows the indicated TCI state, the same as other DL channels/signals (RAN1#120bis agreement; TS 38.213 clause 10.4D). Before application of an indicated TCI state, TS 38.214 clause 5.1.5 specifies the QCL assumption of WUS for an LTM cell switch by the LTM Cell Switch Command MAC CE and for a Reconfiguration with sync procedure (based on the SS/PBCH block identified during the random access procedure), and otherwise the SS/PBCH block identified during the initial access procedure. For RACH-less conditional LTM cell switch, the clause specifies the determined CandidateTCI-State only for DM-RS of PDSCH and PDCCH and CSI-RS. After a RACH-less conditional LTM cell switch, there is neither an LTM Cell Switch Command MAC CE nor a random access procedure. WUS therefore falls under the 'otherwise' case and is assumed quasi co-located with the SS/PBCH block of the initial access procedure, which may belong to a different cell, while the other DL channels/signals on the target cell use the determined CandidateTCI-State. TS 38.214 clause 5.1.5 specifies an explicit RACH-based conditional LTM cell switch case for DM-RS of PDSCH and PDCCH and CSI-RS, but not for WUS. |
+> |  |  |
+> | Summary of change: | Add the QCL assumption for WUS for RACH-less conditional LTM cell switch (the reference signal in the determined CandidateTCI-State) and for RACH-based conditional LTM cell switch (the SS/PBCH block identified during the random access procedure), with respect to 'typeC', and when applicable, also with respect to 'typeD', consistent with DM-RS of PDSCH and PDCCH and CSI-RS. |
+> |  |  |
+> | Consequences if not approved: | After a RACH-less conditional LTM cell switch, the UE assumes that WUS is quasi co-located with the SS/PBCH block identified during the initial access procedure, which may belong to a different cell, and may not receive WUS on the target cell; the QCL assumption for WUS after a RACH-based conditional LTM cell switch is not specified consistently with the other DL channels/signals. |
+> | ==============Start of changes============== 5.1.5 Antenna ports quasi co-location <Unchanged parts are omitted> After a UE receives an initial higher layer configuration of dl-OrJointTCI-StateList where more than one TCI-State can be used as an indicated TCI state and before application of an indicated TCI state from the configured TCI states: - The UE assumes that DM-RS of PDSCH and DM-RS of PDCCH that are not received during the RACH procedure, WUS, and the CSI-RS applying the indicated TCI state are quasi co-located with the reference signal(s) in the CandidateTCI-State indicated in the LTM Cell Switch Command MAC CE [10, 38.321] if applicable. - The UE assumes that DM-RS of PDSCH and DM-RS of PDCCH and the CSI-RS applying the indicated TCI state are quasi co-located with the reference signal in the determined CandidateTCI-State for RACH-less conditional LTM cell switch [10, 38.321] if applicable. - The UE assumes that DM-RS of PDSCH and DM-RS of PDCCH and the CSI-RS applying the indicated TCI state are quasi co-located with the SS/PBCH block the UE identified during the random access procedure initiated by RACH-based conditional LTM cell switch if applicable. - Otherwise, the UE assumes that DM-RS of PDSCH and DM-RS of PDCCH, WUS, and the CSI-RS applying the indicated TCI state are quasi co-located with the SS/PBCH block the UE identified during the initial access procedure with respect to qcl-Type set to 'typeA', and when applicable, also with respect to qcl-Type set to 'typeD'. ==============End of changes============== |
+> Final CR in R1-2610986 is endorsed.
+
+출처: [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · [R1-2610914](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2610914.zip) · `[127-R19-AI 8.1]`
 
 **Agreement** · `10.5.1.1` Synchronization acquisition and beam measurement · `RAN1#127:10.5.1.1:001` · 🆕 신규 · Study
 
@@ -2179,12 +2203,13 @@ FFS 1줄
 
 ---
 
-## 관련 결정 21건 (주된 주제는 다른 주제)
+## 관련 결정 22건 (주된 주제는 다른 주제)
 
 원문에 Beam management 관련 표현이 있지만 주된 주제가 다른 확정 결정입니다. 전문은 각 주된 주제 리포트에 있습니다.
 
 | 회의 | 구분 | 주된 주제 | Agenda | 원문 첫 줄 | 출처 |
 |---|---|---|---|---|---|
+| RAN1#127 | Agreement | [SRS](srs.md) | 8.1 Maintenance on all items of Rel-19 NR and E-UTRA | Adopt the following TP for TS38.214 | [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · [R1-2610909](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2610909.zip) · `[127-R19-AI 8.1]` |
 | RAN1#126 | Agreement | [SRS](srs.md) | 8.1 Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT | The following TP for TS 38.213 Clause 11.1 is endorsed. | [Chair notes RAN1#126_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx) · [R1-2606825](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Docs/R1-2606825.zip) · `[126-R19-AI 8.1]` |
 | RAN1#126 | Agreement | [SRS](srs.md) | 8.1 Maintenance on AI/ML for NR Air interface, NR MIMO Phase 5,  NES and NTN for NR and IoT | The following TP for TS 38.214 Clause 6.2.1.3 is endorsed. | [Chair notes RAN1#126_eom1](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Inbox/Chair_notes/Chair%20notes%20RAN1%23126_eom1.docx) · [R1-2606795](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_126/Docs/R1-2606795.zip) · `[126-R19-AI 8.1]` |
 | RAN1#125 | Agreement | [AI/ML CSI](aiml.md) | 10.5.3.1 Aspects of downlink-based CSI acquisition | For the study on channel property information (CPI), the evaluation at least considering the following: | [Chair notes RAN1#125_eom](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_125/Inbox/Chair_notes/Chair%20notes%20RAN1%23125_eom.docx) · `[125-R20-6GR-Aspects of DL based CSI acquisition]` |
@@ -2209,35 +2234,11 @@ FFS 1줄
 
 ---
 
-## 후보 58건 (키워드 일치 · 확인 필요)
+## 후보 56건 (키워드 일치 · 확인 필요)
 
 포함 Agenda 밖에서 키워드로 잡힌 결정입니다. CSI 범위가 아닐 수 있습니다.
 
-### RAN1#127 — 3건
-
-**Agreement** · `8.1` Maintenance on all items of Rel-19 NR and E-UTRA · `RAN1#127:8.1:012` · 후보 · 🆕 신규 · 관련 주제: CSI-RS · 유지보수 (CR)
-
-구현 영향: UE capability·FG
-
-> The FL draft reply LS as below. Final LS in R1-2610954 is endorsed.
-> | [Draft] Reply LS on UE capability for Mobility Enh Ph5 Title: [Draft] Reply LS on UE capability for Mobility Enh Ph5 Response to: R1-2609014 (R2-2607807) Release: Rel-20 Work Item: NR_Mob_Ph5 Source: RAN1 To: RAN2 Cc: RAN4 1. Overall Description: RAN1 thanks RAN2 for the LS on UE capability for Mobility Enh Ph5. RAN1 discussed the RAN2 agreements on the reuse of the Rel-18/Rel-19 LTM UE capabilities and has no concern. RAN1 confirms that the following UE capabilities, including all their components, can be reused for the LTM SCell activation improvement, where the candidate cell in the field description includes both the LTM candidate SpCell and the LTM candidate SCell: Rel-18: intraFreqL1-MeasConfig-r18, interFreqL1-MeasConfig-r18, ltm-BeamIndicationJointTCI-r18, ltm-MAC-CE-JointTCI-r18, ltm-BeamIndicationSeparateTCI-r18, ltm-MAC-CE-SeparateTCI-r18 Rel-19: intraFreqL1-MeasConfigPeriodicCSI-RS-r19, interFreqL1-MeasConfigPeriodicCSI-RS-r19, intraFreqL1-MeasConfigSP-CSI-RS-r19, interFreqL1-MeasConfigSP-CSI-RS-r19, ltm-BeamIndicationJointTCI-CSI-RS-r19, ltm-MAC-CE-JointTCI-CSI-RS-r19, ltm-BeamIndicationSeparateTCI-CSI-RS-r19, ltm-MAC-CE-SeparateTCI-CSI-RS-r19 RAN1 also confirms that the current value ranges of these capabilities are reused without extension. The PerCell components (maxNumberJointTCI-PerCell-r18, maxNumberDL-TCI-PerCell-r18, maxNumberUL-TCI-PerCell-r18) apply independently to each LTM candidate SpCell and each LTM candidate SCell, while the AcrossCells components and maxNumberCells-r18 apply to the total across LTM candidate SpCells and LTM candidate SCells. RAN1 understands that an LTM candidate SpCell and an LTM candidate SCell are counted separately in maxNumberCells-r18. It is unclear for RAN1 regarding maxNumberCells-r18 and in the AcrossCells TCI-state components when an LTM candidate SCell configured under more than one LTM candidate configurations but would like to leave this for RAN2. 2. Actions: To RAN2: RAN1 kindly asks RAN2 to take the above information into account and to provide the clarification requested above. 3. Date of Next TSG-RAN1 Meetings: TSG RAN WG1 Meeting #128 January 25th – 29th, 2027 Kobe, Japan TSG RAN WG1 Meeting #128bis April 19th – 23rd, 2027 Lyon, France |
-
-출처: [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · [R1-2610919](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2610919.zip) · `[127-R19-AI 8.1]`
-
-**Agreement** · `8.1` Maintenance on all items of Rel-19 NR and E-UTRA · `RAN1#127:8.1:013` · 후보 · 🆕 신규 · 관련 주제: CSI-RS · 유지보수 (CR)
-
-규격: TS 38.214 5.1.5, TS 38.213 10.4
-
-> Adopt the following TP to section 5.1.5 TS 38.214 in principle:
-> | Reason for change: | When the unified TCI framework is configured, WUS in RRC_CONNECTED follows the indicated TCI state, the same as other DL channels/signals (RAN1#120bis agreement; TS 38.213 clause 10.4D). Before application of an indicated TCI state, TS 38.214 clause 5.1.5 specifies the QCL assumption of WUS for an LTM cell switch by the LTM Cell Switch Command MAC CE and for a Reconfiguration with sync procedure (based on the SS/PBCH block identified during the random access procedure), and otherwise the SS/PBCH block identified during the initial access procedure. For RACH-less conditional LTM cell switch, the clause specifies the determined CandidateTCI-State only for DM-RS of PDSCH and PDCCH and CSI-RS. After a RACH-less conditional LTM cell switch, there is neither an LTM Cell Switch Command MAC CE nor a random access procedure. WUS therefore falls under the 'otherwise' case and is assumed quasi co-located with the SS/PBCH block of the initial access procedure, which may belong to a different cell, while the other DL channels/signals on the target cell use the determined CandidateTCI-State. TS 38.214 clause 5.1.5 specifies an explicit RACH-based conditional LTM cell switch case for DM-RS of PDSCH and PDCCH and CSI-RS, but not for WUS. |
-> |  |  |
-> | Summary of change: | Add the QCL assumption for WUS for RACH-less conditional LTM cell switch (the reference signal in the determined CandidateTCI-State) and for RACH-based conditional LTM cell switch (the SS/PBCH block identified during the random access procedure), with respect to 'typeC', and when applicable, also with respect to 'typeD', consistent with DM-RS of PDSCH and PDCCH and CSI-RS. |
-> |  |  |
-> | Consequences if not approved: | After a RACH-less conditional LTM cell switch, the UE assumes that WUS is quasi co-located with the SS/PBCH block identified during the initial access procedure, which may belong to a different cell, and may not receive WUS on the target cell; the QCL assumption for WUS after a RACH-based conditional LTM cell switch is not specified consistently with the other DL channels/signals. |
-> | ==============Start of changes============== 5.1.5 Antenna ports quasi co-location <Unchanged parts are omitted> After a UE receives an initial higher layer configuration of dl-OrJointTCI-StateList where more than one TCI-State can be used as an indicated TCI state and before application of an indicated TCI state from the configured TCI states: - The UE assumes that DM-RS of PDSCH and DM-RS of PDCCH that are not received during the RACH procedure, WUS, and the CSI-RS applying the indicated TCI state are quasi co-located with the reference signal(s) in the CandidateTCI-State indicated in the LTM Cell Switch Command MAC CE [10, 38.321] if applicable. - The UE assumes that DM-RS of PDSCH and DM-RS of PDCCH and the CSI-RS applying the indicated TCI state are quasi co-located with the reference signal in the determined CandidateTCI-State for RACH-less conditional LTM cell switch [10, 38.321] if applicable. - The UE assumes that DM-RS of PDSCH and DM-RS of PDCCH and the CSI-RS applying the indicated TCI state are quasi co-located with the SS/PBCH block the UE identified during the random access procedure initiated by RACH-based conditional LTM cell switch if applicable. - Otherwise, the UE assumes that DM-RS of PDSCH and DM-RS of PDCCH, WUS, and the CSI-RS applying the indicated TCI state are quasi co-located with the SS/PBCH block the UE identified during the initial access procedure with respect to qcl-Type set to 'typeA', and when applicable, also with respect to qcl-Type set to 'typeD'. ==============End of changes============== |
-> Final CR in R1-2610986 is endorsed.
-
-출처: [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · [R1-2610914](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2610914.zip) · `[127-R19-AI 8.1]`
+### RAN1#127 — 1건
 
 **Agreement** · `10.7.1` NTN specific requirements and design · `RAN1#127:10.7.1:012` · 후보 · 🆕 신규 · Study
 

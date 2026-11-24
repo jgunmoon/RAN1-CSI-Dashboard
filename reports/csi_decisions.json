@@ -40786,14 +40786,12 @@
     "tdoc": "R1-2610916",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2610916.zip"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "csirs",
    "tags": [
     "csirs"
    ],
-   "keywords": [
-    "TS 38.214 5.1.6.1"
-   ],
+   "keywords": [],
    "stage": "maint",
    "impact": [],
    "clauses": [
@@ -40829,14 +40827,12 @@
     "tdoc": "R1-2610918",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2610918.zip"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "report",
    "tags": [
     "report"
    ],
-   "keywords": [
-    "TS 38.214 5.2.2.5"
-   ],
+   "keywords": [],
    "stage": "maint",
    "impact": [],
    "clauses": [
@@ -40872,23 +40868,14 @@
     "tdoc": "R1-2610909",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2610909.zip"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "srs",
    "tags": [
     "srs",
     "report",
     "csirs"
    ],
-   "keywords": [
-    "CSI-RS",
-    "csi-Report",
-    "codebook",
-    "PMI",
-    "CQI",
-    "SRS",
-    "CSI",
-    "TS 38.214 5.2.1.4.2"
-   ],
+   "keywords": [],
    "stage": "maint",
    "impact": [
     "capability",
@@ -40926,24 +40913,14 @@
     "tdoc": "R1-2610909",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2610909.zip"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "srs",
    "tags": [
     "srs",
     "beam",
     "report"
    ],
-   "keywords": [
-    "CSI report",
-    "PMI",
-    "CQI",
-    "L1-RSRP",
-    "SRS",
-    "CSI",
-    "TS 38.214 6.2.1.3",
-    "TS 38.214 5.2.5",
-    "TS 38.214 5.2.1.4"
-   ],
+   "keywords": [],
    "stage": "maint",
    "impact": [
     "measure"
@@ -40981,17 +40958,13 @@
     "tdoc": "R1-2610919",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2610919.zip"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "beam",
    "tags": [
     "beam",
     "csirs"
    ],
-   "keywords": [
-    "CSI-RS",
-    "TCI",
-    "CSI"
-   ],
+   "keywords": [],
    "stage": "maint",
    "impact": [
     "capability"
@@ -41025,18 +40998,13 @@
     "tdoc": "R1-2610914",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2610914.zip"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "beam",
    "tags": [
     "beam",
     "csirs"
    ],
-   "keywords": [
-    "CSI-RS",
-    "TCI",
-    "CSI",
-    "TS 38.214 5.1.5"
-   ],
+   "keywords": [],
    "stage": "maint",
    "impact": [],
    "clauses": [
@@ -41071,14 +41039,12 @@
     "tdoc": "R1-2610941",
     "tdoc_url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2610941.zip"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "srs",
    "tags": [
     "srs"
    ],
-   "keywords": [
-    "SRS"
-   ],
+   "keywords": [],
    "stage": "maint",
    "impact": [],
    "clauses": [],
@@ -42257,21 +42223,14 @@
     "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx",
     "discussion": "127-R20-AI 9.6"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "srs",
    "tags": [
     "srs",
     "report",
     "csirs"
    ],
-   "keywords": [
-    "CSI-RS",
-    "CSI report",
-    "PMI",
-    "CQI",
-    "SRS",
-    "CSI"
-   ],
+   "keywords": [],
    "stage": "fg",
    "impact": [
     "capability",
@@ -42305,21 +42264,14 @@
     "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx",
     "discussion": "127-R20-AI 9.6"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "srs",
    "tags": [
     "srs",
     "report",
     "csirs"
    ],
-   "keywords": [
-    "CSI-RS",
-    "CSI report",
-    "PMI",
-    "CQI",
-    "SRS",
-    "CSI"
-   ],
+   "keywords": [],
    "stage": "fg",
    "impact": [
     "capability",
@@ -42353,15 +42305,12 @@
     "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx",
     "discussion": "127-R20-AI 9.6"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "csirs",
    "tags": [
     "csirs"
    ],
-   "keywords": [
-    "CSI-RS",
-    "CSI"
-   ],
+   "keywords": [],
    "stage": "fg",
    "impact": [
     "capability",
@@ -42394,14 +42343,12 @@
     "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx",
     "discussion": "127-R20-AI 9.6"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "srs",
    "tags": [
     "srs"
    ],
-   "keywords": [
-    "SRS"
-   ],
+   "keywords": [],
    "stage": "fg",
    "impact": [
     "capability"
@@ -42433,14 +42380,12 @@
     "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx",
     "discussion": "127-R20-AI 9.6"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "srs",
    "tags": [
     "srs"
    ],
-   "keywords": [
-    "SRS"
-   ],
+   "keywords": [],
    "stage": "fg",
    "impact": [
     "capability"
@@ -42472,15 +42417,12 @@
     "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx",
     "discussion": "127-R20-AI 9.6"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "csirs",
    "tags": [
     "csirs"
    ],
-   "keywords": [
-    "CSI-RS",
-    "CSI"
-   ],
+   "keywords": [],
    "stage": "fg",
    "impact": [
     "capability",
@@ -42513,21 +42455,14 @@
     "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx",
     "discussion": "127-R20-AI 9.6"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "srs",
    "tags": [
     "srs",
     "report",
     "csirs"
    ],
-   "keywords": [
-    "CSI-RS",
-    "CSI report",
-    "PMI",
-    "CQI",
-    "SRS",
-    "CSI"
-   ],
+   "keywords": [],
    "stage": "fg",
    "impact": [
     "dimension",
@@ -42560,21 +42495,14 @@
     "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx",
     "discussion": "127-R20-AI 9.6"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "srs",
    "tags": [
     "srs",
     "report",
     "csirs"
    ],
-   "keywords": [
-    "CSI-RS",
-    "CSI report",
-    "PMI",
-    "CQI",
-    "SRS",
-    "CSI"
-   ],
+   "keywords": [],
    "stage": "fg",
    "impact": [
     "dimension",
@@ -42607,14 +42535,12 @@
     "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx",
     "discussion": "127-R20-AI 9.6"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "srs",
    "tags": [
     "srs"
    ],
-   "keywords": [
-    "SRS"
-   ],
+   "keywords": [],
    "stage": "fg",
    "impact": [
     "capability"
@@ -42646,14 +42572,12 @@
     "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx",
     "discussion": "127-R20-AI 9.6"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "srs",
    "tags": [
     "srs"
    ],
-   "keywords": [
-    "SRS"
-   ],
+   "keywords": [],
    "stage": "fg",
    "impact": [
     "capability"
@@ -42685,16 +42609,12 @@
     "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx",
     "discussion": "127-R20-AI 9.6"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "report",
    "tags": [
     "report"
    ],
-   "keywords": [
-    "CSI feedback",
-    "CSI",
-    "CPU"
-   ],
+   "keywords": [],
    "stage": "fg",
    "impact": [
     "timeline",
@@ -42728,18 +42648,13 @@
     "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx",
     "discussion": "127-R20-AI 9.6"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "report",
    "tags": [
     "report",
     "csirs"
    ],
-   "keywords": [
-    "CSI-RS",
-    "CSI feedback",
-    "CSI",
-    "CPU"
-   ],
+   "keywords": [],
    "stage": "fg",
    "impact": [
     "timeline",
@@ -42773,18 +42688,13 @@
     "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx",
     "discussion": "127-R20-AI 9.6"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "report",
    "tags": [
     "report",
     "csirs"
    ],
-   "keywords": [
-    "CSI-RS",
-    "CSI feedback",
-    "CSI compression",
-    "CSI"
-   ],
+   "keywords": [],
    "stage": "fg",
    "impact": [
     "capability"
@@ -42816,20 +42726,13 @@
     "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx",
     "discussion": "127-R20-AI 9.6"
    },
-   "scope": "candidate",
+   "scope": "agenda",
    "topic": "report",
    "tags": [
     "report",
     "csirs"
    ],
-   "keywords": [
-    "CSI-RS",
-    "CSI feedback",
-    "CSI compression",
-    "codebook",
-    "CSI",
-    "CPU"
-   ],
+   "keywords": [],
    "stage": "fg",
    "impact": [
     "timeline",

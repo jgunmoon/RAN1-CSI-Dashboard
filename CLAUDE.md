@@ -24,6 +24,8 @@ CSI 범위는 넓게 봅니다: CSI 획득·보고, CSI-RS, codebook(PMI/CQI/RI)
      기술 키워드 없이 조항만 나오기 때문입니다. 같은 줄의 사양·조항을 짝짓고(`scope.clause_mentions`), 'Section 2 of R1-…' 같은 TDoc 절은 뺍니다.
      원문이 조항을 다른 사양에 잘못 붙이는 경우가 있어(예: '38.213 6.3.2.x'는 실제 38.212) 필요하면 `exact: true`로 하위 조항을 막습니다.
      #125부터 Rel-19 MIMO Phase 5·AI/ML 유지보수가 통합 Agenda(… NR MIMO Phase 5, NES and NTN)로 옮겨져 이 키워드로 후보를 잡습니다.
+     #127부터는 Rel-19 유지보수 전체가 'Maintenance on all items of Rel-19 NR and E-UTRA'로, UE feature가 'Release 20 NR > Rel-20 UE features'로
+     합쳐져 두 Agenda 모두 `require_keywords: true`로 넣었습니다(유지보수 규칙은 옛 제목과 새 제목을 정규식 하나로 이어 봄).
    - `include_ids` / `exclude_ids`: 결정 id로 사람이 확정하거나 뺍니다.
    - `topics`: 결정마다 **주된 주제** 하나와 **관련 주제** 태그(`tags`, 주된 주제 포함).
      주된 주제 = Agenda 고정 주제 → 규칙을 위에서부터 보고 처음 맞는 것 → 일치한 조항의 topic → `fallback_topic`.
@@ -40,7 +42,9 @@ CSI 범위는 넓게 봅니다: CSI 획득·보고, CSI-RS, codebook(PMI/CQI/RI)
      config `acknowledged_alerts`에 README가 알려 주는 키('최신 회의: 섹션 > Agenda 제목' 또는 '최신 회의: 포함 Agenda 이름')를 넣어 숨깁니다.
      키에 회의가 들어 있어 다음 회의에는 다시 판단합니다. 대시보드 알림은 팀원용 문구('관리자가 확인 중')만 쓰고, 고치는 방법은 README·실행 요약·Issue에만 둡니다.
    - 변경 이력(`scripts/changes.py` → `reports/changes.json`): 매 실행 직전 `reports/csi_decisions.json`과 비교해 새 회의, 과거 회의의
-     추가·변경·삭제(원본 재처리, 잠정 → 종료본, 범위 설정 변경)를 남깁니다. id만 바뀐 결정은 변경으로 보지 않습니다. 최근 30묶음 보관.
+     추가·변경·삭제(원본 재처리, 잠정 → 종료본, 범위 설정 변경)를 남깁니다. 최근 30묶음 보관.
+     회의록 새 판에서 결정 하나가 빠지면 뒤 결정의 id 순번이 밀리므로, 원문·구분·범위가 같은 결정을 먼저 짝지어 id만 바뀐 것은 변경으로 보지 않고,
+     순번도 밀리고 원문도 고쳐진 결정은 같은 회의·Agenda에서 짧은 쪽 원문의 80% 이상이 겹치면 '변경'으로 짝짓습니다.
      '신규'는 최신 회의만 뜻하므로 과거 회의 변화는 이 이력과 결정 목록의 '과거 회의에 추가'/'원문 변경' 등 표시로만 보입니다.
      이유가 원본 갱신인지 설정 변경인지 구분합니다(`changes.is_source`). 결정 카드 표시와 요약 탭의 '최근 변경' 줄은 **원본(회의록) 변경만** 쓰고,
      설정 변경은 변경 이력 탭에 '대시보드 범위 조정 (RAN1 회의록 변화 아님)'으로만 남깁니다. 알림 Issue 제목도 'CSI 대시보드 범위 조정:'으로 구분합니다.

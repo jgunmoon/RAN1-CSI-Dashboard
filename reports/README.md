@@ -2,22 +2,13 @@
 
 > 원본 DB 마지막 업데이트 **2026-11-24 14:29 KST** · 범위 RAN1#122 – #127 (9회) · [HTML 대시보드](https://jgunmoon.github.io/RAN1-CSI-Dashboard/) · 원본 [jgunmoon/RAN1-Decision-Tracker](https://github.com/jgunmoon/RAN1-Decision-Tracker)
 
-> ⚠️ **Agenda 확인 필요 (RAN1#126bis → RAN1#127)** — 결정이 범위에서 조용히 빠지지 않도록 확인하세요.
->
-> - 포함 Agenda **CSI acquisition and report: Other aspects (TRS, DL+UL 결합 CSI 등)** (Rel-20 Study of 6GR): RAN1#126bis에 12건 → RAN1#127에 없음. 제목·섹션이 바뀌었으면 `config/csi_scope.yaml`의 agendas를 고칩니다.
-> - 포함 Agenda **Maintenance on AI/ML·MIMO Ph5·NES·NTN (CSI 키워드·조항 있는 결정만)** (Maintenance on Rel-19 NR and E-UTRA): RAN1#126bis에 2건 → RAN1#127에 없음. 제목·섹션이 바뀌었으면 `config/csi_scope.yaml`의 agendas를 고칩니다.
-> - 새 Agenda **9.6 Rel-20 UE features** (Release 20 NR): 확정 0 · 후보 14 / 전체 21건. CSI Agenda면 agendas에 넣습니다.
-> - 새 Agenda **8.1 Maintenance on all items of Rel-19 NR and E-UTRA** (Maintenance on Rel-19 NR and E-UTRA): 확정 0 · 후보 7 / 전체 16건. CSI Agenda면 agendas에 넣습니다.
->
-> 확인했고 CSI와 무관하면 `acknowledged_alerts`에 아래 키를 넣으면 경고가 사라집니다: `RAN1#127: CSI acquisition and report: Other aspects (TRS, DL+UL 결합 CSI 등)`, `RAN1#127: Maintenance on AI/ML·MIMO Ph5·NES·NTN (CSI 키워드·조항 있는 결정만)`, `RAN1#127: Release 20 NR > Rel-20 UE features`, `RAN1#127: Maintenance on Rel-19 NR and E-UTRA > Maintenance on all items of Rel-19 NR and E-UTRA`
-
 3GPP RAN1 Chair notes의 결정 중 CSI 관련(CSI 획득·보고, CSI-RS, codebook, beam management, SRS, AI/ML CSI)만 모았습니다.
 범위·주제 규칙은 [`config/csi_scope.yaml`](../config/csi_scope.yaml)에 있습니다. 이 파일은 자동 생성물이므로 직접 고치지 않습니다.
 
 | 구분 | 건수 |
 |---|---:|
-| 확정 (포함 Agenda + 수동 포함) | **804** (Agreement 742 · WA 5 · Conclusion 57) |
-| 후보 (다른 Agenda의 키워드 일치, 확인 필요) | 243 |
+| 확정 (포함 Agenda + 수동 포함) | **825** (Agreement 763 · WA 5 · Conclusion 57) |
+| 후보 (다른 Agenda의 키워드 일치, 확인 필요) | 222 |
 
 ## 직전 회의 대비 (RAN1#126bis → RAN1#127)
 
@@ -26,12 +17,12 @@
 | 주제 | #126bis | **#127** | 증감 |
 |---|---:|---:|---:|
 | [AI/ML CSI](by_topic/aiml.md) | 7 | **10** | +3 |
-| [SRS](by_topic/srs.md) | 24 | **16** | -8 |
-| [Beam management](by_topic/beam.md) | 18 | **13** | -5 |
-| [CSI 보고/codebook](by_topic/report.md) | 17 | **11** | -6 |
-| [CSI-RS](by_topic/csirs.md) | 5 | **5** | +0 |
+| [SRS](by_topic/srs.md) | 24 | **27** | +3 |
+| [Beam management](by_topic/beam.md) | 18 | **15** | -3 |
+| [CSI 보고/codebook](by_topic/report.md) | 17 | **16** | -1 |
+| [CSI-RS](by_topic/csirs.md) | 5 | **8** | +3 |
 | [기타 CSI](by_topic/other.md) | 11 | **4** | -7 |
-| **합계** | 82 | **59** | -23 |
+| **합계** | 82 | **80** | -2 |
 
 ## 주제별 · 회의별 Agreement
 
@@ -42,19 +33,19 @@
 | 주된 주제 | #122 | #122bis | #123 | #124 | #124bis | #125 | #126 | #126bis | #127 | 합계 | 관련 포함 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | [AI/ML CSI](by_topic/aiml.md) | 58 | 43 | 15 | 17 | 15 | 13 | 10 | 7 | 10 | **188** | 202 |
-| [SRS](by_topic/srs.md) | 28 | 16 | 9 | 17 | 25 | 21 | 26 | 24 | 16 | **182** | 194 |
-| [Beam management](by_topic/beam.md) | 15 | 3 | 3 | 15 | 11 | 22 | 31 | 18 | 13 | **131** | 152 |
-| [CSI 보고/codebook](by_topic/report.md) | 21 | 33 | 5 | 8 | 14 | 14 | 13 | 17 | 11 | **136** | 393 |
-| [CSI-RS](by_topic/csirs.md) | 4 | 1 | 1 | 4 | 8 | 9 | 9 | 5 | 5 | **46** | 202 |
+| [SRS](by_topic/srs.md) | 28 | 16 | 9 | 17 | 25 | 21 | 26 | 24 | 27 | **193** | 205 |
+| [Beam management](by_topic/beam.md) | 15 | 3 | 3 | 15 | 11 | 22 | 31 | 18 | 15 | **133** | 155 |
+| [CSI 보고/codebook](by_topic/report.md) | 21 | 33 | 5 | 8 | 14 | 14 | 13 | 17 | 16 | **141** | 404 |
+| [CSI-RS](by_topic/csirs.md) | 4 | 1 | 1 | 4 | 8 | 9 | 9 | 5 | 8 | **49** | 215 |
 | [기타 CSI](by_topic/other.md) | 16 | 15 | 6 | 1 | 1 | 2 | 3 | 11 | 4 | **59** | 59 |
-| **합계** | **142** | **111** | **39** | **62** | **74** | **81** | **92** | **82** | **59** | **742** | — |
+| **합계** | **142** | **111** | **39** | **62** | **74** | **81** | **92** | **82** | **80** | **763** | — |
 
 ```mermaid
 xychart-beta
     title "회의별 CSI Agreement (확정 범위)"
     x-axis ["#122", "#122bis", "#123", "#124", "#124bis", "#125", "#126", "#126bis", "#127"]
     y-axis "건수" 0 --> 147
-    bar [142, 111, 39, 62, 74, 81, 92, 82, 59]
+    bar [142, 111, 39, 62, 74, 81, 92, 82, 80]
 ```
 
 ## 포함 Agenda별 · 회의별 Agreement
@@ -74,20 +65,28 @@ Agenda 번호는 회의마다 바뀌므로 '섹션 + Agenda 제목'으로 이어
 | AI/ML CSI compression Case 0 (Inference related aspects 등 하위 포함) (Release 20 NR, 최근 9.1.1) | 10 | 10 | 9 | 5 | 5 | 4 | 4 | 4 | 7 | **58** |
 | Inter-vendor training collaboration for two-sided AI/ML models (Release 20 NR, 최근 9.1.2) | 5 | 2 | 2 | 4 | 3 | 5 | 4 | 2 | 3 | **30** |
 | UE features for NR MIMO Phase N (Rel-19 UE Features, 최근 9.2) | 49 | 31 | · | · | · | · | · | · | · | **80** |
+| Rel-N UE features 통합 (CSI 키워드 있는 결정만) (Release 20 NR, 최근 9.6) | · | · | · | · | · | · | · | · | 14 | **14** |
 | Maintenance on NR MIMO Phase N (하위 포함) (Maintenance on Rel-19 NR and E-UTRA, 최근 8.2) | 20 | 18 | 11 | 8 | 7 | · | · | · | · | **64** |
 | UE features for AI/ML (positioning 제외) (Rel-19 UE Features, 최근 9.1) | 19 | 18 | · | · | · | · | · | · | · | **37** |
 | Maintenance on AI/ML (positioning 제외) (Maintenance on Rel-19 NR and E-UTRA, 최근 8.1) | 3 | 13 | 4 | 6 | 2 | · | · | · | · | **28** |
-| Maintenance on AI/ML·MIMO Ph5·NES·NTN (CSI 키워드·조항 있는 결정만) (Maintenance on Rel-19 NR and E-UTRA, 최근 8.1) | · | · | · | · | · | 5 | 7 | 2 | · | **14** |
+| Maintenance on Rel-19 통합 (AI/ML·MIMO Ph5 등, CSI 키워드·조항 있는 결정만) (Maintenance on Rel-19 NR and E-UTRA, 최근 8.1) | · | · | · | · | · | 5 | 7 | 2 | 7 | **21** |
 | AI/ML: Specification support for beam management (Maintenance on Rel-19 NR and E-UTRA, 최근 8.1.1) | 12 | · | · | · | · | · | · | · | · | **12** |
 | AI/ML: Specification support for CSI prediction (Maintenance on Rel-19 NR and E-UTRA, 최근 8.1.3) | 9 | · | · | · | · | · | · | · | · | **9** |
-| **합계** | **142** | **111** | **39** | **62** | **74** | **81** | **92** | **82** | **59** | **742** |
+| **합계** | **142** | **111** | **39** | **62** | **74** | **81** | **92** | **82** | **80** | **763** |
 
-## RAN1#127 신규 CSI Agreement (59건)
+## RAN1#127 신규 CSI Agreement (80건)
 
 아래 문장은 요약이 아니라 **원문 첫 줄**입니다(길면 자름). 전체 원문은 주제별 리포트와 HTML 대시보드에 있습니다.
 
 | 주제 | Agenda | 원문 첫 줄 | 출처 |
 |---|---|---|---|
+| CSI-RS | 8.1 Maintenance on all items of Rel-19 NR and E-UTRA | The draft CR R1-2609995 for Rel-19 TS38.214, Clause 5.1.6.1 is endorsed. | [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · [R1-2610916](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2610916.zip) · `[127-R19-AI 8.1]` |
+| CSI 보고/codebook | 8.1 Maintenance on all items of Rel-19 NR and E-UTRA | The draft CR R1-2609994 for Rel-19 TS38.214, Clause 5.2.2.5 is endorsed. | [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · [R1-2610918](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2610918.zip) · `[127-R19-AI 8.1]` |
+| SRS | 8.1 Maintenance on all items of Rel-19 NR and E-UTRA | Adopt the following TP for TS 38.214 | [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · [R1-2610909](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2610909.zip) · `[127-R19-AI 8.1]` |
+| SRS | 8.1 Maintenance on all items of Rel-19 NR and E-UTRA | Adopt the following TP for TS38.214 | [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · [R1-2610909](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2610909.zip) · `[127-R19-AI 8.1]` |
+| Beam management | 8.1 Maintenance on all items of Rel-19 NR and E-UTRA | The FL draft reply LS as below. Final LS in R1-2610954 is endorsed. | [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · [R1-2610919](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2610919.zip) · `[127-R19-AI 8.1]` |
+| Beam management | 8.1 Maintenance on all items of Rel-19 NR and E-UTRA | Adopt the following TP to section 5.1.5 TS 38.214 in principle: | [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · [R1-2610914](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2610914.zip) · `[127-R19-AI 8.1]` |
+| SRS | 8.1 Maintenance on all items of Rel-19 NR and E-UTRA | Reply to RAN3 LS as below, CC: RAN. Final LS in R1-2611015 is endorsed. | [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · [R1-2610941](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2610941.zip) · `[127-R19-AI 8.1]` |
 | AI/ML CSI | 9.1.1 CSI spatial/frequency compression without temporal aspects (“Case 0”) | For L1 performance monitoring, support UE indication of monitoring output with 1-bit reliability indicator | [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) |
 | AI/ML CSI | 9.1.1 CSI spatial/frequency compression without temporal aspects (“Case 0”) | For L1 performance monitoring and the reliability indication, support | [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) |
 | AI/ML CSI | 9.1.1 CSI spatial/frequency compression without temporal aspects (“Case 0”) | For CSI feedback via two-sided model, clarify that neither CRI nor LI is reported. UE is not expected to be c… | [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) |
@@ -108,6 +107,20 @@ Agenda 번호는 회의마다 바뀌므로 '섹션 + Agenda 제목'으로 이어
 | SRS | 9.2 NR MIMO Phase 6 | In a SIBx for early CSI-RS/SRS/CSI when UE transition from IDLE/INACTIVE to CONNECTED mode, support the follo… | [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · [R1-2609216](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2609216.zip) · `[127-R20-MIMO]` |
 | SRS | 9.2 NR MIMO Phase 6 | Regarding the RPFS start RB index hopping across multiple legacy SRS frequency hopping periods determined by … | [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · [R1-2609659](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2609659.zip) · `[127-R20-MIMO]` |
 | SRS | 9.2 NR MIMO Phase 6 | Regarding the configuration of KF, PF and K, down-select one from the following alternatives | [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · [R1-2609659](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Docs/R1-2609659.zip) · `[127-R20-MIMO]` |
+| SRS | 9.6 Rel-20 UE features | Introduce the following Rel. 19 UE FGs (yellow highlighting, if any, shows text that’s not yet agreed) | [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · `[127-R20-AI 9.6]` |
+| SRS | 9.6 Rel-20 UE features | Introduce the following Rel. 19 UE FGs (yellow highlighting, if any, shows text that’s not yet agreed) | [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · `[127-R20-AI 9.6]` |
+| CSI-RS | 9.6 Rel-20 UE features | Introduce the following Rel. 19 UE FGs (yellow highlighting, if any, shows text that’s not yet agreed) | [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · `[127-R20-AI 9.6]` |
+| SRS | 9.6 Rel-20 UE features | Introduce the following Rel. 19 UE FGs (yellow highlighting, if any, shows text that’s not yet agreed) | [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · `[127-R20-AI 9.6]` |
+| SRS | 9.6 Rel-20 UE features | Introduce the following Rel. 19 UE FGs (yellow highlighting, if any, shows text that’s not yet agreed) | [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · `[127-R20-AI 9.6]` |
+| CSI-RS | 9.6 Rel-20 UE features | Introduce the following Rel. 19 UE FGs (yellow highlighting, if any, shows text that’s not yet agreed) | [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · `[127-R20-AI 9.6]` |
+| SRS | 9.6 Rel-20 UE features | Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as… | [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · `[127-R20-AI 9.6]` |
+| SRS | 9.6 Rel-20 UE features | Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as… | [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · `[127-R20-AI 9.6]` |
+| SRS | 9.6 Rel-20 UE features | Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as… | [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · `[127-R20-AI 9.6]` |
+| SRS | 9.6 Rel-20 UE features | Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as… | [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · `[127-R20-AI 9.6]` |
+| CSI 보고/codebook | 9.6 Rel-20 UE features | Introduce the following Rel. 19 UE FGs (yellow highlighting, if any, shows text that’s not yet agreed) | [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · `[127-R20-AI 9.6]` |
+| CSI 보고/codebook | 9.6 Rel-20 UE features | Introduce the following Rel. 19 UE FGs (yellow highlighting, if any, shows text that’s not yet agreed) | [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · `[127-R20-AI 9.6]` |
+| CSI 보고/codebook | 9.6 Rel-20 UE features | Introduce the following Rel. 19 UE FGs (yellow highlighting, if any, shows text that’s not yet agreed) | [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · `[127-R20-AI 9.6]` |
+| CSI 보고/codebook | 9.6 Rel-20 UE features | Introduce the following Rel. 19 UE FGs (yellow highlighting, if any, shows text that’s not yet agreed) | [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · `[127-R20-AI 9.6]` |
 | Beam management | 10.5.1.1 Synchronization acquisition and beam measurement | For 6GR PSS, | [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · `[127-R20-6GR-Synchronization and Beam Measurement]` |
 | Beam management | 10.5.1.1 Synchronization acquisition and beam measurement | For 6GR SSS | [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · `[127-R20-6GR-Synchronization and Beam Measurement]` |
 | Beam management | 10.5.1.1 Synchronization acquisition and beam measurement | For SSB design, downselect one from Alt 1 and Alt 2, | [Chair notes RAN1#127_eom2](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) · `[127-R20-6GR-Synchronization and Beam Measurement]` |
@@ -155,21 +168,37 @@ Agenda 번호는 회의마다 바뀌므로 '섹션 + Agenda 제목'으로 이어
 
 | 시각 (UTC) | 이유 | 새 회의 | 기존 회의 추가 | 변경 | 삭제 |
 |---|---|---|---:|---:|---:|
+| 2026-11-24 05:53 | 대시보드 범위 조정 (RAN1 회의록 변화 아님) | — | 0 | 21 | 0 |
 | 2026-11-24 05:50 | 원본 회의록 갱신 | — | 0 | 4 | 1 |
 | 2026-11-21 08:21 | 원본 회의록 갱신 | — | 71 | 1 | 0 |
 | 2026-11-20 08:37 | 원본 회의록 갱신 | — | 12 | 2 | 0 |
 | 2026-11-19 08:51 | 원본 회의록 갱신 | — | 8 | 0 | 0 |
-| 2026-11-18 08:36 | 원본 회의록 갱신 | RAN1#127 14건 | 0 | 0 | 0 |
 
-<details><summary>가장 최근(2026-11-24) 기존 회의 변경 5건 펼치기</summary>
+<details><summary>가장 최근(2026-11-24) 기존 회의 변경 21건 펼치기</summary>
 
 | 변경 | 회의 | 구분 | 범위 | Agenda | 원문 첫 줄 | id |
 |---|---|---|---|---|---|---|
-| 변경 (원문) | RAN1#127 | Agreement | 후보 | 10.4.2 Operation in connected mode | For fast enabling/disabling access to additional carriers for 6GR multiple carrier operation in connected mode, further discuss how to achi… | [`RAN1#127:10.4.2:006`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) |
-| 삭제 | RAN1#127 | Agreement | 확정 | 10.5.3.1 Aspects of downlink-based CSI acquisition | - For NW-triggered CSI reporting, support Aperiodic CSI reporting on PUSCH for both wideband and subband CSI based on NW triggering | [`RAN1#127:10.5.3.1:001`](https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx) |
-| 변경 (원문) | RAN1#127 | Agreement | 확정 | 10.5.3.1 Aspects of downlink-based CSI acquisition | Final LS R1-2610975 on UE channel property information reporting is endorsed. | [`RAN1#127:10.5.3.1:018`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) |
-| 변경 (원문) | RAN1#127 | Agreement | 확정 | 10.5.3.2 Aspects of uplink-based CSI acquisition | Consider computer-generated SRS sequences for lengths < M, and down-select one option for the value of M: | [`RAN1#127:10.5.3.2:010`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) |
-| 변경 (원문) | RAN1#127 | Agreement | 확정 | 10.5.3.4 Beam management for downlink and uplink | Regarding DL beam measurement and report procedure, for the study on L1-SINR based DL beam measurement and report, the following is conside… | [`RAN1#127:10.5.3.4:006`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) |
+| 변경 (범위) | RAN1#127 | Agreement | 확정 | 8.1 Maintenance on all items of Rel-19 NR and E-UTRA | The draft CR R1-2609995 for Rel-19 TS38.214, Clause 5.1.6.1 is endorsed. | [`RAN1#127:8.1:002`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) |
+| 변경 (범위) | RAN1#127 | Agreement | 확정 | 8.1 Maintenance on all items of Rel-19 NR and E-UTRA | The draft CR R1-2609994 for Rel-19 TS38.214, Clause 5.2.2.5 is endorsed. | [`RAN1#127:8.1:006`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) |
+| 변경 (범위) | RAN1#127 | Agreement | 확정 | 8.1 Maintenance on all items of Rel-19 NR and E-UTRA | Adopt the following TP for TS 38.214 | [`RAN1#127:8.1:010`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) |
+| 변경 (범위) | RAN1#127 | Agreement | 확정 | 8.1 Maintenance on all items of Rel-19 NR and E-UTRA | Adopt the following TP for TS38.214 | [`RAN1#127:8.1:011`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) |
+| 변경 (범위) | RAN1#127 | Agreement | 확정 | 8.1 Maintenance on all items of Rel-19 NR and E-UTRA | The FL draft reply LS as below. Final LS in R1-2610954 is endorsed. | [`RAN1#127:8.1:012`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) |
+| 변경 (범위) | RAN1#127 | Agreement | 확정 | 8.1 Maintenance on all items of Rel-19 NR and E-UTRA | Adopt the following TP to section 5.1.5 TS 38.214 in principle: | [`RAN1#127:8.1:013`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) |
+| 변경 (범위) | RAN1#127 | Agreement | 확정 | 8.1 Maintenance on all items of Rel-19 NR and E-UTRA | Reply to RAN3 LS as below, CC: RAN. Final LS in R1-2611015 is endorsed. | [`RAN1#127:8.1:016`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) |
+| 변경 (범위) | RAN1#127 | Agreement | 확정 | 9.6 Rel-20 UE features | Introduce the following Rel. 19 UE FGs (yellow highlighting, if any, shows text that’s not yet agreed) | [`RAN1#127:9.6:008`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) |
+| 변경 (범위) | RAN1#127 | Agreement | 확정 | 9.6 Rel-20 UE features | Introduce the following Rel. 19 UE FGs (yellow highlighting, if any, shows text that’s not yet agreed) | [`RAN1#127:9.6:009`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) |
+| 변경 (범위) | RAN1#127 | Agreement | 확정 | 9.6 Rel-20 UE features | Introduce the following Rel. 19 UE FGs (yellow highlighting, if any, shows text that’s not yet agreed) | [`RAN1#127:9.6:010`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) |
+| 변경 (범위) | RAN1#127 | Agreement | 확정 | 9.6 Rel-20 UE features | Introduce the following Rel. 19 UE FGs (yellow highlighting, if any, shows text that’s not yet agreed) | [`RAN1#127:9.6:011`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) |
+| 변경 (범위) | RAN1#127 | Agreement | 확정 | 9.6 Rel-20 UE features | Introduce the following Rel. 19 UE FGs (yellow highlighting, if any, shows text that’s not yet agreed) | [`RAN1#127:9.6:012`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) |
+| 변경 (범위) | RAN1#127 | Agreement | 확정 | 9.6 Rel-20 UE features | Introduce the following Rel. 19 UE FGs (yellow highlighting, if any, shows text that’s not yet agreed) | [`RAN1#127:9.6:013`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) |
+| 변경 (범위) | RAN1#127 | Agreement | 확정 | 9.6 Rel-20 UE features | Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown (yellow highlighting sh… | [`RAN1#127:9.6:014`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) |
+| 변경 (범위) | RAN1#127 | Agreement | 확정 | 9.6 Rel-20 UE features | Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown (yellow highlighting sh… | [`RAN1#127:9.6:015`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) |
+| 변경 (범위) | RAN1#127 | Agreement | 확정 | 9.6 Rel-20 UE features | Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown (yellow highlighting sh… | [`RAN1#127:9.6:016`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) |
+| 변경 (범위) | RAN1#127 | Agreement | 확정 | 9.6 Rel-20 UE features | Adopt the following changes highlighted in chromatic fonts, while keeping the yellow highlighting, if any, as shown (yellow highlighting sh… | [`RAN1#127:9.6:017`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) |
+| 변경 (범위) | RAN1#127 | Agreement | 확정 | 9.6 Rel-20 UE features | Introduce the following Rel. 19 UE FGs (yellow highlighting, if any, shows text that’s not yet agreed) | [`RAN1#127:9.6:018`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) |
+| 변경 (범위) | RAN1#127 | Agreement | 확정 | 9.6 Rel-20 UE features | Introduce the following Rel. 19 UE FGs (yellow highlighting, if any, shows text that’s not yet agreed) | [`RAN1#127:9.6:019`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) |
+| 변경 (범위) | RAN1#127 | Agreement | 확정 | 9.6 Rel-20 UE features | Introduce the following Rel. 19 UE FGs (yellow highlighting, if any, shows text that’s not yet agreed) | [`RAN1#127:9.6:020`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) |
+| 변경 (범위) | RAN1#127 | Agreement | 확정 | 9.6 Rel-20 UE features | Introduce the following Rel. 19 UE FGs (yellow highlighting, if any, shows text that’s not yet agreed) | [`RAN1#127:9.6:021`](https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx) |
 
 </details>
 
@@ -183,17 +212,17 @@ Agenda 번호는 회의마다 바뀌므로 '섹션 + Agenda 제목'으로 이어
 | Maintenance on Rel-19 NR and E-UTRA | Maintenance on Evolution of NR duplex operation: Sub-band full duplex (SBFD) | 8.3 | 18 |
 | Rel-20 Study of 6GR | Uplink transmission scheme(s) for uplink channels | 10.5.2.3 | 16 |
 | Rel-19 UE Features | UE features for NR mobility enhancements Phase 4 | 9.6 | 15 |
-| Release 20 NR | Rel-20 UE features | 9.6 | 14 |
 | Maintenance on Rel-19 NR and E-UTRA | Measurements related enhancements for LTM | 8.9.1 | 10 |
 | Rel-19 UE Features | UE features Batch C | 9.3 | 10 |
 | Rel-20 Study of 6GR | Other physical layer signals, channels and procedure | 10.5.5 | 10 |
 | Rel-20 Study of 6GR | Downlink transmission scheme(s) for downlink shared channels | 10.5.2.2 | 8 |
 | Maintenance on Rel-19 NR and E-UTRA | Maintenance on Low-power wake-up signal and receiver for NR (LP-WUS/WUR) | 8.5, 8.6 | 7 |
-| Maintenance on Rel-19 NR and E-UTRA | Maintenance on all items of Rel-19 NR and E-UTRA | 8.1 | 7 |
 | Rel-19 UE Features | UE features Batch B | 9.2 | 7 |
 | Pre-Rel-19 NR Maintenance | Pre-Rel-19 NR Maintenance | 7 | 6 |
 | Maintenance on Rel-19 NR and E-UTRA | CLI handling | 8.3.3 | 5 |
 | Rel-20 Study of 6GR | Aspects of integration with communication | 10.8.2 | 5 |
+| Maintenance on Rel-19 NR and E-UTRA | On-demand SSB SCell operation | 8.5.1 | 4 |
+| Rel-20 Study of 6GR | HARQ related Aspects | 10.5.4.3 | 4 |
 
 ---
 모든 결정은 3GPP FTP의 Chair notes 원문 그대로이며, 각 결정 끝에 Chair notes와 근거 TDoc 링크를 붙였습니다.
