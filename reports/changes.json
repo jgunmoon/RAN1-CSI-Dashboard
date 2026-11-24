@@ -1,15 +1,15 @@
 [
  {
-  "at": "2026-11-24T05:46+00:00",
+  "at": "2026-11-24T05:50+00:00",
   "source_updated_at": "2026-11-24T05:29:35+00:00",
   "reason": "원본 DB 갱신",
   "new_meetings": [],
   "counts": {
    "added": 0,
-   "changed": 21,
+   "changed": 4,
    "removed": 1
   },
-  "renumbered": 1,
+  "renumbered": 18,
   "items": [
    {
     "id": "RAN1#127:10.4.2:006",
@@ -27,245 +27,15 @@
    },
    {
     "id": "RAN1#127:10.5.3.1:001",
-    "what": "changed",
-    "fields": [
-     "text"
-    ],
-    "meeting": "RAN1#127",
-    "type": "Agreement",
-    "scope": "agenda",
-    "topic": "csirs",
-    "agenda": "10.5.3.1 Aspects of downlink-based CSI acquisition",
-    "line": "For 6GR, the maximum number of CSI-RS ports is 256",
-    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx"
-   },
-   {
-    "id": "RAN1#127:10.5.3.1:002",
-    "what": "changed",
-    "fields": [
-     "type",
-     "text"
-    ],
-    "meeting": "RAN1#127",
-    "type": "Conclusion",
-    "scope": "agenda",
-    "topic": "csirs",
-    "agenda": "10.5.3.1 Aspects of downlink-based CSI acquisition",
-    "line": "For NW side prediction at spatial and/or frequency domain, deprioritize prediction input Option 1-1: UE reported channel matrix derived fro…",
-    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx"
-   },
-   {
-    "id": "RAN1#127:10.5.3.1:003",
-    "what": "changed",
-    "fields": [
-     "type",
-     "text"
-    ],
+    "what": "removed",
+    "fields": [],
     "meeting": "RAN1#127",
     "type": "Agreement",
     "scope": "agenda",
     "topic": "report",
     "agenda": "10.5.3.1 Aspects of downlink-based CSI acquisition",
-    "line": "For the 6GR codebook design for CSI report, for sTRP, targeting different use cases, support W1W2 structure based and W1W2Wf structure base…",
-    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx"
-   },
-   {
-    "id": "RAN1#127:10.5.3.1:004",
-    "what": "changed",
-    "fields": [
-     "text"
-    ],
-    "meeting": "RAN1#127",
-    "type": "Agreement",
-    "scope": "agenda",
-    "topic": "report",
-    "agenda": "10.5.3.1 Aspects of downlink-based CSI acquisition",
-    "line": "For the 6GR codebook design for CSI report, for CJT, RAN 1 recommends to support at least one of the W1W2 structure based and W1W2Wf struct…",
-    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx"
-   },
-   {
-    "id": "RAN1#127:10.5.3.1:005",
-    "what": "changed",
-    "fields": [
-     "text"
-    ],
-    "meeting": "RAN1#127",
-    "type": "Agreement",
-    "scope": "agenda",
-    "topic": "report",
-    "agenda": "10.5.3.1 Aspects of downlink-based CSI acquisition",
-    "line": "- For UE-assisted report for the 6GR DL based CSI, to facilitate CJT deployments, RAN 1 recommends to support CJT calibration (CJTC) report…",
-    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx"
-   },
-   {
-    "id": "RAN1#127:10.5.3.1:006",
-    "what": "changed",
-    "fields": [
-     "type",
-     "text"
-    ],
-    "meeting": "RAN1#127",
-    "type": "Conclusion",
-    "scope": "agenda",
-    "topic": "report",
-    "agenda": "10.5.3.1 Aspects of downlink-based CSI acquisition",
-    "line": "For study on PAPR reduction for JSCM-based CSI compression, deprioritize Option 2.",
-    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx"
-   },
-   {
-    "id": "RAN1#127:10.5.3.1:007",
-    "what": "changed",
-    "fields": [
-     "type",
-     "text"
-    ],
-    "meeting": "RAN1#127",
-    "type": "Agreement",
-    "scope": "agenda",
-    "topic": "report",
-    "agenda": "10.5.3.1 Aspects of downlink-based CSI acquisition",
-    "line": "For UE-assisted report for the 6GR DL based CSI, RAN 1 recommends to support Channel Property Information (CPI) reports at least for SD:",
-    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx"
-   },
-   {
-    "id": "RAN1#127:10.5.3.1:008",
-    "what": "changed",
-    "fields": [
-     "text"
-    ],
-    "meeting": "RAN1#127",
-    "type": "Agreement",
-    "scope": "agenda",
-    "topic": "csirs",
-    "agenda": "10.5.3.1 Aspects of downlink-based CSI acquisition",
-    "line": "6GR CSI-RS supports the following numbers of ports: 1, 2, 4, 8, 12, 16, 24, 32, 48, 64, 128, 256",
-    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx"
-   },
-   {
-    "id": "RAN1#127:10.5.3.1:009",
-    "what": "changed",
-    "fields": [
-     "text"
-    ],
-    "meeting": "RAN1#127",
-    "type": "Agreement",
-    "scope": "agenda",
-    "topic": "csirs",
-    "agenda": "10.5.3.1 Aspects of downlink-based CSI acquisition",
-    "line": "For 6GR CSI-RS CDM size and type, prioritize the following candidates for further down-selection per port number basis",
-    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx"
-   },
-   {
-    "id": "RAN1#127:10.5.3.1:010",
-    "what": "changed",
-    "fields": [
-     "text"
-    ],
-    "meeting": "RAN1#127",
-    "type": "Agreement",
-    "scope": "agenda",
-    "topic": "csirs",
-    "agenda": "10.5.3.1 Aspects of downlink-based CSI acquisition",
-    "line": "For 6GR CSI-RS, on the study of options to address the potential inter-cell interference issue caused by NR CSI-RS sequence mapping, and th…",
-    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx"
-   },
-   {
-    "id": "RAN1#127:10.5.3.1:011",
-    "what": "changed",
-    "fields": [
-     "text"
-    ],
-    "meeting": "RAN1#127",
-    "type": "Agreement",
-    "scope": "agenda",
-    "topic": "csirs",
-    "agenda": "10.5.3.1 Aspects of downlink-based CSI acquisition",
-    "line": "On the locations of M2 RBs in each RB set for 6GR CSI-RS, support",
-    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx"
-   },
-   {
-    "id": "RAN1#127:10.5.3.1:012",
-    "what": "changed",
-    "fields": [
-     "text"
-    ],
-    "meeting": "RAN1#127",
-    "type": "Agreement",
-    "scope": "agenda",
-    "topic": "other",
-    "agenda": "10.5.3.1 Aspects of downlink-based CSI acquisition",
-    "line": "For the supported W1W2Wf structure based schemes, for the FD basis design, support at least NR DFT FD basis design.",
-    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx"
-   },
-   {
-    "id": "RAN1#127:10.5.3.1:013",
-    "what": "changed",
-    "fields": [
-     "text"
-    ],
-    "meeting": "RAN1#127",
-    "type": "Agreement",
-    "scope": "agenda",
-    "topic": "report",
-    "agenda": "10.5.3.1 Aspects of downlink-based CSI acquisition",
-    "line": "On CSI reporting based on a received PDSCH DMRS, decide by RAN 1 #128, whether or not to support the following:",
-    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx"
-   },
-   {
-    "id": "RAN1#127:10.5.3.1:014",
-    "what": "changed",
-    "fields": [
-     "text"
-    ],
-    "meeting": "RAN1#127",
-    "type": "Agreement",
-    "scope": "agenda",
-    "topic": "report",
-    "agenda": "10.5.3.1 Aspects of downlink-based CSI acquisition",
-    "line": "Draft Reply LS R1-2610976 on JSCM-based CSI compression with AI is endorsed in principle.",
-    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx"
-   },
-   {
-    "id": "RAN1#127:10.5.3.1:015",
-    "what": "changed",
-    "fields": [
-     "text"
-    ],
-    "meeting": "RAN1#127",
-    "type": "Agreement",
-    "scope": "agenda",
-    "topic": "report",
-    "agenda": "10.5.3.1 Aspects of downlink-based CSI acquisition",
-    "line": "Final Reply LS R1-2610977 on JSCM-based CSI compression with AI is endorsed.",
-    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx"
-   },
-   {
-    "id": "RAN1#127:10.5.3.1:016",
-    "what": "changed",
-    "fields": [
-     "text"
-    ],
-    "meeting": "RAN1#127",
-    "type": "Agreement",
-    "scope": "agenda",
-    "topic": "report",
-    "agenda": "10.5.3.1 Aspects of downlink-based CSI acquisition",
-    "line": "To assess whether specification enhancement is needed for SD-precoded CSI-RS,",
-    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx"
-   },
-   {
-    "id": "RAN1#127:10.5.3.1:017",
-    "what": "changed",
-    "fields": [
-     "text"
-    ],
-    "meeting": "RAN1#127",
-    "type": "Agreement",
-    "scope": "agenda",
-    "topic": "other",
-    "agenda": "10.5.3.1 Aspects of downlink-based CSI acquisition",
-    "line": "Draft LS R1-2610974 on UE channel property information reporting is endorsed in principle.",
-    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx"
+    "line": "- For NW-triggered CSI reporting, support Aperiodic CSI reporting on PUSCH for both wideband and subband CSI based on NW triggering",
+    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx"
    },
    {
     "id": "RAN1#127:10.5.3.1:018",
@@ -280,18 +50,6 @@
     "agenda": "10.5.3.1 Aspects of downlink-based CSI acquisition",
     "line": "Final LS R1-2610975 on UE channel property information reporting is endorsed.",
     "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx"
-   },
-   {
-    "id": "RAN1#127:10.5.3.1:019",
-    "what": "removed",
-    "fields": [],
-    "meeting": "RAN1#127",
-    "type": "Agreement",
-    "scope": "agenda",
-    "topic": "report",
-    "agenda": "10.5.3.1 Aspects of downlink-based CSI acquisition",
-    "line": "Final LS R1-2610975 on UE channel property information reporting is endorsed.",
-    "url": "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom1.docx"
    },
    {
     "id": "RAN1#127:10.5.3.2:010",

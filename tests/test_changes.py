@@ -48,3 +48,16 @@ def test_history_is_capped():
     hist = [{"at": str(i)} for i in range(changes.KEEP)]
     new, _ = changes.record(hist, prev, cur, "now")
     assert len(new) == changes.KEEP and new[0]["at"] == "now"
+
+
+def test_removed_decision_shifts_later_ids_without_false_changes():
+    # 원본이 회의록 새 판(eom1 → eom2)을 처리하면서 Agenda 첫 결정이 빠져 뒤 결정의 순번이 하나씩 밀린 경우
+    texts = ["Removed.", "B.", "C.", "Final LS is endorsed.\nEmail discussion on observations (Dec.1~Dec.11)"]
+    prev = [e(f"RAN1#127:9.2:{i + 1:03d}", meeting="RAN1#127", text=t) for i, t in enumerate(texts)]
+    cur = [e("RAN1#127:9.2:001", meeting="RAN1#127", text="B."), e("RAN1#127:9.2:002", meeting="RAN1#127", text="C."),
+           e("RAN1#127:9.2:003", meeting="RAN1#127", text="Final LS is endorsed.")]  # 끝의 이메일 토의 줄만 빠짐
+    _, items, renumbered = changes.diff(prev, cur)
+    assert renumbered == 2
+    assert [(x["id"], x["what"], x["fields"]) for x in items] == [
+        ("RAN1#127:9.2:001", "removed", []), ("RAN1#127:9.2:003", "changed", ["text"])]
+    assert items[0]["line"] == "Removed."

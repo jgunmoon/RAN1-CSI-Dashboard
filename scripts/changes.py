@@ -9,16 +9,32 @@
   renumbered   : 원문은 같고 id만 바뀐 결정 수 (원본 순번 재계산. 변경으로 보지 않음)
 처음 실행(비교할 이전 결과가 없음)에는 기준만 잡고 이력을 남기지 않습니다.
 """
+from difflib import SequenceMatcher
+
 from scripts.scope import meeting_sort_key
 
 FIELDS = ("meeting", "type", "text", "scope")
 FIELD_LABEL = {"meeting": "회의", "type": "구분", "text": "원문", "scope": "범위"}
 KEEP = 30  # 보관할 변경 묶음 수
+SIMILAR = 0.8  # 순번이 밀린 결정을 '변경'으로 짝지을 원문 겹침 하한 (짧은 쪽 글자 기준)
 
 
 def _first_line(text, n=140):
     line = (text or "").strip().split("\n")[0].strip()
     return line if len(line) <= n else line[:n - 1] + "…"
+
+
+def _agenda(e):
+    """id 'RAN1#127:10.5.3.1:018'의 가운데(Agenda 번호)."""
+    return e["id"].split(":")[1] if e["id"].count(":") >= 2 else e.get("agenda_item")
+
+
+def _overlap(a, b):
+    """짧은 쪽 글자 중 다른 쪽과 겹치는 비율 (한쪽에 줄이 더해지거나 빠져도 높게 나옴)."""
+    if not a or not b:
+        return 0.0
+    m = sum(x.size for x in SequenceMatcher(None, a, b, autojunk=False).get_matching_blocks())
+    return m / min(len(a), len(b))
 
 
 def _item(e, what, fields=()):
@@ -59,38 +75,65 @@ def latest_source(history):
 
 
 def diff(prev_entries, cur_entries):
-    """이전·현재 결정 목록 → (new_meetings, items, renumbered)."""
+    """이전·현재 결정 목록 → (new_meetings, items, renumbered).
+
+    원본이 회의록을 다시 처리하면 같은 Agenda 안에서 결정 하나가 빠지거나 끼어들어 뒤 결정들의 순번(id)이 밀립니다.
+    그래서 먼저 원문·구분·범위가 같은 결정끼리 짝짓고(id만 바뀐 것은 변경 아님), 남은 것 중 id가 같으면 '변경'으로 봅니다.
+    """
+    def key(e):
+        return e["meeting"], e["type"], e["scope"], e["text"]
     prev = {e["id"]: e for e in prev_entries}
     cur = {e["id"]: e for e in cur_entries}
     prev_meetings = {e["meeting"] for e in prev_entries}
-    added = [cur[i] for i in cur if i not in prev]
-    removed = [prev[i] for i in prev if i not in cur]
-    # id만 바뀐 결정(같은 회의, 같은 원문·구분·범위)은 짝지어 변경에서 뺍니다.
+    # 1) id와 내용이 모두 같은 결정은 그대로
+    same = {i for i in cur if i in prev and all(prev[i].get(f) == cur[i].get(f) for f in FIELDS)}
+    # 2) 내용이 같은데 id만 다른 결정을 짝지음 (같은 회의 안의 순번 재계산)
     pool = {}
-    for e in removed:
-        pool.setdefault((e["meeting"], e["type"], e["scope"], e["text"]), []).append(e)
-    renumbered, still_added = 0, []
-    for e in added:
-        same = pool.get((e["meeting"], e["type"], e["scope"], e["text"]))
-        if same:
-            same.pop()
-            renumbered += 1
+    for i, e in prev.items():
+        if i not in same:
+            pool.setdefault(key(e), []).append(i)
+    renumbered, paired_prev, rest = 0, set(), []
+    for i, e in cur.items():
+        if i in same:
+            continue
+        ids = pool.get(key(e))
+        if ids:
+            j = i if i in ids else ids[0]
+            ids.remove(j)
+            paired_prev.add(j)
+            renumbered += j != i
+        else:
+            rest.append(e)
+    left_prev = {i: e for i, e in prev.items() if i not in same and i not in paired_prev}
+    # 3) 남은 것: id가 같으면 변경, 아니면 추가(또는 새 회의)·삭제
+    still_added, items = [], []
+    for e in rest:
+        if e["id"] in left_prev:
+            o = left_prev.pop(e["id"])
+            items.append(_item(e, "changed", [f for f in FIELDS if o.get(f) != e.get(f)]))
         else:
             still_added.append(e)
-    still_removed = [e for group in pool.values() for e in group]
+    # 4) 순번도 밀리고 원문도 고쳐진 결정(예: 끝에 붙어 있던 이메일 토의 줄이 빠짐):
+    #    같은 회의·Agenda에서 짧은 쪽 원문의 대부분(SIMILAR 이상)이 겹치면 변경으로 짝지음
+    for e in list(still_added):
+        best, score = None, SIMILAR
+        for o in left_prev.values():
+            if o["meeting"] == e["meeting"] and _agenda(o) == _agenda(e):
+                r = _overlap(o["text"], e["text"])
+                if r >= score:
+                    best, score = o, r
+        if best:
+            del left_prev[best["id"]]
+            still_added.remove(e)
+            items.append(_item(e, "changed", [f for f in FIELDS if best.get(f) != e.get(f)]))
+    still_removed = list(left_prev.values())
 
     new_meetings = {}
-    items = []
     for e in still_added:
         if e["meeting"] in prev_meetings:
             items.append(_item(e, "added"))
         else:
             new_meetings[e["meeting"]] = new_meetings.get(e["meeting"], 0) + 1
-    for i in cur:
-        if i in prev:
-            changed = [f for f in FIELDS if prev[i].get(f) != cur[i].get(f)]
-            if changed:
-                items.append(_item(cur[i], "changed", changed))
     items += [_item(e, "removed") for e in still_removed]
     items.sort(key=lambda x: (meeting_sort_key(x["meeting"]), x["id"]))
     return ([{"meeting": k, "count": v} for k, v in sorted(new_meetings.items(), key=lambda kv: meeting_sort_key(kv[0]))],
