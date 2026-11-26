@@ -1,5 +1,171 @@
 [
  {
+  "at": "2026-11-26T09:43+00:00",
+  "source_updated_at": "2026-11-26T05:28:36+00:00",
+  "reason": "원본 DB 갱신",
+  "new_meetings": [],
+  "counts": {
+   "added": 0,
+   "changed": 10,
+   "removed": 1
+  },
+  "renumbered": 2,
+  "items": [
+   {
+    "id": "RAN1#127:10.5.1.1:006",
+    "what": "removed",
+    "fields": [],
+    "meeting": "RAN1#127",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "beam",
+    "agenda": "10.5.1.1 Synchronization acquisition and beam measurement",
+    "line": "- For UEs in connected mode, additional transmission of synchronization signal(s)/reference signals in addition to the SSBs for initial cel…",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom2.docx"
+   },
+   {
+    "id": "RAN1#127:9.6:008",
+    "what": "changed",
+    "fields": [
+     "text"
+    ],
+    "meeting": "RAN1#127",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "srs",
+    "agenda": "9.6 Rel-20 UE features",
+    "line": "Introduce the following Rel. 20 UE FGs (yellow highlighting, if any, shows text that’s not yet agreed)",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom3.docx"
+   },
+   {
+    "id": "RAN1#127:9.6:009",
+    "what": "changed",
+    "fields": [
+     "text"
+    ],
+    "meeting": "RAN1#127",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "srs",
+    "agenda": "9.6 Rel-20 UE features",
+    "line": "Introduce the following Rel. 20 UE FGs (yellow highlighting, if any, shows text that’s not yet agreed)",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom3.docx"
+   },
+   {
+    "id": "RAN1#127:9.6:010",
+    "what": "changed",
+    "fields": [
+     "text"
+    ],
+    "meeting": "RAN1#127",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "csirs",
+    "agenda": "9.6 Rel-20 UE features",
+    "line": "Introduce the following Rel. 20 UE FGs (yellow highlighting, if any, shows text that’s not yet agreed)",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom3.docx"
+   },
+   {
+    "id": "RAN1#127:9.6:011",
+    "what": "changed",
+    "fields": [
+     "text"
+    ],
+    "meeting": "RAN1#127",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "srs",
+    "agenda": "9.6 Rel-20 UE features",
+    "line": "Introduce the following Rel. 20 UE FGs (yellow highlighting, if any, shows text that’s not yet agreed)",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom3.docx"
+   },
+   {
+    "id": "RAN1#127:9.6:012",
+    "what": "changed",
+    "fields": [
+     "text"
+    ],
+    "meeting": "RAN1#127",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "srs",
+    "agenda": "9.6 Rel-20 UE features",
+    "line": "Introduce the following Rel. 20 UE FGs (yellow highlighting, if any, shows text that’s not yet agreed)",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom3.docx"
+   },
+   {
+    "id": "RAN1#127:9.6:013",
+    "what": "changed",
+    "fields": [
+     "text"
+    ],
+    "meeting": "RAN1#127",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "csirs",
+    "agenda": "9.6 Rel-20 UE features",
+    "line": "Introduce the following Rel. 20 UE FGs (yellow highlighting, if any, shows text that’s not yet agreed)",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom3.docx"
+   },
+   {
+    "id": "RAN1#127:9.6:018",
+    "what": "changed",
+    "fields": [
+     "text"
+    ],
+    "meeting": "RAN1#127",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "report",
+    "agenda": "9.6 Rel-20 UE features",
+    "line": "Introduce the following Rel. 20 UE FGs (yellow highlighting, if any, shows text that’s not yet agreed)",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom3.docx"
+   },
+   {
+    "id": "RAN1#127:9.6:019",
+    "what": "changed",
+    "fields": [
+     "text"
+    ],
+    "meeting": "RAN1#127",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "report",
+    "agenda": "9.6 Rel-20 UE features",
+    "line": "Introduce the following Rel. 20 UE FGs (yellow highlighting, if any, shows text that’s not yet agreed)",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom3.docx"
+   },
+   {
+    "id": "RAN1#127:9.6:020",
+    "what": "changed",
+    "fields": [
+     "text"
+    ],
+    "meeting": "RAN1#127",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "report",
+    "agenda": "9.6 Rel-20 UE features",
+    "line": "Introduce the following Rel. 20 UE FGs (yellow highlighting, if any, shows text that’s not yet agreed)",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom3.docx"
+   },
+   {
+    "id": "RAN1#127:9.6:021",
+    "what": "changed",
+    "fields": [
+     "text"
+    ],
+    "meeting": "RAN1#127",
+    "type": "Agreement",
+    "scope": "agenda",
+    "topic": "report",
+    "agenda": "9.6 Rel-20 UE features",
+    "line": "Introduce the following Rel. 20 UE FGs (yellow highlighting, if any, shows text that’s not yet agreed)",
+    "url": "https://www.3gpp.org/ftp/tsg_ran/WG1_RL1/TSGR1_127/Inbox/Chair_notes/Chair%20notes%20RAN1%23127_eom3.docx"
+   }
+  ]
+ },
+ {
   "at": "2026-11-24T05:53+00:00",
   "source_updated_at": "2026-11-24T05:29:35+00:00",
   "reason": "설정 변경 (범위·키워드·주제 규칙)",
